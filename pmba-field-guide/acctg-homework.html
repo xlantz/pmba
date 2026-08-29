@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accounting HW Practice — PMBA Field Guide</title>
+<meta name="description" content="Auto-graded practice versions of the ACCTG 6000 homework, filterable by unit or topic, with instant feedback and step-by-step notes.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="theme-acctg">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">PMBA</span> Field Guide</a>
+    <nav class="topnav">
+      <a href="index.html">Units</a>
+      <div class="nav-dropdown">
+        <a href="unit1.html" class="nav-dropdown-label">MGT 6050</a>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show MGT 6050 units">&#9662;</button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="unit1.html">Unit 1 &mdash; Foundations</a>
+            <div class="nav-dropdown-hint">More units coming</div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="acctg1.html" class="nav-dropdown-label">ACCTG 6000</a>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show ACCTG 6000 units">&#9662;</button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="acctg1.html">Unit 1 &mdash; Reporting Foundations</a>
+            <a href="acctg2.html">Unit 2 &mdash; Statements &amp; SEC Filings</a>
+          </div>
+        </div>
+      </div>
+      <a href="acctg-homework.html" class="active">Accounting HW Practice</a>
+      <a href="acctg-mock-test.html">ACCTG Mock Test</a>
+      <a href="mgt-mock-test.html">MGT Mock Test</a>
+    </nav>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:48px;">
+  <div class="wrap" style="grid-template-columns:1fr;">
+    <div>
+      <span class="eyebrow">ACCTG 6000 &#x00b7; Accounting HW Practice</span>
+      <h1>Homework, worked with new numbers</h1>
+      <p class="lede" style="max-width:70ch;">Same structure as the actual Module 1 &amp; 2 assignment &#x2014; numbers changed so this isn't a copy of what you turned in. Filter by unit or by topic to find exactly what you want to drill, fill it in, hit Check, and get an instant score plus notes on anything you missed. Reset clears the page so you can redo it as many times as you want.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><b>12</b><span>Questions</span></div>
+        <div class="hero-stat"><b>2</b><span>Units, 6 topics</span></div>
+        <div class="hero-stat"><b>&#x2713;</b><span>Auto-graded</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main id="main">
+  <div class="wrap section" style="padding-top:0;">
+    <div class="callout">
+      Numeric answers are graded with a small rounding tolerance. Dropdowns need an exact match. U1-Q2 and U2-Q5 (Amazon audit opinion) use real, public financial statements rather than invented practice figures &#x2014; U1-Q2 has a "View Financial Statements" popup for each company so you can practice pulling the numbers yourself instead of having them handed to you.
+    </div>
+  </div>
+
+  <!-- ============ FILTERS ============ -->
+  <div class="wrap section" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Find a question</span>
+      <h2>Filter by unit or topic</h2>
+      <p class="text-soft">Pick a unit, a topic, or both &#x2014; the list below updates instantly.</p>
+    </div>
+
+    <div class="glossary-controls" style="margin-bottom:10px;">
+      <div class="chip-filter" role="group" aria-label="Filter by unit">
+        <button class="chip active" data-hw-unit="all">All Units</button>
+        <button class="chip" data-hw-unit="u1">Unit 1</button>
+        <button class="chip" data-hw-unit="u2">Unit 2</button>
+      </div>
+    </div>
+    <div class="glossary-controls">
+      <div class="chip-filter" role="group" aria-label="Filter by topic">
+        <button class="chip active" data-hw-topic="all">All Topics</button>
+        <button class="chip" data-hw-topic="ratios">Ratios</button>
+        <button class="chip" data-hw-topic="balance-sheet">Balance Sheet</button>
+        <button class="chip" data-hw-topic="statements">Statement Construction</button>
+        <button class="chip" data-hw-topic="equity">Stockholders' Equity</button>
+        <button class="chip" data-hw-topic="linkages">Linkages</button>
+        <button class="chip" data-hw-topic="audit">SEC &amp; Audit</button>
+      </div>
+    </div>
+    <div class="glossary-count" id="hw-filter-count"></div>
+  </div>
+
+  <!-- ============ QUESTIONS ============ -->
+  <div class="wrap section" style="padding-top:0;" id="hw-list">
+
+    <!-- U1-Q1 (orig Q2): Norfolk Southern ratios -->
+    <div class="hw-q" data-gradable="true" data-unit="u1" data-topic="ratios">
+      <h3><span class="hw-num">U1-Q1</span>Computing and Interpreting Financial Statement Ratios</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 1</span>
+      <p class="hw-prompt">Following are selected ratios of Norfolk Southern (practice figures).</p>
+      <table class="hw-table">
+        <tr><th>ROA Component</th><th>FY4</th><th>FY3</th></tr>
+        <tr><td class="hw-label">Profitability (Net income / Sales)</td><td>28.5%</td><td>31.0%</td></tr>
+        <tr><td class="hw-label">Productivity (Sales / Average assets)</td><td>0.42</td><td>0.36</td></tr>
+      </table>
+
+      <div class="hw-part-label">a. Was the company profitable in FY4?</div>
+      <select data-correct="Yes"><option value="">-- select --</option><option>Yes</option><option>No</option></select>
+
+      <div class="hw-part-label">b. In which year was the company more profitable?</div>
+      <select data-correct="FY3"><option value="">-- select --</option><option>FY4</option><option>FY3</option><option>Equally profitable</option></select>
+
+      <div class="hw-part-label">c. Is the change in productivity a positive or negative development?</div>
+      <select data-correct="Positive"><option value="">-- select --</option><option>Positive</option><option>Negative</option><option>Neutral / no change</option></select>
+
+      <div class="hw-part-label">d. Compute the company's ROA for both years (round to one decimal place).</div>
+      <div class="hw-inline">FY4: <input type="text" data-correct="12.0" data-tol="0.2"> %</div>
+      <div class="hw-inline">FY3: <input type="text" data-correct="11.2" data-tol="0.2"> %</div>
+
+      <div class="hw-part-label">e. Which best explains the change in ROA during FY4?</div>
+      <select data-correct="2. The company's profitability weakened, but its productivity improved.">
+        <option value="">-- select --</option>
+        <option>1. The company's profitability and productivity both improved.</option>
+        <option>2. The company's profitability weakened, but its productivity improved.</option>
+        <option>3. The company's profitability improved, but its productivity weakened.</option>
+        <option>4. The company's profitability and productivity both weakened.</option>
+      </select>
+
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>FY4 profitability is 28.5% &#x2014; positive net income means the company was profitable.</li>
+          <li>Profitability fell from 31.0% (FY3) to 28.5% (FY4), so FY3 was the more profitable year.</li>
+          <li>Productivity rose from 0.36 to 0.42 &#x2014; the company generates more sales per dollar of assets, which is a positive development.</li>
+          <li>ROA = Profitability &#x00d7; Productivity. FY4: 28.5% &#x00d7; 0.42 = 12.0%. FY3: 31.0% &#x00d7; 0.36 = 11.2%.</li>
+          <li>Profitability dropped (31.0%&#x2192;28.5%) while productivity rose (0.36&#x2192;0.42) &#x2014; that's option 2.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- U1-Q2: PepsiCo / The Coca-Cola Company real 2025 statements -->
+    <div class="hw-q" data-gradable="true" data-unit="u1" data-topic="ratios">
+      <h3><span class="hw-num">U1-Q2</span>Reading Real Filings: PepsiCo vs. The Coca-Cola Company</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 1</span>
+      <p class="hw-prompt">PepsiCo, Inc. and The Coca-Cola Company are the two largest beverage companies in the world. Using their actual fiscal year 2025 financial statements below, calculate ROA, Net Profit Margin, and Total Asset Turnover for each, and determine which company has the better ROA. Nothing is pre-filled &mdash; open each statement and pull the figures yourself, the same way you would for a real assignment.</p>
+
+      <button type="button" class="stmt-trigger" data-stmt-target="stmt-modal-pep"><span class="stmt-icon">&#128196;</span> View PepsiCo Financial Statements</button>
+      <button type="button" class="stmt-trigger" data-stmt-target="stmt-modal-coke"><span class="stmt-icon">&#128196;</span> View The Coca-Cola Company Financial Statements</button>
+
+      <div class="hw-part-label" style="margin-top:1.4em;">PepsiCo, Inc. (fiscal year ended December 27, 2025)</div>
+      <table class="hw-table">
+        <tr><td class="hw-label">Net Revenue</td><td>$<input type="text" data-correct="93925" data-tol="20"> M</td></tr>
+        <tr><td class="hw-label">Net Income Attributable to PepsiCo</td><td>$<input type="text" data-correct="8240" data-tol="10"> M</td></tr>
+        <tr><td class="hw-label">Total Assets, Dec 27, 2025</td><td>$<input type="text" data-correct="107399" data-tol="20"> M</td></tr>
+        <tr><td class="hw-label">Total Assets, Dec 28, 2024</td><td>$<input type="text" data-correct="99467" data-tol="20"> M</td></tr>
+        <tr><td class="hw-label">Average Total Assets</td><td>$<input type="text" data-correct="103433" data-tol="20"> M</td></tr>
+        <tr><td class="hw-label">ROA</td><td><input type="text" data-correct="8.0" data-tol="0.3"> %</td></tr>
+        <tr><td class="hw-label">Net Profit Margin</td><td><input type="text" data-correct="8.8" data-tol="0.3"> %</td></tr>
+        <tr><td class="hw-label">Total Asset Turnover</td><td><input type="text" data-correct="0.91" data-tol="0.05"> x</td></tr>
+      </table>
+
+      <div class="hw-part-label">The Coca-Cola Company (fiscal year ended December 31, 2025)</div>
+      <table class="hw-table">
+        <tr><td class="hw-label">Net Operating Revenues</td><td>$<input type="text" data-correct="47941" data-tol="20"> M</td></tr>
+        <tr><td class="hw-label">Net Income Attributable to Shareowners</td><td>$<input type="text" data-correct="13107" data-tol="10"> M</td></tr>
+        <tr><td class="hw-label">Total Assets, Dec 31, 2025</td><td>$<input type="text" data-correct="104816" data-tol="20"> M</td></tr>
+        <tr><td class="hw-label">Total Assets, Dec 31, 2024</td><td>$<input type="text" data-correct="100549" data-tol="20"> M</td></tr>
+        <tr><td class="hw-label">Average Total Assets</td><td>$<input type="text" data-correct="102682.5" data-tol="20"> M</td></tr>
+        <tr><td class="hw-label">ROA</td><td><input type="text" data-correct="12.8" data-tol="0.3"> %</td></tr>
+        <tr><td class="hw-label">Net Profit Margin</td><td><input type="text" data-correct="27.3" data-tol="0.4"> %</td></tr>
+        <tr><td class="hw-label">Total Asset Turnover</td><td><input type="text" data-correct="0.47" data-tol="0.03"> x</td></tr>
+      </table>
+
+      <div class="hw-part-label">Which company has the better ROA?</div>
+      <select data-correct="The Coca-Cola Company"><option value="">-- select --</option><option>PepsiCo</option><option>The Coca-Cola Company</option><option>They are essentially equal</option></select>
+
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>PepsiCo: Average Total Assets = (107,399 + 99,467) &#x00f7; 2 = 103,433. ROA = 8,240 &#x00f7; 103,433 &#x2248; 8.0%. Margin = 8,240 &#x00f7; 93,925 &#x2248; 8.8%. Turnover = 93,925 &#x00f7; 103,433 &#x2248; 0.91x. Check: 8.8% &#x00d7; 0.91 &#x2248; 8.0% &#x2713;</li>
+          <li>The Coca-Cola Company: Average Total Assets = (104,816 + 100,549) &#x00f7; 2 = 102,682.5. ROA = 13,107 &#x00f7; 102,682.5 &#x2248; 12.8%. Margin = 13,107 &#x00f7; 47,941 &#x2248; 27.3%. Turnover = 47,941 &#x00f7; 102,682.5 &#x2248; 0.47x. Check: 27.3% &#x00d7; 0.47 &#x2248; 12.8% &#x2713;</li>
+          <li>Coca-Cola's ROA (&#x2248;12.8%) beats PepsiCo's (&#x2248;8.0%) &#x2014; and notice <em>how</em> it gets there: Coca-Cola's margin (27.3%) is more than triple PepsiCo's (8.8%), while its turnover (0.47x) is roughly half of PepsiCo's (0.91x). This reflects a real business-model difference: Coca-Cola is largely a concentrate/syrup licensor, pushing most of the capital-intensive bottling and distribution work (and its thinner margins) onto independent and partially-owned bottlers. PepsiCo owns much more of its own manufacturing and distribution directly (including Frito-Lay, Quaker, and Gatorade), which adds revenue and asset turnover but compresses margin.</li>
+          <li>This is the same margin-vs-turnover tradeoff from the DuPont decomposition on the main Unit 1 page &mdash; two very different paths to a ROA advantage.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- PepsiCo statement modal -->
+    <div class="stmt-modal-overlay" id="stmt-modal-pep">
+      <div class="stmt-modal" role="dialog" aria-modal="true" aria-label="PepsiCo financial statements">
+        <div class="stmt-modal-header">
+          <h3>PepsiCo, Inc. &mdash; FY2025 Statements</h3>
+          <button type="button" class="stmt-modal-close" aria-label="Close">&#10005;</button>
+        </div>
+        <div class="stmt-modal-body">
+          <div class="stmt-modal-source">Source: PepsiCo Inc. 10-K, filed with the SEC (CIK 0000077476). Figures in $ millions except per-share data.</div>
+
+          <h4>Consolidated Statement of Income</h4>
+          <table class="stmt-table">
+            <thead><tr><th>12 Months Ended</th><th>Dec 27, 2025</th><th>Dec 28, 2024</th></tr></thead>
+            <tbody>
+              <tr><td>Net Revenue</td><td>$93,925</td><td>$91,854</td></tr>
+              <tr><td>Cost of sales</td><td>43,066</td><td>41,744</td></tr>
+              <tr class="stmt-subtotal"><td>Gross profit</td><td>50,859</td><td>50,110</td></tr>
+              <tr><td>Selling, general &amp; administrative expenses</td><td>37,368</td><td>37,190</td></tr>
+              <tr><td>Impairment of intangible assets</td><td>1,993</td><td>33</td></tr>
+              <tr class="stmt-subtotal"><td>Operating Profit</td><td>11,498</td><td>12,887</td></tr>
+              <tr><td>Other pension &amp; retiree medical (expense)/income</td><td>(133)</td><td>(22)</td></tr>
+              <tr><td>Net interest expense and other</td><td>(1,121)</td><td>(919)</td></tr>
+              <tr class="stmt-subtotal"><td>Income before income taxes</td><td>10,244</td><td>11,946</td></tr>
+              <tr><td>Provision for income taxes</td><td>1,949</td><td>2,320</td></tr>
+              <tr><td>Net income</td><td>8,295</td><td>9,626</td></tr>
+              <tr><td>Less: net income attributable to noncontrolling interests</td><td>55</td><td>48</td></tr>
+              <tr class="stmt-total"><td>Net Income Attributable to PepsiCo</td><td>$8,240</td><td>$9,578</td></tr>
+            </tbody>
+          </table>
+
+          <h4>Consolidated Balance Sheet (selected lines)</h4>
+          <table class="stmt-table">
+            <thead><tr><th></th><th>Dec 27, 2025</th><th>Dec 28, 2024</th></tr></thead>
+            <tbody>
+              <tr><td>Cash and cash equivalents</td><td>$9,159</td><td>$8,505</td></tr>
+              <tr><td>Total current assets</td><td>27,949</td><td>25,826</td></tr>
+              <tr><td>Property, plant &amp; equipment, net</td><td>29,905</td><td>28,008</td></tr>
+              <tr><td>Goodwill</td><td>18,916</td><td>17,534</td></tr>
+              <tr class="stmt-total"><td>Total Assets</td><td>$107,399</td><td>$99,467</td></tr>
+              <tr><td>Total current liabilities</td><td>32,764</td><td>31,536</td></tr>
+              <tr><td>Long-term debt obligations</td><td>42,321</td><td>37,224</td></tr>
+              <tr class="stmt-subtotal"><td>Total Liabilities</td><td>86,852</td><td>81,296</td></tr>
+              <tr><td>Stockholders' equity attributable to parent</td><td>20,406</td><td>18,041</td></tr>
+              <tr><td>Stockholders' equity attributable to noncontrolling interest</td><td>141</td><td>130</td></tr>
+              <tr class="stmt-subtotal"><td>Total Equity</td><td>20,547</td><td>18,171</td></tr>
+              <tr class="stmt-total"><td>Liabilities and Equity</td><td>$107,399</td><td>$99,467</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- The Coca-Cola Company statement modal -->
+    <div class="stmt-modal-overlay" id="stmt-modal-coke">
+      <div class="stmt-modal" role="dialog" aria-modal="true" aria-label="The Coca-Cola Company financial statements">
+        <div class="stmt-modal-header">
+          <h3>The Coca-Cola Company &mdash; FY2025 Statements</h3>
+          <button type="button" class="stmt-modal-close" aria-label="Close">&#10005;</button>
+        </div>
+        <div class="stmt-modal-body">
+          <div class="stmt-modal-source">Source: The Coca-Cola Company and Subsidiaries 10-K (Item 8, Financial Statements). Figures in $ millions except per-share data.</div>
+
+          <h4>Consolidated Statements of Income</h4>
+          <table class="stmt-table">
+            <thead><tr><th>Year Ended Dec 31</th><th>2025</th><th>2024</th></tr></thead>
+            <tbody>
+              <tr><td>Net Operating Revenues</td><td>$47,941</td><td>$47,061</td></tr>
+              <tr><td>Cost of goods sold</td><td>18,397</td><td>18,324</td></tr>
+              <tr class="stmt-subtotal"><td>Gross Profit</td><td>29,544</td><td>28,737</td></tr>
+              <tr><td>Selling, general &amp; administrative expenses</td><td>14,521</td><td>14,582</td></tr>
+              <tr><td>Other operating charges</td><td>1,261</td><td>4,163</td></tr>
+              <tr class="stmt-subtotal"><td>Operating Income</td><td>13,762</td><td>9,992</td></tr>
+              <tr><td>Interest income</td><td>786</td><td>988</td></tr>
+              <tr><td>Interest expense</td><td>1,654</td><td>1,656</td></tr>
+              <tr><td>Equity income &mdash; net</td><td>2,031</td><td>1,770</td></tr>
+              <tr><td>Other income (loss) &mdash; net</td><td>1,073</td><td>1,992</td></tr>
+              <tr class="stmt-subtotal"><td>Income Before Income Taxes</td><td>15,998</td><td>13,086</td></tr>
+              <tr><td>Income taxes</td><td>2,861</td><td>2,437</td></tr>
+              <tr><td>Consolidated Net Income</td><td>13,137</td><td>10,649</td></tr>
+              <tr><td>Less: net income attributable to noncontrolling interests</td><td>30</td><td>18</td></tr>
+              <tr class="stmt-total"><td>Net Income Attributable to Shareowners</td><td>$13,107</td><td>$10,631</td></tr>
+            </tbody>
+          </table>
+
+          <h4>Consolidated Balance Sheets (selected lines)</h4>
+          <table class="stmt-table">
+            <thead><tr><th></th><th>Dec 31, 2025</th><th>Dec 31, 2024</th></tr></thead>
+            <tbody>
+              <tr><td>Cash and cash equivalents</td><td>$10,270</td><td>$10,828</td></tr>
+              <tr><td>Total Current Assets</td><td>31,044</td><td>25,997</td></tr>
+              <tr><td>Equity method investments</td><td>20,235</td><td>18,087</td></tr>
+              <tr><td>Property, plant &amp; equipment &mdash; net</td><td>9,613</td><td>10,303</td></tr>
+              <tr><td>Goodwill</td><td>15,491</td><td>18,139</td></tr>
+              <tr class="stmt-total"><td>Total Assets</td><td>$104,816</td><td>$100,549</td></tr>
+              <tr><td>Total Current Liabilities</td><td>21,281</td><td>25,249</td></tr>
+              <tr><td>Long-term debt</td><td>42,119</td><td>42,375</td></tr>
+              <tr><td>Equity Attributable to Shareowners</td><td>32,169</td><td>24,856</td></tr>
+              <tr><td>Equity attributable to noncontrolling interests</td><td>2,106</td><td>1,516</td></tr>
+              <tr class="stmt-subtotal"><td>Total Equity</td><td>34,275</td><td>26,372</td></tr>
+              <tr class="stmt-total"><td>Total Liabilities and Equity</td><td>$104,816</td><td>$100,549</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- U2-Q1 (orig Q1): AMD / Intel accounting equation -->
+    <div class="hw-q" data-gradable="true" data-unit="u2" data-topic="balance-sheet">
+      <h3><span class="hw-num">U2-Q1</span>Applying the Accounting Equation and Assessing Financial Statement Linkages</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 2</span>
+      <p class="hw-prompt">The following information is available for AMD and Intel for a recent fiscal year (practice figures).<br>
+      &#x2022; AMD's assets increased by $650 million and its liabilities increased by $210 million.<br>
+      &#x2022; Intel's assets increased by $3,200 million and its liabilities decreased by $540 million.</p>
+
+      <div class="hw-part-label">a. Complete the table.</div>
+      <table class="hw-table">
+        <tr><th></th><th>Assets, beg.</th><th>Assets, end</th><th>Liabilities, beg.</th><th>Liabilities, end</th><th>Stockholders' Equity, end</th></tr>
+        <tr>
+          <td class="hw-label">AMD</td>
+          <td>$2,900</td><td><input type="text" data-correct="3550" data-tol="1"></td>
+          <td>$2,400</td><td><input type="text" data-correct="2610" data-tol="1"></td>
+          <td><input type="text" data-correct="940" data-tol="1"></td>
+        </tr>
+        <tr>
+          <td class="hw-label">Intel</td>
+          <td>$95,000</td><td><input type="text" data-correct="98200" data-tol="1"></td>
+          <td>$41,000</td><td><input type="text" data-correct="40460" data-tol="1"></td>
+          <td><input type="text" data-correct="57740" data-tol="1"></td>
+        </tr>
+      </table>
+
+      <div class="hw-part-label">b. Calculate average assets for each company.</div>
+      <div class="hw-inline">AMD: <input type="text" data-correct="3225" data-tol="1"></div>
+      <div class="hw-inline">Intel: <input type="text" data-correct="96600" data-tol="1"></div>
+
+      <div class="hw-part-label">c. Which company has the larger proportion of its assets financed by the company's owners at year-end?</div>
+      <select data-correct="Intel"><option value="">-- select --</option><option>AMD</option><option>Intel</option><option>They are equal</option><option>Cannot be determined from the data given</option></select>
+
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>Ending assets = beginning assets + change. AMD: 2,900 + 650 = 3,550. Intel: 95,000 + 3,200 = 98,200.</li>
+          <li>Ending liabilities = beginning liabilities + change. AMD: 2,400 + 210 = 2,610. Intel: 41,000 &#x2212; 540 = 40,460.</li>
+          <li>Stockholders' equity = Assets &#x2212; Liabilities. AMD: 3,550 &#x2212; 2,610 = 940. Intel: 98,200 &#x2212; 40,460 = 57,740.</li>
+          <li>Average assets = (beginning + ending) &#x00f7; 2. AMD: (2,900+3,550)/2 = 3,225. Intel: (95,000+98,200)/2 = 96,600.</li>
+          <li>Owner-financed proportion = Equity &#x00f7; Assets. AMD: 940/3,550 &#x2248; 26.5%. Intel: 57,740/98,200 &#x2248; 58.8%. Intel is higher.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- U2-Q2 (orig Q3): TechMart balance sheet equation -->
+    <div class="hw-q" data-gradable="true" data-unit="u2" data-topic="balance-sheet">
+      <h3><span class="hw-num">U2-Q2</span>Balance Sheet Equation and Financing Sources</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 2</span>
+      <p class="hw-prompt">TechMart's recent financial statements, dated January 28, report total assets of $9,150 million and total liabilities of $8,400 million (practice figures).</p>
+
+      <div class="hw-part-label">a. Why might TechMart have chosen January 28 as a year-end date?</div>
+      <select data-correct="To capture the full effect of the holiday shopping season before closing the books">
+        <option value="">-- select --</option>
+        <option>To close the books before the holiday shopping season begins</option>
+        <option>To capture the full effect of the holiday shopping season before closing the books</option>
+        <option>Because it is required by federal law for all retailers</option>
+        <option>All of these options are correct</option>
+      </select>
+
+      <div class="hw-part-label">b. What is the amount of TechMart's equity at January 28?</div>
+      <div class="hw-inline">$<input type="text" data-correct="750" data-tol="1"></div>
+
+      <div class="hw-part-label">c. Does TechMart receive more financing from its owners or nonowners?</div>
+      <select data-correct="Nonowners"><option value="">-- select --</option><option>Owners</option><option>Nonowners</option><option>Equal financing from both</option></select>
+
+      <div class="hw-part-label">d. What percentage of financing is provided by TechMart's nonowners? (one decimal place)</div>
+      <div class="hw-inline"><input type="text" data-correct="91.8" data-tol="0.2"> %</div>
+
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>Retailers often pick a fiscal year-end shortly after the holidays so the full holiday sales season is captured before the books close for the year.</li>
+          <li>Equity = Total Assets &#x2212; Total Liabilities = 9,150 &#x2212; 8,400 = 750.</li>
+          <li>Liabilities (8,400) are far larger than equity (750), so nonowners provide most of the financing.</li>
+          <li>Nonowner % = Liabilities &#x00f7; Assets = 8,400 / 9,150 &#x2248; 91.8%.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- U2-Q3 (orig Q5): General Mills -->
+    <div class="hw-q" data-gradable="true" data-unit="u2" data-topic="statements">
+      <h3><span class="hw-num">U2-Q3</span>Formulating Financial Statements from Raw Data and Calculating Ratios</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 2</span>
+      <p class="hw-prompt">Selected financial information from General Mills Inc. for a recent fiscal year ($ millions) &#x2014; practice figures.</p>
+      <div class="hw-given">
+        <div>Cost of goods sold (COGS): $27,500.0 &nbsp;|&nbsp; Cash from operating activities: $7,200.0</div>
+        <div>Cash for investing activities: ($3,600.0) &nbsp;|&nbsp; Noncash assets, end of year: $68,000.0</div>
+        <div>Cash, end of year: $1,250.0 &nbsp;|&nbsp; Cash for financing activities: ($5,700.0)</div>
+        <div>Income tax expense: $1,280.0 &nbsp;|&nbsp; Total assets, beginning of year: $70,000.0</div>
+        <div>Revenue: $41,500.0 &nbsp;|&nbsp; Total liabilities, end of year: $44,500.0</div>
+        <div>Total expenses, other than COGS and income tax: $6,800.0 &nbsp;|&nbsp; Stockholders' equity, end of year: $24,750.0</div>
+      </div>
+
+      <div class="hw-part-label">a. Income Statement</div>
+      <table class="hw-table">
+        <tr><td class="hw-label">Revenue</td><td><input type="text" data-correct="41500" data-tol="5"></td></tr>
+        <tr><td class="hw-label">Cost of goods sold</td><td><input type="text" data-correct="27500" data-tol="5"></td></tr>
+        <tr><td class="hw-label">Other expenses</td><td><input type="text" data-correct="6800" data-tol="5"></td></tr>
+        <tr><td class="hw-label">Income tax expense</td><td><input type="text" data-correct="1280" data-tol="5"></td></tr>
+        <tr><td class="hw-label">Net income</td><td><input type="text" data-correct="5920" data-tol="5"></td></tr>
+      </table>
+
+      <div class="hw-part-label">b. Balance Sheet (end of year)</div>
+      <table class="hw-table">
+        <tr><td class="hw-label">Cash</td><td><input type="text" data-correct="1250" data-tol="5"></td></tr>
+        <tr><td class="hw-label">Noncash assets</td><td><input type="text" data-correct="68000" data-tol="5"></td></tr>
+        <tr><td class="hw-label">Total assets</td><td><input type="text" data-correct="69250" data-tol="5"></td></tr>
+        <tr><td class="hw-label">Total liabilities</td><td><input type="text" data-correct="44500" data-tol="5"></td></tr>
+        <tr><td class="hw-label">Stockholders' equity</td><td><input type="text" data-correct="24750" data-tol="5"></td></tr>
+        <tr><td class="hw-label">Total liabilities and equity</td><td><input type="text" data-correct="69250" data-tol="5"></td></tr>
+      </table>
+
+      <div class="hw-part-label">c. Statement of Cash Flows (use negative signs for decreases in cash)</div>
+      <table class="hw-table">
+        <tr><td class="hw-label">Cash from operating activities</td><td><input type="text" data-correct="7200" data-tol="5"></td></tr>
+        <tr><td class="hw-label">Cash for investing activities</td><td><input type="text" data-correct="-3600" data-tol="5"></td></tr>
+        <tr><td class="hw-label">Cash for financing activities</td><td><input type="text" data-correct="-5700" data-tol="5"></td></tr>
+      </table>
+
+      <div class="hw-part-label">d. Ratios (round intermediate calcs to one decimal place)</div>
+      <table class="hw-table">
+        <tr><th></th><th>Numerator</th><th></th><th>Denominator</th><th></th><th>Result</th></tr>
+        <tr><td class="hw-label">ROA</td><td><input type="text" data-correct="5920" data-tol="5"></td><td>/</td><td><input type="text" data-correct="69625" data-tol="10"></td><td>=</td><td><input type="text" data-correct="8.5" data-tol="0.3">%</td></tr>
+        <tr><td class="hw-label">Profit margin</td><td><input type="text" data-correct="5920" data-tol="5"></td><td>/</td><td><input type="text" data-correct="41500" data-tol="5"></td><td>=</td><td><input type="text" data-correct="14.3" data-tol="0.3">%</td></tr>
+        <tr><td class="hw-label">Asset turnover</td><td><input type="text" data-correct="41500" data-tol="5"></td><td>/</td><td><input type="text" data-correct="69625" data-tol="10"></td><td>=</td><td><input type="text" data-correct="0.6" data-tol="0.05"></td></tr>
+      </table>
+
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>Net income = Revenue &#x2212; COGS &#x2212; Other expenses &#x2212; Income tax = 41,500 &#x2212; 27,500 &#x2212; 6,800 &#x2212; 1,280 = 5,920.</li>
+          <li>Total assets = Cash + Noncash assets = 1,250 + 68,000 = 69,250. This should equal Total liabilities + Equity = 44,500 + 24,750 = 69,250 &#x2014; a good check that the balance sheet balances.</li>
+          <li>Statement of cash flows figures are given directly from the data &#x2014; just place them under the right heading, with parentheses/negatives for cash outflows.</li>
+          <li>Average total assets = (Beginning + Ending) &#x00f7; 2 = (70,000 + 69,250) &#x00f7; 2 = 69,625.</li>
+          <li>ROA = Net income &#x00f7; Average assets = 5,920 / 69,625 &#x2248; 8.5%. Profit margin = Net income &#x00f7; Revenue = 5,920 / 41,500 &#x2248; 14.3%. Asset turnover = Revenue &#x00f7; Average assets = 41,500 / 69,625 &#x2248; 0.6.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- U2-Q4 (orig Q6): Crocker stockholders' equity -->
+    <div class="hw-q" data-gradable="true" data-unit="u2" data-topic="equity">
+      <h3><span class="hw-num">U2-Q4</span>Formulating a Statement of Stockholders' Equity from Raw Data</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 2</span>
+      <p class="hw-prompt">Crocker Corporation began its most recent fiscal year with stockholders' equity of $250,000, consisting of contributed capital of $190,000 and retained earnings of $60,000. During the year, it issued additional stock for cash proceeds of $50,000, reported net income of $85,000, and paid $40,000 in cash dividends. (Practice figures.)</p>
+      <table class="hw-table">
+        <tr><th></th><th>Contributed Capital</th><th>Retained Earnings</th><th>Stockholders' Equity</th></tr>
+        <tr><td class="hw-label">Start of year</td><td><input type="text" data-correct="190000" data-tol="5"></td><td><input type="text" data-correct="60000" data-tol="5"></td><td><input type="text" data-correct="250000" data-tol="5"></td></tr>
+        <tr><td class="hw-label">Issuance of common stock</td><td><input type="text" data-correct="50000" data-tol="5"></td><td><input type="text" data-correct="0" data-tol="1"></td><td><input type="text" data-correct="50000" data-tol="5"></td></tr>
+        <tr><td class="hw-label">Net income</td><td><input type="text" data-correct="0" data-tol="1"></td><td><input type="text" data-correct="85000" data-tol="5"></td><td><input type="text" data-correct="85000" data-tol="5"></td></tr>
+        <tr><td class="hw-label">Cash dividends</td><td><input type="text" data-correct="0" data-tol="1"></td><td><input type="text" data-correct="-40000" data-tol="5"></td><td><input type="text" data-correct="-40000" data-tol="5"></td></tr>
+        <tr><td class="hw-label">End of year</td><td><input type="text" data-correct="240000" data-tol="5"></td><td><input type="text" data-correct="105000" data-tol="5"></td><td><input type="text" data-correct="345000" data-tol="5"></td></tr>
+      </table>
+
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>Each row updates the running total: Contributed Capital only changes from stock issuance; Retained Earnings only changes from net income and dividends.</li>
+          <li>Issuance of stock: +50,000 to Contributed Capital, no effect on Retained Earnings.</li>
+          <li>Net income: +85,000 to Retained Earnings, no effect on Contributed Capital.</li>
+          <li>Cash dividends: &#x2212;40,000 to Retained Earnings (a distribution, not an expense).</li>
+          <li>End of year Contributed Capital = 190,000+50,000 = 240,000. End of year Retained Earnings = 60,000+85,000&#x2212;40,000 = 105,000. Total equity = 240,000+105,000 = 345,000.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- U2-Q5: Amazon audit opinion -->
+    <div class="hw-q" data-gradable="true" data-unit="u2" data-topic="audit">
+      <h3><span class="hw-num">U2-Q5</span>Reading and Interpreting Audit Opinions</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 2</span>
+      <p class="hw-prompt">Amazon.com, Inc.'s financial statements include the following audit report (real report, unchanged).</p>
+      <div class="hw-audit">The Board of Directors and Shareholders
+Amazon.com, Inc.
+
+Opinion on the Financial Statements
+We have audited the accompanying consolidated balance sheets of Amazon.com, Inc. (the Company) as of December 31, 2025 and 2024, the related consolidated statements of operations, comprehensive income, stockholders' equity, and cash flows for each of the three years in the period ended December 31, 2025, and the related notes (collectively referred to as the "consolidated financial statements"). In our opinion, the consolidated financial statements present fairly, in all material respects, the financial position of the Company at December 31, 2025 and 2024, and the results of its operations and its cash flows for each of the three years in the period ended December 31, 2025, in conformity with U.S. generally accepted accounting principles.
+
+We also have audited, in accordance with the standards of the Public Company Accounting Oversight Board (United States) (PCAOB), the Company's internal control over financial reporting as of December 31, 2025, based on criteria established in Internal Control-Integrated Framework issued by the Committee of Sponsoring Organizations of the Treadway Commission (2013 framework) and our report dated February 5, 2026 expressed an unqualified opinion thereon.</div>
+
+      <div class="hw-part-label">a. To whom is the audit report addressed?</div>
+      <select data-correct="The Board of Directors and Shareholders of Amazon.com, Inc.">
+        <option value="">-- select --</option>
+        <option>The Board of Directors and Shareholders of Amazon.com, Inc.</option>
+        <option>The Securities and Exchange Commission</option>
+        <option>The company's management team</option>
+        <option>The PCAOB</option>
+      </select>
+
+      <div class="hw-part-label">b. True or False for each statement:</div>
+      <table class="hw-table">
+        <tr><td class="hw-label" style="text-align:left;">1. Auditors express an opinion on whether the statements present fairly and are free from material misstatement</td>
+          <td><select data-correct="True"><option value="">--</option><option>True</option><option>False</option></select></td></tr>
+        <tr><td class="hw-label" style="text-align:left;">2. Auditors express an opinion that there was no fraudulent activity at the company</td>
+          <td><select data-correct="False"><option value="">--</option><option>True</option><option>False</option></select></td></tr>
+        <tr><td class="hw-label" style="text-align:left;">3. Auditors' opinion is that there are no misstatements in the related notes</td>
+          <td><select data-correct="False"><option value="">--</option><option>True</option><option>False</option></select></td></tr>
+        <tr><td class="hw-label" style="text-align:left;">4. Auditors separately audited internal controls over financial reporting</td>
+          <td><select data-correct="True"><option value="">--</option><option>True</option><option>False</option></select></td></tr>
+        <tr><td class="hw-label" style="text-align:left;">5. Auditors examined most of the company's financial transactions individually to ensure they were accurate</td>
+          <td><select data-correct="False"><option value="">--</option><option>True</option><option>False</option></select></td></tr>
+      </table>
+
+      <div class="hw-part-label">c. What sort of opinion did the auditor provide on the effectiveness of internal control over financial reporting?</div>
+      <select data-correct="Unqualified"><option value="">-- select --</option><option>Qualified</option><option>Unqualified</option><option>Adverse</option></select>
+
+      <div class="hw-part-label">d. Which best describes the scope of the two opinions in the report?</div>
+      <select data-correct="One opinion covers the fairness of the financial statements; the other covers the effectiveness of internal controls">
+        <option value="">-- select --</option>
+        <option>One opinion covers the fairness of the financial statements; the other covers the effectiveness of internal controls</option>
+        <option>Both opinions cover the same scope: the fairness of the financial statements</option>
+        <option>One opinion covers fraud detection; the other covers financial statement fairness</option>
+        <option>Both opinions cover only the internal controls, at two different dates</option>
+      </select>
+
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>The greeting line of the report names exactly who it's addressed to &#x2014; read the first line: "The Board of Directors and Shareholders, Amazon.com, Inc."</li>
+          <li>Audits assess fair presentation and material misstatement, not fraud detection or line-by-line transaction verification &#x2014; that's why statements 2, 3, and 5 are false, and 1 and 4 are true (a separate internal-controls opinion is explicitly mentioned in the second paragraph).</li>
+          <li>The report says the internal controls opinion was "unqualified" &#x2014; stated directly in the last sentence ("expressed an unqualified opinion thereon"). Worth noting: this is a genuinely clean bill of health on controls, unlike some companies (e.g., newer public companies) that sometimes receive an adverse ICFR opinion while still getting a clean opinion on the financial statements themselves.</li>
+          <li>The report contains two distinct opinions: one on the fairness of the financial statements (first paragraph), one on internal control effectiveness (second paragraph) &#x2014; they are not the same scope, even though both came back clean here.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- U2-Q6 (orig Q8): Baiman construct statements -->
+    <div class="hw-q" data-gradable="true" data-unit="u2" data-topic="statements">
+      <h3><span class="hw-num">U2-Q6</span>Construct Financial Statements from Transaction Data</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 2</span>
+      <p class="hw-prompt">Baiman Corporation commences operations at the beginning of January. It provides services on credit and bills customers $150,000 for January sales, unpaid at month-end. Employees earn January wages of $42,000, not paid until February 1. Complete the month-end statements. (Practice figures &#x2014; no negative signs except for net loss/negative retained earnings.)</p>
+
+      <div class="hw-part-label">Income Statement</div>
+      <table class="hw-table">
+        <tr><td class="hw-label">Sales</td><td><input type="text" data-correct="150000" data-tol="5"></td></tr>
+        <tr><td class="hw-label">Wages expense</td><td><input type="text" data-correct="42000" data-tol="5"></td></tr>
+        <tr><td class="hw-label">Net income (loss)</td><td><input type="text" data-correct="108000" data-tol="5"></td></tr>
+      </table>
+
+      <div class="hw-part-label">Balance Sheet</div>
+      <table class="hw-table">
+        <tr><td class="hw-label">Cash</td><td><input type="text" data-correct="0" data-tol="1"></td></tr>
+        <tr><td class="hw-label">Accounts receivable</td><td><input type="text" data-correct="150000" data-tol="5"></td></tr>
+        <tr><td class="hw-label">Total assets</td><td><input type="text" data-correct="150000" data-tol="5"></td></tr>
+        <tr><td class="hw-label">Wages payable</td><td><input type="text" data-correct="42000" data-tol="5"></td></tr>
+        <tr><td class="hw-label">Retained earnings</td><td><input type="text" data-correct="108000" data-tol="5"></td></tr>
+        <tr><td class="hw-label">Total liabilities and equity</td><td><input type="text" data-correct="150000" data-tol="5"></td></tr>
+      </table>
+
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>Sales are billed but unpaid &#x2014; revenue is still recognized under accrual accounting (150,000), but no cash changes hands, so it becomes Accounts Receivable rather than Cash.</li>
+          <li>Wages are earned but unpaid &#x2014; the expense is recognized (42,000) but creates a liability, Wages Payable, rather than reducing Cash.</li>
+          <li>Net income = Sales &#x2212; Wages expense = 150,000 &#x2212; 42,000 = 108,000. With no beginning balance, Retained Earnings = Net income = 108,000.</li>
+          <li>No cash transactions occurred at all this month, so Cash = 0. Total assets = Cash + AR = 0 + 150,000 = 150,000, which equals Wages payable + Retained earnings = 42,000 + 108,000 = 150,000.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- U2-Q7 (orig Q9): transaction linkages grid -->
+    <div class="hw-q" data-gradable="true" data-unit="u2" data-topic="linkages">
+      <h3><span class="hw-num">U2-Q7</span>Applying Financial Statement Linkages to Understand Transactions</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 2</span>
+      <p class="hw-prompt">For each transaction (a&#x2013;g), select <strong>+</strong> for an increase, <strong>&#x2212;</strong> for a decrease, or <strong>n/a</strong> if the line item isn't affected.<br>
+      a. Issued common stock for cash and property &amp; equipment &nbsp;
+      b. Paid cash for rent of office furnishings/facilities &nbsp;
+      c. Performed services, received cash immediately &nbsp;
+      d. Performed services, billed client (due in 60 days) &nbsp;
+      e. Paid cash salary to an employee &nbsp;
+      f. Received partial cash payment on the receivable from (d) &nbsp;
+      g. Paid cash dividends</p>
+
+      <table class="hw-table" id="hw-q7-table"></table>
+
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li><strong>Balance Sheet:</strong> Cash moves with every cash transaction (a in part, b, c, e, f cash-in, g). Noncash assets move when property or receivables change (a's property portion, d's new receivable, f's receivable collected). Contributed capital only moves with stock issuance (a). Retained earnings moves with anything hitting net income (b, c, d, e) or dividends (g) &#x2014; not with pure asset swaps like (f).</li>
+          <li><strong>Cash flow statement:</strong> Only cash transactions show up. Financing CF: the cash portion of the stock issuance (a) and the dividend (g). Operating CF: cash rent (b), cash service revenue (c), cash salary (e), and the cash collected on the receivable (f). Investing CF is untouched here &#x2014; the property in (a) was acquired via stock, not cash, so it's a noncash transaction.</li>
+          <li><strong>Income statement:</strong> Revenue is recognized when services are performed (c and d), regardless of when cash arrives &#x2014; that's why (f), which is just collecting cash on an existing receivable, has no income statement effect. Expenses hit when incurred (b, e), reducing net income.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- U2-Q8 (orig Q10): Best Buy accounts -->
+    <div class="hw-q" data-gradable="true" data-unit="u2" data-topic="balance-sheet">
+      <h3><span class="hw-num">U2-Q8</span>Identify and Classify Balance Sheet and Income Statement Accounts</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 2</span>
+      <p class="hw-prompt">Selected accounts for Best Buy Inc. for a recent fiscal year (practice figures).</p>
+
+      <div class="hw-part-label">a. Classify each as Balance Sheet (B) or Income Statement (I).</div>
+      <table class="hw-table">
+        <tr><th>$ millions</th><th>Amount</th><th>Classification</th></tr>
+        <tr><td class="hw-label">Sales</td><td>$40,200</td><td><select data-correct="I"><option value="">--</option><option>B</option><option>I</option></select></td></tr>
+        <tr><td class="hw-label">Accumulated depreciation</td><td>$6,300</td><td><select data-correct="B"><option value="">--</option><option>B</option><option>I</option></select></td></tr>
+        <tr><td class="hw-label">Depreciation expense</td><td>$720</td><td><select data-correct="I"><option value="">--</option><option>B</option><option>I</option></select></td></tr>
+        <tr><td class="hw-label">Retained earnings</td><td>$2,850</td><td><select data-correct="B"><option value="">--</option><option>B</option><option>I</option></select></td></tr>
+        <tr><td class="hw-label">Net income</td><td>$1,420</td><td><select data-correct="I"><option value="">--</option><option>B</option><option>I</option></select></td></tr>
+        <tr><td class="hw-label">Property, plant, and equipment, net</td><td>$2,400</td><td><select data-correct="B"><option value="">--</option><option>B</option><option>I</option></select></td></tr>
+        <tr><td class="hw-label">Selling, general, and administrative expense</td><td>$7,500</td><td><select data-correct="I"><option value="">--</option><option>B</option><option>I</option></select></td></tr>
+        <tr><td class="hw-label">Accounts receivable</td><td>$960</td><td><select data-correct="B"><option value="">--</option><option>B</option><option>I</option></select></td></tr>
+        <tr><td class="hw-label">Total liabilities</td><td>$9,000</td><td><select data-correct="B"><option value="">--</option><option>B</option><option>I</option></select></td></tr>
+        <tr><td class="hw-label">Total stockholders' equity</td><td>$3,100</td><td><select data-correct="B"><option value="">--</option><option>B</option><option>I</option></select></td></tr>
+      </table>
+
+      <div class="hw-part-label">b. Compute total assets and total expenses (no negative signs).</div>
+      <div class="hw-inline">Total Assets: $<input type="text" data-correct="12100" data-tol="10"></div>
+      <div class="hw-inline">Total Expenses: $<input type="text" data-correct="38780" data-tol="10"></div>
+
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>Balance sheet accounts are point-in-time balances (assets, liabilities, equity); income statement accounts are period activity (revenues, expenses). Retained earnings is a balance-sheet equity account even though it's built from net income over time.</li>
+          <li>Total Assets = Total Liabilities + Total Stockholders' Equity = 9,000 + 3,100 = 12,100 (the accounting equation, since assets weren't given directly).</li>
+          <li>Total Expenses = Sales &#x2212; Net income = 40,200 &#x2212; 1,420 = 38,780 (assuming no other income/losses).</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- U2-Q9 (orig Q11): 3M balance sheet -->
+    <div class="hw-q" data-gradable="true" data-unit="u2" data-topic="balance-sheet">
+      <h3><span class="hw-num">U2-Q9</span>Construct and Analyze Balance Sheet Amounts from Incomplete Data</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 2</span>
+      <p class="hw-prompt">Selected balance sheet amounts for 3M Company across three recent years (practice figures).</p>
+
+      <div class="hw-part-label">a. Compute the missing amounts.</div>
+      <table class="hw-table">
+        <tr><th>$ millions</th><th>Current Assets</th><th>Long-Term Assets</th><th>Total Assets</th><th>Current Liab.</th><th>LT Liab.</th><th>Total Liab.</th><th>Stockholders' Equity</th></tr>
+        <tr><td class="hw-label">FY1</td><td>$25,200</td><td><input type="text" data-correct="58300" data-tol="10"></td><td>$83,500</td><td><input type="text" data-correct="14500" data-tol="10"></td><td>$46,000</td><td>$60,500</td><td>$23,000</td></tr>
+        <tr><td class="hw-label">FY2</td><td>$27,000</td><td>$56,000</td><td><input type="text" data-correct="83000" data-tol="10"></td><td>$15,800</td><td>$40,500</td><td><input type="text" data-correct="56300" data-tol="10"></td><td>$26,700</td></tr>
+        <tr><td class="hw-label">FY3</td><td><input type="text" data-correct="25800" data-tol="10"></td><td>$56,800</td><td>$82,600</td><td>$16,900</td><td>$39,200</td><td>$56,100</td><td><input type="text" data-correct="26500" data-tol="10"></td></tr>
+      </table>
+
+      <div class="hw-part-label">b. Would each of the following be included in 3M's current assets?</div>
+      <table class="hw-table">
+        <tr><th>Item</th><th>Included?</th></tr>
+        <tr><td class="hw-label">Cash and cash equivalents</td><td><select data-correct="Yes"><option value="">--</option><option>Yes</option><option>No</option></select></td></tr>
+        <tr><td class="hw-label">Property, plant &amp; equipment</td><td><select data-correct="No"><option value="">--</option><option>Yes</option><option>No</option></select></td></tr>
+        <tr><td class="hw-label">Inventory</td><td><select data-correct="Yes"><option value="">--</option><option>Yes</option><option>No</option></select></td></tr>
+        <tr><td class="hw-label">Accounts payable</td><td><select data-correct="No"><option value="">--</option><option>Yes</option><option>No</option></select></td></tr>
+        <tr><td class="hw-label">Marketable securities</td><td><select data-correct="Yes"><option value="">--</option><option>Yes</option><option>No</option></select></td></tr>
+        <tr><td class="hw-label">Goodwill</td><td><select data-correct="No"><option value="">--</option><option>Yes</option><option>No</option></select></td></tr>
+        <tr><td class="hw-label">Accrued expenses</td><td><select data-correct="No"><option value="">--</option><option>Yes</option><option>No</option></select></td></tr>
+        <tr><td class="hw-label">Prepaid expenses</td><td><select data-correct="Yes"><option value="">--</option><option>Yes</option><option>No</option></select></td></tr>
+      </table>
+
+      <div class="hw-part-label">c. Would each of the following be included in 3M's long-term assets?</div>
+      <table class="hw-table">
+        <tr><th>Item</th><th>Included?</th></tr>
+        <tr><td class="hw-label">Property, plant &amp; equipment</td><td><select data-correct="Yes"><option value="">--</option><option>Yes</option><option>No</option></select></td></tr>
+        <tr><td class="hw-label">Accounts payable</td><td><select data-correct="No"><option value="">--</option><option>Yes</option><option>No</option></select></td></tr>
+        <tr><td class="hw-label">Intangible assets</td><td><select data-correct="Yes"><option value="">--</option><option>Yes</option><option>No</option></select></td></tr>
+        <tr><td class="hw-label">Work in process</td><td><select data-correct="No"><option value="">--</option><option>Yes</option><option>No</option></select></td></tr>
+        <tr><td class="hw-label">Goodwill</td><td><select data-correct="Yes"><option value="">--</option><option>Yes</option><option>No</option></select></td></tr>
+        <tr><td class="hw-label">Accrued expenses</td><td><select data-correct="No"><option value="">--</option><option>Yes</option><option>No</option></select></td></tr>
+        <tr><td class="hw-label">Prepaid expenses</td><td><select data-correct="No"><option value="">--</option><option>Yes</option><option>No</option></select></td></tr>
+        <tr><td class="hw-label">Long-term notes payable</td><td><select data-correct="No"><option value="">--</option><option>Yes</option><option>No</option></select></td></tr>
+      </table>
+
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>Use the accounting equation on each row: Total Assets = Current Assets + Long-Term Assets, and Total Liabilities = Current Liabilities + LT Liabilities. Also cross-check Total Assets = Total Liabilities + Stockholders' Equity.</li>
+          <li>FY1: LT Assets = 83,500 &#x2212; 25,200 = 58,300. Current Liab. = 60,500 &#x2212; 46,000 = 14,500.</li>
+          <li>FY2: Total Assets = 27,000+56,000 = 83,000. Total Liab. = 15,800+40,500 = 56,300.</li>
+          <li>FY3: Current Assets = 82,600 &#x2212; 56,800 = 25,800. Stockholders' Equity = 82,600 &#x2212; 56,100 = 26,500.</li>
+          <li>Current assets = cash, receivables, inventory, marketable securities, prepaid items &#x2014; anything expected to convert to cash or be used within a year. PP&amp;E, goodwill, and intangibles are long-term assets. Liabilities (payables, accrued expenses, notes payable) are never assets.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- U2-Q10 (orig Q12): retained earnings reconciliation -->
+    <div class="hw-q" data-gradable="true" data-unit="u2" data-topic="equity">
+      <h3><span class="hw-num">U2-Q10</span>Reconcile Retained Earnings</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 2</span>
+      <p class="hw-prompt">Financial information from Johnson &amp; Johnson for a recent fiscal year (practice figures). Enter increases as positive and decreases as negative.</p>
+      <div class="hw-given">
+        <div>Retained earnings, beginning of year: $980,000 &nbsp;|&nbsp; Dividends: $88,000</div>
+        <div>Net earnings: $145,000 &nbsp;|&nbsp; Other retained earnings changes: ($12,500)</div>
+      </div>
+      <table class="hw-table">
+        <tr><td class="hw-label">Retained earnings, beginning of year</td><td><input type="text" data-correct="980000" data-tol="10"></td></tr>
+        <tr><td class="hw-label">Net earnings</td><td><input type="text" data-correct="145000" data-tol="10"></td></tr>
+        <tr><td class="hw-label">Other retained earnings changes</td><td><input type="text" data-correct="-12500" data-tol="10"></td></tr>
+        <tr><td class="hw-label">Dividends</td><td><input type="text" data-correct="-88000" data-tol="10"></td></tr>
+        <tr><td class="hw-label">Retained earnings, end of year</td><td><input type="text" data-correct="1024500" data-tol="10"></td></tr>
+      </table>
+
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>Retained earnings rolls forward like a running balance: beginning balance, plus increases, minus decreases, equals ending balance.</li>
+          <li>Net earnings increase retained earnings: +145,000. Dividends and other changes both decrease it here: &#x2212;12,500 and &#x2212;88,000.</li>
+          <li>Ending RE = 980,000 + 145,000 &#x2212; 12,500 &#x2212; 88,000 = 1,024,500.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap section">
+    <div class="callout">
+      Want this to always use brand-new numbers instead of a fixed set? The <a href="acctg1.html#practice-lab">Practice Lab on the main ACCTG 6000 page</a> generates fresh ROA/Margin/Turnover/ROE problems every time you click "New problem" &#x2014; use that for endless ratio drilling, and this page for the exact structure of your Module 1 &amp; 2 assignment.
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>ACCTG 6000 &#x2014; Financial Accounting, University of Utah PMBA. Practice set adapted from the Module 1 &amp; 2 Homework &#x2014; numbers modified for practice; underlying concepts and question structure unchanged. U1-Q2 uses PepsiCo's and The Coca-Cola Company's actual FY2025 SEC filings, and the audit text in U2-Q5 uses the real Amazon.com, Inc. opinion &#x2014; both noted accordingly above.</p>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+<script src="assets/homework.js"></script>
+<script>
+  // Build the U2-Q7 transaction-linkages grid (kept out of the static HTML above to avoid 84 hand-typed <select> tags)
+  (function(){
+    const rows = [
+      { label: "Cash", vals: { a:"+", b:"-", c:"+", d:"n/a", e:"-", f:"+", g:"-" } },
+      { label: "Noncash assets", vals: { a:"+", b:"n/a", c:"n/a", d:"+", e:"n/a", f:"-", g:"n/a" } },
+      { label: "Total liabilities", vals: { a:"n/a", b:"n/a", c:"n/a", d:"n/a", e:"n/a", f:"n/a", g:"n/a" } },
+      { label: "Contributed capital", vals: { a:"+", b:"n/a", c:"n/a", d:"n/a", e:"n/a", f:"n/a", g:"n/a" } },
+      { label: "Retained earnings", vals: { a:"n/a", b:"-", c:"+", d:"+", e:"-", f:"n/a", g:"-" } },
+      { label: "Other equity", vals: { a:"n/a", b:"n/a", c:"n/a", d:"n/a", e:"n/a", f:"n/a", g:"n/a" } },
+      { label: "Operating cash flow", vals: { a:"n/a", b:"-", c:"+", d:"n/a", e:"-", f:"+", g:"n/a" } },
+      { label: "Investing cash flow", vals: { a:"n/a", b:"n/a", c:"n/a", d:"n/a", e:"n/a", f:"n/a", g:"n/a" } },
+      { label: "Financing cash flow", vals: { a:"+", b:"n/a", c:"n/a", d:"n/a", e:"n/a", f:"n/a", g:"-" } },
+      { label: "Revenues", vals: { a:"n/a", b:"n/a", c:"+", d:"+", e:"n/a", f:"n/a", g:"n/a" } },
+      { label: "Expenses", vals: { a:"n/a", b:"+", c:"n/a", d:"n/a", e:"+", f:"n/a", g:"n/a" } },
+      { label: "Net income", vals: { a:"n/a", b:"-", c:"+", d:"+", e:"-", f:"n/a", g:"n/a" } },
+    ];
+    const cols = ["a","b","c","d","e","f","g"];
+    const table = document.getElementById("hw-q7-table");
+    if(!table) return;
+    let html = "<tr><th>Line item</th>" + cols.map(c => `<th>${c}</th>`).join("") + "</tr>";
+    rows.forEach(row => {
+      html += `<tr><td class="hw-label">${row.label}</td>`;
+      cols.forEach(c => {
+        html += `<td><select data-correct="${row.vals[c]}"><option value="">--</option><option value="+">+</option><option value="-">&#x2212;</option><option value="n/a">n/a</option></select></td>`;
+      });
+      html += "</tr>";
+    });
+    table.innerHTML = html;
+  })();
+</script>
+</body>
+</html>

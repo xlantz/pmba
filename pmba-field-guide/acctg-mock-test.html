@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACCTG 6000 Mock Test — PMBA Field Guide</title>
+<meta name="description" content="A randomized mock test pulling from every ACCTG 6000 homework set, auto-graded with step-by-step notes.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="theme-acctg">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">PMBA</span> Field Guide</a>
+    <nav class="topnav">
+      <a href="index.html">Units</a>
+      <div class="nav-dropdown">
+        <a href="unit1.html" class="nav-dropdown-label">MGT 6050</a>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show MGT 6050 units">&#9662;</button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="unit1.html">Unit 1 &mdash; Foundations</a>
+            <div class="nav-dropdown-hint">More units coming</div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="acctg1.html" class="nav-dropdown-label">ACCTG 6000</a>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show ACCTG 6000 units">&#9662;</button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="acctg1.html">Unit 1 &mdash; Reporting Foundations</a>
+            <a href="acctg2.html">Unit 2 &mdash; Statements &amp; SEC Filings</a>
+          </div>
+        </div>
+      </div>
+      <a href="acctg-homework.html">Accounting HW Practice</a>
+      <a href="acctg-mock-test.html" class="active">ACCTG Mock Test</a>
+      <a href="mgt-mock-test.html">MGT Mock Test</a>
+    </nav>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:48px;">
+  <div class="wrap" style="grid-template-columns:1fr;">
+    <div>
+      <span class="eyebrow">ACCTG 6000 &#x00b7; Mock Test</span>
+      <h1>A random draw, every time</h1>
+      <p class="lede" style="max-width:70ch;">Pick how many questions you want, and the test pulls that many at random from every homework set that's been added to this site so far &mdash; right now that's the full Module 1 &amp; 2 set. Work through it, submit once, and get a full score with notes on anything you missed.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><b id="mt-pool-count">&#x2014;</b><span>Questions in the pool</span></div>
+        <div class="hero-stat"><b>3 / 5 / 10</b><span>Test lengths</span></div>
+        <div class="hero-stat"><b>&#x221e;</b><span>Retakes</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main id="main">
+  <div class="wrap section" style="padding-top:0;">
+
+    <div class="mt-start" id="mt-start">
+      <span class="eyebrow">Choose a length</span>
+      <h2>How many questions?</h2>
+      <p class="text-soft">Each option pulls a fresh random subset of whole problems &mdash; company names, tables, and all &mdash; from the pool above. As more homework sets get added to the site, the pool (and the variety) grows automatically.</p>
+      <div class="mt-count-row">
+        <button class="mt-count-btn" data-count="3">3<span>Quick</span></button>
+        <button class="mt-count-btn" data-count="5">5<span>Standard</span></button>
+        <button class="mt-count-btn" data-count="10">10<span>Full</span></button>
+      </div>
+    </div>
+
+    <div class="mt-results" id="mt-results"></div>
+
+    <div id="mt-test" style="display:none;">
+      <div id="mt-questions"></div>
+
+      <div class="mt-actions-row">
+        <button class="btn gold" id="mt-submit">Submit test</button>
+        <button class="btn gold" id="mt-retake" style="display:none;">Retake (new random draw)</button>
+        <button class="btn ghost" id="mt-new-test">Choose a different length</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="wrap section">
+    <div class="callout">
+      This draws from the same auto-graded question bank as the <a href="acctg-homework.html">Accounting HW Practice page</a> &mdash; the difference is the mock test picks a random subset each time and grades everything together at the end, closer to how an actual exam feels. For endlessly-regenerating ratio drills instead of fixed homework questions, see the <a href="acctg1.html#practice-lab">Practice Lab</a> on the main Unit 1 page. Studying for MGT 6050 instead? See the <a href="mgt-mock-test.html">MGT Mock Test</a>.
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>ACCTG 6000 &#x2014; Financial Accounting, University of Utah PMBA. Mock test pool currently sourced from the Module 1 &amp; 2 Homework practice set; grows as new homework is added.</p>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+<script src="assets/homework-bank.js"></script>
+<script src="assets/homework.js"></script>
+<script src="assets/mocktest.js"></script>
+</body>
+</html>
