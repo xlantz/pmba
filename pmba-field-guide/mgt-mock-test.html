@@ -17,27 +17,37 @@
       <a href="index.html">Units</a>
       <div class="nav-dropdown">
         <a href="unit1.html" class="nav-dropdown-label">MGT 6050</a>
-        <button class="nav-caret" aria-expanded="false" aria-label="Show MGT 6050 units">&#9662;</button>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show MGT 6050 items">&#9662;</button>
         <div class="nav-dropdown-menu">
           <div class="nav-dropdown-menu-inner">
             <a href="unit1.html">Unit 1 &mdash; Foundations</a>
-            <div class="nav-dropdown-hint">More units coming</div>
+            <a href="mgt2.html">Unit 2 &mdash; Building the Team</a>
+            <a href="team-contract-builder.html">Team Contract Builder</a>
           </div>
         </div>
       </div>
       <div class="nav-dropdown">
         <a href="acctg1.html" class="nav-dropdown-label">ACCTG 6000</a>
-        <button class="nav-caret" aria-expanded="false" aria-label="Show ACCTG 6000 units">&#9662;</button>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show ACCTG 6000 items">&#9662;</button>
         <div class="nav-dropdown-menu">
           <div class="nav-dropdown-menu-inner">
             <a href="acctg1.html">Unit 1 &mdash; Reporting Foundations</a>
             <a href="acctg2.html">Unit 2 &mdash; Statements &amp; SEC Filings</a>
+            <a href="acctg3.html">Unit 3 &mdash; The Accounting Cycle</a>
+            <a href="acctg-homework.html">Accounting HW Practice</a>
           </div>
         </div>
       </div>
-      <a href="acctg-homework.html">Accounting HW Practice</a>
-      <a href="acctg-mock-test.html">ACCTG Mock Test</a>
-      <a href="mgt-mock-test.html" class="active">MGT Mock Test</a>
+      <div class="nav-dropdown">
+        <a href="mgt-mock-test.html" class="nav-dropdown-label active">Mock Tests</a>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show mock tests">&#9662;</button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="mgt-mock-test.html">MGT 6050 Mock Test</a>
+            <a href="acctg-mock-test.html">ACCTG 6000 Mock Test</a>
+          </div>
+        </div>
+      </div>
     </nav>
     <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
   </div>
@@ -48,7 +58,7 @@
     <div>
       <span class="eyebrow">MGT 6050 &#x00b7; Mock Test</span>
       <h1>Multiple choice, pulled from everything</h1>
-      <p class="lede" style="max-width:70ch;">Pick how many questions you want, and the test draws that many at random from the full MGT 6050 question bank &mdash; built from the effective notes, the flashcard deck, and the study guide across all four sources. Submit once, get a full score, and see the explanation for every question, right or wrong.</p>
+      <p class="lede" style="max-width:70ch;">Pick how many questions you want, and the test draws that many at random from the full MGT 6050 question bank across <strong>both units</strong> &mdash; built from the effective notes, the flashcard deck, and the study guide. Submit once, get a full score, and see the explanation for every question, right or wrong.</p>
       <div class="hero-stats">
         <div class="hero-stat"><b id="mt-pool-count">&#x2014;</b><span>Questions in the pool</span></div>
         <div class="hero-stat"><b>3 / 5 / 10</b><span>Test lengths</span></div>
@@ -64,7 +74,7 @@
     <div class="mt-start" id="mt-start">
       <span class="eyebrow">Choose a length</span>
       <h2>How many questions?</h2>
-      <p class="text-soft">Each option pulls a fresh random subset of multiple-choice questions covering Katzenbach &amp; Smith, the Praxis Framework, Coutu/Hackman, and Duhigg/Google &mdash; the same bank behind the quiz on the Unit 1 page, reshuffled.</p>
+      <p class="text-soft">Each option pulls a fresh random subset of multiple-choice questions covering both Unit 1 (Katzenbach &amp; Smith, the Praxis Framework, Coutu/Hackman, Duhigg/Google) and Unit 2 (Social Contracts, Psychological Safety, Virtual Teams, 4-D Teams, Team Leadership) &mdash; the same banks behind the quizzes on the unit pages, reshuffled and combined.</p>
       <div class="mt-count-row">
         <button class="mt-count-btn" data-count="3">3<span>Quick</span></button>
         <button class="mt-count-btn" data-count="5">5<span>Standard</span></button>
@@ -88,7 +98,7 @@
 
   <div class="wrap section">
     <div class="callout">
-      This draws from the same 28-question bank as the <a href="unit1.html#quiz">quiz on the Unit 1 page</a> &mdash; the difference is this one lets you pick the length and grades everything together at the end, closer to how an actual exam feels. Want fill-in-the-blank practice with real accounting problems instead? See the <a href="acctg-mock-test.html">ACCTG Mock Test</a>.
+      This draws from the combined Unit 1 + Unit 2 question bank &mdash; the same one behind the <a href="unit1.html#quiz">quiz on the Unit 1 page</a> and the <a href="mgt2.html#quiz">quiz on the Unit 2 page</a> &mdash; the difference is this one lets you pick the length and grades everything together at the end, closer to how an actual exam feels. Want fill-in-the-blank practice with real accounting problems instead? See the <a href="acctg-mock-test.html">ACCTG Mock Test</a>.
     </div>
   </div>
 </main>
@@ -102,6 +112,7 @@
 <script src="assets/app.js"></script>
 <script src="assets/flashcards-data.js"></script>
 <script src="assets/quiz-data.js"></script>
+<script src="assets/mgt2-quiz-data-for-mocktest.js"></script>
 <script src="assets/teamwork-mocktest.js"></script>
 </body>
 </html>

@@ -17,27 +17,37 @@
       <a href="index.html">Units</a>
       <div class="nav-dropdown">
         <a href="unit1.html" class="nav-dropdown-label active">MGT 6050</a>
-        <button class="nav-caret" aria-expanded="false" aria-label="Show MGT 6050 units">&#9662;</button>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show MGT 6050 items">&#9662;</button>
         <div class="nav-dropdown-menu">
           <div class="nav-dropdown-menu-inner">
             <a href="unit1.html">Unit 1 &mdash; Foundations</a>
-            <div class="nav-dropdown-hint">More units coming</div>
+            <a href="mgt2.html">Unit 2 &mdash; Building the Team</a>
+            <a href="team-contract-builder.html">Team Contract Builder</a>
           </div>
         </div>
       </div>
       <div class="nav-dropdown">
         <a href="acctg1.html" class="nav-dropdown-label">ACCTG 6000</a>
-        <button class="nav-caret" aria-expanded="false" aria-label="Show ACCTG 6000 units">&#9662;</button>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show ACCTG 6000 items">&#9662;</button>
         <div class="nav-dropdown-menu">
           <div class="nav-dropdown-menu-inner">
             <a href="acctg1.html">Unit 1 &mdash; Reporting Foundations</a>
             <a href="acctg2.html">Unit 2 &mdash; Statements &amp; SEC Filings</a>
+            <a href="acctg3.html">Unit 3 &mdash; The Accounting Cycle</a>
+            <a href="acctg-homework.html">Accounting HW Practice</a>
           </div>
         </div>
       </div>
-      <a href="acctg-homework.html">Accounting HW Practice</a>
-      <a href="acctg-mock-test.html">ACCTG Mock Test</a>
-      <a href="mgt-mock-test.html">MGT Mock Test</a>
+      <div class="nav-dropdown">
+        <a href="mgt-mock-test.html" class="nav-dropdown-label">Mock Tests</a>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show mock tests">&#9662;</button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="mgt-mock-test.html">MGT 6050 Mock Test</a>
+            <a href="acctg-mock-test.html">ACCTG 6000 Mock Test</a>
+          </div>
+        </div>
+      </div>
       <a href="#glossary">Glossary</a>
       <a href="#quiz">Quiz</a>
     </nav>
@@ -46,11 +56,16 @@
 </header>
 
 <section class="hero" style="padding-bottom:56px;">
-  <div class="wrap" style="grid-template-columns:1fr;">
+  <div class="wrap">
     <div>
       <span class="eyebrow">Unit 1</span>
       <h1>What makes a group a team?</h1>
-      <p class="lede" style="max-width:70ch;">Three lenses on the same question, in the order you should hold them: Katzenbach &amp; Smith give you the structural discipline of a real team; Hackman argues most attempts fail badly and tells you why; Google's Project Aristotle shows that once you control for structure, the norm that decides everything is psychological safety.</p>
+      <p class="lede" style="max-width:60ch;">Three lenses on the same question, in the order you should hold them: Katzenbach &amp; Smith give you the structural discipline of a real team; Hackman argues most attempts fail badly and tells you why; Google's Project Aristotle shows that once you control for structure, the norm that decides everything is psychological safety.</p>
+    </div>
+    <div class="curve-card">
+      <div class="curve-title">The team performance curve &mdash; hover a stage</div>
+      <svg id="curve-svg" role="img" aria-label="Team performance curve from working group to high-performing team"></svg>
+      <div class="curve-tooltip" id="curve-tooltip"></div>
     </div>
   </div>
 </section>
@@ -164,11 +179,37 @@
         <p>A secondary summary that adds two model <em>representations</em> not in the Ch. 3 excerpt: the <strong>Team Basics Triangle</strong> and the <strong>Team Performance Curve</strong> — a five-stage progression showing groups can get <em>worse</em> before they get better on the way to becoming a real team.</p>
 
         <h4>Team Basics Triangle</h4>
-        <ul>
-          <li><strong>Corners</strong> = what a team delivers: collective work products, performance results, personal growth.</li>
-          <li><strong>Sides</strong> = the enabling behaviors that produce those deliverables: commitment, skills, accountability.</li>
-          <li>Katzenbach's own point: <em>acting on</em> these behaviors matters far more to team performance than team-building exercises do.</li>
-        </ul>
+        <div class="triangle-wrap">
+          <div class="triangle-fig" id="triangle-fig">
+            <svg viewBox="0 0 300 260" role="img" aria-label="Triangle diagram: corners are Performance Results, Collective Work Products, and Personal Growth; sides are Commitment, Skills, and Accountability">
+              <polygon points="150,22 32,224 268,224" fill="var(--paper-2)" stroke="var(--blue-deep)" stroke-width="2" stroke-linejoin="round" data-tri="corners"/>
+              <text x="150" y="14" text-anchor="middle" style="font-family: var(--font-mono); font-size:10px; fill: var(--ink);" data-tri="corners">Performance results</text>
+              <text x="32" y="244" text-anchor="middle" style="font-family: var(--font-mono); font-size:10px; fill: var(--ink);" data-tri="corners">Collective work products</text>
+              <text x="268" y="244" text-anchor="middle" style="font-family: var(--font-mono); font-size:10px; fill: var(--ink);" data-tri="corners">Personal growth</text>
+              <text x="72" y="118" text-anchor="middle" transform="rotate(-59 72 118)" style="font-family: var(--font-mono); font-size:9px; fill: var(--blue-deep); text-transform:uppercase;" data-tri="sides">Commitment</text>
+              <text x="150" y="238" text-anchor="middle" style="font-family: var(--font-mono); font-size:9px; fill: var(--blue-deep); text-transform:uppercase;" data-tri="sides">Skills</text>
+              <text x="228" y="118" text-anchor="middle" transform="rotate(59 228 118)" style="font-family: var(--font-mono); font-size:9px; fill: var(--blue-deep); text-transform:uppercase;" data-tri="sides">Accountability</text>
+            </svg>
+          </div>
+          <div class="triangle-legend">
+            <div id="triangle-legend-detail"></div>
+            <div class="tri-legend-row"><b>The takeaway</b>Katzenbach &amp; Smith's own point: <em>acting on</em> these behaviors improves performance far more than team-building exercises aimed at "becoming a team."</div>
+          </div>
+        </div>
+        <p class="text-soft" style="font-size:.85rem; margin-top:8px;">Click or hover the triangle to see what the corners and sides mean.</p>
+
+        <h4>Why team size matters: the coordination-links problem</h4>
+        <p>Every added member adds a link to every existing member &mdash; the count grows as n(n&minus;1)/2, not linearly. This is why Hackman caps his own teams at 6 and warns against "double digits."</p>
+        <div class="coord-tool" id="coord-tool">
+          <div class="coord-slider-row">
+            <label for="coord-slider" class="text-soft" style="font-family:var(--font-mono); font-size:.78rem;">Team size:</label>
+            <input type="range" id="coord-slider" min="2" max="14" value="4" step="1">
+            <span class="coord-readout" id="coord-readout"></span>
+          </div>
+          <div class="coord-flags" id="coord-flags"></div>
+          <div class="coord-svg-wrap" id="coord-svg-wrap"></div>
+        </div>
+        <p class="text-soft" style="font-size:.85rem; margin-top:8px;">Every line is one relationship someone on the team has to manage. A 4-person team needs 6 relationships; a 10-person team needs 45.</p>
 
         <h4>Team Performance Curve — five stages</h4>
         <table class="mini-table">
@@ -502,6 +543,53 @@
     </div>
   </div>
 
+  <!-- ============ PROGRESS CHECKLISTS ============ -->
+  <div class="wrap section">
+    <div class="section-head">
+      <span class="eyebrow">Track your progress</span>
+      <h2>Self-check checklists</h2>
+      <p class="text-soft">Check items off as you can genuinely do them &mdash; your progress saves automatically in this browser only.</p>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;" class="checklist-grid">
+      <div class="checklist-tool" data-storage-key="mgt-u1-key-takeaways">
+        <h4 style="margin-top:0;">Key takeaways</h4>
+        <div class="checklist-progress-row">
+          <div class="checklist-progress-bar"><div class="checklist-progress-fill"></div></div>
+          <span class="checklist-progress-count"></span>
+        </div>
+        <label class="checklist-item"><input type="checkbox" data-id="kt-1"><span>I can explain why we underestimate process losses, especially coordination losses.</span></label>
+        <label class="checklist-item"><input type="checkbox" data-id="kt-2"><span>I can name the three types of process loss and one cause + fix for each.</span></label>
+        <label class="checklist-item"><input type="checkbox" data-id="kt-3"><span>I can apply the Team Productivity formula to a scenario.</span></label>
+        <label class="checklist-item"><input type="checkbox" data-id="kt-4"><span>I can explain the transition (planning) vs. action (doing) phases and what to do in each.</span></label>
+        <label class="checklist-item"><input type="checkbox" data-id="kt-5"><span>I can define a "real team" and defend whether a given group qualifies.</span></label>
+        <label class="checklist-item"><input type="checkbox" data-id="kt-6"><span>I can explain why shared purpose and clear goals matter for accountability.</span></label>
+        <label class="checklist-item"><input type="checkbox" data-id="kt-7"><span>I can explain the curse of knowledge and give my own workplace example.</span></label>
+        <label class="checklist-item"><input type="checkbox" data-id="kt-8"><span>I can explain why "who leads" matters less than "what needs to be done."</span></label>
+      </div>
+
+      <div class="checklist-tool" data-storage-key="mgt-u1-team-audit">
+        <h4 style="margin-top:0;">Team basics audit &mdash; run this against a real team</h4>
+        <div class="checklist-progress-row">
+          <div class="checklist-progress-bar"><div class="checklist-progress-fill"></div></div>
+          <span class="checklist-progress-count"></span>
+        </div>
+        <label class="checklist-item"><input type="checkbox" data-id="c1-1"><span>Can the group convene and communicate easily and frequently?</span></label>
+        <label class="checklist-item"><input type="checkbox" data-id="c1-2"><span>Are discussions open and interactive for every member?</span></label>
+        <label class="checklist-item"><input type="checkbox" data-id="c2-1"><span>Are all three skill categories represented (technical, problem-solving, interpersonal)?</span></label>
+        <label class="checklist-item"><input type="checkbox" data-id="c2-2"><span>Is anyone willing to spend time helping others develop missing skills?</span></label>
+        <label class="checklist-item"><input type="checkbox" data-id="c3-1"><span>Is it a team purpose &mdash; not the leader's or the org's purpose alone?</span></label>
+        <label class="checklist-item"><input type="checkbox" data-id="c3-2"><span>Do members define it the same way, without vague abstractions?</span></label>
+        <label class="checklist-item"><input type="checkbox" data-id="c4-1"><span>Are goals clear, measurable, and realistic &mdash; with room for small wins?</span></label>
+        <label class="checklist-item"><input type="checkbox" data-id="c4-2"><span>Does everyone agree on how achievement will be measured?</span></label>
+        <label class="checklist-item"><input type="checkbox" data-id="c5-1"><span>Does the working approach require equivalent real work from every member?</span></label>
+        <label class="checklist-item"><input type="checkbox" data-id="c5-2"><span>Can the approach be modified as the team learns?</span></label>
+        <label class="checklist-item"><input type="checkbox" data-id="c6-1"><span>Is there a felt sense that "only the team can fail"?</span></label>
+        <label class="checklist-item"><input type="checkbox" data-id="c6-2"><span>Are members clear on what's individual vs. joint responsibility?</span></label>
+      </div>
+    </div>
+  </div>
+
   <!-- ============ EXAM ANGLES ============ -->
   <div class="wrap section">
     <div class="section-head">
@@ -536,5 +624,6 @@
 <script src="assets/quiz-data.js"></script>
 <script src="assets/app.js"></script>
 <script src="assets/interactive.js"></script>
+<script src="assets/mgt-unit1-extras.js"></script>
 </body>
 </html>

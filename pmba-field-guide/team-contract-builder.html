@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team Contract Builder — MGT 6050 — PMBA Field Guide</title>
+<meta name="description" content="A fillable, ten-section team contract worksheet built from MGT 6050 course frameworks, with answers saved automatically in your own browser.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">PMBA</span> Field Guide</a>
+    <nav class="topnav">
+      <a href="index.html">Units</a>
+      <div class="nav-dropdown">
+        <a href="unit1.html" class="nav-dropdown-label active">MGT 6050</a>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show MGT 6050 items">&#9662;</button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="unit1.html">Unit 1 &mdash; Foundations</a>
+            <a href="mgt2.html">Unit 2 &mdash; Building the Team</a>
+            <a href="team-contract-builder.html">Team Contract Builder</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="acctg1.html" class="nav-dropdown-label">ACCTG 6000</a>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show ACCTG 6000 items">&#9662;</button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="acctg1.html">Unit 1 &mdash; Reporting Foundations</a>
+            <a href="acctg2.html">Unit 2 &mdash; Statements &amp; SEC Filings</a>
+            <a href="acctg3.html">Unit 3 &mdash; The Accounting Cycle</a>
+            <a href="acctg-homework.html">Accounting HW Practice</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="mgt-mock-test.html" class="nav-dropdown-label">Mock Tests</a>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show mock tests">&#9662;</button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="mgt-mock-test.html">MGT 6050 Mock Test</a>
+            <a href="acctg-mock-test.html">ACCTG 6000 Mock Test</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:40px;">
+  <div class="wrap" style="grid-template-columns:1fr;">
+    <div>
+      <span class="eyebrow">MGT 6050 &#x00b7; Tool</span>
+      <h1>Team Contract Builder</h1>
+      <p class="lede" style="max-width:70ch;">Ten sections, each grounded in a specific course framework &mdash; fill this out with your real team and it doubles as a way to apply the readings, not just memorize them. Use it at your team's launch, and revisit it at the midpoint. Your answers save automatically in this browser only &mdash; nothing is sent anywhere or shared with anyone else.</p>
+    </div>
+  </div>
+</section>
+
+<main id="main">
+  <div class="wrap section" style="padding-top:0;">
+    <div class="callout">
+      This worksheet isn't a template your professor provided &mdash; it's built from course frameworks (Katzenbach &amp; Smith's team basics, the process-loss fixes from Class 1, psychological safety, Riordan &amp; O'Brien's social contract, and Barrett's team charter) to help you apply them to a real team. If your course later distributes an official team contract template or rubric, use that as the authoritative version and treat this as a head start. <strong>Your assignment's actual format requirement (check your syllabus) may call for a different structure &mdash; use this to think it through, then adapt into whatever format is required.</strong>
+    </div>
+
+    <div class="tcb-toolbar">
+      <button class="btn blue" id="tcb-print">Print / Save as PDF</button>
+      <button class="btn ghost" id="tcb-clear">Clear all</button>
+      <span class="tcb-save-status" id="tcb-save-status"></span>
+    </div>
+
+    <div class="tcb-section">
+      <h3>1. Purpose</h3>
+      <p class="tcb-grounds">Grounds: Katzenbach &amp; Smith's "common, meaningful purpose"; "purposing" as an ongoing activity, not a one-time statement.</p>
+      <ul class="tcb-questions">
+        <li>What demand or opportunity brought this team together? (What's the "solution space" your instructor/assignment gave you?)</li>
+        <li>In your own words, what is this team actually here to accomplish?</li>
+        <li>How will we revisit and re-sharpen this purpose as the project evolves?</li>
+      </ul>
+      <textarea id="tcb-purpose" placeholder="Write your team's answers here..."></textarea>
+    </div>
+
+    <div class="tcb-section">
+      <h3>2. Specific Performance Goals</h3>
+      <p class="tcb-grounds">Grounds: "specific performance goals" as the second team-basics element; goals provide trackability, small wins, and accountability that purpose alone can't.</p>
+      <ul class="tcb-questions">
+        <li>What are the concrete, measurable deliverables and deadlines?</li>
+        <li>What does "success" look like at each milestone?</li>
+      </ul>
+      <textarea id="tcb-goals" placeholder="Write your team's answers here..."></textarea>
+    </div>
+
+    <div class="tcb-section">
+      <h3>3. Complementary Skills &amp; Division of Labor</h3>
+      <p class="tcb-grounds">Grounds: the three skill categories (technical/functional, problem-solving/decision-making, interpersonal); "base division of labor on the group's ultimate goal, not convenience."</p>
+      <ul class="tcb-questions">
+        <li>What skills/strengths does each member bring?</li>
+        <li>What skill gaps exist, and how will the team close them as you go?</li>
+        <li>Who owns which piece of work, and why?</li>
+        <li>Is there a designated "integration"/"big picture" role?</li>
+      </ul>
+      <textarea id="tcb-skills" placeholder="Write your team's answers here..."></textarea>
+    </div>
+
+    <div class="tcb-section">
+      <h3>4. Common Working Approach</h3>
+      <p class="tcb-grounds">Grounds: "common working approach" (economic/administrative + social); "committed to a common approach [but not too much]" &mdash; some flexibility is healthy.</p>
+      <ul class="tcb-questions">
+        <li>How will we make decisions &mdash; consensus, majority vote, designated owner per topic?</li>
+        <li>How will we schedule and structure work sessions?</li>
+        <li>How rigid vs. flexible should our process be?</li>
+      </ul>
+      <textarea id="tcb-approach" placeholder="Write your team's answers here..."></textarea>
+    </div>
+
+    <div class="tcb-section">
+      <h3>5. Coordination Plan</h3>
+      <p class="tcb-grounds">Grounds: coordination losses and their fixes &mdash; "discuss coordination strategy at the start and reassess during the task"; coordination neglect; the Team Scaling Fallacy.</p>
+      <ul class="tcb-questions">
+        <li>How will we share information and status updates so nothing falls through the cracks?</li>
+        <li>What's our plan for catching duplicated or missed work?</li>
+        <li>If we add or lose a member mid-project, how will we re-coordinate?</li>
+      </ul>
+      <textarea id="tcb-coordination" placeholder="Write your team's answers here..."></textarea>
+    </div>
+
+    <div class="tcb-section">
+      <h3>6. Communication Norms</h3>
+      <p class="tcb-grounds">Grounds: the three causes of miscommunication &mdash; institutional factors (channel choice), curse of knowledge, lack of common language/jargon.</p>
+      <ul class="tcb-questions">
+        <li>What's our primary communication channel, and when do we escalate to a richer one?</li>
+        <li>How will we check that everyone actually understood something?</li>
+        <li>Do we have any jargon or shorthand that needs explaining to everyone up front?</li>
+      </ul>
+      <textarea id="tcb-communication" placeholder="Write your team's answers here..."></textarea>
+    </div>
+
+    <div class="tcb-section">
+      <h3>7. Mutual Accountability</h3>
+      <p class="tcb-grounds">Grounds: the defining test of a real team &mdash; "we hold ourselves accountable" vs. "the boss holds me accountable."</p>
+      <ul class="tcb-questions">
+        <li>What happens if someone misses a deadline or falls short &mdash; who addresses it, and how?</li>
+        <li>How do we hold the team (not just individuals) accountable for the overall result?</li>
+        <li>What does follow-through look like if a member is struggling?</li>
+      </ul>
+      <textarea id="tcb-accountability" placeholder="Write your team's answers here..."></textarea>
+    </div>
+
+    <div class="tcb-section">
+      <h3>8. Motivation &amp; Effort</h3>
+      <p class="tcb-grounds">Grounds: fixes for effort/motivation losses &mdash; clarify expectations early, make contributions identifiable, build trust, give feedback, reward performance.</p>
+      <ul class="tcb-questions">
+        <li>How will individual contributions stay visible (guards against social loafing)?</li>
+        <li>How often will we give each other feedback, and in what format?</li>
+        <li>What's genuinely interesting or meaningful about this project to each member?</li>
+      </ul>
+      <textarea id="tcb-motivation" placeholder="Write your team's answers here..."></textarea>
+    </div>
+
+    <div class="tcb-section">
+      <h3>9. Psychological Safety &amp; Conflict Norms</h3>
+      <p class="tcb-grounds">Grounds: ability-loss fixes (psychological safety, trust); Hackman's "deviant" &mdash; the member who challenges consensus and improves originality; Edmondson's four tactics (Unit 2).</p>
+      <ul class="tcb-questions">
+        <li>How do we want disagreement or dissent to be raised and handled?</li>
+        <li>What will we do if someone feels unheard?</li>
+        <li>How do we want to handle a small friction moment before it compounds? (Rozovsky's "Ouch" example is a good model &mdash; name it directly.)</li>
+      </ul>
+      <textarea id="tcb-safety" placeholder="Write your team's answers here..."></textarea>
+    </div>
+
+    <div class="tcb-section">
+      <h3>10. Review &amp; Amendment</h3>
+      <p class="tcb-grounds">Grounds: the Team Performance Cycle &mdash; transition (planning) phase vs. action (doing) phase; "purposing" as continuous; Unit 2's finding that high-performing teams revisit their social contract over time.</p>
+      <ul class="tcb-questions">
+        <li>When will we formally revisit this contract (e.g., at the project midpoint)?</li>
+        <li>What triggers an off-cycle revisit (a missed deadline, a new member, a scope change)?</li>
+      </ul>
+      <textarea id="tcb-review" placeholder="Write your team's answers here..."></textarea>
+    </div>
+
+    <div class="tcb-toolbar" style="margin-top:6px;">
+      <button class="btn blue" id="tcb-print-bottom" onclick="window.print()">Print / Save as PDF</button>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>MGT 6050 &mdash; Teamwork, University of Utah PMBA. Built from Unit 1 &amp; Unit 2 course frameworks (Katzenbach &amp; Smith; Class 1 lecture; Riordan &amp; O'Brien; Gallo/Edmondson; Barrett Ch. 10). Your answers are stored only in this browser via localStorage &mdash; nothing is uploaded or shared.</p>
+  </div>
+</footer>
+
+<script src="assets/app.js"></script>
+<script src="assets/team-contract-builder.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+// Flashcard deck for MGT 6050, Unit 2 — Building the Team: Contracts, Psychological Safety & Modern Team Conditions
+const FLASHCARDS = [
+  // ---- Social Contract (Riordan & O'Brien) ----
+  { source: "contract", front: "What is a 'social contract' for a team, per Riordan & O'Brien?", back: "An explicit, team-authored agreement laying out ground rules for how members will work together, make decisions, communicate, share information, and support each other." },
+  { source: "contract", front: "What theory are team social contracts rooted in?", back: "Social capital theory — emphasizing information exchange and reciprocity, mutual trust and fairness, and shared values and expectations." },
+  { source: "contract", front: "What four questions does Riordan & O'Brien suggest asking to build a social contract?", back: "What expectations do team members have of each other? What is working well? What is not working well? What should the team keep doing, start doing, and stop doing?" },
+  { source: "contract", front: "What are the key conditions for a social contract to actually work, per Riordan & O'Brien?", back: "It cannot be mandated by the leader alone — all members must collectively form and buy into it; the leader must model the desired behavior; and high-performing teams revisit/update the contract over time." },
+  { source: "contract", front: "What does research say happens when social contracts are violated?", back: "Violations of formal or even informal social contracts can lead to employee dissatisfaction, lower trust of the leader/teammates, and intentions to leave." },
+
+  // ---- Psychological Safety, deep dive (Gallo / Edmondson) ----
+  { source: "psychsafety", front: "What is Amy Edmondson's refined definition of team psychological safety, per the Gallo interview?", back: "A shared belief held by members of a team that it's OK to take risks, express ideas and concerns, speak up with questions, and admit mistakes — all without fear of negative consequences. Her shorthand: 'felt permission for candor.'" },
+  { source: "psychsafety", front: "How did Edmondson first discover the psychological safety phenomenon?", back: "Studying hospital teams for her PhD, she expected better teams to make fewer errors, but found better-rated teams reported MORE errors — because they felt safe admitting them." },
+  { source: "psychsafety", front: "Is psychological safety an individual trait or a group property?", back: "A group-level, emergent property — not an individual trait. People on the same team tend to report similar levels of it even though it's experienced individually." },
+  { source: "psychsafety", front: "When does psychological safety matter more, per recent Edmondson research?", back: "In work environments where employees need to use discretion — creative, novel, or truly collaborative tasks — more than in fully prescribed/routine work." },
+  { source: "psychsafety", front: "How does psychological safety interact with diversity, per Edmondson & Bresman's research?", back: "On teams with HIGH psychological safety, expertise diversity was positively associated with performance — suggesting psychological safety may be key to realizing the benefits of diverse teams." },
+  { source: "psychsafety", front: "List Edmondson's 7-item psychological safety survey items (paraphrased).", back: "(1) Mistakes aren't held against you, (2) problems/tough issues can be raised, (3) differences are accepted, (4) it's safe to take a risk, (5) it's not hard to ask for help, (6) no one deliberately undermines your efforts, (7) your unique skills are valued and used." },
+  { source: "psychsafety", front: "What are Edmondson's four tactics for building psychological safety?", back: "(1) Make clear why employees' voices matter, (2) admit your own fallibility, (3) actively invite input, (4) respond productively — with curiosity, not blame." },
+  { source: "psychsafety", front: "What are the two common misconceptions about psychological safety, per Edmondson?", back: "(1) That it's about being 'nice' — polite workplaces can lack candor entirely; (2) that you must always feel comfortable — learning and risk-taking are inherently uncomfortable, and psychological safety is about taking risks safely, not avoiding discomfort." },
+
+  // ---- Virtual Teams (Mortensen & Hadley) ----
+  { source: "virtual", front: "What is the 'recipe for team disasters' per Mortensen & Hadley?", back: "Unclear missions, inconsistent social norms, low common identity, unclear roles, and unstable membership." },
+  { source: "virtual", front: "What are the three stages of Mortensen & Hadley's model for fixing virtual team problems?", back: "Triage, stabilization, and long-term care." },
+  { source: "virtual", front: "What should you look for during the 'triage' stage of the virtual-teams model, both within and across teams?", back: "Within a team: is the work still relevant, and is the interpersonal foundation cracked? Across teams: is staffing coordinated, and is multi-team membership overloading individuals?" },
+  { source: "virtual", front: "What percentage of a team's ultimate success does the launch period account for, per research cited by Mortensen & Hadley?", back: "Up to one-third — reinforcing Hackman's point that the first few minutes/early period of a team's existence disproportionately shapes its whole life." },
+  { source: "virtual", front: "Who is explicitly held accountable for creating psychologically safe environments, per Mortensen & Hadley's stabilization advice?", back: "Team leaders — though ownership of resolving cracked interpersonal foundations rests with the team, sometimes with help from a neutral third party like HR." },
+  { source: "virtual", front: "What does 'long-term care' mean in Mortensen & Hadley's model, and why does it matter?", back: "Ongoing, preventative attention to team health after triage and stabilization — catching the 'recipe for disaster' symptoms early, before they become entrenched, rather than declaring victory after stabilizing." },
+
+  // ---- 4-D Teams (Haas & Mortensen) ----
+  { source: "4dteams", front: "What does '4-D teams' mean, per Haas & Mortensen?", back: "Diverse, dispersed, digital, and dynamic (frequent membership changes) — the authors' term for how modern teams differ from teams of the past." },
+  { source: "4dteams", front: "What three of Hackman's original conditions do Haas & Mortensen say still matter most for 4-D teams?", back: "Compelling direction, strong structure, and supportive context." },
+  { source: "4dteams", front: "What new, fourth condition do Haas & Mortensen add for 4-D teams, and why?", back: "Shared mindset — because 4-D teams are newly vulnerable to 'us vs. them' subgroup thinking and incomplete information, problems Hackman's original, more co-located research didn't emphasize." },
+  { source: "4dteams", front: "What two corrosive problems does 'shared mindset' address?", back: "'Us versus them' thinking between subgroups, and incomplete information not reaching the whole team." },
+  { source: "4dteams", front: "What is 'structured unstructured time,' per Haas & Mortensen?", back: "Time deliberately blocked in a team's schedule (e.g., the first 10 minutes of a meeting) for open conversation not directly related to the task, to help build shared understanding and identity." },
+  { source: "4dteams", front: "What does the 'cosmopolitan vs. local' team member distinction mean, per the World Bank example in Haas & Mortensen?", back: "Cosmopolitan members have multi-country experience and transferable technical knowledge; local members have deep on-the-ground knowledge of the specific area. Blending both types produced better outcomes than either alone." },
+  { source: "4dteams", front: "What are Hackman's three classic criteria for evaluating team effectiveness, reused by Haas & Mortensen?", back: "Output (quality/quantity/delivery), collaborative ability (do team dynamics support working well together), and individual development (are members growing)." },
+
+  // ---- Leadership Communication, Ch. 10 (Barrett) ----
+  { source: "leadership", front: "What are the four parts of a 'team charter,' per Barrett's Leadership Communication textbook?", back: "(1) Project purpose and goals, (2) team member roles and responsibilities, (3) ground rules, (4) communication protocol." },
+  { source: "leadership", front: "Name several ground-rule topics a team charter should cover, per Barrett Ch. 10.", back: "Leadership, communication, participation, work products, conflict management, preparation, attendance, timing, decision-making, and laptop/cell phone use." },
+  { source: "leadership", front: "What are the two approaches to producing a team document, per Barrett Ch. 10, and their main tradeoff?", back: "Single-scribe (one person writes, others feed content — consistent but heavy burden on one person) vs. multiple-writer (team divides sections — faster and more ownership, but risks inconsistent tone/scope confusion)." },
+  { source: "leadership", front: "What are the four types of team conflict identified in Barrett Ch. 10?", back: "Analytical (constructive disagreement over substance), task (missed deliverables/deadlines), interpersonal (personality/culture/values clashes), and roles (unclear or contested responsibilities)." },
+  { source: "leadership", front: "Which type of team conflict is generally described as beneficial, and why?", back: "Analytical conflict — constructive disagreement over substantive issues leads to better answers and greater creativity, as long as it's kept separate from personality." },
+  { source: "leadership", front: "What are the three approaches to resolving team conflict, per Barrett Ch. 10?", back: "One-on-one (the individuals work it out directly), facilitation (a neutral third party mediates), and team (the whole team addresses it, with a designated spokesperson)." },
+  { source: "leadership", front: "When does Barrett's chapter warn that the one-on-one conflict resolution approach may not work well?", back: "For personality/interpersonal conflicts, especially if both individuals involved are introverted or otherwise avoidant — leaving them alone may not yield progress." },
+  { source: "leadership", front: "What percentage of face-to-face meaning is estimated to come from nonverbal cues, per Barrett Ch. 10 — and why does this matter for virtual teams?", back: "An estimated 80–93% — almost entirely lost over voice/text-only channels, which is why virtual teams must work harder and more deliberately on structure and relationship-building than co-located teams." },
+  { source: "leadership", front: "What three things does a virtual team need to succeed, per the McKinsey research cited in Barrett Ch. 10?", back: "Shared beliefs, a 'storehouse of credibility and trust,' and a shared workspace." },
+  { source: "leadership", front: "What five topics should a team (especially a virtual team) discuss explicitly at its first meeting, per Barrett Ch. 10?", back: "Position and responsibilities, past team experiences, expectations, personality/working style, and cultural differences." },
+];
+
+const SOURCE_LABELS = {
+  contract: "Social Contract",
+  psychsafety: "Psychological Safety",
+  virtual: "Virtual Teams",
+  "4dteams": "4-D Teams",
+  leadership: "Team Leadership",
+};

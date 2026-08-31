@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACCTG 6000, Unit 3: The Accounting Cycle — PMBA Field Guide</title>
+<meta name="description" content="ACCTG 6000 Unit 3: the accounting cycle, FSET, T-Accounts, journal entries, the four adjustment types, statement construction order, and the closing process.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="theme-acctg">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">PMBA</span> Field Guide</a>
+    <nav class="topnav">
+      <a href="index.html">Units</a>
+      <div class="nav-dropdown">
+        <a href="unit1.html" class="nav-dropdown-label">MGT 6050</a>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show MGT 6050 items">&#9662;</button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="unit1.html">Unit 1 &mdash; Foundations</a>
+            <a href="mgt2.html">Unit 2 &mdash; Building the Team</a>
+            <a href="team-contract-builder.html">Team Contract Builder</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="acctg1.html" class="nav-dropdown-label active">ACCTG 6000</a>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show ACCTG 6000 items">&#9662;</button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="acctg1.html">Unit 1 &mdash; Reporting Foundations</a>
+            <a href="acctg2.html">Unit 2 &mdash; Statements &amp; SEC Filings</a>
+            <a href="acctg3.html">Unit 3 &mdash; The Accounting Cycle</a>
+            <a href="acctg-homework.html">Accounting HW Practice</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="mgt-mock-test.html" class="nav-dropdown-label">Mock Tests</a>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show mock tests">&#9662;</button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="mgt-mock-test.html">MGT 6050 Mock Test</a>
+            <a href="acctg-mock-test.html">ACCTG 6000 Mock Test</a>
+          </div>
+        </div>
+      </div>
+      <a href="#glossary">Glossary</a>
+      <a href="#quiz">Quiz</a>
+    </nav>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:48px;">
+  <div class="wrap" style="grid-template-columns:1fr;">
+    <div>
+      <span class="eyebrow">ACCTG 6000 &#x00b7; Unit 3</span>
+      <h1>The Accounting Cycle, Adjustments &amp; the Closing Process</h1>
+      <p class="lede" style="max-width:70ch;">Unit 2 showed you <em>what</em> the final statements look like and how they connect. Unit 3 is the mechanical process that actually produces them &mdash; the repeating cycle every company runs each period, three different tools for tracking the same transactions, why adjusting entries exist, the required order for building the statements, and how the books get reset for the next period.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><b>19</b><span>Flashcards</span></div>
+        <div class="hero-stat"><b>18</b><span>Quiz questions</span></div>
+        <div class="hero-stat"><b>&#x2713;</b><span>Adjustment drill</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main id="main">
+
+  <!-- ============ TEACHING CONTENT ============ -->
+  <div class="wrap section" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Walk the material</span>
+      <h2>Unit 3, section by section</h2>
+    </div>
+
+    <div class="source-block" id="src-cycle">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">01</span><h3>The Accounting Cycle &amp; Its Three Tools</h3></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>Big idea</h4>
+        <p>The accounting cycle is the process of recording events that happened during an accounting period. It's four steps, always in this order:</p>
+        <ol>
+          <li><strong>Analyze transactions, prepare entries, and post entries</strong></li>
+          <li><strong>Prepare and post accounting adjustments</strong></li>
+          <li><strong>Prepare financial statements</strong></li>
+          <li><strong>Close the books</strong> to set up the next accounting period</li>
+        </ol>
+        <div class="callout">Adjustments happen <em>before</em> statements are prepared, and closing happens <em>after</em>. A common trap is assuming statements are prepared last.</div>
+
+        <h4>Three cycle tools (different lenses, same transactions)</h4>
+        <ul>
+          <li><strong>Financial Statement Effects Template (FSET)</strong> &mdash; captures transactions across all four financial statements at once; facilitates analysis and interpretation.</li>
+          <li><strong>T-Accounts</strong> &mdash; expand each account into increases and decreases; can be used to keep running totals.</li>
+          <li><strong>Journal Entries</strong> &mdash; capture the effects of transactions using Debits (DR) and Credits (CR).</li>
+        </ul>
+        <p>These aren't competing methods &mdash; a well-rounded understanding of the cycle means being able to represent a transaction all three ways.</p>
+
+        <div class="exam-angle"><b>Exam angle</b>If asked to put steps of the cycle in order, or to identify which step a given action belongs to, anchor on the four-step sequence above.</div>
+      </div>
+    </div>
+
+    <div class="source-block" id="src-fset">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">02</span><h3>FSET Mechanics &amp; T-Account Natural Balances</h3></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>The FSET equation</h4>
+        <p>Built directly on the accounting equation, expanded to show how the Income Statement flows into Equity:</p>
+        <div class="quote-block">Assets = Liabilities + Equity<br>Cash Asset + Noncash Asset = Liabilities + Contributed Capital + Earned Capital<br>Revenues &minus; Expenses = Net Income &rarr; Earned Capital (as Retained Earnings)</div>
+        <p><strong>Key insight:</strong> this single equation is the connective tissue between the Income Statement and the Balance Sheet &mdash; Net Income flows directly into Earned Capital/Retained Earnings, exactly the linkage covered in Unit 2's "statement linkages" table. The FSET makes that linkage mechanically explicit, transaction by transaction.</p>
+
+        <h4>T-Accounts &amp; natural balances</h4>
+        <p>T-Accounts capture increases and decreases to individual accounts. The natural balances follow directly from the accounting equation:</p>
+        <div class="quote-block">Assets (natural debit) = Liabilities (natural credit) + Equity (natural credit)</div>
+        <p>In a journal entry: <strong>Debit = left, Credit = right</strong> &mdash; a convention that never changes.</p>
+
+        <div class="exam-angle"><b>Exam angle</b>"Natural balance" questions are common &mdash; know that assets normally carry debit balances, while liabilities and equity normally carry credit balances, because that's the side of the equation they sit on.</div>
+      </div>
+    </div>
+
+    <div class="source-block" id="src-adjustments">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">03</span><h3>Why Adjustments Exist &amp; the Four Types</h3></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>Why adjustments exist</h4>
+        <p>Cash movement and economic activity don't always happen at the same time. Example: employees may earn wages during a period but not be paid until after period-end &mdash; failing to recognize the wages owed would understate liabilities and overstate net income. Adjustments fix that mismatch.</p>
+
+        <h4>The four adjustment types (a 2&times;2 by timing)</h4>
+        <table class="mini-table">
+          <thead><tr><th></th><th>Cash before recognition</th><th>Cash after recognition</th></tr></thead>
+          <tbody>
+            <tr><td class="hw-label" style="background:none; font-weight:600;">Expense-side</td><td>Prepaid (Deferred) Expenses</td><td>Accrued Expenses</td></tr>
+            <tr><td class="hw-label" style="background:none; font-weight:600;">Revenue-side</td><td>Unearned (Deferred) Revenues</td><td>Accrued Revenues</td></tr>
+          </tbody>
+        </table>
+        <ul>
+          <li><strong>Prepaid (Deferred) Expense</strong> &mdash; an advance cash payment that will become an expense in the future.</li>
+          <li><strong>Unearned (Deferred) Revenue</strong> &mdash; cash received from customers before goods/services are provided.</li>
+          <li><strong>Accrued Expense</strong> &mdash; an expense incurred and recognized before cash is paid.</li>
+          <li><strong>Accrued Revenue</strong> &mdash; revenue earned and recognized before cash is received.</li>
+        </ul>
+
+        <h4>Try it: classify the adjustment</h4>
+        <p class="text-soft" style="font-size:.9rem;">A fresh scenario every time &mdash; decide which of the four types applies.</p>
+        <div class="adj-drill" id="adj-drill-tool">
+          <p class="adj-scenario" id="adj-scenario"></p>
+          <div class="adj-options" id="adj-options"></div>
+          <div class="adj-feedback" id="adj-feedback"></div>
+          <button class="btn blue" id="adj-new">New scenario</button>
+        </div>
+
+        <div class="exam-angle" style="margin-top:1.4em;"><b>Exam angle</b>Classify using two questions: has cash moved yet? Has the revenue/expense been recognized yet? Whichever happens first tells you "deferred" (prepaid/unearned) vs. "accrued."</div>
+      </div>
+    </div>
+
+    <div class="source-block" id="src-construction">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">04</span><h3>Constructing the Financial Statements, in Order</h3></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>The required order (memorize &mdash; each step depends on the last)</h4>
+        <ol>
+          <li>Income Statement</li>
+          <li>Reconcile Retained Earnings</li>
+          <li>Statement of Stockholders' Equity</li>
+          <li>Balance Sheet</li>
+          <li>Statement of Cash Flows</li>
+        </ol>
+        <p>You need net income before you can reconcile retained earnings; you need the reconciled retained earnings before you can complete the Statement of Stockholders' Equity; you need the SSE's ending balances before the Balance Sheet's equity section is complete; and so on.</p>
+
+        <h4>Preparing the Balance Sheet from the FSET</h4>
+        <p>Start with the beginning balances from the prior year's balance sheet, then use the FSET entries in the balance sheet columns to determine activity in each account during the year. The bottom row of the FSET provides the balance sheet equation.</p>
+
+        <div class="exam-angle"><b>Exam angle</b>Explain <em>why</em> financial statements must be prepared in this specific order rather than any order &mdash; the dependency chain itself is the tested concept, not just memorizing the sequence.</div>
+      </div>
+    </div>
+
+    <div class="source-block" id="src-closing">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">05</span><h3>The Closing Process</h3></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>What closing does</h4>
+        <p>The closing process zeroes out <strong>only the temporary accounts</strong> &mdash; Revenues, Expenses, and Dividends &mdash; by transferring their ending balances to Retained Earnings. Their balance at the start of each accounting period is $0; they only record the current period's activity. Every other account (assets, liabilities, contributed capital, retained earnings) is <strong>permanent</strong> and simply carries forward.</p>
+
+        <h4>Why a formal process is needed</h4>
+        <p>Net income isn't automatically processed to the Balance Sheet as retained earnings &mdash; companies use journal entries to capture transactions and adjustments, so a formal closing process is required at each period-end to transfer temporary account balances into retained earnings.</p>
+
+        <h4>Close order</h4>
+        <ol>
+          <li>Close Revenue and Gain accounts</li>
+          <li>Close Expense and Loss accounts (COGS, Operating Expenses, Nonoperating Expenses, Tax Expense)</li>
+          <li>Close Dividend account</li>
+        </ol>
+
+        <div class="exam-angle"><b>Exam angle</b>A classic question tests whether you can identify temporary vs. permanent accounts. Another common angle: explain why dividends are closed directly to retained earnings even though they never touch the Income Statement &mdash; dividends reduce retained earnings directly (per Unit 2's roll-forward), so they still need to be zeroed out each period.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ GLOSSARY ============ -->
+  <div class="wrap section" id="glossary">
+    <div class="section-head">
+      <span class="eyebrow">Reference</span>
+      <h2>Vocabulary bank</h2>
+      <p class="text-soft">Search or filter by category.</p>
+    </div>
+
+    <div class="glossary-controls">
+      <input type="search" id="glossary-search" placeholder="Search terms or definitions&#x2026;" aria-label="Search glossary">
+      <div class="chip-filter" role="group" aria-label="Filter glossary by category">
+        <button class="chip active" data-source="all">All</button>
+        <button class="chip" data-source="cycle">Cycle</button>
+        <button class="chip" data-source="fset">FSET &amp; T-Accounts</button>
+        <button class="chip" data-source="adjustments">Adjustments</button>
+        <button class="chip" data-source="construction">Construction</button>
+        <button class="chip" data-source="closing">Closing</button>
+      </div>
+    </div>
+    <div class="glossary-count" id="glossary-count"></div>
+
+    <dl class="glossary-grid" id="glossary-grid">
+      <div class="term-card" data-source="cycle" data-search="accounting cycle four step process analyzing posting transactions adjustments preparing statements closing books each period">
+        <dt>Accounting cycle</dt><dd>The four-step process of analyzing/posting transactions, posting adjustments, preparing statements, and closing the books each period.</dd><span class="tag">Cycle</span>
+      </div>
+      <div class="term-card" data-source="fset" data-search="financial statement effects template FSET tool capturing complex transactions across all four financial statements at once built on assets liabilities equity">
+        <dt>Financial Statement Effects Template (FSET)</dt><dd>A tool capturing complex transactions across all four financial statements at once, built on Assets = Liabilities + Equity.</dd><span class="tag">FSET &amp; T-Accounts</span>
+      </div>
+      <div class="term-card" data-source="fset" data-search="T-account expands account increases decreases assets natural debit liabilities equity natural credit">
+        <dt>T-Account</dt><dd>Expands an account into increases/decreases; assets carry natural debit balances, liabilities/equity carry natural credit balances.</dd><span class="tag">FSET &amp; T-Accounts</span>
+      </div>
+      <div class="term-card" data-source="fset" data-search="journal entry captures transaction effects using debits left credits right">
+        <dt>Journal entry</dt><dd>Captures transaction effects using debits (left) and credits (right).</dd><span class="tag">FSET &amp; T-Accounts</span>
+      </div>
+      <div class="term-card" data-source="adjustments" data-search="prepaid deferred expenses advance cash payments that will become expenses in the future">
+        <dt>Prepaid (Deferred) Expenses</dt><dd>Advance cash payments that will become expenses in the future.</dd><span class="tag">Adjustments</span>
+      </div>
+      <div class="term-card" data-source="adjustments" data-search="unearned deferred revenues cash received from customers before goods services are provided">
+        <dt>Unearned (Deferred) Revenues</dt><dd>Cash received from customers before goods/services are provided.</dd><span class="tag">Adjustments</span>
+      </div>
+      <div class="term-card" data-source="adjustments" data-search="accrued expenses incurred recognized on the income statement before cash is paid">
+        <dt>Accrued Expenses</dt><dd>Expenses incurred/recognized on the income statement before cash is paid.</dd><span class="tag">Adjustments</span>
+      </div>
+      <div class="term-card" data-source="adjustments" data-search="accrued revenues earned recognized on the income statement before cash is received">
+        <dt>Accrued Revenues</dt><dd>Revenues earned/recognized on the income statement before cash is received.</dd><span class="tag">Adjustments</span>
+      </div>
+      <div class="term-card" data-source="construction" data-search="statement construction order income statement retained earnings statement of stockholders equity balance sheet statement of cash flows">
+        <dt>Statement construction order</dt><dd>Income Statement &rarr; Reconcile Retained Earnings &rarr; Statement of Stockholders' Equity &rarr; Balance Sheet &rarr; Statement of Cash Flows.</dd><span class="tag">Construction</span>
+      </div>
+      <div class="term-card" data-source="closing" data-search="temporary accounts revenues expenses dividends zeroed out to zero dollars at the start of each period via the closing process">
+        <dt>Temporary accounts</dt><dd>Revenues, expenses, and dividends &mdash; zeroed out to $0 at the start of each period via the closing process.</dd><span class="tag">Closing</span>
+      </div>
+      <div class="term-card" data-source="closing" data-search="permanent accounts assets liabilities contributed capital retained earnings carried forward not closed">
+        <dt>Permanent accounts</dt><dd>Assets, liabilities, contributed capital, and retained earnings &mdash; carried forward each period, never closed.</dd><span class="tag">Closing</span>
+      </div>
+      <div class="term-card" data-source="closing" data-search="closing process zeroing out temporary accounts by transferring their ending balances to retained earnings">
+        <dt>Closing process</dt><dd>Zeroing out temporary accounts by transferring their ending balances to retained earnings.</dd><span class="tag">Closing</span>
+      </div>
+    </dl>
+  </div>
+
+  <!-- ============ FLASHCARDS ============ -->
+  <div class="wrap section" id="flashcards-section">
+    <div class="section-head">
+      <span class="eyebrow">Drill</span>
+      <h2>Flashcards</h2>
+      <p class="text-soft">All 19 cards from the deck. Filter to one category, shuffle, and flip through &mdash; click the card or press Enter/Space to flip.</p>
+    </div>
+
+    <div class="flash-controls">
+      <label for="flash-source" class="text-soft" style="font-family:var(--font-mono); font-size:.78rem;">Category:</label>
+      <select id="flash-source">
+        <option value="all">All categories</option>
+        <option value="cycle">Accounting Cycle</option>
+        <option value="fset">FSET &amp; T-Accounts</option>
+        <option value="adjustments">Adjustments</option>
+        <option value="construction">Constructing Statements</option>
+        <option value="closing">Closing Process</option>
+      </select>
+      <button class="btn ghost" id="flash-shuffle">Shuffle</button>
+    </div>
+
+    <div class="flash-stage" id="flash-stage">
+      <div class="flashcard" id="flashcard" tabindex="0" role="button" aria-label="Flashcard, click to flip">
+        <div class="flashcard-inner">
+          <div class="flashcard-face front">
+            <span class="fc-label">Question</span>
+            <p></p>
+          </div>
+          <div class="flashcard-face back">
+            <span class="fc-label">Answer</span>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="flash-nav">
+        <button class="btn ghost" id="flash-prev">&#x2190; Prev</button>
+        <span class="flash-meta" id="flash-meta"></span>
+        <button class="btn ghost" id="flash-next">Next &#x2192;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ QUIZ ============ -->
+  <div class="wrap section" id="quiz">
+    <div class="section-head">
+      <span class="eyebrow">Test yourself</span>
+      <h2>Unit 3 quiz</h2>
+      <p class="text-soft">18 questions covering the cycle, FSET/T-Accounts, adjustment classification, statement construction order, and the closing process. Randomized each attempt.</p>
+    </div>
+
+    <div class="quiz-shell" id="quiz-shell">
+      <div class="quiz-progress"><div class="quiz-progress-bar" id="quiz-progress-bar"></div></div>
+      <div class="quiz-meta" id="quiz-meta">Ready when you are</div>
+      <div id="quiz-start-screen" style="text-align:center; padding: 30px 10px;">
+        <p class="text-soft">Includes scenario-based questions where you classify a transaction into one of the four adjustment types.</p>
+        <button class="btn blue" id="quiz-start">Start quiz</button>
+      </div>
+      <div id="quiz-body" style="display:none;"></div>
+    </div>
+  </div>
+
+  <!-- ============ EXAM ANGLES ============ -->
+  <div class="wrap section">
+    <div class="section-head">
+      <span class="eyebrow">Before the exam</span>
+      <h2>Likely exam &amp; discussion angles</h2>
+    </div>
+    <div class="callout">
+      <ul style="margin:0;">
+        <li>Put the four steps of the accounting cycle in order, or identify which step a given action belongs to.</li>
+        <li>Represent the same transaction using the FSET, a T-account, and a journal entry, and confirm all three produce a consistent picture.</li>
+        <li>Given a transaction scenario, classify it into one of the four adjustment types using the "has cash moved yet / has the revenue or expense been recognized yet" test.</li>
+        <li>Explain why financial statements must be prepared in a specific order rather than any order.</li>
+        <li>Identify which accounts are temporary (zeroed out each period) vs. permanent (carried forward).</li>
+        <li>Explain why dividends are closed to retained earnings even though they never appear on the Income Statement.</li>
+        <li>Connect this unit's adjustment types back to Unit 2's cash-vs-accrual distinction &mdash; these four categories are the mechanical implementation of accrual accounting.</li>
+      </ul>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>ACCTG 6000 &mdash; Financial Accounting, University of Utah PMBA. Synthesized from Unit 3 class notes (Accounting Cycle, FSET, T-Accounts, Journal Entries, Adjustments, Statement Construction Order, Closing Process).</p>
+  </div>
+</footer>
+
+<script src="assets/acctg3-flashcards-data.js"></script>
+<script src="assets/acctg3-quiz-data.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/acctg3-interactive.js"></script>
+</body>
+</html>

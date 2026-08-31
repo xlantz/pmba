@@ -16,9 +16,17 @@ function initTeamworkMockTest(){
   const retakeBtn = document.getElementById('mt-retake');
   const newTestBtn = document.getElementById('mt-new-test');
   const poolCountEl = document.getElementById('mt-pool-count');
-  if(!startScreen || typeof QUIZ_QUESTIONS === 'undefined') return;
 
-  poolCountEl.textContent = QUIZ_QUESTIONS.length;
+  // Prefer a combined multi-unit pool if the page provides one (MGT_MOCK_POOL / MGT_MOCK_LABELS),
+  // otherwise fall back to the single-unit QUIZ_QUESTIONS / SOURCE_LABELS globals.
+  const QUESTION_POOL = (typeof MGT_MOCK_POOL !== 'undefined') ? MGT_MOCK_POOL
+    : (typeof QUIZ_QUESTIONS !== 'undefined' ? QUIZ_QUESTIONS : null);
+  const LABELS = (typeof MGT_MOCK_LABELS !== 'undefined') ? MGT_MOCK_LABELS
+    : (typeof SOURCE_LABELS !== 'undefined' ? SOURCE_LABELS : {});
+
+  if(!startScreen || !QUESTION_POOL) return;
+
+  poolCountEl.textContent = QUESTION_POOL.length;
   let currentSet = [];
   const optionLetters = ['A','B','C','D'];
 
@@ -29,12 +37,12 @@ function initTeamworkMockTest(){
   }
 
   function startTest(count){
-    const n = Math.min(count, QUIZ_QUESTIONS.length);
-    currentSet = shuffled(QUIZ_QUESTIONS).slice(0, n);
+    const n = Math.min(count, QUESTION_POOL.length);
+    currentSet = shuffled(QUESTION_POOL).slice(0, n);
 
     questionsWrap.innerHTML = currentSet.map((q, i) => `
       <div class="hw-q mt-q" data-q-index="${i}">
-        <h3><span class="hw-num">Q${i+1}</span>${SOURCE_LABELS[q.source] || 'Synthesis'}</h3>
+        <h3><span class="hw-num">Q${i+1}</span>${LABELS[q.source] || 'Synthesis'}</h3>
         <p class="quiz-question" style="margin-top:0;">${q.prompt}</p>
         <div class="mc-options" data-correct-index="${q.correctIndex}">
           ${q.options.map((opt, oi) => `
