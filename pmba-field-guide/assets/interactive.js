@@ -230,13 +230,13 @@ function initPracticeLab(){
     'roa-decomp': genROADecomp, 'equity-mult': genEquityMult, 'roe-leverage': genROELeverage,
   };
 
-  function newProblem(){
+  function newProblem(autoFocus){
     const chosenType = typeSelect.value === 'mixed' ? pick(TYPES) : typeSelect.value;
     current = GENERATORS[chosenType]();
     promptEl.textContent = current.prompt;
     unitEl.textContent = current.unit === '%' ? '(%)' : '(x)';
     answerInput.value = '';
-    answerInput.focus();
+    if(autoFocus) answerInput.focus();
     feedbackEl.classList.remove('show','correct','incorrect');
     feedbackEl.innerHTML = '';
   }
@@ -263,10 +263,10 @@ function initPracticeLab(){
     }
   }
 
-  newBtn.addEventListener('click', newProblem);
+  newBtn.addEventListener('click', () => newProblem(true));
   checkBtn.addEventListener('click', checkAnswer);
   answerInput.addEventListener('keydown', (e) => { if(e.key === 'Enter'){ e.preventDefault(); checkAnswer(); } });
-  typeSelect.addEventListener('change', newProblem);
+  typeSelect.addEventListener('change', () => newProblem(true));
 
-  newProblem();
+  newProblem(false);
 }

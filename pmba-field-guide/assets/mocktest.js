@@ -18,7 +18,28 @@ function initMockTest(){
   if(!startScreen || typeof HOMEWORK_BANK === 'undefined') return;
 
   poolCountEl.textContent = HOMEWORK_BANK.length;
+
+  const countAllEl = document.getElementById('mt-count-all');
+  const countConceptEl = document.getElementById('mt-count-concept');
+  const countWorkEl = document.getElementById('mt-count-work');
+  if(countAllEl) countAllEl.textContent = HOMEWORK_BANK.length;
+  if(countConceptEl) countConceptEl.textContent = HOMEWORK_BANK.filter(q => q.type === 'concept').length;
+  if(countWorkEl) countWorkEl.textContent = HOMEWORK_BANK.filter(q => q.type === 'work').length;
+
   let currentSet = [];
+  let currentType = 'all';
+
+  function pool(){
+    if(currentType === 'all') return HOMEWORK_BANK;
+    return HOMEWORK_BANK.filter(q => q.type === currentType);
+  }
+
+  document.querySelectorAll('[data-mt-type]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentType = btn.dataset.mtType;
+      document.querySelectorAll('[data-mt-type]').forEach(b => b.classList.toggle('active', b === btn));
+    });
+  });
 
   function shuffled(arr){
     const a = [...arr];
@@ -31,8 +52,9 @@ function initMockTest(){
   }
 
   function startTest(count){
-    const n = Math.min(count, HOMEWORK_BANK.length);
-    currentSet = shuffled(HOMEWORK_BANK).slice(0, n);
+    const src = pool();
+    const n = Math.min(count, src.length);
+    currentSet = shuffled(src).slice(0, n);
 
     questionsWrap.innerHTML = currentSet.map((q, i) => `
       <div class="hw-q mt-q" data-bank-id="${q.id}">

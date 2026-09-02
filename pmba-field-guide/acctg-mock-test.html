@@ -75,6 +75,13 @@
       <span class="eyebrow">Choose a length</span>
       <h2>How many questions?</h2>
       <p class="text-soft">Each option pulls a fresh random subset of whole problems &mdash; company names, tables, and all &mdash; from the pool above. As more homework sets get added to the site, the pool (and the variety) grows automatically.</p>
+
+      <div class="chip-filter" role="group" aria-label="Filter by question type" style="margin-bottom:18px;">
+        <button class="chip active" data-mt-type="all">All Types (<span id="mt-count-all">&#x2014;</span>)</button>
+        <button class="chip" data-mt-type="concept">Concept MC (<span id="mt-count-concept">&#x2014;</span>)</button>
+        <button class="chip" data-mt-type="work">Work &amp; Math (<span id="mt-count-work">&#x2014;</span>)</button>
+      </div>
+
       <div class="mt-count-row">
         <button class="mt-count-btn" data-count="3">3<span>Quick</span></button>
         <button class="mt-count-btn" data-count="5">5<span>Standard</span></button>
