@@ -8,7 +8,21 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.hw-q[data-gradable="true"]').forEach(initHwQuestion);
   initHwFilters();
   initStatementModals();
+  initAnswerToggles();
 });
+
+function initAnswerToggles(){
+  // Event delegation so this also works for content injected later
+  // (e.g. the mock test renders questions well after DOMContentLoaded).
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.answer-toggle');
+    if(!btn) return;
+    const reveal = btn.nextElementSibling;
+    if(!reveal || !reveal.classList.contains('answer-reveal')) return;
+    const expanded = reveal.classList.toggle('show');
+    btn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+  });
+}
 
 function initStatementModals(){
   // Event delegation so this also works for content injected later
@@ -99,17 +113,27 @@ function initHwQuestion(qEl){
     let userVal = el.tagName === 'SELECT' ? el.value : el.value;
 
     if(el.tagName === 'SELECT'){
-      const ok = normalize(userVal) === normalize(correctRaw);
+      // A blank selection is treated as equivalent to an explicit "N/A" —
+      // for FSET-style questions, leaving an unaffected column's account
+      // label blank shouldn't be marked wrong.
+      const blankIsNA = normalize(correctRaw) === 'n/a' && userVal.trim() === '';
+      const ok = blankIsNA || normalize(userVal) === normalize(correctRaw);
       el.classList.remove('correct','incorrect');
       el.classList.add(ok ? 'correct' : 'incorrect');
       return ok;
     }
 
     // numeric text input
-    const userNum = parseFloat((userVal || '').toString().replace(/[$,%\s]/g,''));
     const correctNum = parseFloat(correctRaw);
+    // A blank numeric field is treated as equivalent to an explicit "0" —
+    // for FSET-style questions, leaving an unaffected column's dollar
+    // amount blank shouldn't be marked wrong.
+    const blankIsZero = userVal.trim() === '' && !isNaN(correctNum) && correctNum === 0;
+    const userNum = parseFloat((userVal || '').toString().replace(/[$,%\s]/g,''));
     let ok;
-    if(isNaN(userNum)){
+    if(blankIsZero){
+      ok = true;
+    } else if(isNaN(userNum)){
       ok = false;
     } else if(!isNaN(correctNum)){
       ok = Math.abs(userNum - correctNum) <= (tol || Math.max(0.5, Math.abs(correctNum) * 0.01));

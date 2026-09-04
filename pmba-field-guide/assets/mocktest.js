@@ -83,16 +83,26 @@ function initMockTest(){
     const userVal = el.value;
 
     if(el.tagName === 'SELECT'){
-      const ok = normalize(userVal) === normalize(correctRaw);
+      // A blank selection is treated as equivalent to an explicit "N/A" —
+      // for FSET-style questions, leaving an unaffected column's account
+      // label blank shouldn't be marked wrong.
+      const blankIsNA = normalize(correctRaw) === 'n/a' && userVal.trim() === '';
+      const ok = blankIsNA || normalize(userVal) === normalize(correctRaw);
       el.classList.remove('correct','incorrect');
       el.classList.add(ok ? 'correct' : 'incorrect');
       return ok;
     }
 
-    const userNum = parseFloat((userVal || '').toString().replace(/[$,%\s]/g,''));
     const correctNum = parseFloat(correctRaw);
+    // A blank numeric field is treated as equivalent to an explicit "0" —
+    // for FSET-style questions, leaving an unaffected column's dollar
+    // amount blank shouldn't be marked wrong.
+    const blankIsZero = userVal.trim() === '' && !isNaN(correctNum) && correctNum === 0;
+    const userNum = parseFloat((userVal || '').toString().replace(/[$,%\s]/g,''));
     let ok;
-    if(isNaN(userNum)){
+    if(blankIsZero){
+      ok = true;
+    } else if(isNaN(userNum)){
       ok = false;
     } else if(!isNaN(correctNum)){
       ok = Math.abs(userNum - correctNum) <= (tol || Math.max(0.5, Math.abs(correctNum) * 0.01));

@@ -457,6 +457,14 @@ table.hw-table td.hw-label{ text-align:left; background: var(--paper-2); font-we
 .hw-notes b{ font-family: var(--font-mono); text-transform:uppercase; font-size:.7rem; letter-spacing:.05em; color: var(--blue-deep); display:block; margin-bottom:.5em; }
 .hw-notes ol, .hw-notes ul{ margin:.3em 0 0; padding-left:1.2em; }
 .hw-notes li{ margin-bottom:.3em; }
+.answer-toggle{ display:flex; align-items:center; gap:6px; background:none; border:none; padding:0; margin-top:1em; font-family: var(--font-mono); text-transform:uppercase; font-size:.7rem; letter-spacing:.05em; color: var(--rust-deep); cursor:pointer; font-weight:600; }
+.answer-toggle .chev{ font-size:.9rem; transition: transform .15s ease; }
+.answer-toggle[aria-expanded="true"] .chev{ transform: rotate(180deg); }
+.answer-reveal{ display:none; margin-top:.6em; padding-top:.6em; border-top:1px dashed var(--paper-4, #C9C2B4); }
+.answer-reveal.show{ display:block; }
+.answer-reveal ol, .answer-reveal ul{ margin:.2em 0 0; padding-left:1.2em; }
+.answer-reveal li{ margin-bottom:.35em; }
+.answer-reveal .ans-part{ font-weight:600; color: var(--ink); }
 .hw-research-note{ background: var(--paper-2); border-left:3px solid var(--blue); border-radius: var(--radius-m); padding: 12px 16px; font-size:.88rem; margin-top:1em; }
 
 /* ---------------- financial statement lookup modal ---------------- */
