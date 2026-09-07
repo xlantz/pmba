@@ -226,7 +226,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "What is the objective of financial reporting?",
   "bodyHtml": "<p class=\"hw-prompt\">What is the objective of financial reporting?</p>\n      <select data-correct=\"To provide users with information that supports investment and management decisions\"><option value=\"\">-- select --</option><option>To minimize a company's tax liability</option><option>To provide users with information that supports investment and management decisions</option><option>To satisfy the personal curiosity of company employees</option><option>To guarantee a company's stock price will rise</option></select>",
-  "notesHtml": "<ol><li>Everything else in the course \\u2014 statements, ratios, disclosure rules \\u2014 traces back to this single purpose: helping users make better decisions.</li></ol>"
+  "notesHtml": "<ol><li>Everything else in the course — statements, ratios, disclosure rules — traces back to this single purpose: helping users make better decisions.</li></ol>"
 },
   {
   "set": "Unit 1 Concept Check",
@@ -234,7 +234,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A bank deciding whether to extend a loan, and at what interest rate, is an…",
   "bodyHtml": "<p class=\"hw-prompt\">A bank deciding whether to extend a loan, and at what interest rate, is an example of which user group making which decision?</p>\n      <select data-correct=\"Lenders &amp; credit analysts assessing credit risk\"><option value=\"\">-- select --</option><option>Company managers making an internal budgeting decision</option><option>Investors &amp; equity analysts making an equity valuation decision</option><option>Lenders &amp; credit analysts assessing credit risk</option><option>Regulators enforcing disclosure requirements</option></select>",
-  "notesHtml": "<ol><li>Lenders and credit analysts use financial statements to judge a company's ability to repay debt \\u2014 that's the credit-risk decision, distinct from equity valuation or internal management use.</li></ol>"
+  "notesHtml": "<ol><li>Lenders and credit analysts use financial statements to judge a company's ability to repay debt — that's the credit-risk decision, distinct from equity valuation or internal management use.</li></ol>"
 },
   {
   "set": "Unit 1 Concept Check",
@@ -242,7 +242,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which of the following is one of the three 'business forces' that shape a…",
   "bodyHtml": "<p class=\"hw-prompt\">Which of the following is one of the three 'business forces' that shape a company's goals and strategy?</p>\n      <select data-correct=\"Market conditions\"><option value=\"\">-- select --</option><option>Employee morale</option><option>Market conditions</option><option>Office location</option><option>Brand color scheme</option></select>",
-  "notesHtml": "<ol><li>The three business forces are market conditions, competitive pressures, and regulations \\u2014 external factors a company must respond to.</li></ol>"
+  "notesHtml": "<ol><li>The three business forces are market conditions, competitive pressures, and regulations — external factors a company must respond to.</li></ol>"
 },
   {
   "set": "Unit 1 Concept Check",
@@ -250,14 +250,14 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company raises cash by issuing new shares of stock. Which business…",
   "bodyHtml": "<p class=\"hw-prompt\">A company raises cash by issuing new shares of stock. Which business activity does this fall under?</p>\n      <select data-correct=\"Financing\"><option value=\"\">-- select --</option><option>Operating</option><option>Investing</option><option>Financing</option><option>Reporting</option></select>",
-  "notesHtml": "<ol><li>Issuing stock (or borrowing) to fund the business is a Financing activity \\u2014 raising the capital, as opposed to spending it (Investing) or running day-to-day operations (Operating).</li></ol>"
+  "notesHtml": "<ol><li>Issuing stock (or borrowing) to fund the business is a Financing activity — raising the capital, as opposed to spending it (Investing) or running day-to-day operations (Operating).</li></ol>"
 },
   {
   "set": "Unit 1 Concept Check",
   "id": "U1-QZ10",
   "type": "concept",
   "title": "A company purchases a new factory building. Which business activity does…",
-  "bodyHtml": "<p class=\"hw-prompt\">A company purchases a new factory building. Which business activity does this fall under?</p>\n      <select data-correct=\"Investing\"><option value=\"\">-- select --</option><option>Operating</option><option>Investing</option><option>Financing</option><option>None of these \\u2014 buildings aren't part of the three-activity framework</option></select>",
+  "bodyHtml": "<p class=\"hw-prompt\">A company purchases a new factory building. Which business activity does this fall under?</p>\n      <select data-correct=\"Investing\"><option value=\"\">-- select --</option><option>Operating</option><option>Investing</option><option>Financing</option><option>None of these — buildings aren't part of the three-activity framework</option></select>",
   "notesHtml": "<ol><li>Acquiring land, buildings, and equipment is a textbook Investing activity.</li></ol>"
 },
   {
@@ -266,7 +266,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Why do the Operating / Investing / Financing categories matter beyond…",
   "bodyHtml": "<p class=\"hw-prompt\">Why do the Operating / Investing / Financing categories matter beyond being a conceptual list?</p>\n      <select data-correct=\"They are literally the three sections of the Statement of Cash Flows\"><option value=\"\">-- select --</option><option>They determine a company's tax bracket</option><option>They are literally the three sections of the Statement of Cash Flows</option><option>They are used only in the Balance Sheet's footnotes</option><option>They only apply to publicly traded companies</option></select>",
-  "notesHtml": "<ol><li>This framework isn't just background \\u2014 it becomes the literal structure of the Statement of Cash Flows later in the course, so learning it now pays off directly.</li></ol>"
+  "notesHtml": "<ol><li>This framework isn't just background — it becomes the literal structure of the Statement of Cash Flows later in the course, so learning it now pays off directly.</li></ol>"
 },
   {
   "set": "Unit 1 Concept Check",
@@ -274,7 +274,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which of the following is NOT one of the four core financial statements?",
   "bodyHtml": "<p class=\"hw-prompt\">Which of the following is NOT one of the four core financial statements?</p>\n      <select data-correct=\"Statement of Competitive Advantage\"><option value=\"\">-- select --</option><option>Balance Sheet</option><option>Statement of Cash Flows</option><option>Statement of Stockholders' Equity</option><option>Statement of Competitive Advantage</option></select>",
-  "notesHtml": "<ol><li>The four are Balance Sheet, Income Statement, Statement of Stockholders' Equity, and Statement of Cash Flows. \"Statement of Competitive Advantage\" isn't a financial statement \\u2014 competitive advantage is a strategic concept (see Porter's Five Forces), not an accounting report.</li></ol>"
+  "notesHtml": "<ol><li>The four are Balance Sheet, Income Statement, Statement of Stockholders' Equity, and Statement of Cash Flows. \"Statement of Competitive Advantage\" isn't a financial statement — competitive advantage is a strategic concept (see Porter's Five Forces), not an accounting report.</li></ol>"
 },
   {
   "set": "Unit 1 Concept Check",
@@ -282,7 +282,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which of the following is a cost, not a benefit, of voluntary financial…",
   "bodyHtml": "<p class=\"hw-prompt\">Which of the following is a cost, not a benefit, of voluntary financial disclosure?</p>\n      <select data-correct=\"Competitive disadvantage from revealing proprietary information\"><option value=\"\">-- select --</option><option>Lower cost of capital</option><option>Improved recruiting efforts</option><option>Competitive disadvantage from revealing proprietary information</option><option>Stronger supplier-customer relationships</option></select>",
-  "notesHtml": "<ol><li>The other three are benefits of disclosure. Competitive disadvantage \\u2014 tipping off rivals \\u2014 is one of the four costs, alongside preparation/dissemination expense, litigation risk, and political costs.</li></ol>"
+  "notesHtml": "<ol><li>The other three are benefits of disclosure. Competitive disadvantage — tipping off rivals — is one of the four costs, alongside preparation/dissemination expense, litigation risk, and political costs.</li></ol>"
 },
   {
   "set": "Unit 1 Concept Check",
@@ -290,7 +290,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company chooses to disclose detailed segment-level sales data even…",
   "bodyHtml": "<p class=\"hw-prompt\">A company chooses to disclose detailed segment-level sales data even though it isn't strictly required to. What's the most likely benefit it's pursuing?</p>\n      <select data-correct=\"A lower cost of capital, through lower interest rates or a higher stock price\"><option value=\"\">-- select --</option><option>Avoiding all future audits</option><option>A lower cost of capital, through lower interest rates or a higher stock price</option><option>Eliminating its tax liability</option><option>Guaranteed protection from lawsuits</option></select>",
-  "notesHtml": "<ol><li>Cost of capital is the headline benefit of voluntary disclosure \\u2014 more transparency generally reduces the risk premium investors and lenders demand.</li></ol>"
+  "notesHtml": "<ol><li>Cost of capital is the headline benefit of voluntary disclosure — more transparency generally reduces the risk premium investors and lenders demand.</li></ol>"
 },
   {
   "set": "Unit 1 Concept Check",
@@ -298,7 +298,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company reports Net Income of $2,000,000 and Average Total Assets of…",
   "bodyHtml": "<p class=\"hw-prompt\">A company reports Net Income of $2,000,000 and Average Total Assets of $20,000,000. What is its ROA?</p>\n      <select data-correct=\"10%\"><option value=\"\">-- select --</option><option>2%</option><option>5%</option><option>10%</option><option>20%</option></select>",
-  "notesHtml": "<ol><li>ROA = Net Income \\u00f7 Average Total Assets = $2,000,000 \\u00f7 $20,000,000 = 0.10, or 10%.</li></ol>"
+  "notesHtml": "<ol><li>ROA = Net Income ÷ Average Total Assets = $2,000,000 ÷ $20,000,000 = 0.10, or 10%.</li></ol>"
 },
   {
   "set": "Unit 1 Concept Check",
@@ -306,7 +306,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company reports Net Income of $500,000 and Net Sales of $10,000,000.…",
   "bodyHtml": "<p class=\"hw-prompt\">A company reports Net Income of $500,000 and Net Sales of $10,000,000. What is its Net Profit Margin?</p>\n      <select data-correct=\"5%\"><option value=\"\">-- select --</option><option>0.5%</option><option>5%</option><option>20%</option><option>50%</option></select>",
-  "notesHtml": "<ol><li>Net Profit Margin = Net Income \\u00f7 Net Sales = $500,000 \\u00f7 $10,000,000 = 0.05, or 5%.</li></ol>"
+  "notesHtml": "<ol><li>Net Profit Margin = Net Income ÷ Net Sales = $500,000 ÷ $10,000,000 = 0.05, or 5%.</li></ol>"
 },
   {
   "set": "Unit 1 Concept Check",
@@ -314,7 +314,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company reports Net Sales of $10,000,000 and Average Total Assets of…",
   "bodyHtml": "<p class=\"hw-prompt\">A company reports Net Sales of $10,000,000 and Average Total Assets of $4,000,000. What is its Total Asset Turnover?</p>\n      <select data-correct=\"2.5x\"><option value=\"\">-- select --</option><option>0.4x</option><option>1.5x</option><option>2.5x</option><option>4x</option></select>",
-  "notesHtml": "<ol><li>Total Asset Turnover = Net Sales \\u00f7 Average Total Assets = $10,000,000 \\u00f7 $4,000,000 = 2.5x \\u2014 the company generates $2.50 of sales for every $1 of assets.</li></ol>"
+  "notesHtml": "<ol><li>Total Asset Turnover = Net Sales ÷ Average Total Assets = $10,000,000 ÷ $4,000,000 = 2.5x — the company generates $2.50 of sales for every $1 of assets.</li></ol>"
 },
   {
   "set": "Unit 1 Concept Check",
@@ -322,15 +322,15 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company has a Net Profit Margin of 4% and a Total Asset Turnover of 2x.…",
   "bodyHtml": "<p class=\"hw-prompt\">A company has a Net Profit Margin of 4% and a Total Asset Turnover of 2x. What is its ROA?</p>\n      <select data-correct=\"8%\"><option value=\"\">-- select --</option><option>2%</option><option>6%</option><option>8%</option><option>12%</option></select>",
-  "notesHtml": "<ol><li>ROA = Net Profit Margin \\u00d7 Total Asset Turnover = 4% \\u00d7 2 = 8%. This is the DuPont-style decomposition \\u2014 the same ROA can come from a high-margin/low-turnover model or a low-margin/high-turnover model.</li></ol>"
+  "notesHtml": "<ol><li>ROA = Net Profit Margin × Total Asset Turnover = 4% × 2 = 8%. This is the DuPont-style decomposition — the same ROA can come from a high-margin/low-turnover model or a low-margin/high-turnover model.</li></ol>"
 },
   {
   "set": "Unit 1 Concept Check",
   "id": "U1-QZ19",
   "type": "concept",
-  "title": "A company has ROA of 8% and an Equity Multiplier (Average Total Assets…",
-  "bodyHtml": "<p class=\"hw-prompt\">A company has ROA of 8% and an Equity Multiplier (Average Total Assets \\u00f7 Average Stockholders' Equity) of 2.5. What is its ROE?</p>\n      <select data-correct=\"20%\"><option value=\"\">-- select --</option><option>3.2%</option><option>10.5%</option><option>16%</option><option>20%</option></select>",
-  "notesHtml": "<ol><li>ROE = ROA \\u00d7 Equity Multiplier = 8% \\u00d7 2.5 = 20%. The equity multiplier captures financial leverage \\u2014 the more a company is financed by debt rather than equity, the more ROE is amplified above ROA.</li></ol>"
+  "title": "A company has ROA of 8% and an Equity Multiplier (Average Total Assets ÷…",
+  "bodyHtml": "<p class=\"hw-prompt\">A company has ROA of 8% and an Equity Multiplier (Average Total Assets ÷ Average Stockholders' Equity) of 2.5. What is its ROE?</p>\n      <select data-correct=\"20%\"><option value=\"\">-- select --</option><option>3.2%</option><option>10.5%</option><option>16%</option><option>20%</option></select>",
+  "notesHtml": "<ol><li>ROE = ROA × Equity Multiplier = 8% × 2.5 = 20%. The equity multiplier captures financial leverage — the more a company is financed by debt rather than equity, the more ROE is amplified above ROA.</li></ol>"
 },
   {
   "set": "Unit 1 Concept Check",
@@ -338,7 +338,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Company A and Company B both have an ROA of 10%. Company A has a 20%…",
   "bodyHtml": "<p class=\"hw-prompt\">Company A and Company B both have an ROA of 10%. Company A has a 20% margin and 0.5x turnover; Company B has a 2% margin and 5x turnover. Which best describes Company B?</p>\n      <select data-correct=\"A discount retailer selling a high volume of low-margin goods\"><option value=\"\">-- select --</option><option>A luxury brand selling a low volume of high-margin goods</option><option>A discount retailer selling a high volume of low-margin goods</option><option>A company with no meaningful sales activity</option><option>A company that is losing money overall</option></select>",
-  "notesHtml": "<ol><li>Same ROA, different paths: Company A's high margin / low turnover profile fits a luxury brand; Company B's low margin / high turnover profile \\u2014 selling a lot, at thin margins \\u2014 fits a discount retailer.</li></ol>"
+  "notesHtml": "<ol><li>Same ROA, different paths: Company A's high margin / low turnover profile fits a luxury brand; Company B's low margin / high turnover profile — selling a lot, at thin margins — fits a discount retailer.</li></ol>"
 },
   {
   "set": "Unit 1 Concept Check",
@@ -346,7 +346,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "If a company increases the share of its assets financed by debt rather…",
   "bodyHtml": "<p class=\"hw-prompt\">If a company increases the share of its assets financed by debt rather than equity, what happens to the relationship between its ROE and ROA (holding ROA constant)?</p>\n      <select data-correct=\"ROE becomes further amplified above ROA\"><option value=\"\">-- select --</option><option>ROE moves closer to ROA</option><option>ROE becomes further amplified above ROA</option><option>ROE and ROA become unrelated</option><option>ROA increases to match ROE</option></select>",
-  "notesHtml": "<ol><li>More debt financing (relative to equity) raises the equity multiplier (Average Total Assets \\u00f7 Average Stockholders' Equity), which amplifies ROE relative to ROA \\u2014 this is financial leverage at work.</li></ol>"
+  "notesHtml": "<ol><li>More debt financing (relative to equity) raises the equity multiplier (Average Total Assets ÷ Average Stockholders' Equity), which amplifies ROE relative to ROA — this is financial leverage at work.</li></ol>"
 },
   {
   "set": "Unit 1 Concept Check",
@@ -362,23 +362,23 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "In a case study, you're asked to explain why Company A has a higher net…",
   "bodyHtml": "<p class=\"hw-prompt\">In a case study, you're asked to explain why Company A has a higher net profit margin than Company B in the same industry. What's the right way to use SWOT or Porter's Five Forces here?</p>\n      <select data-correct=\"As qualitative context that explains the quantitative ratio finding\"><option value=\"\">-- select --</option><option>As a completely separate topic, unrelated to the ratio analysis</option><option>As qualitative context that explains the quantitative ratio finding</option><option>As a replacement for calculating the ratios at all</option><option>They only apply to companies outside the industry being studied</option></select>",
-  "notesHtml": "<ol><li>The notes are explicit: these strategic frameworks pair with ratio analysis rather than standing apart from it \\u2014 use them to explain *why* the numbers look the way they do (e.g., a cost advantage explaining a fatter margin).</li></ol>"
+  "notesHtml": "<ol><li>The notes are explicit: these strategic frameworks pair with ratio analysis rather than standing apart from it — use them to explain *why* the numbers look the way they do (e.g., a cost advantage explaining a fatter margin).</li></ol>"
 },
   {
   "set": "Unit 2 Concept Check",
   "id": "U2-QZ1",
   "type": "concept",
   "title": "A company delivers a service in March but doesn't get paid until May.…",
-  "bodyHtml": "<p class=\"hw-prompt\">A company delivers a service in March but doesn't get paid until May. Under accrual accounting, when is the revenue recorded?</p>\n      <select data-correct=\"In March, when the service is performed\"><option value=\"\">-- select --</option><option>In May, when cash is received</option><option>In March, when the service is performed</option><option>Split evenly between March and May</option><option>Never \\u2014 only cash-basis revenue is recorded under GAAP</option></select>",
-  "notesHtml": "<ol><li>Accrual accounting records revenue when it's earned, regardless of when cash arrives. GAAP requires accrual-basis accounting for exactly this reason \\u2014 it matches revenue to the period the work was actually done.</li></ol>"
+  "bodyHtml": "<p class=\"hw-prompt\">A company delivers a service in March but doesn't get paid until May. Under accrual accounting, when is the revenue recorded?</p>\n      <select data-correct=\"In March, when the service is performed\"><option value=\"\">-- select --</option><option>In May, when cash is received</option><option>In March, when the service is performed</option><option>Split evenly between March and May</option><option>Never — only cash-basis revenue is recorded under GAAP</option></select>",
+  "notesHtml": "<ol><li>Accrual accounting records revenue when it's earned, regardless of when cash arrives. GAAP requires accrual-basis accounting for exactly this reason — it matches revenue to the period the work was actually done.</li></ol>"
 },
   {
   "set": "Unit 2 Concept Check",
   "id": "U2-QZ2",
   "type": "concept",
   "title": "What is the fundamental accounting equation?",
-  "bodyHtml": "<p class=\"hw-prompt\">What is the fundamental accounting equation?</p>\n      <select data-correct=\"Assets = Liabilities + Stockholders' Equity\"><option value=\"\">-- select --</option><option>Revenue \\u2212 Expenses = Net Income</option><option>Assets = Liabilities + Stockholders' Equity</option><option>Assets + Liabilities = Equity</option><option>Cash In \\u2212 Cash Out = Net Cash Flow</option></select>",
-  "notesHtml": "<ol><li>Assets = Liabilities + Stockholders' Equity is the identity the whole Balance Sheet is built on \\u2014 every transaction has to keep both sides equal.</li></ol>"
+  "bodyHtml": "<p class=\"hw-prompt\">What is the fundamental accounting equation?</p>\n      <select data-correct=\"Assets = Liabilities + Stockholders' Equity\"><option value=\"\">-- select --</option><option>Revenue − Expenses = Net Income</option><option>Assets = Liabilities + Stockholders' Equity</option><option>Assets + Liabilities = Equity</option><option>Cash In − Cash Out = Net Cash Flow</option></select>",
+  "notesHtml": "<ol><li>Assets = Liabilities + Stockholders' Equity is the identity the whole Balance Sheet is built on — every transaction has to keep both sides equal.</li></ol>"
 },
   {
   "set": "Unit 2 Concept Check",
@@ -394,7 +394,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company bought a building 10 years ago for $2 million. It's now worth $5…",
   "bodyHtml": "<p class=\"hw-prompt\">A company bought a building 10 years ago for $2 million. It's now worth $5 million on the open market. At what value does the Balance Sheet report it?</p>\n      <select data-correct=\"$2 million, its historical cost\"><option value=\"\">-- select --</option><option>$5 million, its current market value</option><option>$2 million, its historical cost</option><option>$3.5 million, the average of the two</option><option>Whatever value the CFO chooses that year</option></select>",
-  "notesHtml": "<ol><li>Under the historical cost rule, assets stay on the books at what the company originally paid, not their current market value \\u2014 even when the market value has changed significantly.</li></ol>"
+  "notesHtml": "<ol><li>Under the historical cost rule, assets stay on the books at what the company originally paid, not their current market value — even when the market value has changed significantly.</li></ol>"
 },
   {
   "set": "Unit 2 Concept Check",
@@ -402,7 +402,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A customer pays a company $1,200 in advance for a one-year service…",
   "bodyHtml": "<p class=\"hw-prompt\">A customer pays a company $1,200 in advance for a one-year service contract that hasn't started yet. How does the company record this?</p>\n      <select data-correct=\"As unearned (deferred) revenue, a liability\"><option value=\"\">-- select --</option><option>As revenue immediately</option><option>As unearned (deferred) revenue, a liability</option><option>As an asset called 'prepaid revenue'</option><option>It isn't recorded until the contract ends</option></select>",
-  "notesHtml": "<ol><li>Since the company hasn't delivered the service yet, it owes the customer something (the service) \\u2014 that obligation is recorded as unearned revenue, a liability, until it's earned.</li></ol>"
+  "notesHtml": "<ol><li>Since the company hasn't delivered the service yet, it owes the customer something (the service) — that obligation is recorded as unearned revenue, a liability, until it's earned.</li></ol>"
 },
   {
   "set": "Unit 2 Concept Check",
@@ -410,7 +410,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company repurchases $500,000 of its own stock and holds it as treasury…",
   "bodyHtml": "<p class=\"hw-prompt\">A company repurchases $500,000 of its own stock and holds it as treasury stock. What happens to total stockholders' equity?</p>\n      <select data-correct=\"It decreases by $500,000\"><option value=\"\">-- select --</option><option>It increases by $500,000</option><option>It decreases by $500,000</option><option>It stays the same, just reclassified</option><option>Treasury stock isn't part of equity at all</option></select>",
-  "notesHtml": "<ol><li>Treasury stock reduces total stockholders' equity \\u2014 the company is paying cash out to shareholders in exchange for shrinking the ownership pool.</li></ol>"
+  "notesHtml": "<ol><li>Treasury stock reduces total stockholders' equity — the company is paying cash out to shareholders in exchange for shrinking the ownership pool.</li></ol>"
 },
   {
   "set": "Unit 2 Concept Check",
@@ -418,14 +418,14 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company starts the year with Retained Earnings of $80,000, earns Net…",
   "bodyHtml": "<p class=\"hw-prompt\">A company starts the year with Retained Earnings of $80,000, earns Net Income of $30,000, and pays $10,000 in dividends. What is ending Retained Earnings?</p>\n      <select data-correct=\"$100,000\"><option value=\"\">-- select --</option><option>$90,000</option><option>$100,000</option><option>$110,000</option><option>$120,000</option></select>",
-  "notesHtml": "<ol><li>Ending RE = Beginning RE + Net Income \\u2212 Dividends = $80,000 + $30,000 \\u2212 $10,000 = $100,000.</li></ol>"
+  "notesHtml": "<ol><li>Ending RE = Beginning RE + Net Income − Dividends = $80,000 + $30,000 − $10,000 = $100,000.</li></ol>"
 },
   {
   "set": "Unit 2 Concept Check",
   "id": "U2-QZ8",
   "type": "concept",
   "title": "Two companies have identical Stockholders' Equity of $50 million. Company…",
-  "bodyHtml": "<p class=\"hw-prompt\">Two companies have identical Stockholders' Equity of $50 million. Company A's stock trades at a much higher total market capitalization than Company B's. What does this tell you?</p>\n      <select data-correct=\"Book value and market value have diverged \\u2014 the market has different expectations for each company's future\"><option value=\"\">-- select --</option><option>Company A must have made an accounting error</option><option>Book value and market value have diverged \\u2014 the market has different expectations for each company's future</option><option>Company B's Balance Sheet is out of date</option><option>This situation is impossible if both companies use GAAP</option></select>",
+  "bodyHtml": "<p class=\"hw-prompt\">Two companies have identical Stockholders' Equity of $50 million. Company A's stock trades at a much higher total market capitalization than Company B's. What does this tell you?</p>\n      <select data-correct=\"Book value and market value have diverged — the market has different expectations for each company's future\"><option value=\"\">-- select --</option><option>Company A must have made an accounting error</option><option>Book value and market value have diverged — the market has different expectations for each company's future</option><option>Company B's Balance Sheet is out of date</option><option>This situation is impossible if both companies use GAAP</option></select>",
   "notesHtml": "<ol><li>Book value reflects historical cost accounting; market value reflects the market's forward-looking expectations about future performance. The two routinely diverge, and that's not a sign of any error.</li></ol>"
 },
   {
@@ -434,7 +434,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company has Current Assets of $400,000 and Current Liabilities of…",
   "bodyHtml": "<p class=\"hw-prompt\">A company has Current Assets of $400,000 and Current Liabilities of $250,000. What is its Net Working Capital?</p>\n      <select data-correct=\"$150,000\"><option value=\"\">-- select --</option><option>$650,000</option><option>$150,000</option><option>$250,000</option><option>$400,000</option></select>",
-  "notesHtml": "<ol><li>Net Working Capital = Current Assets \\u2212 Current Liabilities = $400,000 \\u2212 $250,000 = $150,000, a measure of short-term liquidity.</li></ol>"
+  "notesHtml": "<ol><li>Net Working Capital = Current Assets − Current Liabilities = $400,000 − $250,000 = $150,000, a measure of short-term liquidity.</li></ol>"
 },
   {
   "set": "Unit 2 Concept Check",
@@ -442,7 +442,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "What does the Cash Conversion Cycle measure?",
   "bodyHtml": "<p class=\"hw-prompt\">What does the Cash Conversion Cycle measure?</p>\n      <select data-correct=\"How many days it takes to convert a sale into cash in hand\"><option value=\"\">-- select --</option><option>How much profit a company makes per dollar of sales</option><option>How many days it takes to convert a sale into cash in hand</option><option>The company's total market capitalization</option><option>The ratio of debt to equity</option></select>",
-  "notesHtml": "<ol><li>The Cash Conversion Cycle (Days Sales Outstanding + Days Inventory Outstanding \\u2212 Days Payable Outstanding) measures how long cash is tied up in the operating cycle before it's actually collected.</li></ol>"
+  "notesHtml": "<ol><li>The Cash Conversion Cycle (Days Sales Outstanding + Days Inventory Outstanding − Days Payable Outstanding) measures how long cash is tied up in the operating cycle before it's actually collected.</li></ol>"
 },
   {
   "set": "Unit 2 Concept Check",
@@ -450,7 +450,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Over what time frame does the Income Statement report a company's performance?",
   "bodyHtml": "<p class=\"hw-prompt\">Over what time frame does the Income Statement report a company's performance?</p>\n      <select data-correct=\"A specific period of time\"><option value=\"\">-- select --</option><option>A single point in time, like a snapshot</option><option>A specific period of time</option><option>The company's entire history since founding</option><option>Only the most recent quarter, regardless of the report type</option></select>",
-  "notesHtml": "<ol><li>Unlike the Balance Sheet (a point-in-time snapshot), the Income Statement reports revenues, expenses, and net income or loss over a specific period \\u2014 a quarter or a year.</li></ol>"
+  "notesHtml": "<ol><li>Unlike the Balance Sheet (a point-in-time snapshot), the Income Statement reports revenues, expenses, and net income or loss over a specific period — a quarter or a year.</li></ol>"
 },
   {
   "set": "Unit 2 Concept Check",
@@ -458,7 +458,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "What are the three sections of the Statement of Cash Flows?",
   "bodyHtml": "<p class=\"hw-prompt\">What are the three sections of the Statement of Cash Flows?</p>\n      <select data-correct=\"Operating, Investing, Financing\"><option value=\"\">-- select --</option><option>Assets, Liabilities, Equity</option><option>Revenue, Expenses, Net Income</option><option>Operating, Investing, Financing</option><option>Current, Long-term, Total</option></select>",
-  "notesHtml": "<ol><li>The Statement of Cash Flows is organized into Operating, Investing, and Financing activities \\u2014 the same three categories introduced as the three business activities back in Unit 1.</li></ol>"
+  "notesHtml": "<ol><li>The Statement of Cash Flows is organized into Operating, Investing, and Financing activities — the same three categories introduced as the three business activities back in Unit 1.</li></ol>"
 },
   {
   "set": "Unit 2 Concept Check",
@@ -466,7 +466,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company shows strong positive investing cash flow, but it's entirely…",
   "bodyHtml": "<p class=\"hw-prompt\">A company shows strong positive investing cash flow, but it's entirely from selling off its factories and equipment rather than buying new ones. What question from the analytical checklist does this raise?</p>\n      <select data-correct=\"Is the company investing cash to grow, or instead shrinking its asset base?\"><option value=\"\">-- select --</option><option>Is the company generating cash from operations?</option><option>Is the company investing cash to grow, or instead shrinking its asset base?</option><option>Is the company repurchasing stock?</option><option>Is the company paying dividends?</option></select>",
-  "notesHtml": "<ol><li>Positive investing cash flow from selling off productive assets (rather than from maturing investments) can be a red flag \\u2014 it may mean the company is shrinking rather than growing, which is exactly what the analytical checklist is designed to catch.</li></ol>"
+  "notesHtml": "<ol><li>Positive investing cash flow from selling off productive assets (rather than from maturing investments) can be a red flag — it may mean the company is shrinking rather than growing, which is exactly what the analytical checklist is designed to catch.</li></ol>"
 },
   {
   "set": "Unit 2 Concept Check",
@@ -474,7 +474,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which line item links the Balance Sheet to the Income Statement?",
   "bodyHtml": "<p class=\"hw-prompt\">Which line item links the Balance Sheet to the Income Statement?</p>\n      <select data-correct=\"Retained earnings\"><option value=\"\">-- select --</option><option>Cash</option><option>Retained earnings</option><option>Total assets</option><option>Accounts payable</option></select>",
-  "notesHtml": "<ol><li>Retained earnings on the Balance Sheet is updated each period by net income from the Income Statement \\u2014 that's the connecting thread between the two.</li></ol>"
+  "notesHtml": "<ol><li>Retained earnings on the Balance Sheet is updated each period by net income from the Income Statement — that's the connecting thread between the two.</li></ol>"
 },
   {
   "set": "Unit 2 Concept Check",
@@ -482,7 +482,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which line item links the Balance Sheet to the Statement of Cash Flows?",
   "bodyHtml": "<p class=\"hw-prompt\">Which line item links the Balance Sheet to the Statement of Cash Flows?</p>\n      <select data-correct=\"Cash\"><option value=\"\">-- select --</option><option>Retained earnings</option><option>Net income</option><option>Cash</option><option>Common stock</option></select>",
-  "notesHtml": "<ol><li>The ending cash balance on the Statement of Cash Flows has to equal the cash reported on the Balance Sheet \\u2014 that's the linkage.</li></ol>"
+  "notesHtml": "<ol><li>The ending cash balance on the Statement of Cash Flows has to equal the cash reported on the Balance Sheet — that's the linkage.</li></ol>"
 },
   {
   "set": "Unit 2 Concept Check",
@@ -506,7 +506,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company announces an unplanned CEO resignation in the middle of a fiscal…",
   "bodyHtml": "<p class=\"hw-prompt\">A company announces an unplanned CEO resignation in the middle of a fiscal quarter. Which SEC filing would it use to disclose this promptly?</p>\n      <select data-correct=\"8-K\"><option value=\"\">-- select --</option><option>10-K</option><option>10-Q</option><option>8-K</option><option>It waits for the next scheduled 10-Q</option></select>",
-  "notesHtml": "<ol><li>The 8-K exists specifically for material events that happen between scheduled quarterly (10-Q) and annual (10-K) filings \\u2014 an unplanned executive departure is a textbook example.</li></ol>"
+  "notesHtml": "<ol><li>The 8-K exists specifically for material events that happen between scheduled quarterly (10-Q) and annual (10-K) filings — an unplanned executive departure is a textbook example.</li></ol>"
 },
   {
   "set": "Unit 2 Concept Check",
@@ -530,7 +530,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company's audit report explicitly references 'PCAOB standards.' What…",
   "bodyHtml": "<p class=\"hw-prompt\">A company's audit report explicitly references 'PCAOB standards.' What does the PCAOB actually oversee?</p>\n      <select data-correct=\"Audit delivery and quality by firms like the one issuing the report\"><option value=\"\">-- select --</option><option>The company's own internal accounting staff</option><option>Audit delivery and quality by firms like the one issuing the report</option><option>Stock price movements</option><option>Tax filings</option></select>",
-  "notesHtml": "<ol><li>The PCAOB is a non-profit commissioned by the SEC specifically to oversee audit delivery and quality \\u2014 it's the reason an audit report cites PCAOB standards rather than just company policy.</li></ol>"
+  "notesHtml": "<ol><li>The PCAOB is a non-profit commissioned by the SEC specifically to oversee audit delivery and quality — it's the reason an audit report cites PCAOB standards rather than just company policy.</li></ol>"
 },
   {
   "set": "Unit 2 Concept Check",
@@ -538,7 +538,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which best describes the SEC's relationship to FASB and the PCAOB?",
   "bodyHtml": "<p class=\"hw-prompt\">Which best describes the SEC's relationship to FASB and the PCAOB?</p>\n      <select data-correct=\"The SEC commissions both FASB (which sets GAAP) and the PCAOB (which oversees auditors)\"><option value=\"\">-- select --</option><option>The SEC commissions both FASB (which sets GAAP) and the PCAOB (which oversees auditors)</option><option>FASB and the PCAOB both report directly to individual auditing firms</option><option>The SEC, FASB, and PCAOB are three names for the same organization</option><option>GAAP is set by the PCAOB, and FASB oversees audit quality</option></select>",
-  "notesHtml": "<ol><li>SEC \\u2192 FASB \\u2192 GAAP (the rules), and SEC \\u2192 PCAOB \\u2192 Auditors (who verify compliance). Knowing this chain, not just isolated definitions, is what tends to get tested.</li></ol>"
+  "notesHtml": "<ol><li>SEC → FASB → GAAP (the rules), and SEC → PCAOB → Auditors (who verify compliance). Knowing this chain, not just isolated definitions, is what tends to get tested.</li></ol>"
 },
   {
   "set": "Unit 2 Concept Check",
@@ -553,7 +553,7 @@ const HOMEWORK_BANK = [
   "id": "U3-QZ1",
   "type": "concept",
   "title": "Which of the following correctly orders the four steps of the accounting…",
-  "bodyHtml": "<p class=\"hw-prompt\">Which of the following correctly orders the four steps of the accounting cycle?</p>\n      <select data-correct=\"Analyze/post transactions \\u2192 prepare/post adjustments \\u2192 prepare statements \\u2192 close the books\"><option value=\"\">-- select --</option><option>Close the books \\u2192 analyze transactions \\u2192 prepare adjustments \\u2192 prepare statements</option><option>Analyze/post transactions \\u2192 prepare/post adjustments \\u2192 prepare statements \\u2192 close the books</option><option>Prepare statements \\u2192 analyze transactions \\u2192 prepare adjustments \\u2192 close the books</option><option>Prepare adjustments \\u2192 close the books \\u2192 analyze transactions \\u2192 prepare statements</option></select>",
+  "bodyHtml": "<p class=\"hw-prompt\">Which of the following correctly orders the four steps of the accounting cycle?</p>\n      <select data-correct=\"Analyze/post transactions → prepare/post adjustments → prepare statements → close the books\"><option value=\"\">-- select --</option><option>Close the books → analyze transactions → prepare adjustments → prepare statements</option><option>Analyze/post transactions → prepare/post adjustments → prepare statements → close the books</option><option>Prepare statements → analyze transactions → prepare adjustments → close the books</option><option>Prepare adjustments → close the books → analyze transactions → prepare statements</option></select>",
   "notesHtml": "<ol><li>The cycle runs: analyze and post transactions, then adjustments, then prepare the financial statements, and only then close the books to reset for the next period. A common trap is assuming statements are prepared last.</li></ol>"
 },
   {
@@ -562,23 +562,23 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which of the following is NOT one of the three 'cycle tools' for tracking…",
   "bodyHtml": "<p class=\"hw-prompt\">Which of the following is NOT one of the three 'cycle tools' for tracking transactions?</p>\n      <select data-correct=\"The Statement of Cash Flows\"><option value=\"\">-- select --</option><option>Financial Statement Effects Template (FSET)</option><option>T-Accounts</option><option>Journal Entries</option><option>The Statement of Cash Flows</option></select>",
-  "notesHtml": "<ol><li>The three cycle tools are the FSET, T-Accounts, and Journal Entries \\u2014 three different lenses on the same underlying transactions. The Statement of Cash Flows is an output of the cycle, not a tool for tracking it.</li></ol>"
+  "notesHtml": "<ol><li>The three cycle tools are the FSET, T-Accounts, and Journal Entries — three different lenses on the same underlying transactions. The Statement of Cash Flows is an output of the cycle, not a tool for tracking it.</li></ol>"
 },
   {
   "set": "Unit 3 Concept Check",
   "id": "U3-QZ3",
   "type": "concept",
   "title": "What is the FSET equation, in its expanded form?",
-  "bodyHtml": "<p class=\"hw-prompt\">What is the FSET equation, in its expanded form?</p>\n      <select data-correct=\"Cash Asset + Noncash Asset = Liabilities + Contributed Capital + Earned Capital\"><option value=\"\">-- select --</option><option>Revenue \\u2212 Expenses = Net Income</option><option>Cash Asset + Noncash Asset = Liabilities + Contributed Capital + Earned Capital</option><option>Assets \\u00d7 Liabilities = Equity</option><option>Debits = Credits, always</option></select>",
-  "notesHtml": "<ol><li>The FSET expands the accounting equation to show how the Income Statement flows into Equity: Cash + Noncash Assets = Liabilities + Contributed Capital + Earned Capital, where Revenues \\u2212 Expenses = Net Income flows into Earned Capital.</li></ol>"
+  "bodyHtml": "<p class=\"hw-prompt\">What is the FSET equation, in its expanded form?</p>\n      <select data-correct=\"Cash Asset + Noncash Asset = Liabilities + Contributed Capital + Earned Capital\"><option value=\"\">-- select --</option><option>Revenue − Expenses = Net Income</option><option>Cash Asset + Noncash Asset = Liabilities + Contributed Capital + Earned Capital</option><option>Assets × Liabilities = Equity</option><option>Debits = Credits, always</option></select>",
+  "notesHtml": "<ol><li>The FSET expands the accounting equation to show how the Income Statement flows into Equity: Cash + Noncash Assets = Liabilities + Contributed Capital + Earned Capital, where Revenues − Expenses = Net Income flows into Earned Capital.</li></ol>"
 },
   {
   "set": "Unit 3 Concept Check",
   "id": "U3-QZ4",
   "type": "concept",
   "title": "In a T-account, what is the natural balance of a liability account?",
-  "bodyHtml": "<p class=\"hw-prompt\">In a T-account, what is the natural balance of a liability account?</p>\n      <select data-correct=\"Credit\"><option value=\"\">-- select --</option><option>Debit</option><option>Credit</option><option>Neither \\u2014 liabilities don't have a natural balance</option><option>It depends on the specific liability</option></select>",
-  "notesHtml": "<ol><li>Since Assets = Liabilities + Equity, and assets carry a natural debit balance, liabilities and equity \\u2014 on the other side of the equation \\u2014 carry a natural credit balance.</li></ol>"
+  "bodyHtml": "<p class=\"hw-prompt\">In a T-account, what is the natural balance of a liability account?</p>\n      <select data-correct=\"Credit\"><option value=\"\">-- select --</option><option>Debit</option><option>Credit</option><option>Neither — liabilities don't have a natural balance</option><option>It depends on the specific liability</option></select>",
+  "notesHtml": "<ol><li>Since Assets = Liabilities + Equity, and assets carry a natural debit balance, liabilities and equity — on the other side of the equation — carry a natural credit balance.</li></ol>"
 },
   {
   "set": "Unit 3 Concept Check",
@@ -586,7 +586,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "In a journal entry, debits are recorded on which side?",
   "bodyHtml": "<p class=\"hw-prompt\">In a journal entry, debits are recorded on which side?</p>\n      <select data-correct=\"The left\"><option value=\"\">-- select --</option><option>The right</option><option>The left</option><option>Debits and credits are recorded on the same side</option><option>It depends on whether the account is an asset or liability</option></select>",
-  "notesHtml": "<ol><li>Debit = left, Credit = right \\u2014 this convention never changes regardless of the account type.</li></ol>"
+  "notesHtml": "<ol><li>Debit = left, Credit = right — this convention never changes regardless of the account type.</li></ol>"
 },
   {
   "set": "Unit 3 Concept Check",
@@ -594,7 +594,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company pays $12,000 in December for a one-year insurance policy…",
   "bodyHtml": "<p class=\"hw-prompt\">A company pays $12,000 in December for a one-year insurance policy starting January 1. What type of adjustment does this require?</p>\n      <select data-correct=\"Prepaid (deferred) expense\"><option value=\"\">-- select --</option><option>Accrued expense</option><option>Prepaid (deferred) expense</option><option>Unearned revenue</option><option>Accrued revenue</option></select>",
-  "notesHtml": "<ol><li>Cash was paid before the expense is recognized (the insurance coverage hasn't been used yet) \\u2014 that's the definition of a prepaid (deferred) expense.</li></ol>"
+  "notesHtml": "<ol><li>Cash was paid before the expense is recognized (the insurance coverage hasn't been used yet) — that's the definition of a prepaid (deferred) expense.</li></ol>"
 },
   {
   "set": "Unit 3 Concept Check",
@@ -602,7 +602,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company delivers a service in March but doesn't bill or collect cash…",
   "bodyHtml": "<p class=\"hw-prompt\">A company delivers a service in March but doesn't bill or collect cash from the customer until April. What type of adjustment does this require?</p>\n      <select data-correct=\"Accrued revenue\"><option value=\"\">-- select --</option><option>Prepaid expense</option><option>Unearned revenue</option><option>Accrued revenue</option><option>Accrued expense</option></select>",
-  "notesHtml": "<ol><li>The revenue is earned (service delivered) before cash is received \\u2014 that's an accrued revenue.</li></ol>"
+  "notesHtml": "<ol><li>The revenue is earned (service delivered) before cash is received — that's an accrued revenue.</li></ol>"
 },
   {
   "set": "Unit 3 Concept Check",
@@ -610,7 +610,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A magazine publisher collects a full year of subscription payments up…",
   "bodyHtml": "<p class=\"hw-prompt\">A magazine publisher collects a full year of subscription payments up front in January, before delivering any issues. What type of adjustment does this require?</p>\n      <select data-correct=\"Unearned (deferred) revenue\"><option value=\"\">-- select --</option><option>Accrued revenue</option><option>Unearned (deferred) revenue</option><option>Prepaid expense</option><option>Accrued expense</option></select>",
-  "notesHtml": "<ol><li>Cash was received before the revenue is earned (the magazines haven't been delivered yet) \\u2014 that's unearned (deferred) revenue, recorded as a liability until earned.</li></ol>"
+  "notesHtml": "<ol><li>Cash was received before the revenue is earned (the magazines haven't been delivered yet) — that's unearned (deferred) revenue, recorded as a liability until earned.</li></ol>"
 },
   {
   "set": "Unit 3 Concept Check",
@@ -618,7 +618,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Employees work the last week of December but aren't paid until the first…",
   "bodyHtml": "<p class=\"hw-prompt\">Employees work the last week of December but aren't paid until the first week of January. From the perspective of the December financial statements, what type of adjustment does this require?</p>\n      <select data-correct=\"Accrued expense\"><option value=\"\">-- select --</option><option>Prepaid expense</option><option>Unearned revenue</option><option>Accrued expense</option><option>Accrued revenue</option></select>",
-  "notesHtml": "<ol><li>The wage expense is incurred (work performed) before cash is paid \\u2014 that's an accrued expense, creating a wages payable liability at period-end.</li></ol>"
+  "notesHtml": "<ol><li>The wage expense is incurred (work performed) before cash is paid — that's an accrued expense, creating a wages payable liability at period-end.</li></ol>"
 },
   {
   "set": "Unit 3 Concept Check",
@@ -626,23 +626,23 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "What are the two timing categories that organize all four adjustment types?",
   "bodyHtml": "<p class=\"hw-prompt\">What are the two timing categories that organize all four adjustment types?</p>\n      <select data-correct=\"Cash before recognition vs. cash after recognition\"><option value=\"\">-- select --</option><option>Current vs. long-term</option><option>Cash before recognition vs. cash after recognition</option><option>Revenue vs. expense</option><option>Debit vs. credit</option></select>",
-  "notesHtml": "<ol><li>The four adjustment types form a 2\\u00d72 grid: expense-side vs. revenue-side, crossed with cash-before-recognition (prepaid expenses, unearned revenue) vs. cash-after-recognition (accrued expenses, accrued revenue).</li></ol>"
+  "notesHtml": "<ol><li>The four adjustment types form a 2×2 grid: expense-side vs. revenue-side, crossed with cash-before-recognition (prepaid expenses, unearned revenue) vs. cash-after-recognition (accrued expenses, accrued revenue).</li></ol>"
 },
   {
   "set": "Unit 3 Concept Check",
   "id": "U3-QZ11",
   "type": "concept",
   "title": "What is the correct order for constructing the financial statements from a…",
-  "bodyHtml": "<p class=\"hw-prompt\">What is the correct order for constructing the financial statements from a completed FSET?</p>\n      <select data-correct=\"Income Statement \\u2192 Reconcile Retained Earnings \\u2192 Statement of Stockholders' Equity \\u2192 Balance Sheet \\u2192 Statement of Cash Flows\"><option value=\"\">-- select --</option><option>Balance Sheet \\u2192 Income Statement \\u2192 Statement of Cash Flows \\u2192 Statement of Stockholders' Equity</option><option>Income Statement \\u2192 Reconcile Retained Earnings \\u2192 Statement of Stockholders' Equity \\u2192 Balance Sheet \\u2192 Statement of Cash Flows</option><option>Statement of Cash Flows \\u2192 Balance Sheet \\u2192 Income Statement \\u2192 Retained Earnings</option><option>All five can be constructed in any order since they're independent</option></select>",
-  "notesHtml": "<ol><li>Each statement depends on data from the one before it \\u2014 you need net income (Income Statement) before you can reconcile retained earnings, and so on through the Balance Sheet and Statement of Cash Flows.</li></ol>"
+  "bodyHtml": "<p class=\"hw-prompt\">What is the correct order for constructing the financial statements from a completed FSET?</p>\n      <select data-correct=\"Income Statement → Reconcile Retained Earnings → Statement of Stockholders' Equity → Balance Sheet → Statement of Cash Flows\"><option value=\"\">-- select --</option><option>Balance Sheet → Income Statement → Statement of Cash Flows → Statement of Stockholders' Equity</option><option>Income Statement → Reconcile Retained Earnings → Statement of Stockholders' Equity → Balance Sheet → Statement of Cash Flows</option><option>Statement of Cash Flows → Balance Sheet → Income Statement → Retained Earnings</option><option>All five can be constructed in any order since they're independent</option></select>",
+  "notesHtml": "<ol><li>Each statement depends on data from the one before it — you need net income (Income Statement) before you can reconcile retained earnings, and so on through the Balance Sheet and Statement of Cash Flows.</li></ol>"
 },
   {
   "set": "Unit 3 Concept Check",
   "id": "U3-QZ12",
   "type": "concept",
   "title": "Why can't the Balance Sheet be constructed before the Statement of…",
-  "bodyHtml": "<p class=\"hw-prompt\">Why can't the Balance Sheet be constructed before the Statement of Stockholders' Equity?</p>\n      <select data-correct=\"The Balance Sheet needs the ending equity balances that the Statement of Stockholders' Equity produces\"><option value=\"\">-- select --</option><option>It actually can be \\u2014 order doesn't matter</option><option>The Balance Sheet needs the ending equity balances that the Statement of Stockholders' Equity produces</option><option>The Balance Sheet only reports assets, not equity</option><option>The Statement of Stockholders' Equity requires the Statement of Cash Flows first</option></select>",
-  "notesHtml": "<ol><li>The construction order is a dependency chain \\u2014 the Balance Sheet's equity section needs the ending balances (contributed capital, retained earnings, AOCI) that the Statement of Stockholders' Equity calculates first.</li></ol>"
+  "bodyHtml": "<p class=\"hw-prompt\">Why can't the Balance Sheet be constructed before the Statement of Stockholders' Equity?</p>\n      <select data-correct=\"The Balance Sheet needs the ending equity balances that the Statement of Stockholders' Equity produces\"><option value=\"\">-- select --</option><option>It actually can be — order doesn't matter</option><option>The Balance Sheet needs the ending equity balances that the Statement of Stockholders' Equity produces</option><option>The Balance Sheet only reports assets, not equity</option><option>The Statement of Stockholders' Equity requires the Statement of Cash Flows first</option></select>",
+  "notesHtml": "<ol><li>The construction order is a dependency chain — the Balance Sheet's equity section needs the ending balances (contributed capital, retained earnings, AOCI) that the Statement of Stockholders' Equity calculates first.</li></ol>"
 },
   {
   "set": "Unit 3 Concept Check",
@@ -658,15 +658,15 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which of the following is a temporary account?",
   "bodyHtml": "<p class=\"hw-prompt\">Which of the following is a temporary account?</p>\n      <select data-correct=\"Rent Expense\"><option value=\"\">-- select --</option><option>Accounts Payable</option><option>Common Stock</option><option>Rent Expense</option><option>Retained Earnings</option></select>",
-  "notesHtml": "<ol><li>Temporary accounts are revenues, expenses, and dividends \\u2014 Rent Expense fits. Accounts Payable, Common Stock, and Retained Earnings are all permanent accounts that carry forward.</li></ol>"
+  "notesHtml": "<ol><li>Temporary accounts are revenues, expenses, and dividends — Rent Expense fits. Accounts Payable, Common Stock, and Retained Earnings are all permanent accounts that carry forward.</li></ol>"
 },
   {
   "set": "Unit 3 Concept Check",
   "id": "U3-QZ15",
   "type": "concept",
   "title": "Why are dividends closed to retained earnings, even though dividends never…",
-  "bodyHtml": "<p class=\"hw-prompt\">Why are dividends closed to retained earnings, even though dividends never appear on the Income Statement?</p>\n      <select data-correct=\"Dividends reduce retained earnings directly, so they still need to be zeroed out each period like other temporary accounts\"><option value=\"\">-- select --</option><option>Dividends are actually a type of expense</option><option>Dividends reduce retained earnings directly, so they still need to be zeroed out each period like other temporary accounts</option><option>Dividends are a permanent account and don't get closed at all</option><option>This is a trick question \\u2014 dividends are never closed</option></select>",
-  "notesHtml": "<ol><li>Dividends directly reduce retained earnings (per the retained earnings roll-forward from Unit 2), and like revenues and expenses, they represent one period's activity \\u2014 so they must be zeroed out at period-end even though they never touch the Income Statement.</li></ol>"
+  "bodyHtml": "<p class=\"hw-prompt\">Why are dividends closed to retained earnings, even though dividends never appear on the Income Statement?</p>\n      <select data-correct=\"Dividends reduce retained earnings directly, so they still need to be zeroed out each period like other temporary accounts\"><option value=\"\">-- select --</option><option>Dividends are actually a type of expense</option><option>Dividends reduce retained earnings directly, so they still need to be zeroed out each period like other temporary accounts</option><option>Dividends are a permanent account and don't get closed at all</option><option>This is a trick question — dividends are never closed</option></select>",
+  "notesHtml": "<ol><li>Dividends directly reduce retained earnings (per the retained earnings roll-forward from Unit 2), and like revenues and expenses, they represent one period's activity — so they must be zeroed out at period-end even though they never touch the Income Statement.</li></ol>"
 },
   {
   "set": "Unit 3 Concept Check",
@@ -681,16 +681,16 @@ const HOMEWORK_BANK = [
   "id": "U3-QZ17",
   "type": "concept",
   "title": "How does the FSET equation connect to Unit 2's statement linkages table?",
-  "bodyHtml": "<p class=\"hw-prompt\">How does the FSET equation connect to Unit 2's statement linkages table?</p>\n      <select data-correct=\"The FSET makes the Balance Sheet \\u2194 Income Statement linkage (via retained earnings) mechanically explicit, transaction by transaction\"><option value=\"\">-- select --</option><option>It doesn't \\u2014 they're unrelated frameworks</option><option>The FSET makes the Balance Sheet \\u2194 Income Statement linkage (via retained earnings) mechanically explicit, transaction by transaction</option><option>The FSET replaces the need for a Balance Sheet entirely</option><option>The FSET only applies to cash-basis accounting</option></select>",
-  "notesHtml": "<ol><li>Net Income flowing into Earned Capital/Retained Earnings in the FSET is exactly the same linkage covered in Unit 2's statement linkages table \\u2014 the FSET just makes it explicit at the level of individual transactions.</li></ol>"
+  "bodyHtml": "<p class=\"hw-prompt\">How does the FSET equation connect to Unit 2's statement linkages table?</p>\n      <select data-correct=\"The FSET makes the Balance Sheet ↔ Income Statement linkage (via retained earnings) mechanically explicit, transaction by transaction\"><option value=\"\">-- select --</option><option>It doesn't — they're unrelated frameworks</option><option>The FSET makes the Balance Sheet ↔ Income Statement linkage (via retained earnings) mechanically explicit, transaction by transaction</option><option>The FSET replaces the need for a Balance Sheet entirely</option><option>The FSET only applies to cash-basis accounting</option></select>",
+  "notesHtml": "<ol><li>Net Income flowing into Earned Capital/Retained Earnings in the FSET is exactly the same linkage covered in Unit 2's statement linkages table — the FSET just makes it explicit at the level of individual transactions.</li></ol>"
 },
   {
   "set": "Unit 3 Concept Check",
   "id": "U3-QZ18",
   "type": "concept",
   "title": "How do this unit's four adjustment types relate to Unit 2's…",
-  "bodyHtml": "<p class=\"hw-prompt\">How do this unit's four adjustment types relate to Unit 2's cash-vs-accrual distinction?</p>\n      <select data-correct=\"The four adjustment types are the mechanical, transaction-level implementation of accrual accounting\"><option value=\"\">-- select --</option><option>They're unrelated \\u2014 adjustments only matter under cash-basis accounting</option><option>The four adjustment types are the mechanical, transaction-level implementation of accrual accounting</option><option>Adjustments are only needed once a year, unlike accrual accounting which applies daily</option><option>Accrual accounting eliminates the need for any adjustments</option></select>",
-  "notesHtml": "<ol><li>The four adjustment types (prepaid expense, unearned revenue, accrued expense, accrued revenue) are exactly how accrual accounting gets implemented in practice \\u2014 they're the mechanism behind recognizing revenue/expenses when earned/incurred rather than when cash moves.</li></ol>"
+  "bodyHtml": "<p class=\"hw-prompt\">How do this unit's four adjustment types relate to Unit 2's cash-vs-accrual distinction?</p>\n      <select data-correct=\"The four adjustment types are the mechanical, transaction-level implementation of accrual accounting\"><option value=\"\">-- select --</option><option>They're unrelated — adjustments only matter under cash-basis accounting</option><option>The four adjustment types are the mechanical, transaction-level implementation of accrual accounting</option><option>Adjustments are only needed once a year, unlike accrual accounting which applies daily</option><option>Accrual accounting eliminates the need for any adjustments</option></select>",
+  "notesHtml": "<ol><li>The four adjustment types (prepaid expense, unearned revenue, accrued expense, accrued revenue) are exactly how accrual accounting gets implemented in practice — they're the mechanism behind recognizing revenue/expenses when earned/incurred rather than when cash moves.</li></ol>"
 },
   {
   "set": "Quick Practice",
