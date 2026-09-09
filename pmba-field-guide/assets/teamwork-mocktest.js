@@ -45,9 +45,9 @@ function initTeamworkMockTest(){
         <h3><span class="hw-num">Q${i+1}</span>${LABELS[q.source] || 'Synthesis'}</h3>
         <p class="quiz-question" style="margin-top:0;">${q.prompt}</p>
         <div class="mc-options" data-correct-index="${q.correctIndex}">
-          ${q.options.map((opt, oi) => `
-            <button type="button" class="mc-option" data-index="${oi}">
-              <span class="opt-letter">${optionLetters[oi]}</span><span>${opt}</span>
+          ${shuffled(q.options.map((_, oi) => oi)).map((origIdx, displayIdx) => `
+            <button type="button" class="mc-option" data-index="${origIdx}">
+              <span class="opt-letter">${optionLetters[displayIdx]}</span><span>${q.options[origIdx]}</span>
             </button>
           `).join('')}
         </div>

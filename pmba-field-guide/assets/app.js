@@ -285,9 +285,13 @@ function initQuiz(){
     metaEl.textContent = `Question ${qIndex+1} of ${questions.length} \u00b7 Score ${score}`;
 
     const optionLetters = ['A','B','C','D'];
-    const optsHTML = q.options.map((opt,i) => `
-      <button class="quiz-option" data-index="${i}">
-        <span class="opt-letter">${optionLetters[i]}</span><span>${opt}</span>
+    // Shuffle the display order of options each time, so the correct answer's
+    // position can't be memorized. Each button keeps data-index pointing at the
+    // option's ORIGINAL index in q.options, which is what grading compares against.
+    const order = shuffled(q.options.map((_, i) => i));
+    const optsHTML = order.map((origIdx, displayIdx) => `
+      <button class="quiz-option" data-index="${origIdx}">
+        <span class="opt-letter">${optionLetters[displayIdx]}</span><span>${q.options[origIdx]}</span>
       </button>
     `).join('');
 
@@ -314,8 +318,9 @@ function initQuiz(){
     const correct = i === q.correctIndex;
     if(correct) score++;
 
-    bodyEl.querySelectorAll('.quiz-option').forEach((btn, idx) => {
+    bodyEl.querySelectorAll('.quiz-option').forEach((btn) => {
       btn.disabled = true;
+      const idx = parseInt(btn.dataset.index, 10);
       if(idx === q.correctIndex) btn.classList.add('correct');
       else if(idx === i) btn.classList.add('incorrect');
     });
