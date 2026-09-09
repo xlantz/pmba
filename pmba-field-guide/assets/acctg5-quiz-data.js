@@ -252,4 +252,32 @@ const QUIZ_QUESTIONS = [
     incorrectFeedback: "Not quite.",
     explanation: "AR turnover and DSO always move in opposite directions — a higher turnover (collecting the balance more times per year) corresponds to a lower average collection period (DSO).",
   },
+  {
+    source: "receivables",
+    prompt: "A company estimates bad debt expense as 1.5% of its $800,000 net credit sales for the period, regardless of the existing balance in the Allowance account. Which approach is this?",
+    options: [
+      "The balance sheet approach",
+      "The income statement approach",
+      "The aging of receivables method",
+      "The direct write-off method",
+    ],
+    correctIndex: 1,
+    correctFeedback: "Correct.",
+    incorrectFeedback: "Not quite.",
+    explanation: "Estimating bad debt expense as a percentage of net credit sales, without regard to the existing allowance balance, is the income statement (percentage-of-sales) approach.",
+  },
+  {
+    source: "receivables",
+    prompt: "Why is the balance sheet (aging) approach to estimating bad debt expense generally preferred over the income statement approach?",
+    options: [
+      "It always results in a lower bad debt expense",
+      "It is self-correcting each period, keeping accounts receivable's net realizable value more reliably accurate",
+      "It does not require any estimate of uncollectible accounts",
+      "It matches bad debt expense to the current period's sales more precisely than the income statement approach",
+    ],
+    correctIndex: 1,
+    correctFeedback: "Correct.",
+    incorrectFeedback: "Not quite.",
+    explanation: "Because the balance sheet approach always solves for an accurate target ending allowance, any prior estimation error gets absorbed into the next adjustment — the income statement approach has no such self-correcting mechanism and errors can compound over time.",
+  },
 ];

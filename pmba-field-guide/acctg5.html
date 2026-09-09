@@ -65,8 +65,8 @@
       <h1>Revenue Recognition &amp; Receivables</h1>
       <p class="lede" style="max-width:70ch;">When exactly does a company get to call money "revenue"? This unit answers that for five different situations &mdash; long-term contracts, retail and digital sales, sales tax, returns, and gift cards &mdash; using real companies (Costco, Target, Adobe) as the running examples. It then covers the other side of the coin: what happens when a customer who already generated revenue never actually pays, and how to measure whether a company is collecting fast enough.</p>
       <div class="hero-stats">
-        <div class="hero-stat"><b>20</b><span>Flashcards</span></div>
-        <div class="hero-stat"><b>18</b><span>Quiz questions</span></div>
+        <div class="hero-stat"><b>24</b><span>Flashcards</span></div>
+        <div class="hero-stat"><b>20</b><span>Quiz questions</span></div>
         <div class="hero-stat"><b>30</b><span>Official review questions</span></div>
       </div>
     </div>
@@ -155,16 +155,34 @@
         <h4>Why an allowance, not a wait-and-see approach</h4>
         <p>A company that sells on credit already knows, from experience, that some percentage of its customers won't pay. Under the <strong>allowance method</strong>, a company estimates this uncollectible amount up front and records it as <strong>bad debt expense</strong>, building up a contra-asset account called the <strong>allowance for uncollectible accounts</strong> (or allowance for doubtful accounts). This reduces accounts receivable to its <em>net realizable value</em> &mdash; the amount the company actually expects to collect &mdash; without having to wait to find out exactly which customers default.</p>
         <h4>The mechanics</h4>
-        <p>Recording bad debt expense increases the allowance (a contra-asset, so it has a credit balance) and, since it's a contra-asset, reduces net accounts receivable &mdash; without touching gross accounts receivable directly. If a company's aging analysis says the ending allowance needs to equal some target amount, and there's already an existing balance sitting in the account, the bad debt expense recorded is just the difference needed to get from the existing balance to the target:</p>
+        <p>Recording bad debt expense increases the allowance (a contra-asset, so it has a credit balance) and, since it's a contra-asset, reduces net accounts receivable &mdash; without touching gross accounts receivable directly. Net accounts receivable reported on the balance sheet = Gross accounts receivable &minus; the allowance balance.</p>
+
+        <h4>Two ways to estimate it: income statement approach vs. balance sheet approach</h4>
+        <p>There are two standard ways to estimate bad debt expense each period, and they start from opposite ends of the problem.</p>
+        <table class="mini-table">
+          <thead><tr><th></th><th>Income statement approach</th><th>Balance sheet approach</th></tr></thead>
+          <tbody>
+            <tr><td class="hw-label" style="background:none; font-weight:600;">Also called</td><td>Percentage-of-sales method</td><td>Percentage-of-receivables / aging method</td></tr>
+            <tr><td class="hw-label" style="background:none; font-weight:600;">Starts from</td><td>This period's net credit sales</td><td>The desired ending Allowance balance</td></tr>
+            <tr><td class="hw-label" style="background:none; font-weight:600;">Formula</td><td>Bad debt expense = Net credit sales &times; estimated bad debt %</td><td>Bad debt expense = Desired ending allowance &minus; existing allowance balance</td></tr>
+            <tr><td class="hw-label" style="background:none; font-weight:600;">Existing allowance balance?</td><td>Ignored &mdash; the full calculated amount is recorded as expense every period</td><td>Directly used &mdash; expense is only the adjustment needed to reach the target</td></tr>
+          </tbody>
+        </table>
+
+        <p><strong>Income statement approach &mdash; pros and cons.</strong> Because it ties bad debt expense directly to the current period's sales, it does the best job of matching that expense to the revenue that generated it, in the very same period (a clean application of the matching principle from the income statement's side). The drawback: since it ignores whatever balance is already sitting in the allowance account, small estimation errors don't get corrected &mdash; they just accumulate period after period, so the allowance balance (and therefore net accounts receivable) can drift further and further from an accurate figure over time.</p>
+
+        <p><strong>Balance sheet approach &mdash; pros and cons.</strong> Because it always solves for an accurate target ending balance (often using an aging schedule that assigns higher uncollectible percentages to older, more overdue receivables), it's <em>self-correcting</em>: any estimation error from a prior period gets automatically absorbed into the next period's adjustment. This makes accounts receivable's net realizable value on the balance sheet more reliably accurate. The tradeoff: because the target is based on the balance of receivables outstanding &mdash; which includes sales from more than just the current period &mdash; the resulting bad debt expense doesn't match as cleanly to this period's own sales specifically.</p>
+
+        <p><strong>Which one is preferred?</strong> The balance sheet (aging) approach is generally considered the more accurate and more widely preferred method, precisely because it's self-correcting and keeps the balance sheet's net accounts receivable close to its true collectible value every single period &mdash; rather than letting estimation error compound the way it can under the income statement approach. This is also the method used throughout this unit's aging-analysis problems (Mohan Company, Collins Company): you're given a target uncollectible amount and asked to compute the adjustment needed to reach it, which is the balance sheet approach in action.</p>
         <div class="quote-block">Bad debt expense = Desired ending allowance balance &minus; Existing (pre-adjustment) allowance balance</div>
-        <p>Net accounts receivable reported on the balance sheet = Gross accounts receivable &minus; the allowance balance.</p>
+
         <h4>Measuring collection speed: AR turnover and DSO</h4>
         <p><strong>Accounts receivable turnover</strong> measures how many times, on average, a company collects its full receivables balance in a year:</p>
         <div class="quote-block">AR Turnover = Net Sales &#x00f7; Average Accounts Receivable</div>
         <p><strong>Days sales outstanding (DSO)</strong> converts that into an average number of days it takes to collect:</p>
         <div class="quote-block">DSO = 365 &#x00f7; AR Turnover</div>
         <p>A <em>higher</em> AR turnover and a correspondingly <em>lower</em> DSO both indicate a company is collecting its receivables more quickly &mdash; the two measures always move in opposite directions from each other since one is derived from the other.</p>
-        <div class="exam-angle"><b>Exam angle</b>Two common traps: (1) forgetting that bad debt expense equals the <em>change needed</em> to reach the target allowance, not the target itself, whenever a balance already exists; (2) mixing up which direction "faster collection" points for turnover (up) vs. DSO (down).</div>
+        <div class="exam-angle"><b>Exam angle</b>Three common traps: (1) confusing the two estimation approaches &mdash; if a question gives you net credit sales and a rate, that's the income statement approach; if it gives you an aging analysis or a target ending allowance, that's the balance sheet approach; (2) forgetting that under the balance sheet approach, bad debt expense equals the <em>change needed</em> to reach the target allowance, not the target itself, whenever a balance already exists; (3) mixing up which direction "faster collection" points for turnover (up) vs. DSO (down).</div>
       </div>
     </div>
   </div>
@@ -236,6 +254,12 @@
       <div class="term-card" data-source="receivables" data-search="net realizable value accounts receivable gross minus allowance amount expected collect">
         <dt>Net realizable value (of receivables)</dt><dd>Gross accounts receivable minus the allowance for uncollectible accounts — the amount a company actually expects to collect.</dd><span class="tag">Receivables</span>
       </div>
+      <div class="term-card" data-source="receivables" data-search="income statement approach percentage of sales method bad debt expense net credit sales times rate ignores existing allowance balance">
+        <dt>Income statement approach (% of sales)</dt><dd>Estimates bad debt expense as net credit sales × an estimated rate, recording the full amount each period regardless of the existing allowance balance. Matches expense to the period's own sales well, but estimation errors accumulate over time.</dd><span class="tag">Receivables</span>
+      </div>
+      <div class="term-card" data-source="receivables" data-search="balance sheet approach percentage of receivables aging method bad debt expense desired ending allowance self correcting preferred">
+        <dt>Balance sheet approach (aging method)</dt><dd>Estimates the desired ending Allowance balance (often via an aging schedule) and records only the adjustment needed to reach it. Self-correcting each period, so it's the generally preferred method for keeping receivables' net realizable value accurate.</dd><span class="tag">Receivables</span>
+      </div>
       <div class="term-card" data-source="receivables" data-search="accounts receivable turnover net sales average accounts receivable times per year collect">
         <dt>Accounts receivable turnover</dt><dd>Net Sales &#x00f7; Average Accounts Receivable — how many times per year, on average, a company collects its full receivables balance.</dd><span class="tag">Receivables</span>
       </div>
@@ -292,7 +316,7 @@
     <div class="section-head">
       <span class="eyebrow">Test yourself</span>
       <h2>Unit 5 quiz</h2>
-      <p class="text-soft">18 questions covering revenue recognition and receivables, randomized each attempt, with an explanation after every answer.</p>
+      <p class="text-soft">20 questions covering revenue recognition and receivables, randomized each attempt, with an explanation after every answer.</p>
     </div>
 
     <div class="quiz-shell" id="quiz-shell">
