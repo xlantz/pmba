@@ -162,7 +162,7 @@ function initGlossary(){
     let visible = 0;
     grid.querySelectorAll('.term-card').forEach(card => {
       const src = card.dataset.source;
-      const text = card.dataset.search;
+      const text = (card.dataset.search || '').toLowerCase();
       const matchSource = activeSource === 'all' || src === activeSource;
       const matchQuery = !q || text.includes(q);
       const show = matchSource && matchQuery;
