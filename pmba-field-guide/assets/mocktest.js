@@ -26,18 +26,36 @@ function initMockTest(){
   if(countConceptEl) countConceptEl.textContent = HOMEWORK_BANK.filter(q => q.type === 'concept').length;
   if(countWorkEl) countWorkEl.textContent = HOMEWORK_BANK.filter(q => q.type === 'work').length;
 
+  const countSourceAllEl = document.getElementById('mt-count-source-all');
+  const countOfficialEl = document.getElementById('mt-count-official');
+  const countPracticeEl = document.getElementById('mt-count-practice');
+  if(countSourceAllEl) countSourceAllEl.textContent = HOMEWORK_BANK.length;
+  if(countOfficialEl) countOfficialEl.textContent = HOMEWORK_BANK.filter(q => q.origin === 'official').length;
+  if(countPracticeEl) countPracticeEl.textContent = HOMEWORK_BANK.filter(q => q.origin === 'practice').length;
+
   let currentSet = [];
   let currentType = 'all';
+  let currentSource = 'all';
 
   function pool(){
-    if(currentType === 'all') return HOMEWORK_BANK;
-    return HOMEWORK_BANK.filter(q => q.type === currentType);
+    return HOMEWORK_BANK.filter(q => {
+      const matchType = currentType === 'all' || q.type === currentType;
+      const matchSource = currentSource === 'all' || q.origin === currentSource;
+      return matchType && matchSource;
+    });
   }
 
   document.querySelectorAll('[data-mt-type]').forEach(btn => {
     btn.addEventListener('click', () => {
       currentType = btn.dataset.mtType;
       document.querySelectorAll('[data-mt-type]').forEach(b => b.classList.toggle('active', b === btn));
+    });
+  });
+
+  document.querySelectorAll('[data-mt-source]').forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentSource = btn.dataset.mtSource;
+      document.querySelectorAll('[data-mt-source]').forEach(b => b.classList.toggle('active', b === btn));
     });
   });
 

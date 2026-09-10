@@ -64,7 +64,7 @@
       <p class="lede" style="max-width:70ch;">Pick how many questions you want, and the test pulls that many at random from every homework set that's been added to this site so far &mdash; right now that's the full Module 1, 2 &amp; 3 set. Work through it, submit once, and get a full score with notes on anything you missed.</p>
       <div class="hero-stats">
         <div class="hero-stat"><b id="mt-pool-count">&#x2014;</b><span>Questions in the pool</span></div>
-        <div class="hero-stat"><b>3 / 5 / 10</b><span>Test lengths</span></div>
+        <div class="hero-stat"><b>3 / 5 / 10 / 20</b><span>Test lengths</span></div>
         <div class="hero-stat"><b>&#x221e;</b><span>Retakes</span></div>
       </div>
     </div>
@@ -79,6 +79,12 @@
       <h2>How many questions?</h2>
       <p class="text-soft">Each option pulls a fresh random subset of whole problems &mdash; company names, tables, and all &mdash; from the pool above. As more homework sets get added to the site, the pool (and the variety) grows automatically.</p>
 
+      <div class="chip-filter" role="group" aria-label="Filter by source" style="margin-bottom:12px;">
+        <button class="chip active" data-mt-source="all">All Sources (<span id="mt-count-source-all">&#x2014;</span>)</button>
+        <button class="chip" data-mt-source="official">Official Exam Review (<span id="mt-count-official">&#x2014;</span>)</button>
+        <button class="chip" data-mt-source="practice">Site Practice Questions (<span id="mt-count-practice">&#x2014;</span>)</button>
+      </div>
+
       <div class="chip-filter" role="group" aria-label="Filter by question type" style="margin-bottom:18px;">
         <button class="chip active" data-mt-type="all">All Types (<span id="mt-count-all">&#x2014;</span>)</button>
         <button class="chip" data-mt-type="concept">Concept MC (<span id="mt-count-concept">&#x2014;</span>)</button>
@@ -89,6 +95,7 @@
         <button class="mt-count-btn" data-count="3">3<span>Quick</span></button>
         <button class="mt-count-btn" data-count="5">5<span>Standard</span></button>
         <button class="mt-count-btn" data-count="10">10<span>Full</span></button>
+        <button class="mt-count-btn" data-count="20">20<span>Deep Dive</span></button>
       </div>
     </div>
 
