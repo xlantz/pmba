@@ -1,3 +1,4 @@
+// MGT2 quiz questions, renamed to avoid colliding with mgt2.html's own QUIZ_QUESTIONS.
 // Multiple-choice quiz for MGT 6050, Unit 2. correctIndex is 0-based.
 const MGT2_QUIZ_QUESTIONS = [
   {
@@ -215,6 +216,118 @@ const MGT2_QUIZ_QUESTIONS = [
     explanation: "Blending cosmopolitan members (transferable, multi-country expertise) with local members (deep on-the-ground knowledge) produced better outcomes than relying on either type alone.",
   },
   {
+    source: "functions",
+    prompt: "How does the Class 2 lecture define team leadership?",
+    options: [
+      "A formally assigned title held by exactly one person per team",
+      "The act of assuming responsibility for satisfying a team's needs — getting done whatever isn't being adequately handled",
+      "The person with the most seniority on the team",
+      "A role that never changes once assigned at the team's launch",
+    ],
+    correctIndex: 1,
+    correctFeedback: "Correct.",
+    incorrectFeedback: "Not quite.",
+    explanation: "Team leadership is defined functionally, not positionally — it's about stepping up to satisfy whatever the team needs, and many teams have different leaders in different situations.",
+  },
+  {
+    source: "functions",
+    prompt: "Per Morgeson, DeRue & Karam's functional view, when does leadership occur?",
+    options: [
+      "Only when a formally appointed leader gives direction",
+      "When one or more individuals step in to close a gap, help overcome a weakness, or satisfy a team need",
+      "Only during the team's official kickoff meeting",
+      "Only when a team is failing badly",
+    ],
+    correctIndex: 1,
+    correctFeedback: "Correct.",
+    incorrectFeedback: "Not quite.",
+    explanation: "The functional view ties leadership to whatever helps the team achieve its goals — stepping in to close a gap or need — rather than to a fixed title or role.",
+  },
+  {
+    source: "functions",
+    prompt: "What are the two phases of the team performance cycle, and what happens in each?",
+    options: [
+      "Storming and norming — conflict, then agreement",
+      "Transition phase (planning: identify goals, develop plans) and action phase (doing: carry out plans, monitor performance)",
+      "Formation and dissolution — team creation and team breakup",
+      "Individual phase and group phase — solo work, then collaborative work",
+    ],
+    correctIndex: 1,
+    correctFeedback: "Correct.",
+    incorrectFeedback: "Not quite.",
+    explanation: "The transition phase covers planning (goals, plans, anticipating process losses); the action phase covers execution (carrying out plans, monitoring for process losses as they occur).",
+  },
+  {
+    source: "functions",
+    prompt: "Which of the following is one of the four transition-phase leadership functions?",
+    options: [
+      "Encourage team self-management",
+      "Keep the team on track",
+      "Compose the team",
+      "Challenge the team",
+    ],
+    correctIndex: 2,
+    correctFeedback: "Correct.",
+    incorrectFeedback: "Not quite.",
+    explanation: "The four transition-phase functions are: compose the team, organize, train and develop the team, and provide feedback. Keeping the team on track, challenging the team, and encouraging self-management are all action-phase functions.",
+  },
+  {
+    source: "functions",
+    prompt: "According to the composing-the-team function, what are 'derailers'?",
+    options: [
+      "Team members with highly analytical work styles",
+      "Team members who undermine others, bring out the worst in the group, lack integrity, or can't take others' perspective",
+      "External sponsors who provide resources to the team",
+      "Members who challenge team assumptions in a healthy way",
+    ],
+    correctIndex: 1,
+    correctFeedback: "Correct.",
+    incorrectFeedback: "Not quite.",
+    explanation: "Derailers actively damage a team's structure and supportive context, which is why composing the team well means screening for and avoiding them.",
+  },
+  {
+    source: "functions",
+    prompt: "What did Woolley et al. (2008) find about the relationship between expertise and planning?",
+    options: [
+      "Expertise alone guarantees good team performance regardless of planning",
+      "Planning matters more than expertise for every team",
+      "Experts with a plan perform well; experts without a plan (who \"wing it\") perform poorly — the process itself is make or break",
+      "Planning only matters for teams without any experts",
+    ],
+    correctIndex: 2,
+    correctFeedback: "Correct.",
+    incorrectFeedback: "Not quite.",
+    explanation: "The finding is specifically about the combination: expertise plus a plan produces good performance, but expertise without a plan does not — the process is what makes or breaks the outcome.",
+  },
+  {
+    source: "functions",
+    prompt: "How is trust defined in the Class 2 lecture?",
+    options: [
+      "Confidence that a teammate will never make a mistake",
+      "The willingness to be vulnerable to another party's actions, based on the expectation they'll perform an important action — irrespective of one's ability to monitor or control them",
+      "A formal agreement signed by all team members",
+      "The average tenure of team members working together",
+    ],
+    correctIndex: 1,
+    correctFeedback: "Correct.",
+    incorrectFeedback: "Not quite.",
+    explanation: "This definition centers on vulnerability and expectation despite the inability to fully monitor or control the other party — trust is what lets a team function without constant verification.",
+  },
+  {
+    source: "functions",
+    prompt: "Which of the following is part of the action-phase function 'keeping the team on track'?",
+    options: [
+      "Composing the team with complementary skills",
+      "Monitoring the team, challenging the team, and supporting the social environment/shared mindset",
+      "Drafting the team's mission statement",
+      "Establishing expectations and specific goals",
+    ],
+    correctIndex: 1,
+    correctFeedback: "Correct.",
+    incorrectFeedback: "Not quite.",
+    explanation: "Keeping the team on track has three parts: monitoring progress toward goals, challenging the status quo, and supporting the team's social environment and shared mindset.",
+  },
+  {
     source: "leadership",
     prompt: "What are the four parts of a 'team charter,' per Barrett's Leadership Communication?",
     options: [
@@ -314,7 +427,6 @@ const MGT2_QUIZ_QUESTIONS = [
   },
 ];
 
-// Unit 3 quiz questions, renamed to avoid colliding with mgt3.html's own QUIZ_QUESTIONS.
 const MGT3_QUIZ_QUESTIONS = [
   {
     source: "shuttle",

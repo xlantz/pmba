@@ -965,7 +965,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which of the following best describes the fundamental accounting equation?",
   "bodyHtml": "<p class=\"hw-prompt\">Which of the following best describes the fundamental accounting equation?</p>\n      <select data-correct=\"Assets = Liabilities + Stockholders’ Equity\"><option value=\"\">-- select --</option><option>Assets = Revenues − Expenses</option><option>Assets = Liabilities + Stockholders’ Equity</option><option>Assets + Liabilities = Stockholders’ Equity</option><option>Revenues = Assets + Liabilities</option></select>",
-  "notesHtml": "<ol><li>B. Assets = Liabilities + Stockholders’ Equity</li></ol>"
+  "notesHtml": "<ol><li>The fundamental accounting equation is Assets = Liabilities + Stockholders' Equity — this is the definition every other topic builds on.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Assets = Liabilities + Stockholders’ Equity</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -974,7 +974,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company reports total assets of $800 million and total liabilities of…",
   "bodyHtml": "<p class=\"hw-prompt\">A company reports total assets of $800 million and total liabilities of $500 million. Which statement is correct?</p>\n      <select data-correct=\"Owners have a $300 million residual interest in the company’s assets.\"><option value=\"\">-- select --</option><option>Owners have provided $500 million of financing.</option><option>Nonowners have provided $300 million of financing.</option><option>Owners have a $300 million residual interest in the company’s assets.</option><option>The company has generated $300 million of net income.</option></select>",
-  "notesHtml": "<ol><li>C. Owners have a $300 million residual interest in the company’s assets.</li></ol>"
+  "notesHtml": "<ol><li>Stockholders' equity is the residual interest: Assets − Liabilities = $800M − $500M = $300M, which owners hold a claim to after creditors are satisfied.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. Owners have a $300 million residual interest in the company’s assets.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -983,7 +983,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which transaction increases both assets and stockholders’ equity but does…",
   "bodyHtml": "<p class=\"hw-prompt\">Which transaction increases both assets and stockholders’ equity but does not affect net income?</p>\n      <select data-correct=\"Issuing common stock for cash\"><option value=\"\">-- select --</option><option>Collecting cash from a customer who previously purchased on account</option><option>Issuing common stock for cash</option><option>Providing services for cash</option><option>Borrowing cash from a bank</option></select>",
-  "notesHtml": "<ol><li>B. Issuing common stock for cash</li></ol>"
+  "notesHtml": "<ol><li>Issuing common stock for cash increases both cash (an asset) and contributed capital (equity) by the same amount, with no revenue or expense recorded — net income is unaffected.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Issuing common stock for cash</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -992,7 +992,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which of the following represents financing provided by nonowners?",
   "bodyHtml": "<p class=\"hw-prompt\">Which of the following represents financing provided by nonowners?</p>\n      <select data-correct=\"Accounts payable\"><option value=\"\">-- select --</option><option>Common stock</option><option>Retained earnings</option><option>Accounts payable</option><option>Net income</option></select>",
-  "notesHtml": "<ol><li>C. Accounts payable</li></ol>"
+  "notesHtml": "<ol><li>Nonowner financing comes from liabilities. Of the options, only accounts payable is a liability — common stock and retained earnings are equity, and net income is an income statement figure, not financing.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. Accounts payable</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1001,7 +1001,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Return on assets (ROA) is most useful for evaluating:",
   "bodyHtml": "<p class=\"hw-prompt\">Return on assets (ROA) is most useful for evaluating:</p>\n      <select data-correct=\"How effectively a company generates profit from its asset base\"><option value=\"\">-- select --</option><option>The percentage of company assets financed by creditors</option><option>How effectively a company generates profit from its asset base</option><option>The amount of cash available to pay dividends</option><option>The percentage of sales collected in cash</option></select>",
-  "notesHtml": "<ol><li>B. How effectively a company generates profit from its asset base</li></ol>"
+  "notesHtml": "<ol><li>ROA (net income ÷ average assets) measures how efficiently a company converts its asset base into profit.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. How effectively a company generates profit from its asset base</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1010,7 +1010,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Two companies have identical ROAs. Company A has a higher profit margin,…",
   "bodyHtml": "<p class=\"hw-prompt\">Two companies have identical ROAs. Company A has a higher profit margin, while Company B has a higher asset turnover. Which conclusion is most appropriate?</p>\n      <select data-correct=\"The companies are achieving similar overall returns through different operating strategies.\"><option value=\"\">-- select --</option><option>Company A must have higher net income.</option><option>Company B must have more assets.</option><option>The companies are achieving similar overall returns through different operating strategies.</option><option>The companies must have identical revenues.</option></select>",
-  "notesHtml": "<ol><li>C. The companies are achieving similar overall returns through different operating strategies.</li></ol>"
+  "notesHtml": "<ol><li>Since ROA = Margin × Turnover, two companies can reach the identical ROA through different combinations — one earning more per dollar of sales, the other turning over assets faster.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. The companies are achieving similar overall returns through different operating strategies.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1019,7 +1019,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company’s profit margin increases while its asset turnover remains…",
   "bodyHtml": "<p class=\"hw-prompt\">A company’s profit margin increases while its asset turnover remains unchanged. All else equal, its ROA will most likely:</p>\n      <select data-correct=\"Increase\"><option value=\"\">-- select --</option><option>Increase</option><option>Decrease</option><option>Remain unchanged</option><option>Become zero</option></select>",
-  "notesHtml": "<ol><li>A. Increase</li></ol>"
+  "notesHtml": "<ol><li>ROA = Margin × Turnover. If margin rises and turnover holds steady, the product (ROA) must rise as well.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. Increase</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1028,7 +1028,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company’s asset turnover increases. This generally indicates that the…",
   "bodyHtml": "<p class=\"hw-prompt\">A company’s asset turnover increases. This generally indicates that the company is:</p>\n      <select data-correct=\"Generating more revenue relative to the assets it employs\"><option value=\"\">-- select --</option><option>Generating more revenue relative to the assets it employs</option><option>Generating more net income on each dollar of revenue</option><option>Using more debt to finance its assets</option><option>Paying a greater percentage of income as dividends</option></select>",
-  "notesHtml": "<ol><li>A. Generating more revenue relative to the assets it employs</li></ol>"
+  "notesHtml": "<ol><li>Asset turnover = Revenue ÷ Average Assets, so a higher turnover means more revenue is being generated per dollar of assets employed.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. Generating more revenue relative to the assets it employs</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1037,7 +1037,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Company A has a higher profit margin than Company B but a lower asset…",
   "bodyHtml": "<p class=\"hw-prompt\">Company A has a higher profit margin than Company B but a lower asset turnover. Which statement is most accurate?</p>\n      <select data-correct=\"Additional information is needed to determine which company has the higher ROA.\"><option value=\"\">-- select --</option><option>Company A necessarily has the higher ROA.</option><option>Company B necessarily has the higher ROA.</option><option>Additional information is needed to determine which company has the higher ROA.</option><option>Both companies necessarily have the same ROA.</option></select>",
-  "notesHtml": "<ol><li>C. Additional information is needed to determine which company has the higher ROA.</li></ol>"
+  "notesHtml": "<ol><li>Knowing Company A has a higher margin and lower turnover than Company B isn't enough — since ROA = Margin × Turnover, the specific numbers determine which product is larger. You need more information.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. Additional information is needed to determine which company has the higher ROA.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1046,7 +1046,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Why is average total assets generally used in the denominator of ROA…",
   "bodyHtml": "<p class=\"hw-prompt\">Why is average total assets generally used in the denominator of ROA rather than ending total assets?</p>\n      <select data-correct=\"Net income represents activity throughout the period, so an average asset balance better represents the resources employed during that period.\"><option value=\"\">-- select --</option><option>Net income is measured at only one point in time.</option><option>Assets cannot be measured at year-end.</option><option>Net income represents activity throughout the period, so an average asset balance better represents the resources employed during that period.</option><option>GAAP prohibits the use of ending assets in any financial ratio.</option></select>",
-  "notesHtml": "<ol><li>C. Net income represents activity throughout the period, so an average asset balance better represents the resources employed during that period.</li></ol>"
+  "notesHtml": "<ol><li>Net income is earned by using assets throughout the entire period, so an average balance (not a single ending snapshot) better represents the resources actually employed to generate it.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. Net income represents activity throughout the period, so an average asset balance better represents the resources employed during that period.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1055,7 +1055,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Why is average stockholders’ equity generally preferable to ending…",
   "bodyHtml": "<p class=\"hw-prompt\">Why is average stockholders’ equity generally preferable to ending stockholders’ equity when calculating ROE?</p>\n      <select data-correct=\"Net income is earned throughout the year, while ending equity reflects only one point in time.\"><option value=\"\">-- select --</option><option>Equity is an income statement account.</option><option>Net income is earned throughout the year, while ending equity reflects only one point in time.</option><option>Ending equity excludes retained earnings.</option><option>Average equity always produces a higher ROE.</option></select>",
-  "notesHtml": "<ol><li>B. Net income is earned throughout the year, while ending equity reflects only one point in time.</li></ol>"
+  "notesHtml": "<ol><li>The same logic applies to ROE: net income accrues to shareholders across the whole year, so average equity is the more representative denominator than a single point-in-time ending balance.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Net income is earned throughout the year, while ending equity reflects only one point in time.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1064,7 +1064,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company provides $75,000 of services to customers on account. Which…",
   "bodyHtml": "<p class=\"hw-prompt\">A company provides $75,000 of services to customers on account. Which statement is correct at the time the services are provided?</p>\n      <select data-correct=\"Revenue and accounts receivable both increase.\"><option value=\"\">-- select --</option><option>Revenue does not exist until cash is collected.</option><option>Revenue and accounts receivable both increase.</option><option>Cash and revenue both increase.</option><option>Accounts receivable increases and retained earnings decreases.</option></select>",
-  "notesHtml": "<ol><li>B. Revenue and accounts receivable both increase.</li></ol>"
+  "notesHtml": "<ol><li>Performing a service on account means the obligation is satisfied even though cash hasn't arrived yet — revenue is recognized, and accounts receivable (not cash) increases to reflect the amount owed.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Revenue and accounts receivable both increase.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1073,7 +1073,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company later collects cash from a customer whose receivable was…",
   "bodyHtml": "<p class=\"hw-prompt\">A company later collects cash from a customer whose receivable was recognized in a prior period. The collection will:</p>\n      <select data-correct=\"Increase cash and decrease accounts receivable\"><option value=\"\">-- select --</option><option>Increase revenue and net income</option><option>Increase cash and decrease accounts receivable</option><option>Increase cash and increase revenue</option><option>Increase cash and increase liabilities</option></select>",
-  "notesHtml": "<ol><li>B. Increase cash and decrease accounts receivable</li></ol>"
+  "notesHtml": "<ol><li>Collecting cash on an existing receivable just converts one asset into another (AR down, cash up) — the revenue was already recognized back when the sale occurred, so it isn't recorded again.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Increase cash and decrease accounts receivable</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1082,7 +1082,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which transaction decreases retained earnings but does not reduce net income?",
   "bodyHtml": "<p class=\"hw-prompt\">Which transaction decreases retained earnings but does not reduce net income?</p>\n      <select data-correct=\"Paying a cash dividend\"><option value=\"\">-- select --</option><option>Paying employee salaries</option><option>Recording depreciation expense</option><option>Paying a cash dividend</option><option>Paying rent expense</option></select>",
-  "notesHtml": "<ol><li>C. Paying a cash dividend</li></ol>"
+  "notesHtml": "<ol><li>A cash dividend is a distribution of already-earned profit to shareholders, not an expense — it reduces retained earnings and cash directly without touching net income.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. Paying a cash dividend</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1091,7 +1091,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which financial statement reports a company’s assets, liabilities, and…",
   "bodyHtml": "<p class=\"hw-prompt\">Which financial statement reports a company’s assets, liabilities, and stockholders’ equity at a specific date?</p>\n      <select data-correct=\"Balance sheet\"><option value=\"\">-- select --</option><option>Income statement</option><option>Statement of cash flows</option><option>Balance sheet</option><option>Statement of stockholders’ equity</option></select>",
-  "notesHtml": "<ol><li>C. Balance sheet</li></ol>"
+  "notesHtml": "<ol><li>The balance sheet is a snapshot: assets, liabilities, and equity as of one specific date, unlike the income statement or cash flow statement, which summarize activity over a period.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. Balance sheet</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1100,7 +1100,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which of the following would normally be classified as a current asset?",
   "bodyHtml": "<p class=\"hw-prompt\">Which of the following would normally be classified as a current asset?</p>\n      <select data-correct=\"Inventory\"><option value=\"\">-- select --</option><option>Accounts payable</option><option>Goodwill</option><option>Inventory</option><option>Long-term notes payable</option></select>",
-  "notesHtml": "<ol><li>C. Inventory</li></ol>"
+  "notesHtml": "<ol><li>A current asset is one expected to convert to cash or be used within a year. Of the choices, only inventory fits — the rest are liabilities.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. Inventory</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1109,7 +1109,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which of the following would normally be classified as a long-term asset?",
   "bodyHtml": "<p class=\"hw-prompt\">Which of the following would normally be classified as a long-term asset?</p>\n      <select data-correct=\"Property, plant, and equipment\"><option value=\"\">-- select --</option><option>Accounts payable</option><option>Property, plant, and equipment</option><option>Accrued salaries payable</option><option>Unearned revenue expected to be earned next month</option></select>",
-  "notesHtml": "<ol><li>B. Property, plant, and equipment</li></ol>"
+  "notesHtml": "<ol><li>Property, plant, and equipment (PP&amp;E) is used over many years, making it a long-term asset — the other options are all liabilities.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Property, plant, and equipment</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1118,7 +1118,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "An auditor issues an unqualified (unmodified) opinion on a company’s…",
   "bodyHtml": "<p class=\"hw-prompt\">An auditor issues an unqualified (unmodified) opinion on a company’s financial statements. This means the auditor believes:</p>\n      <select data-correct=\"The financial statements present fairly, in all material respects, the company’s financial position and results in accordance with the applicable accounting framework.\"><option value=\"\">-- select --</option><option>The company has no fraud.</option><option>Every transaction recorded by the company was examined.</option><option>The financial statements present fairly, in all material respects, the company’s financial position and results in accordance with the applicable accounting framework.</option><option>The company is financially healthy and unlikely to fail.</option></select>",
-  "notesHtml": "<ol><li>C. The financial statements present fairly, in all material respects, the company’s financial position and results in accordance with the applicable accounting framework.</li></ol>"
+  "notesHtml": "<ol><li>An unqualified (unmodified) opinion is the auditor's conclusion that the financial statements are presented fairly, in all material respects, under the applicable accounting framework — it says nothing about fraud, completeness of testing, or the company's financial health.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. The financial statements present fairly, in all material respects, the company’s financial position and results in accordance with the applicable accounting framework.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1127,7 +1127,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company receives an unqualified opinion on its financial statements but…",
   "bodyHtml": "<p class=\"hw-prompt\">A company receives an unqualified opinion on its financial statements but an adverse opinion on internal control over financial reporting. Which conclusion is most appropriate?</p>\n      <select data-correct=\"The financial statements may be fairly presented even though material weaknesses exist in internal control.\"><option value=\"\">-- select --</option><option>The two opinions are contradictory and cannot occur together.</option><option>The financial statements may be fairly presented even though material weaknesses exist in internal control.</option><option>An adverse internal-control opinion automatically means the financial statements are misstated.</option><option>The auditor is expressing an opinion that management committed fraud.</option></select>",
-  "notesHtml": "<ol><li>B. The financial statements may be fairly presented even though material weaknesses exist in internal control.</li></ol>"
+  "notesHtml": "<ol><li>These are two separate, independent opinions. A company's financial statements can still be fairly presented (unqualified FS opinion) even if the auditor separately finds a material weakness in internal controls (adverse ICFR opinion).</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. The financial statements may be fairly presented even though material weaknesses exist in internal control.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1136,7 +1136,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which statement best describes retained earnings?",
   "bodyHtml": "<p class=\"hw-prompt\">Which statement best describes retained earnings?</p>\n      <select data-correct=\"Cumulative earnings retained in the business, adjusted for items such as dividends\"><option value=\"\">-- select --</option><option>Cash that management has set aside for future dividends</option><option>Cumulative earnings retained in the business, adjusted for items such as dividends</option><option>The market value of the company’s common shares</option><option>Amounts originally invested by shareholders when stock was issued</option></select>",
-  "notesHtml": "<ol><li>B. Cumulative earnings retained in the business, adjusted for items such as dividends</li></ol>"
+  "notesHtml": "<ol><li>Retained earnings is a cumulative, running total: all net income earned since the company began, minus all dividends paid out over that same time — not a cash reserve or a market value.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Cumulative earnings retained in the business, adjusted for items such as dividends</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1145,7 +1145,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "At the beginning of the year, a company had assets of $650 million and…",
   "bodyHtml": "<p class=\"hw-prompt\">At the beginning of the year, a company had assets of $650 million and liabilities of $410 million. During the year, assets increased by $90 million and liabilities increased by $30 million. What is ending stockholders’ equity?</p>\n      <select data-correct=\"$300 million\"><option value=\"\">-- select --</option><option>$240 million</option><option>$300 million</option><option>$330 million</option><option>$740 million</option></select>",
-  "notesHtml": "<ol><li>B. $300 million</li></ol>"
+  "notesHtml": "<ol><li>Ending assets = $650M + $90M = $740M. Ending liabilities = $410M + $30M = $440M. Ending equity = $740M − $440M = $300M.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $300 million</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1154,7 +1154,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company reports beginning assets of $480 million and ending assets of…",
   "bodyHtml": "<p class=\"hw-prompt\">A company reports beginning assets of $480 million and ending assets of $520 million. What amount should be used as average assets when calculating ROA?</p>\n      <select data-correct=\"$500 million\"><option value=\"\">-- select --</option><option>$480 million</option><option>$500 million</option><option>$520 million</option><option>$1,000 million</option></select>",
-  "notesHtml": "<ol><li>B. $500 million</li></ol>"
+  "notesHtml": "<ol><li>Average assets = (Beginning + Ending) ÷ 2 = ($480M + $520M) ÷ 2 = $500M.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $500 million</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1163,7 +1163,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company has total assets of $900 million and total liabilities of $630…",
   "bodyHtml": "<p class=\"hw-prompt\">A company has total assets of $900 million and total liabilities of $630 million. What percentage of its assets is financed by nonowners?</p>\n      <select data-correct=\"70%\"><option value=\"\">-- select --</option><option>30%</option><option>43%</option><option>70%</option><option>143%</option></select>",
-  "notesHtml": "<ol><li>C. 70%</li></ol>"
+  "notesHtml": "<ol><li>Nonowner-financed % = Liabilities ÷ Assets = $630M ÷ $900M = 70%.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. 70%</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1172,7 +1172,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company reports total assets of $1.20 billion and stockholders’ equity…",
   "bodyHtml": "<p class=\"hw-prompt\">A company reports total assets of $1.20 billion and stockholders’ equity of $450 million. What are total liabilities?</p>\n      <select data-correct=\"$750 million\"><option value=\"\">-- select --</option><option>$450 million</option><option>$750 million</option><option>$1.20 billion</option><option>$1.65 billion</option></select>",
-  "notesHtml": "<ol><li>B. $750 million</li></ol>"
+  "notesHtml": "<ol><li>Total Assets = Liabilities + Equity, so Liabilities = Assets − Equity = $1,200M − $450M = $750M.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $750 million</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1181,7 +1181,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company reports net income of $36 million, beginning total assets of…",
   "bodyHtml": "<p class=\"hw-prompt\">A company reports net income of $36 million, beginning total assets of $570 million, and ending total assets of $630 million. What is ROA?</p>\n      <select data-correct=\"6.0%\"><option value=\"\">-- select --</option><option>5.7%</option><option>6.0%</option><option>6.3%</option><option>12.0%</option></select>",
-  "notesHtml": "<ol><li>B. 6.0%</li></ol>"
+  "notesHtml": "<ol><li>Average assets = ($570M + $630M) ÷ 2 = $600M. ROA = Net income ÷ Average assets = $36M ÷ $600M = 6.0%.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. 6.0%</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1190,7 +1190,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "Company A reports net income of $50 million and revenue of $500 million.…",
   "bodyHtml": "<p class=\"hw-prompt\">Company A reports net income of $50 million and revenue of $500 million. What is its profit margin?</p>\n      <select data-correct=\"10%\"><option value=\"\">-- select --</option><option>5%</option><option>10%</option><option>50%</option><option>90%</option></select>",
-  "notesHtml": "<ol><li>B. 10%</li></ol>"
+  "notesHtml": "<ol><li>Profit margin = Net income ÷ Revenue = $50M ÷ $500M = 10%.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. 10%</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1199,7 +1199,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company reports revenue of $800 million, beginning assets of $760…",
   "bodyHtml": "<p class=\"hw-prompt\">A company reports revenue of $800 million, beginning assets of $760 million, and ending assets of $840 million. What is its asset turnover?</p>\n      <select data-correct=\"1.00\"><option value=\"\">-- select --</option><option>0.50</option><option>0.95</option><option>1.00</option><option>1.05</option></select>",
-  "notesHtml": "<ol><li>C. 1.00</li></ol>"
+  "notesHtml": "<ol><li>Average assets = ($760M + $840M) ÷ 2 = $800M. Asset turnover = Revenue ÷ Average assets = $800M ÷ $800M = 1.00.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. 1.00</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1208,7 +1208,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company has a profit margin of 8% and an asset turnover of 1.25. What is…",
   "bodyHtml": "<p class=\"hw-prompt\">A company has a profit margin of 8% and an asset turnover of 1.25. What is its ROA?</p>\n      <select data-correct=\"10.0%\"><option value=\"\">-- select --</option><option>6.4%</option><option>8.0%</option><option>10.0%</option><option>15.6%</option></select>",
-  "notesHtml": "<ol><li>C. 10.0%</li></ol>"
+  "notesHtml": "<ol><li>ROA = Profit margin × Asset turnover = 8% × 1.25 = 10.0%.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. 10.0%</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1217,7 +1217,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "Company A has a profit margin of 12% and an asset turnover of 0.80.…",
   "bodyHtml": "<p class=\"hw-prompt\">Company A has a profit margin of 12% and an asset turnover of 0.80. Company B has a profit margin of 8% and an asset turnover of 1.30. Which company has the higher ROA?</p>\n      <select data-correct=\"Company B, with ROA of 10.4%\"><option value=\"\">-- select --</option><option>Company A, with ROA of 9.6%</option><option>Company B, with ROA of 10.4%</option><option>Company A, with ROA of 12.8%</option><option>Both companies have ROA of 10.0%</option></select>",
-  "notesHtml": "<ol><li>B. Company B, with ROA of 10.4%</li></ol>"
+  "notesHtml": "<ol><li>Company A's ROA = 12% × 0.80 = 9.6%. Company B's ROA = 8% × 1.30 = 10.4%. Company B is higher.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Company B, with ROA of 10.4%</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1226,7 +1226,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company reports net income of $48 million. Beginning stockholders’…",
   "bodyHtml": "<p class=\"hw-prompt\">A company reports net income of $48 million. Beginning stockholders’ equity was $360 million and ending stockholders’ equity was $440 million. What is ROE?</p>\n      <select data-correct=\"12.0%\"><option value=\"\">-- select --</option><option>10.9%</option><option>12.0%</option><option>13.3%</option><option>16.0%</option></select>",
-  "notesHtml": "<ol><li>B. 12.0%</li></ol>"
+  "notesHtml": "<ol><li>Average equity = ($360M + $440M) ÷ 2 = $400M. ROE = Net income ÷ Average equity = $48M ÷ $400M = 12.0%.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. 12.0%</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1235,7 +1235,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company begins the year with retained earnings of $220 million. During…",
   "bodyHtml": "<p class=\"hw-prompt\">A company begins the year with retained earnings of $220 million. During the year, it reports net income of $55 million and pays dividends of $20 million. What is ending retained earnings?</p>\n      <select data-correct=\"$255 million\"><option value=\"\">-- select --</option><option>$145 million</option><option>$200 million</option><option>$255 million</option><option>$295 million</option></select>",
-  "notesHtml": "<ol><li>C. $255 million</li></ol>"
+  "notesHtml": "<ol><li>Ending retained earnings = Beginning + Net income − Dividends = $220M + $55M − $20M = $255M.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $255 million</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1244,7 +1244,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company begins the year with retained earnings of $175 million. During…",
   "bodyHtml": "<p class=\"hw-prompt\">A company begins the year with retained earnings of $175 million. During the year it reports net income of $42 million, pays $18 million of dividends, and records another decrease in retained earnings of $4 million. What is ending retained earnings?</p>\n      <select data-correct=\"$195 million\"><option value=\"\">-- select --</option><option>$195 million</option><option>$199 million</option><option>$203 million</option><option>$239 million</option></select>",
-  "notesHtml": "<ol><li>A. $195 million</li></ol>"
+  "notesHtml": "<ol><li>Ending retained earnings = $175M + $42M (net income) − $18M (dividends) − $4M (other decrease) = $195M.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. $195 million</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1253,7 +1253,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company reports revenue of $1,200 million, cost of goods sold of $720…",
   "bodyHtml": "<p class=\"hw-prompt\">A company reports revenue of $1,200 million, cost of goods sold of $720 million, other operating expenses of $300 million, and income tax expense of $45 million. What is net income?</p>\n      <select data-correct=\"$135 million\"><option value=\"\">-- select --</option><option>$135 million</option><option>$180 million</option><option>$435 million</option><option>$480 million</option></select>",
-  "notesHtml": "<ol><li>A. $135 million</li></ol>"
+  "notesHtml": "<ol><li>Net income = Revenue − COGS − Other expenses − Income tax = $1,200M − $720M − $300M − $45M = $135M.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. $135 million</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1262,7 +1262,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company reports cash of $80 million and noncash assets of $620 million.…",
   "bodyHtml": "<p class=\"hw-prompt\">A company reports cash of $80 million and noncash assets of $620 million. It also reports liabilities of $440 million. What is stockholders’ equity?</p>\n      <select data-correct=\"$260 million\"><option value=\"\">-- select --</option><option>$180 million</option><option>$260 million</option><option>$440 million</option><option>$700 million</option></select>",
-  "notesHtml": "<ol><li>B. $260 million</li></ol>"
+  "notesHtml": "<ol><li>Total assets = Cash + Noncash assets = $80M + $620M = $700M. Stockholders' equity = Assets − Liabilities = $700M − $440M = $260M.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $260 million</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1271,7 +1271,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "During the year, a company reports the following cash flows:\n\n- Operating…",
   "bodyHtml": "<p class=\"hw-prompt\">During the year, a company reports the following cash flows:\n\n- Operating activities: +$150 million\n\n- Investing activities: −$110 million\n\n- Financing activities: −$20 million\n\nIf beginning cash was $60 million, what is ending cash?</p>\n      <select data-correct=\"$80 million\"><option value=\"\">-- select --</option><option>$20 million</option><option>$60 million</option><option>$80 million</option><option>$100 million</option></select>",
-  "notesHtml": "<ol><li>C. $80 million</li></ol>"
+  "notesHtml": "<ol><li>Ending cash = Beginning + Operating − Investing − Financing = $60M + $150M − $110M − $20M = $80M.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $80 million</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1280,7 +1280,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company begins the year with $50 million of cash. During the year,…",
   "bodyHtml": "<p class=\"hw-prompt\">A company begins the year with $50 million of cash. During the year, operating activities provide $90 million, investing activities use $120 million, and financing activities provide $40 million. What is ending cash?</p>\n      <select data-correct=\"$60 million\"><option value=\"\">-- select --</option><option>$10 million</option><option>$50 million</option><option>$60 million</option><option>$100 million</option></select>",
-  "notesHtml": "<ol><li>C. $60 million</li></ol>"
+  "notesHtml": "<ol><li>Ending cash = Beginning + Operating + Financing − Investing = $50M + $90M + $40M − $120M = $60M.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $60 million</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1289,7 +1289,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company performs $100,000 of services during December. It collects…",
   "bodyHtml": "<p class=\"hw-prompt\">A company performs $100,000 of services during December. It collects $65,000 in cash and bills customers for the remaining $35,000. Employees earn $28,000 of wages during December, of which $20,000 is paid before year-end. What is December net income?</p>\n      <select data-correct=\"$72,000\"><option value=\"\">-- select --</option><option>$37,000</option><option>$65,000</option><option>$72,000</option><option>$80,000</option></select>",
-  "notesHtml": "<ol><li>C. $72,000</li></ol>"
+  "notesHtml": "<ol><li>Net income is based on what was earned/incurred, not cash movement: Revenue $100,000 − Wages expense (all $28,000 earned, regardless of how much was paid) = $72,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $72,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1297,8 +1297,8 @@ const HOMEWORK_BANK = [
   "origin": "official",
   "type": "work",
   "title": "Using the information in Question 37, what amounts should the company…",
-  "bodyHtml": "<p class=\"hw-prompt\">Using the information in Question 37, what amounts should the company report for accounts receivable and wages payable at December 31?</p>\n      <select data-correct=\"Accounts receivable $35,000; wages payable $8,000\"><option value=\"\">-- select --</option><option>Accounts receivable $35,000; wages payable $8,000</option><option>Accounts receivable $65,000; wages payable $8,000</option><option>Accounts receivable $35,000; wages payable $28,000</option><option>Accounts receivable $100,000; wages payable $20,000</option></select>",
-  "notesHtml": "<ol><li>A. Accounts receivable $35,000; wages payable $8,000</li></ol>"
+  "bodyHtml": "<div class=\"callout\" style=\"margin-bottom:1em;\"><b>Referenced scenario (Question 37):</b> A company performs $100,000 of services during December. It collects $65,000 in cash and bills customers for the remaining $35,000. Employees earn $28,000 of wages during December, of which $20,000 is paid before year-end. What is December net income?</div><p class=\"hw-prompt\">Using the information in Question 37, what amounts should the company report for accounts receivable and wages payable at December 31?</p>\n      <select data-correct=\"Accounts receivable $35,000; wages payable $8,000\"><option value=\"\">-- select --</option><option>Accounts receivable $35,000; wages payable $8,000</option><option>Accounts receivable $65,000; wages payable $8,000</option><option>Accounts receivable $35,000; wages payable $28,000</option><option>Accounts receivable $100,000; wages payable $20,000</option></select>",
+  "notesHtml": "<ol><li>Accounts receivable = uncollected revenue = $35,000 (the $100,000 earned minus the $65,000 collected). Wages payable = wages earned minus wages paid = $28,000 − $20,000 = $8,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. Accounts receivable $35,000; wages payable $8,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1307,7 +1307,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A newly formed company completes the following transactions:\n\n- Owners…",
   "bodyHtml": "<p class=\"hw-prompt\">A newly formed company completes the following transactions:\n\n- Owners invest $200,000 cash for common stock.\n\n- The company earns $90,000 of revenue in cash.\n\n- The company pays $50,000 of operating expenses.\n\n- The company pays a $15,000 cash dividend.\n\nAssuming no other transactions, what is ending stockholders’ equity?</p>\n      <select data-correct=\"$225,000\"><option value=\"\">-- select --</option><option>$225,000</option><option>$240,000</option><option>$255,000</option><option>$325,000</option></select>",
-  "notesHtml": "<ol><li>A. $225,000</li></ol>"
+  "notesHtml": "<ol><li>Ending equity = Stock issued + Revenue − Expenses − Dividends = $200,000 + $90,000 − $50,000 − $15,000 = $225,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. $225,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 1 & 2",
@@ -1316,7 +1316,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company reports beginning assets of $700 million, beginning equity of…",
   "bodyHtml": "<p class=\"hw-prompt\">A company reports beginning assets of $700 million, beginning equity of $350 million, ending assets of $900 million, ending equity of $450 million, and net income of $60 million. Which combination correctly reports ROA and ROE using average balances?</p>\n      <select data-correct=\"ROA = 7.5%; ROE = 15.0%\"><option value=\"\">-- select --</option><option>ROA = 6.7%; ROE = 13.3%</option><option>ROA = 7.5%; ROE = 15.0%</option><option>ROA = 8.6%; ROE = 17.1%</option><option>ROA = 15.0%; ROE = 7.5%</option></select>",
-  "notesHtml": "<ol><li>B. ROA = 7.5%; ROE = 15.0%</li></ol>"
+  "notesHtml": "<ol><li>Average assets = ($700M + $900M) ÷ 2 = $800M; ROA = $60M ÷ $800M = 7.5%. Average equity = ($350M + $450M) ÷ 2 = $400M; ROE = $60M ÷ $400M = 15.0%.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. ROA = 7.5%; ROE = 15.0%</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1325,7 +1325,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "What is the primary purpose of an adjusting entry at the end of an…",
   "bodyHtml": "<p class=\"hw-prompt\">What is the primary purpose of an adjusting entry at the end of an accounting period?</p>\n      <select data-correct=\"To ensure revenues and expenses are recognized in the appropriate accounting period\"><option value=\"\">-- select --</option><option>To record only transactions involving cash</option><option>To ensure revenues and expenses are recognized in the appropriate accounting period</option><option>To close temporary accounts</option><option>To correct every error made during the year</option></select>",
-  "notesHtml": "<ol><li>B. To ensure revenues and expenses are recognized in the appropriate accounting period</li></ol>"
+  "notesHtml": "<ol><li>Adjusting entries exist specifically to ensure revenues and expenses are recognized in the period they're actually earned or incurred, not necessarily when cash moves.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. To ensure revenues and expenses are recognized in the appropriate accounting period</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1334,7 +1334,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company has employees who have earned wages by December 31 but will not…",
   "bodyHtml": "<p class=\"hw-prompt\">A company has employees who have earned wages by December 31 but will not be paid until January. The December 31 adjustment should:</p>\n      <select data-correct=\"Increase an expense and increase a liability\"><option value=\"\">-- select --</option><option>Increase an asset and increase revenue</option><option>Increase an expense and increase a liability</option><option>Decrease cash and increase an expense</option><option>Increase an expense and decrease an asset</option></select>",
-  "notesHtml": "<ol><li>B. Increase an expense and increase a liability</li></ol>"
+  "notesHtml": "<ol><li>Wages earned but not yet paid require an accrual: increase (debit) wages expense and increase (credit) a wages payable liability — cash isn't touched until January.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Increase an expense and increase a liability</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1343,7 +1343,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company pays for a one-year insurance policy in advance. At the date of…",
   "bodyHtml": "<p class=\"hw-prompt\">A company pays for a one-year insurance policy in advance. At the date of payment, the unexpired portion of the policy is best classified as:</p>\n      <select data-correct=\"An asset\"><option value=\"\">-- select --</option><option>An expense</option><option>A liability</option><option>An asset</option><option>Revenue</option></select>",
-  "notesHtml": "<ol><li>C. An asset</li></ol>"
+  "notesHtml": "<ol><li>The unexpired portion of a prepaid insurance policy still represents future economic benefit the company hasn't consumed yet, which is exactly the definition of an asset.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. An asset</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1352,7 +1352,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "When a company records depreciation expense, which of the following occurs?",
   "bodyHtml": "<p class=\"hw-prompt\">When a company records depreciation expense, which of the following occurs?</p>\n      <select data-correct=\"An expense increases and accumulated depreciation increases.\"><option value=\"\">-- select --</option><option>Cash decreases.</option><option>The historical cost of the equipment decreases.</option><option>An expense increases and accumulated depreciation increases.</option><option>A liability increases.</option></select>",
-  "notesHtml": "<ol><li>C. An expense increases and accumulated depreciation increases.</li></ol>"
+  "notesHtml": "<ol><li>Recording depreciation increases (debits) depreciation expense and increases (credits) accumulated depreciation, a contra-asset — it never touches cash or the equipment's historical cost directly.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. An expense increases and accumulated depreciation increases.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1361,7 +1361,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company receives cash from a customer before providing the promised…",
   "bodyHtml": "<p class=\"hw-prompt\">A company receives cash from a customer before providing the promised service. At the time the cash is received, the company generally records:</p>\n      <select data-correct=\"A liability\"><option value=\"\">-- select --</option><option>Revenue</option><option>An expense</option><option>A liability</option><option>Retained earnings</option></select>",
-  "notesHtml": "<ol><li>C. A liability</li></ol>"
+  "notesHtml": "<ol><li>Cash received before a service is performed means the company owes the customer a service, not money — that obligation is recorded as a liability (unearned/deferred revenue).</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. A liability</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1370,7 +1370,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Why is cash received in advance from a customer generally considered a…",
   "bodyHtml": "<p class=\"hw-prompt\">Why is cash received in advance from a customer generally considered a liability?</p>\n      <select data-correct=\"The company has an obligation to provide goods or services in the future.\"><option value=\"\">-- select --</option><option>The cash must eventually be returned to the customer.</option><option>The company has an obligation to provide goods or services in the future.</option><option>The transaction reduces future cash flows.</option><option>GAAP does not permit revenue to be recognized when cash is received.</option></select>",
-  "notesHtml": "<ol><li>B. The company has an obligation to provide goods or services in the future.</li></ol>"
+  "notesHtml": "<ol><li>A cash advance obligates the company to provide goods or services in the future — that future obligation is exactly what makes it a liability, not revenue.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. The company has an obligation to provide goods or services in the future.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1379,7 +1379,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which situation represents an accrued expense?",
   "bodyHtml": "<p class=\"hw-prompt\">Which situation represents an accrued expense?</p>\n      <select data-correct=\"Employees have worked but have not yet been paid.\"><option value=\"\">-- select --</option><option>Insurance was paid in advance and some of the coverage has now expired.</option><option>Cash was received from a customer before services were provided.</option><option>Employees have worked but have not yet been paid.</option><option>Supplies were purchased for cash.</option></select>",
-  "notesHtml": "<ol><li>C. Employees have worked but have not yet been paid.</li></ol>"
+  "notesHtml": "<ol><li>An accrued expense is one that's been incurred but not yet paid. Employees who have worked but haven't been paid yet is the classic example — the other options either involve cash already paid, or cash received in advance.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. Employees have worked but have not yet been paid.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1388,7 +1388,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which situation represents accrued revenue?",
   "bodyHtml": "<p class=\"hw-prompt\">Which situation represents accrued revenue?</p>\n      <select data-correct=\"A company earns interest that has not yet been received in cash.\"><option value=\"\">-- select --</option><option>A company earns interest that has not yet been received in cash.</option><option>A company receives cash before providing a service.</option><option>A company pays rent six months in advance.</option><option>A company purchases equipment on account.</option></select>",
-  "notesHtml": "<ol><li>A. A company earns interest that has not yet been received in cash.</li></ol>"
+  "notesHtml": "<ol><li>Accrued revenue is revenue that's been earned but not yet received in cash — interest that has accumulated but hasn't been collected fits exactly.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. A company earns interest that has not yet been received in cash.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1397,7 +1397,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "If a company fails to record an adjusting entry for wages that employees…",
   "bodyHtml": "<p class=\"hw-prompt\">If a company fails to record an adjusting entry for wages that employees have earned but have not yet been paid, which of the following will occur?</p>\n      <select data-correct=\"Expenses will be understated and liabilities understated.\"><option value=\"\">-- select --</option><option>Expenses will be overstated and liabilities understated.</option><option>Expenses will be understated and liabilities understated.</option><option>Expenses will be understated and assets overstated.</option><option>Expenses will be overstated and liabilities overstated.</option></select>",
-  "notesHtml": "<ol><li>B. Expenses will be understated and liabilities understated.</li></ol>"
+  "notesHtml": "<ol><li>Omitting the wage accrual means both sides of that entry are missing: wages expense stays too low (understated) and wages payable also stays too low (understated).</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Expenses will be understated and liabilities understated.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1406,7 +1406,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "If a company fails to recognize the portion of prepaid insurance that has…",
   "bodyHtml": "<p class=\"hw-prompt\">If a company fails to recognize the portion of prepaid insurance that has expired during the period:</p>\n      <select data-correct=\"Assets and net income will both be overstated.\"><option value=\"\">-- select --</option><option>Assets and net income will both be overstated.</option><option>Assets and net income will both be understated.</option><option>Liabilities will be overstated and net income understated.</option><option>Assets will be understated and net income overstated.</option></select>",
-  "notesHtml": "<ol><li>A. Assets and net income will both be overstated.</li></ol>"
+  "notesHtml": "<ol><li>If expired prepaid insurance isn't recognized, the prepaid insurance asset stays too high (overstated) and insurance expense stays too low, which means net income is too high (overstated).</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. Assets and net income will both be overstated.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1415,7 +1415,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "If a company fails to recognize revenue that has now been earned from a…",
   "bodyHtml": "<p class=\"hw-prompt\">If a company fails to recognize revenue that has now been earned from a previously recorded unearned revenue balance:</p>\n      <select data-correct=\"Liabilities will be overstated and revenue understated.\"><option value=\"\">-- select --</option><option>Liabilities will be understated and revenue overstated.</option><option>Liabilities will be overstated and revenue understated.</option><option>Assets will be overstated and expenses understated.</option><option>Cash will be understated and revenue overstated.</option></select>",
-  "notesHtml": "<ol><li>B. Liabilities will be overstated and revenue understated.</li></ol>"
+  "notesHtml": "<ol><li>If earned revenue isn't recognized out of unearned revenue, the liability stays too high (overstated, since it should have decreased) and revenue stays too low (understated).</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Liabilities will be overstated and revenue understated.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1424,7 +1424,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company reports positive net income but negative operating cash flow.…",
   "bodyHtml": "<p class=\"hw-prompt\">A company reports positive net income but negative operating cash flow. Which statement is most appropriate?</p>\n      <select data-correct=\"The company may have recognized revenues that have not yet been collected in cash or incurred expenses that have not yet been paid.\"><option value=\"\">-- select --</option><option>This is impossible under accrual accounting.</option><option>Net income and operating cash flow must always be equal over a single accounting period.</option><option>The company may have recognized revenues that have not yet been collected in cash or incurred expenses that have not yet been paid.</option><option>The company must have made an accounting error.</option></select>",
-  "notesHtml": "<ol><li>C. The company may have recognized revenues that have not yet been collected in cash or incurred expenses that have not yet been paid.</li></ol>"
+  "notesHtml": "<ol><li>Under accrual accounting, revenue can be recognized before cash is collected and expenses before cash is paid — so positive net income and negative operating cash flow can coexist due to this timing gap; it isn't an error.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. The company may have recognized revenues that have not yet been collected in cash or incurred expenses that have not yet been paid.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1433,7 +1433,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A company performs services on account. What is the immediate effect?",
   "bodyHtml": "<p class=\"hw-prompt\">A company performs services on account. What is the immediate effect?</p>\n      <select data-correct=\"Accounts receivable and revenue increase.\"><option value=\"\">-- select --</option><option>Cash and revenue increase.</option><option>Accounts receivable and revenue increase.</option><option>Accounts receivable increases and liabilities decrease.</option><option>Revenue increases but no balance sheet account changes.</option></select>",
-  "notesHtml": "<ol><li>B. Accounts receivable and revenue increase.</li></ol>"
+  "notesHtml": "<ol><li>Performing a service on account increases accounts receivable and revenue together — no cash is involved yet.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Accounts receivable and revenue increase.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1442,7 +1442,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which of the following best explains why accrual-basis net income can…",
   "bodyHtml": "<p class=\"hw-prompt\">Which of the following best explains why accrual-basis net income can differ from net cash flow?</p>\n      <select data-correct=\"Accrual accounting recognizes economic activity based on when it is earned or incurred rather than solely when cash changes hands.\"><option value=\"\">-- select --</option><option>Accrual accounting recognizes economic activity based on when it is earned or incurred rather than solely when cash changes hands.</option><option>Accrual accounting ignores expenses that have not been paid.</option><option>The statement of cash flows does not include operating transactions.</option><option>Net income includes only cash revenues.</option></select>",
-  "notesHtml": "<ol><li>A. Accrual accounting recognizes economic activity based on when it is earned or incurred rather than solely when cash changes hands.</li></ol>"
+  "notesHtml": "<ol><li>Accrual accounting recognizes economic activity based on when it's earned or incurred, not strictly when cash changes hands — that timing difference is exactly why net income and cash flow diverge.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. Accrual accounting recognizes economic activity based on when it is earned or incurred rather than solely when cash changes hands.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1451,7 +1451,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "What happens to temporary accounts during the closing process?",
   "bodyHtml": "<p class=\"hw-prompt\">What happens to temporary accounts during the closing process?</p>\n      <select data-correct=\"Their balances are transferred so that they begin the next accounting period at zero.\"><option value=\"\">-- select --</option><option>Their balances are transferred so that they begin the next accounting period at zero.</option><option>Their balances become assets.</option><option>Their balances are carried forward indefinitely.</option><option>They are combined with cash.</option></select>",
-  "notesHtml": "<ol><li>A. Their balances are transferred so that they begin the next accounting period at zero.</li></ol>"
+  "notesHtml": "<ol><li>Closing entries reset every temporary account (revenues, expenses, dividends) to zero, so each new period starts with a clean slate.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. Their balances are transferred so that they begin the next accounting period at zero.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1460,7 +1460,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which account is a permanent account and therefore is not closed at year-end?",
   "bodyHtml": "<p class=\"hw-prompt\">Which account is a permanent account and therefore is not closed at year-end?</p>\n      <select data-correct=\"Retained earnings\"><option value=\"\">-- select --</option><option>Service revenue</option><option>Salaries expense</option><option>Rent expense</option><option>Retained earnings</option></select>",
-  "notesHtml": "<ol><li>D. Retained earnings</li></ol>"
+  "notesHtml": "<ol><li>Retained earnings is a permanent account — it's never closed, and it carries its balance forward indefinitely, unlike revenue and expense accounts.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>D. Retained earnings</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1469,7 +1469,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "After all closing entries have been completed, which account should…",
   "bodyHtml": "<p class=\"hw-prompt\">After all closing entries have been completed, which account should normally have a zero balance?</p>\n      <select data-correct=\"Service revenue\"><option value=\"\">-- select --</option><option>Cash</option><option>Accounts payable</option><option>Service revenue</option><option>Common stock</option></select>",
-  "notesHtml": "<ol><li>C. Service revenue</li></ol>"
+  "notesHtml": "<ol><li>After closing, Service Revenue (a temporary account) is reset to zero, since its balance was closed into retained earnings.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. Service revenue</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1478,7 +1478,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which statement best describes the relationship between depreciation…",
   "bodyHtml": "<p class=\"hw-prompt\">Which statement best describes the relationship between depreciation expense and accumulated depreciation?</p>\n      <select data-correct=\"Depreciation expense is a period expense, while accumulated depreciation is a contra-asset account on the balance sheet.\"><option value=\"\">-- select --</option><option>Both are expenses reported on the income statement.</option><option>Depreciation expense is a period expense, while accumulated depreciation is a contra-asset account on the balance sheet.</option><option>Accumulated depreciation represents cash reserved to replace equipment.</option><option>Depreciation expense reduces the equipment account directly.</option></select>",
-  "notesHtml": "<ol><li>B. Depreciation expense is a period expense, while accumulated depreciation is a contra-asset account on the balance sheet.</li></ol>"
+  "notesHtml": "<ol><li>Depreciation expense is the current period's cost, reported on the income statement; accumulated depreciation is the running, cumulative contra-asset balance reported on the balance sheet.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Depreciation expense is a period expense, while accumulated depreciation is a contra-asset account on the balance sheet.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1487,7 +1487,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "When inventory is purchased on account:",
   "bodyHtml": "<p class=\"hw-prompt\">When inventory is purchased on account:</p>\n      <select data-correct=\"Inventory and accounts payable both increase.\"><option value=\"\">-- select --</option><option>Inventory and accounts payable both increase.</option><option>Inventory increases and revenue increases.</option><option>Cost of goods sold increases immediately.</option><option>Inventory increases and cash decreases.</option></select>",
-  "notesHtml": "<ol><li>A. Inventory and accounts payable both increase.</li></ol>"
+  "notesHtml": "<ol><li>Purchasing inventory on account increases both inventory (an asset) and accounts payable (a liability) — cash and revenue aren't involved at the purchase point.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. Inventory and accounts payable both increase.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1496,7 +1496,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "When inventory that was previously purchased is sold, recognition of the…",
   "bodyHtml": "<p class=\"hw-prompt\">When inventory that was previously purchased is sold, recognition of the cost of goods sold generally:</p>\n      <select data-correct=\"Decreases inventory and increases expense.\"><option value=\"\">-- select --</option><option>Increases inventory and increases expense.</option><option>Decreases inventory and increases expense.</option><option>Decreases inventory and decreases liabilities.</option><option>Has no effect on net income.</option></select>",
-  "notesHtml": "<ol><li>B. Decreases inventory and increases expense.</li></ol>"
+  "notesHtml": "<ol><li>Recognizing cost of goods sold decreases the inventory asset and increases an expense — the inventory leaves the balance sheet and becomes a cost on the income statement.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Decreases inventory and increases expense.</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1505,7 +1505,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company begins the year with $18,000 of supplies. During the year, it…",
   "bodyHtml": "<p class=\"hw-prompt\">A company begins the year with $18,000 of supplies. During the year, it purchases another $42,000 of supplies. At year-end, $11,000 of supplies remain. How much supplies expense should be recognized?</p>\n      <select data-correct=\"$49,000\"><option value=\"\">-- select --</option><option>$31,000</option><option>$42,000</option><option>$49,000</option><option>$60,000</option></select>",
-  "notesHtml": "<ol><li>C. $49,000</li></ol>"
+  "notesHtml": "<ol><li>Supplies expense = Beginning balance + Purchases − Ending balance = $18,000 + $42,000 − $11,000 = $49,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $49,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1514,7 +1514,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company’s unadjusted supplies balance is $27,500. A physical count at…",
   "bodyHtml": "<p class=\"hw-prompt\">A company’s unadjusted supplies balance is $27,500. A physical count at year-end indicates that $8,200 of supplies remain. What adjusting entry is required?</p>\n      <select data-correct=\"Debit Supplies Expense $19,300; Credit Supplies $19,300\"><option value=\"\">-- select --</option><option>Debit Supplies Expense $19,300; Credit Supplies $19,300</option><option>Debit Supplies $19,300; Credit Supplies Expense $19,300</option><option>Debit Supplies Expense $8,200; Credit Supplies $8,200</option><option>Debit Supplies $27,500; Credit Supplies Expense $27,500</option></select>",
-  "notesHtml": "<ol><li>A. Debit Supplies Expense $19,300; Credit Supplies $19,300</li></ol>"
+  "notesHtml": "<ol><li>The adjustment needed = $27,500 − $8,200 = $19,300. Debit Supplies Expense $19,300; Credit Supplies $19,300.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. Debit Supplies Expense $19,300; Credit Supplies $19,300</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1523,7 +1523,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "On October 1, a company pays $24,000 for 12 months of insurance coverage…",
   "bodyHtml": "<p class=\"hw-prompt\">On October 1, a company pays $24,000 for 12 months of insurance coverage and initially records the payment as prepaid insurance. What insurance expense should be recognized by December 31?</p>\n      <select data-correct=\"$6,000\"><option value=\"\">-- select --</option><option>$2,000</option><option>$6,000</option><option>$18,000</option><option>$24,000</option></select>",
-  "notesHtml": "<ol><li>B. $6,000</li></ol>"
+  "notesHtml": "<ol><li>Monthly premium = $24,000 ÷ 12 = $2,000. Three months have elapsed (Oct–Dec), so insurance expense = $2,000 × 3 = $6,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $6,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1531,8 +1531,8 @@ const HOMEWORK_BANK = [
   "origin": "official",
   "type": "work",
   "title": "Using the information from Question 23, what should the prepaid insurance…",
-  "bodyHtml": "<p class=\"hw-prompt\">Using the information from Question 23, what should the prepaid insurance balance be at December 31?</p>\n      <select data-correct=\"$18,000\"><option value=\"\">-- select --</option><option>$6,000</option><option>$12,000</option><option>$18,000</option><option>$24,000</option></select>",
-  "notesHtml": "<ol><li>C. $18,000</li></ol>"
+  "bodyHtml": "<div class=\"callout\" style=\"margin-bottom:1em;\"><b>Referenced scenario (Question 23):</b> On October 1, a company pays $24,000 for 12 months of insurance coverage and initially records the payment as prepaid insurance. What insurance expense should be recognized by December 31?</div><p class=\"hw-prompt\">Using the information from Question 23, what should the prepaid insurance balance be at December 31?</p>\n      <select data-correct=\"$18,000\"><option value=\"\">-- select --</option><option>$6,000</option><option>$12,000</option><option>$18,000</option><option>$24,000</option></select>",
+  "notesHtml": "<ol><li>Prepaid remaining = $24,000 − $6,000 (expense recognized) = $18,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $18,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1541,7 +1541,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "On December 31, employees have earned $14,500 of wages that will not be…",
   "bodyHtml": "<p class=\"hw-prompt\">On December 31, employees have earned $14,500 of wages that will not be paid until January. What is the required adjustment?</p>\n      <select data-correct=\"Debit Wages Expense $14,500; Credit Wages Payable $14,500\"><option value=\"\">-- select --</option><option>Debit Wages Payable $14,500; Credit Cash $14,500</option><option>Debit Wages Expense $14,500; Credit Wages Payable $14,500</option><option>Debit Wages Expense $14,500; Credit Cash $14,500</option><option>Debit Wages Payable $14,500; Credit Wages Expense $14,500</option></select>",
-  "notesHtml": "<ol><li>B. Debit Wages Expense $14,500; Credit Wages Payable $14,500</li></ol>"
+  "notesHtml": "<ol><li>Wages earned but unpaid require an accrual: Debit Wages Expense $14,500; Credit Wages Payable $14,500.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Debit Wages Expense $14,500; Credit Wages Payable $14,500</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1550,7 +1550,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "Before adjustment, utilities expense has a balance of $48,000. The company…",
   "bodyHtml": "<p class=\"hw-prompt\">Before adjustment, utilities expense has a balance of $48,000. The company estimates that an additional $4,200 of utilities have been used but not yet billed. What should adjusted utilities expense equal?</p>\n      <select data-correct=\"$52,200\"><option value=\"\">-- select --</option><option>$43,800</option><option>$48,000</option><option>$52,200</option><option>$56,400</option></select>",
-  "notesHtml": "<ol><li>C. $52,200</li></ol>"
+  "notesHtml": "<ol><li>Adjusted utilities expense = $48,000 (unadjusted) + $4,200 (accrued but unbilled) = $52,200.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $52,200</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1559,7 +1559,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company purchases equipment for $180,000. The equipment has a useful…",
   "bodyHtml": "<p class=\"hw-prompt\">A company purchases equipment for $180,000. The equipment has a useful life of 10 years and no estimated residual value. Assuming straight-line depreciation, what annual depreciation expense should be recorded?</p>\n      <select data-correct=\"$18,000\"><option value=\"\">-- select --</option><option>$15,000</option><option>$18,000</option><option>$20,000</option><option>$180,000</option></select>",
-  "notesHtml": "<ol><li>B. $18,000</li></ol>"
+  "notesHtml": "<ol><li>Straight-line annual depreciation = Cost ÷ Useful life = $180,000 ÷ 10 = $18,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $18,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1568,7 +1568,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "Equipment costing $240,000 has an eight-year useful life and no residual…",
   "bodyHtml": "<p class=\"hw-prompt\">Equipment costing $240,000 has an eight-year useful life and no residual value. If the equipment has been owned for three full years, what should accumulated depreciation equal?</p>\n      <select data-correct=\"$90,000\"><option value=\"\">-- select --</option><option>$30,000</option><option>$60,000</option><option>$90,000</option><option>$150,000</option></select>",
-  "notesHtml": "<ol><li>C. $90,000</li></ol>"
+  "notesHtml": "<ol><li>Annual depreciation = $240,000 ÷ 8 = $30,000. Over three full years, accumulated depreciation = $30,000 × 3 = $90,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $90,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1576,8 +1576,8 @@ const HOMEWORK_BANK = [
   "origin": "official",
   "type": "work",
   "title": "Using the equipment in Question 28, what is its net book value after three…",
-  "bodyHtml": "<p class=\"hw-prompt\">Using the equipment in Question 28, what is its net book value after three full years?</p>\n      <select data-correct=\"$150,000\"><option value=\"\">-- select --</option><option>$90,000</option><option>$120,000</option><option>$150,000</option><option>$210,000</option></select>",
-  "notesHtml": "<ol><li>C. $150,000</li></ol>"
+  "bodyHtml": "<div class=\"callout\" style=\"margin-bottom:1em;\"><b>Referenced scenario (Question 28):</b> Equipment costing $240,000 has an eight-year useful life and no residual value. If the equipment has been owned for three full years, what should accumulated depreciation equal?</div><p class=\"hw-prompt\">Using the equipment in Question 28, what is its net book value after three full years?</p>\n      <select data-correct=\"$150,000\"><option value=\"\">-- select --</option><option>$90,000</option><option>$120,000</option><option>$150,000</option><option>$210,000</option></select>",
+  "notesHtml": "<ol><li>Net book value = Cost − Accumulated depreciation = $240,000 − $90,000 = $150,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $150,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1586,7 +1586,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company receives $36,000 on September 1 for services to be provided…",
   "bodyHtml": "<p class=\"hw-prompt\">A company receives $36,000 on September 1 for services to be provided evenly over the next 12 months. The entire amount is initially recorded as unearned revenue. How much revenue should be recognized by December 31?</p>\n      <select data-correct=\"$12,000\"><option value=\"\">-- select --</option><option>$9,000</option><option>$12,000</option><option>$24,000</option><option>$36,000</option></select>",
-  "notesHtml": "<ol><li>B. $12,000</li></ol>"
+  "notesHtml": "<ol><li>Monthly revenue = $36,000 ÷ 12 = $3,000. Four months have elapsed (Sep–Dec), so revenue recognized = $3,000 × 4 = $12,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $12,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1594,8 +1594,8 @@ const HOMEWORK_BANK = [
   "origin": "official",
   "type": "work",
   "title": "Using the information in Question 30, what should the unearned revenue…",
-  "bodyHtml": "<p class=\"hw-prompt\">Using the information in Question 30, what should the unearned revenue liability equal on December 31?</p>\n      <select data-correct=\"$24,000\"><option value=\"\">-- select --</option><option>$12,000</option><option>$18,000</option><option>$24,000</option><option>$36,000</option></select>",
-  "notesHtml": "<ol><li>C. $24,000</li></ol>"
+  "bodyHtml": "<div class=\"callout\" style=\"margin-bottom:1em;\"><b>Referenced scenario (Question 30):</b> A company receives $36,000 on September 1 for services to be provided evenly over the next 12 months. The entire amount is initially recorded as unearned revenue. How much revenue should be recognized by December 31?</div><p class=\"hw-prompt\">Using the information in Question 30, what should the unearned revenue liability equal on December 31?</p>\n      <select data-correct=\"$24,000\"><option value=\"\">-- select --</option><option>$12,000</option><option>$18,000</option><option>$24,000</option><option>$36,000</option></select>",
+  "notesHtml": "<ol><li>Unearned revenue remaining = $36,000 − $12,000 (recognized) = $24,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $24,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1604,7 +1604,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company has $80,000 of notes payable outstanding. At year-end, $3,600 of…",
   "bodyHtml": "<p class=\"hw-prompt\">A company has $80,000 of notes payable outstanding. At year-end, $3,600 of interest has accrued but has not been paid or recorded. What effect will the adjusting entry have on net income?</p>\n      <select data-correct=\"Decrease net income by $3,600\"><option value=\"\">-- select --</option><option>Increase net income by $3,600</option><option>Decrease net income by $3,600</option><option>Decrease net income by $80,000</option><option>No effect on net income</option></select>",
-  "notesHtml": "<ol><li>B. Decrease net income by $3,600</li></ol>"
+  "notesHtml": "<ol><li>Accruing interest records an expense, which reduces net income by exactly the interest amount: $3,600.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Decrease net income by $3,600</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1613,7 +1613,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "At year-end, a company has earned $5,400 of interest that has not yet been…",
   "bodyHtml": "<p class=\"hw-prompt\">At year-end, a company has earned $5,400 of interest that has not yet been received or recorded. Which adjustment is appropriate?</p>\n      <select data-correct=\"Debit Interest Receivable $5,400; Credit Interest Revenue $5,400\"><option value=\"\">-- select --</option><option>Debit Cash $5,400; Credit Interest Revenue $5,400</option><option>Debit Interest Receivable $5,400; Credit Interest Revenue $5,400</option><option>Debit Interest Expense $5,400; Credit Interest Payable $5,400</option><option>Debit Interest Revenue $5,400; Credit Interest Receivable $5,400</option></select>",
-  "notesHtml": "<ol><li>B. Debit Interest Receivable $5,400; Credit Interest Revenue $5,400</li></ol>"
+  "notesHtml": "<ol><li>Interest earned but not yet received is accrued revenue: Debit Interest Receivable $5,400; Credit Interest Revenue $5,400.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Debit Interest Receivable $5,400; Credit Interest Revenue $5,400</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1622,7 +1622,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company pays $20,000 for five months of rent in advance. After two…",
   "bodyHtml": "<p class=\"hw-prompt\">A company pays $20,000 for five months of rent in advance. After two months have passed, what amount should remain in prepaid rent?</p>\n      <select data-correct=\"$12,000\"><option value=\"\">-- select --</option><option>$4,000</option><option>$8,000</option><option>$12,000</option><option>$20,000</option></select>",
-  "notesHtml": "<ol><li>C. $12,000</li></ol>"
+  "notesHtml": "<ol><li>Monthly rent = $20,000 ÷ 5 = $4,000. After 2 months, $8,000 has been used, leaving $20,000 − $8,000 = $12,000 in prepaid rent.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $12,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1630,8 +1630,8 @@ const HOMEWORK_BANK = [
   "origin": "official",
   "type": "work",
   "title": "Using the information in Question 34, how much rent expense should have…",
-  "bodyHtml": "<p class=\"hw-prompt\">Using the information in Question 34, how much rent expense should have been recognized after two months?</p>\n      <select data-correct=\"$8,000\"><option value=\"\">-- select --</option><option>$4,000</option><option>$8,000</option><option>$12,000</option><option>$20,000</option></select>",
-  "notesHtml": "<ol><li>B. $8,000</li></ol>"
+  "bodyHtml": "<div class=\"callout\" style=\"margin-bottom:1em;\"><b>Referenced scenario (Question 34):</b> A company pays $20,000 for five months of rent in advance. After two months have passed, what amount should remain in prepaid rent?</div><p class=\"hw-prompt\">Using the information in Question 34, how much rent expense should have been recognized after two months?</p>\n      <select data-correct=\"$8,000\"><option value=\"\">-- select --</option><option>$4,000</option><option>$8,000</option><option>$12,000</option><option>$20,000</option></select>",
+  "notesHtml": "<ol><li>Rent expense recognized after 2 months = 2 × $4,000 = $8,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $8,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1640,7 +1640,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company reports service revenue of $450,000. Of this amount, $320,000…",
   "bodyHtml": "<p class=\"hw-prompt\">A company reports service revenue of $450,000. Of this amount, $320,000 was earned on account and $130,000 was earned for cash. During the year, the company collected $75,000 of the receivables created from those credit sales. How much cash was collected from current-year services and receivables?</p>\n      <select data-correct=\"$205,000\"><option value=\"\">-- select --</option><option>$130,000</option><option>$205,000</option><option>$320,000</option><option>$395,000</option></select>",
-  "notesHtml": "<ol><li>B. $205,000</li></ol>"
+  "notesHtml": "<ol><li>Cash collected = cash sales $130,000 + collections on the credit sales $75,000 = $205,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $205,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1648,8 +1648,8 @@ const HOMEWORK_BANK = [
   "origin": "official",
   "type": "work",
   "title": "Using the information from Question 36, assuming no other activity, how…",
-  "bodyHtml": "<p class=\"hw-prompt\">Using the information from Question 36, assuming no other activity, how much of the current-year service revenue remains in accounts receivable?</p>\n      <select data-correct=\"$245,000\"><option value=\"\">-- select --</option><option>$75,000</option><option>$115,000</option><option>$245,000</option><option>$320,000</option></select>",
-  "notesHtml": "<ol><li>C. $245,000</li></ol>"
+  "bodyHtml": "<div class=\"callout\" style=\"margin-bottom:1em;\"><b>Referenced scenario (Question 36):</b> A company reports service revenue of $450,000. Of this amount, $320,000 was earned on account and $130,000 was earned for cash. During the year, the company collected $75,000 of the receivables created from those credit sales. How much cash was collected from current-year services and receivables?</div><p class=\"hw-prompt\">Using the information from Question 36, assuming no other activity, how much of the current-year service revenue remains in accounts receivable?</p>\n      <select data-correct=\"$245,000\"><option value=\"\">-- select --</option><option>$75,000</option><option>$115,000</option><option>$245,000</option><option>$320,000</option></select>",
+  "notesHtml": "<ol><li>Current-year revenue still in accounts receivable = credit sales $320,000 − collected $75,000 = $245,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $245,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1658,7 +1658,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company pays employees $90,000 cash during the year. Employees also earn…",
   "bodyHtml": "<p class=\"hw-prompt\">A company pays employees $90,000 cash during the year. Employees also earn another $16,000 that remains unpaid at year-end. What is wages expense for the year?</p>\n      <select data-correct=\"$106,000\"><option value=\"\">-- select --</option><option>$74,000</option><option>$90,000</option><option>$106,000</option><option>$116,000</option></select>",
-  "notesHtml": "<ol><li>C. $106,000</li></ol>"
+  "notesHtml": "<ol><li>Wages expense (accrual basis) = cash paid $90,000 + unpaid accrued $16,000 = $106,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $106,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1667,7 +1667,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company reports service revenue of $500,000. Cash collected from…",
   "bodyHtml": "<p class=\"hw-prompt\">A company reports service revenue of $500,000. Cash collected from customers during the year is $430,000. Wages expense is $210,000, of which $190,000 was paid in cash. Ignoring all other items, what is net income?</p>\n      <select data-correct=\"$290,000\"><option value=\"\">-- select --</option><option>$220,000</option><option>$240,000</option><option>$290,000</option><option>$310,000</option></select>",
-  "notesHtml": "<ol><li>C. $290,000</li></ol>"
+  "notesHtml": "<ol><li>Net income = Revenue − Wages expense (accrual basis, not cash paid) = $500,000 − $210,000 = $290,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $290,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1675,8 +1675,8 @@ const HOMEWORK_BANK = [
   "origin": "official",
   "type": "work",
   "title": "Using the information from Question 39, what is the net cash inflow…",
-  "bodyHtml": "<p class=\"hw-prompt\">Using the information from Question 39, what is the net cash inflow generated by the service and wage transactions?</p>\n      <select data-correct=\"$240,000\"><option value=\"\">-- select --</option><option>$220,000</option><option>$240,000</option><option>$290,000</option><option>$310,000</option></select>",
-  "notesHtml": "<ol><li>B. $240,000</li></ol>"
+  "bodyHtml": "<div class=\"callout\" style=\"margin-bottom:1em;\"><b>Referenced scenario (Question 39):</b> A company reports service revenue of $500,000. Cash collected from customers during the year is $430,000. Wages expense is $210,000, of which $190,000 was paid in cash. Ignoring all other items, what is net income?</div><p class=\"hw-prompt\">Using the information from Question 39, what is the net cash inflow generated by the service and wage transactions?</p>\n      <select data-correct=\"$240,000\"><option value=\"\">-- select --</option><option>$220,000</option><option>$240,000</option><option>$290,000</option><option>$310,000</option></select>",
+  "notesHtml": "<ol><li>Net cash inflow = cash collected from customers $430,000 − cash paid for wages $190,000 = $240,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $240,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1685,7 +1685,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A retailer begins the year with inventory of $40 million. During the year,…",
   "bodyHtml": "<p class=\"hw-prompt\">A retailer begins the year with inventory of $40 million. During the year, it purchases $310 million of inventory. Cost of goods sold is $295 million. What is ending inventory?</p>\n      <select data-correct=\"$55 million\"><option value=\"\">-- select --</option><option>$15 million</option><option>$40 million</option><option>$55 million</option><option>$95 million</option></select>",
-  "notesHtml": "<ol><li>C. $55 million</li></ol>"
+  "notesHtml": "<ol><li>Ending inventory = Beginning + Purchases − COGS = $40M + $310M − $295M = $55M.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $55 million</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1694,7 +1694,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A retailer reports beginning inventory of $52 million and ending inventory…",
   "bodyHtml": "<p class=\"hw-prompt\">A retailer reports beginning inventory of $52 million and ending inventory of $61 million. Cost of goods sold during the year was $340 million. How much inventory was purchased during the year?</p>\n      <select data-correct=\"$349 million\"><option value=\"\">-- select --</option><option>$331 million</option><option>$340 million</option><option>$349 million</option><option>$453 million</option></select>",
-  "notesHtml": "<ol><li>C. $349 million</li></ol>"
+  "notesHtml": "<ol><li>Purchases = COGS + Ending inventory − Beginning inventory = $340M + $61M − $52M = $349M.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $349 million</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1703,7 +1703,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "Assume all inventory purchases in Question 42 were made on account. What…",
   "bodyHtml": "<p class=\"hw-prompt\">Assume all inventory purchases in Question 42 were made on account. What journal entry records those purchases?</p>\n      <select data-correct=\"Debit Inventory $349 million; Credit Accounts Payable $349 million\"><option value=\"\">-- select --</option><option>Debit Cost of Goods Sold $349 million; Credit Accounts Payable $349 million</option><option>Debit Inventory $349 million; Credit Accounts Payable $349 million</option><option>Debit Accounts Payable $349 million; Credit Inventory $349 million</option><option>Debit Inventory $340 million; Credit Cash $340 million</option></select>",
-  "notesHtml": "<ol><li>B. Debit Inventory $349 million; Credit Accounts Payable $349 million</li></ol>"
+  "notesHtml": "<ol><li>Purchases on account increase inventory and accounts payable: Debit Inventory $349M; Credit Accounts Payable $349M.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Debit Inventory $349 million; Credit Accounts Payable $349 million</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1712,7 +1712,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company begins the year with $2.8 million of unearned membership…",
   "bodyHtml": "<p class=\"hw-prompt\">A company begins the year with $2.8 million of unearned membership revenue. During the year, it collects $6.5 million of membership fees in advance. At year-end, unearned membership revenue is $3.1 million. How much membership revenue was recognized during the year?</p>\n      <select data-correct=\"$6.2 million\"><option value=\"\">-- select --</option><option>$6.2 million</option><option>$6.5 million</option><option>$6.8 million</option><option>$9.3 million</option></select>",
-  "notesHtml": "<ol><li>A. $6.2 million</li></ol>"
+  "notesHtml": "<ol><li>Revenue recognized = Beginning unearned + Cash collected − Ending unearned = $2.8M + $6.5M − $3.1M = $6.2M.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. $6.2 million</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1721,7 +1721,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A consulting firm reports the following balances before closing:\n\n-…",
   "bodyHtml": "<p class=\"hw-prompt\">A consulting firm reports the following balances before closing:\n\n- Service revenue: $320,000\n\n- Salaries expense: $175,000\n\n- Rent expense: $45,000\n\n- Utilities expense: $20,000\n\nWhat is net income for the period?</p>\n      <select data-correct=\"$80,000\"><option value=\"\">-- select --</option><option>$80,000</option><option>$100,000</option><option>$145,000</option><option>$320,000</option></select>",
-  "notesHtml": "<ol><li>A. $80,000</li></ol>"
+  "notesHtml": "<ol><li>Net income = Revenue − Expenses = $320,000 − $175,000 − $45,000 − $20,000 = $80,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. $80,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1729,8 +1729,8 @@ const HOMEWORK_BANK = [
   "origin": "official",
   "type": "work",
   "title": "Using the information in Question 45, retained earnings before closing is…",
-  "bodyHtml": "<p class=\"hw-prompt\">Using the information in Question 45, retained earnings before closing is $410,000. No dividends were declared. What will retained earnings equal after the revenue and expense accounts are closed?</p>\n      <select data-correct=\"$490,000\"><option value=\"\">-- select --</option><option>$310,000</option><option>$410,000</option><option>$490,000</option><option>$730,000</option></select>",
-  "notesHtml": "<ol><li>C. $490,000</li></ol>"
+  "bodyHtml": "<div class=\"callout\" style=\"margin-bottom:1em;\"><b>Referenced scenario (Question 45):</b> A consulting firm reports the following balances before closing: - Service revenue: $320,000 - Salaries expense: $175,000 - Rent expense: $45,000 - Utilities expense: $20,000 What is net income for the period?</div><p class=\"hw-prompt\">Using the information in Question 45, retained earnings before closing is $410,000. No dividends were declared. What will retained earnings equal after the revenue and expense accounts are closed?</p>\n      <select data-correct=\"$490,000\"><option value=\"\">-- select --</option><option>$310,000</option><option>$410,000</option><option>$490,000</option><option>$730,000</option></select>",
+  "notesHtml": "<ol><li>With no dividends, ending retained earnings = Beginning retained earnings + Net income = $410,000 + $80,000 = $490,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $490,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1739,7 +1739,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company accrued $7,000 of salaries payable on December 31. On January 8,…",
   "bodyHtml": "<p class=\"hw-prompt\">A company accrued $7,000 of salaries payable on December 31. On January 8, it pays employees $22,000, which includes the $7,000 previously accrued plus $15,000 earned in January. How much January salary expense should be recognized from the January 8 payment?</p>\n      <select data-correct=\"$15,000\"><option value=\"\">-- select --</option><option>$7,000</option><option>$15,000</option><option>$22,000</option><option>$29,000</option></select>",
-  "notesHtml": "<ol><li>B. $15,000</li></ol>"
+  "notesHtml": "<ol><li>Of the $22,000 payment, $7,000 settles the liability already accrued on December 31 (no new expense there); the remaining $22,000 − $7,000 = $15,000 is new January salary expense.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $15,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1747,8 +1747,8 @@ const HOMEWORK_BANK = [
   "origin": "official",
   "type": "work",
   "title": "Using the information in Question 47, what is the effect of the January 8…",
-  "bodyHtml": "<p class=\"hw-prompt\">Using the information in Question 47, what is the effect of the January 8 payment on the salaries payable liability that existed at December 31?</p>\n      <select data-correct=\"Decrease it by $7,000\"><option value=\"\">-- select --</option><option>Increase it by $7,000</option><option>Increase it by $15,000</option><option>Decrease it by $7,000</option><option>No effect</option></select>",
-  "notesHtml": "<ol><li>C. Decrease it by $7,000</li></ol>"
+  "bodyHtml": "<div class=\"callout\" style=\"margin-bottom:1em;\"><b>Referenced scenario (Question 47):</b> A company accrued $7,000 of salaries payable on December 31. On January 8, it pays employees $22,000, which includes the $7,000 previously accrued plus $15,000 earned in January. How much January salary expense should be recognized from the January 8 payment?</div><p class=\"hw-prompt\">Using the information in Question 47, what is the effect of the January 8 payment on the salaries payable liability that existed at December 31?</p>\n      <select data-correct=\"Decrease it by $7,000\"><option value=\"\">-- select --</option><option>Increase it by $7,000</option><option>Increase it by $15,000</option><option>Decrease it by $7,000</option><option>No effect</option></select>",
+  "notesHtml": "<ol><li>The $7,000 portion of the payment settles the exact liability accrued on December 31, decreasing salaries payable by $7,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. Decrease it by $7,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1757,7 +1757,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company’s January 31 supplies balance is $9,000 and January supplies…",
   "bodyHtml": "<p class=\"hw-prompt\">A company’s January 31 supplies balance is $9,000 and January supplies expense is $7,500. During January, the company purchased $5,500 of supplies. What was the January 1 supplies balance?</p>\n      <select data-correct=\"$11,000\"><option value=\"\">-- select --</option><option>$3,500</option><option>$9,000</option><option>$11,000</option><option>$16,500</option></select>",
-  "notesHtml": "<ol><li>C. $11,000</li></ol>"
+  "notesHtml": "<ol><li>Using the supplies roll-forward (Beginning + Purchases − Expense = Ending), Beginning = Ending − Purchases + Expense = $9,000 − $5,500 + $7,500 = $11,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $11,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 3",
@@ -1766,7 +1766,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A truck originally costs $96,000 and has an eight-year useful life with no…",
   "bodyHtml": "<p class=\"hw-prompt\">A truck originally costs $96,000 and has an eight-year useful life with no salvage value. Accumulated depreciation currently equals $30,000. Assuming straight-line depreciation and depreciation is recorded monthly, how long has the company owned the truck?</p>\n      <select data-correct=\"30 months\"><option value=\"\">-- select --</option><option>24 months</option><option>30 months</option><option>36 months</option><option>40 months</option></select>",
-  "notesHtml": "<ol><li>B. 30 months</li></ol>"
+  "notesHtml": "<ol><li>Monthly depreciation = $96,000 ÷ 96 months (8 years) = $1,000. Months owned = Accumulated depreciation ÷ monthly rate = $30,000 ÷ $1,000 = 30 months.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. 30 months</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1775,7 +1775,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Under the cost-to-cost method for a long-term construction contract,…",
   "bodyHtml": "<p class=\"hw-prompt\">Under the cost-to-cost method for a long-term construction contract, revenue recognized in a period is primarily based on:</p>\n      <select data-correct=\"The proportion of total estimated contract costs incurred to date\"><option value=\"\">-- select --</option><option>Cash collected from the customer during the period</option><option>The proportion of total estimated contract costs incurred to date</option><option>The amount billed to the customer during the period</option><option>The proportion of the contract term that has elapsed</option></select>",
-  "notesHtml": "<ol><li>B. The proportion of total estimated contract costs incurred to date</li></ol>"
+  "notesHtml": "<ol><li>The cost-to-cost method scales total contract revenue by the proportion of total estimated costs incurred to date — not cash collected, billings, or elapsed time.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. The proportion of total estimated contract costs incurred to date</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1784,7 +1784,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Why can the cost-to-cost method provide a reasonable measure of…",
   "bodyHtml": "<p class=\"hw-prompt\">Why can the cost-to-cost method provide a reasonable measure of performance on a long-term construction contract?</p>\n      <select data-correct=\"Costs incurred can serve as a measure of progress toward completing the contract\"><option value=\"\">-- select --</option><option>Costs incurred can serve as a measure of progress toward completing the contract</option><option>Cash collections always occur in the same period as construction activity</option><option>All construction contracts earn the same profit margin each year</option><option>Revenue is recognized only when the project is completed</option></select>",
-  "notesHtml": "<ol><li>A. Costs incurred can serve as a measure of progress toward completing the contract</li></ol>"
+  "notesHtml": "<ol><li>Costs incurred serve as a reasonable proxy for how much of the total work has actually been completed on the contract.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. Costs incurred can serve as a measure of progress toward completing the contract</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1793,7 +1793,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "For a retail store sale, revenue is generally recognized when:",
   "bodyHtml": "<p class=\"hw-prompt\">For a retail store sale, revenue is generally recognized when:</p>\n      <select data-correct=\"The sale occurs and control of the merchandise transfers to the customer\"><option value=\"\">-- select --</option><option>The customer places an order</option><option>The merchandise is ordered from the vendor</option><option>The sale occurs and control of the merchandise transfers to the customer</option><option>The retailer remits sales tax to the government</option></select>",
-  "notesHtml": "<ol><li>C. The sale occurs and control of the merchandise transfers to the customer</li></ol>"
+  "notesHtml": "<ol><li>A retail sale is recognized when the sale occurs and control of the merchandise transfers to the customer — essentially at checkout.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. The sale occurs and control of the merchandise transfers to the customer</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1802,7 +1802,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "For a digital sale in which a customer pays online before the merchandise…",
   "bodyHtml": "<p class=\"hw-prompt\">For a digital sale in which a customer pays online before the merchandise is delivered, the seller generally recognizes revenue:</p>\n      <select data-correct=\"When the merchandise is delivered to the customer or picked up\"><option value=\"\">-- select --</option><option>When the customer submits the online order</option><option>When the credit card payment is received</option><option>When the merchandise is delivered to the customer or picked up</option><option>When the merchandise leaves the seller's warehouse</option></select>",
-  "notesHtml": "<ol><li>C. When the merchandise is delivered to the customer or picked up</li></ol>"
+  "notesHtml": "<ol><li>Payment in advance doesn't trigger revenue recognition for a digital sale — delivery (or pickup) does, since that's when the obligation to the customer is satisfied.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. When the merchandise is delivered to the customer or picked up</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1811,7 +1811,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Why are sales taxes collected from customers generally excluded from a…",
   "bodyHtml": "<p class=\"hw-prompt\">Why are sales taxes collected from customers generally excluded from a retailer's revenue?</p>\n      <select data-correct=\"The retailer acts as a pass-through conduit for the taxing authority\"><option value=\"\">-- select --</option><option>They are recorded as cost of sales</option><option>The retailer acts as a pass-through conduit for the taxing authority</option><option>They are recognized as revenue only when paid to the government</option><option>They are treated as a reduction of inventory</option></select>",
-  "notesHtml": "<ol><li>B. The retailer acts as a pass-through conduit for the taxing authority</li></ol>"
+  "notesHtml": "<ol><li>Sales tax was never the retailer's revenue — the retailer simply collects it on behalf of the taxing authority and owes it as a liability.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. The retailer acts as a pass-through conduit for the taxing authority</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1820,7 +1820,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "When a retailer expects some current-period merchandise sales to be…",
   "bodyHtml": "<p class=\"hw-prompt\">When a retailer expects some current-period merchandise sales to be returned, revenue should generally be:</p>\n      <select data-correct=\"Recognized net of estimated returns\"><option value=\"\">-- select --</option><option>Reported at the gross selling price until the returns actually occur</option><option>Recognized net of estimated returns</option><option>Deferred until the return period expires</option><option>Reduced only for returns involving cash refunds</option></select>",
-  "notesHtml": "<ol><li>B. Recognized net of estimated returns</li></ol>"
+  "notesHtml": "<ol><li>Revenue should be recognized net of estimated returns immediately, not at the full gross amount with returns handled only as they occur.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Recognized net of estimated returns</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1829,7 +1829,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "When a retailer sells a gift card for cash, the amount received is…",
   "bodyHtml": "<p class=\"hw-prompt\">When a retailer sells a gift card for cash, the amount received is initially recorded as:</p>\n      <select data-correct=\"A liability\"><option value=\"\">-- select --</option><option>Revenue</option><option>A liability</option><option>Cost of sales</option><option>Contributed capital</option></select>",
-  "notesHtml": "<ol><li>B. A liability</li></ol>"
+  "notesHtml": "<ol><li>Nothing has been earned yet when a gift card is sold — the cash received is recorded as a liability until the card is actually redeemed.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. A liability</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1838,7 +1838,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Gift card breakage refers to:",
   "bodyHtml": "<p class=\"hw-prompt\">Gift card breakage refers to:</p>\n      <select data-correct=\"The estimated portion of gift cards that will never be redeemed\"><option value=\"\">-- select --</option><option>Gift cards returned to the retailer for cash</option><option>The estimated portion of gift cards that will never be redeemed</option><option>The discount provided when a gift card is purchased</option><option>The cost of replacing lost gift cards</option></select>",
-  "notesHtml": "<ol><li>B. The estimated portion of gift cards that will never be redeemed</li></ol>"
+  "notesHtml": "<ol><li>Breakage is the estimated share of issued gift cards that will simply never be redeemed at all.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. The estimated portion of gift cards that will never be redeemed</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1847,7 +1847,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A reduction in a deferred revenue balance can potentially be a leading…",
   "bodyHtml": "<p class=\"hw-prompt\">A reduction in a deferred revenue balance can potentially be a leading indicator of lower future revenue because:</p>\n      <select data-correct=\"A smaller balance may mean less previously collected consideration remains to be recognized in future periods\"><option value=\"\">-- select --</option><option>Deferred revenue represents revenue that has already been earned twice</option><option>A smaller balance may mean less previously collected consideration remains to be recognized in future periods</option><option>A decrease in deferred revenue always means the company lost cash</option><option>Deferred revenue is reported as an operating expense</option></select>",
-  "notesHtml": "<ol><li>B. A smaller balance may mean less previously collected consideration remains to be recognized in future periods</li></ol>"
+  "notesHtml": "<ol><li>Deferred revenue represents future revenue \"in the pipeline\" — a shrinking balance means less of that future revenue remains to be recognized.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. A smaller balance may mean less previously collected consideration remains to be recognized in future periods</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1856,7 +1856,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Costco generally recognizes annual membership fee revenue:",
   "bodyHtml": "<p class=\"hw-prompt\">Costco generally recognizes annual membership fee revenue:</p>\n      <select data-correct=\"Ratably over the one-year membership period\"><option value=\"\">-- select --</option><option>Entirely when the membership fee is collected</option><option>Ratably over the one-year membership period</option><option>Only when the membership expires</option><option>Only when the member makes a merchandise purchase</option></select>",
-  "notesHtml": "<ol><li>B. Ratably over the one-year membership period</li></ol>"
+  "notesHtml": "<ol><li>Membership fees are collected up front but earned gradually as the membership year passes, so Costco recognizes the revenue ratably over that year rather than all at once.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Ratably over the one-year membership period</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1865,7 +1865,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Costco's accrued member rewards liability represents:",
   "bodyHtml": "<p class=\"hw-prompt\">Costco's accrued member rewards liability represents:</p>\n      <select data-correct=\"Estimated rewards earned by Executive members that Costco expects to provide later\"><option value=\"\">-- select --</option><option>Amounts Costco owes vendors for merchandise purchases</option><option>Estimated rewards earned by Executive members that Costco expects to provide later</option><option>Membership fees collected but not yet recognized</option><option>Expected merchandise returns from all customers</option></select>",
-  "notesHtml": "<ol><li>B. Estimated rewards earned by Executive members that Costco expects to provide later</li></ol>"
+  "notesHtml": "<ol><li>This is a distinct liability from deferred membership fees — an estimate of rewards Executive members have already earned on qualifying purchases, which Costco expects to pay out later.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Estimated rewards earned by Executive members that Costco expects to provide later</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1874,7 +1874,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Which Target operating cost is classified as cost of sales in the homework?",
   "bodyHtml": "<p class=\"hw-prompt\">Which Target operating cost is classified as cost of sales in the homework?</p>\n      <select data-correct=\"Freight associated with moving merchandise from vendors to distribution centers and stores\"><option value=\"\">-- select --</option><option>Advertising expense</option><option>Headquarters employee compensation</option><option>Freight associated with moving merchandise from vendors to distribution centers and stores</option><option>Litigation and defense costs</option></select>",
-  "notesHtml": "<ol><li>C. Freight associated with moving merchandise from vendors to distribution centers and stores</li></ol>"
+  "notesHtml": "<ol><li>Freight for moving merchandise from vendors to distribution centers and stores is a cost of getting inventory ready for sale, which is why it's classified as cost of sales rather than an operating expense like advertising or headquarters compensation.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. Freight associated with moving merchandise from vendors to distribution centers and stores</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1883,7 +1883,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "Under the allowance method, recording bad debt expense at year-end generally:",
   "bodyHtml": "<p class=\"hw-prompt\">Under the allowance method, recording bad debt expense at year-end generally:</p>\n      <select data-correct=\"Increases the allowance for uncollectible accounts and reduces net accounts receivable\"><option value=\"\">-- select --</option><option>Reduces gross accounts receivable directly</option><option>Increases the allowance for uncollectible accounts and reduces net accounts receivable</option><option>Reduces cash and increases the allowance for uncollectible accounts</option><option>Has no effect on net income</option></select>",
-  "notesHtml": "<ol><li>B. Increases the allowance for uncollectible accounts and reduces net accounts receivable</li></ol>"
+  "notesHtml": "<ol><li>Bad debt expense increases the allowance for uncollectible accounts (a contra-asset), which reduces net accounts receivable — without touching gross accounts receivable directly.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Increases the allowance for uncollectible accounts and reduces net accounts receivable</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1892,7 +1892,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "When evaluating collection efficiency, which combination generally…",
   "bodyHtml": "<p class=\"hw-prompt\">When evaluating collection efficiency, which combination generally indicates that receivables are being collected more quickly?</p>\n      <select data-correct=\"Higher accounts receivable turnover and lower DSO\"><option value=\"\">-- select --</option><option>Lower accounts receivable turnover and higher DSO</option><option>Higher accounts receivable turnover and lower DSO</option><option>Higher accounts receivable turnover and higher DSO</option><option>Lower accounts receivable turnover and lower revenue</option></select>",
-  "notesHtml": "<ol><li>B. Higher accounts receivable turnover and lower DSO</li></ol>"
+  "notesHtml": "<ol><li>AR turnover and DSO always move in opposite directions — a higher turnover (collecting the balance more times per year) corresponds to a lower average collection period (DSO), together indicating faster collection.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Higher accounts receivable turnover and lower DSO</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1901,7 +1901,7 @@ const HOMEWORK_BANK = [
   "type": "concept",
   "title": "A lower allowance for doubtful accounts as a percentage of gross trade…",
   "bodyHtml": "<p class=\"hw-prompt\">A lower allowance for doubtful accounts as a percentage of gross trade receivables, all else equal, generally indicates:</p>\n      <select data-correct=\"Management expects a smaller percentage of receivables to be uncollectible\"><option value=\"\">-- select --</option><option>Management expects a smaller percentage of receivables to be uncollectible</option><option>The company has more deferred revenue</option><option>The company is recognizing less sales revenue</option><option>All receivables have already been collected</option></select>",
-  "notesHtml": "<ol><li>A. Management expects a smaller percentage of receivables to be uncollectible</li></ol>"
+  "notesHtml": "<ol><li>A lower allowance percentage reflects management's estimate that a smaller share of receivables will end up uncollectible.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. Management expects a smaller percentage of receivables to be uncollectible</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1910,7 +1910,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "Camden Corporation has a $900,000 construction contract with total…",
   "bodyHtml": "<p class=\"hw-prompt\">Camden Corporation has a $900,000 construction contract with total expected costs of $675,000. Year 1 costs are $202,500. Using the cost-to-cost method, how much revenue should Camden recognize in Year 1?</p>\n      <select data-correct=\"$270,000\"><option value=\"\">-- select --</option><option>$202,500</option><option>$270,000</option><option>$337,500</option><option>$675,000</option></select>",
-  "notesHtml": "<ol><li>B. $270,000</li></ol>"
+  "notesHtml": "<ol><li>Percent complete = $202,500 ÷ $675,000 = 30%. Revenue recognized = $900,000 × 30% = $270,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $270,000</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1919,7 +1919,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "Gilbert Construction has a $220 million contract with total expected costs…",
   "bodyHtml": "<p class=\"hw-prompt\">Gilbert Construction has a $220 million contract with total expected costs of $180 million. During Year 1, it incurs $36 million of costs. Using the cost-to-cost method, how much revenue should be recognized in Year 1?</p>\n      <select data-correct=\"$44 million\"><option value=\"\">-- select --</option><option>$36 million</option><option>$40 million</option><option>$44 million</option><option>$55 million</option></select>",
-  "notesHtml": "<ol><li>C. $44 million</li></ol>"
+  "notesHtml": "<ol><li>Percent complete = $36M ÷ $180M = 20%. Revenue recognized = $220M × 20% = $44M.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $44 million</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1927,8 +1927,8 @@ const HOMEWORK_BANK = [
   "origin": "official",
   "type": "work",
   "title": "Using the Gilbert Construction information in Question 17, what income…",
-  "bodyHtml": "<p class=\"hw-prompt\">Using the Gilbert Construction information in Question 17, what income should be recognized in Year 1?</p>\n      <select data-correct=\"$8 million\"><option value=\"\">-- select --</option><option>$4 million</option><option>$8 million</option><option>$18 million</option><option>$36 million</option></select>",
-  "notesHtml": "<ol><li>B. $8 million</li></ol>"
+  "bodyHtml": "<div class=\"callout\" style=\"margin-bottom:1em;\"><b>Referenced scenario (Question 17):</b> Gilbert Construction has a $220 million contract with total expected costs of $180 million. During Year 1, it incurs $36 million of costs. Using the cost-to-cost method, how much revenue should be recognized in Year 1?</div><p class=\"hw-prompt\">Using the Gilbert Construction information in Question 17, what income should be recognized in Year 1?</p>\n      <select data-correct=\"$8 million\"><option value=\"\">-- select --</option><option>$4 million</option><option>$8 million</option><option>$18 million</option><option>$36 million</option></select>",
+  "notesHtml": "<ol><li>Income recognized = Revenue − Costs incurred = $44M − $36M = $8M.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $8 million</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1937,7 +1937,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A retailer makes a cash sale of $1,800 in a state with an 8% sales-tax…",
   "bodyHtml": "<p class=\"hw-prompt\">A retailer makes a cash sale of $1,800 in a state with an 8% sales-tax rate. How much sales-tax liability should be recorded?</p>\n      <select data-correct=\"$144\"><option value=\"\">-- select --</option><option>$90</option><option>$126</option><option>$144</option><option>$1,944</option></select>",
-  "notesHtml": "<ol><li>C. $144</li></ol>"
+  "notesHtml": "<ol><li>Sales tax liability = $1,800 × 8% = $144.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $144</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1946,7 +1946,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A retailer records $1,800 of merchandise sales and estimates that 10% of…",
   "bodyHtml": "<p class=\"hw-prompt\">A retailer records $1,800 of merchandise sales and estimates that 10% of those sales will be returned. By how much should revenue be reduced for the estimated returns?</p>\n      <select data-correct=\"$180\"><option value=\"\">-- select --</option><option>$90</option><option>$144</option><option>$180</option><option>$1,620</option></select>",
-  "notesHtml": "<ol><li>C. $180</li></ol>"
+  "notesHtml": "<ol><li>Revenue reduction for estimated returns = $1,800 × 10% = $180.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $180</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1955,7 +1955,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "A company begins the year with a gift card liability of $1,309 million,…",
   "bodyHtml": "<p class=\"hw-prompt\">A company begins the year with a gift card liability of $1,309 million, issues $1,161 million of new gift cards that remain unredeemed, and recognizes $958 million of revenue from the beginning liability. What is the ending gift card liability?</p>\n      <select data-correct=\"$1,512 million\"><option value=\"\">-- select --</option><option>$1,161 million</option><option>$1,309 million</option><option>$1,512 million</option><option>$2,470 million</option></select>",
-  "notesHtml": "<ol><li>C. $1,512 million</li></ol>"
+  "notesHtml": "<ol><li>Ending gift card liability = Beginning $1,309M + New cards issued $1,161M − Revenue recognized $958M = $1,512M.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $1,512 million</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1964,7 +1964,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "Costco reports beginning deferred membership fees of $2,042 million,…",
   "bodyHtml": "<p class=\"hw-prompt\">Costco reports beginning deferred membership fees of $2,042 million, ending deferred membership fees of $2,174 million, and membership fee revenue of $4,224 million. How much cash did Costco receive from membership fees during the year?</p>\n      <select data-correct=\"$4,356 million\"><option value=\"\">-- select --</option><option>$4,092 million</option><option>$4,224 million</option><option>$4,356 million</option><option>$6,398 million</option></select>",
-  "notesHtml": "<ol><li>C. $4,356 million</li></ol>"
+  "notesHtml": "<ol><li>Cash received = Revenue recognized + Ending deferred revenue − Beginning deferred revenue = $4,224M + $2,174M − $2,042M = $4,356M.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $4,356 million</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1973,7 +1973,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "Costco reports a $2,307 million reduction in sales for Executive member…",
   "bodyHtml": "<p class=\"hw-prompt\">Costco reports a $2,307 million reduction in sales for Executive member rewards. If Executive members earn a 2% reward on qualified purchases, what minimum amount of qualified Executive-member sales is implied?</p>\n      <select data-correct=\"$115,350 million\"><option value=\"\">-- select --</option><option>$46,140 million</option><option>$57,675 million</option><option>$115,350 million</option><option>$230,700 million</option></select>",
-  "notesHtml": "<ol><li>C. $115,350 million</li></ol>"
+  "notesHtml": "<ol><li>If $2,307M represents 2% of qualified sales, then qualified sales = $2,307M ÷ 0.02 = $115,350M.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $115,350 million</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1982,7 +1982,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "Adobe reports total revenue of $22,888 million, an increase in deferred…",
   "bodyHtml": "<p class=\"hw-prompt\">Adobe reports total revenue of $22,888 million, an increase in deferred revenue of $696 million, and an increase in trade receivables of $244 million. Using these amounts, how much cash did Adobe receive from customers?</p>\n      <select data-correct=\"$23,340 million\"><option value=\"\">-- select --</option><option>$22,436 million</option><option>$22,888 million</option><option>$23,340 million</option><option>$23,828 million</option></select>",
-  "notesHtml": "<ol><li>C. $23,340 million</li></ol>"
+  "notesHtml": "<ol><li>Cash received = Revenue + Increase in deferred revenue − Increase in receivables = $22,888M + $696M − $244M = $23,340M.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $23,340 million</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -1991,7 +1991,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "Mohan Company estimates that $2,100 of ending accounts receivable will be…",
   "bodyHtml": "<p class=\"hw-prompt\">Mohan Company estimates that $2,100 of ending accounts receivable will be uncollectible. Before adjustment, the allowance for uncollectible accounts has a $700 credit balance. What bad debt expense should Mohan record?</p>\n      <select data-correct=\"$1,400\"><option value=\"\">-- select --</option><option>$700</option><option>$1,400</option><option>$2,100</option><option>$2,800</option></select>",
-  "notesHtml": "<ol><li>B. $1,400</li></ol>"
+  "notesHtml": "<ol><li>Bad debt expense = Desired ending allowance − Existing balance = $2,100 − $700 = $1,400.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $1,400</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -2000,7 +2000,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "Mohan Company has gross accounts receivable of $86,000 and an adjusted…",
   "bodyHtml": "<p class=\"hw-prompt\">Mohan Company has gross accounts receivable of $86,000 and an adjusted allowance for uncollectible accounts of $2,100. What amount of accounts receivable, net, should be reported?</p>\n      <select data-correct=\"$83,900\"><option value=\"\">-- select --</option><option>$83,200</option><option>$83,900</option><option>$86,000</option><option>$88,100</option></select>",
-  "notesHtml": "<ol><li>B. $83,900</li></ol>"
+  "notesHtml": "<ol><li>Net accounts receivable = Gross AR − Allowance = $86,000 − $2,100 = $83,900.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $83,900</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -2009,7 +2009,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "Collins Company estimates total uncollectible accounts of $41,400 from its…",
   "bodyHtml": "<p class=\"hw-prompt\">Collins Company estimates total uncollectible accounts of $41,400 from its aging analysis. Before adjustment, the allowance for uncollectible accounts has a $6,600 credit balance. What bad debt expense should be recorded?</p>\n      <select data-correct=\"$34,800\"><option value=\"\">-- select --</option><option>$6,600</option><option>$34,800</option><option>$41,400</option><option>$48,000</option></select>",
-  "notesHtml": "<ol><li>B. $34,800</li></ol>"
+  "notesHtml": "<ol><li>Bad debt expense = Desired ending allowance − Existing balance = $41,400 − $6,600 = $34,800.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $34,800</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -2018,7 +2018,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "Procter & Gamble reports net sales of $267,328 million, beginning accounts…",
   "bodyHtml": "<p class=\"hw-prompt\">Procter & Gamble reports net sales of $267,328 million, beginning accounts receivable of $18,376 million, and ending accounts receivable of $18,744 million. What is its accounts receivable turnover, rounded to one decimal place?</p>\n      <select data-correct=\"14.4 times\"><option value=\"\">-- select --</option><option>10.8 times</option><option>12.6 times</option><option>14.4 times</option><option>16.2 times</option></select>",
-  "notesHtml": "<ol><li>C. 14.4 times</li></ol>"
+  "notesHtml": "<ol><li>Average AR = ($18,376M + $18,744M) ÷ 2 = $18,560M. AR turnover = Net sales ÷ Average AR = $267,328M ÷ $18,560M ≈ 14.4 times.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. 14.4 times</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -2027,7 +2027,7 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "Colgate-Palmolive has accounts receivable turnover of approximately 10.79…",
   "bodyHtml": "<p class=\"hw-prompt\">Colgate-Palmolive has accounts receivable turnover of approximately 10.79 times. Using 365 days, what is its days sales outstanding (DSO), rounded to the nearest day?</p>\n      <select data-correct=\"34 days\"><option value=\"\">-- select --</option><option>25 days</option><option>29 days</option><option>34 days</option><option>41 days</option></select>",
-  "notesHtml": "<ol><li>C. 34 days</li></ol>"
+  "notesHtml": "<ol><li>DSO = 365 ÷ AR turnover = 365 ÷ 10.79 ≈ 33.8, which rounds to 34 days.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. 34 days</li></ol></div>"
 },
   {
   "set": "Official Exam Review — Module 5",
@@ -2036,6 +2036,6 @@ const HOMEWORK_BANK = [
   "type": "work",
   "title": "Mondelez reports net trade receivables of $2,262 million and an allowance…",
   "bodyHtml": "<p class=\"hw-prompt\">Mondelez reports net trade receivables of $2,262 million and an allowance for doubtful accounts of $40 million. What is gross trade receivables?</p>\n      <select data-correct=\"$2,302 million\"><option value=\"\">-- select --</option><option>$2,222 million</option><option>$2,262 million</option><option>$2,302 million</option><option>$2,342 million</option></select>",
-  "notesHtml": "<ol><li>C. $2,302 million</li></ol>"
+  "notesHtml": "<ol><li>Gross receivables = Net receivables + Allowance = $2,262M + $40M = $2,302M.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $2,302 million</li></ol></div>"
 }
 ];

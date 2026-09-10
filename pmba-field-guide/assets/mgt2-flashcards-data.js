@@ -34,6 +34,23 @@ const FLASHCARDS = [
   { source: "4dteams", front: "What does the 'cosmopolitan vs. local' team member distinction mean, per the World Bank example in Haas & Mortensen?", back: "Cosmopolitan members have multi-country experience and transferable technical knowledge; local members have deep on-the-ground knowledge of the specific area. Blending both types produced better outcomes than either alone." },
   { source: "4dteams", front: "What are Hackman's three classic criteria for evaluating team effectiveness, reused by Haas & Mortensen?", back: "Output (quality/quantity/delivery), collaborative ability (do team dynamics support working well together), and individual development (are members growing)." },
 
+  // ---- Class 2 Lecture — Sources & Functions of Team Leadership ----
+  { source: "functions", front: "How does the Class 2 lecture define team leadership?", back: "The act of assuming responsibility for satisfying a team's needs — getting done whatever isn't being adequately handled for the group. Many teams have different leaders in different situations." },
+  { source: "functions", front: "What is the functional view of leadership, per Morgeson, DeRue & Karam (2010)?", back: "Leadership occurs when one or more individuals step in to close a gap, help a team overcome a weakness, or satisfy a need the team has — its function is to help the team achieve its goals." },
+  { source: "functions", front: "What are the two phases of the team performance cycle?", back: "Transition phase (planning): identify goals, develop plans, identify likely process losses. Action phase (doing): carry out plans, monitor performance, watch for process losses." },
+  { source: "functions", front: "What are the four transition-phase leadership functions?", back: "Compose the team, organize (mission/expectations/structure), train and develop the team, and provide feedback." },
+  { source: "functions", front: "What are the two action-phase leadership functions?", back: "Keep the team on track, and encourage team self-management." },
+  { source: "functions", front: "In the Formal/Informal × Internal/External leadership matrix, give one example of each quadrant.", back: "Formal-internal: team leader/project manager. Formal-external: sponsor/coach. Informal-internal: shared/emergent leadership. Informal-external: mentor/champion." },
+  { source: "functions", front: "What personality traits are useful in teammates, per the composing-the-team function?", back: "Agreeableness, conscientiousness, and openness to experience." },
+  { source: "functions", front: "What work styles are useful in teammates, per Tate (2015)?", back: "Analytical, organized, supportive, and strategic work styles." },
+  { source: "functions", front: "What are 'derailers,' and why should they be avoided when composing a team?", back: "Team members who undermine others, bring out the worst in the group, lack integrity, or can't take others' perspective — they damage structure and supportive context." },
+  { source: "functions", front: "What did Woolley et al. (2008) find about experts and planning?", back: "Experts with a plan produce good performance; experts without a plan (who just \"wing it\") produce bad performance — the process, not just expertise, is make or break." },
+  { source: "functions", front: "How is trust defined in the Class 2 lecture?", back: "The willingness of one party to be vulnerable to the actions of another, based on the expectation the other will perform an important action — irrespective of one's ability to monitor or control that party." },
+  { source: "functions", front: "Name the ways trust gets built, per the training/developing function.", back: "Effective communication; strong relationship ties; a strong common identity; effective behavior (competence, trustworthiness, consistency); and effective structure/process that minimizes losses and builds psychological safety." },
+  { source: "functions", front: "What should teams evaluate themselves against, per the feedback function?", back: "The goals in their team contract, the enabling conditions (compelling direction, strong structure, supportive context, shared mindset), and team effectiveness generally — often via a performance evaluation or team scorecard." },
+  { source: "functions", front: "What three things does 'keeping the team on track' involve?", back: "Monitor the team (performing to potential? moving toward goals?), challenge the team (question the status quo), and support the social environment/shared mindset." },
+  { source: "functions", front: "What does 'encouraging team self-management' mean?", back: "Facilitating teams to lead themselves — teams become more adaptable and resilient by solving their own problems, so leaders encourage self-evaluation rather than dictating solutions." },
+
   // ---- Leadership Communication, Ch. 10 (Barrett) ----
   { source: "leadership", front: "What are the four parts of a 'team charter,' per Barrett's Leadership Communication textbook?", back: "(1) Project purpose and goals, (2) team member roles and responsibilities, (3) ground rules, (4) communication protocol." },
   { source: "leadership", front: "Name several ground-rule topics a team charter should cover, per Barrett Ch. 10.", back: "Leadership, communication, participation, work products, conflict management, preparation, attendance, timing, decision-making, and laptop/cell phone use." },
@@ -52,5 +69,6 @@ const SOURCE_LABELS = {
   psychsafety: "Psychological Safety",
   virtual: "Virtual Teams",
   "4dteams": "4-D Teams",
-  leadership: "Team Leadership",
+  functions: "Leadership Functions",
+  leadership: "Team Charter & Conflict",
 };

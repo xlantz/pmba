@@ -12,6 +12,16 @@ document.addEventListener('DOMContentLoaded', () => {
   initQuiz();
 });
 
+/* ---------------- suppress stale hover-open dropdown right after page load ---------------- */
+/* If a user clicks a nav link, the destination page loads with the mouse still positioned
+   over the same nav area (since the top nav sits in the same spot on every page). Without
+   this, the CSS :hover rule would immediately reopen the dropdown on arrival. We mark the
+   body as "just loaded" and only lift that once the mouse genuinely moves. */
+document.body.classList.add('nav-just-loaded');
+window.addEventListener('mousemove', () => {
+  document.body.classList.remove('nav-just-loaded');
+}, { once: true });
+
 /* ---------------- mobile nav ---------------- */
 function initNavToggle(){
   const btn = document.querySelector('.nav-toggle');
