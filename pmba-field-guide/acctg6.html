@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACCTG 6000, Unit 6: Inventory Costing &amp; Long-Lived Assets — PMBA Field Guide</title>
+<meta name="description" content="ACCTG 6000 Unit 6: FIFO, LIFO, and weighted-average inventory costing, the LIFO reserve, inventory turnover and DIO, and PP&E depreciation and disposal.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="theme-acctg">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">PMBA</span> Field Guide</a>
+    <nav class="topnav">
+      <a href="index.html">Units</a>
+      <div class="nav-dropdown">
+        <a href="unit1.html" class="nav-dropdown-label">MGT 6050</a>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show MGT 6050 items">&#9662;</button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="unit1.html">Unit 1 &mdash; Foundations</a>
+            <a href="mgt2.html">Unit 2 &mdash; Building the Team</a>
+            <a href="mgt3.html">Unit 3 &mdash; Conflict, Voice &amp; Culture</a>
+            <a href="unit4.html">Unit 4 &mdash; Fairness, Diversity &amp; the Limits of Teamwork</a>
+            <a href="unit5.html">Unit 5 &mdash; Team Creativity &amp; Innovation</a>
+            <a href="team-contract-builder.html">Team Contract Builder</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="acctg1.html" class="nav-dropdown-label active">ACCTG 6000</a>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show ACCTG 6000 items">&#9662;</button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="acctg1.html">Unit 1 &mdash; Reporting Foundations</a>
+            <a href="acctg2.html">Unit 2 &mdash; Statements &amp; SEC Filings</a>
+            <a href="acctg3.html">Unit 3 &mdash; The Accounting Cycle</a>
+            <a href="acctg5.html">Unit 5 &mdash; Revenue &amp; Receivables</a>
+            <a href="acctg6.html">Unit 6 &mdash; Inventory &amp; Long-Lived Assets</a>
+            <a href="acctg-homework.html">Accounting HW Practice</a>
+            <a href="acctg-exam-prep.html">Exam Prep Practice</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="mgt-mock-test.html" class="nav-dropdown-label">Mock Tests</a>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show mock tests">&#9662;</button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="mgt-mock-test.html">MGT 6050 Mock Test</a>
+            <a href="acctg-mock-test.html">ACCTG 6000 Mock Test</a>
+          </div>
+        </div>
+      </div>
+      <a href="#glossary">Glossary</a>
+      <a href="#quiz">Quiz</a>
+    </nav>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:48px;">
+  <div class="wrap" style="grid-template-columns:1fr;">
+    <div>
+      <span class="eyebrow">ACCTG 6000 &#x00b7; Unit 6</span>
+      <h1>Inventory costing &amp; long-lived assets</h1>
+      <p class="lede" style="max-width:70ch;">Two asset categories that behave very differently once you dig in. Inventory costing methods (FIFO, LIFO, weighted average) can make otherwise-identical companies report wildly different numbers &mdash; and the direction of that difference flips depending on whether costs are rising or falling. Then property, plant &amp; equipment: how depreciation spreads a cost over time, and what happens on the day an asset is finally sold.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><b>27</b><span>Flashcards</span></div>
+        <div class="hero-stat"><b>16</b><span>Quiz questions</span></div>
+        <div class="hero-stat"><b>&#x2713;</b><span>Method effects drill</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main id="main">
+
+  <!-- ============ TEACHING CONTENT ============ -->
+  <div class="wrap section" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Walk the material</span>
+      <h2>Unit 6, section by section</h2>
+    </div>
+
+    <div class="source-block" id="src-costing">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">01</span><h3>Inventory Costing Methods: FIFO, LIFO &amp; Weighted Average</h3></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>Why costing method even matters</h4>
+        <p>When a company buys the same type of inventory at different prices over time, it has to decide which of those costs get expensed as Cost of Goods Sold (COGS) when a unit is sold, and which costs stay on the balance sheet as ending inventory. Three methods handle this differently, and &mdash; critically &mdash; two otherwise-identical companies can report very different COGS, gross profit, and inventory simply because they picked different methods.</p>
+
+        <h4>The three methods</h4>
+        <ul>
+          <li><strong>FIFO (First-In, First-Out)</strong> &mdash; assumes the <em>oldest</em> costs are expensed first. Ending inventory is made up of the <em>most recently</em> purchased costs.</li>
+          <li><strong>LIFO (Last-In, First-Out)</strong> &mdash; assumes the <em>most recently</em> purchased costs are expensed first. Ending inventory is made up of the <em>oldest</em> costs (sometimes decades old for companies that have used LIFO a long time).</li>
+          <li><strong>Weighted average</strong> &mdash; blends all costs together into a single average cost per unit, applied to both COGS and ending inventory.</li>
+        </ul>
+
+        <h4>Worked example</h4>
+        <p>A company begins the year with 400 units at $10 each. It purchases 500 units at $12 each, then 300 units at $15 each. It sells 900 units. Total units available = 1,200; total cost available = 4,000 + 6,000 + 4,500 = $14,500.</p>
+        <table class="hw-table">
+          <tr><th>Method</th><th>COGS (900 units)</th><th>Ending inventory (300 units)</th></tr>
+          <tr><td class="hw-label">FIFO</td><td>400@$10 + 500@$12 = $10,000</td><td>300@$15 = $4,500</td></tr>
+          <tr><td class="hw-label">LIFO</td><td>300@$15 + 500@$12 + 100@$10 = $11,500</td><td>300@$10 = $3,000</td></tr>
+          <tr><td class="hw-label">Weighted average</td><td>900 &times; ($14,500/1,200 = $12.083) = $10,875</td><td>300 &times; $12.083 = $3,625</td></tr>
+        </table>
+        <p>Notice: whichever method produces the higher COGS necessarily produces the lower ending inventory, and vice versa &mdash; total cost available ($14,500) always splits between the two, no matter which method is used.</p>
+
+        <h4>The direction flips with the price trend</h4>
+        <p>All of the classic "which method does what" rules assume <strong>rising</strong> costs (the normal, inflationary case). In a period of <strong>rising</strong> costs:</p>
+        <ul>
+          <li>FIFO: lowest COGS, highest ending inventory, highest gross profit &mdash; because it expenses old, cheap costs first.</li>
+          <li>LIFO: highest COGS, lowest ending inventory, lowest gross profit &mdash; because it expenses new, expensive costs first.</li>
+          <li>Weighted average: lands in between the two.</li>
+        </ul>
+        <p>If costs are <strong>falling</strong> instead, every one of these relationships reverses: FIFO becomes the highest-COGS/lowest-inventory method, and LIFO becomes the lowest-COGS/highest-inventory method.</p>
+
+        <div class="exam-angle"><b>Exam angle</b>Don't memorize "FIFO = low COGS" as an absolute fact &mdash; memorize the <em>mechanism</em> (FIFO expenses old costs first) and derive the effect from whatever price trend the question describes. Questions love to flip to a falling-price scenario specifically to catch memorized-rule answers.</div>
+      </div>
+    </div>
+
+    <div class="source-block" id="src-reserve">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">02</span><h3>The LIFO Reserve &amp; Converting to FIFO</h3></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>What it is</h4>
+        <p>Companies that use LIFO are required to disclose their <strong>LIFO reserve</strong> &mdash; the dollar difference between what inventory would be reported at under FIFO and what it's actually reported at under LIFO:</p>
+        <div class="quote-block">LIFO Reserve = FIFO Inventory &minus; LIFO Inventory</div>
+        <p>In a rising-cost environment, the LIFO reserve is normally positive and grows over time, since LIFO inventory increasingly understates the current cost of what's actually on the shelves.</p>
+
+        <h4>Why analysts care</h4>
+        <p>The LIFO reserve is the bridge that lets an analyst compare a LIFO company with a FIFO company on equal footing:</p>
+        <div class="quote-block">FIFO Inventory = LIFO Inventory + LIFO Reserve</div>
+        <p>To convert LIFO figures to an as-if-FIFO basis: add the LIFO reserve to reported inventory (and, correspondingly, to total assets and equity, net of any tax effect a more advanced treatment would consider).</p>
+
+        <h4>Converting COGS using the change in the reserve</h4>
+        <p>The reserve's <em>change</em> during the year, not just its ending balance, converts COGS between the two methods:</p>
+        <div class="quote-block">FIFO COGS = LIFO COGS &minus; Increase in LIFO Reserve during the year</div>
+        <p>Worked example: a company's LIFO reserve grows from $400,000 to $460,000 during the year. The $60,000 increase means LIFO COGS is $60,000 <em>higher</em> than FIFO COGS would have been for that same year &mdash; consistent with LIFO expensing more expensive, recent costs first in an inflationary environment.</p>
+
+        <div class="exam-angle"><b>Exam angle</b>Keep the ending balance and the change in balance straight &mdash; the ending LIFO reserve converts a balance sheet figure (inventory) at a point in time; the <em>change</em> in the reserve over the year converts an income statement figure (COGS) for that year.</div>
+      </div>
+    </div>
+
+    <div class="source-block" id="src-turnover">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">03</span><h3>Analyzing Inventory: Turnover &amp; Days Inventory Outstanding</h3></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>Inventory turnover</h4>
+        <p>Measures how many times, on average, a company sells through its entire inventory balance in a year:</p>
+        <div class="quote-block">Inventory Turnover = COGS &#x00f7; Average Inventory</div>
+        <p>Higher turnover generally means inventory is moving faster &mdash; less cash tied up sitting on shelves, and lower risk of obsolescence.</p>
+
+        <h4>Days inventory outstanding (DIO)</h4>
+        <p>Converts turnover into an average number of days inventory sits before being sold:</p>
+        <div class="quote-block">DIO = 365 &#x00f7; Inventory Turnover</div>
+        <p>Worked example: a retailer reports COGS of $18 million and average inventory of $3 million. Turnover = $18M/$3M = 6.0. DIO = 365/6.0 &#x2248; 60.8 days &mdash; the retailer holds inventory for roughly 61 days on average before it sells.</p>
+
+        <h4>Turnover, DIO, and costing method interact</h4>
+        <p>Because LIFO and FIFO report different COGS and different average inventory in a rising-cost environment, a LIFO company's turnover ratio isn't directly comparable to a FIFO competitor's without adjusting for the LIFO reserve first &mdash; another reason the reserve matters for analysis, not just disclosure compliance.</p>
+
+        <div class="exam-angle"><b>Exam angle</b>A rising turnover ratio (or falling DIO) isn't automatically good news &mdash; check whether it's driven by genuinely faster sales, or by a company running unusually lean (understocked) in a way that risks stockouts.</div>
+      </div>
+    </div>
+
+    <div class="source-block" id="src-ppe">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">04</span><h3>PP&amp;E: Depreciation, Disposal &amp; Turnover</h3></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>Straight-line depreciation</h4>
+        <p>Spreads an asset's depreciable cost evenly over its useful life:</p>
+        <div class="quote-block">Annual Depreciation = (Cost &minus; Salvage Value) &#x00f7; Useful Life</div>
+        <p>Worked example: equipment costs $60,000, has a $5,000 salvage value, and a five-year useful life. Annual depreciation = ($60,000 &minus; $5,000)/5 = $11,000 per year.</p>
+
+        <h4>Partial-year depreciation</h4>
+        <p>When an asset is placed in service partway through the year, depreciation for that first (and often last) year is prorated for the fraction of the year the asset was actually in service.</p>
+        <p>Worked example: the same equipment above is purchased on <strong>September 1</strong>. It's in service for 4 of 12 months that calendar year. First-year depreciation = $11,000 &times; 4/12 = $3,667 (rounded).</p>
+
+        <h4>Net book value &amp; disposal</h4>
+        <p>An asset's net book value (NBV) at any point is:</p>
+        <div class="quote-block">Net Book Value = Cost &minus; Accumulated Depreciation</div>
+        <p>When an asset is sold, compare the sale proceeds to its NBV at the time of sale:</p>
+        <div class="quote-block">Gain (or Loss) on Disposal = Proceeds &minus; Net Book Value</div>
+        <p>Worked example: equipment with an original cost of $60,000 and accumulated depreciation of $44,000 has an NBV of $16,000. If sold for $21,000, the company recognizes a $5,000 <strong>gain</strong> ($21,000 &minus; $16,000). If instead sold for $9,000, it recognizes a $7,000 <strong>loss</strong> ($9,000 &minus; $16,000).</p>
+
+        <h4>PP&amp;E turnover</h4>
+        <p>Measures how efficiently a company generates sales from its investment in long-lived assets:</p>
+        <div class="quote-block">PP&amp;E Turnover = Sales &#x00f7; PP&amp;E</div>
+        <p>A higher ratio means the company generates more sales per dollar tied up in property, plant, and equipment &mdash; though capital-intensive industries (manufacturing, utilities) naturally run lower PP&amp;E turnover than asset-light industries (services, software), so this ratio is most meaningful compared within an industry, not across very different ones.</p>
+
+        <div class="exam-angle"><b>Exam angle</b>A sale at exactly NBV produces neither a gain nor a loss &mdash; a common wrong answer is assuming a sale always produces one or the other. Also double check whether a question is asking for depreciation for a <em>full</em> year or a <em>partial</em> year based on the purchase date given.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ INTERACTIVE TOOL ============ -->
+  <div class="wrap section" id="method-diagnostic-section">
+    <div class="section-head">
+      <span class="eyebrow">Apply it</span>
+      <h2>Inventory method effects diagnostic</h2>
+      <p class="text-soft">Each scenario names a price trend and an effect. Identify which costing method produces it.</p>
+    </div>
+
+    <div class="adj-drill" id="method-drill-tool">
+      <div class="adj-scenario" id="method-scenario"></div>
+      <div class="adj-options" id="method-options"></div>
+      <div class="adj-feedback" id="method-feedback"></div>
+      <button class="btn ghost" id="method-new">New scenario</button>
+    </div>
+  </div>
+
+  <!-- ============ GLOSSARY ============ -->
+  <div class="wrap section" id="glossary">
+    <div class="section-head">
+      <span class="eyebrow">Reference</span>
+      <h2>Vocabulary bank</h2>
+      <p class="text-soft">Search or filter by category.</p>
+    </div>
+
+    <div class="glossary-controls">
+      <input type="search" id="glossary-search" placeholder="Search terms or definitions&#x2026;" aria-label="Search glossary">
+      <div class="chip-filter" role="group" aria-label="Filter glossary by category">
+        <button class="chip active" data-source="all">All</button>
+        <button class="chip" data-source="costing">Costing Methods</button>
+        <button class="chip" data-source="reserve">LIFO Reserve</button>
+        <button class="chip" data-source="turnover">Inventory Analysis</button>
+        <button class="chip" data-source="ppe">PP&amp;E</button>
+      </div>
+    </div>
+    <div class="glossary-count" id="glossary-count"></div>
+
+    <dl class="glossary-grid" id="glossary-grid">
+      <div class="term-card" data-source="costing" data-search="fifo first in first out oldest costs expensed first ending inventory recent purchases">
+        <dt>FIFO (First-In, First-Out)</dt><dd>Assumes the oldest inventory costs are expensed first; ending inventory reflects the most recently purchased costs.</dd><span class="tag">Costing Methods</span>
+      </div>
+      <div class="term-card" data-source="costing" data-search="lifo last in first out most recent costs expensed first ending inventory oldest costs">
+        <dt>LIFO (Last-In, First-Out)</dt><dd>Assumes the most recently purchased inventory costs are expensed first; ending inventory reflects the oldest costs on the books.</dd><span class="tag">Costing Methods</span>
+      </div>
+      <div class="term-card" data-source="costing" data-search="weighted average cost method blends all unit costs together single average per unit">
+        <dt>Weighted average cost method</dt><dd>Blends all available unit costs into a single average cost per unit, applied consistently to both COGS and ending inventory.</dd><span class="tag">Costing Methods</span>
+      </div>
+      <div class="term-card" data-source="costing" data-search="rising costs fifo lowest cogs highest ending inventory highest gross profit lifo opposite">
+        <dt>Effects in a rising-cost environment</dt><dd>FIFO produces the lowest COGS, highest ending inventory, and highest gross profit; LIFO produces the opposite. Falling costs reverse every one of these relationships.</dd><span class="tag">Costing Methods</span>
+      </div>
+      <div class="term-card" data-source="reserve" data-search="lifo reserve fifo inventory minus lifo inventory dollar difference between methods disclosed">
+        <dt>LIFO reserve</dt><dd>The dollar difference between what inventory would be under FIFO and what it's actually reported at under LIFO (FIFO Inventory − LIFO Inventory); required disclosure for LIFO companies.</dd><span class="tag">LIFO Reserve</span>
+      </div>
+      <div class="term-card" data-source="reserve" data-search="fifo inventory equals lifo inventory plus lifo reserve converting balance sheet basis">
+        <dt>Converting inventory to a FIFO basis</dt><dd>FIFO Inventory = LIFO Inventory + LIFO Reserve — lets an analyst restate a LIFO company's balance sheet on an as-if-FIFO basis.</dd><span class="tag">LIFO Reserve</span>
+      </div>
+      <div class="term-card" data-source="reserve" data-search="fifo cogs equals lifo cogs minus increase in lifo reserve during the year converting income statement">
+        <dt>Converting COGS to a FIFO basis</dt><dd>FIFO COGS = LIFO COGS − the increase in the LIFO reserve during the year — the change in the reserve, not its ending balance, converts an income-statement figure.</dd><span class="tag">LIFO Reserve</span>
+      </div>
+      <div class="term-card" data-source="turnover" data-search="inventory turnover cogs divided by average inventory times per year sold through">
+        <dt>Inventory turnover</dt><dd>COGS ÷ Average inventory — how many times per year, on average, a company sells through its entire inventory balance.</dd><span class="tag">Inventory Analysis</span>
+      </div>
+      <div class="term-card" data-source="turnover" data-search="days inventory outstanding dio 365 divided by inventory turnover average days held before sale">
+        <dt>Days inventory outstanding (DIO)</dt><dd>365 ÷ Inventory turnover — the average number of days inventory sits before it's sold.</dd><span class="tag">Inventory Analysis</span>
+      </div>
+      <div class="term-card" data-source="ppe" data-search="straight line depreciation cost minus salvage value divided by useful life annual expense">
+        <dt>Straight-line depreciation</dt><dd>(Cost − Salvage value) ÷ Useful life — spreads an asset's depreciable cost evenly across each year of its useful life.</dd><span class="tag">PP&amp;E</span>
+      </div>
+      <div class="term-card" data-source="ppe" data-search="partial year depreciation prorated fraction of year asset in service first last year">
+        <dt>Partial-year depreciation</dt><dd>When an asset enters or leaves service partway through the year, that year's depreciation is prorated for the fraction of the year it was actually in service.</dd><span class="tag">PP&amp;E</span>
+      </div>
+      <div class="term-card" data-source="ppe" data-search="net book value cost minus accumulated depreciation nbv">
+        <dt>Net book value (NBV)</dt><dd>Cost − Accumulated depreciation — an asset's carrying value on the balance sheet at a point in time.</dd><span class="tag">PP&amp;E</span>
+      </div>
+      <div class="term-card" data-source="ppe" data-search="gain loss disposal proceeds minus net book value sale of equipment asset">
+        <dt>Gain (or loss) on disposal</dt><dd>Proceeds − Net book value at the time of sale. A sale at exactly NBV produces neither a gain nor a loss.</dd><span class="tag">PP&amp;E</span>
+      </div>
+      <div class="term-card" data-source="ppe" data-search="ppe turnover sales divided by property plant equipment efficiency generating revenue from assets">
+        <dt>PP&amp;E turnover</dt><dd>Sales ÷ PP&E — how efficiently a company generates sales from its investment in property, plant, and equipment. Most meaningful compared within an industry.</dd><span class="tag">PP&amp;E</span>
+      </div>
+    </dl>
+  </div>
+
+  <!-- ============ FLASHCARDS ============ -->
+  <div class="wrap section" id="flashcards-section">
+    <div class="section-head">
+      <span class="eyebrow">Drill</span>
+      <h2>Flashcards</h2>
+      <p class="text-soft">Filter to one category, shuffle, and flip through &mdash; click the card or press Enter/Space to flip.</p>
+    </div>
+
+    <div class="flash-controls">
+      <label for="flash-source" class="text-soft" style="font-family:var(--font-mono); font-size:.78rem;">Category:</label>
+      <select id="flash-source">
+        <option value="all">All categories</option>
+        <option value="costing">Costing Methods</option>
+        <option value="reserve">LIFO Reserve</option>
+        <option value="turnover">Inventory Analysis</option>
+        <option value="ppe">PP&amp;E</option>
+      </select>
+      <button class="btn ghost" id="flash-shuffle">Shuffle</button>
+    </div>
+
+    <div class="flash-stage" id="flash-stage">
+      <div class="flashcard" id="flashcard" tabindex="0" role="button" aria-label="Flashcard, click to flip">
+        <div class="flashcard-inner">
+          <div class="flashcard-face front">
+            <span class="fc-label">Question</span>
+            <p></p>
+          </div>
+          <div class="flashcard-face back">
+            <span class="fc-label">Answer</span>
+            <p></p>
+          </div>
+        </div>
+      </div>
+      <div class="flash-nav">
+        <button class="btn ghost" id="flash-prev">&#x2190; Prev</button>
+        <span class="flash-meta" id="flash-meta"></span>
+        <button class="btn ghost" id="flash-next">Next &#x2192;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ QUIZ ============ -->
+  <div class="wrap section" id="quiz">
+    <div class="section-head">
+      <span class="eyebrow">Test yourself</span>
+      <h2>Unit 6 quiz</h2>
+      <p class="text-soft">Questions covering all four sections, randomized each attempt, with an explanation after every answer.</p>
+    </div>
+
+    <div class="quiz-shell" id="quiz-shell">
+      <div class="quiz-progress"><div class="quiz-progress-bar" id="quiz-progress-bar"></div></div>
+      <div class="quiz-meta" id="quiz-meta">Ready when you are</div>
+      <div id="quiz-start-screen" style="text-align:center; padding: 30px 10px;">
+        <p class="text-soft">Covers inventory costing methods, the LIFO reserve, inventory turnover/DIO, and PP&amp;E depreciation/disposal.</p>
+        <button class="btn blue" id="quiz-start">Start quiz</button>
+      </div>
+      <div id="quiz-body" style="display:none;"></div>
+    </div>
+  </div>
+
+  <!-- ============ EXAM ANGLES ============ -->
+  <div class="wrap section">
+    <div class="section-head">
+      <span class="eyebrow">Before the exam</span>
+      <h2>Likely exam &amp; discussion angles</h2>
+    </div>
+    <div class="callout">
+      <ul style="margin:0;">
+        <li>Given costs, quantities, and a price trend, compute COGS and ending inventory under FIFO, LIFO, and weighted average, then explain why the three don't match.</li>
+        <li>Explain why the standard "FIFO = low COGS" rule flips in a falling-cost environment.</li>
+        <li>Convert a LIFO company's inventory and COGS to a FIFO basis using the LIFO reserve and its year-over-year change.</li>
+        <li>Compute inventory turnover and DIO, and explain what a rising or falling value of each actually indicates.</li>
+        <li>Compute straight-line depreciation for a full year and for a partial year based on an asset's in-service date.</li>
+        <li>Given an asset's cost, accumulated depreciation, and sale price, determine whether the disposal produces a gain, a loss, or neither.</li>
+        <li>Compute PP&amp;E turnover and explain why it's most meaningful compared within a single industry.</li>
+      </ul>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>ACCTG 6000 &mdash; Financial Accounting, University of Utah PMBA. Synthesized from Unit 6 class notes (Inventory Costing: FIFO/LIFO/Weighted Average, the LIFO Reserve, Inventory Turnover &amp; DIO, PP&amp;E Depreciation &amp; Disposal).</p>
+  </div>
+</footer>
+
+<script src="assets/acctg6-flashcards-data.js"></script>
+<script src="assets/acctg6-quiz-data.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/acctg6-interactive.js"></script>
+</body>
+</html>

@@ -2154,5 +2154,230 @@ const HOMEWORK_BANK = [
   "title": "Research and Development Expense",
   "bodyHtml": "<span class=\"tag\" style=\"margin-bottom:1em; display:inline-block;\">Unit 5</span>\n      <p class=\"hw-prompt\">Vantage Systems Corp. reported the following in a recent 10-K filing.</p>\n      <table class=\"hw-table\">\n        <tr><th>$ millions</th><th>Current Year</th><th>Prior Year</th><th>Two Years Prior</th></tr>\n        <tr><td class=\"hw-label\">Total revenue</td><td>$28,000</td><td>$26,500</td><td>$25,200</td></tr>\n        <tr><td class=\"hw-label\">Research &amp; development expense</td><td>3,000</td><td>2,950</td><td>2,830</td></tr>\n        <tr><td class=\"hw-label\">Number of new patents awarded</td><td>2,000</td><td>3,900</td><td>4,100</td></tr>\n      </table>\n\n      <div class=\"hw-part-label\">a. Calculate common-size R&amp;D expense for each year. What pattern do you observe?</div>\n      <table class=\"hw-table\">\n        <tr><th></th><th>Current Year</th><th>Prior Year</th><th>Two Years Prior</th></tr>\n        <tr><td class=\"hw-label\">Common-size R&amp;D expense</td><td><input type=\"text\" class=\"num\" data-correct=\"10.71\" data-tol=\"0.1\"> %</td><td><input type=\"text\" class=\"num\" data-correct=\"11.13\" data-tol=\"0.1\"> %</td><td><input type=\"text\" class=\"num\" data-correct=\"11.23\" data-tol=\"0.1\"> %</td></tr>\n      </table>\n      <select data-correct=\"R&D expense has increased in dollar terms but decreased as a percentage of revenue each year\"><option value=\"\">-- select --</option><option>R&amp;D expense has increased in dollar terms but decreased as a percentage of revenue each year</option><option>R&amp;D expense has decreased in both dollar terms and as a percentage of revenue each year</option><option>R&amp;D expense has stayed exactly flat in both dollar and percentage terms</option></select>\n\n      <div class=\"hw-part-label\">b. Compute R&amp;D expense per new patent for each year. What pattern do you observe?</div>\n      <table class=\"hw-table\">\n        <tr><th>$ millions</th><th>Current Year</th><th>Prior Year</th><th>Two Years Prior</th></tr>\n        <tr><td class=\"hw-label\">R&amp;D expense per patent</td><td>$<input type=\"text\" class=\"num\" data-correct=\"1.5\" data-tol=\"0.05\"></td><td>$<input type=\"text\" class=\"num\" data-correct=\"0.8\" data-tol=\"0.05\"></td><td>$<input type=\"text\" class=\"num\" data-correct=\"0.7\" data-tol=\"0.05\"></td></tr>\n      </table>\n      <select data-correct=\"R&D spending per patent has increased, mainly due to a significant drop in patents awarded\"><option value=\"\">-- select --</option><option>R&amp;D spending per patent has increased, mainly due to a significant drop in patents awarded</option><option>R&amp;D spending per patent has decreased because R&amp;D spending fell sharply</option><option>R&amp;D spending per patent has been stable across all three years</option></select>",
   "notesHtml": "<ol>\n          <li>(a) Common-size R&amp;D expense = R&amp;D expense &#x00f7; Total revenue: $3,000/$28,000=10.71%; $2,950/$26,500=11.13%; $2,830/$25,200=11.23%. R&amp;D dollars have risen each year, but as a share of a faster-growing revenue base, the percentage has actually declined slightly &mdash; not a concern for investors.</li>\n          <li>(b) R&amp;D per patent = R&amp;D expense &#x00f7; number of new patents: $3,000/2,000=$1.5M; $2,950/3,900&#x2248;$0.8M; $2,830/4,100&#x2248;$0.7M. The sharp rise in Year 1's figure is driven mainly by a large drop in patents awarded that year, not by a spending surge &mdash; a useful reminder that a patent issued in one year may correspond to R&amp;D spending recognized in an earlier year, so this measure has real limitations.</li>\n        </ol>\n        <button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button>\n        <div class=\"answer-reveal\">\n          <ol>\n            <li><span class=\"ans-part\">a.</span> 10.71% / 11.13% / 11.23%. R&amp;D expense has increased in dollar terms but decreased as a percentage of revenue each year &mdash; not a concern for investors.</li>\n            <li><span class=\"ans-part\">b.</span> $1.5M / $0.8M / $0.7M per patent. R&amp;D spending per patent has increased, mainly due to a significant drop in patents awarded, not a spending surge.</li>\n          </ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q1",
+  "origin": "official",
+  "type": "concept",
+  "title": "During a period of consistently rising inventory costs, which inventory…",
+  "bodyHtml": "<p class=\"hw-prompt\">During a period of consistently rising inventory costs, which inventory method will generally report the highest ending inventory?</p>\n      <select data-correct=\"FIFO\"><option value=\"\">-- select --</option><option>FIFO</option><option>LIFO</option><option>Weighted average</option><option>All methods will report the same ending inventory</option></select>",
+  "notesHtml": "<ol><li>FIFO leaves the most recently purchased (highest-cost, in a rising-price environment) units in ending inventory, since it expenses the oldest costs first through COGS.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. FIFO</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q2",
+  "origin": "official",
+  "type": "concept",
+  "title": "During a period of consistently rising inventory costs, which inventory…",
+  "bodyHtml": "<p class=\"hw-prompt\">During a period of consistently rising inventory costs, which inventory method will generally report the lowest gross profit?</p>\n      <select data-correct=\"LIFO\"><option value=\"\">-- select --</option><option>FIFO</option><option>LIFO</option><option>Weighted average</option><option>All three methods will report the same gross profit</option></select>",
+  "notesHtml": "<ol><li>LIFO expenses the most recently purchased (highest-cost) units first, producing the highest COGS and therefore the lowest gross profit when costs are rising.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. LIFO</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q3",
+  "origin": "official",
+  "type": "concept",
+  "title": "Assume inventory purchase costs are increasing throughout the year.…",
+  "bodyHtml": "<p class=\"hw-prompt\">Assume inventory purchase costs are increasing throughout the year. Compared with a company using FIFO, an otherwise identical company using LIFO will generally report:</p>\n      <select data-correct=\"Higher COGS and lower ending inventory\"><option value=\"\">-- select --</option><option>Higher COGS and lower ending inventory</option><option>Lower COGS and higher ending inventory</option><option>Higher COGS and higher ending inventory</option><option>Lower COGS and lower ending inventory</option></select>",
+  "notesHtml": "<ol><li>LIFO expenses the newest, highest-cost units first (higher COGS) and leaves the oldest, lowest-cost units in ending inventory (lower ending inventory) — the opposite of FIFO in a rising-cost environment.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. Higher COGS and lower ending inventory</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q4",
+  "origin": "official",
+  "type": "concept",
+  "title": "A company using LIFO reports inventory of $5.6 million and a LIFO reserve…",
+  "bodyHtml": "<p class=\"hw-prompt\">A company using LIFO reports inventory of $5.6 million and a LIFO reserve of $1.1 million. What would inventory have been if the company had used FIFO?</p>\n      <select data-correct=\"$6.7 million\"><option value=\"\">-- select --</option><option>$4.5 million</option><option>$5.6 million</option><option>$6.7 million</option><option>$7.8 million</option></select>",
+  "notesHtml": "<ol><li>FIFO inventory = LIFO inventory + LIFO reserve = $5.6M + $1.1M = $6.7M. The LIFO reserve is exactly the gap between the two methods' inventory values.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $6.7 million</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q5",
+  "origin": "official",
+  "type": "concept",
+  "title": "A company's LIFO reserve increased from $520,000 at the beginning of the…",
+  "bodyHtml": "<p class=\"hw-prompt\">A company's LIFO reserve increased from $520,000 at the beginning of the year to $610,000 at the end of the year. Compared with FIFO, the company's LIFO cost of goods sold for the year is:</p>\n      <select data-correct=\"$90,000 higher\"><option value=\"\">-- select --</option><option>$90,000 lower</option><option>$90,000 higher</option><option>$520,000 higher</option><option>$610,000 higher</option></select>",
+  "notesHtml": "<ol><li>The change in the LIFO reserve during the year ($610,000 − $520,000 = $90,000) equals the amount by which LIFO COGS exceeds FIFO COGS for that year.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $90,000 higher</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q6",
+  "origin": "official",
+  "type": "concept",
+  "title": "Why is the LIFO reserve particularly useful to a financial statement analyst?",
+  "bodyHtml": "<p class=\"hw-prompt\">Why is the LIFO reserve particularly useful to a financial statement analyst?</p>\n      <select data-correct=\"It allows the analyst to estimate a LIFO company's inventory and related measures on a FIFO basis.\"><option value=\"\">-- select --</option><option>It allows the analyst to estimate inventory shrinkage.</option><option>It allows the analyst to estimate a LIFO company's inventory and related measures on a FIFO basis.</option><option>It identifies the amount of obsolete inventory held by the company.</option><option>It measures the company's inventory turnover directly.</option></select>",
+  "notesHtml": "<ol><li>The LIFO reserve is the disclosed bridge between a company's reported LIFO figures and what those figures would have been under FIFO, letting analysts compare LIFO and FIFO companies on an apples-to-apples basis.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. It allows the analyst to estimate a LIFO company's inventory and related measures on a FIFO basis.</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q7",
+  "origin": "official",
+  "type": "work",
+  "title": "Company A reports COGS of $8.4 million and average inventory of $1.4…",
+  "bodyHtml": "<p class=\"hw-prompt\">Company A reports COGS of $8.4 million and average inventory of $1.4 million. Company B reports COGS of $11.5 million and average inventory of $2.3 million. Which statement is correct?</p>\n      <select data-correct=\"Company A has an inventory turnover of 6.0 and is more efficient.\"><option value=\"\">-- select --</option><option>Company A has an inventory turnover of 5.0 and is more efficient.</option><option>Company A has an inventory turnover of 6.0 and is more efficient.</option><option>Company B has an inventory turnover of 6.7 and is more efficient.</option><option>Company B has an inventory turnover of 5.0 and is more efficient.</option></select>",
+  "notesHtml": "<ol><li>Company A: turnover = $8.4M/$1.4M = 6.0. Company B: turnover = $11.5M/$2.3M = 5.0. Higher turnover means faster-moving inventory, so Company A (6.0) is more efficient.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Company A has an inventory turnover of 6.0 and is more efficient.</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q8",
+  "origin": "official",
+  "type": "work",
+  "title": "A retailer has average inventory of $2.8 million and annual COGS of $14.0…",
+  "bodyHtml": "<p class=\"hw-prompt\">A retailer has average inventory of $2.8 million and annual COGS of $14.0 million. Approximately how many days inventory outstanding (DIO) does the retailer have?</p>\n      <select data-correct=\"73.0 days\"><option value=\"\">-- select --</option><option>36.5 days</option><option>60.8 days</option><option>73.0 days</option><option>91.3 days</option></select>",
+  "notesHtml": "<ol><li>Inventory turnover = COGS/Average inventory = $14.0M/$2.8M = 5.0. DIO = 365/turnover = 365/5.0 = 73.0 days.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. 73.0 days</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q9",
+  "origin": "official",
+  "type": "concept",
+  "title": "Two retailers have similar product mixes and gross margins. Retailer X has…",
+  "bodyHtml": "<p class=\"hw-prompt\">Two retailers have similar product mixes and gross margins. Retailer X has an inventory turnover of 7.6, while Retailer Y has an inventory turnover of 4.9. All else equal, which conclusion is most reasonable?</p>\n      <select data-correct=\"Retailer X sells its inventory more quickly.\"><option value=\"\">-- select --</option><option>Retailer Y sells its inventory more quickly.</option><option>Retailer X sells its inventory more quickly.</option><option>Retailer Y must have higher sales revenue.</option><option>Retailer X must use FIFO while Retailer Y uses LIFO.</option></select>",
+  "notesHtml": "<ol><li>A higher inventory turnover (7.6 vs. 4.9) means Retailer X cycles through its inventory more times per year — it sells its inventory more quickly.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. Retailer X sells its inventory more quickly.</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q10",
+  "origin": "official",
+  "type": "concept",
+  "title": "Which action would most likely increase a retailer's inventory turnover?",
+  "bodyHtml": "<p class=\"hw-prompt\">Which action would most likely increase a retailer's inventory turnover?</p>\n      <select data-correct=\"Reducing slow-moving product lines while maintaining sales volume\"><option value=\"\">-- select --</option><option>Increasing the amount of slow-moving inventory held</option><option>Purchasing significantly more inventory without increasing sales</option><option>Reducing slow-moving product lines while maintaining sales volume</option><option>Extending the useful lives assigned to inventory</option></select>",
+  "notesHtml": "<ol><li>Turnover = COGS/Average inventory. Cutting slow-moving inventory while keeping sales (and COGS) steady lowers the denominator, raising turnover.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. Reducing slow-moving product lines while maintaining sales volume</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q11",
+  "origin": "official",
+  "type": "work",
+  "title": "A company reports sales of $22 million and COGS of $13.2 million. What is…",
+  "bodyHtml": "<p class=\"hw-prompt\">A company reports sales of $22 million and COGS of $13.2 million. What is its gross profit margin?</p>\n      <select data-correct=\"40%\"><option value=\"\">-- select --</option><option>33%</option><option>40%</option><option>60%</option><option>167%</option></select>",
+  "notesHtml": "<ol><li>Gross profit margin = (Sales − COGS) / Sales = ($22M − $13.2M) / $22M = $8.8M/$22M = 40%.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. 40%</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q12",
+  "origin": "official",
+  "type": "concept",
+  "title": "In an inflationary environment, an analyst converts a company's LIFO…",
+  "bodyHtml": "<p class=\"hw-prompt\">In an inflationary environment, an analyst converts a company's LIFO financial statements to FIFO. Assuming the LIFO reserve is positive, which balance sheet effect would normally result?</p>\n      <select data-correct=\"Inventory and total assets increase.\"><option value=\"\">-- select --</option><option>Inventory and total assets decrease.</option><option>Inventory increases but total assets decrease.</option><option>Inventory and total assets increase.</option><option>Inventory remains unchanged while total assets increase.</option></select>",
+  "notesHtml": "<ol><li>Converting to FIFO adds the LIFO reserve back to inventory, which increases inventory and, correspondingly, total assets by the same amount.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. Inventory and total assets increase.</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q13",
+  "origin": "official",
+  "type": "work",
+  "title": "A company begins the year with 500 units of inventory costing $16 each.…",
+  "bodyHtml": "<p class=\"hw-prompt\">A company begins the year with 500 units of inventory costing $16 each. During the year, it purchases 800 units at $19 each and 600 units at $22 each. If the company sells 1,400 units, what is cost of goods sold using FIFO?</p>\n      <select data-correct=\"$25,400\"><option value=\"\">-- select --</option><option>$23,700</option><option>$25,400</option><option>$26,821</option><option>$28,400</option></select>",
+  "notesHtml": "<ol><li>FIFO expenses the oldest costs first: all 500 units @ $16 ($8,000) + all 800 units @ $19 ($15,200) + 100 of the 600 units @ $22 ($2,200) = 1,400 units sold, COGS = $8,000 + $15,200 + $2,200 = $25,400.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $25,400</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q14",
+  "origin": "official",
+  "type": "work",
+  "title": "Using the information in Question 13, what is ending inventory using FIFO?",
+  "bodyHtml": "<div class=\"callout\" style=\"margin-bottom:1em;\"><b>Referenced scenario (Question 13):</b> A company begins the year with 500 units of inventory costing $16 each. During the year, it purchases 800 units at $19 each and 600 units at $22 each. If the company sells 1,400 units, what is cost of goods sold using FIFO?</div><p class=\"hw-prompt\">Using the information in Question 13, what is ending inventory using FIFO?</p>\n      <select data-correct=\"$11,000\"><option value=\"\">-- select --</option><option>$8,000</option><option>$9,900</option><option>$11,000</option><option>$13,200</option></select>",
+  "notesHtml": "<ol><li>Total cost of all inventory available = 500@$16 + 800@$19 + 600@$22 = $8,000 + $15,200 + $13,200 = $36,400. FIFO ending inventory = $36,400 − $25,400 (FIFO COGS) = $11,000 — matching the 500 remaining units from the $22 batch (600 − 100 = 500 × $22 = $11,000).</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $11,000</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q15",
+  "origin": "official",
+  "type": "work",
+  "title": "Using the information in Question 13, what is cost of goods sold using LIFO?",
+  "bodyHtml": "<div class=\"callout\" style=\"margin-bottom:1em;\"><b>Referenced scenario (Question 13):</b> A company begins the year with 500 units of inventory costing $16 each. During the year, it purchases 800 units at $19 each and 600 units at $22 each. If the company sells 1,400 units, what is cost of goods sold using FIFO?</div><p class=\"hw-prompt\">Using the information in Question 13, what is cost of goods sold using LIFO?</p>\n      <select data-correct=\"$28,400\"><option value=\"\">-- select --</option><option>$25,400</option><option>$26,821</option><option>$28,400</option><option>$30,200</option></select>",
+  "notesHtml": "<ol><li>LIFO expenses the newest costs first: 600 units @ $22 ($13,200) + 800 units @ $19 ($15,200) = 1,400 units sold exactly, COGS = $13,200 + $15,200 = $28,400.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $28,400</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q16",
+  "origin": "official",
+  "type": "work",
+  "title": "Using the information in Question 13, what is ending inventory using LIFO?",
+  "bodyHtml": "<div class=\"callout\" style=\"margin-bottom:1em;\"><b>Referenced scenario (Question 13):</b> A company begins the year with 500 units of inventory costing $16 each. During the year, it purchases 800 units at $19 each and 600 units at $22 each. If the company sells 1,400 units, what is cost of goods sold using FIFO?</div><p class=\"hw-prompt\">Using the information in Question 13, what is ending inventory using LIFO?</p>\n      <select data-correct=\"$8,000\"><option value=\"\">-- select --</option><option>$8,000</option><option>$9,900</option><option>$11,000</option><option>$13,200</option></select>",
+  "notesHtml": "<ol><li>Under LIFO, the 500 oldest units (the beginning inventory @ $16) remain in ending inventory: 500 × $16 = $8,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. $8,000</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q17",
+  "origin": "official",
+  "type": "work",
+  "title": "Using the information in Question 13, what is the weighted-average cost…",
+  "bodyHtml": "<div class=\"callout\" style=\"margin-bottom:1em;\"><b>Referenced scenario (Question 13):</b> A company begins the year with 500 units of inventory costing $16 each. During the year, it purchases 800 units at $19 each and 600 units at $22 each. If the company sells 1,400 units, what is cost of goods sold using FIFO?</div><p class=\"hw-prompt\">Using the information in Question 13, what is the weighted-average cost per unit, rounded to the nearest cent?</p>\n      <select data-correct=\"$19.16\"><option value=\"\">-- select --</option><option>$18.20</option><option>$19.00</option><option>$19.16</option><option>$20.11</option></select>",
+  "notesHtml": "<ol><li>Weighted-average cost per unit = Total cost / Total units = $36,400 / 1,900 units = $19.157… ≈ $19.16.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. $19.16</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q18",
+  "origin": "official",
+  "type": "work",
+  "title": "Using the information in Question 13, approximately what is cost of goods…",
+  "bodyHtml": "<div class=\"callout\" style=\"margin-bottom:1em;\"><b>Referenced scenario (Question 13):</b> A company begins the year with 500 units of inventory costing $16 each. During the year, it purchases 800 units at $19 each and 600 units at $22 each. If the company sells 1,400 units, what is cost of goods sold using FIFO?</div><p class=\"hw-prompt\">Using the information in Question 13, approximately what is cost of goods sold using the weighted-average cost method?</p>\n      <select data-correct=\"$26,821\"><option value=\"\">-- select --</option><option>$25,400</option><option>$26,821</option><option>$28,400</option><option>$29,600</option></select>",
+  "notesHtml": "<ol><li>Weighted-average COGS = 1,400 units × ($36,400/1,900 units) = 1,400 × $19.1579 ≈ $26,821 (computed using the full-precision average, then rounded).</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $26,821</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q19",
+  "origin": "official",
+  "type": "work",
+  "title": "A company purchases equipment for $95,000. The equipment has an estimated…",
+  "bodyHtml": "<p class=\"hw-prompt\">A company purchases equipment for $95,000. The equipment has an estimated salvage value of $5,000 and an estimated useful life of six years. What is annual straight-line depreciation?</p>\n      <select data-correct=\"$15,000\"><option value=\"\">-- select --</option><option>$13,500</option><option>$15,000</option><option>$16,400</option><option>$17,800</option></select>",
+  "notesHtml": "<ol><li>Straight-line depreciation = (Cost − Salvage value) / Useful life = ($95,000 − $5,000) / 6 = $90,000/6 = $15,000 per year.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $15,000</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q20",
+  "origin": "official",
+  "type": "work",
+  "title": "A company purchases equipment for $144,000 on April 1. The equipment has…",
+  "bodyHtml": "<p class=\"hw-prompt\">A company purchases equipment for $144,000 on April 1. The equipment has an estimated salvage value of $12,000 and a five-year useful life. The company records depreciation based on the portion of the year the asset is in service. What is depreciation expense for the first calendar year?</p>\n      <select data-correct=\"$19,800\"><option value=\"\">-- select --</option><option>$13,200</option><option>$19,800</option><option>$24,000</option><option>$26,400</option></select>",
+  "notesHtml": "<ol><li>Annual depreciation = ($144,000 − $12,000)/5 = $26,400. The asset was in service from April 1 to December 31 — 9 of 12 months. First-year depreciation = $26,400 × 9/12 = $19,800.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $19,800</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q21",
+  "origin": "official",
+  "type": "work",
+  "title": "An asset cost $310,000 and has an estimated salvage value of $10,000 and a…",
+  "bodyHtml": "<p class=\"hw-prompt\">An asset cost $310,000 and has an estimated salvage value of $10,000 and a ten-year useful life. After three full years of straight-line depreciation, what is the asset's net book value?</p>\n      <select data-correct=\"$220,000\"><option value=\"\">-- select --</option><option>$210,000</option><option>$220,000</option><option>$230,000</option><option>$240,000</option></select>",
+  "notesHtml": "<ol><li>Annual depreciation = ($310,000 − $10,000)/10 = $30,000. After 3 years, accumulated depreciation = $90,000. Net book value = $310,000 − $90,000 = $220,000.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. $220,000</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q22",
+  "origin": "official",
+  "type": "work",
+  "title": "A machine originally cost $350,000 and has accumulated depreciation of…",
+  "bodyHtml": "<p class=\"hw-prompt\">A machine originally cost $350,000 and has accumulated depreciation of $260,000 when it is sold for $110,000. What gain or loss should the company recognize?</p>\n      <select data-correct=\"$20,000 gain\"><option value=\"\">-- select --</option><option>$20,000 gain</option><option>$20,000 loss</option><option>$90,000 gain</option><option>$110,000 gain</option></select>",
+  "notesHtml": "<ol><li>Net book value = $350,000 − $260,000 = $90,000. Gain/loss = Proceeds − NBV = $110,000 − $90,000 = $20,000 gain.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. $20,000 gain</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q23",
+  "origin": "official",
+  "type": "work",
+  "title": "A piece of equipment originally cost $220,000 and has accumulated…",
+  "bodyHtml": "<p class=\"hw-prompt\">A piece of equipment originally cost $220,000 and has accumulated depreciation of $150,000. If the equipment is sold for $50,000, the company should recognize:</p>\n      <select data-correct=\"A $20,000 loss\"><option value=\"\">-- select --</option><option>A $20,000 gain</option><option>A $20,000 loss</option><option>A $50,000 loss</option><option>A $70,000 loss</option></select>",
+  "notesHtml": "<ol><li>Net book value = $220,000 − $150,000 = $70,000. Gain/loss = Proceeds − NBV = $50,000 − $70,000 = −$20,000, i.e., a $20,000 loss.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>B. A $20,000 loss</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q24",
+  "origin": "official",
+  "type": "concept",
+  "title": "A company sells equipment for an amount exactly equal to its net book…",
+  "bodyHtml": "<p class=\"hw-prompt\">A company sells equipment for an amount exactly equal to its net book value. Which statement is correct?</p>\n      <select data-correct=\"The company recognizes neither a gain nor a loss.\"><option value=\"\">-- select --</option><option>The company recognizes a gain equal to accumulated depreciation.</option><option>The company recognizes a loss equal to accumulated depreciation.</option><option>The company recognizes neither a gain nor a loss.</option><option>The company recognizes revenue equal to the original cost of the equipment.</option></select>",
+  "notesHtml": "<ol><li>Gain/loss = Proceeds − Net book value. When proceeds exactly equal net book value, this difference is zero — no gain or loss is recognized.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>C. The company recognizes neither a gain nor a loss.</li></ol></div>"
+},
+  {
+  "set": "Exam Prep Practice — Module 6",
+  "id": "M6-Q25",
+  "origin": "official",
+  "type": "concept",
+  "title": "Two manufacturing companies have similar operations. Company A has a PP&E…",
+  "bodyHtml": "<p class=\"hw-prompt\">Two manufacturing companies have similar operations. Company A has a PP&E turnover ratio of 4.6 while Company B has a PP&E turnover ratio of 2.3. Which statement best describes the difference?</p>\n      <select data-correct=\"Company A generates more sales per dollar invested in PP&E.\"><option value=\"\">-- select --</option><option>Company A generates more sales per dollar invested in PP&E.</option><option>Company B generates more sales per dollar invested in PP&E.</option><option>Company A necessarily owns newer equipment.</option><option>Company B necessarily reports higher net income.</option></select>",
+  "notesHtml": "<ol><li>PP&E turnover = Sales / PP&E. A higher ratio (4.6 vs. 2.3) means Company A generates more sales for every dollar invested in property, plant, and equipment.</li></ol><button class=\"answer-toggle\" aria-expanded=\"false\">Answer <span class=\"chev\">&#x2304;</span></button><div class=\"answer-reveal\"><ol><li>A. Company A generates more sales per dollar invested in PP&E.</li></ol></div>"
 }
 ];

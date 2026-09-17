@@ -1,0 +1,37 @@
+const FLASHCARDS = [
+  // ---- Schwarz — Team Creativity Research ----
+  { source: "research", front: "What's the distinction between creativity and innovation, per Schwarz?", back: "Innovation involves two stages — generating new ideas (creativity, the first stage) and implementing them (the second stage) — and each requires different skills." },
+  { source: "research", front: "What is 'goal interdependence,' and how does it differ between an Olympic hockey team and a gymnastics team?", back: "The extent to which members can only meet their own goals by helping others achieve theirs. Hockey has high interdependence (team wins or loses together); gymnastics has low interdependence (individual medals possible regardless of team outcome)." },
+  { source: "research", front: "Name the six research-backed factors that support team innovation.", back: "A compelling vision, goal interdependence, support for innovation, a task orientation, a cohesive team, and strong internal/external communication." },
+  { source: "research", front: "What does 'support for innovation' actually require from managers?", back: "Expecting and approving of innovation, supporting members through failed attempts, and recognizing new ideas and their implementation — genuinely encouraging risk and expecting some failures." },
+  { source: "research", front: "What did the meta-analysis find about diversity's effect on creativity — and what came with it?", back: "Cultural diversity increased creativity, but also increased task conflict and reduced group cohesion, with no net effect on team performance." },
+  { source: "research", front: "What condition seems necessary to capture diversity's creative benefit without its costs?", back: "Team members need to actively take the perspective of those who differ from them — the benefit isn't automatic." },
+  { source: "research", front: "What did research find about the relationship between task conflict and creativity over a team's life cycle?", back: "A curvilinear relationship: creativity was highest at moderate levels of task conflict, but only early in the team's life — later on, task conflict showed no relationship to creativity at all." },
+  { source: "research", front: "Why can 'what facilitates creativity hinder innovation, and vice versa'?", back: "Idea generation (divergent thinking) and implementation (convergent thinking) require different skills and team structures — a team has to switch modes rather than optimize for only one." },
+
+  // ---- Stasik/Gohar — Gen AI & Creativity ----
+  { source: "genai", front: "What was the basic design of the Gohar/Utley gen AI experiment?", back: "Small teams at four companies worked 90 minutes on a real business problem. Control teams got no AI help; experimental teams got ChatGPT. An implementer graded each team's ideas A–D without knowing which used AI." },
+  { source: "genai", front: "What were the actual results of AI-assisted teams compared to the control group?", back: "8% more ideas on average, 7% fewer D's, but also 8% more B's and 2% fewer A's — plus 21% more self-reported confidence, which the actual grades didn't support." },
+  { source: "genai", front: "Why do large language models tend to produce 'average' answers?", back: "They're built to predict the statistically most probable response — a vague, broad problem statement produces a generic, safe answer rather than a genuinely creative one." },
+  { source: "genai", front: "What is the Einstellung effect, and how did it show up in this experiment?", back: "A cognitive bias toward accepting the first familiar-seeming solution rather than exploring further — identified as a key reason AI-assisted teams settled for more 'B-grade' ideas." },
+  { source: "genai", front: "What distinguished the teams that got A-grade ideas from AI assistance?", back: "They had interactive, iterative conversations with the tool — pushing back and asking for more — rather than accepting its first response." },
+  { source: "genai", front: "Name the five practices for using generative AI effectively in team ideation.", back: "Be precise about the problem; brainstorm individually before using the tool; rigorously train the AI on your context; treat it as an ongoing conversation, not an oracle; and have an outside facilitator guide the final decision." },
+  { source: "genai", front: "What lesson did EMC Insurance's CIO Joe Riesberg take away from participating in the study?", back: "'The more you question generative AI, the better its answers will be' — his team had initially accepted ChatGPT's first, generic answers without pushing further." },
+
+  // ---- Catmull — Pixar ----
+  { source: "pixar", front: "What is Catmull's central belief about good ideas versus good people?", back: "'If you give a good idea to a mediocre team, they'll screw it up. But if you give a mediocre idea to a great team, they'll fix it or throw it away and come up with something that works.'" },
+  { source: "pixar", front: "What happened during the Toy Story 2 crisis, and what did Pixar learn from it?", back: "Proven creative leaders took over the film with only 8 months left and saved it by adding an emotional throughline (the 'Jessie's Story' sequence). It taught Pixar the primacy of great teams over good ideas, and hardened an internal standard that everything the studio touches must be excellent." },
+  { source: "pixar", front: "What is Pixar's 'Brain Trust'?", back: "A peer group of Pixar directors who review a film in progress and give candid feedback — with no authority to mandate any changes. The director alone decides what to use." },
+  { source: "pixar", front: "Why is the Brain Trust's lack of authority the crucial design choice?", back: "It's what makes candid feedback possible at all — members can give honest opinions without a power struggle, and the director can seek help without fear of losing creative control. Pixar found this broke down when it exported the model with some authority attached." },
+  { source: "pixar", front: "What are 'the dailies' at Pixar?", back: "A daily practice of showing unfinished work to the whole crew for constant feedback — normalizing imperfection and ensuring no surprises when a scene is finally done." },
+  { source: "pixar", front: "What are Pixar's three operating principles?", back: "(1) Everyone must have the freedom to communicate with anyone, (2) it must be safe for everyone to offer ideas, (3) stay close to innovations happening in the academic community." },
+  { source: "pixar", front: "What two risks does Catmull identify when bringing in 'fresh blood' (new hires)?", back: "Not-invented-here syndrome (rejecting outside ideas) and awe-of-the-institution syndrome (new hires too intimidated by the institution's reputation to speak up)." },
+  { source: "pixar", front: "How does Catmull try to address awe-of-the-institution syndrome directly?", back: "He speaks candidly about Pixar's own mistakes at new-hire orientation, to signal that questioning the status quo is expected and welcome." },
+  { source: "pixar", front: "What techniques does Catmull recommend to keep postmortems honest rather than sanitized?", back: "Vary the format each time, ask each group for their top five 'would do again' and top five 'wouldn't do again' items, and ground the discussion in data rather than only personal impressions." },
+];
+
+const SOURCE_LABELS = {
+  research: "Team Creativity Research",
+  genai: "Gen AI & Creativity",
+  pixar: "Pixar",
+};
