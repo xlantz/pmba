@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ACCTG 6000, Unit 6: Inventory Costing &amp; Long-Lived Assets — PMBA Field Guide</title>
-<meta name="description" content="ACCTG 6000 Unit 6: FIFO, LIFO, and weighted-average inventory costing, the LIFO reserve, inventory turnover and DIO, and PP&E depreciation and disposal.">
+<meta name="description" content="ACCTG 6000 Unit 6: FIFO, LIFO, and weighted-average inventory costing, the LIFO reserve, turnover/DSO/DPO and the cash conversion cycle, PP&E capitalization and depreciation methods, disposal, and intangible assets.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body class="theme-acctg">
@@ -66,10 +66,10 @@
     <div>
       <span class="eyebrow">ACCTG 6000 &#x00b7; Unit 6</span>
       <h1>Inventory costing &amp; long-lived assets</h1>
-      <p class="lede" style="max-width:70ch;">Two asset categories that behave very differently once you dig in. Inventory costing methods (FIFO, LIFO, weighted average) can make otherwise-identical companies report wildly different numbers &mdash; and the direction of that difference flips depending on whether costs are rising or falling. Then property, plant &amp; equipment: how depreciation spreads a cost over time, and what happens on the day an asset is finally sold.</p>
+      <p class="lede" style="max-width:70ch;">Two asset categories that behave very differently once you dig in. Inventory costing methods (FIFO, LIFO, weighted average) can make otherwise-identical companies report wildly different numbers &mdash; and the direction of that difference flips depending on whether costs are rising or falling. Then property, plant &amp; equipment: what actually gets capitalized into an asset's cost, three ways to spread that cost over time (straight-line, double-declining balance, units of production), and what happens on the day an asset is finally sold. Plus the cash conversion cycle and intangible assets &mdash; copyrights, trademarks, patents, and goodwill.</p>
       <div class="hero-stats">
-        <div class="hero-stat"><b>27</b><span>Flashcards</span></div>
-        <div class="hero-stat"><b>16</b><span>Quiz questions</span></div>
+        <div class="hero-stat"><b>46</b><span>Flashcards</span></div>
+        <div class="hero-stat"><b>28</b><span>Quiz questions</span></div>
         <div class="hero-stat"><b>&#x2713;</b><span>Method effects drill</span></div>
       </div>
     </div>
@@ -151,7 +151,7 @@
 
     <div class="source-block" id="src-turnover">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">03</span><h3>Analyzing Inventory: Turnover &amp; Days Inventory Outstanding</h3></span>
+        <span class="stitle"><span class="num">03</span><h3>Analyzing Assets: Inventory Turnover, DSO, DPO &amp; the Cash Conversion Cycle</h3></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -168,7 +168,26 @@
         <h4>Turnover, DIO, and costing method interact</h4>
         <p>Because LIFO and FIFO report different COGS and different average inventory in a rising-cost environment, a LIFO company's turnover ratio isn't directly comparable to a FIFO competitor's without adjusting for the LIFO reserve first &mdash; another reason the reserve matters for analysis, not just disclosure compliance.</p>
 
-        <div class="exam-angle"><b>Exam angle</b>A rising turnover ratio (or falling DIO) isn't automatically good news &mdash; check whether it's driven by genuinely faster sales, or by a company running unusually lean (understocked) in a way that risks stockouts.</div>
+        <h4>The other two legs: DSO and DPO</h4>
+        <p>DIO measures how fast inventory sells. Two related ratios measure the rest of the operating cycle &mdash; how fast the company collects cash from customers, and how slowly it pays its own suppliers:</p>
+        <div class="quote-block">DSO (Days Sales Outstanding) = (Average Accounts Receivable &#x00f7; Sales Revenue) &times; 365</div>
+        <div class="quote-block">DPO (Days Payable Outstanding) = (Average Accounts Payable &#x00f7; COGS) &times; 365</div>
+        <p>DSO measures the average number of days it takes to collect cash after a credit sale. DPO measures the average number of days the company takes to pay its own suppliers &mdash; note it uses COGS (what suppliers are being paid for), not sales.</p>
+
+        <h4>Putting the three together: the cash conversion cycle</h4>
+        <p>The <strong>cash conversion cycle (CCC)</strong> combines all three into a single measure of how many days of cash are tied up in day-to-day operations:</p>
+        <div class="quote-block">CCC = DSO + DIO &minus; DPO</div>
+        <p>Worked example: a company reports average accounts receivable of $500,000 on sales of $6,000,000; average inventory of $700,000 on COGS of $4,200,000; and average accounts payable of $350,000.</p>
+        <table class="hw-table">
+          <tr><th>Metric</th><th>Calculation</th><th>Result</th></tr>
+          <tr><td class="hw-label">DSO</td><td>($500,000 / $6,000,000) &times; 365</td><td>30.4 days</td></tr>
+          <tr><td class="hw-label">DIO</td><td>($700,000 / $4,200,000) &times; 365</td><td>60.8 days</td></tr>
+          <tr><td class="hw-label">DPO</td><td>($350,000 / $4,200,000) &times; 365</td><td>30.4 days</td></tr>
+          <tr><td class="hw-label">CCC</td><td>30.4 + 60.8 &minus; 30.4</td><td><strong>60.8 days</strong></td></tr>
+        </table>
+        <p>The lower the CCC, the better &mdash; less cash is tied up between paying for inventory and collecting from customers. A company can even run a <strong>negative</strong> CCC (common in some retail and subscription models), meaning it collects cash from customers before it even has to pay its own suppliers for that same inventory.</p>
+
+        <div class="exam-angle"><b>Exam angle</b>A rising turnover ratio (or falling DIO) isn't automatically good news &mdash; check whether it's driven by genuinely faster sales, or by a company running unusually lean (understocked) in a way that risks stockouts. For CCC questions specifically, watch the denominators: DSO and DPO both use 365-day annualization, but DSO divides by <em>sales</em> while DIO and DPO both divide by <em>COGS</em> &mdash; a common trap is dividing all three by the same figure.</div>
       </div>
     </div>
 
@@ -178,10 +197,43 @@
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
+        <h4>What goes into the PP&amp;E cost basis &mdash; and what doesn't</h4>
+        <p>Not every dollar spent around the purchase of a long-lived asset gets capitalized (added to the asset's cost). The test is whether the cost is necessary to get the asset ready for its intended use, or whether it's an ongoing cost of operating the business.</p>
+        <table class="hw-table">
+          <tr><th>Included in PP&amp;E cost</th><th>Excluded (expensed when incurred)</th></tr>
+          <tr><td>Delivery and set-up costs</td><td>Minor/regular repairs and maintenance</td></tr>
+          <tr><td>Taxes on the purchase</td><td>Insurance on the asset</td></tr>
+          <tr><td>Direct costs to build (materials, labor)</td><td>Wages of employees who operate/use the asset</td></tr>
+          <tr><td>Overhauls that extend useful life or add substantial structural improvements</td><td>Routine servicing that just keeps the asset running as originally intended</td></tr>
+        </table>
+        <p>The recurring theme: costs that get the asset in place and ready to use, or that genuinely extend its life or capability, are capitalized. Costs that are part of the ordinary, repeated cost of owning and running the asset are expensed as incurred, even though the asset couldn't function without them (insurance, routine maintenance, operator wages).</p>
+
+        <h4>Depreciation methods: three ways to spread the cost</h4>
+        <p>Once a cost basis is set, it's depreciated over the asset's useful life using one of three methods. All three depreciate the same total amount (Cost &minus; Salvage Value) over the asset's life &mdash; they differ only in <em>when</em> that total gets expensed.</p>
+
         <h4>Straight-line depreciation</h4>
-        <p>Spreads an asset's depreciable cost evenly over its useful life:</p>
+        <p>The most common method. Spreads an asset's depreciable cost evenly over its useful life:</p>
         <div class="quote-block">Annual Depreciation = (Cost &minus; Salvage Value) &#x00f7; Useful Life</div>
-        <p>Worked example: equipment costs $60,000, has a $5,000 salvage value, and a five-year useful life. Annual depreciation = ($60,000 &minus; $5,000)/5 = $11,000 per year.</p>
+        <p>Worked example: equipment costs $60,000, has a $5,000 salvage value, and a five-year useful life. Annual depreciation = ($60,000 &minus; $5,000)/5 = $11,000 per year, every year, for five years.</p>
+
+        <h4>Double-declining balance (DDB)</h4>
+        <p>An <strong>accelerated</strong> method: depreciates more in the early years of an asset's life and less in later years. It applies a constant rate &mdash; double the straight-line rate &mdash; to the asset's <em>declining net book value</em> each year (not its original cost, and salvage value is ignored in the annual calculation, except as a floor):</p>
+        <div class="quote-block">DDB Rate = 2 &times; (1 &#x00f7; Useful Life) &nbsp;&nbsp;&nbsp; Annual Depreciation = DDB Rate &times; Beginning-of-Year Net Book Value</div>
+        <p>Worked example: the same $60,000 asset, $5,000 salvage value, five-year life. Straight-line rate = 1/5 = 20%, so the DDB rate = 40%.</p>
+        <table class="hw-table">
+          <tr><th>Year</th><th>Beginning NBV</th><th>Depreciation (40%)</th><th>Ending NBV</th></tr>
+          <tr><td class="hw-label">1</td><td>$60,000</td><td>$24,000</td><td>$36,000</td></tr>
+          <tr><td class="hw-label">2</td><td>$36,000</td><td>$14,400</td><td>$21,600</td></tr>
+          <tr><td class="hw-label">3</td><td>$21,600</td><td>$8,640</td><td>$12,960</td></tr>
+          <tr><td class="hw-label">4</td><td>$12,960</td><td>$5,184</td><td>$7,776</td></tr>
+          <tr><td class="hw-label">5</td><td>$7,776</td><td>$2,776*</td><td>$5,000</td></tr>
+        </table>
+        <p>*Year 5 is capped: the formula would call for $7,776 &times; 40% = $3,110, but that would push NBV below the $5,000 salvage value, which isn't allowed &mdash; an asset is never depreciated below salvage. So year 5's depreciation is plugged at whatever amount brings NBV down to exactly $5,000 ($7,776 &minus; $5,000 = $2,776).</p>
+
+        <h4>Units of production</h4>
+        <p>Ties depreciation to actual <strong>usage</strong> (units made, hours run, miles driven) instead of time. Useful when an asset's wear and tear tracks output rather than the calendar:</p>
+        <div class="quote-block">Rate per Unit = (Cost &minus; Salvage Value) &#x00f7; Total Estimated Units of Output</div>
+        <p>Worked example: a machine costs $100,000, has a $10,000 salvage value, and is expected to produce 90,000 units over its life. Rate per unit = ($100,000 &minus; $10,000)/90,000 = $1.00 per unit. If the machine produces 12,000 units in its first year, that year's depreciation = 12,000 &times; $1.00 = $12,000. A slower year with only 6,000 units produced would recognize just $6,000 of depreciation &mdash; the expense moves with output, not with the passage of time.</p>
 
         <h4>Partial-year depreciation</h4>
         <p>When an asset is placed in service partway through the year, depreciation for that first (and often last) year is prorated for the fraction of the year the asset was actually in service.</p>
@@ -199,7 +251,39 @@
         <div class="quote-block">PP&amp;E Turnover = Sales &#x00f7; PP&amp;E</div>
         <p>A higher ratio means the company generates more sales per dollar tied up in property, plant, and equipment &mdash; though capital-intensive industries (manufacturing, utilities) naturally run lower PP&amp;E turnover than asset-light industries (services, software), so this ratio is most meaningful compared within an industry, not across very different ones.</p>
 
-        <div class="exam-angle"><b>Exam angle</b>A sale at exactly NBV produces neither a gain nor a loss &mdash; a common wrong answer is assuming a sale always produces one or the other. Also double check whether a question is asking for depreciation for a <em>full</em> year or a <em>partial</em> year based on the purchase date given.</div>
+        <div class="exam-angle"><b>Exam angle</b>A sale at exactly NBV produces neither a gain nor a loss &mdash; a common wrong answer is assuming a sale always produces one or the other. Also double check whether a question is asking for depreciation for a <em>full</em> year or a <em>partial</em> year based on the purchase date given, and whether it names straight-line, DDB, or units of production &mdash; each produces a different annual number from the same cost and salvage value. For DDB specifically, remember the rate applies to <em>declining NBV</em>, not original cost, and that depreciation stops once NBV reaches salvage value.</div>
+      </div>
+    </div>
+
+    <div class="source-block" id="src-intangibles">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">05</span><h3>Intangible Assets: Types, Capitalization &amp; Amortization</h3></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>What counts as an intangible asset</h4>
+        <p>Intangible assets are long-lived assets with no physical substance, but that still provide the company a future economic benefit. Common types:</p>
+        <ul>
+          <li><strong>Copyright</strong> &mdash; legal protection for creative works (songs, films, written works, art).</li>
+          <li><strong>Trademark</strong> &mdash; a symbol, logo, or phrase that legally identifies a company or its products.</li>
+          <li><strong>Franchise/license</strong> &mdash; permission to operate under another company's brand, products, or processes.</li>
+          <li><strong>Patent</strong> &mdash; the legal right to exclusively use an invention for a set period.</li>
+          <li><strong>Goodwill</strong> &mdash; the portion of a company's value (typically arising in an acquisition) that isn't attributable to any of its individually identifiable assets.</li>
+        </ul>
+
+        <h4>What gets capitalized when a company creates its own intangible</h4>
+        <p>This is the part that trips people up: for an intangible a company develops <em>internally</em> (rather than purchasing from someone else), very little of the cost actually gets capitalized onto the balance sheet as the intangible asset's cost.</p>
+        <ul>
+          <li><strong>Capitalized:</strong> direct costs to obtain legal/government approval &mdash; legal fees, filing fees for a patent or trademark application.</li>
+          <li><strong>Expensed as incurred:</strong> essentially everything else that gives the intangible its value &mdash; R&amp;D employee salaries, equipment, and office space used to develop the underlying invention, work, or brand.</li>
+        </ul>
+        <p>In other words, a company can spend millions of dollars in R&amp;D developing a breakthrough invention, all expensed as incurred, and then capitalize only a comparatively small legal/filing fee once it patents the result. This is a deliberate accounting choice reflecting how uncertain the payoff from R&amp;D is until it actually succeeds &mdash; it's also why an internally-developed brand or invention is usually carried on the balance sheet at far less than what an outside buyer would actually pay for it (a company that instead <em>purchases</em> a patent, trademark, or other intangible from someone else capitalizes the full purchase price, since that cost is no longer uncertain).</p>
+
+        <h4>Amortization: the intangible-asset version of depreciation</h4>
+        <p>Intangible assets with a determinable, finite useful life are <strong>amortized</strong> &mdash; typically using the straight-line method &mdash; over that useful life, the same basic mechanic as straight-line depreciation for PP&amp;E (Cost &#x00f7; Useful Life, since intangibles are usually amortized to zero rather than to a salvage value).</p>
+        <p>Some intangibles have <strong>no</strong> determinable useful life because they're expected to provide a benefit indefinitely. These are <em>not</em> amortized at all &mdash; instead they're tested periodically for impairment. Common examples: goodwill, and trademarks/copyrights a company intends to renew and use indefinitely.</p>
+
+        <div class="exam-angle"><b>Exam angle</b>Two traps: (1) don't assume all the R&amp;D-type spending behind a self-created intangible gets capitalized &mdash; only the direct legal/filing costs do; and (2) don't automatically amortize every intangible &mdash; check whether it has a finite useful life (amortize, usually straight-line) or an indefinite one like goodwill (don't amortize; test for impairment instead).</div>
       </div>
     </div>
   </div>
@@ -234,8 +318,9 @@
         <button class="chip active" data-source="all">All</button>
         <button class="chip" data-source="costing">Costing Methods</button>
         <button class="chip" data-source="reserve">LIFO Reserve</button>
-        <button class="chip" data-source="turnover">Inventory Analysis</button>
+        <button class="chip" data-source="turnover">Turnover &amp; Cash Cycle</button>
         <button class="chip" data-source="ppe">PP&amp;E</button>
+        <button class="chip" data-source="intangibles">Intangibles</button>
       </div>
     </div>
     <div class="glossary-count" id="glossary-count"></div>
@@ -263,10 +348,22 @@
         <dt>Converting COGS to a FIFO basis</dt><dd>FIFO COGS = LIFO COGS − the increase in the LIFO reserve during the year — the change in the reserve, not its ending balance, converts an income-statement figure.</dd><span class="tag">LIFO Reserve</span>
       </div>
       <div class="term-card" data-source="turnover" data-search="inventory turnover cogs divided by average inventory times per year sold through">
-        <dt>Inventory turnover</dt><dd>COGS ÷ Average inventory — how many times per year, on average, a company sells through its entire inventory balance.</dd><span class="tag">Inventory Analysis</span>
+        <dt>Inventory turnover</dt><dd>COGS ÷ Average inventory — how many times per year, on average, a company sells through its entire inventory balance.</dd><span class="tag">Turnover &amp; Cash Cycle</span>
       </div>
       <div class="term-card" data-source="turnover" data-search="days inventory outstanding dio 365 divided by inventory turnover average days held before sale">
-        <dt>Days inventory outstanding (DIO)</dt><dd>365 ÷ Inventory turnover — the average number of days inventory sits before it's sold.</dd><span class="tag">Inventory Analysis</span>
+        <dt>Days inventory outstanding (DIO)</dt><dd>365 ÷ Inventory turnover — the average number of days inventory sits before it's sold.</dd><span class="tag">Turnover &amp; Cash Cycle</span>
+      </div>
+      <div class="term-card" data-source="turnover" data-search="days sales outstanding dso average accounts receivable divided by sales times 365 collect from customers">
+        <dt>Days sales outstanding (DSO)</dt><dd>(Average Accounts Receivable ÷ Sales Revenue) × 365 — the average number of days it takes to collect cash from customers after a credit sale.</dd><span class="tag">Turnover &amp; Cash Cycle</span>
+      </div>
+      <div class="term-card" data-source="turnover" data-search="days payable outstanding dpo average accounts payable divided by cogs times 365 pay suppliers">
+        <dt>Days payable outstanding (DPO)</dt><dd>(Average Accounts Payable ÷ COGS) × 365 — the average number of days the company takes to pay its own suppliers.</dd><span class="tag">Turnover &amp; Cash Cycle</span>
+      </div>
+      <div class="term-card" data-source="turnover" data-search="cash conversion cycle ccc dso plus dio minus dpo days cash tied up operations">
+        <dt>Cash conversion cycle (CCC)</dt><dd>DSO + DIO − DPO — the number of days of cash tied up between paying for inventory and collecting from customers. Lower (even negative) is better.</dd><span class="tag">Turnover &amp; Cash Cycle</span>
+      </div>
+      <div class="term-card" data-source="ppe" data-search="ppe cost capitalization included excluded delivery setup taxes direct costs overhaul repairs insurance wages">
+        <dt>PP&amp;E cost capitalization</dt><dd>Delivery/setup costs, purchase taxes, direct build costs, and life-extending overhauls are capitalized into an asset's cost; routine repairs, insurance, and operator wages are expensed as incurred.</dd><span class="tag">PP&amp;E</span>
       </div>
       <div class="term-card" data-source="ppe" data-search="straight line depreciation cost minus salvage value divided by useful life annual expense">
         <dt>Straight-line depreciation</dt><dd>(Cost − Salvage value) ÷ Useful life — spreads an asset's depreciable cost evenly across each year of its useful life.</dd><span class="tag">PP&amp;E</span>
@@ -282,6 +379,24 @@
       </div>
       <div class="term-card" data-source="ppe" data-search="ppe turnover sales divided by property plant equipment efficiency generating revenue from assets">
         <dt>PP&amp;E turnover</dt><dd>Sales ÷ PP&E — how efficiently a company generates sales from its investment in property, plant, and equipment. Most meaningful compared within an industry.</dd><span class="tag">PP&amp;E</span>
+      </div>
+      <div class="term-card" data-source="ppe" data-search="double declining balance ddb accelerated depreciation twice straight line rate declining net book value">
+        <dt>Double-declining balance (DDB)</dt><dd>An accelerated depreciation method: 2 × (1 ÷ Useful Life) applied to the asset's declining net book value each year, front-loading more expense into early years. Never depreciates below salvage value.</dd><span class="tag">PP&amp;E</span>
+      </div>
+      <div class="term-card" data-source="ppe" data-search="units of production depreciation rate per unit cost minus salvage divided by total estimated output usage based">
+        <dt>Units-of-production depreciation</dt><dd>(Cost − Salvage Value) ÷ Total estimated units of output, applied to actual units produced each period — ties depreciation to usage rather than the passage of time.</dd><span class="tag">PP&amp;E</span>
+      </div>
+      <div class="term-card" data-source="intangibles" data-search="intangible asset no physical substance future economic benefit copyright trademark patent goodwill franchise license">
+        <dt>Intangible asset</dt><dd>A long-lived asset with no physical substance that still provides future economic benefit — copyrights, trademarks, franchises/licenses, patents, and goodwill are common examples.</dd><span class="tag">Intangibles</span>
+      </div>
+      <div class="term-card" data-source="intangibles" data-search="goodwill value of company not attributed to identifiable assets acquisition">
+        <dt>Goodwill</dt><dd>The portion of a company's value (typically arising in an acquisition) not attributable to any of its individually identifiable assets. Not amortized; tested for impairment instead.</dd><span class="tag">Intangibles</span>
+      </div>
+      <div class="term-card" data-source="intangibles" data-search="self created intangible capitalized legal filing fees only rest expensed r&d salaries equipment">
+        <dt>Self-created intangible: what's capitalized</dt><dd>Only direct costs of obtaining legal/government approval (legal and filing fees) are capitalized. Nearly everything else that creates the intangible's value — R&D salaries, equipment, office space — is expensed as incurred.</dd><span class="tag">Intangibles</span>
+      </div>
+      <div class="term-card" data-source="intangibles" data-search="amortization intangible asset straight line finite useful life indefinite not amortized goodwill trademark">
+        <dt>Amortization</dt><dd>The systematic expensing of an intangible asset's cost over its useful life, usually straight-line. Intangibles with an indefinite useful life (like goodwill) are not amortized at all.</dd><span class="tag">Intangibles</span>
       </div>
     </dl>
   </div>
@@ -300,8 +415,9 @@
         <option value="all">All categories</option>
         <option value="costing">Costing Methods</option>
         <option value="reserve">LIFO Reserve</option>
-        <option value="turnover">Inventory Analysis</option>
+        <option value="turnover">Turnover &amp; Cash Cycle</option>
         <option value="ppe">PP&amp;E</option>
+        <option value="intangibles">Intangibles</option>
       </select>
       <button class="btn ghost" id="flash-shuffle">Shuffle</button>
     </div>
@@ -339,7 +455,7 @@
       <div class="quiz-progress"><div class="quiz-progress-bar" id="quiz-progress-bar"></div></div>
       <div class="quiz-meta" id="quiz-meta">Ready when you are</div>
       <div id="quiz-start-screen" style="text-align:center; padding: 30px 10px;">
-        <p class="text-soft">Covers inventory costing methods, the LIFO reserve, inventory turnover/DIO, and PP&amp;E depreciation/disposal.</p>
+        <p class="text-soft">Covers inventory costing methods, the LIFO reserve, turnover/DSO/DPO and the cash conversion cycle, PP&amp;E cost capitalization, depreciation methods, disposal, and intangible assets.</p>
         <button class="btn blue" id="quiz-start">Start quiz</button>
       </div>
       <div id="quiz-body" style="display:none;"></div>
@@ -358,9 +474,12 @@
         <li>Explain why the standard "FIFO = low COGS" rule flips in a falling-cost environment.</li>
         <li>Convert a LIFO company's inventory and COGS to a FIFO basis using the LIFO reserve and its year-over-year change.</li>
         <li>Compute inventory turnover and DIO, and explain what a rising or falling value of each actually indicates.</li>
-        <li>Compute straight-line depreciation for a full year and for a partial year based on an asset's in-service date.</li>
+        <li>Compute DSO, DPO, and the cash conversion cycle from average receivables, inventory, payables, sales, and COGS.</li>
+        <li>Given a list of costs around a PP&amp;E purchase, sort which ones are capitalized into the asset's cost and which are expensed immediately.</li>
+        <li>Compute straight-line, double-declining-balance, and units-of-production depreciation for the same asset, and explain why they produce different annual numbers from the same cost and salvage value.</li>
         <li>Given an asset's cost, accumulated depreciation, and sale price, determine whether the disposal produces a gain, a loss, or neither.</li>
         <li>Compute PP&amp;E turnover and explain why it's most meaningful compared within a single industry.</li>
+        <li>Explain what gets capitalized versus expensed for a self-created intangible asset, and identify which intangibles are amortized versus tested for impairment.</li>
       </ul>
     </div>
   </div>
@@ -369,7 +488,7 @@
 
 <footer class="footer">
   <div class="wrap">
-    <p>ACCTG 6000 &mdash; Financial Accounting, University of Utah PMBA. Synthesized from Unit 6 class notes (Inventory Costing: FIFO/LIFO/Weighted Average, the LIFO Reserve, Inventory Turnover &amp; DIO, PP&amp;E Depreciation &amp; Disposal).</p>
+    <p>ACCTG 6000 &mdash; Financial Accounting, University of Utah PMBA. Synthesized from Unit 6 class notes (Inventory Costing: FIFO/LIFO/Weighted Average, the LIFO Reserve, Turnover/DSO/DPO &amp; the Cash Conversion Cycle, PP&amp;E Capitalization &amp; Depreciation Methods, Disposal, and Intangible Assets).</p>
   </div>
 </footer>
 

@@ -169,6 +169,34 @@ const QUIZ_QUESTIONS = [
     explanation: "Revenue should be recognized net of estimated returns immediately: $2,400 × 15% = $360 reduction, leaving $2,040 of net revenue.",
   },
   {
+    source: "retail",
+    prompt: "A company makes an $18,000 credit sale and estimates that 3% of the related receivables will be paid early enough to earn a cash discount. What entry records this estimate at the time of sale?",
+    options: [
+      "Debit Cash $540, credit Sales Revenue $540",
+      "Debit Sales Discounts $540, credit Allowance for Sales Discounts $540",
+      "Debit Accounts Receivable $540, credit Sales Discounts $540",
+      "No entry is made until a customer actually pays early",
+    ],
+    correctIndex: 1,
+    correctFeedback: "Correct.",
+    incorrectFeedback: "Not quite.",
+    explanation: "$18,000 × 3% = $540. Like estimated returns, the expected discount is recognized immediately as a contra-revenue estimate: debit Sales Discounts, credit Allowance for Sales Discounts.",
+  },
+  {
+    source: "retail",
+    prompt: "How are sales discounts (early-payment discounts) similar to estimated sales returns?",
+    options: [
+      "Both are only recorded when the customer's action (the return or the early payment) actually happens",
+      "Both are contra-revenue amounts estimated and recognized at the time of the original sale",
+      "Both increase reported revenue in the period of the sale",
+      "Both are recorded as liabilities rather than contra-revenue accounts",
+    ],
+    correctIndex: 1,
+    correctFeedback: "Correct.",
+    incorrectFeedback: "Not quite.",
+    explanation: "Both sales discounts and sales returns are contra-revenue estimates made at the time of sale, reducing net revenue immediately rather than waiting for the actual event to occur — though they're tracked in separate accounts since they represent different customer behaviors.",
+  },
+  {
     source: "giftcards",
     prompt: "When a retailer sells a gift card for cash, the amount received is initially recorded as:",
     options: [

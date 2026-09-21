@@ -68,8 +68,8 @@
       <h1>Revenue Recognition &amp; Receivables</h1>
       <p class="lede" style="max-width:70ch;">When exactly does a company get to call money "revenue"? This unit builds the formal 5-step recognition model, then applies it across a dozen real situations &mdash; long-term contracts, retail and digital sales, sales tax and returns, gift cards, licenses, franchises, and foreign currency effects &mdash; using real companies (Costco, Target, Adobe) as running examples. It then covers the other side of the coin: what happens when a customer who already generated revenue never actually pays, how to write off a bad debt, and how to read a company's operating expenses and non-GAAP disclosures.</p>
       <div class="hero-stats">
-        <div class="hero-stat"><b>52</b><span>Flashcards</span></div>
-        <div class="hero-stat"><b>33</b><span>Quiz questions</span></div>
+        <div class="hero-stat"><b>54</b><span>Flashcards</span></div>
+        <div class="hero-stat"><b>35</b><span>Quiz questions</span></div>
         <div class="hero-stat"><b>30</b><span>Official review questions</span></div>
       </div>
     </div>
@@ -200,7 +200,24 @@
         <p>When a retailer collects sales tax from a customer, that tax was never the retailer's money to begin with &mdash; the retailer is just a pass-through conduit collecting it on behalf of the taxing authority. It's recorded as a liability (sales tax payable), not as revenue, regardless of when it's remitted to the government.</p>
         <h4>Sales returns: recognize net, not gross</h4>
         <p>When a retailer expects some portion of current-period sales to be returned, revenue should be recognized <strong>net of estimated returns</strong> right away &mdash; not at the full gross amount with returns handled later as they occur. If $1,800 of sales are expected to see a 10% return rate, revenue should be reduced by $180 immediately, based on the estimate.</p>
-        <div class="exam-angle"><b>Exam angle</b>Three traps live in this one topic: recognizing digital-sale revenue too early (at payment, not delivery), including sales tax in revenue, and reporting sales at the gross amount instead of net of estimated returns.</div>
+        <h4>Sales discounts: the early-payment cousin of returns</h4>
+        <p>A separate contra-revenue estimate applies when a company offers customers an incentive to pay their invoice early (a cash or early-payment discount). Just like with expected returns, the company doesn't wait to see who actually takes the discount &mdash; it estimates the expected uptake at the time of sale and reduces revenue immediately, recording the estimate in a contra-revenue account (Sales Discounts) paired with an offsetting account that will later net against the receivable when it's collected.</p>
+        <p>Worked example: a company sells 400 units on credit at $60/unit (a $24,000 credit sale); the inventory sold cost $40/unit ($16,000 in COGS). Based on history, the company expects 2% of the related receivables to be paid early enough to qualify for the discount.</p>
+        <table class="hw-table">
+          <tr><th>Account</th><th>Debit</th><th>Credit</th></tr>
+          <tr><td class="hw-label">Accounts Receivable</td><td>24,000</td><td></td></tr>
+          <tr><td class="hw-label">Cost of Goods Sold</td><td>16,000</td><td></td></tr>
+          <tr><td class="hw-label">Sales Revenue</td><td></td><td>24,000</td></tr>
+          <tr><td class="hw-label">Inventory</td><td></td><td>16,000</td></tr>
+        </table>
+        <p>To record the estimated discount (2% &times; $24,000 = $480):</p>
+        <table class="hw-table">
+          <tr><th>Account</th><th>Debit</th><th>Credit</th></tr>
+          <tr><td class="hw-label">Sales Discounts (contra-revenue)</td><td>480</td><td></td></tr>
+          <tr><td class="hw-label">Allowance for Sales Discounts</td><td></td><td>480</td></tr>
+        </table>
+        <p>When a customer actually pays early enough to earn the discount, the cash collected is reduced by the discount, Accounts Receivable is removed at its full gross amount, and the Allowance is drawn down; if the total discounts actually taken end up differing from the original 2% estimate, that difference flows through Sales Discounts (and therefore net income) in the period the difference becomes known &mdash; the same "true-up" logic used for estimated returns.</p>
+        <div class="exam-angle"><b>Exam angle</b>Sales returns and sales discounts are both contra-revenue estimates recognized at the time of sale, not when the return/discount actually happens &mdash; but don't merge them into one number. They're tracked in separate accounts because they represent different customer behaviors (sending the product back vs. paying the bill quickly), and a question may ask you to isolate one from the other.</div>
       </div>
     </div>
 
@@ -423,6 +440,9 @@
       </div>
       <div class="term-card" data-source="retail" data-search="estimated returns net revenue reduce gross sales expected">
         <dt>Estimated sales returns</dt><dd>Revenue is recognized net of the estimated portion of current-period sales expected to be returned, not at the full gross amount.</dd><span class="tag">Retail &amp; Tax</span>
+      </div>
+      <div class="term-card" data-source="retail" data-search="sales discounts allowance for sales discounts contra revenue early payment cash discount estimate">
+        <dt>Sales discounts (early-payment discounts)</dt><dd>A contra-revenue estimate for the portion of credit sales expected to be paid early enough to earn a cash discount — recorded at the time of sale (Sales Discounts / Allowance for Sales Discounts), the same way estimated returns are.</dd><span class="tag">Retail &amp; Tax</span>
       </div>
       <div class="term-card" data-source="giftcards" data-search="gift card liability cash received not revenue redeemed later">
         <dt>Gift card liability</dt><dd>Cash received for a gift card is recorded as a liability, not revenue, since nothing has been earned until the card is redeemed.</dd><span class="tag">Gift Cards</span>
