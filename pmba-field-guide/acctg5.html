@@ -39,8 +39,22 @@
             <a href="acctg3.html">Unit 3 &mdash; The Accounting Cycle</a>
             <a href="acctg5.html">Unit 5 &mdash; Revenue &amp; Receivables</a>
             <a href="acctg6.html">Unit 6 &mdash; Inventory &amp; Long-Lived Assets</a>
+            <a href="acctg7.html">Unit 7 &mdash; Current &amp; Long-Term Liabilities</a>
             <a href="acctg-homework.html">Accounting HW Practice</a>
             <a href="acctg-exam-prep.html">Exam Prep Practice</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="mktg1.html" class="nav-dropdown-label">MKTG 6090</a>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show MKTG 6090 items">&#9662;</button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="mktg1.html">Ch 1 &mdash; Defining Marketing</a>
+            <a href="mktg2.html">Ch 2 &mdash; Planning &amp; Management</a>
+            <a href="mktg3.html">Ch 3 &mdash; Analyzing Consumer Markets</a>
+            <a href="mktg7.html">Ch 7 &mdash; Value Proposition &amp; Positioning</a>
+            <a href="mktg-mock-test.html">MKTG 6090 Mock Test</a>
           </div>
         </div>
       </div>
@@ -51,6 +65,7 @@
           <div class="nav-dropdown-menu-inner">
             <a href="mgt-mock-test.html">MGT 6050 Mock Test</a>
             <a href="acctg-mock-test.html">ACCTG 6000 Mock Test</a>
+            <a href="mktg-mock-test.html">MKTG 6090 Mock Test</a>
           </div>
         </div>
       </div>
@@ -68,8 +83,8 @@
       <h1>Revenue Recognition &amp; Receivables</h1>
       <p class="lede" style="max-width:70ch;">When exactly does a company get to call money "revenue"? This unit builds the formal 5-step recognition model, then applies it across a dozen real situations &mdash; long-term contracts, retail and digital sales, sales tax and returns, gift cards, licenses, franchises, and foreign currency effects &mdash; using real companies (Costco, Target, Adobe) as running examples. It then covers the other side of the coin: what happens when a customer who already generated revenue never actually pays, how to write off a bad debt, and how to read a company's operating expenses and non-GAAP disclosures.</p>
       <div class="hero-stats">
-        <div class="hero-stat"><b>54</b><span>Flashcards</span></div>
-        <div class="hero-stat"><b>35</b><span>Quiz questions</span></div>
+        <div class="hero-stat"><b>55</b><span>Flashcards</span></div>
+        <div class="hero-stat"><b>36</b><span>Quiz questions</span></div>
         <div class="hero-stat"><b>30</b><span>Official review questions</span></div>
       </div>
     </div>
@@ -311,6 +326,12 @@
         <p><strong>Which one is preferred?</strong> The balance sheet (aging) approach is generally considered the more accurate and more widely preferred method, precisely because it's self-correcting and keeps the balance sheet's net accounts receivable close to its true collectible value every single period &mdash; rather than letting estimation error compound the way it can under the income statement approach. This is also the method used throughout this unit's aging-analysis problems (Mohan Company, Collins Company): you're given a target uncollectible amount and asked to compute the adjustment needed to reach it, which is the balance sheet approach in action.</p>
         <div class="quote-block">Bad debt expense = Desired ending allowance balance &minus; Existing (pre-adjustment) allowance balance</div>
 
+        <h4>The trap: what if the allowance account starts backwards?</h4>
+        <p>Normally, the Allowance for Uncollectible Accounts sits with a small <strong>credit</strong> balance left over from last period's estimate, and the formula above just tops it up to the new target. But every so often, a company writes off more accounts during the year than it had reserved for &mdash; and the allowance account ends up with a <strong>debit</strong> balance instead (an unusual, "overdrawn" position). When that happens, simply subtracting isn't enough: the adjustment has to close the gap <em>and</em> still reach the full target, so it needs to cover both amounts added together.</p>
+        <p>Worked example: a company's aging analysis says the target ending allowance should be $22,500. But before the adjustment, the Allowance account already carries a $50,000 <strong>debit</strong> balance (it wrote off more bad debt earlier in the year than it had reserved for). Instead of $22,500 &minus; $50,000 (which would wrongly suggest a negative or reversed entry), the true adjustment needed is:</p>
+        <div class="quote-block">Bad debt expense = Desired ending balance + Existing debit balance = $22,500 + $50,000 = $72,500</div>
+        <p>Think of it in plain terms: the account is $50,000 in the hole, <em>and</em> it still needs to end up $22,500 to the good &mdash; so the total swing required is the sum of the two, not the difference. The journal entry is a $72,500 debit to Bad Debt Expense and a $72,500 credit to the Allowance account, which moves the balance from a $50,000 debit all the way to a $22,500 credit.</p>
+
         <h4>Measuring collection speed: AR turnover and DSO</h4>
         <p><strong>Accounts receivable turnover</strong> measures how many times, on average, a company collects its full receivables balance in a year:</p>
         <div class="quote-block">AR Turnover = Net Sales &#x00f7; Average Accounts Receivable</div>
@@ -492,6 +513,9 @@
       <div class="term-card" data-source="receivables" data-search="balance sheet approach percentage of receivables aging method bad debt expense desired ending allowance self correcting preferred">
         <dt>Balance sheet approach (aging method)</dt><dd>Estimates the desired ending Allowance balance (often via an aging schedule) and records only the adjustment needed to reach it. Self-correcting each period, so it's the generally preferred method for keeping receivables' net realizable value accurate.</dd><span class="tag">Receivables</span>
       </div>
+      <div class="term-card" data-source="receivables" data-search="allowance debit balance trap top up add both amounts overdrawn wrote off more than reserved">
+        <dt>Allowance with a debit (overdrawn) balance</dt><dd>If the Allowance account starts with an unusual debit balance instead of the normal credit balance, the bad debt entry must ADD the debit amount to the target ending balance — not subtract — since the account has to close the gap and still reach the target.</dd><span class="tag">Receivables</span>
+      </div>
       <div class="term-card" data-source="receivables" data-search="accounts receivable turnover net sales average accounts receivable times per year collect">
         <dt>Accounts receivable turnover</dt><dd>Net Sales &#x00f7; Average Accounts Receivable — how many times per year, on average, a company collects its full receivables balance.</dd><span class="tag">Receivables</span>
       </div>
@@ -583,7 +607,7 @@
         <li>Given a scenario where cash arrives at an unusual time relative to when goods/services are delivered, identify exactly when revenue should be recognized (retail sale, digital sale, gift card, or membership fee).</li>
         <li>Given a sales amount and a sales tax rate, or an expected return rate, compute the correct liability or net revenue figure.</li>
         <li>Given a company's beginning/ending deferred revenue and cash collected (or revenue recognized), solve for the missing piece of that three-way relationship.</li>
-        <li>Given an aging analysis and an existing allowance balance, compute bad debt expense as the adjustment needed to reach the target — not the target balance itself.</li>
+        <li>Given an aging analysis and an existing allowance balance, compute bad debt expense as the adjustment needed to reach the target — not the target balance itself. If that existing balance is an unusual debit, remember to add it to the target rather than subtract it.</li>
         <li>Given net sales and average (or beginning/ending) accounts receivable, compute AR turnover and DSO, and correctly state which direction of each indicates faster collection.</li>
         <li>Given a described contract (bundled goods/services, a franchise, a software license, a consignment sale), walk through the 5-step model to identify each performance obligation and when its revenue should be recognized.</li>
         <li>Given a company's local-currency results and a stated change in exchange rates, explain the direction and cause of the resulting translation effect on reported USD revenue.</li>

@@ -23,6 +23,8 @@
   --blue:       #3A5A78;
   --blue-deep:  #2C465E;
   --green:      #4C6B4F;
+  --crimson:      #A6192E;
+  --crimson-deep: #7D1322;
 
   --font-display: 'Fraunces', ui-serif, Georgia, serif;
   --font-body: 'Source Sans 3', ui-sans-serif, system-ui, sans-serif;
@@ -356,6 +358,17 @@ select{
 .theme-acctg .exam-angle b{ color: var(--blue-deep); }
 .theme-acctg .quiz-progress-bar{ background: var(--blue-deep); }
 .btn.blue{ background: var(--blue-deep); border-color: var(--blue-deep); }
+
+/* ---------------- marketing-page theme accents ---------------- */
+.theme-mktg .eyebrow{ color: var(--crimson-deep); }
+.theme-mktg .eyebrow::before{ background: var(--crimson-deep); }
+.theme-mktg .hero .eyebrow{ color: #E8A5AF; }
+.theme-mktg .hero .eyebrow::before{ background: #E8A5AF; }
+.theme-mktg .source-toggle .num{ color: var(--crimson-deep); }
+.theme-mktg .quote-block{ border-left-color: var(--crimson); }
+.theme-mktg .exam-angle b{ color: var(--crimson-deep); }
+.theme-mktg .quiz-progress-bar{ background: var(--crimson-deep); }
+.btn.crimson{ background: var(--crimson-deep); border-color: var(--crimson-deep); }
 
 /* ---------------- DuPont decomposition diagram ---------------- */
 .dupont-wrap{ overflow-x:auto; padding: 8px 0 4px; }

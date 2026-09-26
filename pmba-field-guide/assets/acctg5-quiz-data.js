@@ -490,4 +490,13 @@ const QUIZ_QUESTIONS = [
     incorrectFeedback: "Not quite.",
     explanation: "A careful read includes identifying nonrecurring items and separately assessing their impact, alongside reviewing the audit report, comparing accounting policies with peers, and tracking ratios over time.",
   },
+  {
+    source: "receivables",
+    prompt: "A company's aging analysis sets the target ending Allowance for Uncollectible Accounts at $22,500. Before any adjustment, the Allowance account already has a $50,000 DEBIT balance (it wrote off more than it had reserved for earlier in the year). What bad debt expense should be recorded?",
+    options: ["$22,500", "$27,500", "$50,000", "$72,500"],
+    correctIndex: 3,
+    correctFeedback: "Correct — $22,500 + $50,000.",
+    incorrectFeedback: "Not quite — with a debit starting balance, you add it to the target rather than subtracting.",
+    explanation: "With a normal credit starting balance, expense = target − existing balance. But here the account starts $50,000 in the hole (a debit balance), so the entry must close that gap AND still reach the $22,500 target: 22,500 + 50,000 = $72,500.",
+  },
 ];

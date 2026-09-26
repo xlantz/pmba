@@ -301,4 +301,13 @@ const QUIZ_QUESTIONS = [
     incorrectFeedback: "Not quite.",
     explanation: "When an intangible is purchased from someone else rather than self-created, the full purchase price is capitalized — the cost is no longer uncertain the way internally generated R&D and development costs are.",
   },
+  {
+    source: "ppe",
+    prompt: "A machine originally cost $60,000 and has $44,000 of accumulated depreciation. What percent of the machine's useful life has been used up?",
+    options: ["26.7%", "44.0%", "60.0%", "73.3%"],
+    correctIndex: 3,
+    correctFeedback: "Correct — 44,000 ÷ 60,000.",
+    incorrectFeedback: "Not quite — divide accumulated depreciation by the original cost, not net book value.",
+    explanation: "% Used Up = Accumulated Depreciation ÷ Gross Cost = 44,000 ÷ 60,000 = 73.3%. Net Book Value ÷ Cost (16,000 ÷ 60,000 = 26.7%) gives the percent remaining instead — the complement of what was asked.",
+  },
 ];

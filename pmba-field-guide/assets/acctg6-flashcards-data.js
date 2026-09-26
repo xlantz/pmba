@@ -54,6 +54,7 @@ const FLASHCARDS = [
   { source: "intangibles", front: "How does capitalizing a purchased intangible differ from capitalizing a self-created one?", back: "A company that purchases a patent, trademark, or other intangible from someone else capitalizes the full purchase price, since that cost is no longer uncertain — unlike a self-created intangible, where only direct legal/filing costs are capitalized." },
   { source: "intangibles", front: "How are intangible assets with a finite useful life amortized?", back: "Typically using the straight-line method over the useful life, similar in mechanic to straight-line depreciation for PP&E." },
   { source: "intangibles", front: "Which intangibles are not amortized, and why?", back: "Intangibles with an indefinite useful life — like goodwill, or a trademark/copyright a company intends to renew and use indefinitely — aren't amortized; they're tested periodically for impairment instead." },
+  { source: "ppe", front: "How do you compute what percent of an asset's useful life is \"used up,\" and what's the common mistake?", back: "% Used Up = Accumulated Depreciation ÷ Gross (original) Cost. The common mistake is dividing Net Book Value by cost instead — that gives the percent remaining, the opposite of what's being asked." },
 ];
 
 const SOURCE_LABELS = {

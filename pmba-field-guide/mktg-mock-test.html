@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ACCTG 6000 Mock Test — PMBA Field Guide</title>
-<meta name="description" content="A randomized mock test pulling from every ACCTG 6000 homework set, auto-graded with step-by-step notes.">
+<title>MKTG 6090 Mock Test — PMBA Field Guide</title>
+<meta name="description" content="A randomized multiple-choice mock test built from all four MKTG 6090 chapters — notes, flashcards, and quiz lookup tables — auto-graded with explanations.">
 <link rel="stylesheet" href="assets/style.css">
 </head>
-<body class="theme-acctg">
+<body class="theme-mktg">
 <a class="skip-link" href="#main">Skip to content</a>
 
 <header class="topbar">
@@ -69,6 +69,8 @@
           </div>
         </div>
       </div>
+      <a href="#glossary">Quiz Lookup</a>
+      <a href="#quiz">Quiz</a>
     </nav>
     <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
   </div>
@@ -77,12 +79,12 @@
 <section class="hero" style="padding-bottom:48px;">
   <div class="wrap" style="grid-template-columns:1fr;">
     <div>
-      <span class="eyebrow">ACCTG 6000 &#x00b7; Mock Test</span>
-      <h1>A random draw, every time</h1>
-      <p class="lede" style="max-width:70ch;">Pick how many questions you want, and the test pulls that many at random from every homework set that's been added to this site so far &mdash; right now that's the full Module 1, 2 &amp; 3 set. Work through it, submit once, and get a full score with notes on anything you missed.</p>
+      <span class="eyebrow">MKTG 6090 &#x00b7; Mock Test</span>
+      <h1>Multiple choice, pulled from everything</h1>
+      <p class="lede" style="max-width:70ch;">Pick how many questions you want, and the test draws that many at random from the full MKTG 6090 question bank across <strong>all four chapters</strong> &mdash; Defining Marketing (Ch 1), Marketing Planning &amp; Management (Ch 2), Analyzing Consumer Markets (Ch 3), and Crafting a Value Proposition &amp; Positioning (Ch 7). Submit once, get a full score, and see the explanation for every question, right or wrong.</p>
       <div class="hero-stats">
         <div class="hero-stat"><b id="mt-pool-count">&#x2014;</b><span>Questions in the pool</span></div>
-        <div class="hero-stat"><b>3 / 5 / 10 / 20</b><span>Test lengths</span></div>
+        <div class="hero-stat"><b>3 / 5 / 10</b><span>Test lengths</span></div>
         <div class="hero-stat"><b>&#x221e;</b><span>Retakes</span></div>
       </div>
     </div>
@@ -95,25 +97,11 @@
     <div class="mt-start" id="mt-start">
       <span class="eyebrow">Choose a length</span>
       <h2>How many questions?</h2>
-      <p class="text-soft">Each option pulls a fresh random subset of whole problems &mdash; company names, tables, and all &mdash; from the pool above. As more homework sets get added to the site, the pool (and the variety) grows automatically.</p>
-
-      <div class="chip-filter" role="group" aria-label="Filter by source" style="margin-bottom:12px;">
-        <button class="chip active" data-mt-source="all">All Sources (<span id="mt-count-source-all">&#x2014;</span>)</button>
-        <button class="chip" data-mt-source="official">Exam Prep Practice (<span id="mt-count-official">&#x2014;</span>)</button>
-        <button class="chip" data-mt-source="practice">Site Practice Questions (<span id="mt-count-practice">&#x2014;</span>)</button>
-      </div>
-
-      <div class="chip-filter" role="group" aria-label="Filter by question type" style="margin-bottom:18px;">
-        <button class="chip active" data-mt-type="all">All Types (<span id="mt-count-all">&#x2014;</span>)</button>
-        <button class="chip" data-mt-type="concept">Concept MC (<span id="mt-count-concept">&#x2014;</span>)</button>
-        <button class="chip" data-mt-type="work">Work &amp; Math (<span id="mt-count-work">&#x2014;</span>)</button>
-      </div>
-
+      <p class="text-soft">Each option pulls a fresh random subset of multiple-choice questions covering Chapter 1 (Scope &amp; Realities, Holistic Marketing, Customer-Oriented Org), Chapter 2 (Planning &amp; SBUs, 5 Cs/3 Vs/7 Ts, G-STIC), Chapter 3 (Culture/Social/Personal Factors, Perception &amp; Memory, the Buying Decision Process), and Chapter 7 (Value Proposition, Frame/POPs/PODs, Mantra &amp; Bullseye) &mdash; the same banks behind the quizzes on each chapter page, reshuffled and combined.</p>
       <div class="mt-count-row">
         <button class="mt-count-btn" data-count="3">3<span>Quick</span></button>
         <button class="mt-count-btn" data-count="5">5<span>Standard</span></button>
         <button class="mt-count-btn" data-count="10">10<span>Full</span></button>
-        <button class="mt-count-btn" data-count="20">20<span>Deep Dive</span></button>
       </div>
     </div>
 
@@ -123,8 +111,8 @@
       <div id="mt-questions"></div>
 
       <div class="mt-actions-row">
-        <button class="btn gold" id="mt-submit">Submit test</button>
-        <button class="btn gold" id="mt-retake" style="display:none;">Retake (new random draw)</button>
+        <button class="btn crimson" id="mt-submit">Submit test</button>
+        <button class="btn crimson" id="mt-retake" style="display:none;">Retake (new random draw)</button>
         <button class="btn ghost" id="mt-new-test">Choose a different length</button>
       </div>
     </div>
@@ -133,21 +121,19 @@
 
   <div class="wrap section">
     <div class="callout">
-      This draws from the same auto-graded question bank as the <a href="acctg-homework.html">Accounting HW Practice page</a> &mdash; the difference is the mock test picks a random subset each time and grades everything together at the end, closer to how an actual exam feels. For endlessly-regenerating ratio drills instead of fixed homework questions, see the <a href="acctg1.html#practice-lab">Practice Lab</a> on the main Unit 1 page. Studying for MGT 6050 instead? See the <a href="mgt-mock-test.html">MGT Mock Test</a>
-      <a href="team-contract-builder.html">Contract Builder</a>.
+      This draws from the combined Chapter 1 + 2 + 3 + 7 question bank &mdash; the same one behind the quiz on each chapter page (<a href="mktg1.html#quiz">Ch 1</a>, <a href="mktg2.html#quiz">Ch 2</a>, <a href="mktg3.html#quiz">Ch 3</a>, <a href="mktg7.html#quiz">Ch 7</a>) &mdash; the difference is this one lets you pick the length and grades everything together at the end, closer to how an actual timed, open-book quiz feels. Studying for MGT 6050 or ACCTG 6000 instead? See the <a href="mgt-mock-test.html">MGT Mock Test</a> or the <a href="acctg-mock-test.html">ACCTG Mock Test</a>.
     </div>
   </div>
 </main>
 
 <footer class="footer">
   <div class="wrap">
-    <p>ACCTG 6000 &#x2014; Financial Accounting, University of Utah PMBA. Mock test pool currently sourced from the Module 1, 2 &amp; 3 Homework practice sets; grows as new homework is added.</p>
+    <p>MKTG 6090 &#x2014; Marketing Management, University of Utah PMBA. Question bank built from the Chapter 1, 2, 3 &amp; 7 notes (Kotler/Keller/Chernev, <em>Marketing Management</em>, 17th ed.); grows as new chapters are added.</p>
   </div>
 </footer>
 
 <script src="assets/app.js"></script>
-<script src="assets/homework-bank.js"></script>
-<script src="assets/homework.js"></script>
-<script src="assets/mocktest.js"></script>
+<script src="assets/mktg-mock-test-data.js"></script>
+<script src="assets/mktg-mocktest.js"></script>
 </body>
 </html>

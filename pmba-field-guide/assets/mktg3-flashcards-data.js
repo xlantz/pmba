@@ -1,0 +1,55 @@
+const FLASHCARDS = [
+  // ---- Culture, Social & Personal Factors ----
+  { source: "characteristics", front: "What is culture, and why does it matter most in consumer behavior?", back: "The broadest, deepest influence on consumer behavior — a set of learned values, perceptions, preferences, and behaviors shared within a society." },
+  { source: "characteristics", front: "How do individualistic and collectivistic shopping cultures differ?", back: "Individualistic (U.S., Australia): buy for themselves, follow trends, shop many channels, return more often. Collectivistic (Portugal, Mexico, Turkey): follow the crowd, value long-term retailer reputation, shop for family, prefer physical stores." },
+  { source: "characteristics", front: "What is a subculture?", back: "A group within a culture that shares an identity — nationalities, religions, racial groups, or geographic regions." },
+  { source: "characteristics", front: "What is social class, and how rigid is it?", back: "Relatively homogeneous, enduring, hierarchically ordered divisions of society whose members share values and behavior; rigidity varies by country — e.g., Brazil formally uses A–E segments." },
+  { source: "characteristics", front: "What are reference groups?", back: "All the groups that have a direct or indirect effect on a person's beliefs or behavior." },
+  { source: "characteristics", front: "What's the difference between an aspirational and a dissociative group?", back: "Aspirational = a group the person hopes to join. Dissociative = a group whose values or behavior the person rejects." },
+  { source: "characteristics", front: "Who is an opinion leader, and how does an influencer relate?", back: "Someone who gives informal category advice — confident, socially active, a heavy user. With a large social following, an opinion leader becomes an influencer." },
+  { source: "characteristics", front: "What's the difference between family of orientation and family of procreation?", back: "Orientation = parents and siblings, shaping religion/politics/ambition/self-worth. Procreation = spouse and children, the more direct influence on everyday buying." },
+  { source: "characteristics", front: "How do children influence family purchases?", back: "Directly (asking for products) and indirectly (parents already know their children's preferences when shopping)." },
+  { source: "characteristics", front: "What is personality, in the consumer-behavior sense?", back: "The set of distinguishing psychological traits that lead to consistent, enduring responses to one's environment." },
+  { source: "characteristics", front: "Name the three types of self-concept, and when the effect is strongest.", back: "Actual self-concept, ideal self-concept, how others see you — brand choice matches one of these, strongest for publicly consumed products." },
+  { source: "characteristics", front: "What does AIO stand for in lifestyle research?", back: "Activities, Interests, Opinions — the pattern of living researchers use to describe a consumer's lifestyle." },
+  { source: "characteristics", front: "What does Hamburger Helper's design (needing a pan + ~15 minutes) illustrate about lifestyle?", back: "A 'convenience involvement segment' wants convenience but still some involvement — not zero effort — so products are designed for partial, not total, convenience." },
+
+  // ---- Needs, Perception, Memory & Behavioral Economics ----
+  { source: "psych", front: "Walk through need → want → demand.", back: "Need = basic requirement ('I'm hungry'). Want = a need shaped by society, directed at a specific object ('deep-dish pizza'). Demand = a want backed by the ability to pay." },
+  { source: "psych", front: "Do marketers create needs? What does the textbook say?", back: "No — needs pre-exist marketers. Marketers shape wants and demand, not the underlying need." },
+  { source: "psych", front: "List Maslow's hierarchy of needs in order.", back: "Physiological → safety → social → esteem → self-actualization; the most pressing need is satisfied first before moving up." },
+  { source: "psych", front: "Name perception's three processes.", back: "Selective attention, selective distortion, selective retention." },
+  { source: "psych", front: "What triggers selective attention?", back: "Stimuli related to a current need, stimuli that are anticipated, or stimuli representing a large deviation from expectation (e.g., $100 off registers more than $5 off)." },
+  { source: "psych", front: "What is selective distortion, and who benefits from it?", back: "Interpreting information to fit preconceptions — e.g., branded vs. blind taste tests differ. It tends to help already-strong brands." },
+  { source: "psych", front: "What is selective retention?", back: "Remembering the positive points of liked brands while forgetting the good points of competitors." },
+  { source: "psych", front: "Name the three types of long-term memory.", back: "Episodic (events, with context), semantic (general facts/concepts), procedural (how to do things, automatic)." },
+  { source: "psych", front: "Describe the associative network model of memory.", back: "Memory is nodes joined by links of varying strength; a brand is a node, and its associations are everything linked to it. Triggering one node spreads activation outward, recalling the strongest links first." },
+  { source: "psych", front: "What is the availability heuristic?", back: "Judging likelihood by how easily examples come to mind — e.g., people overestimate homicide deaths relative to emphysema deaths." },
+  { source: "psych", front: "What is the representativeness heuristic?", back: "Judging likelihood by similarity to a stereotype, which leads to neglecting actual base rates." },
+  { source: "psych", front: "What is the conjunction fallacy?", back: "Believing that two events occurring together is more probable than either alone — the classic 'Linda is a bank teller and a feminist' example." },
+  { source: "psych", front: "What is decision framing, with an example?", back: "How a choice is presented changes the decision — e.g., pitching a cost as 'pennies a day' rather than an annual total." },
+  { source: "psych", front: "What is mental accounting?", back: "Treating money as belonging to separate mental 'accounts,' so losing a $100 ticket feels different from losing $100 in cash." },
+  { source: "psych", front: "What is choice architecture / a nudge, and who coined it?", back: "Thaler & Sunstein's idea of designing the choice environment itself to guide decisions — e.g., Nabisco's 100-calorie packs." },
+  { source: "psych", front: "What three conditions does the Elaboration Likelihood Model require for the central route?", back: "Motivation, ability, and opportunity to think carefully about the message; missing any one sends the audience down the peripheral route instead." },
+  { source: "psych", front: "Central vs. peripheral route: what kind of attitude does each produce?", back: "Central route (careful thought about product info) produces a durable attitude. Peripheral route (relying on cues like a celebrity or emotional tone) produces a weaker, cue-dependent attitude." },
+
+  // ---- The Five-Stage Buying Decision Process ----
+  { source: "buying", front: "List the five stages of the buying decision process.", back: "Problem recognition, information search, evaluation of alternatives, purchase decision, postpurchase behavior." },
+  { source: "buying", front: "What triggers problem recognition?", back: "Internal stimuli (a need rises to a threshold) or external stimuli (an ad, a friend's purchase); drivers include natural depletion, dissatisfaction, lifestyle changes, and social influence." },
+  { source: "buying", front: "Name the four information sources, and which gives the most vs. the most effective information.", back: "Personal, commercial, public, experiential. Commercial sources (ads, salespeople) usually give the most information, but personal, experiential, and independent public sources are often the most effective." },
+  { source: "buying", front: "Walk through the successive sets funnel.", back: "Total set (every brand that exists) → awareness set (brands they know) → consideration set (meet initial criteria) → choice set (a few strong contenders) → decision." },
+  { source: "buying", front: "What is the expectancy-value model formula?", back: "Perceived value = Σ (importance weight × belief score) across attributes." },
+  { source: "buying", front: "Work the expectancy-value example: weights 50% quality, 30% price, 20% design; scores 6, 8, 5.", back: "0.5(6) + 0.3(8) + 0.2(5) = 3.0 + 2.4 + 1.0 = 6.4." },
+  { source: "buying", front: "What's the difference between compensatory and non-compensatory decision rules?", back: "Compensatory: a strength on one attribute can offset a weakness on another (nets out). Non-compensatory: attributes are judged in isolation, with no offsetting." },
+  { source: "buying", front: "What two intervening factors can derail a purchase after evaluation?", back: "Attitudes of others, and unanticipated situational factors." },
+  { source: "buying", front: "Name the five purchase sub-decisions.", back: "Brand, dealer/channel, quantity, timing, payment method." },
+  { source: "buying", front: "List the six types of perceived risk.", back: "Functional, physical, financial, social, psychological, opportunity." },
+  { source: "buying", front: "Describe the satisfaction model (disappointment / satisfaction / delight).", back: "Performance below expectations → disappointment. Performance meeting expectations → satisfaction. Performance exceeding expectations → delight." },
+  { source: "buying", front: "What does postpurchase behavior cover?", back: "Cognitive dissonance, satisfaction, postpurchase actions, and product use/disposal." },
+];
+
+const SOURCE_LABELS = {
+  characteristics: "Culture, Social & Personal",
+  psych: "Needs, Perception & Memory",
+  buying: "Buying Decision Process",
+};
