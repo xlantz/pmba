@@ -123,6 +123,20 @@ const QUIZ_QUESTIONS = [
     explanation: "If a rival's name fits just as well into the statement, the positioning isn't distinctive enough — it fails the brand substitution test.",
   },
   {
+    source: "positioning",
+    prompt: "A brand manager insists that the company's positioning statement must accurately describe every single product in a 40-item line. What's the likely result, per the 80-20 rule?",
+    options: [
+      "A sharper, more distinctive positioning statement",
+      "A vague, lowest-common-denominator statement, since positioning is only meant to fit about 80% of the line",
+      "No change, since positioning statements ignore product lines entirely",
+      "A statement that automatically becomes a brand mantra",
+    ],
+    correctIndex: 1,
+    correctFeedback: "Correct.",
+    incorrectFeedback: "Not quite.",
+    explanation: "The 80-20 rule says a positioning statement should fit about 80% of a brand's products; forcing it to cover 100% waters it down to the lowest common denominator.",
+  },
+  {
     source: "mantra",
     prompt: "Nike's \"authentic athletic performance\" differs from \"Just Do It\" because it is:",
     options: ["An external slogan", "An internal brand mantra", "A positioning statement for investors", "A category point of parity"],

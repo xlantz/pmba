@@ -30,6 +30,7 @@ const FLASHCARDS = [
   { source: "positioning", front: "What is straddle positioning, using BMW as the example?", back: "The POD in one frame becomes the POP in another — BMW's POD is luxury vs. Corvette (POP is performance there), and its POD is performance vs. Cadillac (POP is luxury there)." },
   { source: "positioning", front: "What's the risk of straddling badly?", back: "The brand ends up credible in neither category — as happened to Palm Pilot and Apple Newton straddling pagers and laptops." },
   { source: "positioning", front: "What is the brand substitution test?", back: "Swap a rival's brand name into your positioning statement — if it still reads true, the positioning is too weak or generic to be distinctive." },
+  { source: "positioning", front: "What is the 80-20 rule for positioning?", back: "A positioning statement should fit about 80% of a brand's products; trying to make it cover 100% pushes it toward the lowest common denominator." },
 
   // ---- Brand Mantra & Positioning Bullseye ----
   { source: "mantra", front: "What is a brand mantra, and how many words does it usually run?", back: "A 3–5 word internal statement of the brand's 'heart and soul,' meant for employees and partners, not consumers." },
