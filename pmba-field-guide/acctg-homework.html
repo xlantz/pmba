@@ -82,10 +82,10 @@
     <div>
       <span class="eyebrow">ACCTG 6000 &#x00b7; Accounting HW Practice</span>
       <h1>Homework, worked with new numbers</h1>
-      <p class="lede" style="max-width:70ch;">The same structure as the real Module 1, 2, 3 &amp; 5 assignments &#x2014; numbers and company names changed so this isn't a copy of what you turned in. Filter by unit or by topic to find exactly what you want to drill, fill it in, hit Check, and get an instant score plus notes on anything you missed. Reset clears the page so you can redo it as many times as you want.</p>
+      <p class="lede" style="max-width:70ch;">The same structure as the real Module 1, 2, 3, 5 &amp; 7 assignments &#x2014; numbers and company names changed so this isn't a copy of what you turned in. Filter by unit or by topic to find exactly what you want to drill, fill it in, hit Check, and get an instant score plus notes on anything you missed. Reset clears the page so you can redo it as many times as you want.</p>
       <div class="hero-stats">
-        <div class="hero-stat"><b>180</b><span>Questions</span></div>
-        <div class="hero-stat"><b>4</b><span>Units, 15 topics</span></div>
+        <div class="hero-stat"><b>192</b><span>Questions</span></div>
+        <div class="hero-stat"><b>5</b><span>Units, 19 topics</span></div>
         <div class="hero-stat"><b>&#x2713;</b><span>Auto-graded</span></div>
       </div>
     </div>
@@ -114,6 +114,7 @@
         <button class="chip" data-hw-unit="u2">Unit 2</button>
         <button class="chip" data-hw-unit="u3">Unit 3</button>
         <button class="chip" data-hw-unit="u5">Unit 5</button>
+        <button class="chip" data-hw-unit="u7">Unit 7</button>
         <button class="chip" data-hw-unit="review">Exam Prep Practice</button>
       </div>
     </div>
@@ -133,6 +134,10 @@
         <button class="chip" data-hw-topic="revenue">Revenue Recognition</button>
         <button class="chip" data-hw-topic="receivables">Receivables</button>
         <button class="chip" data-hw-topic="opex">Operating Expenses</button>
+        <button class="chip" data-hw-topic="contingent">Liabilities &amp; Contingencies</button>
+        <button class="chip" data-hw-topic="shortterm">Short-Term Notes</button>
+        <button class="chip" data-hw-topic="installment">Installment Notes &amp; Mortgages</button>
+        <button class="chip" data-hw-topic="bonds">Bonds</button>
         <button class="chip" data-hw-topic="conceptual">Review: Conceptual</button>
         <button class="chip" data-hw-topic="computational">Review: Computational</button>
       </div>
@@ -1930,6 +1935,443 @@ We also have audited, in accordance with the standards of the Public Company Acc
         </div>
       </div>
     </div>
+    <!-- U7-Q1: Liability recognition amounts -->
+    <div class="hw-q" data-gradable="true" data-unit="u7" data-topic="contingent">
+      <h3><span class="hw-num">U7-Q1</span>Determining Amounts to Report as Liabilities</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 7</span>
+      <p class="hw-prompt">For each situation below, determine the amount (if any) that should be reported as a liability on the balance sheet.</p>
+      <div class="hw-part-label">a. A company has received a $220,000 invoice from a supplier for inventory already delivered, not yet paid.</div>
+      <table class="hw-table"><tr><td class="hw-label">Liability to report</td><td>$<input type="text" class="num" data-correct="220000"></td></tr></table>
+      <div class="hw-part-label">b. A company signs an agreement to purchase $95,000 of inventory next year; no goods or cash have changed hands yet.</div>
+      <table class="hw-table"><tr><td class="hw-label">Liability to report</td><td>$<input type="text" class="num" data-correct="0"></td></tr></table>
+      <div class="hw-part-label">c. A company estimates $3,100 of warranty repair costs still owed on units sold this year, based on a probable and estimable repair rate.</div>
+      <table class="hw-table"><tr><td class="hw-label">Liability to report</td><td>$<input type="text" class="num" data-correct="3100"></td></tr></table>
+      <div class="hw-part-label">d. A company's employee bonus plan pays 5% of this year's $800,000 pre-bonus income, to be paid out next year.</div>
+      <table class="hw-table"><tr><td class="hw-label">Liability to report</td><td>$<input type="text" class="num" data-correct="40000"></td></tr></table>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>(a) An invoice for goods already delivered is a definite, recorded Accounts Payable &mdash; the full $220,000.</li>
+          <li>(b) An agreement to buy something next year is an executory contract &mdash; nothing has been exchanged yet, so no liability exists until delivery or payment occurs.</li>
+          <li>(c) Probable + estimable &rarr; record the estimate in full: $3,100.</li>
+          <li>(d) The bonus is tied to this year's income even though it's paid next year (accrual/matching principle): $800,000 &times; 5% = $40,000.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li><span class="ans-part">a.</span> $220,000.</li>
+            <li><span class="ans-part">b.</span> $0 &mdash; executory contract, not yet a liability.</li>
+            <li><span class="ans-part">c.</span> $3,100.</li>
+            <li><span class="ans-part">d.</span> $40,000.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- U7-Q2: Warranty expense vs liability -->
+    <div class="hw-q" data-gradable="true" data-unit="u7" data-topic="contingent">
+      <h3><span class="hw-num">U7-Q2</span>Warranty Expense vs. Warranty Liability</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 7</span>
+      <p class="hw-prompt">A company sold 500,000 units this year. Based on history, it expects 3% of units sold to need a warranty repair, averaging $160 per repair. By year-end, 12,000 units have already been repaired.</p>
+      <div class="hw-part-label">a. Compute warranty expense for the year (based on all units sold).</div>
+      <table class="hw-table"><tr><td class="hw-label">Warranty expense</td><td>$<input type="text" class="num" data-correct="2400000"></td></tr></table>
+      <div class="hw-part-label">b. Compute the warranty liability remaining at year-end (repairs still owed).</div>
+      <table class="hw-table"><tr><td class="hw-label">Warranty liability</td><td>$<input type="text" class="num" data-correct="480000"></td></tr></table>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>Expected repairs = 500,000 &times; 3% = 15,000 units.</li>
+          <li>(a) Expense = total estimated repairs for everything sold this period = 15,000 &times; $160 = $2,400,000 (matching principle &mdash; the full estimate is expensed in the period of sale).</li>
+          <li>(b) Liability = repairs still owed = (15,000 total estimated &minus; 12,000 already repaired) &times; $160 = 3,000 &times; $160 = $480,000.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li><span class="ans-part">a.</span> $2,400,000.</li>
+            <li><span class="ans-part">b.</span> $480,000.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- U7-Q3: Record / Disclose / Neither -->
+    <div class="hw-q" data-gradable="true" data-unit="u7" data-topic="contingent">
+      <h3><span class="hw-num">U7-Q3</span>Record, Disclose, or Neither?</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 7</span>
+      <p class="hw-prompt">For each situation, decide whether the company should record a liability, disclose it in the notes only, or do neither.</p>
+      <div class="hw-part-label">1. The company is a defendant in a lawsuit; there is no history of similar cases resulting in a cash award.</div>
+      <select data-correct="Neither"><option value="">-- select --</option><option>Record</option><option>Disclose</option><option>Neither</option></select>
+      <div class="hw-part-label">2. The company has a signed 60-day note payable outstanding at year-end.</div>
+      <select data-correct="Record"><option value="">-- select --</option><option>Record</option><option>Disclose</option><option>Neither</option></select>
+      <div class="hw-part-label">3. The company faces a possible EPA lawsuit; the source of contamination is unclear but a claim is plausible.</div>
+      <select data-correct="Disclose"><option value="">-- select --</option><option>Record</option><option>Disclose</option><option>Neither</option></select>
+      <div class="hw-part-label">4. The company's products have historically had a 1.2% return/warranty rate.</div>
+      <select data-correct="Record"><option value="">-- select --</option><option>Record</option><option>Disclose</option><option>Neither</option></select>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>1. Remote likelihood, no supporting history &rarr; neither record nor disclose.</li>
+          <li>2. The trap: a signed note isn't a contingency at all &mdash; it's a known, definite obligation, so it's recorded outright.</li>
+          <li>3. Reasonably possible, source plausible but unclear &rarr; disclose in the notes.</li>
+          <li>4. A historical 1.2% rate is probable and estimable &rarr; record the estimate.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li><span class="ans-part">1.</span> Neither.</li>
+            <li><span class="ans-part">2.</span> Record &mdash; it's a definite liability, not a contingency.</li>
+            <li><span class="ans-part">3.</span> Disclose.</li>
+            <li><span class="ans-part">4.</span> Record.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- U7-Q4: Balance sheet vs income statement classification -->
+    <div class="hw-q" data-gradable="true" data-unit="u7" data-topic="contingent">
+      <h3><span class="hw-num">U7-Q4</span>Classifying Bond-Related Accounts</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 7</span>
+      <p class="hw-prompt">For each account, select whether it appears on the balance sheet or the income statement.</p>
+      <div class="hw-part-label">Discount on Bonds Payable</div>
+      <select data-correct="Balance sheet"><option value="">-- select --</option><option>Balance sheet</option><option>Income statement</option></select>
+      <div class="hw-part-label">Mortgage Notes Payable</div>
+      <select data-correct="Balance sheet"><option value="">-- select --</option><option>Balance sheet</option><option>Income statement</option></select>
+      <div class="hw-part-label">Bonds Payable</div>
+      <select data-correct="Balance sheet"><option value="">-- select --</option><option>Balance sheet</option><option>Income statement</option></select>
+      <div class="hw-part-label">Bond Interest Payable</div>
+      <select data-correct="Balance sheet"><option value="">-- select --</option><option>Balance sheet</option><option>Income statement</option></select>
+      <div class="hw-part-label">Premium on Bonds Payable</div>
+      <select data-correct="Balance sheet"><option value="">-- select --</option><option>Balance sheet</option><option>Income statement</option></select>
+      <div class="hw-part-label">Gain on Bond Retirement</div>
+      <select data-correct="Income statement"><option value="">-- select --</option><option>Balance sheet</option><option>Income statement</option></select>
+      <div class="hw-part-label">Bond Interest Expense</div>
+      <select data-correct="Income statement"><option value="">-- select --</option><option>Balance sheet</option><option>Income statement</option></select>
+      <div class="hw-part-label">Loss on Bond Retirement</div>
+      <select data-correct="Income statement"><option value="">-- select --</option><option>Balance sheet</option><option>Income statement</option></select>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>The recurring trap: Discount/Premium on Bonds Payable feel like they should be "expenses," but they're <b>balance sheet</b> contra/adjunct accounts to Bonds Payable, not income statement items.</li>
+          <li>Anything with "Payable" in the name is a balance sheet liability. Anything that's a Gain, Loss, or Expense from bond activity hits the income statement.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li>Balance sheet: Discount on Bonds Payable, Mortgage Notes Payable, Bonds Payable, Bond Interest Payable, Premium on Bonds Payable.</li>
+            <li>Income statement: Gain on Bond Retirement, Bond Interest Expense, Loss on Bond Retirement.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- U7-Q5: Accrued interest on short-term notes -->
+    <div class="hw-q" data-gradable="true" data-unit="u7" data-topic="shortterm">
+      <h3><span class="hw-num">U7-Q5</span>Accruing Interest on Short-Term Notes (365-Day Year)</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 7</span>
+      <p class="hw-prompt">The company has three notes payable outstanding at year-end (12/31). Compute the interest accrued on each note from its issuance date through 12/31, using a 365-day year, and the total.</p>
+      <table class="hw-table">
+        <tr><th>Note</th><th>Principal</th><th>Rate</th><th>Issued</th><th>Days to 12/31</th><th>Accrued interest</th></tr>
+        <tr><td class="hw-label">Nissim</td><td>$30,000</td><td>10%</td><td>Nov 21</td><td>40</td><td>$<input type="text" class="num" data-correct="329" data-tol="1"></td></tr>
+        <tr><td class="hw-label">Klein</td><td>$22,000</td><td>8%</td><td>Dec 13</td><td>18</td><td>$<input type="text" class="num" data-correct="87" data-tol="1"></td></tr>
+        <tr><td class="hw-label">Bildersee</td><td>$26,000</td><td>6%</td><td>Dec 19</td><td>12</td><td>$<input type="text" class="num" data-correct="51" data-tol="1"></td></tr>
+        <tr><td class="hw-label">Total</td><td></td><td></td><td></td><td></td><td>$<input type="text" class="num" data-correct="467" data-tol="2"></td></tr>
+      </table>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>Interest = Principal &times; Rate &times; (Days Outstanding &divide; 365). Count only the days from issuance through 12/31 &mdash; not the note's full term.</li>
+          <li>Nissim: 30,000 &times; 10% &times; 40/365 = $329. Klein: 22,000 &times; 8% &times; 18/365 = $87. Bildersee: 26,000 &times; 6% &times; 12/365 = $51.</li>
+          <li>Total accrued interest = $329 + $87 + $51 = $467.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li>Nissim $329; Klein $87; Bildersee $51; Total $467.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- U7-Q6: Mortgage amortization schedule -->
+    <div class="hw-q" data-gradable="true" data-unit="u7" data-topic="installment">
+      <h3><span class="hw-num">U7-Q6</span>Amortizing a Mortgage Note Payable</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 7</span>
+      <p class="hw-prompt">A company borrows $4,000,000 on a 15-year mortgage at 10% annual interest, with equal semiannual payments. Each period's payment is $260,206. Complete the amortization schedule for the first six periods (Years 1&ndash;3), then answer the follow-up questions.</p>
+      <table class="hw-table">
+        <tr><th>Period</th><th>Interest</th><th>Cash Paid</th><th>Principal</th><th>Carrying Amount</th></tr>
+        <tr><td class="hw-label">Jun 30, Yr 1</td><td>$<input type="text" class="num" data-correct="200000" data-tol="50"></td><td>$<input type="text" class="num" data-correct="260206" data-tol="5"></td><td>$<input type="text" class="num" data-correct="60206" data-tol="50"></td><td>$<input type="text" class="num" data-correct="3939794" data-tol="50"></td></tr>
+        <tr><td class="hw-label">Dec 31, Yr 1</td><td>$<input type="text" class="num" data-correct="196990" data-tol="50"></td><td>$<input type="text" class="num" data-correct="260206" data-tol="5"></td><td>$<input type="text" class="num" data-correct="63216" data-tol="50"></td><td>$<input type="text" class="num" data-correct="3876578" data-tol="50"></td></tr>
+        <tr><td class="hw-label">Jun 30, Yr 2</td><td>$<input type="text" class="num" data-correct="193829" data-tol="50"></td><td>$<input type="text" class="num" data-correct="260206" data-tol="5"></td><td>$<input type="text" class="num" data-correct="66377" data-tol="50"></td><td>$<input type="text" class="num" data-correct="3810201" data-tol="50"></td></tr>
+        <tr><td class="hw-label">Dec 31, Yr 2</td><td>$<input type="text" class="num" data-correct="190510" data-tol="50"></td><td>$<input type="text" class="num" data-correct="260206" data-tol="5"></td><td>$<input type="text" class="num" data-correct="69696" data-tol="50"></td><td>$<input type="text" class="num" data-correct="3740505" data-tol="50"></td></tr>
+        <tr><td class="hw-label">Jun 30, Yr 3</td><td>$<input type="text" class="num" data-correct="187025" data-tol="50"></td><td>$<input type="text" class="num" data-correct="260206" data-tol="5"></td><td>$<input type="text" class="num" data-correct="73181" data-tol="50"></td><td>$<input type="text" class="num" data-correct="3667324" data-tol="50"></td></tr>
+        <tr><td class="hw-label">Dec 31, Yr 3</td><td>$<input type="text" class="num" data-correct="183366" data-tol="50"></td><td>$<input type="text" class="num" data-correct="260206" data-tol="5"></td><td>$<input type="text" class="num" data-correct="76840" data-tol="50"></td><td>$<input type="text" class="num" data-correct="3590484" data-tol="50"></td></tr>
+      </table>
+      <div class="hw-part-label">What is the current portion of long-term debt as of Dec 31, Year 2 (the principal due within the next 12 months)?</div>
+      <table class="hw-table"><tr><td class="hw-label">Current portion</td><td>$<input type="text" class="num" data-correct="150021" data-tol="50"></td></tr></table>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>Each period: Interest = 5% (semiannual rate) &times; prior carrying amount. Principal = Payment ($260,206) &minus; Interest. New carrying amount = old carrying amount &minus; principal.</li>
+          <li>As the carrying amount shrinks, the interest portion shrinks and the principal portion grows &mdash; this is why payoff accelerates over time.</li>
+          <li>Current portion of long-term debt is never the whole remaining balance &mdash; it's only the principal due in the next 12 months. At Dec 31 Yr 2, that's the sum of the next two periods' principal: Jun 30 Yr 3 ($73,181) + Dec 31 Yr 3 ($76,840) = $150,021.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li>Carrying amount at Dec 31, Yr 2 = $3,740,505. Current portion of long-term debt at that date = $150,021.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- U7-Q7: Bond pricing at two market rates -->
+    <div class="hw-q" data-gradable="true" data-unit="u7" data-topic="bonds">
+      <h3><span class="hw-num">U7-Q7</span>Pricing a Bond at Different Market Rates</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 7</span>
+      <p class="hw-prompt">A company issues bonds with $1,820,000 face value, a 9% stated rate (paid semiannually), and a 10-year term. Compute the issue price under each market-rate scenario, and classify each as issued at a premium or discount.</p>
+      <div class="hw-part-label">a. Market rate = 8% annually (4% per period, n = 20)</div>
+      <table class="hw-table"><tr><td class="hw-label">Issue price</td><td>$<input type="text" class="num" data-correct="1943870" data-tol="2000"></td></tr></table>
+      <select data-correct="Premium"><option value="">-- select --</option><option>Premium</option><option>Discount</option><option>Par</option></select>
+      <div class="hw-part-label">b. Market rate = 10% annually (5% per period, n = 20)</div>
+      <table class="hw-table"><tr><td class="hw-label">Issue price</td><td>$<input type="text" class="num" data-correct="1706594" data-tol="2000"></td></tr></table>
+      <select data-correct="Discount"><option value="">-- select --</option><option>Premium</option><option>Discount</option><option>Par</option></select>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>Semiannual coupon payment = $1,820,000 &times; 9% &divide; 2 = $81,900 per period, for 20 periods.</li>
+          <li>Price = (Coupon &times; PV annuity factor) + (Face &times; PV single-sum factor), both at the market rate per period.</li>
+          <li>(a) At 4%/period: PV factor &#8776; 0.4564, annuity factor &#8776; 13.5903 &rarr; Price &#8776; 81,900(13.5903) + 1,820,000(0.4564) &#8776; $1,943,870. Since the stated rate (9%) &gt; market rate (8%), it sells at a premium.</li>
+          <li>(b) At 5%/period: PV factor &#8776; 0.3769, annuity factor &#8776; 12.4622 &rarr; Price &#8776; 81,900(12.4622) + 1,820,000(0.3769) &#8776; $1,706,594. Since the stated rate (9%) &lt; market rate (10%), it sells at a discount.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li><span class="ans-part">a.</span> &#8776;$1,943,870 &mdash; premium.</li>
+            <li><span class="ans-part">b.</span> &#8776;$1,706,594 &mdash; discount.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- U7-Q8: Which Excel function for which unknown -->
+    <div class="hw-q" data-gradable="true" data-unit="u7" data-topic="bonds">
+      <h3><span class="hw-num">U7-Q8</span>Solving Bond-Pricing Problems in Reverse</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 7</span>
+      <p class="hw-prompt">The same PV formula behind bond pricing (Price = PV of coupon annuity + PV of face value) can be solved for whichever variable is missing. For each unknown below, select the Excel function built for solving it.</p>
+      <div class="hw-part-label">Given the rate, term, and payment stream, solving for the issue proceeds</div>
+      <select data-correct="PV"><option value="">-- select --</option><option>PV</option><option>RATE</option><option>NPER</option><option>PMT</option></select>
+      <div class="hw-part-label">Given the proceeds, rate, and payment stream, solving for the number of periods to maturity</div>
+      <select data-correct="NPER"><option value="">-- select --</option><option>PV</option><option>RATE</option><option>NPER</option><option>PMT</option></select>
+      <div class="hw-part-label">Given the proceeds, term, and payment stream, solving for the yield (market rate)</div>
+      <select data-correct="RATE"><option value="">-- select --</option><option>PV</option><option>RATE</option><option>NPER</option><option>PMT</option></select>
+      <div class="hw-part-label">For a zero-coupon bond, given the proceeds, rate, and term, solving for the face value</div>
+      <select data-correct="FV"><option value="">-- select --</option><option>PV</option><option>RATE</option><option>NPER</option><option>FV</option></select>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>Whichever variable is "missing" in the bond-pricing equation has a matching Excel function built around solving for it: <code>=PV(rate,nper,pmt,fv)</code>, <code>=RATE(nper,pmt,-pv,fv)</code>, <code>=NPER(rate,pmt,-pv,fv)</code>, <code>=FV(rate,nper,pmt,-pv)</code>.</li>
+          <li>This is genuinely the hardest part mechanically &mdash; if goal-seeking by hand isn't clicking, lean on these four functions rather than algebra.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li>Proceeds &rarr; PV. Periods to maturity &rarr; NPER. Yield &rarr; RATE. Face value (zero-coupon) &rarr; FV.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- U7-Q9: Gain/loss on bond retirement -->
+    <div class="hw-q" data-gradable="true" data-unit="u7" data-topic="bonds">
+      <h3><span class="hw-num">U7-Q9</span>Gain or Loss on Early Retirement of Debt</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 7</span>
+      <p class="hw-prompt">Four companies retire bonds early. For each, compute the gain or (loss) on retirement. Enter a gain as positive and a loss as negative.</p>
+      <table class="hw-table">
+        <tr><th>Company</th><th>Carrying Amount</th><th>Cash Paid to Retire</th><th>Gain / (Loss)</th></tr>
+        <tr><td class="hw-label">Firm 1</td><td>$886,140</td><td>$903,940</td><td>$<input type="text" class="num" data-correct="-17800" data-tol="50"></td></tr>
+        <tr><td class="hw-label">Firm 2</td><td>$1,675,739</td><td>$1,705,468</td><td>$<input type="text" class="num" data-correct="-29729" data-tol="50"></td></tr>
+        <tr><td class="hw-label">Firm 3</td><td>$450,000</td><td>$440,807</td><td>$<input type="text" class="num" data-correct="9193" data-tol="50"></td></tr>
+        <tr><td class="hw-label">Firm 4</td><td>$903,659</td><td>$897,433</td><td>$<input type="text" class="num" data-correct="6226" data-tol="50"></td></tr>
+      </table>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>Gain/(Loss) = Carrying Amount &minus; Cash Paid to Retire.</li>
+          <li>Intuition: pay <i>less</i> than the carrying amount to retire debt &rarr; gain (you got off cheap). Pay <i>more</i> &rarr; loss.</li>
+          <li>Firm 1: 886,140 &minus; 903,940 = &minus;$17,800. Firm 2: 1,675,739 &minus; 1,705,468 = &minus;$29,729. Firm 3: 450,000 &minus; 440,807 = $9,193. Firm 4: 903,659 &minus; 897,433 = $6,226.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li>Firm 1: &minus;$17,800 (loss). Firm 2: &minus;$29,729 (loss). Firm 3: +$9,193 (gain). Firm 4: +$6,226 (gain).</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- U7-Q10: FSET-style entries for bond issuance/interest/retirement -->
+    <div class="hw-q" data-gradable="true" data-unit="u7" data-topic="bonds">
+      <h3><span class="hw-num">U7-Q10</span>Recording Bond Issuance, Interest, and Retirement</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 7</span>
+      <p class="hw-prompt">A company issues $400,000 face value bonds at par (9% stated, paid semiannually). Compute the financial-statement effect of each transaction below.</p>
+      <div class="hw-part-label">a. Issue the bonds at par.</div>
+      <table class="hw-table fset-table"><tr><th></th><th>Cash Asset</th><th>Liabilities</th></tr><tr><td class="hw-label">Issue bonds at par</td><td><input type="text" class="num fset-input" data-correct="400000"></td><td><input type="text" class="num fset-input" data-correct="400000"></td></tr></table>
+      <div class="hw-part-label">b. Record the first semiannual interest payment (400,000 &times; 4.5% = $18,000).</div>
+      <table class="hw-table fset-table"><tr><th></th><th>Cash Asset</th><th>Earned Capital</th><th>Expenses</th></tr><tr><td class="hw-label">Pay semiannual interest</td><td><input type="text" class="num fset-input" data-correct="-18000"></td><td><input type="text" class="num fset-input" data-correct="-18000"></td><td><input type="text" class="num fset-input" data-correct="18000"></td></tr></table>
+      <div class="hw-part-label">c. Retire $150,000 face value of these bonds at 102 (= 102% of face).</div>
+      <table class="hw-table fset-table"><tr><th></th><th>Cash Asset</th><th>Liabilities</th><th>Earned Capital</th><th>Expenses</th></tr><tr><td class="hw-label">Retire $150,000 face at 102</td><td><input type="text" class="num fset-input" data-correct="-153000"></td><td><input type="text" class="num fset-input" data-correct="-150000"></td><td><input type="text" class="num fset-input" data-correct="-3000"></td><td><input type="text" class="num fset-input" data-correct="3000"></td></tr></table>
+      <select data-correct="Loss"><option value="">-- select --</option><option>Gain</option><option>Loss</option></select>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>(a) Issuing at par: Cash and Liabilities both increase by the full $400,000.</li>
+          <li>(b) Interest paid (coupon = stated rate since issued at par): Cash decreases $18,000; Expenses increase $18,000; Earned Capital decreases $18,000 (the expense flows through to earned capital).</li>
+          <li>(c) Paying 102 for bonds carried at par (100): cash paid = 150,000 &times; 1.02 = $153,000, which is $3,000 more than the $150,000 carrying amount retired &mdash; a <b>loss</b> of $3,000.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li><span class="ans-part">a.</span> Cash +400,000; Liabilities +400,000.</li>
+            <li><span class="ans-part">b.</span> Cash &minus;18,000; Expenses +18,000; Earned Capital &minus;18,000.</li>
+            <li><span class="ans-part">c.</span> Cash &minus;153,000; Liabilities &minus;150,000; loss of $3,000.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- U7-Q11: Deere bonds -->
+    <div class="hw-q" data-gradable="true" data-unit="u7" data-topic="bonds">
+      <h3><span class="hw-num">U7-Q11</span>Connecting Bond Pricing to a Real Filing</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 7</span>
+      <p class="hw-prompt">A company's 10-K reports $300 million face value of 7.125% bonds, currently quoted at 131.03% of face, with an unchanged credit rating since issuance.</p>
+      <div class="hw-part-label">a. What is the current market value of these bonds?</div>
+      <table class="hw-table"><tr><td class="hw-label">Market value</td><td>$<input type="text" class="num" data-correct="393" data-tol="3"> million</td></tr></table>
+      <div class="hw-part-label">b. What does a price well above par, with an unchanged credit rating, imply about how market yields have moved since issuance?</div>
+      <select data-correct="Market yields have fallen well below 7.125%"><option value="">-- select --</option><option>Market yields have fallen well below 7.125%</option><option>Market yields have risen well above 7.125%</option><option>Market yields are unchanged at 7.125%</option></select>
+      <div class="hw-part-label">c. Does the current market price/yield change the interest expense the company reports on its income statement?</div>
+      <select data-correct="No"><option value="">-- select --</option><option>Yes</option><option>No</option></select>
+      <div class="hw-part-label">d. If the company repurchased all $300 million of face value at the current 131.03 price, what gain or loss would result (enter a loss as negative)?</div>
+      <table class="hw-table"><tr><td class="hw-label">Gain / (Loss)</td><td>$<input type="text" class="num" data-correct="-93" data-tol="3"> million</td></tr></table>
+      <div class="hw-part-label">e. At maturity, what will these bonds redeem for?</div>
+      <table class="hw-table"><tr><td class="hw-label">Redemption value</td><td>$<input type="text" class="num" data-correct="300" data-tol="1"> million</td></tr></table>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>(a) Market value = $300M &times; 131.03% &#8776; $393 million.</li>
+          <li>(b) Price above par with unchanged credit risk means investors are now willing to accept a lower yield than the 7.125% stated rate &mdash; so market rates have fallen since issuance.</li>
+          <li>(c) No &mdash; interest expense is locked in at the historical/effective rate from issuance. Market price/yield swings afterward don't touch the income statement unless the debt is actually retired.</li>
+          <li>(d) Loss = Carrying value (par, $300M) &minus; Cash paid (300M &times; 1.3103 &#8776; $393.1M) &#8776; &minus;$93 million.</li>
+          <li>(e) Bonds always redeem at face value at maturity &mdash; $300 million, regardless of where they've traded in between.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li><span class="ans-part">a.</span> &#8776;$393 million.</li>
+            <li><span class="ans-part">b.</span> Market yields have fallen well below 7.125%.</li>
+            <li><span class="ans-part">c.</span> No.</li>
+            <li><span class="ans-part">d.</span> &#8776;&minus;$93 million (loss).</li>
+            <li><span class="ans-part">e.</span> $300 million (face value).</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- U7-Q12: Home Depot ratio analysis -->
+    <div class="hw-q" data-gradable="true" data-unit="u7" data-topic="ratios">
+      <h3><span class="hw-num">U7-Q12</span>Analyzing the Quality of Debt (Home Depot)</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 7</span>
+      <p class="hw-prompt">Home Depot's large treasury stock balance makes its raw stockholders' equity very small (even negative in a prior year). After adding treasury stock back to equity to correct for this distortion, compute the following ratios for the current year and prior year.</p>
+      <table class="hw-table">
+        <tr><th>Ratio</th><th>Current Year</th><th>Prior Year</th></tr>
+        <tr><td class="hw-label">Liabilities-to-equity (adjusted)</td><td><input type="text" class="num" data-correct="0.84" data-tol="0.03"></td><td><input type="text" class="num" data-correct="0.93" data-tol="0.03"></td></tr>
+        <tr><td class="hw-label">Debt-to-equity (adjusted)</td><td><input type="text" class="num" data-correct="0.57" data-tol="0.03"></td><td><input type="text" class="num" data-correct="0.59" data-tol="0.03"></td></tr>
+        <tr><td class="hw-label">Times interest earned</td><td><input type="text" class="num" data-correct="14.9" data-tol="0.3"></td><td><input type="text" class="num" data-correct="17.1" data-tol="0.3"></td></tr>
+        <tr><td class="hw-label">Cash from ops to total debt (%)</td><td><input type="text" class="num" data-correct="29.0" data-tol="0.5"> %</td><td><input type="text" class="num" data-correct="35.8" data-tol="0.5"> %</td></tr>
+        <tr><td class="hw-label">Current ratio</td><td><input type="text" class="num" data-correct="1.41" data-tol="0.03"></td><td><input type="text" class="num" data-correct="1.01" data-tol="0.03"></td></tr>
+        <tr><td class="hw-label">Quick ratio</td><td><input type="text" class="num" data-correct="0.26" data-tol="0.03"></td><td><input type="text" class="num" data-correct="0.20" data-tol="0.03"></td></tr>
+      </table>
+      <div class="hw-part-label">Based on these ratios, is Home Depot financed primarily by debt or by equity (after the treasury-stock adjustment)?</div>
+      <select data-correct="Primarily by equity"><option value="">-- select --</option><option>Primarily by debt</option><option>Primarily by equity</option><option>Equally by both</option></select>
+      <div class="hw-part-label">Did coverage (times interest earned) get stronger or weaker from the prior year to the current year?</div>
+      <select data-correct="Weaker"><option value="">-- select --</option><option>Stronger</option><option>Weaker</option><option>Unchanged</option></select>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>Treasury stock is subtracted from equity on the books; adding it back to both equity and total assets undoes that distortion so the ratios reflect the underlying business rather than decades of buybacks.</li>
+          <li>Liabilities-to-equity and debt-to-equity use period-end (not averaged) balances &mdash; these are stock-to-stock comparisons.</li>
+          <li>Debt-to-equity (0.57&ndash;0.59, well under 1) and liabilities-to-equity (0.84&ndash;0.93, also under 1) both say equity &gt; debt once adjusted &mdash; Home Depot is primarily equity-financed.</li>
+          <li>Times interest earned fell from 17.1x to 14.9x &mdash; coverage weakened, even though ~15x is still a comfortable cushion.</li>
+          <li>Current ratio rose from 1.01 to 1.41 and quick ratio from 0.20 to 0.26 &mdash; short-term liquidity actually improved.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li>Primarily financed by equity, once the treasury-stock distortion is corrected for. Interest coverage weakened year-over-year, even though liquidity improved.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
         <div class="hw-q" data-gradable="true" data-unit="review" data-topic="conceptual">
       <h3><span class="hw-num">M12-Q1</span>Exam Prep Practice &mdash; Module 1 & 2 (Conceptual)</h3>
       <span class="tag" style="margin-bottom:1em; display:inline-block;">Exam Prep Practice</span>
