@@ -34,12 +34,14 @@
         <button class="nav-caret" aria-expanded="false" aria-label="Show ACCTG 6000 items">&#9662;</button>
         <div class="nav-dropdown-menu">
           <div class="nav-dropdown-menu-inner">
+            <a href="acctg-start.html">Start here &mdash; Accounting from Zero</a>
             <a href="acctg1.html">Unit 1 &mdash; Reporting Foundations</a>
             <a href="acctg2.html">Unit 2 &mdash; Statements &amp; SEC Filings</a>
             <a href="acctg3.html">Unit 3 &mdash; The Accounting Cycle</a>
             <a href="acctg5.html">Unit 5 &mdash; Revenue &amp; Receivables</a>
             <a href="acctg6.html">Unit 6 &mdash; Inventory &amp; Long-Lived Assets</a>
             <a href="acctg7.html">Unit 7 &mdash; Current &amp; Long-Term Liabilities</a>
+            <a href="acctg8.html">Unit 8 &mdash; Equity, Dividends &amp; EPS</a>
             <a href="acctg-homework.html">Accounting HW Practice</a>
             <a href="acctg-exam-prep.html">Exam Prep Practice</a>
           </div>
@@ -84,11 +86,11 @@
     <div>
       <span class="eyebrow">ACCTG 6000 &#x00b7; Unit 6</span>
       <h1>Inventory costing &amp; long-lived assets</h1>
-      <p class="lede" style="max-width:70ch;">Two asset categories that behave very differently once you dig in. Inventory costing methods (FIFO, LIFO, weighted average) can make otherwise-identical companies report wildly different numbers &mdash; and the direction of that difference flips depending on whether costs are rising or falling. Then property, plant &amp; equipment: what actually gets capitalized into an asset's cost, three ways to spread that cost over time (straight-line, double-declining balance, units of production), and what happens on the day an asset is finally sold. Plus the cash conversion cycle and intangible assets &mdash; copyrights, trademarks, patents, and goodwill.</p>
+      <p class="lede" style="max-width:70ch;">Two kinds of assets, one question: how much of what we paid has been <em>used up</em> and how much is still waiting on the balance sheet? We start from zero with a pantry and a van, build up to FIFO, LIFO and weighted average, the LIFO reserve, turnover, depreciation and disposals, and finish with the extras. Read top to bottom and you go from &ldquo;what is COGS?&rdquo; to every number on the exam. Each section is tagged by how likely it is to be tested, and the rarely-tested extras are in a clearly marked <strong>Go deeper</strong> section &mdash; skip it and you can still ace the test.</p>
       <div class="hero-stats">
-        <div class="hero-stat"><b>47</b><span>Flashcards</span></div>
-        <div class="hero-stat"><b>29</b><span>Quiz questions</span></div>
-        <div class="hero-stat"><b>&#x2713;</b><span>Method effects drill</span></div>
+        <div class="hero-stat"><b id="stat-flash">0</b><span>Flashcards</span></div>
+        <div class="hero-stat"><b id="stat-quiz">0</b><span>Quiz questions</span></div>
+        <div class="hero-stat"><b>25</b><span>Professor-style practice problems</span></div>
       </div>
     </div>
   </div>
@@ -96,21 +98,159 @@
 
 <main id="main">
 
-  <!-- ============ TEACHING CONTENT ============ -->
+  <!-- ============ PATH ============ -->
   <div class="wrap section" style="padding-top:0;">
     <div class="section-head">
-      <span class="eyebrow">Walk the material</span>
+      <span class="eyebrow">Your route through this unit</span>
+      <h2>Novice &rarr; understanding &rarr; test-ready</h2>
+    </div>
+    <ol class="path-bar">
+      <li><a href="#start"><span class="pnum">Step 1</span><b>Start here</b><em>The big idea, no jargon</em></a></li>
+      <li><a href="#learn"><span class="pnum">Step 2</span><b>Learn it</b><em>Seven short sections</em></a></li>
+      <li><a href="#cheat"><span class="pnum">Step 3</span><b>Cheat sheet</b><em>Every formula on one page</em></a></li>
+      <li><a href="#practice"><span class="pnum">Step 4</span><b>Practice</b><em>Quiz, flashcards, 25 problems</em></a></li>
+      <li><a href="#deeper"><span class="pnum">Optional</span><b>Go deeper</b><em>Extra depreciation methods</em></a></li>
+    </ol>
+    <div class="tier-key">
+      <span class="t"><span class="tier tier-test">&#9733; Test core</span> shows up on the exam</span>
+      <span class="t"><span class="tier tier-know">&#9680; Understand it</span> makes the core click</span>
+      <span class="t"><span class="tier tier-deep">&#9650; Go deeper</span> beyond the practice sets, optional</span>
+    </div>
+  </div>
+
+  <!-- ============ STEP 1: START HERE ============ -->
+  <div class="wrap section" id="start" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Step 1 &middot; Start here</span>
+      <h2>Spend the cost this year, or keep it on the shelf?</h2>
+    </div>
+    <div class="onramp">
+      <div>
+        <p class="big-idea">Every dollar a company pays for inventory or equipment ends up in one of two places: <strong>expensed now</strong> (it was used up this year) or <strong>still an asset</strong> (it is waiting to be used). This unit is just the rules for splitting that dollar.</p>
+        <div class="analogy">
+          <b>The pantry and the van</b>
+          <p><strong>Pantry.</strong> You buy flour three times this winter: 10 bags at $1, then 10 at $2, then 10 at $3. You bake with 15 bags. Which 15 did you use &mdash; the oldest (FIFO), the newest (LIFO), or a blend (average)? The bags you used are your <em>cost of goods sold</em>; the bags left in the pantry are your <em>inventory</em>. The flour is identical, only the story about which price you paid changes &mdash; and that changes reported profit.</p>
+          <p><strong>Van.</strong> A $30,000 delivery van is not &ldquo;used up&rdquo; the day you buy it. You spread its cost over the years it earns money. Each year's slice is <em>depreciation</em>; what has not been sliced off yet is the van's <em>book value</em>.</p>
+        </div>
+        <div class="words-first">
+          <h4>Six words to know before anything else</h4>
+          <dl>
+            <dt>Inventory</dt><dd>Goods you bought or made and have not sold yet. An asset.</dd>
+            <dt>COGS</dt><dd>&ldquo;Cost of goods sold.&rdquo; The cost of the goods you <em>did</em> sell. An expense.</dd>
+            <dt>FIFO / LIFO</dt><dd>First-in-first-out / last-in-first-out: which purchase layer is assumed to be sold first.</dd>
+            <dt>Depreciation</dt><dd>The yearly slice of a long-lived asset's cost that is expensed.</dd>
+            <dt>Net book value</dt><dd>Cost minus all depreciation so far. What the asset is carried at.</dd>
+            <dt>Salvage value</dt><dd>What you expect the asset to be worth at the end of its life. Never depreciated.</dd>
+          </dl>
+        </div>
+      </div>
+      <div>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 290" role="img" aria-labelledby="u6a-t u6a-d">
+            <title id="u6a-t">FIFO, LIFO and weighted average on the same purchases</title>
+            <desc id="u6a-d">Three purchase layers: 10 units at $1, 10 at $2, 10 at $3. Fifteen units are sold. FIFO sells the oldest 15: COGS $20, inventory $40. LIFO sells the newest 15: COGS $40, inventory $20. Weighted average prices every unit at $2: COGS $30, inventory $30. Each row totals $60.</desc>
+            <text x="260" y="16" class="t tc t-s">Prices rise: 10 units @ $1, then 10 @ $2, then 10 @ $3. Sell 15.</text>
+            <text x="8" y="50" class="t t-b">Bought</text>
+            <rect x="90" y="28" width="110" height="34" class="ss-blue" style="fill:#CFDDEA"/>
+            <rect x="200" y="28" width="110" height="34" class="ss-blue" style="fill:#CFDDEA"/>
+            <rect x="310" y="28" width="110" height="34" class="ss-blue" style="fill:#CFDDEA"/>
+            <text x="145" y="50" class="t tc t-blue t-b">10 @ $1</text>
+            <text x="255" y="50" class="t tc t-blue t-b">10 @ $2</text>
+            <text x="365" y="50" class="t tc t-blue t-b">10 @ $3</text>
+            <text x="90" y="76" class="t t-s">oldest</text>
+            <text x="420" y="76" class="t te t-s">newest</text>
+            <!-- FIFO -->
+            <text x="8" y="112" class="t t-b">FIFO</text>
+            <rect x="90" y="92" width="165" height="30" class="ss-rust" style="fill:#EBD3D0"/>
+            <rect x="255" y="92" width="165" height="30" class="ss-blue" style="fill:var(--blue)"/>
+            <text x="172" y="112" class="t tc t-rust t-b">sold (oldest)</text>
+            <text x="337" y="112" class="t tc t-w t-b">on the shelf</text>
+            <text x="430" y="105" class="t t-b t-rust">COGS $20</text>
+            <text x="430" y="120" class="t t-b t-blue">Inv. $40</text>
+            <!-- LIFO -->
+            <text x="8" y="160" class="t t-b">LIFO</text>
+            <rect x="90" y="140" width="165" height="30" class="ss-blue" style="fill:var(--blue)"/>
+            <rect x="255" y="140" width="165" height="30" class="ss-rust" style="fill:#EBD3D0"/>
+            <text x="172" y="160" class="t tc t-w t-b">on the shelf</text>
+            <text x="337" y="160" class="t tc t-rust t-b">sold (newest)</text>
+            <text x="430" y="153" class="t t-b t-rust">COGS $40</text>
+            <text x="430" y="168" class="t t-b t-blue">Inv. $20</text>
+            <!-- Average -->
+            <text x="8" y="208" class="t t-b">Average</text>
+            <rect x="90" y="188" width="165" height="30" class="ss-rust" style="fill:#EBD3D0"/>
+            <rect x="255" y="188" width="165" height="30" class="ss-blue" style="fill:var(--blue)"/>
+            <text x="172" y="208" class="t tc t-rust t-b">sold: 15 &times; $2</text>
+            <text x="337" y="208" class="t tc t-w t-b">left: 15 &times; $2</text>
+            <text x="430" y="201" class="t t-b t-rust">COGS $30</text>
+            <text x="430" y="216" class="t t-b t-blue">Inv. $30</text>
+            <text x="260" y="248" class="t tc t-b">COGS + ending inventory = $60 in every row</text>
+            <text x="260" y="268" class="t tc t-s">Rising prices: FIFO = lowest COGS, highest profit. LIFO = the reverse.</text>
+            <text x="260" y="283" class="t tc t-s">(Average: $60 &divide; 30 units = $2 per unit.)</text>
+          </svg>
+          <figcaption>Same flour, same total cost. The method only decides which dollars count as &ldquo;sold&rdquo; and which stay as inventory.</figcaption>
+        </figure>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 262" role="img" aria-labelledby="u6b-t u6b-d">
+            <title id="u6b-t">Life of a long-lived asset: cost to book value</title>
+            <desc id="u6b-d">Equipment costing $60,000 with $5,000 salvage and five-year life loses $11,000 of book value each year. Net book value: $60k, $49k, $38k, $27k, $16k, $5k. Accumulated depreciation: $0, $11k, $22k, $33k, $44k, $55k.</desc>
+            <text x="260" y="14" class="t tc t-s">Equipment: cost $60k, salvage $5k, 5 years &rarr; ($60k &minus; $5k) &divide; 5 = $11k a year</text>
+            <rect x="60" y="24" width="10" height="10" class="sf-blue"/><text x="76" y="33" class="t t-s">Net book value (left)</text>
+            <rect x="230" y="24" width="10" height="10" class="ss-rust" style="fill:#EBD3D0"/><text x="246" y="33" class="t t-s">Used up (accumulated depreciation)</text>
+            <!-- bars: baseline y=200, 2.5px per $k, total 150 -->
+            <rect x="60"  y="50" width="54" height="0"   class="sf-rust-soft"/>
+            <rect x="60"  y="50" width="54" height="150" class="ss-blue" style="fill:var(--blue)"/>
+            <rect x="130" y="50" width="54" height="28"  class="ss-rust" style="fill:#EBD3D0"/><rect x="130" y="78"  width="54" height="122" class="ss-blue" style="fill:var(--blue)"/>
+            <rect x="200" y="50" width="54" height="55"  class="ss-rust" style="fill:#EBD3D0"/><rect x="200" y="105" width="54" height="95"  class="ss-blue" style="fill:var(--blue)"/>
+            <rect x="270" y="50" width="54" height="83"  class="ss-rust" style="fill:#EBD3D0"/><rect x="270" y="133" width="54" height="67"  class="ss-blue" style="fill:var(--blue)"/>
+            <rect x="340" y="50" width="54" height="110" class="ss-rust" style="fill:#EBD3D0"/><rect x="340" y="160" width="54" height="40"  class="ss-blue" style="fill:var(--blue)"/>
+            <rect x="410" y="50" width="54" height="138" class="ss-rust" style="fill:#EBD3D0"/><rect x="410" y="188" width="54" height="12"  class="ss-blue" style="fill:var(--blue)"/>
+            <line x1="52" y1="188" x2="476" y2="188" class="ss-gold sd"/>
+            <text x="470" y="184" class="t t-xs" style="fill:var(--gold-deep)">salvage</text>
+            <text x="470" y="197" class="t t-xs" style="fill:var(--gold-deep)">$5k</text>
+            <text x="87"  y="216" class="t tc t-s">Buy</text><text x="157" y="216" class="t tc t-s">Year 1</text><text x="227" y="216" class="t tc t-s">Year 2</text>
+            <text x="297" y="216" class="t tc t-s">Year 3</text><text x="367" y="216" class="t tc t-s">Year 4</text><text x="437" y="216" class="t tc t-s">Year 5</text>
+            <text x="6" y="234" class="t t-xs t-blue t-b">NBV</text>
+            <text x="87" y="234" class="t tc t-blue t-b">$60k</text><text x="157" y="234" class="t tc t-blue t-b">$49k</text><text x="227" y="234" class="t tc t-blue t-b">$38k</text>
+            <text x="297" y="234" class="t tc t-blue t-b">$27k</text><text x="367" y="234" class="t tc t-blue t-b">$16k</text><text x="437" y="234" class="t tc t-blue t-b">$5k</text>
+            <text x="6" y="252" class="t t-xs t-rust t-b">Acc. dep.</text>
+            <text x="87" y="252" class="t tc t-rust t-b">$0</text><text x="157" y="252" class="t tc t-rust t-b">$11k</text><text x="227" y="252" class="t tc t-rust t-b">$22k</text>
+            <text x="297" y="252" class="t tc t-rust t-b">$33k</text><text x="367" y="252" class="t tc t-rust t-b">$44k</text><text x="437" y="252" class="t tc t-rust t-b">$55k</text>
+          </svg>
+          <figcaption>Net book value + accumulated depreciation always equals the original cost. Book value falls to salvage, never below.</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="tiny-example">
+      <h4>Tiny example: one van, three years, then a sale</h4>
+      <p>A bakery buys a van for <strong>$30,000</strong>. It expects to sell it for <strong>$6,000</strong> after <strong>4 years</strong>.</p>
+      <div class="calc">Depreciation = ($30,000 &minus; $6,000) &divide; 4 = $6,000 a year<br>After 3 years: accumulated depreciation = $18,000<br>Net book value  = $30,000 &minus; $18,000 = $12,000<br>Sold for $14,000 &rarr; gain = $14,000 &minus; $12,000 = $2,000</div>
+      <p>The same split-the-cost thinking powers the inventory half of the unit: <strong>Beginning inventory + purchases &minus; ending inventory = COGS</strong>. FIFO, LIFO and average are just three ways to price that &ldquo;ending inventory&rdquo; piece. Everything below is these two ideas in more detail.</p>
+    </div>
+  </div>
+
+  <!-- ============ STEP 2: LEARN IT ============ -->
+  <div class="wrap section" id="learn" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Step 2 &middot; Learn it</span>
       <h2>Unit 6, section by section</h2>
+      <p class="text-soft">Open them in order. Each one ends with an exam angle.</p>
+    </div>
+    <div class="tier-filter" role="group" aria-label="Filter sections by tier">
+      <span class="lbl">Show:</span>
+      <button class="chip active" data-tier-filter="all">Everything</button>
+      <button class="chip" data-tier-filter="core">&#9733; Test core only</button>
     </div>
 
-    <div class="source-block" id="src-costing">
+    <div class="source-block" id="src-costing" data-tier="test">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">01</span><h3>Inventory Costing Methods: FIFO, LIFO &amp; Weighted Average</h3></span>
+        <span class="stitle"><span class="num">01</span><h3>Inventory Costing Methods: FIFO, LIFO &amp; Weighted Average</h3> <span class="tier tier-test">&#9733; Test core</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
         <h4>Why costing method even matters</h4>
         <p>When a company buys the same type of inventory at different prices over time, it has to decide which of those costs get expensed as Cost of Goods Sold (COGS) when a unit is sold, and which costs stay on the balance sheet as ending inventory. Three methods handle this differently, and &mdash; critically &mdash; two otherwise-identical companies can report very different COGS, gross profit, and inventory simply because they picked different methods.</p>
+
+        <div class="key-flag"><b>Two identities to memorize</b> Beginning inventory + Purchases &minus; Ending inventory = COGS. &nbsp;COGS + Ending inventory = Total cost available (the same in every method).</div>
 
         <h4>The three methods</h4>
         <ul>
@@ -129,6 +269,16 @@
         </table>
         <p>Notice: whichever method produces the higher COGS necessarily produces the lower ending inventory, and vice versa &mdash; total cost available ($14,500) always splits between the two, no matter which method is used.</p>
 
+        <h4>Exam-style example (the professor's numbers)</h4>
+        <p>Begin with 500 units at $16. Buy 800 at $19, then 600 at $22. Sell 1,400. Units available = 1,900; total cost available = 8,000 + 15,200 + 13,200 = <strong>$36,400</strong>.</p>
+        <table class="hw-table">
+          <tr><th>Method</th><th>COGS (1,400 units)</th><th>Ending inventory (500 units)</th></tr>
+          <tr><td class="hw-label">FIFO</td><td>500@$16 + 800@$19 + 100@$22 = <strong>$25,400</strong></td><td>500@$22 = $11,000</td></tr>
+          <tr><td class="hw-label">LIFO</td><td>600@$22 + 800@$19 = <strong>$28,400</strong></td><td>500@$16 = $8,000</td></tr>
+          <tr><td class="hw-label">Weighted average</td><td>1,400 &times; ($36,400 &divide; 1,900 = $19.158) = <strong>$26,821</strong></td><td>500 &times; $19.158 = $9,579</td></tr>
+        </table>
+        <p>Check each row: COGS + ending inventory = $36,400.</p>
+
         <h4>The direction flips with the price trend</h4>
         <p>All of the classic "which method does what" rules assume <strong>rising</strong> costs (the normal, inflationary case). In a period of <strong>rising</strong> costs:</p>
         <ul>
@@ -142,9 +292,9 @@
       </div>
     </div>
 
-    <div class="source-block" id="src-reserve">
+    <div class="source-block" id="src-reserve" data-tier="test">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">02</span><h3>The LIFO Reserve &amp; Converting to FIFO</h3></span>
+        <span class="stitle"><span class="num">02</span><h3>The LIFO Reserve &amp; Converting to FIFO</h3> <span class="tier tier-test">&#9733; Test core</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -158,6 +308,8 @@
         <div class="quote-block">FIFO Inventory = LIFO Inventory + LIFO Reserve</div>
         <p>To convert LIFO figures to an as-if-FIFO basis: add the LIFO reserve to reported inventory (and, correspondingly, to total assets and equity, net of any tax effect a more advanced treatment would consider).</p>
 
+        <p>Worked example: a LIFO company reports inventory of $5.6 million and a LIFO reserve of $1.1 million. On a FIFO basis its inventory would be $5.6M + $1.1M = <strong>$6.7 million</strong>. Because the reserve is positive, converting to FIFO raises inventory <em>and</em> total assets (never lowers them).</p>
+
         <h4>Converting COGS using the change in the reserve</h4>
         <p>The reserve's <em>change</em> during the year, not just its ending balance, converts COGS between the two methods:</p>
         <div class="quote-block">FIFO COGS = LIFO COGS &minus; Increase in LIFO Reserve during the year</div>
@@ -167,9 +319,9 @@
       </div>
     </div>
 
-    <div class="source-block" id="src-turnover">
+    <div class="source-block" id="src-turnover" data-tier="test">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">03</span><h3>Analyzing Assets: Inventory Turnover, DSO, DPO &amp; the Cash Conversion Cycle</h3></span>
+        <span class="stitle"><span class="num">03</span><h3>Inventory Turnover, DIO &amp; Gross Margin</h3> <span class="tier tier-test">&#9733; Test core</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -186,6 +338,95 @@
         <h4>Turnover, DIO, and costing method interact</h4>
         <p>Because LIFO and FIFO report different COGS and different average inventory in a rising-cost environment, a LIFO company's turnover ratio isn't directly comparable to a FIFO competitor's without adjusting for the LIFO reserve first &mdash; another reason the reserve matters for analysis, not just disclosure compliance.</p>
 
+        <h4>Gross profit margin (it rides along with these)</h4>
+        <p>Gross profit is sales minus COGS; the margin expresses it as a share of sales:</p>
+        <div class="quote-block">Gross Profit Margin = (Sales &minus; COGS) &#x00f7; Sales</div>
+        <p>Worked example: sales $22 million, COGS $13.2 million &rarr; gross profit $8.8 million &rarr; margin = 8.8 &#x00f7; 22 = <strong>40%</strong>. (Not 60%, which is COGS &#x00f7; sales, and not 167%, which is sales &#x00f7; COGS.)</p>
+
+        <div class="exam-angle"><b>Exam angle</b>Turnover = COGS &#x00f7; <em>average</em> inventory, and DIO = 365 &#x00f7; turnover (turnover 5.0 means 73 days). A higher turnover means inventory sells faster; compare companies by turnover, not by size. A rising turnover isn't automatically good news &mdash; check whether it's genuinely faster sales or a company running so lean it risks stockouts. Reduce slow-moving stock while keeping sales and turnover rises; buy more stock without more sales and it falls.</div>
+
+      </div>
+    </div>
+
+    <div class="source-block" id="src-ppe" data-tier="test">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">04</span><h3>PP&amp;E: Straight-Line Depreciation, Disposal &amp; Turnover</h3> <span class="tier tier-test">&#9733; Test core</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>Depreciation: spreading the cost over the asset's life</h4>
+        <p>Once a cost basis is set, it is depreciated over the asset's useful life. Every method spreads the same total (Cost &minus; Salvage Value); they differ only in <em>when</em> the total gets expensed. <strong>Straight-line</strong> &mdash; equal slices &mdash; is the one the exam uses. The accelerated and usage-based methods are in <a href="#deep-methods">Go deeper &#9650;1</a>.</p>
+
+        <h4>Straight-line depreciation</h4>
+        <p>The most common method. Spreads an asset's depreciable cost evenly over its useful life:</p>
+        <div class="quote-block">Annual Depreciation = (Cost &minus; Salvage Value) &#x00f7; Useful Life</div>
+        <p>Worked example: equipment costs $60,000, has a $5,000 salvage value, and a five-year useful life. Annual depreciation = ($60,000 &minus; $5,000)/5 = $11,000 per year, every year, for five years.</p>
+
+        <h4>Partial-year depreciation</h4>
+        <p>When an asset is placed in service partway through the year, depreciation for that first (and often last) year is prorated for the fraction of the year the asset was actually in service.</p>
+        <p>Worked example: the same equipment above is purchased on <strong>September 1</strong>. It's in service for 4 of 12 months that calendar year. First-year depreciation = $11,000 &times; 4/12 = $3,667 (rounded).</p>
+        <p>Exam-style: equipment costs $144,000 on April 1, salvage $12,000, 5-year life. Full-year depreciation = $132,000 &#x00f7; 5 = $26,400; April 1 to December 31 is 9 months, so first-year depreciation = $26,400 &times; 9/12 = <strong>$19,800</strong>.</p>
+
+        <h4>Net book value &amp; disposal</h4>
+        <p>An asset's net book value (NBV) at any point is:</p>
+        <div class="quote-block">Net Book Value = Cost &minus; Accumulated Depreciation</div>
+        <p>When an asset is sold, compare the sale proceeds to its NBV at the time of sale:</p>
+        <div class="quote-block">Gain (or Loss) on Disposal = Proceeds &minus; Net Book Value</div>
+        <p>Worked example: equipment with an original cost of $60,000 and accumulated depreciation of $44,000 has an NBV of $16,000. If sold for $21,000, the company recognizes a $5,000 <strong>gain</strong> ($21,000 &minus; $16,000). If instead sold for $9,000, it recognizes a $7,000 <strong>loss</strong> ($9,000 &minus; $16,000).</p>
+        <p>Quick check on net book value after several years of straight-line: <strong>NBV = Cost &minus; (years &times; annual depreciation)</strong>. Cost $310,000, salvage $10,000, 10 years &rarr; $30,000 a year &rarr; after 3 years NBV = $310,000 &minus; $90,000 = <strong>$220,000</strong>.</p>
+
+        <h4>PP&amp;E turnover</h4>
+        <p>Measures how efficiently a company generates sales from its investment in long-lived assets:</p>
+        <div class="quote-block">PP&amp;E Turnover = Sales &#x00f7; PP&amp;E</div>
+        <p>A higher ratio means the company generates more sales per dollar tied up in property, plant, and equipment &mdash; though capital-intensive industries (manufacturing, utilities) naturally run lower PP&amp;E turnover than asset-light industries (services, software), so this ratio is most meaningful compared within an industry, not across very different ones. Notice this ratio's numerator is <strong>Sales</strong>, while Inventory Turnover and A/P Turnover both use <strong>COGS</strong> instead — three "turnover" ratios in this unit, but not all built the same way.</p>
+
+        <div class="exam-angle"><b>Exam angle</b>A sale at exactly NBV produces neither a gain nor a loss &mdash; a common wrong answer is assuming a sale always produces one or the other. Proceeds above NBV is a gain; below is a loss (cost $350,000, accumulated depreciation $260,000, sold for $110,000: NBV $90,000, so a $20,000 gain). Also check whether a question wants a <em>full</em> or a <em>partial</em> year of depreciation based on the purchase date. Higher PP&amp;E turnover means more sales per dollar of equipment, but only compare companies in the same industry.</div>
+
+      </div>
+    </div>
+
+    <div class="source-block" id="src-capitalize" data-tier="know">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">05</span><h3>PP&amp;E Cost Basis: What Gets Capitalized</h3> <span class="tier tier-know">&#9680; Understand it</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>What goes into the PP&amp;E cost basis &mdash; and what doesn't</h4>
+        <p>Not every dollar spent around the purchase of a long-lived asset gets capitalized (added to the asset's cost). The test is whether the cost is necessary to get the asset ready for its intended use, or whether it's an ongoing cost of operating the business.</p>
+        <table class="hw-table">
+          <tr><th>Included in PP&amp;E cost</th><th>Excluded (expensed when incurred)</th></tr>
+          <tr><td>Delivery and set-up costs</td><td>Minor/regular repairs and maintenance</td></tr>
+          <tr><td>Taxes on the purchase</td><td>Insurance on the asset</td></tr>
+          <tr><td>Direct costs to build (materials, labor)</td><td>Wages of employees who operate/use the asset</td></tr>
+          <tr><td>Overhauls that extend useful life or add substantial structural improvements</td><td>Routine servicing that just keeps the asset running as originally intended</td></tr>
+        </table>
+        <p>The recurring theme: costs that get the asset in place and ready to use, or that genuinely extend its life or capability, are capitalized. Costs that are part of the ordinary, repeated cost of owning and running the asset are expensed as incurred, even though the asset couldn't function without them (insurance, routine maintenance, operator wages).</p>
+        <div class="exam-angle"><b>Exam angle</b>Sort a list of costs: delivery, set-up, purchase taxes, direct build costs and life-extending overhauls are capitalized; routine repairs, insurance and operator wages are expensed as incurred.</div>
+      </div>
+    </div>
+
+    <div class="source-block" id="src-ccc" data-tier="know">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">06</span><h3>Days Sales &amp; Payables Outstanding, and the Cash Conversion Cycle</h3> <span class="tier tier-know">&#9680; Understand it</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>Three clocks, one cycle</h4>
+        <p>Cash leaves when you pay suppliers, comes back when customers pay. The cash conversion cycle counts the days in between. Inventory turnover gave you the middle clock (DIO); here are the other two.</p>
+        <figure class="diagram" style="max-width:560px;margin-left:auto;margin-right:auto;">
+          <svg viewBox="0 0 520 150" role="img" aria-labelledby="u6c-t u6c-d">
+            <title id="u6c-t">The cash conversion cycle timeline</title>
+            <desc id="u6c-d">A timeline: pay suppliers, inventory sits for DIO days, then is sold on credit and collected after DSO days. Suppliers are paid DPO days after purchase. CCC = DSO + DIO minus DPO.</desc>
+            <line x1="30" y1="60" x2="490" y2="60" class="ss-soft" stroke-width="3"/>
+            <circle cx="60" cy="60" r="8" class="sf-rust"/><circle cx="260" cy="60" r="8" class="sf-gold"/><circle cx="460" cy="60" r="8" class="sf-blue"/>
+            <text x="60" y="36" class="t tc t-b">Goods bought</text><text x="260" y="36" class="t tc t-b">Goods sold</text><text x="460" y="36" class="t tc t-b">Cash collected</text>
+            <text x="160" y="84" class="t tc t-b t-gold">DIO</text><text x="160" y="98" class="t tc t-s">days on the shelf</text>
+            <text x="360" y="84" class="t tc t-b t-blue">DSO</text><text x="360" y="98" class="t tc t-s">days to collect</text>
+            <text x="260" y="128" class="t tc t-b">CCC = DSO + DIO &minus; DPO</text>
+            <text x="260" y="143" class="t tc t-s">DPO = days you take to pay suppliers (it shortens the cycle)</text>
+          </svg>
+          <figcaption>Each day you delay paying suppliers is a day less of your own cash tied up.</figcaption>
+        </figure>
         <h4>The other two legs: DSO and DPO</h4>
         <p>DIO measures how fast inventory sells. Two related ratios measure the rest of the operating cycle &mdash; how fast the company collects cash from customers, and how slowly it pays its own suppliers:</p>
         <div class="quote-block">DSO (Days Sales Outstanding) = (Average Accounts Receivable &#x00f7; Sales Revenue) &times; 365</div>
@@ -204,83 +445,13 @@
           <tr><td class="hw-label">CCC</td><td>30.4 + 60.8 &minus; 30.4</td><td><strong>60.8 days</strong></td></tr>
         </table>
         <p>The lower the CCC, the better &mdash; less cash is tied up between paying for inventory and collecting from customers. A company can even run a <strong>negative</strong> CCC (common in some retail and subscription models), meaning it collects cash from customers before it even has to pay its own suppliers for that same inventory.</p>
-
-        <div class="exam-angle"><b>Exam angle</b>A rising turnover ratio (or falling DIO) isn't automatically good news &mdash; check whether it's driven by genuinely faster sales, or by a company running unusually lean (understocked) in a way that risks stockouts. For CCC questions specifically, watch the denominators: DSO and DPO both use 365-day annualization, but DSO divides by <em>sales</em> while DIO and DPO both divide by <em>COGS</em> &mdash; a common trap is dividing all three by the same figure.</div>
+        <div class="exam-angle"><b>Exam angle</b>Watch the denominators: DSO and DPO both annualize with 365 days, but DSO divides by <em>sales</em> while DIO and DPO both divide by <em>COGS</em> &mdash; a common trap is dividing all three by the same figure. Lower CCC is better.</div>
       </div>
     </div>
 
-    <div class="source-block" id="src-ppe">
+    <div class="source-block" id="src-intangibles" data-tier="know">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">04</span><h3>PP&amp;E: Depreciation, Disposal &amp; Turnover</h3></span>
-        <span class="chev">&#x2304;</span>
-      </button>
-      <div class="source-body">
-        <h4>What goes into the PP&amp;E cost basis &mdash; and what doesn't</h4>
-        <p>Not every dollar spent around the purchase of a long-lived asset gets capitalized (added to the asset's cost). The test is whether the cost is necessary to get the asset ready for its intended use, or whether it's an ongoing cost of operating the business.</p>
-        <table class="hw-table">
-          <tr><th>Included in PP&amp;E cost</th><th>Excluded (expensed when incurred)</th></tr>
-          <tr><td>Delivery and set-up costs</td><td>Minor/regular repairs and maintenance</td></tr>
-          <tr><td>Taxes on the purchase</td><td>Insurance on the asset</td></tr>
-          <tr><td>Direct costs to build (materials, labor)</td><td>Wages of employees who operate/use the asset</td></tr>
-          <tr><td>Overhauls that extend useful life or add substantial structural improvements</td><td>Routine servicing that just keeps the asset running as originally intended</td></tr>
-        </table>
-        <p>The recurring theme: costs that get the asset in place and ready to use, or that genuinely extend its life or capability, are capitalized. Costs that are part of the ordinary, repeated cost of owning and running the asset are expensed as incurred, even though the asset couldn't function without them (insurance, routine maintenance, operator wages).</p>
-
-        <h4>Depreciation methods: three ways to spread the cost</h4>
-        <p>Once a cost basis is set, it's depreciated over the asset's useful life using one of three methods. All three depreciate the same total amount (Cost &minus; Salvage Value) over the asset's life &mdash; they differ only in <em>when</em> that total gets expensed.</p>
-
-        <h4>Straight-line depreciation</h4>
-        <p>The most common method. Spreads an asset's depreciable cost evenly over its useful life:</p>
-        <div class="quote-block">Annual Depreciation = (Cost &minus; Salvage Value) &#x00f7; Useful Life</div>
-        <p>Worked example: equipment costs $60,000, has a $5,000 salvage value, and a five-year useful life. Annual depreciation = ($60,000 &minus; $5,000)/5 = $11,000 per year, every year, for five years.</p>
-
-        <h4>Double-declining balance (DDB)</h4>
-        <p>An <strong>accelerated</strong> method: depreciates more in the early years of an asset's life and less in later years. It applies a constant rate &mdash; double the straight-line rate &mdash; to the asset's <em>declining net book value</em> each year (not its original cost, and salvage value is ignored in the annual calculation, except as a floor):</p>
-        <div class="quote-block">DDB Rate = 2 &times; (1 &#x00f7; Useful Life) &nbsp;&nbsp;&nbsp; Annual Depreciation = DDB Rate &times; Beginning-of-Year Net Book Value</div>
-        <p>Worked example: the same $60,000 asset, $5,000 salvage value, five-year life. Straight-line rate = 1/5 = 20%, so the DDB rate = 40%.</p>
-        <table class="hw-table">
-          <tr><th>Year</th><th>Beginning NBV</th><th>Depreciation (40%)</th><th>Ending NBV</th></tr>
-          <tr><td class="hw-label">1</td><td>$60,000</td><td>$24,000</td><td>$36,000</td></tr>
-          <tr><td class="hw-label">2</td><td>$36,000</td><td>$14,400</td><td>$21,600</td></tr>
-          <tr><td class="hw-label">3</td><td>$21,600</td><td>$8,640</td><td>$12,960</td></tr>
-          <tr><td class="hw-label">4</td><td>$12,960</td><td>$5,184</td><td>$7,776</td></tr>
-          <tr><td class="hw-label">5</td><td>$7,776</td><td>$2,776*</td><td>$5,000</td></tr>
-        </table>
-        <p>*Year 5 is capped: the formula would call for $7,776 &times; 40% = $3,110, but that would push NBV below the $5,000 salvage value, which isn't allowed &mdash; an asset is never depreciated below salvage. So year 5's depreciation is plugged at whatever amount brings NBV down to exactly $5,000 ($7,776 &minus; $5,000 = $2,776).</p>
-
-        <h4>Units of production</h4>
-        <p>Ties depreciation to actual <strong>usage</strong> (units made, hours run, miles driven) instead of time. Useful when an asset's wear and tear tracks output rather than the calendar:</p>
-        <div class="quote-block">Rate per Unit = (Cost &minus; Salvage Value) &#x00f7; Total Estimated Units of Output</div>
-        <p>Worked example: a machine costs $100,000, has a $10,000 salvage value, and is expected to produce 90,000 units over its life. Rate per unit = ($100,000 &minus; $10,000)/90,000 = $1.00 per unit. If the machine produces 12,000 units in its first year, that year's depreciation = 12,000 &times; $1.00 = $12,000. A slower year with only 6,000 units produced would recognize just $6,000 of depreciation &mdash; the expense moves with output, not with the passage of time.</p>
-
-        <h4>Partial-year depreciation</h4>
-        <p>When an asset is placed in service partway through the year, depreciation for that first (and often last) year is prorated for the fraction of the year the asset was actually in service.</p>
-        <p>Worked example: the same equipment above is purchased on <strong>September 1</strong>. It's in service for 4 of 12 months that calendar year. First-year depreciation = $11,000 &times; 4/12 = $3,667 (rounded).</p>
-
-        <h4>Net book value &amp; disposal</h4>
-        <p>An asset's net book value (NBV) at any point is:</p>
-        <div class="quote-block">Net Book Value = Cost &minus; Accumulated Depreciation</div>
-        <p>When an asset is sold, compare the sale proceeds to its NBV at the time of sale:</p>
-        <div class="quote-block">Gain (or Loss) on Disposal = Proceeds &minus; Net Book Value</div>
-        <p>Worked example: equipment with an original cost of $60,000 and accumulated depreciation of $44,000 has an NBV of $16,000. If sold for $21,000, the company recognizes a $5,000 <strong>gain</strong> ($21,000 &minus; $16,000). If instead sold for $9,000, it recognizes a $7,000 <strong>loss</strong> ($9,000 &minus; $16,000).</p>
-
-        <h4>"Percent used up": how worn-out is this asset?</h4>
-        <p>Sometimes a question asks what fraction of an asset's usable life has already passed — not in years, but in dollars. It's tempting to compare net book value to the original cost, but that actually tells you the fraction <em>remaining</em>, not the fraction <em>used up</em>. The correct formula compares the <em>accumulated</em> depreciation (everything used up so far) to the original, unreduced cost:</p>
-        <div class="quote-block">% Used Up = Accumulated Depreciation &#x00f7; Gross (original) Cost</div>
-        <p>Worked example: that same $60,000 machine with $44,000 of accumulated depreciation is 44,000 &#x00f7; 60,000 = <strong>73.3% used up</strong> — meaning only 26.7% of its useful economic life is left. Notice that its net book value of $16,000 &#x00f7; $60,000 = 26.7% is the <em>complement</em> of the used-up figure (the two always add to 100%), which is exactly why it's so easy to accidentally grab the wrong one.</p>
-
-        <h4>PP&amp;E turnover</h4>
-        <p>Measures how efficiently a company generates sales from its investment in long-lived assets:</p>
-        <div class="quote-block">PP&amp;E Turnover = Sales &#x00f7; PP&amp;E</div>
-        <p>A higher ratio means the company generates more sales per dollar tied up in property, plant, and equipment &mdash; though capital-intensive industries (manufacturing, utilities) naturally run lower PP&amp;E turnover than asset-light industries (services, software), so this ratio is most meaningful compared within an industry, not across very different ones. Notice this ratio's numerator is <strong>Sales</strong>, while Inventory Turnover and A/P Turnover both use <strong>COGS</strong> instead — three "turnover" ratios in this unit, but not all built the same way.</p>
-
-        <div class="exam-angle"><b>Exam angle</b>A sale at exactly NBV produces neither a gain nor a loss &mdash; a common wrong answer is assuming a sale always produces one or the other. Also double check whether a question is asking for depreciation for a <em>full</em> year or a <em>partial</em> year based on the purchase date given, and whether it names straight-line, DDB, or units of production &mdash; each produces a different annual number from the same cost and salvage value. For DDB specifically, remember the rate applies to <em>declining NBV</em>, not original cost, and that depreciation stops once NBV reaches salvage value. And if asked how "used up" an asset is, divide accumulated depreciation by the <em>original</em> cost — dividing net book value by original cost instead gives you the opposite answer (percent remaining).</div>
-      </div>
-    </div>
-
-    <div class="source-block" id="src-intangibles">
-      <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">05</span><h3>Intangible Assets: Types, Capitalization &amp; Amortization</h3></span>
+        <span class="stitle"><span class="num">07</span><h3>Intangible Assets: Types, Capitalization &amp; Amortization</h3> <span class="tier tier-know">&#9680; Understand it</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -307,6 +478,122 @@
         <p>Some intangibles have <strong>no</strong> determinable useful life because they're expected to provide a benefit indefinitely. These are <em>not</em> amortized at all &mdash; instead they're tested periodically for impairment. Common examples: goodwill, and trademarks/copyrights a company intends to renew and use indefinitely.</p>
 
         <div class="exam-angle"><b>Exam angle</b>Two traps: (1) don't assume all the R&amp;D-type spending behind a self-created intangible gets capitalized &mdash; only the direct legal/filing costs do; and (2) don't automatically amortize every intangible &mdash; check whether it has a finite useful life (amortize, usually straight-line) or an indefinite one like goodwill (don't amortize; test for impairment instead).</div>
+      </div>
+    </div>
+
+    <!-- ===== GO DEEPER ===== -->
+    <div id="deeper" style="margin-top:2.2em;">
+      <div class="section-head">
+        <span class="eyebrow">Optional &middot; Go deeper</span>
+        <h2>Extra material</h2>
+      </div>
+      <div class="deep-note"><b>You can skip this and still ace the test</b>Unit 6 has no separate homework set, and neither of these methods appears in the Module 6 practice problems. They are in the class notes, so if the basics felt easy and you want the full depreciation toolkit, open this. For graded practice on what <em>is</em> tested, use the <a href="acctg-exam-prep.html?unit=m6">Module 6 practice problems</a>.</div>
+    </div>
+
+    <div class="source-block" id="deep-methods" data-tier="deep">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">&#9650;1</span><h3>Accelerated &amp; Usage-Based Depreciation, and &ldquo;Percent Used Up&rdquo;</h3> <span class="tier tier-deep">&#9650; Go deeper</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>Double-declining balance (DDB)</h4>
+        <p>An <strong>accelerated</strong> method: depreciates more in the early years of an asset's life and less in later years. It applies a constant rate &mdash; double the straight-line rate &mdash; to the asset's <em>declining net book value</em> each year (not its original cost, and salvage value is ignored in the annual calculation, except as a floor):</p>
+        <div class="quote-block">DDB Rate = 2 &times; (1 &#x00f7; Useful Life) &nbsp;&nbsp;&nbsp; Annual Depreciation = DDB Rate &times; Beginning-of-Year Net Book Value</div>
+        <p>Worked example: the same $60,000 asset, $5,000 salvage value, five-year life. Straight-line rate = 1/5 = 20%, so the DDB rate = 40%.</p>
+        <table class="hw-table">
+          <tr><th>Year</th><th>Beginning NBV</th><th>Depreciation (40%)</th><th>Ending NBV</th></tr>
+          <tr><td class="hw-label">1</td><td>$60,000</td><td>$24,000</td><td>$36,000</td></tr>
+          <tr><td class="hw-label">2</td><td>$36,000</td><td>$14,400</td><td>$21,600</td></tr>
+          <tr><td class="hw-label">3</td><td>$21,600</td><td>$8,640</td><td>$12,960</td></tr>
+          <tr><td class="hw-label">4</td><td>$12,960</td><td>$5,184</td><td>$7,776</td></tr>
+          <tr><td class="hw-label">5</td><td>$7,776</td><td>$2,776*</td><td>$5,000</td></tr>
+        </table>
+        <p>*Year 5 is capped: the formula would call for $7,776 &times; 40% = $3,110, but that would push NBV below the $5,000 salvage value, which isn't allowed &mdash; an asset is never depreciated below salvage. So year 5's depreciation is plugged at whatever amount brings NBV down to exactly $5,000 ($7,776 &minus; $5,000 = $2,776).</p>
+
+        <h4>Units of production</h4>
+        <p>Ties depreciation to actual <strong>usage</strong> (units made, hours run, miles driven) instead of time. Useful when an asset's wear and tear tracks output rather than the calendar:</p>
+        <div class="quote-block">Rate per Unit = (Cost &minus; Salvage Value) &#x00f7; Total Estimated Units of Output</div>
+        <p>Worked example: a machine costs $100,000, has a $10,000 salvage value, and is expected to produce 90,000 units over its life. Rate per unit = ($100,000 &minus; $10,000)/90,000 = $1.00 per unit. If the machine produces 12,000 units in its first year, that year's depreciation = 12,000 &times; $1.00 = $12,000. A slower year with only 6,000 units produced would recognize just $6,000 of depreciation &mdash; the expense moves with output, not with the passage of time.</p>
+
+        <h4>"Percent used up": how worn-out is this asset?</h4>
+        <p>Sometimes a question asks what fraction of an asset's usable life has already passed — not in years, but in dollars. It's tempting to compare net book value to the original cost, but that actually tells you the fraction <em>remaining</em>, not the fraction <em>used up</em>. The correct formula compares the <em>accumulated</em> depreciation (everything used up so far) to the original, unreduced cost:</p>
+        <div class="quote-block">% Used Up = Accumulated Depreciation &#x00f7; Gross (original) Cost</div>
+        <p>Worked example: that same $60,000 machine with $44,000 of accumulated depreciation is 44,000 &#x00f7; 60,000 = <strong>73.3% used up</strong> — meaning only 26.7% of its useful economic life is left. Notice that its net book value of $16,000 &#x00f7; $60,000 = 26.7% is the <em>complement</em> of the used-up figure (the two always add to 100%), which is exactly why it's so easy to accidentally grab the wrong one.</p>
+
+        <div class="exam-angle"><b>If it shows up</b>For DDB, the rate applies to <em>declining NBV</em>, not original cost, and depreciation stops once NBV reaches salvage. For units of production, depreciation moves with output, not the calendar. For &ldquo;percent used up&rdquo;, divide <em>accumulated depreciation</em> by <em>original</em> cost &mdash; NBV &#x00f7; cost is the percent <em>remaining</em>.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ STEP 3: CHEAT SHEET ============ -->
+  <div class="wrap section" id="cheat" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Step 3 &middot; Cheat sheet</span>
+      <h2>Every Unit 6 formula on one page</h2>
+    </div>
+    <div class="cheat-grid">
+      <div class="cheat-card"><h4>Inventory identities</h4>
+        <div class="cheat-formula">Beg inv + Purchases &minus; End inv = COGS<br>COGS + End inv = Cost available</div>
+        <p>Higher COGS always means lower ending inventory.</p></div>
+      <div class="cheat-card"><h4>FIFO / LIFO / average</h4>
+        <div class="cheat-formula">FIFO: oldest costs to COGS<br>LIFO: newest costs to COGS<br>Avg: total cost &divide; total units</div>
+        <p>Rising prices: FIFO = low COGS, high inventory, high profit. LIFO = the reverse. Falling prices flip it.</p></div>
+      <div class="cheat-card"><h4>LIFO reserve</h4>
+        <div class="cheat-formula">Reserve = FIFO inv &minus; LIFO inv<br>FIFO inv = LIFO inv + Reserve<br>FIFO COGS = LIFO COGS &minus; &Delta;Reserve</div>
+        <p>Balance reserve converts inventory (and total assets up). The <em>change</em> converts COGS.</p></div>
+      <div class="cheat-card"><h4>Turnover &amp; margin</h4>
+        <div class="cheat-formula">Turnover = COGS &divide; Avg inventory<br>DIO = 365 &divide; Turnover<br>Gross margin = (Sales &minus; COGS) &divide; Sales</div>
+        <p>Higher turnover = faster sales = fewer days.</p></div>
+      <div class="cheat-card"><h4>Straight-line</h4>
+        <div class="cheat-formula">(Cost &minus; Salvage) &divide; Life<br>Partial year: &times; months/12<br>NBV = Cost &minus; Acc. dep.</div>
+        <p>Salvage is never depreciated.</p></div>
+      <div class="cheat-card"><h4>Disposal</h4>
+        <div class="cheat-formula">Gain/(Loss) = Proceeds &minus; NBV</div>
+        <p>Sale at exactly NBV: no gain, no loss.</p></div>
+      <div class="cheat-card"><h4>PP&amp;E turnover</h4>
+        <div class="cheat-formula">Sales &divide; PP&amp;E</div>
+        <p>Numerator is sales (not COGS). Compare within an industry.</p></div>
+      <div class="cheat-card"><h4>Capitalize vs expense <span class="tier tier-know">&#9680;</span></h4>
+        <div class="cheat-formula">Capitalize: delivery, set-up, taxes, build costs, life-extending overhauls<br>Expense: repairs, insurance, operator wages</div>
+        <p>Ready to use or longer life = asset.</p></div>
+      <div class="cheat-card"><h4>Cash conversion cycle <span class="tier tier-know">&#9680;</span></h4>
+        <div class="cheat-formula">DSO = AR &divide; Sales &times; 365<br>DIO = Inv &divide; COGS &times; 365<br>DPO = AP &divide; COGS &times; 365<br>CCC = DSO + DIO &minus; DPO</div>
+        <p>DSO uses sales; DIO and DPO use COGS.</p></div>
+      <div class="cheat-card"><h4>Intangibles <span class="tier tier-know">&#9680;</span></h4>
+        <div class="cheat-formula">Purchased: capitalize full price<br>Self-created: only legal/filing fees<br>Finite life: amortize<br>Indefinite (goodwill): impairment test</div>
+        <p>R&amp;D salaries are expensed.</p></div>
+      <div class="cheat-card"><h4>Extras <span class="tier tier-deep">&#9650;</span></h4>
+        <div class="cheat-formula">DDB rate = 2 &divide; Life, on NBV<br>Units rate = (Cost &minus; Salv) &divide; Units<br>% used up = Acc dep &divide; Cost</div>
+        <p>DDB stops at salvage.</p></div>
+    </div>
+    <div class="cheat-traps">
+      <h4>Traps the exam sets</h4>
+      <ul>
+        <li>Memorizing &ldquo;FIFO = low COGS&rdquo; as absolute &mdash; then a falling-price question flips it. Derive from the mechanism.</li>
+        <li>Using the ending LIFO reserve to convert COGS (use the <em>change</em>), or subtracting the reserve when moving to FIFO inventory (you add it).</li>
+        <li>Dividing COGS by <em>ending</em> inventory instead of average, or forgetting DIO is 365 &divide; turnover.</li>
+        <li>Margin: dividing gross profit by COGS, or reporting COGS &divide; sales.</li>
+        <li>Full-year depreciation when the asset was bought mid-year; depreciating down to zero instead of to salvage.</li>
+        <li>Calling every disposal a gain or loss &mdash; sale at NBV is neither.</li>
+        <li>Using Sales for DPO (it is COGS) or for PP&amp;E turnover with COGS (it is sales).</li>
+        <li>Capitalizing insurance or routine repairs; capitalizing R&amp;D salaries behind a self-created patent.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ STEP 4: PRACTICE ============ -->
+  <div class="wrap section" id="practice" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Step 4 &middot; Practice</span>
+      <h2>Now test it</h2>
+    </div>
+    <div class="practice-panel">
+      <p style="margin:0;">Work in this order: the <a href="#quiz">quick quiz</a> and the <a href="#method-diagnostic-section">method effects drill</a> check the basics, then the 25 Module 6 practice problems, then the full mock test.</p>
+      <div class="practice-row">
+        <a class="btn blue" href="acctg-exam-prep.html?unit=m6">Module 6 practice problems (25)</a>
+        <a class="btn ghost" href="acctg-mock-test.html">ACCTG mock test</a>
+        <a class="btn ghost" href="#quiz">Unit 6 quiz</a>
+        <a class="btn ghost" href="#method-diagnostic-section">Method effects drill</a>
       </div>
     </div>
   </div>
@@ -474,7 +761,7 @@
     <div class="section-head">
       <span class="eyebrow">Test yourself</span>
       <h2>Unit 6 quiz</h2>
-      <p class="text-soft">Questions covering all four sections, randomized each attempt, with an explanation after every answer.</p>
+      <p class="text-soft">Questions covering every section, randomized each attempt, with an explanation after every answer.</p>
     </div>
 
     <div class="quiz-shell" id="quiz-shell">
@@ -495,17 +782,18 @@
       <h2>Likely exam &amp; discussion angles</h2>
     </div>
     <div class="callout">
+      <p style="margin:0 0 .6em;font-size:.88rem;"><span class="tier tier-test">&#9733;</span> = test core &nbsp; <span class="tier tier-know">&#9680;</span> = understand it (lower odds) &nbsp; Extras are in Go deeper.</p>
       <ul style="margin:0;">
-        <li>Given costs, quantities, and a price trend, compute COGS and ending inventory under FIFO, LIFO, and weighted average, then explain why the three don't match.</li>
-        <li>Explain why the standard "FIFO = low COGS" rule flips in a falling-cost environment.</li>
-        <li>Convert a LIFO company's inventory and COGS to a FIFO basis using the LIFO reserve and its year-over-year change.</li>
-        <li>Compute inventory turnover and DIO, and explain what a rising or falling value of each actually indicates.</li>
-        <li>Compute DSO, DPO, and the cash conversion cycle from average receivables, inventory, payables, sales, and COGS.</li>
-        <li>Given a list of costs around a PP&amp;E purchase, sort which ones are capitalized into the asset's cost and which are expensed immediately.</li>
-        <li>Compute straight-line, double-declining-balance, and units-of-production depreciation for the same asset, and explain why they produce different annual numbers from the same cost and salvage value.</li>
-        <li>Given an asset's cost, accumulated depreciation, and sale price, determine whether the disposal produces a gain, a loss, or neither.</li>
-        <li>Compute PP&amp;E turnover and explain why it's most meaningful compared within a single industry.</li>
-        <li>Explain what gets capitalized versus expensed for a self-created intangible asset, and identify which intangibles are amortized versus tested for impairment.</li>
+        <li><span class="tier tier-test">&#9733;</span> Given costs, quantities, and a price trend, compute COGS and ending inventory under FIFO, LIFO, and weighted average, then explain why the three don't match.</li>
+        <li><span class="tier tier-test">&#9733;</span> Explain why the standard "FIFO = low COGS" rule flips in a falling-cost environment.</li>
+        <li><span class="tier tier-test">&#9733;</span> Convert a LIFO company's inventory (and total assets) and COGS to a FIFO basis using the LIFO reserve and its year-over-year change.</li>
+        <li><span class="tier tier-test">&#9733;</span> Compute inventory turnover, DIO and gross profit margin, and explain what a rising or falling value of each actually indicates.</li>
+        <li><span class="tier tier-know">&#9680;</span> Compute DSO, DPO, and the cash conversion cycle from average receivables, inventory, payables, sales, and COGS.</li>
+        <li><span class="tier tier-know">&#9680;</span> Given a list of costs around a PP&amp;E purchase, sort which ones are capitalized into the asset's cost and which are expensed immediately.</li>
+        <li><span class="tier tier-test">&#9733;</span> Compute straight-line depreciation (full and partial year) and net book value. <em>Extra:</em> the same asset under double-declining-balance and units-of-production, and why the annual numbers differ.</li>
+        <li><span class="tier tier-test">&#9733;</span> Given an asset's cost, accumulated depreciation, and sale price, determine whether the disposal produces a gain, a loss, or neither.</li>
+        <li><span class="tier tier-test">&#9733;</span> Compute PP&amp;E turnover and explain why it's most meaningful compared within a single industry.</li>
+        <li><span class="tier tier-know">&#9680;</span> Explain what gets capitalized versus expensed for a self-created intangible asset, and identify which intangibles are amortized versus tested for impairment.</li>
       </ul>
     </div>
   </div>
@@ -522,5 +810,11 @@
 <script src="assets/acctg6-quiz-data.js"></script>
 <script src="assets/app.js"></script>
 <script src="assets/acctg6-interactive.js"></script>
+<script src="assets/learnpath.js"></script>
+<script>
+  (function(){ var f=document.getElementById('stat-flash'), q=document.getElementById('stat-quiz');
+    if(f && typeof FLASHCARDS!=='undefined') f.textContent=FLASHCARDS.length;
+    if(q && typeof QUIZ_QUESTIONS!=='undefined') q.textContent=QUIZ_QUESTIONS.length; })();
+</script>
 </body>
 </html>

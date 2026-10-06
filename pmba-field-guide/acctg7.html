@@ -34,12 +34,14 @@
         <button class="nav-caret" aria-expanded="false" aria-label="Show ACCTG 6000 items">&#9662;</button>
         <div class="nav-dropdown-menu">
           <div class="nav-dropdown-menu-inner">
+            <a href="acctg-start.html">Start here &mdash; Accounting from Zero</a>
             <a href="acctg1.html">Unit 1 &mdash; Reporting Foundations</a>
             <a href="acctg2.html">Unit 2 &mdash; Statements &amp; SEC Filings</a>
             <a href="acctg3.html">Unit 3 &mdash; The Accounting Cycle</a>
             <a href="acctg5.html">Unit 5 &mdash; Revenue &amp; Receivables</a>
             <a href="acctg6.html">Unit 6 &mdash; Inventory &amp; Long-Lived Assets</a>
             <a href="acctg7.html">Unit 7 &mdash; Current &amp; Long-Term Liabilities</a>
+            <a href="acctg8.html">Unit 8 &mdash; Equity, Dividends &amp; EPS</a>
             <a href="acctg-homework.html">Accounting HW Practice</a>
             <a href="acctg-exam-prep.html">Exam Prep Practice</a>
           </div>
@@ -83,11 +85,11 @@
     <div>
       <span class="eyebrow">ACCTG 6000 &#x00b7; Unit 7</span>
       <h1>Current &amp; long-term liabilities</h1>
-      <p class="lede" style="max-width:70ch;">Everything a company owes, and how it decides what to put on the balance sheet at all. We'll start with the fuzzy cases &mdash; lawsuits, warranties, "we might owe this" &mdash; then move to the two big categories of borrowed money: notes and mortgages (where you pay down a loan bit by bit) and bonds (where a company borrows from thousands of investors at once, priced using present value math). We'll close with the handful of ratios analysts use to ask "is this company's debt load dangerous, or just normal?" No accounting background required &mdash; every formula here gets a plain-English explanation and a fully worked number example before it gets used for anything.</p>
+      <p class="lede" style="max-width:70ch;">Everything a company owes, and how it decides what goes on the balance sheet at all. We start from zero with a tab and a savings slip, then work through the fuzzy cases (lawsuits, warranties, bonuses), short-term notes, mortgages and bonds, and finish with the ratios analysts use to judge a debt load. Read top to bottom and you go from &ldquo;what is a liability?&rdquo; to every number in the professor's practice set. The harder homework material (present-value bond pricing, real filings) sits in a clearly marked <strong>Go deeper</strong> section &mdash; you can skip it and still ace the test.</p>
       <div class="hero-stats">
-        <div class="hero-stat"><b>44</b><span>Flashcards</span></div>
-        <div class="hero-stat"><b>23</b><span>Quiz questions</span></div>
-        <div class="hero-stat"><b>&#x2713;</b><span>Bond &amp; mortgage math, worked step by step</span></div>
+        <div class="hero-stat"><b id="stat-flash">0</b><span>Flashcards</span></div>
+        <div class="hero-stat"><b id="stat-quiz">0</b><span>Quiz questions</span></div>
+        <div class="hero-stat"><b>49</b><span>Professor practice problems</span></div>
       </div>
     </div>
   </div>
@@ -95,16 +97,131 @@
 
 <main id="main">
 
-  <!-- ============ TEACHING CONTENT ============ -->
+  <!-- ============ PATH ============ -->
   <div class="wrap section" style="padding-top:0;">
     <div class="section-head">
-      <span class="eyebrow">Walk the material</span>
+      <span class="eyebrow">Your route through this unit</span>
+      <h2>Novice &rarr; understanding &rarr; test-ready</h2>
+    </div>
+    <ol class="path-bar">
+      <li><a href="#start"><span class="pnum">Step 1</span><b>Start here</b><em>The big idea, no jargon</em></a></li>
+      <li><a href="#learn"><span class="pnum">Step 2</span><b>Learn it</b><em>Eight short sections</em></a></li>
+      <li><a href="#cheat"><span class="pnum">Step 3</span><b>Cheat sheet</b><em>Every entry and ratio</em></a></li>
+      <li><a href="#practice"><span class="pnum">Step 4</span><b>Practice</b><em>Quiz, flashcards, professor's 49</em></a></li>
+      <li><a href="#deeper"><span class="pnum">Optional</span><b>Go deeper</b><em>Harder homework-level material</em></a></li>
+    </ol>
+    <div class="tier-key">
+      <span class="t"><span class="tier tier-test">&#9733; Test core</span> shows up on the exam</span>
+      <span class="t"><span class="tier tier-know">&#9680; Understand it</span> makes the core click</span>
+      <span class="t"><span class="tier tier-deep">&#9650; Go deeper</span> homework-level, optional</span>
+    </div>
+  </div>
+
+  <!-- ============ STEP 1: START HERE ============ -->
+  <div class="wrap section" id="start" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Step 1 &middot; Start here</span>
+      <h2>A liability is a promise to pay for something that already happened</h2>
+    </div>
+    <div class="onramp">
+      <div>
+        <p class="big-idea">This unit answers two questions. First: does a promise go on the books (and for how much), in the footnotes, or nowhere? Second: for borrowed money, how do interest and the balance move every period?</p>
+        <div class="analogy">
+          <b>The tab and the savings slip</b>
+          <p><strong>The tab.</strong> You ate dinner (past event), the bill is coming (obligation), and you know roughly how much (estimable). That is a liability, so it goes on the books. A <em>possible</em> lawsuit from a customer who might sue is only worth a footnote, and a far-fetched one is not mentioned at all.</p>
+          <p><strong>The savings slip.</strong> A bond is a loan from many people, written as a slip: &ldquo;pay the holder $1,000 at the end, plus $60 a year.&rdquo; If everyone else's savings accounts now pay 8%, nobody hands you the full $1,000 for a slip paying only 6%. They pay less, and that gap is the <em>discount</em>. If accounts pay only 4%, your 6% slip is a bargain and they pay extra: a <em>premium</em>. A mortgage is the same logic from the other side: the bank charges interest on whatever you still owe, so as the balance shrinks, so does the interest part of each payment.</p>
+        </div>
+        <div class="words-first">
+          <h4>Six words to know before anything else</h4>
+          <dl>
+            <dt>Liability</dt><dd>Something the company owes because of a past event.</dd>
+            <dt>Accrue</dt><dd>Record an expense and a liability for time that has passed, even though no cash has moved yet.</dd>
+            <dt>Face value</dt><dd>The lump sum a bond repays at the end. Also called par.</dd>
+            <dt>Stated rate</dt><dd>The fixed rate printed on the bond. Cash interest = face &times; stated rate.</dd>
+            <dt>Market rate</dt><dd>What investors could earn elsewhere right now. It sets the bond's price.</dd>
+            <dt>Carrying amount</dt><dd>What the bond or loan is carried at on the books today: face &plusmn; unamortized premium/discount.</dd>
+          </dl>
+        </div>
+      </div>
+      <div>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 252" role="img" aria-labelledby="u7a-t u7a-d">
+            <title id="u7a-t">Is it a liability? Three ingredients and the likelihood dial</title>
+            <desc id="u7a-d">A liability needs a past event, a present obligation, and a payout that is probable and estimable. Remote: do nothing. Reasonably possible: footnote only. Probable: record it if it can be estimated, otherwise footnote.</desc>
+            <text x="260" y="14" class="t tc t-s">A liability needs all three ingredients:</text>
+            <rect x="10" y="22" width="160" height="46" rx="6" class="sf-blue-soft" style="stroke:var(--blue);stroke-width:1"/>
+            <text x="90" y="42" class="t tc t-b t-blue" style="font-size:12px">1. Past event</text><text x="90" y="58" class="t tc t-xs">something already happened</text>
+            <rect x="180" y="22" width="160" height="46" rx="6" class="sf-blue-soft" style="stroke:var(--blue);stroke-width:1"/>
+            <text x="260" y="42" class="t tc t-b t-blue" style="font-size:12px">2. Present obligation</text><text x="260" y="58" class="t tc t-xs">we owe it, or probably will</text>
+            <rect x="350" y="22" width="160" height="46" rx="6" class="sf-blue-soft" style="stroke:var(--blue);stroke-width:1"/>
+            <text x="430" y="42" class="t tc t-b t-blue" style="font-size:12px">3. Probable, estimable</text><text x="430" y="58" class="t tc t-xs">a fair number exists</text>
+            <text x="260" y="92" class="t tc t-s">If it is uncertain, how likely is the payout?</text>
+            <rect x="10" y="100" width="160" height="40" class="sf-paper3"/>
+            <rect x="170" y="100" width="170" height="40" class="sf-gold-soft"/>
+            <rect x="340" y="100" width="170" height="40" class="sf-rust-soft"/>
+            <text x="90" y="118" class="t tc t-b">Remote</text><text x="90" y="133" class="t tc t-xs">unlikely</text>
+            <text x="255" y="118" class="t tc t-b t-gold">Reasonably possible</text><text x="255" y="133" class="t tc t-xs">real chance, not probable</text>
+            <text x="425" y="118" class="t tc t-b t-rust">Probable</text><text x="425" y="133" class="t tc t-xs">likely to be paid</text>
+            <rect x="10" y="150" width="160" height="58" rx="6" class="sf-paper2" style="stroke:var(--text-soft);stroke-width:1"/>
+            <text x="90" y="170" class="t tc t-b">DO NOTHING</text><text x="90" y="186" class="t tc t-xs">not recorded,</text><text x="90" y="199" class="t tc t-xs">not even mentioned</text>
+            <rect x="180" y="150" width="160" height="58" rx="6" class="sf-gold-soft" style="stroke:var(--gold-deep);stroke-width:1"/>
+            <text x="260" y="170" class="t tc t-b t-gold">FOOTNOTE ONLY</text><text x="260" y="186" class="t tc t-xs">describe it, no number</text><text x="260" y="199" class="t tc t-xs">on the balance sheet</text>
+            <rect x="350" y="150" width="160" height="58" rx="6" class="sf-rust-soft" style="stroke:var(--rust);stroke-width:1"/>
+            <text x="430" y="170" class="t tc t-b t-rust">RECORD IT</text><text x="430" y="186" class="t tc t-xs">Dr Expense, Cr Liability</text><text x="430" y="199" class="t tc t-xs">(can't estimate? footnote)</text>
+            <line x1="10" y1="226" x2="500" y2="226" class="ss-soft"/>
+            <path d="M492 221 L502 226 L492 231" class="ss-soft"/>
+            <text x="260" y="244" class="t tc t-s">likelihood of paying rises left to right</text>
+          </svg>
+          <figcaption>A signed note for a fixed amount isn't uncertain at all, so it skips the dial and is simply recorded.</figcaption>
+        </figure>
+        <figure class="diagram">
+          <svg viewBox="0 64 520 154" role="img" aria-labelledby="u7b-t u7b-d">
+            <title id="u7b-t">Bond price seesaw: market rates up, price down</title>
+            <desc id="u7b-d">Two seesaws. When the market rate rises above the bond's frozen 6 percent coupon, the bond price falls (discount). When the market rate falls below it, the price rises (premium).</desc>
+            <text x="260" y="76" class="t tc t-s">The bond's stated rate is frozen at 6%. The market rate moves.</text>
+            <g transform="rotate(10 130 130)"><line x1="30" y1="130" x2="230" y2="130" class="ss-ink" stroke-width="5" stroke-linecap="round"/></g>
+            <polygon points="116,166 144,166 130,134" class="sf-gold"/><line x1="20" y1="166" x2="240" y2="166" class="ss-soft"/>
+            <circle cx="31.5" cy="112.6" r="7" class="sf-rust"/><circle cx="228.5" cy="147.4" r="7" class="sf-blue"/>
+            <text x="22" y="98" class="t t-b t-rust">Market rate rises</text>
+            <text x="238" y="186" class="t te t-b t-blue">Bond price falls</text>
+            <g transform="rotate(-10 390 130)"><line x1="290" y1="130" x2="490" y2="130" class="ss-ink" stroke-width="5" stroke-linecap="round"/></g>
+            <polygon points="376,166 404,166 390,134" class="sf-gold"/><line x1="280" y1="166" x2="500" y2="166" class="ss-soft"/>
+            <circle cx="291.5" cy="147.4" r="7" class="sf-rust"/><circle cx="488.5" cy="112.6" r="7" class="sf-blue"/>
+            <text x="282" y="186" class="t t-b t-rust">Market rate falls</text>
+            <text x="498" y="98" class="t te t-b t-blue">Bond price rises</text>
+            <text x="130" y="205" class="t tc t-xs">Old 6% coupon looks stingy: discount</text>
+            <text x="390" y="205" class="t tc t-xs">Old 6% coupon looks generous: premium</text>
+          </svg>
+          <figcaption>Stated &gt; market = premium. Stated &lt; market = discount. The cash coupon itself never changes.</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="tiny-example">
+      <h4>Two tiny examples</h4>
+      <p><strong>1. Accrued interest.</strong> A $10,000 note at 6% has been outstanding 73 days at year-end (365-day year).</p>
+      <div class="calc">Interest = $10,000 &times; 6% &times; 73/365 = $120<br>Dr Interest Expense 120 / Cr Interest Payable 120</div>
+      <p><strong>2. A one-year bond.</strong> Face $1,000, stated rate 6% (investors get $1,060 in total), but the market rate is 8%.</p>
+      <div class="calc">Price = $1,060 &divide; 1.08 = $981.48   (discount $18.52)<br>Interest expense = $981.48 &times; 8% = $78.52<br>= $60 cash coupon + $18.52 discount amortized<br>Carrying amount = $981.48 + $18.52 = $1,000 = face</div>
+      <p>That is the bond half of the unit in four lines: <strong>price below face, expense above cash, the gap amortizes, carrying amount climbs to face.</strong></p>
+    </div>
+  </div>
+
+  <!-- ============ STEP 2: LEARN IT ============ -->
+  <div class="wrap section" id="learn" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Step 2 &middot; Learn it</span>
       <h2>Unit 7, section by section</h2>
+      <p class="text-soft">Open them in order. Each one ends with an exam angle.</p>
+    </div>
+    <div class="tier-filter" role="group" aria-label="Filter sections by tier">
+      <span class="lbl">Show:</span>
+      <button class="chip active" data-tier-filter="all">Everything</button>
+      <button class="chip" data-tier-filter="core">&#9733; Test core only</button>
     </div>
 
-    <div class="source-block" id="src-contingent">
+    <div class="source-block" id="src-contingent" data-tier="test">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">01</span><h3>What Counts as a Liability? Contingencies &amp; Warranties</h3></span>
+        <span class="stitle"><span class="num">01</span><h3>What Counts as a Liability? Contingencies &amp; Warranties</h3> <span class="tier tier-test">&#9733; Test core</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -135,13 +252,20 @@
           <li>Warranty liability at year-end = (15,000 &minus; 12,000) &times; $160 = <strong>$480,000</strong> (what's still owed, since 12,000 of the expected 15,000 repairs are already done)</li>
         </ul>
         <p>One subtlety worth sitting with: when a customer actually brings in a broken toaster and it gets repaired, that repair does <strong>not</strong> create a new expense (assuming the original estimate was reasonable) &mdash; the expense was already booked back at the time of sale. Servicing the claim just uses up part of the liability that's already sitting on the books, the same way paying off part of a loan doesn't create a new expense; it just reduces a balance. If claims end up running higher than expected, the company revises its estimate going forward &mdash; a change that only affects the current and future periods, not something that requires going back and restating last year's numbers.</p>
-        <div class="exam-angle"><b>Exam angle</b>Don't force every liability into the probable/possible/remote framework &mdash; check first whether the obligation is even <em>uncertain</em>. A signed note with a stated amount just gets recorded; that test is reserved for things like lawsuits and warranties where the amount or existence of the obligation isn't yet nailed down. And remember warranty expense is booked once, at the time of sale, for the <em>whole</em> expected cost &mdash; not doled out bit by bit as repairs actually happen.</div>
+        <h4>Bonuses: accrue what employees have already earned</h4>
+        <p>A bonus plan is the same idea as a warranty: the work is done this year, so the cost belongs to this year even if the check is written next year. If executives get 4% of pretax income and pretax income before the bonus is $950,000, the bonus liability is 4% &times; $950,000 = <strong>$38,000</strong>: <em>Dr Bonus Expense / Cr Bonus Payable</em>.</p>
+
+        <h4>What is <em>not</em> a liability yet: executory contracts and plans</h4>
+        <p>A liability needs a <strong>past event</strong>. If you owe a supplier $185,000 for inventory you have already received, that is a liability. But if you have only <em>signed an agreement to buy</em> $90,000 of equipment next year and nothing has been delivered, nothing has happened yet. This is an <strong>executory contract</strong>: a promise on both sides that has not been performed. It is not recorded (at most a footnote). The same goes for a planned expansion or an expected drop in sales: all future events, so no liability. Total liability in that example: <strong>$185,000</strong>, not $275,000.</p>
+        <div class="key-flag"><b>Three-second test</b> Has the thing already been delivered, used, earned or caused? If yes, it may be a liability. If it is only planned or promised, it is not.</div>
+
+        <div class="exam-angle"><b>Exam angle</b>Check first whether the obligation is even <em>uncertain</em>: a signed note with a stated amount just gets recorded. For lawsuits: probable and estimable = record; probable but not estimable = footnote; reasonably possible = footnote; remote = nothing at all. Warranty expense is booked once, at the time of sale, for the <em>whole</em> expected cost (units &times; repair rate &times; cost per repair); repairs later just use up the liability (liability = estimate &minus; repairs done) and create no new expense. Bonuses are accrued when earned. Executory contracts and future plans are not liabilities.</div>
       </div>
     </div>
 
-    <div class="source-block" id="src-shortterm">
+    <div class="source-block" id="src-shortterm" data-tier="test">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">02</span><h3>Short-Term Notes: Interest Accrues Even When No Cash Moves</h3></span>
+        <span class="stitle"><span class="num">02</span><h3>Short-Term Notes: Interest Accrues Even When No Cash Moves</h3> <span class="tier tier-test">&#9733; Test core</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -149,6 +273,16 @@
         <p>If you borrow money and agree to pay it all back &mdash; principal plus interest &mdash; in one lump sum when the loan matures, it's tempting to think nothing needs to be recorded until that day arrives. That's wrong, and it's the single most important idea in this section: <strong>interest accrues continuously, day by day, regardless of when cash actually changes hands.</strong> "No payment yet" does not mean "no expense yet." If a loan is outstanding on December 31st and a company is closing its books for the year, it owes interest for every day the loan has existed so far this year &mdash; even if the actual check won't be written until months later.</p>
         <p>The formula for simple interest over a stretch of days:</p>
         <div class="quote-block">Interest = Principal &times; Annual Rate &times; (Days Outstanding &#x00f7; 365)</div>
+
+        <h4>The one-line version (what most exam questions ask)</h4>
+        <p>Most questions give you the days accrued and ask for one number: <strong>principal &times; annual rate &times; days &divide; 365</strong>.</p>
+        <table class="hw-table">
+          <tr><th>Note</th><th>Calculation</th><th>Accrued interest</th></tr>
+          <tr><td>$50,000 at 9%, 75 days</td><td>$4,500 &times; 75/365</td><td><strong>$925</strong></td></tr>
+          <tr><td>$72,000 at 6%, 45 days</td><td>$4,320 &times; 45/365</td><td><strong>$533</strong></td></tr>
+          <tr><td>$40,000 at 8%, 90 days</td><td>$3,200 &times; 90/365</td><td><strong>$789</strong> (a 360-day year would give $800)</td></tr>
+        </table>
+        <p>Several notes? Compute each, then <strong>add</strong> them into one Interest Payable balance ($425 + $610 + $295 = $1,330). The year-end entry is <em>Dr Interest Expense / Cr Interest Payable</em>: expenses and liabilities both rise, cash is untouched.</p>
 
         <h4>Full worked example: a note that crosses a year-end</h4>
         <p>A company borrows $100,000 at a 12% annual rate on November 15, 2025. The note is due in 90 days, which lands on February 13, 2026. The company's fiscal year ends December 31st &mdash; right in the middle of the loan's life. That means this one loan touches <em>two</em> fiscal years, and needs an entry at three separate moments.</p>
@@ -159,22 +293,22 @@
         <div class="quote-block">Debit Interest Expense $1,512 &nbsp;&nbsp;|&nbsp;&nbsp; Credit Interest Payable $1,512</div>
         <p>At this point, the December 31, 2025 balance sheet shows <em>two</em> separate liabilities related to this one loan: Note Payable of $100,000, and Interest Payable of $1,512. Both are real obligations, even though no cash has moved since the original $100,000 came in.</p>
         <p><strong>Step 3 &mdash; February 13, 2026 (maturity: settle everything at once).</strong> From January 1 to February 13 is the remaining 44 days of the 90-day term.</p>
-        <div class="quote-block">Remaining interest = $100,000 &times; 12% &times; (44 &#x00f7; 365) &#8776; $1,446</div>
+        <div class="quote-block">Remaining interest = $100,000 &times; 12% &times; (44 &#x00f7; 365) &#8776; $1,447</div>
         <p>At maturity, three things need to happen in the same entry: recognize 2026's slice of interest expense (the 44 days that belong to this new fiscal year), close out the Interest Payable that was set up at the end of 2025, and pay everything &mdash; principal plus all the interest &mdash; in cash.</p>
         <div class="quote-block">
-          Debit Interest Expense &nbsp;$1,446 &nbsp;(2026's portion only)<br>
+          Debit Interest Expense &nbsp;$1,447 &nbsp;(2026's portion only)<br>
           Debit Interest Payable &nbsp;$1,512 &nbsp;(closing out 2025's accrual)<br>
           Debit Note Payable &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$100,000<br>
-          &nbsp;&nbsp;&nbsp;&nbsp;Credit Cash &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$102,958
+          &nbsp;&nbsp;&nbsp;&nbsp;Credit Cash &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$102,959
         </div>
-        <p>A good way to check your work on any problem like this: the two pieces of interest expense should always add up to the interest on the <em>whole</em> loan, calculated just once, start to finish. Here: $1,512 + $1,446 = $2,958, and sure enough, $100,000 &times; 12% &times; (90 &#x00f7; 365) &#8776; $2,959 (the one-dollar gap is just rounding). The year-end accrual doesn't change the total interest owed on the loan &mdash; it just decides which fiscal year each slice of it belongs to.</p>
+        <p>A good way to check your work on any problem like this: the two pieces of interest expense should always add up to the interest on the <em>whole</em> loan, calculated just once, start to finish. Here: $1,512 + $1,447 = $2,959, which matches $100,000 &times; 12% &times; (90 &#x00f7; 365) &#8776; $2,959. The year-end accrual doesn't change the total interest owed on the loan &mdash; it just decides which fiscal year each slice of it belongs to.</p>
         <div class="exam-angle"><b>Exam angle</b>Any time a problem gives you a note that spans a fiscal year-end, expect three separate calculations: the accrual at year-end, the remaining interest after year-end, and a combined settlement entry at maturity that includes both this year's interest <em>and</em> paying off last year's Interest Payable balance. Forgetting the year-end accrual entirely is the single most common mistake here.</div>
       </div>
     </div>
 
-    <div class="source-block" id="src-installment">
+    <div class="source-block" id="src-installment" data-tier="test">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">03</span><h3>Installment Notes &amp; Mortgages: Paying Down a Loan Over Time</h3></span>
+        <span class="stitle"><span class="num">03</span><h3>Installment Notes &amp; Mortgages: Paying Down a Loan Over Time</h3> <span class="tier tier-test">&#9733; Test core</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -195,6 +329,15 @@
           <li><strong>Month 2</strong> starts from that new, lower balance: Interest = $299,701 &times; (6%&#x00f7;12) = $1,498.51, so slightly less interest and slightly more principal than Month 1 &mdash; and this pattern just keeps compounding, month after month, for the life of the loan.</li>
         </ul>
 
+        <h4>The professor's version: a semiannual mortgage, step by step</h4>
+        <p>A $600,000 mortgage at 8% a year, paid semiannually, with a $45,000 payment. &ldquo;Semiannual&rdquo; means the rate for one period is 8% &divide; 2 = 4% (the same as &times; &frac12;).</p>
+        <table class="hw-table">
+          <tr><th></th><th>Interest (balance &times; 4%)</th><th>Principal (payment &minus; interest)</th><th>New balance</th></tr>
+          <tr><td class="hw-label">Payment 1</td><td>$600,000 &times; 4% = $24,000</td><td>$45,000 &minus; $24,000 = $21,000</td><td>$579,000</td></tr>
+          <tr><td class="hw-label">Payment 2</td><td>$579,000 &times; 4% = $23,160</td><td>$45,000 &minus; $23,160 = $21,840</td><td>$557,160</td></tr>
+        </table>
+        <p>Interest falls (24,000 &rarr; 23,160) and principal rises (21,000 &rarr; 21,840) while the payment stays level. &ldquo;Carrying amount&rdquo; of the mortgage = the balance after the payment.</p>
+
         <h4>A longer example, with a full schedule</h4>
         <p>The same logic works for any payment frequency. Here's a $4,000,000 mortgage at 10% annual interest over 15 years, paid <strong>semiannually</strong> (twice a year) &mdash; so the periodic rate is 10%&#x00f7;2 = 5% per period, over 15&times;2 = 30 periods, giving a fixed payment of $260,206 each period:</p>
         <table class="hw-table">
@@ -207,30 +350,19 @@
         </table>
         <p>Notice the interest column shrinking and the principal column growing, period after period, exactly as expected &mdash; even though the "Cash paid" column never changes.</p>
 
-        <h4>How much of this loan is due next year? ("Current portion of long-term debt")</h4>
-        <p>A balance sheet has to separate current liabilities (due within a year) from long-term ones. For a mortgage, that means splitting the remaining balance into "the part due in the next 12 months" and "everything after that." A very common mistake is assuming the <em>entire</em> remaining balance is somehow "current" just because payments are being made regularly. It isn't &mdash; only the <strong>principal</strong> portion of the payments falling in the next 12 months counts. To find it, look one year ahead in the amortization schedule (like the table above) and add up just the principal-reduction column for those periods. Everything else stays classified as long-term debt.</p>
-        <div class="exam-angle"><b>Exam angle</b>Always compute the interest portion first, from the <em>current</em> balance, before figuring out the principal portion — never the other way around. And when asked for the "current portion of long-term debt," resist the urge to just use the whole remaining balance; go find the actual principal due in the next 12 months from the schedule.</div>
+        <div class="exam-angle"><b>Exam angle</b>Always compute the interest portion first, from the <em>current</em> balance (balance &times; annual rate &times; fraction of the year), then principal = payment &minus; interest, then new balance = old balance &minus; principal. Each payment has <em>both</em> interest and principal; interest shrinks over time because the balance shrinks, not because the rate or payment changes.</div>
       </div>
     </div>
 
-    <div class="source-block" id="src-bonds">
+    <div class="source-block" id="src-bonds" data-tier="test">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">04</span><h3>Bonds: Borrowing From Thousands of Investors at Once</h3></span>
+        <span class="stitle"><span class="num">04</span><h3>Bonds: Face Value, Stated vs Market Rate &amp; Price</h3> <span class="tier tier-test">&#9733; Test core</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
         <h4>What a bond actually is</h4>
         <p>A bond is just a very structured IOU. Instead of borrowing from one bank, a company (or a government) borrows from many investors simultaneously, each buying a small slice of a much larger loan. In exchange, the company promises two things: regular fixed interest payments (called <strong>coupon payments</strong>) throughout the bond's life, and one lump-sum repayment of the <strong>face value</strong> (also called <strong>par value</strong>) when the bond matures.</p>
         <p><strong>Why bother with bonds instead of a simple bank loan or selling more stock?</strong> Three reasons: <strong>access</strong> to a much larger pool of money than any single bank could lend; locking in specific <strong>terms</strong> (a rate and a maturity date) up front, for the life of the bond; and <strong>control</strong> &mdash; borrowing money doesn't give bondholders any ownership stake or voting rights the way issuing new stock would.</p>
-        <p>Not every bond is equally safe. Independent agencies assign <strong>credit ratings</strong> that estimate how likely a borrower is to actually pay everything back &mdash; not unlike a personal credit score.</p>
-        <table class="hw-table">
-          <tr><th>Rating tier</th><th>What it signals</th><th>Required return investors demand</th></tr>
-          <tr><td class="hw-label">AAA / AA</td><td>Very safe, lowest default risk</td><td>Lowest</td></tr>
-          <tr><td class="hw-label">A / BBB</td><td>"Investment grade" — solid but not top-tier</td><td>Moderate</td></tr>
-          <tr><td class="hw-label">BB / B</td><td>"Speculative" — meaningfully more risk</td><td>Higher</td></tr>
-          <tr><td class="hw-label">CCC and below</td><td>High risk of default</td><td>Highest</td></tr>
-        </table>
-        <p>The riskier the borrower, the more return investors demand to compensate them for that risk &mdash; exactly the same logic as a bank charging a higher interest rate to a borrower with a weaker credit history.</p>
 
         <h4>Why a bond almost never sells for exactly its face value</h4>
         <p>Every bond has a <strong>stated rate</strong> (also called the coupon rate) printed right on it &mdash; the fixed rate used to calculate the coupon payments. But the actual price investors are willing to pay depends on comparing that stated rate to the <strong>market rate</strong>: the return investors could get elsewhere on an equally risky investment right now. The market rate moves around with the economy and investor sentiment; the stated rate is locked in and never changes once the bond is issued.</p>
@@ -241,12 +373,47 @@
           <tr><td class="hw-label">Stated rate &gt; Market rate</td><td>Bond sells <strong>at a premium</strong> (above face value &mdash; investors will pay extra for an above-market coupon)</td></tr>
         </table>
 
-        <h4>Pricing a bond: present value of two separate cash flows</h4>
-        <p>A bond's price is just the present value &mdash; today's worth &mdash; of everything an investor will receive from it, discounted at the <strong>market rate</strong> (never the stated rate, since the market rate reflects what the payment stream is actually worth today). There are two pieces to add together: the stream of coupon payments (an <strong>annuity</strong>, since it's the same amount paid repeatedly), and the one-time face-value repayment at maturity (a <strong>single sum</strong>).</p>
-        <div class="quote-block">Bond Price = PV of the coupon payments (as an annuity) + PV of the face value (as a single sum), both discounted at the market rate</div>
-        <p><strong>A word of caution &mdash; "discount" means two different things here.</strong> This topic uses the word "discount" in two unrelated senses, and it's easy to mix them up. (1) As a <em>verb</em>, "to discount a cash flow" just means converting a future dollar amount into its present-day equivalent &mdash; every present-value calculation on this page is "discounting" something, whether the bond ends up selling above or below face value. (2) As a <em>noun/adjective</em> describing the bond's price, "a discount" specifically means the bond sold <em>below</em> face value (the opposite of a premium). So a bond can be "discounted" (verb, always true) without necessarily selling "at a discount" (noun, only true when stated rate &lt; market rate). Keep those two uses separate as you read on.</p>
-        <p><strong>Worked example:</strong> a company issues a bond with a $1,000,000 face value, a 6% stated annual rate (paid semiannually, so $30,000 every six months), maturing in 5 years. The market rate for equally risky bonds right now is 8% annually. Since payments are semiannual, the periodic rate is 8%&#x00f7;2 = 4%, over 5&times;2 = 10 periods.</p>
-        <p>Using a financial calculator or Excel's <code>PV</code> function with those inputs gives a price of <strong>$918,891</strong>. Since the stated rate (6%) is below the market rate (8%), this bond sells at a <strong>discount</strong> &mdash; exactly as the table above predicted.</p>
+        <h4>Quoted prices: 103 means 103% of face</h4>
+        <p>Bond prices are quoted as a percentage of face value. <strong>103</strong> = 103% of face; <strong>96</strong> = 96% of face.</p>
+        <table class="hw-table">
+          <tr><th>Quote</th><th>Face</th><th>Cash received</th><th>Premium / discount</th></tr>
+          <tr><td class="hw-label">103</td><td>$500,000</td><td>$500,000 &times; 1.03 = <strong>$515,000</strong></td><td>$15,000 premium</td></tr>
+          <tr><td class="hw-label">96</td><td>$400,000</td><td>$400,000 &times; 0.96 = <strong>$384,000</strong></td><td>$16,000 discount</td></tr>
+        </table>
+
+        <h4>Three facts that never change with the market</h4>
+        <ul>
+          <li><strong>Cash interest = face &times; STATED rate</strong> (&times; &frac12; for semiannual). $800,000 of 7% bonds pay $28,000 every six months, even if the bonds sold for $747,321 at a 7.75% market yield. The market rate only affects the <em>price</em> and the interest <em>expense</em>.</li>
+          <li><strong>Carrying amount = face + unamortized premium, or face &minus; unamortized discount.</strong> $300,000 face with $12,000 unamortized premium = $312,000; $250,000 face with a $7,000 unamortized discount = $243,000.</li>
+          <li><strong>Carrying amount converges to face.</strong> Premium or discount amortizes to zero, so at maturity the carrying amount equals what is repaid.</li>
+        </ul>
+
+        <h4>After issue: prices move opposite to market rates</h4>
+        <p>The coupon is frozen, so when market rates <em>fall</em>, the old bond pays more than new ones and its price <strong>rises</strong>; when market rates <em>rise</em>, its price <strong>falls</strong>. A bond trading at a premium tells you market rates are now <em>below</em> its stated rate. None of this changes the cash interest the issuer owes.</p>
+        <p>Careful with the word &ldquo;discount&rdquo;: as a verb it means converting future dollars to today's value (every bond price does that); as a noun it means the price is <em>below</em> face. A bond can be &ldquo;discounted&rdquo; without selling &ldquo;at a discount.&rdquo;</p>
+
+        <div class="exam-angle"><b>Exam angle</b>Stated &gt; market = premium; stated &lt; market = discount; equal = par. Reason it out rather than memorizing: nobody pays full face for a below-market coupon. Cash interest always uses the stated rate on face value. Quote &times; face = cash received. Rates up, price down.</div>
+      </div>
+    </div>
+
+    <div class="source-block" id="src-bondentries" data-tier="test">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">05</span><h3>Bond Entries: Issue, Interest &amp; Retirement</h3> <span class="tier tier-test">&#9733; Test core</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>The running example</h4>
+        <p>A company issues <strong>$1,000,000</strong> of 5-year bonds with a <strong>6%</strong> stated rate, paid semiannually ($30,000 every six months). The market rate is <strong>8%</strong> (4% per half-year, 10 periods), so the bonds sell for <strong>$918,891</strong>, a discount. (How that price is computed is in <a href="#deep-pricing">Go deeper &#9650;1</a>; on the exam it is given.)</p>
+
+        <h4>Issue entries: three cases</h4>
+        <table class="hw-table">
+          <tr><th>Case</th><th>Entry</th></tr>
+          <tr><td class="hw-label">At par</td><td>Dr Cash / Cr Bonds Payable (both at face)</td></tr>
+          <tr><td class="hw-label">At a discount</td><td>Dr Cash (price received), Dr Discount on Bonds Payable (face &minus; price) / Cr Bonds Payable <strong>at face</strong></td></tr>
+          <tr><td class="hw-label">At a premium</td><td>Dr Cash (price received) / Cr Bonds Payable <strong>at face</strong>, Cr Premium on Bonds Payable (price &minus; face)</td></tr>
+        </table>
+        <p>Bonds Payable is <em>always</em> credited at face value, never at the cash received. Example: $900,000 of 6% bonds issued for $862,131 &rarr; Dr Cash 862,131, Dr Discount 37,869, Cr Bonds Payable 900,000.</p>
+
         <p><strong>Issuance journal entry:</strong></p>
         <div class="quote-block">
           Debit Cash &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$918,891<br>
@@ -269,6 +436,16 @@
           &nbsp;&nbsp;&nbsp;&nbsp;Credit Cash &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$30,000
         </div>
         <p>The bond's carrying value grows from $918,891 to $918,891 + $6,756 = $925,647. Next period, interest expense is recalculated on <em>this</em> new, slightly higher balance &mdash; the same "recalculate from the current balance every period" logic used for mortgages, just running in the opposite direction (growing toward face value instead of shrinking toward zero).</p>
+        <p>The first three periods of the running example (interest expense = carrying amount &times; 4%; cash = $30,000):</p>
+        <table class="hw-table">
+          <tr><th>Period</th><th>Interest expense</th><th>Cash paid</th><th>Discount amortized</th><th>Carrying amount (end)</th></tr>
+          <tr><td class="hw-label">Issue</td><td>&mdash;</td><td>&mdash;</td><td>&mdash;</td><td>$918,891</td></tr>
+          <tr><td class="hw-label">1</td><td>$36,756</td><td>$30,000</td><td>$6,756</td><td>$925,647</td></tr>
+          <tr><td class="hw-label">2</td><td>$37,026</td><td>$30,000</td><td>$7,026</td><td>$932,673</td></tr>
+          <tr><td class="hw-label">3</td><td>$37,307</td><td>$30,000</td><td>$7,307</td><td>$939,980</td></tr>
+        </table>
+        <p>Expense and discount amortization grow, cash stays level, and the carrying amount climbs toward $1,000,000. Another professor-style case: $900,000 of 6% bonds with carrying amount $862,131 and a 7% effective rate &rarr; expense = $862,131 &times; 7% &times; &frac12; = $30,175; cash = $900,000 &times; 6% &times; &frac12; = $27,000; discount amortized = $3,175 (Dr Interest Expense 30,175 / Cr Discount 3,175 / Cr Cash 27,000). Or simply: given expense $17,200 and cash $15,000, the $2,200 gap is the discount credit.</p>
+        <p>For a bond issued at a <em>premium</em> the logic runs the other way: expense (carrying amount &times; market rate) is <em>less</em> than the cash coupon, and the difference is a <em>debit</em> to Premium on Bonds Payable, shrinking the carrying amount toward face.</p>
 
         <h4>Paying off a bond, on schedule or early</h4>
         <p>At the scheduled maturity date, once the discount or premium has fully amortized away, the carrying value equals the face value exactly &mdash; so retiring the bond on time is simple:</p>
@@ -276,13 +453,21 @@
         <p>But a company can also choose to retire (buy back) a bond <em>early</em>, before maturity &mdash; and in that case, the price it pays in the market might not match the bond's carrying amount on the books, producing a gain or loss:</p>
         <div class="quote-block">Gain / (Loss) on Early Retirement = Carrying Amount at time of retirement &minus; Cash Paid to Retire</div>
         <p>If the company pays less than the carrying amount to buy the bond back, that's a gain (it settled the debt for less than it was "worth" on the books). If it pays more, that's a loss.</p>
-        <div class="exam-angle"><b>Exam angle</b>Always discount bond cash flows at the <em>market</em> rate, never the stated/coupon rate &mdash; the stated rate only determines the size of the fixed coupon payment itself. And remember the direction: stated below market means discount (sells below face); stated above market means premium (sells above face). It's easy to get this backwards under time pressure, so it helps to reason it through rather than memorize it: nobody would pay full face value for a bond promising below-market interest, so a low stated rate has to mean a lower price.</div>
+        <p>Retirement examples: face $250,000 with a $7,000 unamortized discount = carrying amount $243,000; retired for $240,000 &rarr; <strong>$3,000 gain</strong>. Paying <em>more</em> than carrying amount is a loss; paying <em>less</em> is a gain.</p>
+
+        <h4>Which statement is each account on?</h4>
+        <table class="hw-table">
+          <tr><th>Income statement</th><th>Balance sheet</th></tr>
+          <tr><td>Interest Expense (incl. bond interest expense)<br>Gain on Bond Retirement<br>Loss on Bond Retirement</td><td>Bonds Payable<br>Mortgage Notes Payable<br>Interest Payable<br>Discount on Bonds Payable (contra-liability)<br>Premium on Bonds Payable (adjunct liability)</td></tr>
+        </table>
+
+        <div class="exam-angle"><b>Exam angle</b>Expense = carrying amount &times; market rate &times; period fraction; cash = face &times; stated rate &times; period fraction; the difference is discount (credit) or premium (debit) amortization. Gain/loss on retirement = carrying amount &minus; cash paid; positive is a gain. Gains, losses and expenses are income-statement items; payables, discounts and premiums are balance-sheet items.</div>
       </div>
     </div>
 
-    <div class="source-block" id="src-ratios">
+    <div class="source-block" id="src-ratios" data-tier="test">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">05</span><h3>Reading a Company's Debt: Ratios &amp; the Present-Value Toolkit</h3></span>
+        <span class="stitle"><span class="num">06</span><h3>Reading a Company's Debt: Ratios &amp; the Treasury-Stock Distortion</h3> <span class="tier tier-test">&#9733; Test core</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -299,13 +484,95 @@
           <tr><td class="hw-label">Current ratio</td><td>Current Assets &#x00f7; Current Liabilities</td><td>Can short-term obligations be covered by short-term assets?</td></tr>
           <tr><td class="hw-label">Quick ratio</td><td>(Cash + Receivables) &#x00f7; Current Liabilities</td><td>A stricter version of the current ratio that excludes inventory, which can be slow to sell</td></tr>
         </table>
-        <p><sup>&dagger;</sup> "Total Debt" in this particular ratio means <strong>total liabilities</strong> (everything owed), not the narrower interest-bearing slice &mdash; unless a problem tells you otherwise, treat "total debt" here the same way as "total liabilities." It's a case where everyday language ("debt") gets used loosely for what the balance sheet calls "liabilities," so watch for which one a question actually means.</p>
+        <p><sup>&dagger;</sup> "Total Debt" in this particular ratio means <strong>total liabilities</strong> (everything owed), not the narrower interest-bearing slice &mdash; unless a problem tells you otherwise, treat "total debt" here the same way as "total liabilities." It's a case where everyday language ("debt") gets used loosely for what the balance sheet calls "liabilities," so watch for which one a question actually means. When a problem lists current debt and long-term debt separately, <strong>add them</strong>; never use long-term debt alone.</p>
         <p><strong>EBIT</strong> stands for Earnings Before Interest and Taxes &mdash; essentially, operating profit before any financing or tax effects are subtracted out. It's used specifically for times interest earned because the whole question is "can operating profit, on its own, cover the interest bill?" &mdash; a question you can't answer if interest has already been subtracted from the profit figure you're starting with.</p>
         <p><strong>A subtlety on averaging:</strong> unlike some ratios you may have seen elsewhere (like return on equity, which uses <em>average</em> equity to match against a full year's income), liabilities-to-equity and debt-to-equity are <strong>point-in-time</strong> comparisons &mdash; computed fresh at each balance sheet date, using the ending balances, not averaged across the year. That's because both the numerator and denominator are balance sheet "stock" figures (a snapshot at one moment), not "flow" figures earned gradually over a period.</p>
 
         <h4>A distortion worth knowing about: treasury stock</h4>
         <p>When a company buys back its own shares (called treasury stock), that repurchase directly reduces stockholders' equity on the balance sheet. If a company has been aggressively buying back stock for years, its equity balance can shrink dramatically &mdash; in extreme cases, even turn negative &mdash; which makes debt-to-equity and similar ratios look artificially alarming, even though nothing about the company's actual debt load has changed. To get a cleaner read, analysts sometimes add treasury stock back into both equity and total assets before computing these ratios, effectively asking "what would this ratio look like if the company hadn't spent years buying back its own stock?"</p>
 
+        <h4>All four, with the professor's numbers</h4>
+        <table class="hw-table">
+          <tr><th>Ratio</th><th>Inputs</th><th>Answer</th></tr>
+          <tr><td class="hw-label">Current ratio</td><td>$420,000 &divide; $300,000</td><td><strong>1.40</strong></td></tr>
+          <tr><td class="hw-label">Quick ratio</td><td>($85,000 cash + $65,000 receivables) &divide; $300,000</td><td><strong>0.50</strong> (the $420,000 is a distractor)</td></tr>
+          <tr><td class="hw-label">Times interest earned</td><td>$525,000 EBIT &divide; $75,000 interest</td><td><strong>7.0 times</strong></td></tr>
+          <tr><td class="hw-label">Cash from operations to total debt</td><td>$360,000 &divide; ($120,000 current + $680,000 long-term)</td><td><strong>0.45</strong> (long-term debt alone gives the 0.53 trap)</td></tr>
+        </table>
+        <p>What each one measures: current ratio = short-term liquidity; quick ratio = liquidity using only the most liquid assets (cash, short-term investments, receivables &mdash; so it uses <em>fewer</em> assets than the current ratio); times interest earned = whether operating profit covers the interest bill; cash from operations to total debt = whether operating cash could pay down debt.</p>
+
+        <div class="exam-angle"><b>Exam angle</b>Use the total debt the question implies (current + long-term), not just long-term. The quick ratio drops inventory and prepaids. Times interest earned uses EBIT, before interest. Leverage ratios use ending balances (point in time). Large buybacks shrink or flip equity, distorting debt-to-equity; analysts add treasury stock back.</div>
+      </div>
+    </div>
+
+    <div class="source-block" id="src-currentportion" data-tier="know">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">07</span><h3>Current Portion of Long-Term Debt</h3> <span class="tier tier-know">&#9680; Understand it</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>How much of this loan is due next year? ("Current portion of long-term debt")</h4>
+        <p>A balance sheet has to separate current liabilities (due within a year) from long-term ones. For a mortgage, that means splitting the remaining balance into "the part due in the next 12 months" and "everything after that." A very common mistake is assuming the <em>entire</em> remaining balance is somehow "current" just because payments are being made regularly. It isn't &mdash; only the <strong>principal</strong> portion of the payments falling in the next 12 months counts. To find it, look one year ahead in the amortization schedule (like the table above) and add up just the principal-reduction column for those periods. Everything else stays classified as long-term debt.</p>
+        <div class="exam-angle"><b>Exam angle</b>For &ldquo;current portion of long-term debt,&rdquo; resist using the whole remaining balance. Add up only the <em>principal</em> reduction for the payments falling in the next 12 months.</div>
+      </div>
+    </div>
+
+    <div class="source-block" id="src-ratings" data-tier="know">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">08</span><h3>Credit Ratings: Why Riskier Borrowers Pay More</h3> <span class="tier tier-know">&#9680; Understand it</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <p>Not every bond is equally safe. Independent agencies assign <strong>credit ratings</strong> that estimate how likely a borrower is to actually pay everything back &mdash; not unlike a personal credit score.</p>
+        <table class="hw-table">
+          <tr><th>Rating tier</th><th>What it signals</th><th>Required return investors demand</th></tr>
+          <tr><td class="hw-label">AAA / AA</td><td>Very safe, lowest default risk</td><td>Lowest</td></tr>
+          <tr><td class="hw-label">A / BBB</td><td>"Investment grade" — solid but not top-tier</td><td>Moderate</td></tr>
+          <tr><td class="hw-label">BB / B</td><td>"Speculative" — meaningfully more risk</td><td>Higher</td></tr>
+          <tr><td class="hw-label">CCC and below</td><td>High risk of default</td><td>Highest</td></tr>
+        </table>
+        <p>The riskier the borrower, the more return investors demand to compensate them for that risk &mdash; exactly the same logic as a bank charging a higher interest rate to a borrower with a weaker credit history.</p>
+      </div>
+    </div>
+
+    <!-- ===== GO DEEPER ===== -->
+    <div id="deeper" style="margin-top:2.2em;">
+      <div class="section-head">
+        <span class="eyebrow">Optional &middot; Go deeper</span>
+        <h2>Homework-level material</h2>
+      </div>
+      <div class="deep-note"><b>You can skip this and still ace the test</b>The homework is much harder than the exam: it prices bonds from scratch with present value, solves for missing variables, and reads real company filings. The exam gives you the bond price. If the basics felt easy and you want the machinery underneath, open these. For graded practice, the homework page has Unit 7 problems: <a href="acctg-homework.html?unit=u7">Unit 7 homework practice (harder)</a>.</div>
+    </div>
+
+    <div class="source-block" id="deep-pricing" data-tier="deep">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">&#9650;1</span><h3>Pricing a Bond with Present Value</h3> <span class="tier tier-deep">&#9650; Go deeper</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>Pricing a bond: present value of two separate cash flows</h4>
+        <p>A bond's price is just the present value &mdash; today's worth &mdash; of everything an investor will receive from it, discounted at the <strong>market rate</strong> (never the stated rate, since the market rate reflects what the payment stream is actually worth today). There are two pieces to add together: the stream of coupon payments (an <strong>annuity</strong>, since it's the same amount paid repeatedly), and the one-time face-value repayment at maturity (a <strong>single sum</strong>).</p>
+        <div class="quote-block">Bond Price = PV of the coupon payments (as an annuity) + PV of the face value (as a single sum), both discounted at the market rate</div>
+        <p><strong>A word of caution &mdash; "discount" means two different things here.</strong> This topic uses the word "discount" in two unrelated senses, and it's easy to mix them up. (1) As a <em>verb</em>, "to discount a cash flow" just means converting a future dollar amount into its present-day equivalent &mdash; every present-value calculation on this page is "discounting" something, whether the bond ends up selling above or below face value. (2) As a <em>noun/adjective</em> describing the bond's price, "a discount" specifically means the bond sold <em>below</em> face value (the opposite of a premium). So a bond can be "discounted" (verb, always true) without necessarily selling "at a discount" (noun, only true when stated rate &lt; market rate). Keep those two uses separate as you read on.</p>
+        <p><strong>Worked example:</strong> a company issues a bond with a $1,000,000 face value, a 6% stated annual rate (paid semiannually, so $30,000 every six months), maturing in 5 years. The market rate for equally risky bonds right now is 8% annually. Since payments are semiannual, the periodic rate is 8%&#x00f7;2 = 4%, over 5&times;2 = 10 periods.</p>
+        <p>Using a financial calculator or Excel's <code>PV</code> function with those inputs gives a price of <strong>$918,891</strong>. Since the stated rate (6%) is below the market rate (8%), this bond sells at a <strong>discount</strong> &mdash; exactly as the table above predicted.</p>
+        <p>Where $918,891 comes from, piece by piece (4% per period, 10 periods):</p>
+        <table class="hw-table">
+          <tr><th>Piece</th><th>Calculation</th><th>Present value</th></tr>
+          <tr><td class="hw-label">Coupons (annuity)</td><td>$30,000 &times; 8.1109</td><td>$243,327</td></tr>
+          <tr><td class="hw-label">Face value (single sum)</td><td>$1,000,000 &times; 0.67556</td><td>$675,564</td></tr>
+          <tr><td class="hw-label"><strong>Bond price</strong></td><td></td><td><strong>$918,891</strong></td></tr>
+        </table>
+        <h4>Solving for the other unknowns</h4>
+        <p>The same price equation can be solved for whichever variable is missing: Excel's <code>PV</code> gives the price, <code>RATE</code> the market yield, <code>NPER</code> the number of periods, and <code>PMT</code> the payment. Homework asks for the price at several market rates, then labels each par, premium or discount: the lower the market rate, the higher the price.</p>
+      </div>
+    </div>
+    <div class="source-block" id="deep-pv" data-tier="deep">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">&#9650;2</span><h3>The Present-Value Toolkit (PV, FV, Annuities)</h3> <span class="tier tier-deep">&#9650; Go deeper</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
         <h4>The engine underneath bond and mortgage pricing: present value</h4>
         <p>Every bond price and mortgage payment calculation in this unit ultimately rests on one idea: money today is worth more than the same amount of money in the future, because money today can be invested and grow. <strong>Present value (PV)</strong> answers the question "what is a future payment (or stream of payments) worth right now?" and <strong>future value (FV)</strong> answers the reverse question.</p>
         <div class="quote-block">
@@ -314,10 +581,108 @@
         </div>
         <p>where <em>i</em> is the interest rate <em>per period</em> (the annual rate divided by how many times per year it compounds or pays) and <em>n</em> is the <em>total number of periods</em> (years multiplied by payments per year). A bond's repeating coupon payments are priced using the annuity formula; its one-time face-value repayment at maturity is priced using the simple single-sum PV formula; and a mortgage payment is found by rearranging that same annuity formula to solve for the payment amount instead of the price.</p>
         <p><strong>Reading the notation:</strong> "(1 + i)<sup>n</sup>" just means "take (1 + i) and multiply it by itself n times" &mdash; the same thing compound interest does year after year. A negative exponent like "(1 + i)<sup>&minus;n</sup>" simply means "1 divided by (1 + i)<sup>n</sup>" &mdash; it's the same number, just flipped upside down, which is exactly what you want when you're working backward from a future amount to today's value instead of forward. In practice, nobody works these out by hand: you'll plug the numbers into Excel's <code>PV</code>, <code>FV</code>, or <code>PMT</code> functions (or a financial calculator), the same way the bond and mortgage examples above did &mdash; what matters for the exam is knowing which formula fits which situation and correctly identifying <em>i</em> and <em>n</em>, not grinding through the exponents yourself.</p>
-        <div class="exam-angle"><b>Exam angle</b>Keep "total liabilities" and "interest-bearing debt" straight &mdash; they're different numerators over the identical denominator (equity), and mixing them up is an easy way to get a ratio question wrong even when your arithmetic is fine. Also expect a multi-part problem that asks you to move between a present-value price, an amortization schedule, and the resulting journal entries for the same bond or mortgage &mdash; practice converting between all three representations of one transaction.</div>
+      </div>
+    </div>
+    <div class="source-block" id="deep-filings" data-tier="deep">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">&#9650;3</span><h3>Reading Real Filings: Bond Quotes &amp; Treasury Add-Back</h3> <span class="tier tier-deep">&#9650; Go deeper</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>Market value from a quoted price (10-K style)</h4>
+        <p>A 10-K lists $300 million face of 7.125% bonds quoted at <strong>131.03%</strong> of face, with an unchanged credit rating.</p>
+        <div class="calc" style="font-family:var(--font-mono);font-size:.88rem;background:var(--paper-2);padding:8px 10px;border-radius:6px;margin:.5em 0;">Market value = $300M &times; 1.3103 = $393.09M<br>Annual cash interest = $300M &times; 7.125% = $21.375M (unchanged)</div>
+        <p>Trading far above face tells you market yields are now well <em>below</em> 7.125% (rates fell). The issuer still pays the same coupon; only the market value moved. The balance sheet, meanwhile, carries the bonds at their (amortized) carrying amount, not the market value.</p>
+        <h4>Adjusting a buyback-heavy company (Home Depot style)</h4>
+        <p>When huge treasury stock shrinks equity, add treasury stock back to equity (and total assets) before computing leverage. Illustrative numbers: liabilities $50B, equity $2B, treasury stock $30B. Raw liabilities-to-equity = 50 &divide; 2 = <strong>25.0</strong>; adjusted = 50 &divide; (2 + 30) = <strong>1.56</strong>. Same company, same debt: the buybacks, not the borrowing, made the raw ratio look alarming.</p>
       </div>
     </div>
   </div>
+
+  <!-- ============ STEP 3: CHEAT SHEET ============ -->
+  <div class="wrap section" id="cheat" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Step 3 &middot; Cheat sheet</span>
+      <h2>Every Unit 7 entry and ratio on one page</h2>
+    </div>
+    <div class="cheat-grid">
+      <div class="cheat-card"><h4>Contingencies</h4>
+        <div class="cheat-formula">Probable + estimable: RECORD<br>Probable, no estimate: footnote<br>Reasonably possible: footnote<br>Remote: nothing</div>
+        <p>Signed note = not a contingency. Executory contracts and plans: no liability.</p></div>
+      <div class="cheat-card"><h4>Warranty</h4>
+        <div class="cheat-formula">Expense = units &times; rate &times; $/repair<br>Liability = estimate &minus; repairs done</div>
+        <p>Expense at sale. Repairs reduce the liability, no new expense.</p></div>
+      <div class="cheat-card"><h4>Bonus</h4>
+        <div class="cheat-formula">Bonus = % &times; pretax income<br>Dr Bonus Expense / Cr Bonus Payable</div>
+        <p>Accrue when earned.</p></div>
+      <div class="cheat-card"><h4>Short-term note</h4>
+        <div class="cheat-formula">Int = P &times; rate &times; days/365<br>Dr Int Expense / Cr Int Payable</div>
+        <p>At maturity: expense for this year's days + clear the payable + repay principal.</p></div>
+      <div class="cheat-card"><h4>Mortgage payment</h4>
+        <div class="cheat-formula">Interest = balance &times; rate &times; period<br>Principal = payment &minus; interest<br>New bal = old &minus; principal</div>
+        <p>Semiannual: rate &divide; 2. Interest shrinks, principal grows.</p></div>
+      <div class="cheat-card"><h4>Bond price rules</h4>
+        <div class="cheat-formula">Stated = market: par<br>Stated &lt; market: DISCOUNT<br>Stated &gt; market: PREMIUM<br>Quote 103 = 103% of face</div>
+        <p>Market rates up &rarr; price down.</p></div>
+      <div class="cheat-card"><h4>Bond amounts</h4>
+        <div class="cheat-formula">Cash int = face &times; STATED &times; period<br>Carrying = face &plusmn; unamortized prem/disc<br>Expense = carrying &times; MARKET &times; period</div>
+        <p>Carrying amount converges to face.</p></div>
+      <div class="cheat-card"><h4>Issue entry</h4>
+        <div class="cheat-formula">Discount: Dr Cash, Dr Discount / Cr Bonds Pay (face)<br>Premium: Dr Cash / Cr Bonds Pay (face), Cr Premium</div>
+        <p>Bonds Payable is always at face.</p></div>
+      <div class="cheat-card"><h4>Interest period entry</h4>
+        <div class="cheat-formula">Discount: Dr Int Exp / Cr Discount, Cr Cash<br>Premium: Dr Int Exp, Dr Premium / Cr Cash</div>
+        <p>Difference between expense and cash = amortization.</p></div>
+      <div class="cheat-card"><h4>Retirement</h4>
+        <div class="cheat-formula">Gain/(Loss) = Carrying amt &minus; Cash paid</div>
+        <p>Paid less = gain. Paid more = loss. Income statement.</p></div>
+      <div class="cheat-card"><h4>Statement placement</h4>
+        <div class="cheat-formula">Income stmt: Interest Exp, Gain, Loss<br>Balance sheet: Payables, Discount, Premium</div>
+        <p>Discount = contra-liability; premium = adjunct.</p></div>
+      <div class="cheat-card"><h4>Ratios</h4>
+        <div class="cheat-formula">Current = CA &divide; CL<br>Quick = (Cash + AR) &divide; CL<br>TIE = EBIT &divide; Interest exp<br>CFO/Debt = CFO &divide; TOTAL debt</div>
+        <p>Liab/Equity vs Debt/Equity: different numerators.</p></div>
+      <div class="cheat-card"><h4>Current portion of LTD <span class="tier tier-know">&#9680;</span></h4>
+        <div class="cheat-formula">= principal paid in next 12 months</div>
+        <p>Not the whole remaining balance.</p></div>
+      <div class="cheat-card"><h4>Treasury stock</h4>
+        <div class="cheat-formula">Buybacks shrink equity<br>&rarr; debt/equity looks extreme</div>
+        <p>Analysts add treasury stock back.</p></div>
+    </div>
+    <div class="cheat-traps">
+      <h4>Traps the exam sets</h4>
+      <ul>
+        <li>Recording a signed agreement to buy equipment next year (executory contract) or a planned expansion as a liability.</li>
+        <li>Booking warranty expense when repairs happen, or treating a repair as new expense. Expense is at sale; repairs cut the liability.</li>
+        <li>Using 360 days instead of 365 (or a full year instead of days/365) for note interest.</li>
+        <li>Forgetting the year-end accrual, or the semiannual &frac12; on mortgage and bond interest.</li>
+        <li>Computing mortgage interest on the original loan instead of the current balance.</li>
+        <li>Cash interest from the market rate or issue price. It is face &times; stated rate.</li>
+        <li>Crediting Bonds Payable for the cash received instead of face; getting premium/discount backwards.</li>
+        <li>Quick ratio numerator = total current assets (that is the current ratio); CFO-to-debt using only long-term debt.</li>
+        <li>Calling gain/loss on retirement or interest expense a balance sheet item, or a premium/discount an income statement item.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ STEP 4: PRACTICE ============ -->
+  <div class="wrap section" id="practice" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Step 4 &middot; Practice</span>
+      <h2>Now test it</h2>
+    </div>
+    <div class="practice-panel">
+      <p style="margin:0;">Work in this order: the <a href="#quiz">quick quiz</a> checks the basics, then the professor's actual practice set, then fresh variants, then the harder homework if you want a stretch.</p>
+      <div class="practice-row">
+        <a class="btn blue" href="acctg-exam-prep.html?unit=m7p">Professor's Module 7 problems (49)</a>
+        <a class="btn ghost" href="acctg-exam-prep.html?unit=m7">Extra variants</a>
+        <a class="btn ghost" href="acctg-homework.html?unit=u7">Homework practice (harder)</a>
+        <a class="btn ghost" href="acctg-mock-test.html">ACCTG mock test</a>
+        <a class="btn ghost" href="#quiz">Unit 7 quiz</a>
+      </div>
+    </div>
+  </div>
+
   <!-- ============ GLOSSARY ============ -->
   <div class="wrap section" id="glossary">
     <div class="section-head">
@@ -534,15 +899,18 @@
       <h2>Likely exam angles</h2>
     </div>
     <div class="callout">
+      <p style="margin:0 0 .6em;font-size:.88rem;"><span class="tier tier-test">&#9733;</span> = test core &nbsp; <span class="tier tier-know">&#9680;</span> = understand it (lower odds). Present-value pricing is in Go deeper.</p>
       <ul style="margin:0;">
-        <li>Given a scenario (lawsuit, warranty, environmental cleanup), classify it as probable/estimable (record), reasonably possible (disclose), or remote (neither) — and recognize when a liability is definite enough to skip this test altogether.</li>
-        <li>Compute warranty expense for a period and the warranty liability at a point in time, and explain why servicing a claim doesn't create new expense.</li>
-        <li>Given a short-term note that spans a fiscal year-end, compute the year-end accrual, the remaining interest, and the full settlement entry at maturity.</li>
-        <li>Given a mortgage or installment note's rate and balance, split a single payment into its interest and principal pieces, and find the current portion of long-term debt from an amortization schedule.</li>
-        <li>Given a bond's face value, stated rate, market rate, and term, price the bond and identify whether it sells at a discount, premium, or par — and explain why.</li>
-        <li>Walk through a full bond life cycle: pricing, the issuance entry, first-period effective-interest amortization, and either scheduled or early retirement.</li>
-        <li>Compute a debt or liquidity ratio and correctly identify whether it should use total liabilities or the narrower interest-bearing debt figure.</li>
-        <li>Explain how a large stock buyback (treasury stock) can distort debt-to-equity-style ratios, and how analysts adjust for it.</li>
+        <li><span class="tier tier-test">&#9733;</span> Classify a scenario (lawsuit, warranty, cleanup) as record, footnote or nothing; recognize that executory contracts and plans are not liabilities and that a signed note skips the test.</li>
+        <li><span class="tier tier-test">&#9733;</span> Compute warranty expense and the year-end warranty liability, a bonus accrual, and explain why servicing a claim creates no new expense.</li>
+        <li><span class="tier tier-test">&#9733;</span> Compute accrued note interest with a 365-day year, add several notes into one Interest Payable, and (for a spanning note) the year-end accrual, remaining interest and maturity entry.</li>
+        <li><span class="tier tier-test">&#9733;</span> Split a mortgage payment into interest and principal for the first and second payments (semiannual = &frac12; the annual rate) and find the carrying amount after each.</li>
+        <li><span class="tier tier-test">&#9733;</span> Given stated and market rates, say whether bonds sell at par, premium or discount; convert a quote like 103 or 96 to cash and premium/discount; know that rates up means price down.</li>
+        <li><span class="tier tier-test">&#9733;</span> Compute cash interest (face &times; stated rate), carrying amount (face &plusmn; unamortized premium/discount), and write the issue entry at a discount.</li>
+        <li><span class="tier tier-test">&#9733;</span> Write the effective-interest period entry (expense = carrying &times; market rate; cash = face &times; stated rate; the gap amortizes the discount) and the gain or loss on early retirement.</li>
+        <li><span class="tier tier-test">&#9733;</span> Classify accounts as balance sheet or income statement (premium, discount and payables vs interest expense, gains and losses).</li>
+        <li><span class="tier tier-test">&#9733;</span> Compute the current ratio, quick ratio, times interest earned and cash-from-operations-to-total-debt, and explain how treasury stock distorts debt-to-equity.</li>
+        <li><span class="tier tier-know">&#9680;</span> Find the current portion of long-term debt from an amortization schedule, and explain how credit ratings change the return investors demand.</li>
       </ul>
     </div>
   </div>
@@ -558,5 +926,11 @@
 <script src="assets/acctg7-flashcards-data.js"></script>
 <script src="assets/acctg7-quiz-data.js"></script>
 <script src="assets/app.js"></script>
+<script src="assets/learnpath.js"></script>
+<script>
+  (function(){ var f=document.getElementById('stat-flash'), q=document.getElementById('stat-quiz');
+    if(f && typeof FLASHCARDS!=='undefined') f.textContent=FLASHCARDS.length;
+    if(q && typeof QUIZ_QUESTIONS!=='undefined') q.textContent=QUIZ_QUESTIONS.length; })();
+</script>
 </body>
 </html>

@@ -89,6 +89,14 @@ function initHwFilters(){
     });
   });
 
+  // ?unit=u8 (and ?topic=...) deep-links from the unit pages
+  try{
+    const qs = new URLSearchParams(location.search);
+    const u = qs.get('unit'), t = qs.get('topic');
+    if(u){ const c = Array.from(unitChips).find(x => x.dataset.hwUnit === u); if(c) c.click(); }
+    if(t){ const c = Array.from(topicChips).find(x => x.dataset.hwTopic === t); if(c) c.click(); }
+  }catch(e){}
+
   apply();
 }
 

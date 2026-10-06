@@ -34,12 +34,14 @@
         <button class="nav-caret" aria-expanded="false" aria-label="Show ACCTG 6000 items">&#9662;</button>
         <div class="nav-dropdown-menu">
           <div class="nav-dropdown-menu-inner">
+            <a href="acctg-start.html">Start here &mdash; Accounting from Zero</a>
             <a href="acctg1.html">Unit 1 &mdash; Reporting Foundations</a>
             <a href="acctg2.html">Unit 2 &mdash; Statements &amp; SEC Filings</a>
             <a href="acctg3.html">Unit 3 &mdash; The Accounting Cycle</a>
             <a href="acctg5.html">Unit 5 &mdash; Revenue &amp; Receivables</a>
             <a href="acctg6.html">Unit 6 &mdash; Inventory &amp; Long-Lived Assets</a>
             <a href="acctg7.html">Unit 7 &mdash; Current &amp; Long-Term Liabilities</a>
+            <a href="acctg8.html">Unit 8 &mdash; Equity, Dividends &amp; EPS</a>
             <a href="acctg-homework.html">Accounting HW Practice</a>
             <a href="acctg-exam-prep.html">Exam Prep Practice</a>
           </div>
@@ -84,7 +86,7 @@
     <div>
       <span class="eyebrow">ACCTG 6000 &#x00b7; Unit 3</span>
       <h1>The Accounting Cycle, Adjustments &amp; the Closing Process</h1>
-      <p class="lede" style="max-width:70ch;">Unit 2 showed you <em>what</em> the final statements look like and how they connect. Unit 3 is the mechanical process that actually produces them &mdash; the repeating cycle every company runs each period, three different tools for tracking the same transactions, why adjusting entries exist, the required order for building the statements, and how the books get reset for the next period.</p>
+      <p class="lede" style="max-width:70ch;">Unit 2 showed you <em>what</em> the final statements look like and how they connect. Unit 3 is the mechanical process that actually produces them &mdash; the repeating cycle every company runs each period, three different tools for tracking the same transactions, why adjusting entries exist, the required order for building the statements, and how the books get reset for the next period. Start at Step 1 even if you have never seen a journal entry: the harder homework-style material is gathered in a clearly marked <strong>Go deeper</strong> section at the end, and you can skip it and still be test-ready.</p>
       <div class="hero-stats">
         <div class="hero-stat"><b>19</b><span>Flashcards</span></div>
         <div class="hero-stat"><b>18</b><span>Quiz questions</span></div>
@@ -96,16 +98,128 @@
 
 <main id="main">
 
-  <!-- ============ TEACHING CONTENT ============ -->
+  <!-- ============ PATH ============ -->
   <div class="wrap section" style="padding-top:0;">
     <div class="section-head">
-      <span class="eyebrow">Walk the material</span>
+      <span class="eyebrow">Your route through this unit</span>
+      <h2>Novice &rarr; understanding &rarr; test-ready</h2>
+    </div>
+    <ol class="path-bar">
+      <li><a href="#start"><span class="pnum">Step 1</span><b>Start here</b><em>The big idea, no jargon</em></a></li>
+      <li><a href="#learn"><span class="pnum">Step 2</span><b>Learn it</b><em>Seven short sections</em></a></li>
+      <li><a href="#cheat"><span class="pnum">Step 3</span><b>Cheat sheet</b><em>Every rule and entry on one page</em></a></li>
+      <li><a href="#practice"><span class="pnum">Step 4</span><b>Practice</b><em>Quiz, flashcards, exam-prep set</em></a></li>
+      <li><a href="#deeper"><span class="pnum">Optional</span><b>Go deeper</b><em>Harder homework-level material</em></a></li>
+    </ol>
+    <div class="tier-key">
+      <span class="t"><span class="tier tier-test">&#9733; Test core</span> shows up on the exam</span>
+      <span class="t"><span class="tier tier-know">&#9680; Understand it</span> makes the core click</span>
+      <span class="t"><span class="tier tier-deep">&#9650; Go deeper</span> homework-level, optional</span>
+    </div>
+  </div>
+
+  <!-- ============ STEP 1: START HERE ============ -->
+  <div class="wrap section" id="start" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Step 1 &middot; Start here</span>
+      <h2>Accounting is a record-keeping loop with two sides to everything</h2>
+    </div>
+    <div class="onramp">
+      <div>
+        <p class="big-idea">Every period a company runs the same four-step loop: record what happened, fix what the records missed, report the results, then reset the scoreboard. Every entry has a left side (debit) and a right side (credit) that must match.</p>
+        <div class="analogy">
+          <b>The basketball-season analogy</b>
+          <p>During a game you track points on a scoreboard. When the buzzer sounds, you check the final stats (did someone's basket get missed?), announce the score, then <em>reset the scoreboard to 0&ndash;0</em> for the next game &mdash; but the result is added to the team's season record, which never resets. In accounting, revenues and expenses are the scoreboard (<em>temporary</em>: they reset every period). Retained earnings is the season record (<em>permanent</em>: it carries forward). &ldquo;Closing the books&rdquo; is the buzzer-and-reset step. Adjusting entries are the stat-check before the score is official.</p>
+        </div>
+        <div class="words-first">
+          <h4>Six words to know before anything else</h4>
+          <dl>
+            <dt>Debit / Credit</dt><dd>Just <strong>left</strong> and <strong>right</strong>. Debit = left side of an entry, credit = right side. Not &ldquo;good&rdquo; and &ldquo;bad&rdquo;.</dd>
+            <dt>Journal entry</dt><dd>The written record of one transaction, with debits and credits that are equal.</dd>
+            <dt>T-account</dt><dd>A simple &ldquo;T&rdquo; that tracks one account: debits on the left, credits on the right.</dd>
+            <dt>Accrual accounting</dt><dd>Count revenue when <em>earned</em> and expenses when <em>incurred</em>, not when cash moves.</dd>
+            <dt>Adjusting entry</dt><dd>An end-of-period entry that fixes the timing gap between cash and earning/incurring.</dd>
+            <dt>Closing</dt><dd>Moving the period's revenue, expense and dividend totals into retained earnings so they start the next period at $0.</dd>
+          </dl>
+        </div>
+      </div>
+      <div>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 226" role="img" aria-labelledby="c1t c1d">
+            <title id="c1t">The four-step accounting cycle</title>
+            <desc id="c1d">Four boxes in order: record transactions, adjust, report on the financial statements, close the books. An arrow loops from close back to record for the next period.</desc>
+            <rect x="11" y="24" width="114" height="92" rx="8" class="sf-blue-soft" style="stroke:var(--blue)"/>
+            <text x="68" y="48" class="t tc t-b t-blue">1 Record</text>
+            <text x="68" y="72" class="t tc t-xs">Journal entries</text><text x="68" y="86" class="t tc t-xs">&amp; T-accounts</text>
+            <rect x="139" y="24" width="114" height="92" rx="8" class="sf-gold-soft" style="stroke:var(--gold-deep)"/>
+            <text x="196" y="48" class="t tc t-b t-gold">2 Adjust</text>
+            <text x="196" y="72" class="t tc t-xs">Fix timing gaps:</text><text x="196" y="86" class="t tc t-xs">accruals, deferrals</text>
+            <rect x="267" y="24" width="114" height="92" rx="8" class="sf-green-soft" style="stroke:var(--green)"/>
+            <text x="324" y="48" class="t tc t-b t-green">3 Report</text>
+            <text x="324" y="72" class="t tc t-xs">Build the four</text><text x="324" y="86" class="t tc t-xs">statements</text>
+            <rect x="395" y="24" width="114" height="92" rx="8" class="sf-rust-soft" style="stroke:var(--rust)"/>
+            <text x="452" y="48" class="t tc t-b t-rust">4 Close</text>
+            <text x="452" y="72" class="t tc t-xs">Zero out temporary</text><text x="452" y="86" class="t tc t-xs">accounts</text>
+            <path d="M126 70 L137 70 M132 65 L138 70 L132 75" class="ss-soft" stroke-width="1.6"/>
+            <path d="M254 70 L265 70 M260 65 L266 70 L260 75" class="ss-soft" stroke-width="1.6"/>
+            <path d="M382 70 L393 70 M388 65 L394 70 L388 75" class="ss-soft" stroke-width="1.6"/>
+            <path d="M452 118 L452 152 L68 152 L68 120" class="ss-soft sd" stroke-width="1.6"/>
+            <path d="M62 128 L68 119 L74 128" class="ss-soft" stroke-width="1.6"/>
+            <text x="260" y="172" class="t tc t-s">Next period starts with clean temporary accounts</text>
+            <text x="260" y="206" class="t tc t-b">Adjust BEFORE reporting. Close AFTER reporting.</text>
+          </svg>
+          <figcaption>The loop never changes. Statements come third, not last.</figcaption>
+        </figure>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 268" role="img" aria-labelledby="c2t c2d">
+            <title id="c2t">One transaction, two sides</title>
+            <desc id="c2d">A customer pays 500 dollars cash for a service. Cash, an asset, gets a 500 debit on the left. Service revenue gets a 500 credit on the right. Assets and expenses grow with debits; liabilities, equity and revenue grow with credits.</desc>
+            <text x="260" y="18" class="t tc t-b">Customer pays $500 cash for a service</text>
+            <text x="130" y="44" class="t tc t-b t-blue">Cash (an asset)</text>
+            <line x1="30" y1="52" x2="230" y2="52" class="ss-ink" stroke-width="2"/><line x1="130" y1="52" x2="130" y2="128" class="ss-ink" stroke-width="2"/>
+            <text x="80" y="70" class="t tc t-s">Debit (left)</text><text x="180" y="70" class="t tc t-s">Credit (right)</text>
+            <text x="80" y="104" class="t tc t-b t-blue" style="font-size:16px">500</text>
+            <text x="390" y="44" class="t tc t-b t-green">Service revenue</text>
+            <line x1="290" y1="52" x2="490" y2="52" class="ss-ink" stroke-width="2"/><line x1="390" y1="52" x2="390" y2="128" class="ss-ink" stroke-width="2"/>
+            <text x="340" y="70" class="t tc t-s">Debit (left)</text><text x="440" y="70" class="t tc t-s">Credit (right)</text>
+            <text x="440" y="104" class="t tc t-b t-green" style="font-size:16px">500</text>
+            <text x="260" y="95" class="t tc t-b">=</text>
+            <text x="260" y="150" class="t tc t-m t-s">Debits $500 = Credits $500</text>
+            <rect x="20" y="170" width="235" height="78" rx="8" class="sf-blue-soft" style="stroke:var(--blue)"/>
+            <text x="137" y="194" class="t tc t-b t-blue">Grows with a DEBIT (left)</text>
+            <text x="137" y="216" class="t tc">Assets</text><text x="137" y="234" class="t tc">Expenses</text>
+            <rect x="265" y="170" width="235" height="78" rx="8" class="sf-green-soft" style="stroke:var(--green)"/>
+            <text x="382" y="194" class="t tc t-b t-green">Grows with a CREDIT (right)</text>
+            <text x="382" y="216" class="t tc">Liabilities &amp; Equity</text><text x="382" y="234" class="t tc">Revenue</text>
+          </svg>
+          <figcaption>The opposite side always shrinks the account. Left and right are conventions, nothing more.</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="tiny-example">
+      <h4>Tiny example: one month at Brightside Consulting</h4>
+      <p>The owner invests <strong>$10,000</strong> cash. The firm does <strong>$4,000</strong> of consulting for cash, pays <strong>$1,500</strong> of wages, and at month-end owes another <strong>$500</strong> of wages it hasn't paid yet (the adjusting entry).</p>
+      <div class="calc">Cash        = 10,000 + 4,000 &minus; 1,500 = 12,500<br>Wages owed   = 500 (liability)<br>Wages exp.   = 1,500 paid + 500 owed = 2,000<br>Net income   = 4,000 &minus; 2,000 = 2,000<br>Equity       = 10,000 + 2,000 = 12,000<br>Check: Assets 12,500 = 500 + 12,000 &#10003;</div>
+      <p>Without the $500 adjustment, expenses look like $1,500, net income like $2,500, and liabilities like $0 &mdash; all wrong. Closing then moves the $4,000 revenue and $2,000 wages into retained earnings (+$2,000) and resets both to $0.</p>
+    </div>
+  </div>
+
+  <!-- ============ STEP 2: LEARN IT ============ -->
+  <div class="wrap section" id="learn" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Step 2 &middot; Learn it</span>
       <h2>Unit 3, section by section</h2>
+      <p class="text-soft">Open them in order. Each one ends with an exam angle.</p>
+    </div>
+    <div class="tier-filter" role="group" aria-label="Filter sections by tier">
+      <span class="lbl">Show:</span>
+      <button class="chip active" data-tier-filter="all">Everything</button>
+      <button class="chip" data-tier-filter="core">&#9733; Test core only</button>
     </div>
 
-    <div class="source-block" id="src-cycle">
+    <div class="source-block" id="src-cycle" data-tier="know">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">01</span><h3>The Accounting Cycle &amp; Its Three Tools</h3></span>
+        <span class="stitle"><span class="num">01</span><h3>The Accounting Cycle &amp; Its Three Tools</h3> <span class="tier tier-know">&#9680; Understand it</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -131,9 +245,9 @@
       </div>
     </div>
 
-    <div class="source-block" id="src-fset">
+    <div class="source-block" id="src-fset" data-tier="test">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">02</span><h3>FSET Mechanics &amp; T-Account Natural Balances</h3></span>
+        <span class="stitle"><span class="num">02</span><h3>FSET Mechanics &amp; T-Account Natural Balances</h3> <span class="tier tier-test">&#9733; Test core</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -166,9 +280,9 @@
       </div>
     </div>
 
-    <div class="source-block" id="src-adjustments">
+    <div class="source-block" id="src-adjustments" data-tier="test">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">03</span><h3>Why Adjustments Exist &amp; the Four Types</h3></span>
+        <span class="stitle"><span class="num">03</span><h3>Why Adjustments Exist &amp; the Four Types</h3> <span class="tier tier-test">&#9733; Test core</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -203,9 +317,111 @@
       </div>
     </div>
 
-    <div class="source-block" id="src-construction">
+    <div class="source-block" id="src-recipes" data-tier="test">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">04</span><h3>Constructing the Financial Statements, in Order</h3></span>
+        <span class="stitle"><span class="num">04</span><h3>Making the Adjusting Entries: Six Recipes with Numbers</h3> <span class="tier tier-test">&#9733; Test core</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>The big pattern</h4>
+        <p>An adjusting entry <strong>always touches one income-statement account and one balance-sheet account, and never touches Cash</strong>. (If cash moved, it was already recorded during the period.) Learn six recipes and you can do every adjustment on the exam.</p>
+        <table class="hw-table">
+          <tr><th>Situation</th><th>Debit</th><th>Credit</th><th>If you skip it</th></tr>
+          <tr><td class="hw-label">Prepaid expense used up</td><td>Expense</td><td>Prepaid asset</td><td>Assets and net income too high</td></tr>
+          <tr><td class="hw-label">Supplies used</td><td>Supplies expense</td><td>Supplies</td><td>Assets and net income too high</td></tr>
+          <tr><td class="hw-label">Depreciation</td><td>Depreciation expense</td><td>Accumulated depreciation</td><td>Assets and net income too high</td></tr>
+          <tr><td class="hw-label">Unearned revenue now earned</td><td>Unearned revenue</td><td>Revenue</td><td>Liabilities too high, revenue and net income too low</td></tr>
+          <tr><td class="hw-label">Accrued expense (wages, interest)</td><td>Expense</td><td>Payable</td><td>Liabilities too low, expenses too low, net income too high</td></tr>
+          <tr><td class="hw-label">Accrued revenue (interest earned)</td><td>Receivable</td><td>Revenue</td><td>Assets and net income too low</td></tr>
+        </table>
+
+        <h4>Recipe 1 &mdash; prepaid expense</h4>
+        <p>On Oct 1 a company pays <strong>$18,000</strong> for 12 months of insurance and records it as an asset (Prepaid Insurance). By Dec 31, 3 of 12 months are used.</p>
+        <div class="calc" style="font-family:var(--font-mono); font-size:.9rem; background:var(--paper-2); padding:10px 12px; border-radius:6px; margin:0 0 1em;">$18,000 &divide; 12 = $1,500 per month<br>&times; 3 months = <strong>$4,500</strong> expense<br>Prepaid left = $18,000 &minus; $4,500 = <strong>$13,500</strong> (still an asset)</div>
+        <table class="hw-table">
+          <tr><th>Dec 31</th><th>Debit</th><th>Credit</th></tr>
+          <tr><td>Insurance expense</td><td>4,500</td><td></td></tr>
+          <tr><td>&nbsp;&nbsp;&nbsp;Prepaid insurance</td><td></td><td>4,500</td></tr>
+        </table>
+
+        <h4>Recipe 2 &mdash; supplies (count, then plug)</h4>
+        <p>The supplies account shows <strong>$24,800</strong> before adjustment. A year-end count finds <strong>$7,100</strong> left. The ending balance must equal what is really on the shelf, so the difference was used: $24,800 &minus; $7,100 = <strong>$17,700</strong>. Debit Supplies Expense 17,700; credit Supplies 17,700.</p>
+
+        <h4>Recipe 3 &mdash; depreciation</h4>
+        <p>Equipment costs <strong>$150,000</strong>, lasts 10 years, no residual value. Straight-line: $150,000 &divide; 10 = <strong>$15,000 per year</strong>. Debit Depreciation Expense 15,000; credit <strong>Accumulated Depreciation</strong> 15,000. Accumulated depreciation is a contra-asset &mdash; the equipment's historical cost stays untouched. After 3 years: accumulated depreciation = 3 &times; 15,000 = $45,000, and book value = $150,000 &minus; $45,000 = <strong>$105,000</strong>. Depreciation expense is on the income statement; accumulated depreciation is on the balance sheet. It uses up the asset's cost; it does not set cash aside.</p>
+
+        <h4>Recipe 4 &mdash; unearned revenue becomes earned</h4>
+        <p>On Sep 1 a company collects <strong>$42,000</strong> for 12 months of service and records all of it as Unearned Revenue (a liability). By Dec 31, 4 months are delivered: $42,000 &divide; 12 &times; 4 = <strong>$14,000</strong>.</p>
+        <table class="hw-table">
+          <tr><th>Dec 31</th><th>Debit</th><th>Credit</th></tr>
+          <tr><td>Unearned revenue</td><td>14,000</td><td></td></tr>
+          <tr><td>&nbsp;&nbsp;&nbsp;Service revenue</td><td></td><td>14,000</td></tr>
+        </table>
+        <p>The remaining $28,000 is still a liability: the company still owes 8 months of service.</p>
+
+        <h4>Recipes 5 and 6 &mdash; accruals</h4>
+        <ul>
+          <li><strong>Accrued wages:</strong> employees earned <strong>$11,800</strong> not yet paid. Debit Wages Expense 11,800; credit Wages Payable 11,800. (Not &ldquo;debit Wages Payable, credit Cash&rdquo; &mdash; no cash moves yet.)</li>
+          <li><strong>Accrued interest expense:</strong> $4,100 of interest on a note has built up but is unpaid. Debit Interest Expense 4,100; credit Interest Payable 4,100. Net income falls by $4,100.</li>
+          <li><strong>Accrued interest revenue:</strong> $6,300 of interest has been earned but not received. Debit Interest Receivable 6,300; credit Interest Revenue 6,300. (Not &ldquo;debit Cash&rdquo;.)</li>
+        </ul>
+        <div class="exam-angle"><b>Exam angle</b>Expect to compute the amount (months used &divide; total months &times; price; beginning + purchases &minus; ending count; cost &divide; life) and pick the entry. A quick sanity check: the credit side of a prepaid/supplies/depreciation entry is always an asset (or contra-asset) account, and Cash never appears. Also expect &ldquo;what happens if the adjustment is skipped?&rdquo; &mdash; use the last column of the table above.</div>
+      </div>
+    </div>
+
+    <div class="source-block" id="src-rollforward" data-tier="test">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">05</span><h3>Solving for the Missing Piece: Roll-Forwards &amp; Accrual vs. Cash</h3> <span class="tier tier-test">&#9733; Test core</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>One formula solves half the exam</h4>
+        <p>Almost every balance sheet account with activity follows the same &ldquo;bucket&rdquo; logic. Whatever you start with, plus what flows in, minus what flows out, equals what is left:</p>
+        <div class="quote-block">Beginning balance + Additions &minus; Reductions = Ending balance</div>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 132" role="img" aria-labelledby="r3t r3d">
+            <title id="r3t">Roll-forward example: inventory</title>
+            <desc id="r3d">Beginning inventory 35 plus purchases 275 minus cost of goods sold 260 equals ending inventory 50, in millions of dollars.</desc>
+            <rect x="10" y="30" width="100" height="62" rx="8" class="sf-paper2" style="stroke:var(--text-soft)"/>
+            <text x="60" y="54" class="t tc t-s">Beginning</text><text x="60" y="78" class="t tc t-b">35</text>
+            <text x="128" y="68" class="t tc t-b t-l">+</text>
+            <rect x="146" y="30" width="100" height="62" rx="8" class="sf-blue-soft" style="stroke:var(--blue)"/>
+            <text x="196" y="54" class="t tc t-s">Purchases</text><text x="196" y="78" class="t tc t-b t-blue">275</text>
+            <text x="264" y="68" class="t tc t-b t-l">&minus;</text>
+            <rect x="282" y="30" width="100" height="62" rx="8" class="sf-rust-soft" style="stroke:var(--rust)"/>
+            <text x="332" y="54" class="t tc t-s">COGS</text><text x="332" y="78" class="t tc t-b t-rust">260</text>
+            <text x="400" y="68" class="t tc t-b t-l">=</text>
+            <rect x="418" y="30" width="92" height="62" rx="8" class="sf-gold-soft" style="stroke:var(--gold-deep)"/>
+            <text x="464" y="54" class="t tc t-s">Ending</text><text x="464" y="78" class="t tc t-b t-gold">50</text>
+            <text x="260" y="116" class="t tc t-s">Inventory, $ millions. Any one box can be the unknown.</text>
+          </svg>
+          <figcaption>Fill in three boxes, solve the fourth.</figcaption>
+        </figure>
+        <table class="hw-table">
+          <tr><th>Account</th><th>Beginning</th><th>+ In</th><th>&minus; Out</th><th>= Ending</th></tr>
+          <tr><td class="hw-label">Supplies</td><td>15,000</td><td>38,000 bought</td><td>? used (expense)</td><td>9,000 &rarr; used = <strong>44,000</strong></td></tr>
+          <tr><td class="hw-label">Inventory ($M)</td><td>35</td><td>275 purchases</td><td>260 COGS</td><td><strong>50</strong></td></tr>
+          <tr><td class="hw-label">Unearned revenue ($M)</td><td>3.3</td><td>5.9 collected</td><td>? earned (revenue)</td><td>4.1 &rarr; earned = <strong>5.1</strong></td></tr>
+          <tr><td class="hw-label">Salaries payable</td><td>6,500</td><td>? expense</td><td>? paid</td><td>0 after paying 24,700 &rarr; January expense = <strong>18,200</strong></td></tr>
+        </table>
+        <p>The last row: the Jan 8 payroll of $24,700 settles the $6,500 accrued in December <em>and</em> covers $18,200 earned in January. Only $18,200 is January expense. The $6,500 was already expensed in December.</p>
+        <p><strong>Direction check:</strong> assets (supplies, inventory) go <em>down</em> when used, and the expense (supplies expense, COGS) goes up. A liability (unearned revenue, wages payable) goes <em>down</em> when the work is delivered or the bill is paid, and revenue goes up or cash goes out.</p>
+
+        <h4>Why net income and cash flow differ</h4>
+        <p>Accrual net income counts revenue when earned and expenses when incurred. Cash only counts what moved. A company can show positive net income and negative operating cash flow (customers haven't paid yet) &mdash; this is normal, not an error.</p>
+        <div class="tiny-example">
+          <h4>Worked example</h4>
+          <p>Service revenue <strong>$480,000</strong>, cash collected <strong>$410,000</strong>. Wages expense <strong>$195,000</strong>, wages paid in cash <strong>$175,000</strong>. Ignore everything else.</p>
+          <div class="calc">Net income  = 480,000 &minus; 195,000 = 285,000<br>Cash profit = 410,000 &minus; 175,000 = 235,000<br>Gap = 50,000 = receivables up 70,000 &minus; wages payable up 20,000</div>
+          <p>Unpaid wages make cash look <em>better</em> than income; uncollected revenue makes it look <em>worse</em>. Likewise, wages <em>expense</em> = cash paid + unpaid at year-end (e.g. $78,000 paid + $19,000 owed = $97,000).</p>
+        </div>
+        <div class="exam-angle"><b>Exam angle</b>Write the four boxes and put the unknown in one. Typical prompts: ending inventory, purchases (= COGS + ending &minus; beginning), revenue recognized from unearned revenue, wages expense for the year, net income vs. cash collected. Remember: a payment that includes a previously accrued amount only expenses the <em>new</em> portion.</div>
+      </div>
+    </div>
+
+    <div class="source-block" id="src-construction" data-tier="know">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">06</span><h3>Constructing the Financial Statements, in Order</h3> <span class="tier tier-know">&#9680; Understand it</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -219,6 +435,24 @@
         </ol>
         <p>You need net income before you can reconcile retained earnings; you need the reconciled retained earnings before you can complete the Statement of Stockholders' Equity; you need the SSE's ending balances before the Balance Sheet's equity section is complete; and so on.</p>
 
+        <figure class="diagram">
+          <svg viewBox="0 0 520 124" role="img" aria-labelledby="k1t k1d">
+            <title id="k1t">Order for building the statements</title>
+            <desc id="k1d">Five steps in sequence: income statement, reconcile retained earnings, statement of stockholders' equity, balance sheet, statement of cash flows.</desc>
+            <rect x="8" y="14" width="86" height="70" rx="8" class="sf-blue-soft" style="stroke:var(--blue)"/><text x="51" y="36" class="t tc t-b t-blue">1</text><text x="51" y="54" class="t tc t-s">Income</text><text x="51" y="68" class="t tc t-s">statement</text>
+            <rect x="113" y="14" width="86" height="70" rx="8" class="sf-gold-soft" style="stroke:var(--gold-deep)"/><text x="156" y="36" class="t tc t-b t-gold">2</text><text x="156" y="54" class="t tc t-s">Retained</text><text x="156" y="68" class="t tc t-s">earnings</text>
+            <rect x="218" y="14" width="86" height="70" rx="8" class="sf-blue-soft" style="stroke:var(--blue)"/><text x="261" y="36" class="t tc t-b t-blue">3</text><text x="261" y="54" class="t tc t-s">Equity</text><text x="261" y="68" class="t tc t-s">statement</text>
+            <rect x="323" y="14" width="86" height="70" rx="8" class="sf-green-soft" style="stroke:var(--green)"/><text x="366" y="36" class="t tc t-b t-green">4</text><text x="366" y="54" class="t tc t-s">Balance</text><text x="366" y="68" class="t tc t-s">sheet</text>
+            <rect x="428" y="14" width="84" height="70" rx="8" class="sf-rust-soft" style="stroke:var(--rust)"/><text x="470" y="36" class="t tc t-b t-rust">5</text><text x="470" y="54" class="t tc t-s">Cash</text><text x="470" y="68" class="t tc t-s">flows</text>
+            <path d="M95 49 L111 49 M105 44 L112 49 L105 54" class="ss-soft" stroke-width="1.6"/>
+            <path d="M200 49 L216 49 M210 44 L217 49 L210 54" class="ss-soft" stroke-width="1.6"/>
+            <path d="M305 49 L321 49 M315 44 L322 49 L315 54" class="ss-soft" stroke-width="1.6"/>
+            <path d="M410 49 L426 49 M420 44 L427 49 L420 54" class="ss-soft" stroke-width="1.6"/>
+            <text x="260" y="110" class="t tc t-s">Net income &rarr; retained earnings &rarr; equity totals &rarr; balance sheet &rarr; cash reconciled</text>
+          </svg>
+          <figcaption>Each statement feeds the next. That dependency is why the order is fixed.</figcaption>
+        </figure>
+
         <h4>Preparing the Balance Sheet from the FSET</h4>
         <p>Start with the beginning balances from the prior year's balance sheet, then use the FSET entries in the balance sheet columns to determine activity in each account during the year. The bottom row of the FSET provides the balance sheet equation.</p>
 
@@ -226,9 +460,9 @@
       </div>
     </div>
 
-    <div class="source-block" id="src-closing">
+    <div class="source-block" id="src-closing" data-tier="test">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">05</span><h3>The Closing Process</h3></span>
+        <span class="stitle"><span class="num">07</span><h3>The Closing Process</h3> <span class="tier tier-test">&#9733; Test core</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -238,6 +472,24 @@
         <h4>Why a formal process is needed</h4>
         <p>Net income isn't automatically processed to the Balance Sheet as retained earnings &mdash; companies use journal entries to capture transactions and adjustments, so a formal closing process is required at each period-end to transfer temporary account balances into retained earnings.</p>
 
+        <figure class="diagram">
+          <svg viewBox="0 0 520 214" role="img" aria-labelledby="x1t x1d">
+            <title id="x1t">Closing moves temporary balances into retained earnings</title>
+            <desc id="x1d">Revenue 4,000 credit, expenses 2,000 debit and dividends 500 debit are all closed to retained earnings, which changes by plus 1,500. The temporary accounts end at zero.</desc>
+            <rect x="20" y="16" width="160" height="40" rx="6" class="sf-green-soft" style="stroke:var(--green)"/><text x="32" y="41" class="t t-b">Revenue</text><text x="168" y="41" class="t te">4,000 Cr</text>
+            <rect x="20" y="70" width="160" height="40" rx="6" class="sf-rust-soft" style="stroke:var(--rust)"/><text x="32" y="95" class="t t-b">Expenses</text><text x="168" y="95" class="t te">2,000 Dr</text>
+            <rect x="20" y="124" width="160" height="40" rx="6" class="sf-gold-soft" style="stroke:var(--gold-deep)"/><text x="32" y="149" class="t t-b">Dividends</text><text x="168" y="149" class="t te">500 Dr</text>
+            <path d="M182 36 L330 88 M182 90 L330 94 M182 144 L330 102" class="ss-soft" stroke-width="1.5"/>
+            <path d="M322 84 L331 89 L322 96" class="ss-soft" stroke-width="1.5"/>
+            <rect x="332" y="56" width="168" height="84" rx="8" class="sf-blue-soft" style="stroke:var(--blue)"/>
+            <text x="416" y="82" class="t tc t-b t-blue">Retained earnings</text>
+            <text x="416" y="102" class="t tc t-m">+4,000 &minus;2,000 &minus;500</text>
+            <text x="416" y="124" class="t tc t-b">= +1,500</text>
+            <text x="260" y="196" class="t tc t-s">The three temporary accounts end at $0. Retained earnings carries the result.</text>
+          </svg>
+          <figcaption>Dividends never touch the income statement, but they are still closed to retained earnings.</figcaption>
+        </figure>
+
         <h4>Close order</h4>
         <ol>
           <li>Close Revenue and Gain accounts</li>
@@ -246,6 +498,156 @@
         </ol>
 
         <div class="exam-angle"><b>Exam angle</b>A classic question tests whether you can identify temporary vs. permanent accounts. Another common angle: explain why dividends are closed directly to retained earnings even though they never touch the Income Statement &mdash; dividends reduce retained earnings directly (per Unit 2's roll-forward), so they still need to be zeroed out each period.</div>
+      </div>
+    </div>
+
+
+    <!-- ===== GO DEEPER ===== -->
+    <div id="deeper" style="margin-top:2.2em;">
+      <div class="section-head">
+        <span class="eyebrow">Optional &middot; Go deeper</span>
+        <h2>Homework-level material</h2>
+      </div>
+      <div class="deep-note"><b>You can skip this and still ace the test</b>The homework is much harder than the exam: it hands you messy before-adjustment balances, whole balance sheets to reverse-engineer, adjustments that span two periods, and full closing entries. If the basics above felt easy and you want to see the same ideas stretched, open these. When you're ready for graded practice, the homework page has Unit 3 problems: <a href="acctg-homework.html?unit=u3">Unit 3 homework practice</a>.</div>
+    </div>
+
+    <div class="source-block" id="deep-infer" data-tier="deep">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">&#9650;1</span><h3>Inferring Transactions from Balance Sheet Changes</h3> <span class="tier tier-deep">&#9650; Go deeper</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>The idea</h4>
+        <p>Real statements show you only <em>balances</em>. To work out what happened during the year, you run the roll-forward in reverse: you know the beginning balance, the ending balance, and one flow, and you solve for the other flow &mdash; then you write the journal entry it implies.</p>
+        <h4>Example: cash paid for prepaid expenses</h4>
+        <table class="hw-table">
+          <tr><th>$ millions</th><th>Prior year</th><th>Current year</th></tr>
+          <tr><td class="hw-label">Prepaid expenses (balance sheet)</td><td>40</td><td>52</td></tr>
+          <tr><td class="hw-label">Prepaid-related expense (income statement)</td><td></td><td>130</td></tr>
+        </table>
+        <div class="calc" style="font-family:var(--font-mono); font-size:.9rem; background:var(--paper-2); padding:10px 12px; border-radius:6px; margin:0 0 1em;">Beginning 40 + Cash paid X &minus; Expense 130 = Ending 52<br>X = 52 + 130 &minus; 40 = <strong>142</strong></div>
+        <p>Journal entry for the year: debit Prepaid 142, credit Cash 142 (the payments); debit Expense 130, credit Prepaid 130 (the using-up). Check: 40 + 142 &minus; 130 = 52.</p>
+        <h4>Example: cash collected from customers</h4>
+        <p>Revenue 900, receivables rose from 120 to 150, and unearned revenue rose from 60 to 75. Cash collected = revenue &minus; increase in receivables + increase in unearned revenue = 900 &minus; 30 + 15 = <strong>885</strong>.</p>
+        <p><strong>Trap:</strong> the direction of each adjustment. A growing receivable means customers owe you more, so cash is <em>lower</em> than revenue. Growing unearned revenue means you were paid for work not yet done, so cash is <em>higher</em>.</p>
+      </div>
+    </div>
+
+    <div class="source-block" id="deep-twoperiod" data-tier="deep">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">&#9650;2</span><h3>Adjustments Across Two Periods (the Biweekly Payroll Problem)</h3> <span class="tier tier-deep">&#9650; Go deeper</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>The setup</h4>
+        <p>A company works a five-day week and pays employees every second Friday. Employees earn <strong>$2,000 per workday</strong> in total. Its year-end is Wednesday, Dec 31. The last payday was Friday, Dec 26, covering work through that day. The next payday is Friday, Jan 9.</p>
+        <h4>Period 1 &mdash; Dec 31 adjustment</h4>
+        <p>Work since Dec 26: Mon Dec 29, Tue Dec 30, Wed Dec 31 = 3 days &times; $2,000 = <strong>$6,000</strong> earned and unpaid. Debit Wages Expense 6,000; credit Wages Payable 6,000.</p>
+        <h4>Period 2 &mdash; Jan 9 payroll</h4>
+        <p>The Jan 9 check covers the two weeks since Dec 26: 10 workdays &times; $2,000 = $20,000 (assume no holidays). 3 of those days were expensed last year.</p>
+        <table class="hw-table">
+          <tr><th>Jan 9</th><th>Debit</th><th>Credit</th></tr>
+          <tr><td>Wages payable</td><td>6,000</td><td></td></tr>
+          <tr><td>Wages expense (7 days &times; 2,000)</td><td>14,000</td><td></td></tr>
+          <tr><td>&nbsp;&nbsp;&nbsp;Cash</td><td></td><td>20,000</td></tr>
+        </table>
+        <p>Across both years, each day of work is expensed exactly once: 3 days in year 1, 7 days in year 2. Without the Dec 31 adjustment, year 1 would be understated by $6,000 of expense and year 2 overstated by the same amount &mdash; the total across years is the same, but each year's net income is wrong.</p>
+        <p>The financial-statement effect on Jan 9: assets (cash) down 20,000, liabilities down 6,000, equity (via expense) down 14,000.</p>
+      </div>
+    </div>
+
+    <div class="source-block" id="deep-closing-entries" data-tier="deep">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">&#9650;3</span><h3>Writing Full Closing Entries</h3> <span class="tier tier-deep">&#9650; Go deeper</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>Full closing entries</h4>
+        <p>At Dec 31, before closing, a firm has: Service fees earned $203,000 (credit), Rent expense $52,000 (debit), Salaries expense $118,000 (debit), Dividends $10,000 (debit), Retained earnings $64,000 (credit). Close in order: revenue, then expenses, then dividends.</p>
+        <table class="hw-table">
+          <tr><th>Closing entry</th><th>Debit</th><th>Credit</th></tr>
+          <tr><td>1. Service fees earned</td><td>203,000</td><td></td></tr>
+          <tr><td>&nbsp;&nbsp;&nbsp;Retained earnings</td><td></td><td>203,000</td></tr>
+          <tr><td>2. Retained earnings</td><td>170,000</td><td></td></tr>
+          <tr><td>&nbsp;&nbsp;&nbsp;Rent expense</td><td></td><td>52,000</td></tr>
+          <tr><td>&nbsp;&nbsp;&nbsp;Salaries expense</td><td></td><td>118,000</td></tr>
+          <tr><td>3. Retained earnings</td><td>10,000</td><td></td></tr>
+          <tr><td>&nbsp;&nbsp;&nbsp;Dividends</td><td></td><td>10,000</td></tr>
+        </table>
+        <div class="calc" style="font-family:var(--font-mono); font-size:.9rem; background:var(--paper-2); padding:10px 12px; border-radius:6px; margin:0 0 1em;">Net income = 203,000 &minus; 52,000 &minus; 118,000 = 33,000<br>Ending RE  = 64,000 + 33,000 &minus; 10,000 = <strong>87,000</strong></div>
+        <p>Check: 64,000 + 203,000 &minus; 170,000 &minus; 10,000 = 87,000. Revenue, rent, salaries and dividends all end at zero. Many textbooks route steps 1 and 2 through a temporary &ldquo;Income Summary&rdquo; account; the end result for retained earnings is identical, so follow whatever your instructor's problem asks.</p>
+        <p><strong>Trap:</strong> the dividend closing entry is a separate third step &mdash; dividends are never part of net income, so they never go through the expense-closing entry.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============ STEP 3: CHEAT SHEET ============ -->
+  <div class="wrap section" id="cheat" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Step 3 &middot; Cheat sheet</span>
+      <h2>Every Unit 3 rule and entry on one page</h2>
+    </div>
+    <div class="cheat-grid">
+      <div class="cheat-card"><h4>The cycle</h4>
+        <div class="cheat-formula">1 Record &rarr; 2 Adjust &rarr; 3 Statements &rarr; 4 Close</div>
+        <p>Adjust before statements. Close after.</p></div>
+      <div class="cheat-card"><h4>Debits and credits</h4>
+        <div class="cheat-formula">Debit = LEFT, Credit = RIGHT<br>Dr grows: Assets, Expenses<br>Cr grows: Liabilities, Equity, Revenue</div>
+        <p>Total debits = total credits, always.</p></div>
+      <div class="cheat-card"><h4>The four adjustments</h4>
+        <div class="cheat-formula">Prepaid expense: cash first, expense later<br>Unearned revenue: cash first, revenue later<br>Accrued expense: expense first, cash later<br>Accrued revenue: revenue first, cash later</div>
+        <p>Ask: which came first, cash or recognition?</p></div>
+      <div class="cheat-card"><h4>Prepaid / supplies</h4>
+        <div class="cheat-formula">Dr Expense / Cr Prepaid (or Supplies)<br>Prepaid used = price &divide; months &times; months passed<br>Supplies used = unadjusted &minus; count</div>
+        <p>Never touches Cash.</p></div>
+      <div class="cheat-card"><h4>Depreciation</h4>
+        <div class="cheat-formula">Dr Depreciation exp / Cr Accum. depreciation<br>Annual = (cost &minus; residual) &divide; life<br>Book value = cost &minus; accumulated dep.</div>
+        <p>Accum. dep. is a contra-asset. Cost never changes.</p></div>
+      <div class="cheat-card"><h4>Unearned revenue</h4>
+        <div class="cheat-formula">Receive: Dr Cash / Cr Unearned revenue<br>Earn: Dr Unearned revenue / Cr Revenue</div>
+        <p>Cash in advance is a liability, not revenue.</p></div>
+      <div class="cheat-card"><h4>Accruals</h4>
+        <div class="cheat-formula">Expense: Dr Wages exp / Cr Wages payable<br>Revenue: Dr Receivable / Cr Revenue</div>
+        <p>If you skip an accrued expense: expenses and liabilities too low, income too high.</p></div>
+      <div class="cheat-card"><h4>Roll-forward</h4>
+        <div class="cheat-formula">Beginning + In &minus; Out = Ending<br>Purchases = COGS + End &minus; Beg<br>Cash paid on accrued item = beg. payable + new expense</div>
+        <p>Put the unknown in one box and solve.</p></div>
+      <div class="cheat-card"><h4>Statement order</h4>
+        <div class="cheat-formula">IS &rarr; Retained earnings &rarr; SSE &rarr; BS &rarr; Cash flows</div>
+        <p>Each needs the one before.</p></div>
+      <div class="cheat-card"><h4>Closing</h4>
+        <div class="cheat-formula">Close: Revenue, Expenses, Dividends &rarr; Retained earnings<br>Temporary = Rev, Exp, Dividends<br>Permanent = Assets, Liabs, Contrib. capital, RE</div>
+        <p>After closing, temporary accounts are $0.</p></div>
+    </div>
+    <div class="cheat-traps">
+      <h4>Traps the exam sets</h4>
+      <ul>
+        <li>Recording an adjustment as a debit or credit to <em>Cash</em>. Adjusting entries never involve cash.</li>
+        <li>Debiting wages payable (instead of crediting it) when the wages are first accrued.</li>
+        <li>Treating cash received in advance as revenue. It is a liability until earned.</li>
+        <li>Reducing the equipment account for depreciation instead of using accumulated depreciation.</li>
+        <li>Counting a paid payroll in full as new-period expense when part was already accrued last year.</li>
+        <li>Believing positive net income means positive cash flow, or the reverse. They can differ.</li>
+        <li>Thinking Retained Earnings or Common Stock is closed. Only Revenue, Expenses and Dividends are.</li>
+        <li>Preparing the statements last, or in the wrong order.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ STEP 4: PRACTICE ============ -->
+  <div class="wrap section" id="practice" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Step 4 &middot; Practice</span>
+      <h2>Now test it</h2>
+    </div>
+    <div class="practice-panel">
+      <p style="margin:0;">Work in this order: the <a href="#quiz">quick quiz</a> and <a href="#flashcards-section">flashcards</a> below check the basics, then the exam-prep set, then the mock test. The homework set is much harder than the exam &mdash; treat it as optional stretch.</p>
+      <div class="practice-row">
+        <a class="btn blue" href="acctg-exam-prep.html?unit=m3">Exam-prep practice (Unit 3)</a>
+        <a class="btn ghost" href="#quiz">Unit 3 quiz</a>
+        <a class="btn ghost" href="acctg-mock-test.html">ACCTG mock test</a>
+        <a class="btn ghost" href="acctg-homework.html?unit=u3">Homework practice (harder)</a>
       </div>
     </div>
   </div>
@@ -390,6 +792,9 @@
         <li>Identify which accounts are temporary (zeroed out each period) vs. permanent (carried forward).</li>
         <li>Explain why dividends are closed to retained earnings even though they never appear on the Income Statement.</li>
         <li>Connect this unit's adjustment types back to Unit 2's cash-vs-accrual distinction &mdash; these four categories are the mechanical implementation of accrual accounting.</li>
+        <li>Compute an adjustment amount and choose the entry: prepaid insurance or rent used, supplies used from a count, straight-line depreciation and accumulated depreciation, unearned revenue earned, accrued wages and interest.</li>
+        <li>State the effect of <em>skipping</em> an adjustment on assets, liabilities, expenses and net income.</li>
+        <li>Solve a roll-forward for the missing piece (ending inventory, purchases, supplies used, revenue from unearned balances, wages expense) and explain why accrual net income differs from cash flow.</li>
       </ul>
     </div>
   </div>
@@ -405,6 +810,7 @@
 <script src="assets/acctg3-flashcards-data.js"></script>
 <script src="assets/acctg3-quiz-data.js"></script>
 <script src="assets/app.js"></script>
+<script src="assets/learnpath.js"></script>
 <script src="assets/acctg3-interactive.js"></script>
 </body>
 </html>

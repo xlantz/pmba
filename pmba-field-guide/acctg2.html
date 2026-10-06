@@ -34,12 +34,14 @@
         <button class="nav-caret" aria-expanded="false" aria-label="Show ACCTG 6000 items">&#9662;</button>
         <div class="nav-dropdown-menu">
           <div class="nav-dropdown-menu-inner">
+            <a href="acctg-start.html">Start here &mdash; Accounting from Zero</a>
             <a href="acctg1.html">Unit 1 &mdash; Reporting Foundations</a>
             <a href="acctg2.html">Unit 2 &mdash; Statements &amp; SEC Filings</a>
             <a href="acctg3.html">Unit 3 &mdash; The Accounting Cycle</a>
             <a href="acctg5.html">Unit 5 &mdash; Revenue &amp; Receivables</a>
             <a href="acctg6.html">Unit 6 &mdash; Inventory &amp; Long-Lived Assets</a>
             <a href="acctg7.html">Unit 7 &mdash; Current &amp; Long-Term Liabilities</a>
+            <a href="acctg8.html">Unit 8 &mdash; Equity, Dividends &amp; EPS</a>
             <a href="acctg-homework.html">Accounting HW Practice</a>
             <a href="acctg-exam-prep.html">Exam Prep Practice</a>
           </div>
@@ -84,7 +86,7 @@
     <div>
       <span class="eyebrow">ACCTG 6000 &#x00b7; Unit 2</span>
       <h1>The Balance Sheet, Income Statement &amp; Statement of Cash Flows</h1>
-      <p class="lede" style="max-width:70ch;">Unit 1 covered <em>why</em> financial reporting exists and the ratios that summarize it. Unit 2 is the <em>how</em>: cash vs. accrual accounting, how the Balance Sheet is actually built and classified, the liquidity metrics that come from it, how the other statements are constructed, and how all four statements tie together into one consistent system.</p>
+      <p class="lede" style="max-width:70ch;">Unit 1 covered <em>why</em> financial reporting exists and the ratios that summarize it. Unit 2 is the <em>how</em>: cash vs. accrual accounting, how the Balance Sheet is actually built and classified, the liquidity metrics that come from it, how the other statements are constructed, and how all four statements tie together into one consistent system. Each statement is explained from scratch, and the harder homework-level material sits in a marked <strong>Go deeper</strong> section at the end &mdash; skip it and you can still ace the test.</p>
       <div class="hero-stats">
         <div class="hero-stat"><b>35</b><span>Flashcards</span></div>
         <div class="hero-stat"><b>23</b><span>Quiz questions</span></div>
@@ -96,16 +98,130 @@
 
 <main id="main">
 
-  <!-- ============ TEACHING CONTENT ============ -->
+  <!-- ============ PATH ============ -->
   <div class="wrap section" style="padding-top:0;">
     <div class="section-head">
-      <span class="eyebrow">Walk the material</span>
+      <span class="eyebrow">Your route through this unit</span>
+      <h2>Novice &rarr; understanding &rarr; test-ready</h2>
+    </div>
+    <ol class="path-bar">
+      <li><a href="#start"><span class="pnum">Step 1</span><b>Start here</b><em>What each statement is for</em></a></li>
+      <li><a href="#learn"><span class="pnum">Step 2</span><b>Learn it</b><em>Ten short sections</em></a></li>
+      <li><a href="#cheat"><span class="pnum">Step 3</span><b>Cheat sheet</b><em>Every formula on one page</em></a></li>
+      <li><a href="#practice"><span class="pnum">Step 4</span><b>Practice</b><em>Quiz, flashcards, exam prep</em></a></li>
+      <li><a href="#deeper"><span class="pnum">Optional</span><b>Go deeper</b><em>Harder homework-level material</em></a></li>
+    </ol>
+    <div class="tier-key">
+      <span class="t"><span class="tier tier-test">&#9733; Test core</span> shows up on the exam</span>
+      <span class="t"><span class="tier tier-know">&#9680; Understand it</span> makes the core click</span>
+      <span class="t"><span class="tier tier-deep">&#9650; Go deeper</span> homework-level, optional</span>
+    </div>
+  </div>
+
+  <!-- ============ STEP 1: START HERE ============ -->
+  <div class="wrap section" id="start" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Step 1 &middot; Start here</span>
+      <h2>One year, four reports: a photo and three views of what happened</h2>
+    </div>
+    <div class="onramp">
+      <div>
+        <p class="big-idea">A company records everything it does in one set of books, then reports it four ways. The <strong>balance sheet</strong> is a photo of what it owns and owes on one day; the <strong>income statement</strong>, <strong>equity statement</strong> and <strong>cash flow statement</strong> describe what happened between two photos. All four must agree.</p>
+        <div class="analogy">
+          <b>The year-in-your-life analogy</b>
+          <p>Your net worth on January 1 is a photo. So is your net worth on December 31. Between them: a summary of what you earned and what you spent (the income statement), a note on how your own stake changed (the equity statement), and your bank statement showing where actual cash came from and went (the cash flow statement). They can honestly tell different stories. You may have <em>earned</em> $6,000 for work you finished, even though a client has not paid you yet, so your bank balance did not rise by $6,000. Both are true; they answer different questions.</p>
+        </div>
+        <div class="words-first">
+          <h4>Six words to know before anything else</h4>
+          <dl>
+            <dt>Snapshot vs. period</dt><dd>The balance sheet is a snapshot (one date). The other three cover a <em>period</em> (a quarter, a year).</dd>
+            <dt>Accrual basis</dt><dd>Record revenue when it is <em>earned</em> and expenses when <em>incurred</em>, whether or not cash has moved.</dd>
+            <dt>Current vs. long-term</dt><dd>Will it turn into cash (or be paid) within 12 months? Current if yes, long-term if no.</dd>
+            <dt>Net income</dt><dd>Revenue minus expenses for the period. It ends up in retained earnings.</dd>
+            <dt>Retained earnings</dt><dd>All profit the company has kept, net of dividends paid.</dd>
+            <dt>Cash flow</dt><dd>Actual cash in and out, split into operating, investing and financing.</dd>
+          </dl>
+        </div>
+      </div>
+      <div>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 220" role="img" aria-labelledby="p1t p1d">
+            <title id="p1t">Balance sheet snapshots with three period statements between them</title>
+            <desc id="p1d">Two balance sheets, at the start and end of the year, with the income statement, equity statement and cash flow statement describing the period between them.</desc>
+            <rect x="10" y="40" width="112" height="86" rx="8" class="sf-green-soft" style="stroke:var(--green)"/>
+            <text x="66" y="76" class="t tc t-b">Balance</text>
+            <text x="66" y="92" class="t tc t-b">sheet</text>
+            <text x="66" y="112" class="t tc t-s">Jan 1</text>
+            <rect x="398" y="40" width="112" height="86" rx="8" class="sf-green-soft" style="stroke:var(--green)"/>
+            <text x="454" y="76" class="t tc t-b">Balance</text>
+            <text x="454" y="92" class="t tc t-b">sheet</text>
+            <text x="454" y="112" class="t tc t-s">Dec 31</text>
+            <rect x="140" y="26" width="240" height="34" rx="6" class="sf-gold-soft" style="stroke:var(--gold-deep)"/>
+            <text x="260" y="48" class="t tc">Income statement: profit?</text>
+            <rect x="140" y="66" width="240" height="34" rx="6" class="sf-blue-soft" style="stroke:var(--blue)"/>
+            <text x="260" y="88" class="t tc">Equity statement: owners&rsquo; stake?</text>
+            <rect x="140" y="106" width="240" height="34" rx="6" class="sf-rust-soft" style="stroke:var(--rust)"/>
+            <text x="260" y="128" class="t tc">Cash flow statement: cash?</text>
+            <path d="M124 83 H138 M130 78 L139 83 L130 88" class="ss-soft" stroke-width="1.6"/>
+            <path d="M382 83 H396 M390 78 L397 83 L390 88" class="ss-soft" stroke-width="1.6"/>
+            <text x="66" y="156" class="t tc t-s">a moment</text>
+            <text x="454" y="156" class="t tc t-s">a moment</text>
+            <line x1="140" y1="170" x2="380" y2="170" class="ss-soft" stroke-width="2"/>
+            <path d="M140 164 V176 M380 164 V176" class="ss-soft" stroke-width="2"/>
+            <text x="260" y="192" class="t tc t-s">a period (the whole year)</text>
+            <text x="260" y="212" class="t tc t-xs">The three statements in the middle explain how the first photo became the second.</text>
+          </svg>
+          <figcaption>Point in time: balance sheet. Period of time: the other three.</figcaption>
+        </figure>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 200" role="img" aria-labelledby="p2t p2d">
+            <title id="p2t">The one question each statement answers</title>
+            <desc id="p2d">Balance sheet: what do we own and owe. Income statement: did we make a profit. Equity statement: how did the owners stake change. Cash flow statement: where did cash come from and go.</desc>
+            <rect x="10" y="12" width="246" height="84" rx="8" class="sf-green-soft" style="stroke:var(--green)"/>
+            <text x="133" y="38" class="t tc t-b t-green">Balance sheet</text>
+            <text x="133" y="58" class="t tc">What do we own and owe?</text>
+            <text x="133" y="78" class="t tc t-xs">A = L + E &middot; one date</text>
+            <rect x="264" y="12" width="246" height="84" rx="8" class="sf-gold-soft" style="stroke:var(--gold-deep)"/>
+            <text x="387" y="38" class="t tc t-b t-gold">Income statement</text>
+            <text x="387" y="58" class="t tc">Did we make a profit?</text>
+            <text x="387" y="78" class="t tc t-xs">revenue &minus; expenses &middot; a period</text>
+            <rect x="10" y="104" width="246" height="84" rx="8" class="sf-blue-soft" style="stroke:var(--blue)"/>
+            <text x="133" y="130" class="t tc t-b t-blue">Equity statement</text>
+            <text x="133" y="150" class="t tc">How did owners&rsquo; stake change?</text>
+            <text x="133" y="170" class="t tc t-xs">stock, profit, dividends &middot; a period</text>
+            <rect x="264" y="104" width="246" height="84" rx="8" class="sf-rust-soft" style="stroke:var(--rust)"/>
+            <text x="387" y="130" class="t tc t-b t-rust">Cash flow statement</text>
+            <text x="387" y="150" class="t tc">Where did cash come from?</text>
+            <text x="387" y="170" class="t tc t-xs">operating, investing, financing &middot; a period</text>
+          </svg>
+          <figcaption>Know the one question each statement answers and you can place any number.</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="tiny-example">
+      <h4>Tiny example: one month at a lawn-care company</h4>
+      <p>The company starts the month with retained earnings of <strong>$20,000</strong>. It mows lawns worth <strong>$10,000</strong>, but customers have paid only <strong>$6,000</strong> so far. It pays <strong>$4,000</strong> of expenses in cash and a <strong>$1,000</strong> dividend.</p>
+      <div class="calc">Income statement: 10,000 revenue - 4,000 expenses = 6,000 net income<br>Operating cash flow: 6,000 collected - 4,000 paid  = 2,000<br>Retained earnings: 20,000 + 6,000 - 1,000 dividend  = 25,000<br>Balance sheet shows 4,000 of receivables (earned, not yet collected)</div>
+      <p>Net income ($6,000) and operating cash ($2,000) differ by exactly the $4,000 customers still owe. Same company, same month: the income statement counts what was <em>earned</em>, the cash flow statement counts what was <em>received</em>. Section 01 below turns that into the cash-vs-accrual rule.</p>
+    </div>
+  </div>
+
+  <!-- ============ STEP 2: LEARN IT ============ -->
+  <div class="wrap section" id="learn" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Step 2 &middot; Learn it</span>
       <h2>Unit 2, section by section</h2>
+      <p class="text-soft">Open them in order. Each one ends with an exam angle. The first five are what the exam leans on.</p>
+    </div>
+    <div class="tier-filter" role="group" aria-label="Filter sections by tier">
+      <span class="lbl">Show:</span>
+      <button class="chip active" data-tier-filter="all">Everything</button>
+      <button class="chip" data-tier-filter="core">&#9733; Test core only</button>
     </div>
 
-    <div class="source-block" id="src-basis">
-      <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">01</span><h3>Cash vs. Accrual &amp; the Accounting Equation</h3></span>
+    <div class="source-block" id="src-basis" data-tier="test">
+      <button class="source-toggle" aria-expanded="true">
+        <span class="stitle"><span class="num">01</span><h3>Cash vs. Accrual &amp; the Accounting Equation</h3> <span class="tier tier-test">&#9733; Test core</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -118,13 +234,46 @@
         </ul>
         <div class="quote-block">Assets = Liabilities + Stockholders' Equity</div>
         <p>Every transaction has to keep both sides of this equation equal &#x2014; it's the identity the entire Balance Sheet is built on.</p>
+        <figure class="diagram" style="max-width:560px;">
+          <svg viewBox="0 0 520 170" role="img" aria-labelledby="bst bsd">
+            <title id="bst">When cash and accrual record the same sale</title>
+            <desc id="bsd">A service is delivered in March and paid in April. Accrual records revenue in March; cash basis records it in April.</desc>
+            <rect x="20" y="14" width="220" height="40" rx="6" class="sf-gold-soft" style="stroke:var(--gold-deep)"/>
+            <text x="130" y="32" class="t tc t-b t-gold">Accrual</text>
+            <text x="130" y="47" class="t tc t-s">revenue + receivable recorded now</text>
+            <rect x="280" y="14" width="220" height="40" rx="6" class="sf-blue-soft" style="stroke:var(--blue)"/>
+            <text x="390" y="32" class="t tc t-b t-blue">Cash basis</text>
+            <text x="390" y="47" class="t tc t-s">revenue recorded only now</text>
+            <path d="M130 56 V98 M390 56 V98" class="ss-soft" stroke-width="1.5"/>
+            <line x1="20" y1="106" x2="500" y2="106" class="ss-soft" stroke-width="2"/>
+            <circle cx="130" cy="106" r="6" class="sf-gold" style="stroke:var(--gold-deep)"/>
+            <circle cx="390" cy="106" r="6" class="sf-blue" style="stroke:var(--blue-deep)"/>
+            <text x="130" y="130" class="t tc t-b">March: service delivered</text>
+            <text x="390" y="130" class="t tc t-b">April: customer pays</text>
+            <text x="260" y="156" class="t tc t-xs">In between, accrual shows the amount owed as Accounts Receivable on the balance sheet.</text>
+          </svg>
+          <figcaption>Same sale, same total revenue; the two methods differ only in <em>when</em> it is recorded.</figcaption>
+        </figure>
+
+        <h4>One month, both ways</h4>
+        <p>In March a firm delivers $40,000 of services: $25,000 collected in cash and $15,000 billed on account. Employees earn $18,000 of wages, of which $12,000 is paid before month-end.</p>
+        <table class="mini-table">
+          <thead><tr><th></th><th>Accrual</th><th>Cash basis</th></tr></thead>
+          <tbody>
+            <tr><td>Revenue</td><td>$40,000</td><td>$25,000</td></tr>
+            <tr><td>Wage expense</td><td>$18,000</td><td>$12,000</td></tr>
+            <tr><td><strong>Net income</strong></td><td><strong>$22,000</strong></td><td><strong>$13,000</strong></td></tr>
+            <tr><td>Balance sheet, March 31</td><td colspan="2">Accounts receivable $15,000 and wages payable $6,000 (accrual only)</td></tr>
+          </tbody>
+        </table>
+        <p>When the customer later pays the $15,000, the firm records cash up and receivable down. <strong>No new revenue</strong>: it was recorded in March.</p>
+
         <div class="exam-angle"><b>Exam angle</b>Given a transaction (a sale on credit, cash received in advance, an expense incurred but not yet paid), determine whether and when it would be recorded differently under cash vs. accrual accounting. If asked to name every recognized method, don't forget hybrid basis.</div>
       </div>
     </div>
-
-    <div class="source-block" id="src-balance-sheet">
+    <div class="source-block" id="src-balance-sheet" data-tier="test">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">02</span><h3>The Balance Sheet: Current, Long-Term &amp; Historical Cost</h3></span>
+        <span class="stitle"><span class="num">02</span><h3>The Balance Sheet: Current, Long-Term &amp; Historical Cost</h3> <span class="tier tier-test">&#9733; Test core</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -140,6 +289,8 @@
           </tbody>
         </table>
 
+        <div class="key-flag"><b>Sorting tips</b> Inventory, receivables and prepaid expenses are current assets. PP&amp;E and goodwill are long-term. Accounts payable and accrued salaries are current liabilities, and so is unearned revenue that will be earned within the next 12 months. Long-term notes payable are long-term liabilities.</div>
+
         <h4>Historical cost rule</h4>
         <p>Assets are recorded at what the company <em>paid</em> for them &#x2014; not their current market value. A building bought for $2M twenty years ago still shows up at $2M (less depreciation), even if it's worth $5M today.</p>
 
@@ -152,10 +303,129 @@
         <div class="exam-angle"><b>Exam angle</b>Classify a list of balance sheet items as current/long-term asset or liability &#x2014; and be ready to explain the historical cost principle and why assets aren't restated to market value.</div>
       </div>
     </div>
-
-    <div class="source-block" id="src-liquidity">
+    <div class="source-block" id="src-statements" data-tier="test">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">03</span><h3>Liquidity Metrics &amp; Book vs. Market Value</h3></span>
+        <span class="stitle"><span class="num">03</span><h3>Statement of Stockholders' Equity, Income Statement &amp; Statement of Cash Flows</h3> <span class="tier tier-test">&#9733; Test core</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>Statement of Stockholders' Equity</h4>
+        <ul>
+          <li>Common Stock and Additional Paid-in Capital increase by the proceeds received from stock issuances.</li>
+          <li>Retained Earnings increases by net income and decreases by dividends paid and by stock repurchased and retired.</li>
+          <li>Accumulated Other Comprehensive Income (AOCI) increases/decreases by changes in certain asset and liability fair values that are <em>not</em> run through the Income Statement.</li>
+        </ul>
+        <div class="quote-block">Ending Retained Earnings = Beginning RE + Net Income (&#x2212; Net Loss) &#x2212; Dividends &#x2212; Stock repurchased &amp; retired</div>
+        <p class="text-soft" style="font-size:.9rem;">This roll-forward formula is tested constantly &#x2014; memorize it cold, including working it backward to solve for a missing figure (e.g., net income given beginning/ending RE and dividends).</p>
+
+        <h4>Income Statement (P&amp;L)</h4>
+        <p>Reports a company's financial performance &#x2014; revenues, expenses, and net profit or loss &#x2014; over a specific <strong>period</strong> of time, not a snapshot.</p>
+
+        <h4>Statement of Cash Flows</h4>
+        <p>Shows the company's ability to generate cash: sources of cash, and what it did with it. Structured around the same three activity categories from Unit 1: <strong>Operating</strong>, <strong>Investing</strong>, <strong>Financing</strong>.</p>
+
+        <h4>The arithmetic you must be able to do</h4>
+        <table class="mini-table">
+          <thead><tr><th>Question</th><th>Work</th><th>Answer</th></tr></thead>
+          <tbody>
+            <tr><td>Net income: revenue $950M, COGS $560M, other operating expenses $220M, tax $38M</td><td>950 &minus; 560 &minus; 220 &minus; 38</td><td><strong>$132M</strong></td></tr>
+            <tr><td>Ending RE: beginning $195M, NI $48M, dividends $22M</td><td>195 + 48 &minus; 22</td><td><strong>$221M</strong></td></tr>
+            <tr><td>Ending RE with another $3M decrease: beginning $160M, NI $38M, dividends $15M</td><td>160 + 38 &minus; 15 &minus; 3</td><td><strong>$180M</strong></td></tr>
+            <tr><td>Back-solve NI: beginning RE $195M, ending $221M, dividends $22M</td><td>221 &minus; 195 + 22</td><td><strong>$48M</strong></td></tr>
+            <tr><td>Ending cash: beginning $45M; operating +130, investing &minus;95, financing &minus;15</td><td>45 + 130 &minus; 95 &minus; 15</td><td><strong>$65M</strong></td></tr>
+          </tbody>
+        </table>
+        <p class="text-soft" style="font-size:.9rem;">Dividends are not an expense: they reduce retained earnings but never net income.</p>
+
+        <div class="exam-angle"><b>Exam angle</b>Expect pure arithmetic: net income from the income statement lines, a retained earnings roll-forward (forward or backward), and ending cash from the three activity totals. Show the formula first, then plug in.</div>
+      </div>
+    </div>
+    <div class="source-block" id="src-linkages" data-tier="test">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">04</span><h3>How the Four Statements Link Together</h3> <span class="tier tier-test">&#9733; Test core</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>Statement linkages</h4>
+        <table class="mini-table">
+          <thead><tr><th>Linkage</th><th>Connector</th></tr></thead>
+          <tbody>
+            <tr><td>Balance Sheet &harr; Income Statement</td><td>Retained earnings</td></tr>
+            <tr><td>Balance Sheet &harr; Statement of Cash Flows</td><td>Cash</td></tr>
+            <tr><td>Balance Sheet &harr; Statement of Stockholders' Equity</td><td>Common stock/APIC, retained earnings, AOCI</td></tr>
+            <tr><td>Income Statement &harr; Statement of Stockholders' Equity</td><td>Net Income</td></tr>
+          </tbody>
+        </table>
+        <p class="text-soft" style="font-size:.9rem;">This table is a high-value exam item on its own &#x2014; given partial data across two statements, use it to find a missing connecting figure.</p>
+
+        <figure class="diagram" style="max-width:560px;">
+          <svg viewBox="0 0 520 250" role="img" aria-labelledby="lkt lkd">
+            <title id="lkt">How the four statements connect</title>
+            <desc id="lkd">Net income flows from the income statement to the equity statement. The equity statement feeds the balance sheet. The cash flow statement ending cash feeds balance sheet cash.</desc>
+            <defs><marker id="lkar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" style="fill:var(--text-soft)"/></marker></defs>
+            <rect x="12" y="18" width="170" height="56" rx="8" class="sf-gold-soft" style="stroke:var(--gold-deep)"/>
+            <text x="97" y="42" class="t tc t-b">Income statement</text>
+            <text x="97" y="60" class="t tc t-s">a period</text>
+            <rect x="338" y="18" width="170" height="56" rx="8" class="sf-blue-soft" style="stroke:var(--blue)"/>
+            <text x="423" y="42" class="t tc t-b">Equity statement</text>
+            <text x="423" y="60" class="t tc t-s">a period</text>
+            <rect x="338" y="176" width="170" height="56" rx="8" class="sf-green-soft" style="stroke:var(--green)"/>
+            <text x="423" y="200" class="t tc t-b">Balance sheet</text>
+            <text x="423" y="218" class="t tc t-s">a date</text>
+            <rect x="12" y="176" width="170" height="56" rx="8" class="sf-rust-soft" style="stroke:var(--rust)"/>
+            <text x="97" y="200" class="t tc t-b">Cash flow statement</text>
+            <text x="97" y="218" class="t tc t-s">a period</text>
+            <path d="M184 46 H336" class="ss-soft" stroke-width="1.6" marker-end="url(#lkar)"/>
+            <text x="260" y="38" class="t tc t-s">net income</text>
+            <path d="M423 76 V174" class="ss-soft" stroke-width="1.6" marker-end="url(#lkar)"/>
+            <text x="414" y="118" class="t te t-s">retained earnings,</text>
+            <text x="414" y="132" class="t te t-s">stock/APIC, AOCI</text>
+            <path d="M184 204 H336" class="ss-soft" stroke-width="1.6" marker-end="url(#lkar)"/>
+            <text x="260" y="196" class="t tc t-s">ending cash</text>
+          </svg>
+          <figcaption>Net income is the bridge from the income statement into retained earnings. Cash is the bridge from the cash flow statement to the balance sheet.</figcaption>
+        </figure>
+
+        <h4>Linkage mini-puzzle</h4>
+        <p>Beginning retained earnings are $60 and the company paid $12 of dividends. The balance sheet shows ending retained earnings of $83. Then net income must be 83 &minus; 60 + 12 = <strong>$35</strong>, and the income statement has to show that same $35. If the cash flow statement ends with $101 of cash, the balance sheet must show $101 of cash.</p>
+
+        <div class="exam-angle"><b>Exam angle</b>Given partial data across two statements, use the table (and the diagram) to find the missing connecting figure: net income links the income statement to equity, retained earnings links equity to the balance sheet, and ending cash links the cash flow statement to the balance sheet. Also be ready to apply ROA and ROE with <em>average</em> balances.</div>
+      </div>
+    </div>
+    <div class="source-block" id="src-audit" data-tier="test">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">05</span><h3>Audit Opinions: What a Clean Opinion Does and Doesn&rsquo;t Mean</h3> <span class="tier tier-test">&#9733; Test core</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>Big idea</h4>
+        <p>An auditor is an independent professional who tests a company&rsquo;s statements and then gives an <strong>opinion</strong>. The opinion is about whether the statements are presented fairly, not about whether the company is a good investment.</p>
+        <table class="mini-table">
+          <thead><tr><th>Opinion</th><th>Plain meaning</th></tr></thead>
+          <tbody>
+            <tr><td>Unqualified (&ldquo;clean&rdquo;)</td><td>Fairly presented, in all material respects, under the applicable framework (GAAP)</td></tr>
+            <tr><td>Qualified</td><td>Fair &ldquo;except for&rdquo; one specific problem</td></tr>
+            <tr><td>Adverse</td><td>Not fairly presented</td></tr>
+            <tr><td>Disclaimer</td><td>The auditor could not gather enough evidence to give an opinion</td></tr>
+          </tbody>
+        </table>
+
+        <h4>What a clean opinion does not promise</h4>
+        <ul>
+          <li><strong>Not</strong> that no fraud exists. Auditors give reasonable, not absolute, assurance.</li>
+          <li><strong>Not</strong> that every transaction was examined. They test samples.</li>
+          <li><strong>Not</strong> that the company is financially sound or will not fail.</li>
+        </ul>
+
+        <h4>Two separate opinions</h4>
+        <p>For larger public companies the auditor gives an opinion on the <strong>financial statements</strong> and a separate one on <strong>internal control over financial reporting</strong> (the company&rsquo;s system of checks). They can differ: a clean opinion on the statements can sit beside an <em>adverse</em> opinion on internal control (a material weakness). An adverse control opinion does not by itself mean the numbers are wrong, and it is not an accusation of fraud.</p>
+
+        <div class="exam-angle"><b>Exam angle</b>Pick the wording that matches the scope: &ldquo;fairly presented, in all material respects, under the applicable framework.&rdquo; Reject answers that say &ldquo;no fraud,&rdquo; &ldquo;every transaction checked,&rdquo; or &ldquo;financially sound.&rdquo; For the two-opinion question, the answer is that they can coexist.</div>
+      </div>
+    </div>
+    <div class="source-block" id="src-liquidity" data-tier="know">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">06</span><h3>Liquidity Metrics &amp; Book vs. Market Value</h3> <span class="tier tier-know">&#9680; Understand it</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -177,29 +447,14 @@
         <div class="exam-angle"><b>Exam angle</b>Explain why book value and market value diverge for a given company &#x2014; anchor your answer in historical cost vs. forward-looking market expectations, not "one of them must be wrong."</div>
       </div>
     </div>
-
-    <div class="source-block" id="src-statements">
+    <div class="source-block" id="src-cf-reading" data-tier="know">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">04</span><h3>Statement of Stockholders' Equity, Income Statement &amp; Statement of Cash Flows</h3></span>
+        <span class="stitle"><span class="num">07</span><h3>Reading a Cash Flow Statement Like an Analyst</h3> <span class="tier tier-know">&#9680; Understand it</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
-        <h4>Statement of Stockholders' Equity</h4>
-        <ul>
-          <li>Common Stock and Additional Paid-in Capital increase by the proceeds received from stock issuances.</li>
-          <li>Retained Earnings increases by net income and decreases by dividends paid and by stock repurchased and retired.</li>
-          <li>Accumulated Other Comprehensive Income (AOCI) increases/decreases by changes in certain asset and liability fair values that are <em>not</em> run through the Income Statement.</li>
-        </ul>
-        <div class="quote-block">Ending Retained Earnings = Beginning RE + Net Income (&#x2212; Net Loss) &#x2212; Dividends &#x2212; Stock repurchased &amp; retired</div>
-        <p class="text-soft" style="font-size:.9rem;">This roll-forward formula is tested constantly &#x2014; memorize it cold, including working it backward to solve for a missing figure (e.g., net income given beginning/ending RE and dividends).</p>
-
-        <h4>Income Statement (P&amp;L)</h4>
-        <p>Reports a company's financial performance &#x2014; revenues, expenses, and net profit or loss &#x2014; over a specific <strong>period</strong> of time, not a snapshot.</p>
-
-        <h4>Statement of Cash Flows</h4>
-        <p>Shows the company's ability to generate cash: sources of cash, and what it did with it. Structured around the same three activity categories from Unit 1: <strong>Operating</strong>, <strong>Investing</strong>, <strong>Financing</strong>.</p>
-
-        <h4>Analytical questions for reading a cash flow statement</h4>
+        <h4>Big idea</h4>
+        <p>A cash flow statement is more than three totals. These questions turn the numbers into a story about the company&rsquo;s health.</p>
         <ul>
           <li>Is the company generating cash from operating activities?</li>
           <li>Is that operating cash flow sustainable?</li>
@@ -212,25 +467,14 @@
         <div class="exam-angle"><b>Exam angle</b>This analytical question list is a ready-made rubric for a "read this cash flow statement and assess the company's financial health" prompt &#x2014; walk through each question against the numbers given, rather than just reciting the three section totals.</div>
       </div>
     </div>
-
-    <div class="source-block" id="src-linkages">
+    <div class="source-block" id="src-sec" data-tier="know">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">05</span><h3>How the Four Statements Link Together, &amp; SEC Filings</h3></span>
+        <span class="stitle"><span class="num">08</span><h3>SEC Filings: 10-K, 10-Q and 8-K</h3> <span class="tier tier-know">&#9680; Understand it</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
-        <h4>Statement linkages</h4>
-        <table class="mini-table">
-          <thead><tr><th>Linkage</th><th>Connector</th></tr></thead>
-          <tbody>
-            <tr><td>Balance Sheet &harr; Income Statement</td><td>Retained earnings</td></tr>
-            <tr><td>Balance Sheet &harr; Statement of Cash Flows</td><td>Cash</td></tr>
-            <tr><td>Balance Sheet &harr; Statement of Stockholders' Equity</td><td>Common stock/APIC, retained earnings, AOCI</td></tr>
-            <tr><td>Income Statement &harr; Statement of Stockholders' Equity</td><td>Net Income</td></tr>
-          </tbody>
-        </table>
-        <p class="text-soft" style="font-size:.9rem;">This table is a high-value exam item on its own &#x2014; given partial data across two statements, use it to find a missing connecting figure.</p>
-
+        <h4>Big idea</h4>
+        <p>Public companies file reports with the SEC on a schedule, plus one for surprises.</p>
         <h4>SEC filings</h4>
         <table class="mini-table">
           <thead><tr><th>Filing</th><th>What it is</th></tr></thead>
@@ -242,13 +486,12 @@
         </table>
         <div class="callout" style="margin-top:1em;">A heads-up: some Unit 2 source notes list the 10-K and 10-Q the other way around (10-K as quarterly, 10-Q as annual). The table above uses the standard SEC convention (10-K = annual, 10-Q = quarterly). Double-check against your own course slides before you lock this in for an exam.</div>
 
-        <div class="exam-angle"><b>Exam angle</b>Given a scenario (e.g., an unplanned executive departure, a major acquisition, a data breach), identify which SEC filing the company would use to disclose it &#x2014; 8-K is the one that most often trips people up, since it's the "everything else, right away" filing.</div>
+        <div class="exam-angle"><b>Exam angle</b>Given a scenario (an unplanned executive departure, a major acquisition, a data breach), identify which SEC filing the company would use to disclose it. 8-K is the one that most often trips people up, since it is the &ldquo;everything else, right away&rdquo; filing.</div>
       </div>
     </div>
-
-    <div class="source-block" id="src-governance">
+    <div class="source-block" id="src-governance" data-tier="know">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">06</span><h3>Governance: SEC, FASB, GAAP, Auditors &amp; PCAOB</h3></span>
+        <span class="stitle"><span class="num">09</span><h3>Governance: SEC, FASB, GAAP, Auditors &amp; PCAOB</h3> <span class="tier tier-know">&#9680; Understand it</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -273,10 +516,9 @@
         <div class="exam-angle"><b>Exam angle</b>Trace the chain rather than defining terms in isolation: SEC sits at the top and commissions both FASB (rules) and the PCAOB (audit oversight) &mdash; that relationship is the actual exam-worthy insight, not the five definitions alone.</div>
       </div>
     </div>
-
-    <div class="source-block" id="src-drama">
+    <div class="source-block" id="src-drama" data-tier="know">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">07</span><h3>Drama in the Accounting World</h3></span>
+        <span class="stitle"><span class="num">10</span><h3>Drama in the Accounting World</h3> <span class="tier tier-know">&#9680; Understand it</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -291,6 +533,163 @@
         </ol>
 
         <div class="exam-angle"><b>Exam angle</b>If asked "why does the governance structure (SEC/FASB/PCAOB) exist," this list is your historical justification &mdash; each institution above is traceable to one of these four failure patterns.</div>
+      </div>
+    </div>
+
+    <!-- ===== GO DEEPER ===== -->
+    <div id="deeper" style="margin-top:2.2em;">
+      <div class="section-head">
+        <span class="eyebrow">Optional &middot; Go deeper</span>
+        <h2>Homework-level material</h2>
+      </div>
+      <div class="deep-note"><b>You can skip this and still ace the test</b>The homework is much harder than the exam: it builds whole statements from raw data, back-solves missing figures and reads real audit reports. If the basics above felt easy and you want to see the same ideas stretched, open these. When you&rsquo;re ready for graded practice: <a href="acctg-homework.html?unit=u2">Unit 2 homework practice</a>.</div>
+    </div>
+
+    <div class="source-block" id="deep-audit-report" data-tier="deep">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">&#9650;1</span><h3>Reading a Real Audit Report (Amazon)</h3> <span class="tier tier-deep">&#9650; Go deeper</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>Anatomy of a public-company audit report</h4>
+        <p>The homework hands you a real audit report and asks what it says. They follow a standard order:</p>
+        <ol class="stepper-list">
+          <li><strong>Title and addressee:</strong> &ldquo;Report of Independent Registered Public Accounting Firm,&rdquo; addressed to the shareholders and the board of directors.</li>
+          <li><strong>Opinion on the financial statements:</strong> names the statements and the dates they cover, and says they &ldquo;present fairly, in all material respects&rdquo; the financial position and results &ldquo;in conformity with U.S. generally accepted accounting principles.&rdquo; This is your clean-opinion sentence.</li>
+          <li><strong>Basis for opinion:</strong> management is responsible for the statements; the auditor is responsible for the opinion; the audit followed the standards of the PCAOB (the oversight body from the governance section); and the audit gives <em>reasonable assurance</em> whether misstatement is due to error or fraud.</li>
+          <li><strong>Critical audit matters (CAMs):</strong> the hardest, most judgmental areas of the audit. A CAM is a spotlight on difficulty, <strong>not</strong> a qualification.</li>
+          <li><strong>Opinion on internal control over financial reporting:</strong> often a separate section or report, with its own &ldquo;effective&rdquo; or &ldquo;adverse&rdquo; conclusion, plus a definition of internal control and its inherent limitations.</li>
+          <li><strong>Signature block:</strong> the audit firm&rsquo;s name, city, the date, and the year it began serving as auditor.</li>
+        </ol>
+        <h4>Questions to ask while reading</h4>
+        <ul>
+          <li>Which statements, and which dates, are covered?</li>
+          <li>Is the opinion unqualified? Look for any &ldquo;except for&rdquo; or &ldquo;do not present fairly.&rdquo;</li>
+          <li>Is the internal-control opinion given separately, and is it clean?</li>
+          <li>Which institution&rsquo;s standards are named, and why (PCAOB, set up by the SEC)?</li>
+        </ul>
+        <div class="key-flag"><b>Practice it</b> Homework Question 5 uses the real Amazon report: <a href="acctg-homework.html?unit=u2">Unit 2 homework practice</a>.</div>
+      </div>
+    </div>
+
+    <div class="source-block" id="deep-build-statements" data-tier="deep">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">&#9650;2</span><h3>Building All Three Statements from Raw Transactions</h3> <span class="tier tier-deep">&#9650; Go deeper</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>The setup</h4>
+        <p>Hartley Design is formed in January. Owners invest <strong>$100,000</strong> for stock. During January it bills <strong>$90,000</strong> of services ($60,000 collected, $30,000 still owed), pays <strong>$10,000</strong> of rent, earns <strong>$30,000</strong> of wages (pays $20,000, owes $10,000), buys <strong>$24,000</strong> of equipment for cash, and pays a <strong>$5,000</strong> dividend.</p>
+        <h4>Step 1 &mdash; Income statement (accrual)</h4>
+        <div class="calc" style="font-family:var(--font-mono); font-size:.88rem; background:var(--paper-2); border-radius:6px; padding:8px 10px; margin:.5em 0; overflow-x:auto;">Revenue                90,000<br>Rent expense          (10,000)<br>Wage expense          (30,000)<br>Net income             50,000</div>
+        <h4>Step 2 &mdash; Cash flow statement</h4>
+        <div class="calc" style="font-family:var(--font-mono); font-size:.88rem; background:var(--paper-2); border-radius:6px; padding:8px 10px; margin:.5em 0; overflow-x:auto;">Operating: 60,000 collected - 10,000 rent - 20,000 wages paid = +30,000<br>Investing: equipment                                           = -24,000<br>Financing: 100,000 stock - 5,000 dividend                      = +95,000<br>Net change in cash (beginning cash 0)                          =  101,000</div>
+        <p>Notice operating cash flow ($30,000) is far below net income ($50,000): the gap is the $30,000 not yet collected less the $10,000 of wages not yet paid.</p>
+        <h4>Step 3 &mdash; Balance sheet, January 31</h4>
+        <div class="calc" style="font-family:var(--font-mono); font-size:.88rem; background:var(--paper-2); border-radius:6px; padding:8px 10px; margin:.5em 0; overflow-x:auto;">Cash 101,000 + Receivable 30,000 + Equipment 24,000 = Assets 155,000<br>Wages payable 10,000 (liability)<br>Common stock 100,000 + Retained earnings (50,000 - 5,000 = 45,000) = Equity 145,000<br>Liabilities 10,000 + Equity 145,000 = 155,000  OK</div>
+        <h4>Step 4 &mdash; Check the links</h4>
+        <p>Cash on the balance sheet ($101,000) equals the cash flow statement&rsquo;s ending cash. Retained earnings ($45,000) equals beginning $0 + net income $50,000 &minus; dividend $5,000. If a check fails, hunt for a transaction you skipped.</p>
+        <div class="key-flag"><b>Practice it</b> Homework Questions 3, 6, 7 and 9 build statements, classify transactions and reconstruct amounts from incomplete data: <a href="acctg-homework.html?unit=u2">Unit 2 homework practice</a>.</div>
+      </div>
+    </div>
+
+    <div class="source-block" id="deep-equity-statement" data-tier="deep">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">&#9650;3</span><h3>Building a Statement of Stockholders&rsquo; Equity &amp; Back-Solving Missing Figures</h3> <span class="tier tier-deep">&#9650; Go deeper</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>A full roll-forward, column by column</h4>
+        <p>A company starts the year with contributed capital (Common Stock + APIC) of $190,000 and retained earnings of $60,000. During the year it issues stock for $50,000, earns net income of $80,000, pays dividends of $25,000, and repurchases and retires $10,000 of stock.</p>
+        <table class="mini-table">
+          <thead><tr><th></th><th>Contributed capital</th><th>Retained earnings</th><th>Total</th></tr></thead>
+          <tbody>
+            <tr><td>Beginning balance</td><td>190,000</td><td>60,000</td><td>250,000</td></tr>
+            <tr><td>Stock issued</td><td>+50,000</td><td></td><td>+50,000</td></tr>
+            <tr><td>Net income</td><td></td><td>+80,000</td><td>+80,000</td></tr>
+            <tr><td>Dividends</td><td></td><td>&minus;25,000</td><td>&minus;25,000</td></tr>
+            <tr><td>Stock repurchased &amp; retired</td><td></td><td>&minus;10,000</td><td>&minus;10,000</td></tr>
+            <tr><td><strong>Ending balance</strong></td><td><strong>240,000</strong></td><td><strong>105,000</strong></td><td><strong>345,000</strong></td></tr>
+          </tbody>
+        </table>
+        <p>This unit follows the class rule that retired repurchases reduce retained earnings, matching the roll-forward formula above. Check: total equity should also equal ending assets minus ending liabilities.</p>
+        <h4>Back-solving</h4>
+        <ul>
+          <li><strong>Missing repurchase:</strong> beginning RE 60 + NI 80 &minus; dividends 25 &minus; ending RE 105 = <strong>10</strong>.</li>
+          <li><strong>Missing equity from incomplete data:</strong> assets $600M and liabilities $380M give equity $220M. If next year no stock is issued, NI is $50M and dividends are $20M, then equity is 220 + 50 &minus; 20 = $250M, and assets must equal liabilities + 250.</li>
+          <li><strong>Every figure on a statement appears elsewhere:</strong> a missing number is almost always findable from a linkage. Ask which other statement shows it.</li>
+        </ul>
+        <div class="key-flag"><b>Practice it</b> Homework Questions 4 and 10 (Crocker, Johnson &amp; Johnson): <a href="acctg-homework.html?unit=u2">Unit 2 homework practice</a>.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ STEP 3: CHEAT SHEET ============ -->
+  <div class="wrap section" id="cheat" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Step 3 &middot; Cheat sheet</span>
+      <h2>Every Unit 2 formula and definition on one page</h2>
+    </div>
+    <div class="cheat-grid">
+      <div class="cheat-card"><h4>Cash vs. accrual</h4>
+        <div class="cheat-formula">Cash: when cash moves<br>Accrual: when earned / incurred<br>Hybrid: a blend</div>
+        <p>Credit sale: revenue + receivable now. Collection later: cash up, receivable down, no new revenue.</p></div>
+      <div class="cheat-card"><h4>Accounting equation</h4>
+        <div class="cheat-formula">Assets = Liabilities + Equity<br>Equity = Assets &minus; Liabilities</div>
+        <p>Every transaction keeps both sides equal.</p></div>
+      <div class="cheat-card"><h4>Current vs. long-term</h4>
+        <div class="cheat-formula">12-month test<br>Current: cash, A/R, inventory, prepaids, A/P, accruals, unearned rev<br>Long-term: PP&amp;E, goodwill, LT debt</div>
+        <p>Balance sheet = snapshot at historical cost.</p></div>
+      <div class="cheat-card"><h4>Which statement, which time frame</h4>
+        <div class="cheat-formula">Balance sheet: one date<br>Income stmt, equity stmt, cash flows: a period</div>
+        <p>Unearned revenue is a <em>liability</em> until earned.</p></div>
+      <div class="cheat-card"><h4>Net income &amp; RE roll</h4>
+        <div class="cheat-formula">NI = Rev &minus; COGS &minus; Opex &minus; Tax<br>End RE = Beg RE + NI &minus; Div &minus; Other decreases</div>
+        <p>Back-solve: NI = End RE &minus; Beg RE + Div. Dividends are not an expense.</p></div>
+      <div class="cheat-card"><h4>Cash roll</h4>
+        <div class="cheat-formula">End cash = Beg + Operating + Investing + Financing</div>
+        <p>Three sections: operating, investing, financing.</p></div>
+      <div class="cheat-card"><h4>Statement links</h4>
+        <div class="cheat-formula">BS &harr; IS: retained earnings<br>BS &harr; CFS: cash<br>BS &harr; Equity: stock/APIC, RE, AOCI<br>IS &harr; Equity: net income</div>
+        <p>Use to find a missing connecting figure.</p></div>
+      <div class="cheat-card"><h4>Liquidity &amp; value</h4>
+        <div class="cheat-formula">NWC = CA &minus; CL<br>CCC = DSO + DIO &minus; DPO<br>Book value = equity<br>Market cap = shares &times; price</div>
+        <p>Book and market diverge by design: historical cost vs. expectations.</p></div>
+      <div class="cheat-card"><h4>Audit opinions</h4>
+        <div class="cheat-formula">Clean = fairly presented, in all material respects, under GAAP</div>
+        <p>Not a no-fraud guarantee. Statements and internal control get separate opinions.</p></div>
+      <div class="cheat-card"><h4>SEC &amp; governance</h4>
+        <div class="cheat-formula">10-K annual &middot; 10-Q quarterly &middot; 8-K material event<br>SEC &rarr; FASB &rarr; GAAP<br>SEC &rarr; PCAOB &rarr; auditors</div>
+        <p>8-K: the &ldquo;right away&rdquo; filing.</p></div>
+    </div>
+    <div class="cheat-traps">
+      <h4>Traps the exam sets</h4>
+      <ul>
+        <li>Recording revenue again when a receivable is collected. Collection moves cash and receivable only.</li>
+        <li>Treating a dividend as an expense. It cuts retained earnings but not net income.</li>
+        <li>Calling unearned revenue revenue. Cash received before delivery is a liability.</li>
+        <li>Forgetting a third item in the RE roll (stock repurchased/retired or another decrease).</li>
+        <li>Reading a clean audit opinion as &ldquo;no fraud&rdquo; or &ldquo;financially sound.&rdquo;</li>
+        <li>Swapping 10-K and 10-Q. 10-K is the annual report; 10-Q is quarterly.</li>
+        <li>Explaining a book-vs-market gap as an error instead of historical cost vs. expectations.</li>
+        <li>Using ending balances when ROA or ROE needs averages.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ STEP 4: PRACTICE ============ -->
+  <div class="wrap section" id="practice" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Step 4 &middot; Practice</span>
+      <h2>Now test it</h2>
+    </div>
+    <div class="practice-panel">
+      <p style="margin:0;">Work in this order: the <a href="#quiz">quick quiz</a> below checks the basics, then exam-style problems (Units 1 and 2 share one set), then the harder homework set if you want a challenge.</p>
+      <div class="practice-row">
+        <a class="btn blue" href="#quiz">Unit 2 quiz</a>
+        <a class="btn blue" href="acctg-exam-prep.html?unit=m12">Exam prep: Units 1 &amp; 2</a>
+        <a class="btn ghost" href="acctg-homework.html?unit=u2">Homework practice (harder)</a>
+        <a class="btn ghost" href="acctg-mock-test.html">ACCTG mock test</a>
       </div>
     </div>
   </div>
@@ -478,6 +877,9 @@
         <li>Trace the governance chain: SEC &rarr; FASB &rarr; GAAP, and SEC &rarr; PCAOB &rarr; Auditors &mdash; explain each institution's role, not just its definition.</li>
         <li>Explain why the SEC/FASB/PCAOB governance structure exists, using the historical flashpoints (Great Depression, Enron/WorldCom, auditor controversies, continued fraud) as justification.</li>
         <li>Name all three accounting methods (not just cash vs. accrual) if asked to list every recognized method.</li>
+        <li>Compute net income from revenue, cost of goods sold, other expenses and tax, and roll cash forward: beginning cash + operating + investing + financing = ending cash.</li>
+        <li>Interpret an audit opinion: what an unqualified (clean) opinion does and does not promise, and why a clean opinion on the statements can coexist with an adverse opinion on internal control.</li>
+        <li>Apply ROA and ROE with <em>average</em> balances (carried over from Unit 1) when beginning and ending balance sheets are both given.</li>
       </ul>
     </div>
   </div>
@@ -493,5 +895,6 @@
 <script src="assets/acctg2-flashcards-data.js"></script>
 <script src="assets/acctg2-quiz-data.js"></script>
 <script src="assets/app.js"></script>
+<script src="assets/learnpath.js"></script>
 </body>
 </html>

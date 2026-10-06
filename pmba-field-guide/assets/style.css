@@ -669,3 +669,134 @@ table.stmt-table tr.stmt-subtotal td{ font-weight:600; }
 .mc-option.correct{ background: rgba(76,107,79,0.14); border-color: var(--green); }
 .mc-option.incorrect{ background: rgba(139,58,58,0.12); border-color: var(--rust); }
 .mc-option.disabled{ cursor:default; }
+
+/* ============================================================
+   Accounting learning path: path bar, tier badges, on-ramp,
+   cheat sheets, diagrams, deep-dive framing (ACCTG 6000 pages)
+   ============================================================ */
+
+/* ---- path bar ---- */
+.path-bar{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(5,1fr); gap:10px; }
+.path-bar li a{
+  display:block; height:100%; text-decoration:none; background:var(--paper);
+  border:1px solid var(--paper-3); border-radius:var(--radius-m); padding:12px 14px;
+  transition: transform .15s ease, border-color .15s ease;
+}
+.path-bar li a:hover{ border-color:var(--blue); transform:translateY(-1px); }
+.path-bar .pnum{ display:block; font-family:var(--font-mono); font-size:.68rem; letter-spacing:.08em; text-transform:uppercase; color:var(--blue-deep); }
+.path-bar b{ display:block; font-family:var(--font-display); font-weight:600; color:var(--ink); font-size:1rem; margin:3px 0 2px; }
+.path-bar em{ font-style:normal; font-size:.8rem; color:var(--text-soft); }
+@media (max-width: 860px){ .path-bar{ grid-template-columns:1fr 1fr; } }
+@media (max-width: 480px){ .path-bar{ grid-template-columns:1fr; } }
+
+/* ---- tier badges ---- */
+.tier{
+  display:inline-flex; align-items:center; gap:.4em; white-space:nowrap;
+  font-family:var(--font-mono); font-size:.62rem; letter-spacing:.06em; text-transform:uppercase;
+  padding:2px 9px; border-radius:999px; border:1px solid; line-height:1.5;
+}
+.tier-test{ background:#DCE7F1; color:var(--blue-deep); border-color:#B5C9DB; }
+.tier-know{ background:#E3EAD9; color:#3F5A3F; border-color:#BFCDB1; }
+.tier-deep{ background:#F3E7CC; color:var(--gold-deep); border-color:#DDC89A; }
+.tier-key{
+  display:flex; flex-wrap:wrap; gap:8px 18px; align-items:center; margin-top:14px;
+  font-size:.86rem; color:var(--text-soft);
+}
+.tier-key span.t{ display:inline-flex; align-items:center; gap:8px; }
+.source-toggle .stitle .tier{ align-self:center; }
+.tier-filter{ display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin:0 0 16px; }
+.tier-filter .lbl{ font-family:var(--font-mono); font-size:.72rem; letter-spacing:.06em; text-transform:uppercase; color:var(--text-soft); margin-right:4px; }
+.source-block.tier-hidden{ display:none; }
+
+/* ---- on-ramp ("start here") ---- */
+.onramp{ display:grid; grid-template-columns: minmax(0,1.1fr) minmax(0,1fr); gap:24px; align-items:start; }
+@media (max-width: 880px){ .onramp{ grid-template-columns:1fr; } }
+.onramp .big-idea{
+  font-family:var(--font-display); font-size:1.28rem; line-height:1.42; color:var(--ink); margin:0 0 .9em;
+}
+.onramp p{ font-size:1rem; }
+.analogy{
+  background:#E3EBF2; border-radius:var(--radius-m); padding:14px 16px; margin:1em 0; border-left:3px solid var(--blue);
+}
+.analogy b{ display:block; font-family:var(--font-mono); font-size:.68rem; letter-spacing:.07em; text-transform:uppercase; color:var(--blue-deep); margin-bottom:.35em; }
+.analogy p:last-child{ margin-bottom:0; }
+.diagram{
+  margin:0 0 1.2em; background:var(--paper); border:1px solid var(--paper-3);
+  border-radius:var(--radius-l); padding:14px 14px 10px; box-shadow:var(--shadow-card);
+}
+.diagram svg{ width:100%; height:auto; display:block; }
+.diagram figcaption{ font-size:.84rem; color:var(--text-soft); margin-top:8px; text-align:center; line-height:1.4; }
+.diagram.wide{ grid-column:1 / -1; }
+.words-first{ background:var(--paper); border:1px solid var(--paper-3); border-radius:var(--radius-l); padding:16px 18px; margin-bottom:1.2em; }
+.words-first h4, .tiny-example h4, .cheat-traps h4{
+  font-family:var(--font-mono); font-size:.72rem; letter-spacing:.07em; text-transform:uppercase; color:var(--blue-deep); margin:0 0 .7em;
+}
+.words-first dl{ display:grid; grid-template-columns:max-content 1fr; gap:8px 16px; margin:0; }
+.words-first dt{ font-family:var(--font-mono); font-weight:600; color:var(--ink); font-size:.86rem; }
+.words-first dd{ margin:0; color:var(--text-soft); font-size:.92rem; }
+@media (max-width:520px){ .words-first dl{ grid-template-columns:1fr; gap:2px; } .words-first dd{ margin-bottom:8px; } }
+.tiny-example{ background:var(--paper-2); border-left:3px solid var(--gold); border-radius:var(--radius-m); padding:14px 18px; margin-bottom:1.2em; }
+.tiny-example p:last-child{ margin-bottom:0; }
+.tiny-example .calc{ font-family:var(--font-mono); font-size:.88rem; background:var(--paper); border-radius:6px; padding:8px 10px; margin:.5em 0; overflow-x:auto; }
+.stepper-list{ counter-reset:st; list-style:none; margin:0 0 1em; padding:0; }
+.stepper-list li{ counter-increment:st; position:relative; padding:0 0 .8em 38px; margin:0; }
+.stepper-list li::before{
+  content:counter(st); position:absolute; left:0; top:0; width:26px; height:26px; border-radius:50%;
+  background:var(--blue-deep); color:#fff; font-family:var(--font-mono); font-size:.78rem; display:flex; align-items:center; justify-content:center;
+}
+
+/* ---- cheat sheet ---- */
+.cheat-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(270px,1fr)); gap:14px; margin-bottom:16px; }
+.cheat-card{
+  background:var(--paper); border:1px solid var(--paper-3); border-top:3px solid var(--blue);
+  border-radius:var(--radius-m); padding:14px 16px;
+}
+.cheat-card h4{ margin:0 0 .5em; font-family:var(--font-display); font-weight:600; font-size:1.02rem; color:var(--ink); text-transform:none; letter-spacing:0; }
+.cheat-card p{ font-size:.9rem; margin:.4em 0 0; color:var(--text-soft); }
+.cheat-formula{ font-family:var(--font-mono); font-size:.84rem; background:var(--paper-2); padding:8px 10px; border-radius:6px; margin:.4em 0; line-height:1.55; overflow-x:auto; }
+.cheat-traps{ background:#F1E2DE; border-left:3px solid var(--rust); border-radius:var(--radius-m); padding:14px 18px; }
+.cheat-traps h4{ color:var(--rust-deep); }
+.cheat-traps ul{ margin:0; padding-left:1.2em; }
+.cheat-traps li{ margin-bottom:.4em; font-size:.93rem; }
+
+/* ---- practice panel + deep-dive framing ---- */
+.practice-panel{ background:var(--paper); border:1px solid var(--paper-3); border-radius:var(--radius-l); padding:18px 20px; }
+.practice-panel .practice-row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:12px; }
+.practice-panel .btn{ text-decoration:none; }
+.deep-note{
+  background:#F5EDD9; border-left:3px solid var(--gold-deep); border-radius:var(--radius-m);
+  padding:14px 18px; margin:0 0 18px; font-size:.95rem;
+}
+.deep-note b{ font-family:var(--font-mono); font-size:.7rem; text-transform:uppercase; letter-spacing:.06em; color:var(--gold-deep); display:block; margin-bottom:.35em; }
+.key-flag{
+  background:#F6E8CB; border-left:3px solid var(--gold-deep); border-radius:6px;
+  padding:9px 12px; margin-top:.8em; font-size:.88rem; line-height:1.45;
+}
+.key-flag b{ font-family:var(--font-mono); font-size:.68rem; letter-spacing:.06em; text-transform:uppercase; color:var(--gold-deep); }
+
+/* ---- SVG helpers (diagrams read the theme via classes) ---- */
+.sf-paper{fill:var(--paper)} .sf-paper2{fill:var(--paper-2)} .sf-paper3{fill:var(--paper-3)}
+.sf-ink{fill:var(--ink)} .sf-blue{fill:var(--blue)} .sf-blue-deep{fill:var(--blue-deep)} .sf-blue-soft{fill:#CFDDEA}
+.sf-gold{fill:var(--gold)} .sf-gold-soft{fill:#EFDDB6} .sf-rust{fill:var(--rust)} .sf-rust-soft{fill:#EBD3D0}
+.sf-green{fill:var(--green)} .sf-green-soft{fill:#D2DFD0} .sf-white{fill:#fff}
+.ss-ink{stroke:var(--ink)} .ss-blue{stroke:var(--blue)} .ss-gold{stroke:var(--gold-deep)}
+.ss-rust{stroke:var(--rust)} .ss-green{stroke:var(--green)} .ss-soft{stroke:var(--text-soft)}
+path[class*="ss-"]:not([class*="sf-"]), line[class*="ss-"], polyline[class*="ss-"]{fill:none}
+.ss-paper3{stroke:var(--paper-3)}
+.sd{stroke-dasharray:5 4}
+svg .t{ font-family:var(--font-body); font-size:13px; fill:var(--ink); }
+svg .t-s{ font-size:11px; fill:var(--text-soft); }
+svg .t-xs{ font-size:10px; fill:var(--text-soft); }
+svg .t-l{ font-size:15px; }
+svg .t-b{ font-weight:700; }
+svg .t-m{ font-family:var(--font-mono); }
+svg .t-w{ fill:#fff; }
+svg .t-blue{ fill:var(--blue-deep); }
+svg .t-rust{ fill:var(--rust-deep); }
+svg .t-gold{ fill:var(--gold-deep); }
+svg .t-green{ fill:var(--green); }
+svg .tc{ text-anchor:middle; }
+svg .te{ text-anchor:end; }
+
+/* wide homework tables scroll inside the card on phones */
+.hw-q{ overflow-x:auto; }

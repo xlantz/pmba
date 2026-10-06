@@ -34,12 +34,14 @@
         <button class="nav-caret" aria-expanded="false" aria-label="Show ACCTG 6000 items">&#9662;</button>
         <div class="nav-dropdown-menu">
           <div class="nav-dropdown-menu-inner">
+            <a href="acctg-start.html">Start here &mdash; Accounting from Zero</a>
             <a href="acctg1.html">Unit 1 &mdash; Reporting Foundations</a>
             <a href="acctg2.html">Unit 2 &mdash; Statements &amp; SEC Filings</a>
             <a href="acctg3.html">Unit 3 &mdash; The Accounting Cycle</a>
             <a href="acctg5.html">Unit 5 &mdash; Revenue &amp; Receivables</a>
             <a href="acctg6.html">Unit 6 &mdash; Inventory &amp; Long-Lived Assets</a>
             <a href="acctg7.html">Unit 7 &mdash; Current &amp; Long-Term Liabilities</a>
+            <a href="acctg8.html">Unit 8 &mdash; Equity, Dividends &amp; EPS</a>
             <a href="acctg-homework.html">Accounting HW Practice</a>
             <a href="acctg-exam-prep.html">Exam Prep Practice</a>
           </div>
@@ -84,7 +86,7 @@
     <div>
       <span class="eyebrow">ACCTG 6000 &#x00b7; Unit 1</span>
       <h1>Financial reporting foundations &amp; profitability analysis</h1>
-      <p class="lede" style="max-width:70ch;">Before you can read a balance sheet, you need to know who's reading it and why. This unit builds the foundation everything else in the course sits on: who uses financial statements, what the three business activities are, why companies disclose what they disclose, and the four profitability ratios that show up on almost every exam.</p>
+      <p class="lede" style="max-width:70ch;">Start from zero: what a company's financial reporting is for, the one equation behind every balance sheet, and the four profitability ratios that show up on almost every exam. Read top to bottom and you go from &ldquo;what is an asset?&rdquo; to test-ready. The harder homework-level material is tucked into a marked <strong>Go deeper</strong> section at the end &mdash; skip it and you can still ace the test.</p>
       <div class="hero-stats">
         <div class="hero-stat"><b>4</b><span>Core ratios</span></div>
         <div class="hero-stat"><b>24</b><span>Flashcards</span></div>
@@ -97,69 +99,294 @@
 
 <main id="main">
 
-  <!-- ============ DUPONT DIAGRAM ============ -->
+  <!-- ============ PATH ============ -->
   <div class="wrap section" style="padding-top:0;">
     <div class="section-head">
-      <span class="eyebrow">The one diagram to memorize</span>
-      <h2>The DuPont decomposition</h2>
-      <p class="text-soft">Almost every ratio question this unit produces is really a question about this picture. ROE breaks into ROA and leverage; ROA breaks into margin and turnover. Two companies can land on the same number from completely different directions.</p>
+      <span class="eyebrow">Your route through this unit</span>
+      <h2>Novice &rarr; understanding &rarr; test-ready</h2>
     </div>
-    <div class="dupont-wrap">
-      <svg id="dupont-svg" viewBox="0 0 760 240" role="img" aria-label="DuPont decomposition diagram: ROE equals ROA times Equity Multiplier; ROA equals Net Profit Margin times Total Asset Turnover">
-        <!-- connecting lines -->
-        <line class="dupont-line" x1="140" y1="60" x2="140" y2="110"></line>
-        <line class="dupont-line" x1="140" y1="170" x2="140" y2="190"></line>
-        <line class="dupont-line" x1="430" y1="60" x2="240" y2="120"></line>
-        <line class="dupont-line" x1="430" y1="60" x2="620" y2="120"></line>
-
-        <!-- ROE (top) -->
-        <rect class="dupont-box accent" x="60" y="20" width="160" height="46" rx="8"></rect>
-        <text class="dupont-label oncent" x="140" y="36" text-anchor="middle">Shareholder return</text>
-        <text class="dupont-value oncent" x="140" y="56" text-anchor="middle">ROE</text>
-
-        <!-- = -->
-        <text class="dupont-op" x="140" y="100" text-anchor="middle">=</text>
-
-        <!-- ROA (mid) -->
-        <rect class="dupont-box accent" x="350" y="90" width="160" height="46" rx="8"></rect>
-        <text class="dupont-label oncent" x="430" y="106" text-anchor="middle">Asset efficiency</text>
-        <text class="dupont-value oncent" x="430" y="126" text-anchor="middle">ROA</text>
-
-        <!-- x -->
-        <text class="dupont-op" x="235" y="185" text-anchor="middle">&#x00d7;</text>
-
-        <!-- Equity multiplier (bottom left) -->
-        <rect class="dupont-box" x="20" y="190" width="240" height="46" rx="8"></rect>
-        <text class="dupont-label" x="140" y="206" text-anchor="middle">Financial leverage</text>
-        <text class="dupont-value" x="140" y="226" text-anchor="middle">Equity Multiplier</text>
-
-        <!-- Net Profit Margin (bottom, under ROA) -->
-        <rect class="dupont-box" x="150" y="150" width="180" height="46" rx="8"></rect>
-        <text class="dupont-label" x="240" y="166" text-anchor="middle">Pricing &amp; cost control</text>
-        <text class="dupont-value" x="240" y="186" text-anchor="middle">Net Profit Margin</text>
-
-        <!-- x -->
-        <text class="dupont-op" x="430" y="185" text-anchor="middle">&#x00d7;</text>
-
-        <!-- Total Asset Turnover (bottom right, under ROA) -->
-        <rect class="dupont-box" x="530" y="150" width="180" height="46" rx="8"></rect>
-        <text class="dupont-label" x="620" y="166" text-anchor="middle">Efficiency</text>
-        <text class="dupont-value" x="620" y="186" text-anchor="middle">Total Asset Turnover</text>
-      </svg>
+    <ol class="path-bar">
+      <li><a href="#start"><span class="pnum">Step 1</span><b>Start here</b><em>The big idea, no jargon</em></a></li>
+      <li><a href="#learn"><span class="pnum">Step 2</span><b>Learn it</b><em>Eight short sections</em></a></li>
+      <li><a href="#cheat"><span class="pnum">Step 3</span><b>Cheat sheet</b><em>Every formula on one page</em></a></li>
+      <li><a href="#practice"><span class="pnum">Step 4</span><b>Practice</b><em>Quiz, exam prep, practice lab</em></a></li>
+      <li><a href="#deeper"><span class="pnum">Optional</span><b>Go deeper</b><em>Harder homework-level material</em></a></li>
+    </ol>
+    <div class="tier-key">
+      <span class="t"><span class="tier tier-test">&#9733; Test core</span> shows up on the exam</span>
+      <span class="t"><span class="tier tier-know">&#9680; Understand it</span> makes the core click</span>
+      <span class="t"><span class="tier tier-deep">&#9650; Go deeper</span> homework-level, optional</span>
     </div>
-    <p class="text-soft" style="font-size:.88rem; margin-top:8px;">Read it as two equations: <strong>ROA = Net Profit Margin &#x00d7; Total Asset Turnover</strong>, and <strong>ROE = ROA &#x00d7; Equity Multiplier</strong>. Same ROA can come from a high-margin/low-turnover business or a low-margin/high-turnover one — and the more debt a company carries, the more its ROE gets amplified above its ROA.</p>
   </div>
 
-  <!-- ============ TEACHING CONTENT ============ -->
-  <div class="wrap section" style="padding-top:0;">
+  <!-- ============ STEP 1: START HERE ============ -->
+  <div class="wrap section" id="start" style="padding-top:0;">
     <div class="section-head">
-      <span class="eyebrow">Walk the material</span>
+      <span class="eyebrow">Step 1 &middot; Start here</span>
+      <h2>A company&rsquo;s financial reports are its report card</h2>
+    </div>
+    <div class="onramp">
+      <div>
+        <p class="big-idea">Financial reporting exists so outsiders can decide whether to lend to, or invest in, a company. It answers two plain questions: <em>what does the company have, and who has a claim on it?</em> and <em>is it making money?</em></p>
+        <div class="analogy">
+          <b>The personal net-worth analogy</b>
+          <p>Imagine tallying up your own finances. On one side you list what you own: savings, a car, a laptop. On the other, who paid for it: a student loan and car loan (other people&rsquo;s money) and whatever is left over, your own stake. Those two sides always match, because every dollar you own came from somewhere. That is a company&rsquo;s <em>balance sheet</em>. Then you add up a year of paychecks minus everything you spent, to see if you came out ahead. That is its <em>income statement</em>. A lender thinking about lending you money would want both, and so does a company&rsquo;s bank or investor.</p>
+        </div>
+        <div class="words-first">
+          <h4>Six words to know before anything else</h4>
+          <dl>
+            <dt>Asset</dt><dd>Something the company owns or controls that has value: cash, equipment, money customers owe it.</dd>
+            <dt>Liability</dt><dd>Something the company owes to someone who is not an owner: a loan, a bill to a supplier.</dd>
+            <dt>Equity</dt><dd>The owners&rsquo; stake. Assets minus liabilities.</dd>
+            <dt>Revenue</dt><dd>What the company earns by selling its goods or services.</dd>
+            <dt>Expense</dt><dd>A cost of earning that revenue: wages, rent, materials.</dd>
+            <dt>Net income</dt><dd>Revenue minus expenses. The profit (or loss) for the period.</dd>
+          </dl>
+        </div>
+      </div>
+      <div>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 280" role="img" aria-labelledby="o1t o1d">
+            <title id="o1t">The accounting equation as two matching bars</title>
+            <desc id="o1d">A bar for assets of 650 million equals a stacked bar of liabilities 420 million plus equity 230 million.</desc>
+            <text x="260" y="20" class="t tc t-s">Total assets always equal total financing</text>
+            <rect x="50" y="40" width="160" height="190" class="sf-green-soft" style="stroke:var(--green)"/>
+            <text x="130" y="128" class="t tc t-b">Assets</text>
+            <text x="130" y="148" class="t tc t-l t-b">$650M</text>
+            <text x="130" y="168" class="t tc t-s">what it owns</text>
+            <text x="260" y="145" class="t tc t-l t-b" style="font-size:30px;">=</text>
+            <rect x="310" y="40" width="160" height="68" class="sf-blue-soft" style="stroke:var(--blue)"/>
+            <text x="390" y="70" class="t tc t-b">Equity $230M</text>
+            <text x="390" y="90" class="t tc t-s">owners&rsquo; stake</text>
+            <rect x="310" y="108" width="160" height="122" class="sf-rust-soft" style="stroke:var(--rust)"/>
+            <text x="390" y="162" class="t tc t-b">Liabilities $420M</text>
+            <text x="390" y="182" class="t tc t-s">owed to nonowners</text>
+            <line x1="30" y1="230" x2="490" y2="230" class="ss-soft"/>
+            <text x="130" y="252" class="t tc t-s">Resources</text>
+            <text x="390" y="252" class="t tc t-s">Who paid for them</text>
+            <text x="260" y="272" class="t tc t-xs">Equity = 650 &minus; 420 = 230</text>
+          </svg>
+          <figcaption>Same height, two views. Liabilities are 65% of the funding here; owners supplied the other 35%.</figcaption>
+        </figure>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 200" role="img" aria-labelledby="o2t o2d">
+            <title id="o2t">The three business activities</title>
+            <desc id="o2d">Financing raises cash, investing spends it on long-term assets, operating uses them to earn profit, and profit flows back to repay lenders and owners.</desc>
+            <rect x="12" y="28" width="148" height="78" rx="8" class="sf-gold-soft" style="stroke:var(--gold-deep)"/>
+            <text x="86" y="52" class="t tc t-b t-gold">1. Financing</text>
+            <text x="86" y="72" class="t tc t-s">Raise cash: sell stock,</text>
+            <text x="86" y="87" class="t tc t-s">borrow from lenders</text>
+            <rect x="186" y="28" width="148" height="78" rx="8" class="sf-blue-soft" style="stroke:var(--blue)"/>
+            <text x="260" y="52" class="t tc t-b t-blue">2. Investing</text>
+            <text x="260" y="72" class="t tc t-s">Buy equipment, land,</text>
+            <text x="260" y="87" class="t tc t-s">buildings, other firms</text>
+            <rect x="360" y="28" width="148" height="78" rx="8" class="sf-green-soft" style="stroke:var(--green)"/>
+            <text x="434" y="52" class="t tc t-b t-green">3. Operating</text>
+            <text x="434" y="72" class="t tc t-s">Day to day: make, sell,</text>
+            <text x="434" y="87" class="t tc t-s">pay staff, support</text>
+            <path d="M162 67 L184 67 M176 61 L185 67 L176 73" class="ss-soft" stroke-width="1.6"/>
+            <path d="M336 67 L358 67 M350 61 L359 67 L350 73" class="ss-soft" stroke-width="1.6"/>
+            <path d="M434 108 L434 150 L86 150 L86 110 M80 118 L86 108 L92 118" class="ss-gold" stroke-width="1.6"/>
+            <text x="260" y="143" class="t tc t-s">profit repays lenders and owners</text>
+            <text x="260" y="178" class="t tc t-xs">The cash flow statement has exactly these three sections.</text>
+          </svg>
+          <figcaption>Cash comes in (financing), gets put to work (investing), and the business earns more (operating).</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="tiny-example">
+      <h4>Tiny example: Sam&rsquo;s landscaping company</h4>
+      <p>Sam&rsquo;s company starts with <strong>$50,000</strong> from the owner (stock) and a <strong>$30,000</strong> bank loan. It buys a truck for <strong>$60,000</strong> cash. Day one:</p>
+      <div class="calc">Assets: cash 20,000 + truck 60,000 = 80,000<br>Liabilities: bank loan = 30,000<br>Equity: owner's stock = 50,000<br>80,000 = 30,000 + 50,000  OK</div>
+      <p>During the year it earns <strong>$12,000</strong> of revenue in cash and pays <strong>$7,000</strong> of expenses.</p>
+      <div class="calc">Net income  = 12,000 - 7,000 = 5,000<br>Assets end  = 85,000 (cash 25,000 + truck 60,000)<br>Equity end  = 50,000 + 5,000 = 55,000<br>85,000 = 30,000 + 55,000  OK</div>
+      <p>Now the four ratios are easy: <strong>Net profit margin</strong> = 5,000 &divide; 12,000 = 41.7%. <strong>ROA</strong> = 5,000 &divide; average assets 82,500 = 6.1%. <strong>Asset turnover</strong> = 12,000 &divide; 82,500 = 0.145. Check: 41.7% &times; 0.145 = 6.1%, the same ROA. That is the DuPont idea in one box.</p>
+    </div>
+  </div>
+
+  <!-- ============ STEP 2: LEARN IT ============ -->
+  <div class="wrap section" id="learn" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Step 2 &middot; Learn it</span>
       <h2>Unit 1, section by section</h2>
+      <p class="text-soft">Open them in order. Each one ends with an exam angle. The first three are the ones the exam leans on.</p>
+    </div>
+    <div class="tier-filter" role="group" aria-label="Filter sections by tier">
+      <span class="lbl">Show:</span>
+      <button class="chip active" data-tier-filter="all">Everything</button>
+      <button class="chip" data-tier-filter="core">&#9733; Test core only</button>
     </div>
 
-    <div class="source-block" id="src-foundations">
+    <div class="source-block" id="src-equation" data-tier="test">
+      <button class="source-toggle" aria-expanded="true">
+        <span class="stitle"><span class="num">01</span><h3>The Accounting Equation: What a Balance Sheet Is</h3> <span class="tier tier-test">&#9733; Test core</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>The one equation behind everything</h4>
+        <div class="quote-block">Assets = Liabilities + Stockholders&rsquo; Equity</div>
+        <p>A company&rsquo;s resources (assets) are paid for in only two ways: money from people who are <em>not</em> owners (liabilities) and money from owners (equity). So the two sides always match.</p>
+        <table class="mini-table">
+          <thead><tr><th>Piece</th><th>What it is</th><th>Who supplied it</th></tr></thead>
+          <tbody>
+            <tr><td>Assets</td><td>What the company owns or controls: cash, receivables, inventory, equipment</td><td>&mdash;</td></tr>
+            <tr><td>Liabilities</td><td>What it owes: accounts payable, wages payable, bank debt</td><td><strong>Nonowners</strong> (lenders, suppliers, employees)</td></tr>
+            <tr><td>Stockholders&rsquo; equity</td><td>The owners&rsquo; residual claim = Assets &minus; Liabilities</td><td><strong>Owners</strong> (stock sold + profits kept)</td></tr>
+          </tbody>
+        </table>
+
+        <h4>Equity moves in only a few ways</h4>
+        <ul>
+          <li><strong>Up:</strong> stock issued for cash, and net income (profit kept as retained earnings).</li>
+          <li><strong>Down:</strong> dividends paid, a net loss, and stock repurchased.</li>
+        </ul>
+        <p><strong>Retained earnings</strong> is the running total of all net income the company has earned, minus all dividends it has paid. It is a cumulative balance, not reset each year, and it is <em>not</em> a pile of cash.</p>
+
+        <h4>Every transaction keeps it balanced</h4>
+        <table class="mini-table">
+          <thead><tr><th>Transaction</th><th>Assets</th><th>Liabilities</th><th>Equity</th></tr></thead>
+          <tbody>
+            <tr><td>Owners buy $100 of stock for cash</td><td>+100</td><td>0</td><td>+100 (no income)</td></tr>
+            <tr><td>Borrow $100 from a bank</td><td>+100</td><td>+100</td><td>0</td></tr>
+            <tr><td>Buy $60 of equipment with cash</td><td>+60 &minus;60</td><td>0</td><td>0</td></tr>
+            <tr><td>Earn $40 of service revenue in cash</td><td>+40</td><td>0</td><td>+40 (net income)</td></tr>
+            <tr><td>Pay $15 of wages</td><td>&minus;15</td><td>0</td><td>&minus;15 (expense)</td></tr>
+            <tr><td>Pay a $10 cash dividend</td><td>&minus;10</td><td>0</td><td>&minus;10 (not an expense)</td></tr>
+            <tr><td>Collect $25 owed by a customer</td><td>+25 &minus;25</td><td>0</td><td>0 (revenue was recorded earlier)</td></tr>
+          </tbody>
+        </table>
+
+        <h4>Solving for the missing piece</h4>
+        <table class="mini-table">
+          <thead><tr><th>Given</th><th>Work</th><th>Answer</th></tr></thead>
+          <tbody>
+            <tr><td>Assets $650M, liabilities $420M</td><td>650 &minus; 420</td><td>Equity <strong>$230M</strong> (owners&rsquo; residual claim)</td></tr>
+            <tr><td>Assets $850M, liabilities $340M</td><td>340 &divide; 850</td><td><strong>40%</strong> financed by nonowners</td></tr>
+            <tr><td>Assets $1.5B, equity $580M</td><td>1,500 &minus; 580</td><td>Liabilities <strong>$920M</strong></td></tr>
+            <tr><td>Start: A $500M, L $300M. Assets +$70M, liabilities +$25M</td><td>Equity starts at 200; change = 70 &minus; 25 = 45</td><td>Ending equity <strong>$245M</strong></td></tr>
+          </tbody>
+        </table>
+
+        <div class="exam-angle"><b>Exam angle</b>The change version, &Delta;Assets = &Delta;Liabilities + &Delta;Equity, is the workhorse. Stock issued for cash raises assets and equity but not net income; a dividend lowers retained earnings but is not an expense; accounts payable is nonowner financing, while common stock and retained earnings are owner financing.</div>
+      </div>
+    </div>
+    <div class="source-block" id="src-activities" data-tier="test">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">01</span><h3>Who reads financial statements, and why</h3></span>
+        <span class="stitle"><span class="num">02</span><h3>The three business activities</h3> <span class="tier tier-test">&#9733; Test core</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>Big idea</h4>
+        <p>Every company's operations break into three activity types — and this isn't just a conceptual list. These three categories are <strong>literally the three sections of the Statement of Cash Flows</strong> you'll study later, so getting comfortable with them now pays off directly.</p>
+
+        <table class="mini-table">
+          <thead><tr><th>Activity</th><th>What it covers</th></tr></thead>
+          <tbody>
+            <tr><td>Operating</td><td>Hiring &amp; training staff, manufacturing, delivering services, marketing &amp; selling, after-sale support</td></tr>
+            <tr><td>Investing</td><td>Acquiring land, buildings &amp; equipment; growing via new products/services; acquiring other companies</td></tr>
+            <tr><td>Financing</td><td>Raising cash to fund operating and investing activities — selling stock, borrowing cash</td></tr>
+          </tbody>
+        </table>
+
+        <h4>Sorting real events</h4>
+        <table class="mini-table">
+          <thead><tr><th>Event</th><th>Activity</th></tr></thead>
+          <tbody>
+            <tr><td>Pay employee wages; collect from customers</td><td>Operating</td></tr>
+            <tr><td>Buy a factory; buy another company</td><td>Investing</td></tr>
+            <tr><td>Sell new shares; borrow from a bank; repay debt; pay dividends</td><td>Financing</td></tr>
+          </tbody>
+        </table>
+
+        <h4>The activities add up to the change in cash</h4>
+        <div class="quote-block">Ending cash = Beginning cash + Operating + Investing + Financing</div>
+        <p>Operating +$130M, investing &minus;$95M, financing &minus;$15M with $45M to start: 45 + 130 &minus; 95 &minus; 15 = <strong>$65M</strong>. Another: start $40M, operating +75, investing &minus;100, financing +35 gives <strong>$50M</strong>. Negative investing is normal for a growing company: it is spending cash on future capacity.</p>
+
+        <h4>The four financial statements</h4>
+        <p>Balance Sheet, Income Statement, Statement of Stockholders' Equity, Statement of Cash Flows. This unit is the roadmap — each statement gets its own deep dive later in the course.</p>
+
+        <div class="exam-angle"><b>Exam angle</b>If given a transaction (e.g., "the company sold new shares to fund a factory expansion"), be ready to split it apart: the share sale is Financing, the factory is Investing. Case questions often bundle more than one activity into a single scenario.</div>
+      </div>
+    </div>
+    <div class="source-block" id="src-ratios" data-tier="test">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">03</span><h3>The four core profitability ratios</h3> <span class="tier tier-test">&#9733; Test core</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>Big idea</h4>
+        <p>Four ratios, one relationship. Individually, each ratio tells you something different about a company; together, via the DuPont decomposition above, they explain <em>why</em> a company's returns look the way they do.</p>
+
+        <table class="mini-table">
+          <thead><tr><th>Ratio</th><th>Equation</th><th>What it measures</th></tr></thead>
+          <tbody>
+            <tr><td>Return on Assets (ROA)</td><td>Net Income &#x00f7; Average Total Assets</td><td>Profit generated per dollar of assets, regardless of financing mix</td></tr>
+            <tr><td>Net Profit Margin</td><td>Net Income &#x00f7; Net Sales</td><td>Profit earned per dollar of sales — cost control &amp; pricing power</td></tr>
+            <tr><td>Total Asset Turnover</td><td>Net Sales &#x00f7; Average Total Assets</td><td>Sales generated per dollar of assets — an efficiency measure, not profitability</td></tr>
+            <tr><td>Return on Equity (ROE)</td><td>Net Income &#x00f7; Average Stockholders' Equity</td><td>Return generated specifically for shareholders</td></tr>
+          </tbody>
+        </table>
+
+        <div class="quote-block">ROA = Net Profit Margin &#x00d7; Total Asset Turnover</div>
+        <div class="quote-block">ROE = ROA &#x00d7; Equity Multiplier, where Equity Multiplier = Average Total Assets &#x00f7; Average Stockholders' Equity</div>
+
+        <p>The equity multiplier is a leverage measure: the more a company finances itself with debt rather than equity, the more its ROE is amplified above its ROA.</p>
+
+        <h4>The one diagram to memorize</h4>
+        <p>Almost every ratio question is really a question about this picture. ROE breaks into ROA and leverage; ROA breaks into margin and turnover.</p>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 250" role="img" aria-labelledby="dpt dpd">
+            <title id="dpt">The DuPont decomposition</title>
+            <desc id="dpd">ROE equals ROA times equity multiplier. ROA equals net profit margin times total asset turnover.</desc>
+            <rect x="14" y="20" width="130" height="52" rx="8" class="sf-ink"/>
+            <text x="79" y="43" class="t tc t-w t-b t-l">ROE</text>
+            <text x="79" y="60" class="t tc t-w" style="font-size:10px;">NI &divide; Avg equity</text>
+            <text x="162" y="53" class="t tc t-l t-b" style="font-size:20px;">=</text>
+            <rect x="180" y="20" width="140" height="52" rx="8" class="sf-ink"/>
+            <text x="250" y="43" class="t tc t-w t-b t-l">ROA</text>
+            <text x="250" y="60" class="t tc t-w" style="font-size:10px;">NI &divide; Avg assets</text>
+            <text x="340" y="53" class="t tc t-l t-b" style="font-size:20px;">&times;</text>
+            <rect x="360" y="20" width="146" height="52" rx="8" class="sf-gold-soft" style="stroke:var(--gold-deep)"/>
+            <text x="433" y="43" class="t tc t-b">Equity multiplier</text>
+            <text x="433" y="60" class="t tc t-s" style="font-size:10px;">Avg assets &divide; Avg equity</text>
+            <path d="M250 72 V102 M150 102 H350 M150 102 V128 M350 102 V128" class="ss-soft" stroke-width="1.5"/>
+            <rect x="70" y="128" width="160" height="52" rx="8" class="sf-blue-soft" style="stroke:var(--blue)"/>
+            <text x="150" y="151" class="t tc t-b">Net profit margin</text>
+            <text x="150" y="168" class="t tc t-s" style="font-size:10px;">NI &divide; Net sales</text>
+            <text x="250" y="160" class="t tc t-l t-b" style="font-size:20px;">&times;</text>
+            <rect x="270" y="128" width="160" height="52" rx="8" class="sf-green-soft" style="stroke:var(--green)"/>
+            <text x="350" y="151" class="t tc t-b">Asset turnover</text>
+            <text x="350" y="168" class="t tc t-s" style="font-size:10px;">Net sales &divide; Avg assets</text>
+            <text x="150" y="198" class="t tc t-s">pricing &amp; cost control</text>
+            <text x="350" y="198" class="t tc t-s">efficiency</text>
+            <text x="433" y="90" class="t tc t-s">leverage</text>
+            <text x="260" y="232" class="t tc t-xs">The same ROA can come from high margin + low turnover, or low margin + high turnover.</text>
+          </svg>
+          <figcaption>Two equations: ROA = margin &times; turnover, and ROE = ROA &times; equity multiplier.</figcaption>
+        </figure>
+
+        <h4>Use averages, not year-end balances</h4>
+        <p>Net income is earned across the whole year, but a balance sheet is a single day. So the asset or equity in the denominator is the <strong>average</strong> of the beginning and ending balances: (beginning + ending) &divide; 2. Beginning assets $440M and ending $500M give average assets of <strong>$470M</strong>. (If a question hands you only one balance, use it &mdash; and some professors use ending balances, so follow the question's instructions.)</p>
+
+        <h4>Numbers you should be able to do by hand</h4>
+        <table class="mini-table">
+          <thead><tr><th>Given</th><th>Work</th><th>Answer</th></tr></thead>
+          <tbody>
+            <tr><td>NI $31.8M; assets $500M &rarr; $560M</td><td>31.8 &divide; avg(500, 560) = 31.8 &divide; 530</td><td><strong>ROA 6.0%</strong></td></tr>
+            <tr><td>NI $42M; revenue $600M</td><td>42 &divide; 600</td><td><strong>Margin 7%</strong></td></tr>
+            <tr><td>Revenue $720M; assets $680M &rarr; $760M</td><td>720 &divide; avg(680, 760) = 720 &divide; 720</td><td><strong>Turnover 1.0x</strong></td></tr>
+            <tr><td>Margin 9%, turnover 1.10</td><td>9% &times; 1.10</td><td><strong>ROA 9.9%</strong></td></tr>
+            <tr><td>NI $40.8M; equity $300M &rarr; $380M</td><td>40.8 &divide; avg(300, 380) = 40.8 &divide; 340</td><td><strong>ROE 12%</strong></td></tr>
+          </tbody>
+        </table>
+        <div class="key-flag"><b>Trap</b> Company A: margin 14%, turnover 0.75 &rarr; ROA 10.5%. Company B: margin 9%, turnover 1.20 &rarr; ROA 10.8%. The firm with the <em>lower</em> margin wins. Multiply the two; never compare one factor alone. And if only one factor is better for P and the other worse, the answer is &ldquo;need more data.&rdquo;</div>
+
+        <div class="exam-angle"><b>Exam angle</b>A very common question: "explain how two companies can have the same ROA but very different margin/turnover profiles" — answer with the luxury/low-volume vs. discount/high-volume framing. For a full "analyze this company" prompt, structure your answer as: (1) who's the user and what decision are they making, (2) what do the ratios show (compute and decompose them), (3) what strategic context (Five Forces / SWOT) explains the numbers.</div>
+      </div>
+    </div>
+    <div class="source-block" id="src-foundations" data-tier="know">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">04</span><h3>Who reads financial statements, and why</h3> <span class="tier tier-know">&#9680; Understand it</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -198,35 +425,9 @@
         <div class="exam-angle"><b>Exam angle</b>Given a piece of disclosed information, identify which user group cares most about it and why &mdash; that's a very natural short-answer prompt. If asked to name every recognized accounting method (not just cash vs. accrual), remember hybrid basis.</div>
       </div>
     </div>
-
-    <div class="source-block" id="src-activities">
+    <div class="source-block" id="src-disclosure" data-tier="know">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">02</span><h3>The three business activities</h3></span>
-        <span class="chev">&#x2304;</span>
-      </button>
-      <div class="source-body">
-        <h4>Big idea</h4>
-        <p>Every company's operations break into three activity types — and this isn't just a conceptual list. These three categories are <strong>literally the three sections of the Statement of Cash Flows</strong> you'll study later, so getting comfortable with them now pays off directly.</p>
-
-        <table class="mini-table">
-          <thead><tr><th>Activity</th><th>What it covers</th></tr></thead>
-          <tbody>
-            <tr><td>Operating</td><td>Hiring &amp; training staff, manufacturing, delivering services, marketing &amp; selling, after-sale support</td></tr>
-            <tr><td>Investing</td><td>Acquiring land, buildings &amp; equipment; growing via new products/services; acquiring other companies</td></tr>
-            <tr><td>Financing</td><td>Raising cash to fund operating and investing activities — selling stock, borrowing cash</td></tr>
-          </tbody>
-        </table>
-
-        <h4>The four financial statements</h4>
-        <p>Balance Sheet, Income Statement, Statement of Stockholders' Equity, Statement of Cash Flows. This unit is the roadmap — each statement gets its own deep dive later in the course.</p>
-
-        <div class="exam-angle"><b>Exam angle</b>If given a transaction (e.g., "the company sold new shares to fund a factory expansion"), be ready to split it apart: the share sale is Financing, the factory is Investing. Case questions often bundle more than one activity into a single scenario.</div>
-      </div>
-    </div>
-
-    <div class="source-block" id="src-disclosure">
-      <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">03</span><h3>The cost/benefit tradeoff of disclosure</h3></span>
+        <span class="stitle"><span class="num">05</span><h3>The cost/benefit tradeoff of disclosure</h3> <span class="tier tier-know">&#9680; Understand it</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -246,45 +447,9 @@
         <div class="exam-angle"><b>Exam angle</b>"Why wouldn't a company disclose more than the minimum required?" → answer with the cost side. "Why would a company disclose voluntarily?" → answer with the benefit side, especially cost of capital. Know both directions — instructors like to flip the question.</div>
       </div>
     </div>
-
-    <div class="source-block" id="src-ratios">
+    <div class="source-block" id="src-limitations" data-tier="know">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">04</span><h3>The four core profitability ratios</h3></span>
-        <span class="chev">&#x2304;</span>
-      </button>
-      <div class="source-body">
-        <h4>Big idea</h4>
-        <p>Four ratios, one relationship. Individually, each ratio tells you something different about a company; together, via the DuPont decomposition above, they explain <em>why</em> a company's returns look the way they do.</p>
-
-        <table class="mini-table">
-          <thead><tr><th>Ratio</th><th>Equation</th><th>What it measures</th></tr></thead>
-          <tbody>
-            <tr><td>Return on Assets (ROA)</td><td>Net Income &#x00f7; Average Total Assets</td><td>Profit generated per dollar of assets, regardless of financing mix</td></tr>
-            <tr><td>Net Profit Margin</td><td>Net Income &#x00f7; Net Sales</td><td>Profit earned per dollar of sales — cost control &amp; pricing power</td></tr>
-            <tr><td>Total Asset Turnover</td><td>Net Sales &#x00f7; Average Total Assets</td><td>Sales generated per dollar of assets — an efficiency measure, not profitability</td></tr>
-            <tr><td>Return on Equity (ROE)</td><td>Net Income &#x00f7; Average Stockholders' Equity</td><td>Return generated specifically for shareholders</td></tr>
-          </tbody>
-        </table>
-
-        <div class="quote-block">ROA = Net Profit Margin &#x00d7; Total Asset Turnover</div>
-        <div class="quote-block">ROE = ROA &#x00d7; Equity Multiplier, where Equity Multiplier = Average Total Assets &#x00f7; Average Stockholders' Equity</div>
-
-        <p>The equity multiplier is a leverage measure: the more a company finances itself with debt rather than equity, the more its ROE is amplified above its ROA.</p>
-
-        <h4>Company analysis frameworks</h4>
-        <p>Two qualitative frameworks typically pair with this ratio analysis — used to explain <em>why</em> the numbers look the way they do, not as a separate topic:</p>
-        <ul>
-          <li><strong>Porter's Five Forces</strong> — threat of new entrants, bargaining power of suppliers, bargaining power of buyers, threat of substitutes, rivalry among existing competitors.</li>
-          <li><strong>SWOT Analysis</strong> — Strengths, Weaknesses, Opportunities, Threats.</li>
-        </ul>
-
-        <div class="exam-angle"><b>Exam angle</b>A very common question: "explain how two companies can have the same ROA but very different margin/turnover profiles" — answer with the luxury/low-volume vs. discount/high-volume framing. For a full "analyze this company" prompt, structure your answer as: (1) who's the user and what decision are they making, (2) what do the ratios show (compute and decompose them), (3) what strategic context (Five Forces / SWOT) explains the numbers.</div>
-      </div>
-    </div>
-
-    <div class="source-block" id="src-limitations">
-      <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">05</span><h3>Limitations of financial statements</h3></span>
+        <span class="stitle"><span class="num">06</span><h3>Limitations of financial statements</h3> <span class="tier tier-know">&#9680; Understand it</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -301,10 +466,25 @@
         <div class="exam-angle"><b>Exam angle</b>Historical cost is the single most commonly tested limitation &mdash; if a question asks "why might the Balance Sheet understate a company's true value," this is almost always the expected answer.</div>
       </div>
     </div>
-
-    <div class="source-block" id="src-analysis-techniques">
+    <div class="source-block" id="src-frameworks" data-tier="know">
       <button class="source-toggle" aria-expanded="false">
-        <span class="stitle"><span class="num">06</span><h3>Financial statement analysis techniques</h3></span>
+        <span class="stitle"><span class="num">07</span><h3>Porter&rsquo;s Five Forces &amp; SWOT: explaining the numbers</h3> <span class="tier tier-know">&#9680; Understand it</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>Big idea</h4>
+        <p>Ratios tell you <em>what</em> the numbers are. Two qualitative frameworks help you explain <em>why</em>. They are used alongside the ratios, not as a separate topic.</p>
+        <ul>
+          <li><strong>Porter's Five Forces</strong> — threat of new entrants, bargaining power of suppliers, bargaining power of buyers, threat of substitutes, rivalry among existing competitors.</li>
+          <li><strong>SWOT Analysis</strong> — Strengths, Weaknesses, Opportunities, Threats.</li>
+        </ul>
+
+        <div class="exam-angle"><b>Exam angle</b>For a full &ldquo;analyze this company&rdquo; prompt, structure the answer as: (1) who is the user and what decision are they making, (2) what do the ratios show (compute and decompose them), (3) what strategic context (Five Forces / SWOT) explains the numbers.</div>
+      </div>
+    </div>
+    <div class="source-block" id="src-analysis-techniques" data-tier="know">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">08</span><h3>Financial statement analysis techniques</h3> <span class="tier tier-know">&#9680; Understand it</span></span>
         <span class="chev">&#x2304;</span>
       </button>
       <div class="source-body">
@@ -323,6 +503,113 @@
         <div class="callout">Only <strong>Profitability</strong> ratios (ROA, Net Profit Margin, Total Asset Turnover, ROE) are built out in depth in this unit so far. Liquidity, Debt/Equity, and Productivity ratios haven't been covered yet &mdash; watch for them in a later unit and this page will get updated when they are.</div>
 
         <div class="exam-angle"><b>Exam angle</b>If a question asks you to "analyze" a company's financial statements, the safe structure is: (1) run horizontal analysis (trend across periods), (2) run vertical analysis (common-size the statements), (3) compute ratios across all four categories &mdash; not just profitability, even though profitability is what this unit has covered in depth so far.</div>
+      </div>
+    </div>
+
+    <!-- ===== GO DEEPER ===== -->
+    <div id="deeper" style="margin-top:2.2em;">
+      <div class="section-head">
+        <span class="eyebrow">Optional &middot; Go deeper</span>
+        <h2>Homework-level material</h2>
+      </div>
+      <div class="deep-note"><b>You can skip this and still ace the test</b>The homework is much harder than the exam: it uses real company filings, multi-year data and &ldquo;explain why&rdquo; questions. If the basics above felt easy and you want to see the same ideas stretched, open this. When you&rsquo;re ready for graded practice: <a href="acctg-homework.html?unit=u1">Unit 1 homework practice</a>.</div>
+    </div>
+
+    <div class="source-block" id="deep-ratios" data-tier="deep">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">&#9650;1</span><h3>Ratios Under Pressure: Leverage, Multi-Year Averages &amp; Reading a Real 10-K</h3> <span class="tier tier-deep">&#9650; Go deeper</span></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <h4>Same ROA, very different ROE: leverage</h4>
+        <p>Two firms each earn net income of $8M on $100M of assets (ROA 8%). Firm U is funded entirely by equity ($100M). Firm L is funded with $60M of debt and $40M of equity.</p>
+        <div class="calc" style="font-family:var(--font-mono); font-size:.88rem; background:var(--paper-2); border-radius:6px; padding:8px 10px; margin:.5em 0; overflow-x:auto;">Firm U: equity multiplier = 100 / 100 = 1.0 &rarr; ROE = 8% &times; 1.0 = 8%<br>Firm L: equity multiplier = 100 / 40  = 2.5 &rarr; ROE = 8% &times; 2.5 = 20%</div>
+        <p>Same profit and same assets, but L&rsquo;s owners put in less of their own money, so each owner dollar earns more. Leverage amplifies in <em>both</em> directions: in a loss year L&rsquo;s equity shrinks faster, and the lenders still must be paid. Higher ROE from debt is not free.</p>
+
+        <h4>A multi-year ratio table</h4>
+        <p>Year-end total assets are $400M, $460M and $520M for years 1&ndash;3. Net income is $27.6M in year 2 and $31.2M in year 3.</p>
+        <div class="calc" style="font-family:var(--font-mono); font-size:.88rem; background:var(--paper-2); border-radius:6px; padding:8px 10px; margin:.5em 0; overflow-x:auto;">Year 2: avg assets = (400+460)/2 = 430 &rarr; ROA = 27.6/430 = 6.4%<br>Year 3: avg assets = (460+520)/2 = 490 &rarr; ROA = 31.2/490 = 6.4%</div>
+        <p>Net income grew 13% (31.2 &divide; 27.6 = 1.13) yet ROA is flat, because the asset base grew just as fast. This is why analysts look at returns, not profit alone. Note the first year in any data set has no beginning balance, so it cannot use an average.</p>
+
+        <h4>Explaining a change with DuPont</h4>
+        <p>Year 1: margin 5%, turnover 2.0 &rarr; ROA 10%. Year 2: margin 4%, turnover 2.6 &rarr; ROA 10.4%. Margin <em>fell</em> but ROA <em>rose</em>, because the company squeezed more sales out of every asset dollar (maybe it cut prices to move volume). When a homework asks &ldquo;why did ROA change?&rdquo;, state which factor moved and in which direction.</p>
+
+        <h4>Pulling the numbers from a real filing</h4>
+        <ul>
+          <li><strong>Net income</strong> is the bottom line of the income statement. <strong>Net sales</strong> may be labeled &ldquo;Net sales,&rdquo; &ldquo;Net revenues&rdquo; or &ldquo;Total revenues.&rdquo; Use the top line.</li>
+          <li>A 10-K balance sheet shows two year-end columns, so you can average them for one year&rsquo;s ratio. Check you are reading <strong>total</strong> assets and <strong>total</strong> stockholders&rsquo; equity, not a sub-total.</li>
+          <li>Real equity can include noncontrolling interests or treasury stock; use the total line the question names. Different units ($ millions vs $ thousands) cancel in a ratio but must match inside it.</li>
+          <li>Comparing two companies (for example two beverage makers): compute all four ratios for each, then use DuPont to say whether the winner got there by margin, turnover or leverage.</li>
+        </ul>
+        <div class="key-flag"><b>Practice it</b> The homework unit has Norfolk Southern and PepsiCo vs. Coca-Cola ratio problems: <a href="acctg-homework.html?unit=u1">Unit 1 homework practice</a>.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ STEP 3: CHEAT SHEET ============ -->
+  <div class="wrap section" id="cheat" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Step 3 &middot; Cheat sheet</span>
+      <h2>Every Unit 1 formula and definition on one page</h2>
+    </div>
+    <div class="cheat-grid">
+      <div class="cheat-card"><h4>Accounting equation</h4>
+        <div class="cheat-formula">Assets = Liabilities + Equity<br>Equity = Assets &minus; Liabilities<br>&Delta;A = &Delta;L + &Delta;E</div>
+        <p>Liabilities = nonowner financing. Equity = owner financing.</p></div>
+      <div class="cheat-card"><h4>What moves equity</h4>
+        <div class="cheat-formula">Up: stock issued, net income<br>Down: dividends, net loss, buybacks</div>
+        <p>Stock for cash: assets &uarr;, equity &uarr;, no net income. Dividends are not an expense.</p></div>
+      <div class="cheat-card"><h4>Three activities</h4>
+        <div class="cheat-formula">Operating: run the business<br>Investing: buy long-term assets<br>Financing: stock, loans, dividends</div>
+        <p>Ending cash = Beg + Operating + Investing + Financing.</p></div>
+      <div class="cheat-card"><h4>The four ratios</h4>
+        <div class="cheat-formula">ROA = NI &divide; Avg assets<br>Margin = NI &divide; Net sales<br>Turnover = Sales &divide; Avg assets<br>ROE = NI &divide; Avg equity</div>
+        <p>Average = (beginning + ending) &divide; 2.</p></div>
+      <div class="cheat-card"><h4>DuPont</h4>
+        <div class="cheat-formula">ROA = Margin &times; Turnover<br>ROE = ROA &times; Equity multiplier<br>Equity multiplier = Avg assets &divide; Avg equity</div>
+        <p>Multiply both factors; never judge ROA by one alone. More debt means a bigger multiplier and ROE above ROA.</p></div>
+      <div class="cheat-card"><h4>Users &rarr; decisions</h4>
+        <div class="cheat-formula">Investors: value equity<br>Lenders: can it repay debt?<br>Managers: internal decisions</div>
+        <p>Six-user list: owners/investors, creditors, management, government, analysts, employees.</p></div>
+      <div class="cheat-card"><h4>Accounting methods</h4>
+        <div class="cheat-formula">Cash: when cash moves<br>Accrual: when earned/incurred<br>Hybrid: a blend</div>
+        <p>Three methods, not two. GAAP requires accrual for many companies.</p></div>
+      <div class="cheat-card"><h4>Disclosure trade-off</h4>
+        <div class="cheat-formula">Benefits: lower cost of capital, recruiting, supplier/customer ties<br>Costs: preparation, rivals, lawsuits, political</div>
+        <p>Answer the side the question asks, then tie it to the scenario.</p></div>
+      <div class="cheat-card"><h4>Limits of statements</h4>
+        <div class="cheat-formula">1. Historical cost<br>2. Estimates<br>3. Evolving standards<br>4. Errors and fraud</div>
+        <p>Historical cost is the usual answer to &ldquo;why understated?&rdquo;</p></div>
+    </div>
+    <div class="cheat-traps">
+      <h4>Traps the exam sets</h4>
+      <ul>
+        <li>Using year-end balances when the ratio calls for <em>average</em> balances.</li>
+        <li>Deciding ROA from margin alone (or turnover alone). Compute the product.</li>
+        <li>Calling accounts payable owner financing. It is a liability, so nonowner.</li>
+        <li>Treating a dividend as an expense, or a stock issue as revenue. Neither touches net income.</li>
+        <li>Mixing up turnover (sales &divide; assets) with margin (income &divide; sales).</li>
+        <li>Listing only cash and accrual accounting: hybrid is the third method.</li>
+        <li>Lumping a scenario into one activity: selling shares is Financing, building the factory with that cash is Investing.</li>
+        <li>Naming only three user groups when asked for the full six, or listing users without the decision each makes.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ============ STEP 4: PRACTICE ============ -->
+  <div class="wrap section" id="practice" style="padding-top:0;">
+    <div class="section-head">
+      <span class="eyebrow">Step 4 &middot; Practice</span>
+      <h2>Now test it</h2>
+    </div>
+    <div class="practice-panel">
+      <p style="margin:0;">Work in this order: the <a href="#quiz">quick quiz</a> checks the basics, then exam-style problems (Units 1 and 2 share one set), then the <a href="#practice-lab">practice lab</a> for endless fresh ratio problems.</p>
+      <div class="practice-row">
+        <a class="btn blue" href="#quiz">Unit 1 quiz</a>
+        <a class="btn blue" href="acctg-exam-prep.html?unit=m12">Exam prep: Units 1 &amp; 2</a>
+        <a class="btn ghost" href="#practice-lab">Practice lab (fresh numbers)</a>
+        <a class="btn ghost" href="acctg-homework.html?unit=u1">Homework practice (harder)</a>
+        <a class="btn ghost" href="acctg-mock-test.html">ACCTG mock test</a>
       </div>
     </div>
   </div>
@@ -508,7 +795,7 @@
   </div>
 
   <!-- ============ WORKED EXAMPLES (static, step-by-step) ============ -->
-  <div class="wrap section" id="practice">
+  <div class="wrap section" id="worked">
     <div class="section-head">
       <span class="eyebrow">Show your work</span>
       <h2>Worked examples</h2>
@@ -643,6 +930,10 @@
         <li>Critique the reliability of a company's financial statements using the four limitations (historical cost, estimates, evolving standards, fraud risk).</li>
         <li>Given a scenario, decide whether Horizontal Analysis or Vertical Analysis is the better technique to answer the question being asked.</li>
         <li>Name all three accounting methods (not just cash vs. accrual) if asked to list every recognized method.</li>
+        <li>Use Assets = Liabilities + Equity to solve for a missing piece (equity from assets and liabilities, or the percentage of assets financed by nonowners), and classify a financing source as owner or nonowner.</li>
+        <li>Pick the transaction that raises assets and equity without touching net income (stock issued for cash), or the one that cuts retained earnings without cutting net income (a dividend).</li>
+        <li>Roll cash forward: beginning cash + operating + investing + financing = ending cash.</li>
+        <li>Use <em>average</em> balances for ROA and ROE, and know that a higher margin alone does not guarantee a higher ROA.</li>
       </ul>
     </div>
   </div>
@@ -658,6 +949,7 @@
 <script src="assets/acctg-flashcards-data.js"></script>
 <script src="assets/acctg-quiz-data.js"></script>
 <script src="assets/app.js"></script>
+<script src="assets/learnpath.js"></script>
 <script src="assets/interactive.js"></script>
 </body>
 </html>

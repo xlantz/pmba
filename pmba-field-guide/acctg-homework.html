@@ -34,12 +34,14 @@
         <button class="nav-caret" aria-expanded="false" aria-label="Show ACCTG 6000 items">&#9662;</button>
         <div class="nav-dropdown-menu">
           <div class="nav-dropdown-menu-inner">
+            <a href="acctg-start.html">Start here &mdash; Accounting from Zero</a>
             <a href="acctg1.html">Unit 1 &mdash; Reporting Foundations</a>
             <a href="acctg2.html">Unit 2 &mdash; Statements &amp; SEC Filings</a>
             <a href="acctg3.html">Unit 3 &mdash; The Accounting Cycle</a>
             <a href="acctg5.html">Unit 5 &mdash; Revenue &amp; Receivables</a>
             <a href="acctg6.html">Unit 6 &mdash; Inventory &amp; Long-Lived Assets</a>
             <a href="acctg7.html">Unit 7 &mdash; Current &amp; Long-Term Liabilities</a>
+            <a href="acctg8.html">Unit 8 &mdash; Equity, Dividends &amp; EPS</a>
             <a href="acctg-homework.html">Accounting HW Practice</a>
             <a href="acctg-exam-prep.html">Exam Prep Practice</a>
           </div>
@@ -82,10 +84,10 @@
     <div>
       <span class="eyebrow">ACCTG 6000 &#x00b7; Accounting HW Practice</span>
       <h1>Homework, worked with new numbers</h1>
-      <p class="lede" style="max-width:70ch;">The same structure as the real Module 1, 2, 3, 5 &amp; 7 assignments &#x2014; numbers and company names changed so this isn't a copy of what you turned in. Filter by unit or by topic to find exactly what you want to drill, fill it in, hit Check, and get an instant score plus notes on anything you missed. Reset clears the page so you can redo it as many times as you want.</p>
+      <p class="lede" style="max-width:70ch;">The same structure as the real Module 1, 2, 3, 5, 7 &amp; 8 assignments &#x2014; numbers and company names changed so this isn't a copy of what you turned in. Filter by unit or by topic to find exactly what you want to drill, fill it in, hit Check, and get an instant score plus notes on anything you missed. Reset clears the page so you can redo it as many times as you want.</p>
       <div class="hero-stats">
-        <div class="hero-stat"><b>192</b><span>Questions</span></div>
-        <div class="hero-stat"><b>5</b><span>Units, 19 topics</span></div>
+        <div class="hero-stat"><b>202</b><span>Questions</span></div>
+        <div class="hero-stat"><b>6</b><span>Units, 23 topics</span></div>
         <div class="hero-stat"><b>&#x2713;</b><span>Auto-graded</span></div>
       </div>
     </div>
@@ -94,6 +96,7 @@
 
 <main id="main">
   <div class="wrap section" style="padding-top:0;">
+    <div class="deep-note"><b>This is the deep end</b>The homework is a lot more content and a lot harder than the tests. If you're newer to this, work the unit pages first (they take you from zero to test-ready), then the <a href="acctg-exam-prep.html">Exam Prep Practice</a>, and come here when you want to stretch: real company filings, multi-step sequences, back-solving. Each unit page has a collapsed <strong>Go deeper</strong> section that previews the same material, with links straight to the matching problems here.</div>
     <div class="callout">
       Numeric answers are graded with a small rounding tolerance. Dropdowns need an exact match. U1-Q2 and U2-Q5 (Amazon audit opinion) use real, public financial statements rather than invented practice figures &#x2014; U1-Q2 has a "View Financial Statements" popup for each company so you can practice pulling the numbers yourself instead of having them handed to you.
     </div>
@@ -115,6 +118,7 @@
         <button class="chip" data-hw-unit="u3">Unit 3</button>
         <button class="chip" data-hw-unit="u5">Unit 5</button>
         <button class="chip" data-hw-unit="u7">Unit 7</button>
+        <button class="chip" data-hw-unit="u8">Unit 8</button>
         <button class="chip" data-hw-unit="review">Exam Prep Practice</button>
       </div>
     </div>
@@ -138,6 +142,10 @@
         <button class="chip" data-hw-topic="shortterm">Short-Term Notes</button>
         <button class="chip" data-hw-topic="installment">Installment Notes &amp; Mortgages</button>
         <button class="chip" data-hw-topic="bonds">Bonds</button>
+        <button class="chip" data-hw-topic="dividends">Dividends &amp; Splits</button>
+        <button class="chip" data-hw-topic="treasury">Treasury Stock</button>
+        <button class="chip" data-hw-topic="stockcomp">Stock Compensation</button>
+        <button class="chip" data-hw-topic="eps">EPS</button>
         <button class="chip" data-hw-topic="conceptual">Review: Conceptual</button>
         <button class="chip" data-hw-topic="computational">Review: Computational</button>
       </div>
@@ -2372,7 +2380,377 @@ We also have audited, in accordance with the standards of the Public Company Acc
       </div>
     </div>
 
-        <div class="hw-q" data-gradable="true" data-unit="review" data-topic="conceptual">
+        <!-- U8-Q1 -->
+    <div class="hw-q" data-gradable="true" data-unit="u8" data-topic="equity">
+      <h3><span class="hw-num">U8-Q1</span>Reading a Balance Sheet: Average Prices &amp; Shares Outstanding</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 8</span>
+      <p class="hw-prompt">Orchard Peak Co. reports the following in its stockholders' equity (dollars and shares in millions): Common stock, $1 par value, 2,300 shares issued: <strong>$18,400</strong>. Treasury stock, at cost, 850 shares: <strong>$30,600</strong>.</p>
+      <div class="hw-part-label">a. What is the average price at which the company issued its shares?</div>
+      <table class="hw-table"><tr><td class="hw-label">Average issue price per share</td><td>$<input type="text" class="num" data-correct="8.00" data-tol="0.01"></td></tr></table>
+      <div class="hw-part-label">b. What is the average price the company paid to repurchase its treasury shares?</div>
+      <table class="hw-table"><tr><td class="hw-label">Average repurchase price per share</td><td>$<input type="text" class="num" data-correct="36.00" data-tol="0.01"></td></tr></table>
+      <div class="hw-part-label">c. How many shares are outstanding (in millions)?</div>
+      <table class="hw-table"><tr><td class="hw-label">Shares outstanding</td><td><input type="text" class="num" data-correct="1450"></td></tr></table>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>(a) Use <em>issued</em> shares for the issue price (the account still contains shares that were later bought back): $18,400 &divide; 2,300 = $8.00.</li>
+          <li>(b) Use only the <em>treasury</em> shares for the repurchase price: $30,600 &divide; 850 = $36.00.</li>
+          <li>(c) Outstanding = issued &minus; treasury = 2,300 &minus; 850 = 1,450 million shares.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li><span class="ans-part">a.</span> $8.00 per share.</li>
+            <li><span class="ans-part">b.</span> $36.00 per share.</li>
+            <li><span class="ans-part">c.</span> 1,450 million shares.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- U8-Q2 -->
+    <div class="hw-q" data-gradable="true" data-unit="u8" data-topic="dividends">
+      <h3><span class="hw-num">U8-Q2</span>Retained Earnings Roll-Forward &amp; Backing into Dividends</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 8</span>
+      <p class="hw-prompt">Two separate companies. Use the retained earnings roll-forward: Beginning RE + Net income &minus; Dividends = Ending RE.</p>
+      <div class="hw-part-label">a. Vantage Foods began the year with retained earnings of $412,000, earned net income of $158,000, declared cash dividends of $40,000 and recorded a $25,000 stock dividend. What is ending retained earnings?</div>
+      <table class="hw-table"><tr><td class="hw-label">Ending retained earnings</td><td>$<input type="text" class="num" data-correct="505000"></td></tr></table>
+      <div class="hw-part-label">b. Another company (dollars in millions) had beginning retained earnings of $8,640, net income of $1,310 and ending retained earnings of $9,205. It paid only cash dividends. How much were the dividends?</div>
+      <table class="hw-table"><tr><td class="hw-label">Dividends</td><td>$<input type="text" class="num" data-correct="745"></td></tr></table>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>(a) 412,000 + 158,000 &minus; 40,000 &minus; 25,000 = $505,000. A stock dividend reduces retained earnings too (it is moved into contributed capital).</li>
+          <li>(b) Dividends are the plug: 8,640 + 1,310 &minus; 9,205 = $745 million.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li><span class="ans-part">a.</span> $505,000.</li>
+            <li><span class="ans-part">b.</span> $745 million.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- U8-Q3 -->
+    <div class="hw-q" data-gradable="true" data-unit="u8" data-topic="dividends">
+      <h3><span class="hw-num">U8-Q3</span>Stacked Stock Splits</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 8</span>
+      <p class="hw-prompt">Brightwave Inc. has split its stock three times: a 3-for-1 split, then a 2-for-1 split, then a 5-for-1 split. Before any splits it had 4,000,000 shares with a par value of $3.00. Today the stock trades at $52.</p>
+      <div class="hw-part-label">a. What is the cumulative split factor?</div>
+      <table class="hw-table"><tr><td class="hw-label">Cumulative factor (&times;)</td><td><input type="text" class="num" data-correct="30"></td></tr></table>
+      <div class="hw-part-label">b. How many shares does it have today?</div>
+      <table class="hw-table"><tr><td class="hw-label">Shares today</td><td><input type="text" class="num" data-correct="120000000"></td></tr></table>
+      <div class="hw-part-label">c. What is the par value per share today?</div>
+      <table class="hw-table"><tr><td class="hw-label">Par value today</td><td>$<input type="text" class="num" data-correct="0.10" data-tol="0.005"></td></tr></table>
+      <div class="hw-part-label">d. What would one share trade for today if there had never been any splits?</div>
+      <table class="hw-table"><tr><td class="hw-label">Price with no splits</td><td>$<input type="text" class="num" data-correct="1560"></td></tr></table>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>(a) Splits multiply: 3 &times; 2 &times; 5 = 30.</li>
+          <li>(b) 4,000,000 &times; 30 = 120,000,000 shares.</li>
+          <li>(c) Par is divided by the factor: $3.00 &divide; 30 = $0.10.</li>
+          <li>(d) With 30 times fewer shares, each would be worth 30 times as much: $52 &times; 30 = $1,560. Total value is unchanged.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li><span class="ans-part">a.</span> 30.</li>
+            <li><span class="ans-part">b.</span> 120,000,000.</li>
+            <li><span class="ans-part">c.</span> $0.10.</li>
+            <li><span class="ans-part">d.</span> $1,560.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- U8-Q4 -->
+    <div class="hw-q" data-gradable="true" data-unit="u8" data-topic="treasury">
+      <h3><span class="hw-num">U8-Q4</span>Treasury Stock: Buy, Resell Higher, Resell Lower</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 8</span>
+      <p class="hw-prompt">Harlow Inc. bought 18,000 of its own shares at $15 on March 3. On June 12 it sold 10,000 of them at $18. On September 20 it sold another 4,000 at $17. Use the cost method; assume the account list includes APIC&mdash;Treasury Stock.</p>
+      <div class="hw-part-label">a. Cash received on June 12:</div>
+      <table class="hw-table"><tr><td class="hw-label">Cash</td><td>$<input type="text" class="num" data-correct="180000"></td></tr></table>
+      <div class="hw-part-label">b. Amount credited to APIC&mdash;Treasury Stock on June 12:</div>
+      <table class="hw-table"><tr><td class="hw-label">APIC&mdash;TS</td><td>$<input type="text" class="num" data-correct="30000"></td></tr></table>
+      <div class="hw-part-label">c. Total APIC&mdash;Treasury Stock after September 20:</div>
+      <table class="hw-table"><tr><td class="hw-label">APIC&mdash;TS (total)</td><td>$<input type="text" class="num" data-correct="38000"></td></tr></table>
+      <div class="hw-part-label">d. Treasury shares still held, and the Treasury Stock balance:</div>
+      <table class="hw-table"><tr><td class="hw-label">Treasury shares remaining</td><td><input type="text" class="num" data-correct="4000"></td></tr><tr><td class="hw-label">Treasury Stock balance (at cost)</td><td>$<input type="text" class="num" data-correct="60000"></td></tr></table>
+      <div class="hw-part-label">e. By how much did total stockholders' equity change across the three transactions (enter the amount of the decrease)?</div>
+      <table class="hw-table"><tr><td class="hw-label">Decrease in total equity</td><td>$<input type="text" class="num" data-correct="22000"></td></tr></table>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>(a) 10,000 &times; $18 = $180,000 cash. Treasury Stock comes out at <em>cost</em>: 10,000 &times; $15 = $150,000. (b) Excess = $180,000 &minus; $150,000 = $30,000 to APIC&mdash;TS.</li>
+          <li>(c) Sept 20: cash 4,000 &times; $17 = $68,000; cost 4,000 &times; $15 = $60,000; excess $8,000. Total APIC&mdash;TS = $30,000 + $8,000 = $38,000.</li>
+          <li>(d) 18,000 &minus; 10,000 &minus; 4,000 = 4,000 shares still held, at 4,000 &times; $15 = $60,000.</li>
+          <li>(e) Equity changes by the net cash: &minus;$270,000 + $180,000 + $68,000 = &minus;$22,000. Equivalently, the Treasury Stock contra still shows $60,000 and APIC&mdash;TS added $38,000. None of it touches net income.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li><span class="ans-part">a.</span> $180,000.</li>
+            <li><span class="ans-part">b.</span> $30,000.</li>
+            <li><span class="ans-part">c.</span> $38,000.</li>
+            <li><span class="ans-part">d.</span> 4,000 shares; $60,000.</li>
+            <li><span class="ans-part">e.</span> $22,000 decrease.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- U8-Q5 -->
+    <div class="hw-q" data-gradable="true" data-unit="u8" data-topic="equity">
+      <h3><span class="hw-num">U8-Q5</span>Building the Equity Section from a Series of Transactions</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 8</span>
+      <p class="hw-prompt">Maple Ridge Co. begins the year with: Common stock, $5 par, 200,000 shares issued, <strong>$1,000,000</strong>; APIC&mdash;common <strong>$600,000</strong>; Retained earnings <strong>$900,000</strong>; no treasury stock. During the year: (1) it issues 40,000 common shares at $12; (2) it repurchases 10,000 shares at $14; (3) it resells 6,000 of those treasury shares at $16; (4) it earns net income of $130,000 and declares (and pays) cash dividends of $45,000.</p>
+      <div class="hw-part-label">Ending balances in the equity section:</div>
+      <table class="hw-table"><tr><td class="hw-label">Common stock</td><td>$<input type="text" class="num" data-correct="1200000"></td></tr><tr><td class="hw-label">APIC&mdash;common stock</td><td>$<input type="text" class="num" data-correct="880000"></td></tr><tr><td class="hw-label">APIC&mdash;treasury stock</td><td>$<input type="text" class="num" data-correct="12000"></td></tr><tr><td class="hw-label">Retained earnings</td><td>$<input type="text" class="num" data-correct="985000"></td></tr><tr><td class="hw-label">Treasury stock (enter as a positive number to be deducted)</td><td>$<input type="text" class="num" data-correct="56000"></td></tr><tr><td class="hw-label">Total stockholders' equity</td><td>$<input type="text" class="num" data-correct="3021000"></td></tr><tr><td class="hw-label">Shares outstanding</td><td><input type="text" class="num" data-correct="236000"></td></tr></table>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>(1) 40,000 &times; $12 = $480,000 cash; Common Stock 40,000 &times; $5 = $200,000 (to $1,200,000); APIC&mdash;CS +$280,000 (to $880,000).</li>
+          <li>(2) Treasury Stock = 10,000 &times; $14 = $140,000. (3) Cash 6,000 &times; $16 = $96,000; Treasury out at cost 6,000 &times; $14 = $84,000; excess $12,000 to APIC&mdash;TS. Treasury balance left: 4,000 &times; $14 = $56,000.</li>
+          <li>(4) Retained earnings = 900,000 + 130,000 &minus; 45,000 = $985,000.</li>
+          <li>Total = 1,200,000 + 880,000 + 12,000 + 985,000 &minus; 56,000 = <strong>$3,021,000</strong>. Check: 2,500,000 + 480,000 &minus; 140,000 + 96,000 + 130,000 &minus; 45,000 = 3,021,000. Shares: 240,000 issued &minus; 4,000 treasury = 236,000 outstanding.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li><span class="ans-part"></span> Common $1,200,000; APIC&mdash;CS $880,000; APIC&mdash;TS $12,000; RE $985,000; Treasury ($56,000); total equity $3,021,000; 236,000 shares outstanding.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- U8-Q6 -->
+    <div class="hw-q" data-gradable="true" data-unit="u8" data-topic="stockcomp">
+      <h3><span class="hw-num">U8-Q6</span>Executive Stock Options From Grant to Exercise</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 8</span>
+      <p class="hw-prompt">Summit Ridge grants its executives 150,000 stock options. Each option has a grant-date fair value of $14 and an exercise price of $30. The options vest over four years. The shares are no-par, so all credits go to contributed capital.</p>
+      <div class="hw-part-label">a. Compensation expense recognized in each of the four vesting years:</div>
+      <table class="hw-table"><tr><td class="hw-label">Annual expense</td><td>$<input type="text" class="num" data-correct="525000"></td></tr></table>
+      <div class="hw-part-label">b. Total contributed capital built up by the end of vesting from this expense:</div>
+      <table class="hw-table"><tr><td class="hw-label">Total credited</td><td>$<input type="text" class="num" data-correct="2100000"></td></tr></table>
+      <div class="hw-part-label">c. In year 5 the stock trades at $26. Would employees rationally exercise?</div>
+      <table class="hw-table"><tr><td class="hw-label">Exercise?</td><td><select data-correct="No: the options are underwater"><option value="">-- select --</option><option>Yes: the options are in the money</option><option>No: the options are underwater</option></select></td></tr></table>
+      <div class="hw-part-label">d. In year 7 the stock is $41 and all options are exercised. Cash received by the company:</div>
+      <table class="hw-table"><tr><td class="hw-label">Cash received</td><td>$<input type="text" class="num" data-correct="4500000"></td></tr></table>
+      <div class="hw-part-label">e. Additional compensation expense recognized at exercise:</div>
+      <table class="hw-table"><tr><td class="hw-label">Expense at exercise</td><td>$<input type="text" class="num" data-correct="0"></td></tr></table>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>(a) Total = 150,000 &times; $14 = $2,100,000, spread over 4 years = $525,000 per year (Dr Compensation Expense / Cr contributed capital). Net income and retained earnings fall each year; contributed capital rises by the same amount.</li>
+          <li>(b) 4 &times; $525,000 = $2,100,000.</li>
+          <li>(c) $26 is below the $30 strike, so exercising would mean paying $30 for a $26 share: underwater, nobody exercises.</li>
+          <li>(d) Employees pay the <em>exercise price</em>, not the market price: 150,000 &times; $30 = $4,500,000.</li>
+          <li>(e) None. The expense was fixed at grant-date fair value and fully recognized over vesting; exercise just brings in cash and shares (contributed capital +$4,500,000).</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li><span class="ans-part">a.</span> $525,000.</li>
+            <li><span class="ans-part">b.</span> $2,100,000.</li>
+            <li><span class="ans-part">c.</span> No: the options are underwater.</li>
+            <li><span class="ans-part">d.</span> $4,500,000.</li>
+            <li><span class="ans-part">e.</span> $0.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- U8-Q7 -->
+    <div class="hw-q" data-gradable="true" data-unit="u8" data-topic="stockcomp">
+      <h3><span class="hw-num">U8-Q7</span>A Year of Mixed Stock Compensation</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 8</span>
+      <p class="hw-prompt">Larch Technologies ($1 par common stock; 25% tax rate) had these events this year. Pretax income <em>before</em> any stock compensation was $900,000, and beginning retained earnings were $600,000 (no dividends were paid). (1) Employees exercised 20,000 options with a $10 exercise price. (2) The company awarded 2,000 immediately vested shares when the stock was $25. (3) Employees bought 10,000 shares under an ESPP at a 10% discount when the market price was $30. (4) The company granted 60,000 new options with a $5 fair value that vest over 3 years.</p>
+      <div class="hw-part-label">a. Total stock-compensation expense recognized this year (award + ESPP discount + option expense):</div>
+      <table class="hw-table"><tr><td class="hw-label">Total stock compensation expense</td><td>$<input type="text" class="num" data-correct="180000"></td></tr></table>
+      <div class="hw-part-label">b. Net income:</div>
+      <table class="hw-table"><tr><td class="hw-label">Net income</td><td>$<input type="text" class="num" data-correct="540000"></td></tr></table>
+      <div class="hw-part-label">c. Ending retained earnings:</div>
+      <table class="hw-table"><tr><td class="hw-label">Ending retained earnings</td><td>$<input type="text" class="num" data-correct="1140000"></td></tr></table>
+      <div class="hw-part-label">d. Total increase in Common Stock (par) from events 1&ndash;3:</div>
+      <table class="hw-table"><tr><td class="hw-label">Common stock increase</td><td>$<input type="text" class="num" data-correct="32000"></td></tr></table>
+      <div class="hw-part-label">e. Total increase in APIC from all four events:</div>
+      <table class="hw-table"><tr><td class="hw-label">APIC increase</td><td>$<input type="text" class="num" data-correct="618000"></td></tr></table>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>(a) Award: 2,000 &times; $25 = $50,000. ESPP discount: 10,000 &times; $30 &times; 10% = $30,000. Option expense: 60,000 &times; $5 = $300,000 &divide; 3 = $100,000. Total = <strong>$180,000</strong>. (The exercised options create no new expense.)</li>
+          <li>(b) Pretax after stock comp = 900,000 &minus; 180,000 = 720,000; tax 25% = 180,000; net income = <strong>$540,000</strong>.</li>
+          <li>(c) 600,000 + 540,000 = $1,140,000. The expense flows through net income, so it is not subtracted again in retained earnings.</li>
+          <li>(d) Par at $1: 20,000 + 2,000 + 10,000 = <strong>32,000</strong>.</li>
+          <li>(e) Exercise: cash 20,000 &times; $10 = $200,000 less par 20,000 = $180,000 (earlier years' expense is already in APIC). Award: $50,000 &minus; $2,000 par = $48,000. ESPP: shares are recorded at full market value, 10,000 &times; $30 = $300,000 less $10,000 par = $290,000. New options: +$100,000. Total = 180,000 + 48,000 + 290,000 + 100,000 = <strong>$618,000</strong>.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li><span class="ans-part">a.</span> $180,000.</li>
+            <li><span class="ans-part">b.</span> $540,000.</li>
+            <li><span class="ans-part">c.</span> $1,140,000.</li>
+            <li><span class="ans-part">d.</span> $32,000.</li>
+            <li><span class="ans-part">e.</span> $618,000.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- U8-Q8 -->
+    <div class="hw-q" data-gradable="true" data-unit="u8" data-topic="eps">
+      <h3><span class="hw-num">U8-Q8</span>Basic EPS from Financial Statements, and Back-Solving</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 8</span>
+      <p class="hw-prompt">Northgate Financial reports the following (dollars and shares in millions, except per-share amounts). Round EPS to two decimals.</p>
+      <div class="hw-part-label">a. Current year: net income $6,400, preferred dividends $380, average common shares 2,000. Compute basic EPS.</div>
+      <table class="hw-table"><tr><td class="hw-label">Basic EPS</td><td>$<input type="text" class="num" data-correct="3.01" data-tol="0.015"></td></tr></table>
+      <div class="hw-part-label">b. Prior year: net income $5,350, average shares 1,900, and reported basic EPS of $2.60. How much were preferred dividends?</div>
+      <table class="hw-table"><tr><td class="hw-label">Preferred dividends</td><td>$<input type="text" class="num" data-correct="410" data-tol="1.5"></td></tr></table>
+      <div class="hw-part-label">c. Two years ago: net income $4,200, preferred dividends $400, reported basic EPS of $2.00. How many average common shares (millions)?</div>
+      <table class="hw-table"><tr><td class="hw-label">Average shares (millions)</td><td><input type="text" class="num" data-correct="1900"></td></tr></table>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>(a) (6,400 &minus; 380) &divide; 2,000 = 6,020 &divide; 2,000 = $3.01.</li>
+          <li>(b) Income to common = EPS &times; shares = 2.60 &times; 1,900 = 4,940. Preferred dividends = net income &minus; income to common = 5,350 &minus; 4,940 = $410 million.</li>
+          <li>(c) Income to common = 4,200 &minus; 400 = 3,800. Shares = income to common &divide; EPS = 3,800 &divide; 2.00 = 1,900 million. Because published EPS is rounded, back-solved answers can be off slightly; a small tolerance is accepted.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li><span class="ans-part">a.</span> $3.01.</li>
+            <li><span class="ans-part">b.</span> $410 million.</li>
+            <li><span class="ans-part">c.</span> 1,900 million shares.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- U8-Q9 -->
+    <div class="hw-q" data-gradable="true" data-unit="u8" data-topic="eps">
+      <h3><span class="hw-num">U8-Q9</span>Weighted-Average Shares with Issuances and a Buyback</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 8</span>
+      <p class="hw-prompt">Pinecrest Corp. earned net income of $3,150,000. It has 40,000 shares of 8% preferred stock ($50 par) outstanding and paid the full dividend. Common shares: 900,000 outstanding on January 1; 120,000 issued March 1; 60,000 repurchased August 1; 90,000 issued November 1.</p>
+      <div class="hw-part-label">a. Preferred dividends for the year:</div>
+      <table class="hw-table"><tr><td class="hw-label">Preferred dividends</td><td>$<input type="text" class="num" data-correct="160000"></td></tr></table>
+      <div class="hw-part-label">b. Weighted-average common shares outstanding:</div>
+      <table class="hw-table"><tr><td class="hw-label">Weighted-average shares</td><td><input type="text" class="num" data-correct="990000"></td></tr></table>
+      <div class="hw-part-label">c. Basic EPS (two decimals):</div>
+      <table class="hw-table"><tr><td class="hw-label">Basic EPS</td><td>$<input type="text" class="num" data-correct="3.02" data-tol="0.015"></td></tr></table>
+      <div class="hw-part-label">d. Shares outstanding at year-end:</div>
+      <table class="hw-table"><tr><td class="hw-label">Ending shares</td><td><input type="text" class="num" data-correct="1050000"></td></tr></table>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>(a) 40,000 &times; $50 &times; 8% = $160,000.</li>
+          <li>(b) Jan&ndash;Feb: 900,000 &times; 2/12 = 150,000. Mar&ndash;Jul: 1,020,000 &times; 5/12 = 425,000. Aug&ndash;Oct: 960,000 &times; 3/12 = 240,000. Nov&ndash;Dec: 1,050,000 &times; 2/12 = 175,000. Sum = <strong>990,000</strong>.</li>
+          <li>(c) (3,150,000 &minus; 160,000) &divide; 990,000 = 2,990,000 &divide; 990,000 = $3.02.</li>
+          <li>(d) 900,000 + 120,000 &minus; 60,000 + 90,000 = 1,050,000.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li><span class="ans-part">a.</span> $160,000.</li>
+            <li><span class="ans-part">b.</span> 990,000 shares.</li>
+            <li><span class="ans-part">c.</span> $3.02.</li>
+            <li><span class="ans-part">d.</span> 1,050,000 shares.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <!-- U8-Q10 -->
+    <div class="hw-q" data-gradable="true" data-unit="u8" data-topic="dividends">
+      <h3><span class="hw-num">U8-Q10</span>Cash Dividend, Then a Stock Dividend</h3>
+      <span class="tag" style="margin-bottom:1em; display:inline-block;">Unit 8</span>
+      <p class="hw-prompt">Ridgemont Co. has 500,000 common shares outstanding ($2 par, market price $24). On November 1 it declares a cash dividend of $0.40 per share, paid December 10. Later, it declares an 8% stock dividend, recorded at market value.</p>
+      <div class="hw-part-label">a. Total cash dividend, and the amount by which retained earnings falls on the declaration date:</div>
+      <table class="hw-table"><tr><td class="hw-label">Dividend declared</td><td>$<input type="text" class="num" data-correct="200000"></td></tr><tr><td class="hw-label">Decrease in retained earnings at declaration</td><td>$<input type="text" class="num" data-correct="200000"></td></tr></table>
+      <div class="hw-part-label">b. Effect on total assets on the December 10 payment date (enter the decrease):</div>
+      <table class="hw-table"><tr><td class="hw-label">Decrease in cash / assets</td><td>$<input type="text" class="num" data-correct="200000"></td></tr></table>
+      <div class="hw-part-label">c. Stock dividend: new shares issued and amount transferred out of retained earnings:</div>
+      <table class="hw-table"><tr><td class="hw-label">New shares</td><td><input type="text" class="num" data-correct="40000"></td></tr><tr><td class="hw-label">Retained earnings reduction</td><td>$<input type="text" class="num" data-correct="960000"></td></tr></table>
+      <div class="hw-part-label">d. Credits for the stock dividend:</div>
+      <table class="hw-table"><tr><td class="hw-label">Common Stock</td><td>$<input type="text" class="num" data-correct="80000"></td></tr><tr><td class="hw-label">APIC</td><td>$<input type="text" class="num" data-correct="880000"></td></tr></table>
+      <div class="hw-part-label">e. Effect of the stock dividend on total stockholders' equity:</div>
+      <table class="hw-table"><tr><td class="hw-label">Change in total equity</td><td>$<input type="text" class="num" data-correct="0"></td></tr></table>
+      <div class="hw-actions">
+        <button class="btn blue hw-check">Check answers</button>
+        <button class="btn ghost hw-reset">Reset</button>
+        <span class="hw-score"></span>
+      </div>
+      <div class="hw-notes">
+        <b>How to work it</b>
+        <ol>
+          <li>(a) 500,000 &times; $0.40 = $200,000. Declaration: Dr Retained Earnings 200,000 / Cr Dividends Payable 200,000.</li>
+          <li>(b) Payment: Dr Dividends Payable / Cr Cash 200,000. Cash and total assets fall $200,000; equity does not change again.</li>
+          <li>(c) New shares = 500,000 &times; 8% = 40,000; at market 40,000 &times; $24 = $960,000 leaves retained earnings.</li>
+          <li>(d) Common Stock = 40,000 &times; $2 par = $80,000; APIC = 960,000 &minus; 80,000 = $880,000.</li>
+          <li>(e) Zero. It is a reclassification inside equity: retained earnings down $960,000, contributed capital up $960,000.</li>
+        </ol>
+        <button class="answer-toggle" aria-expanded="false">Answer <span class="chev">&#x2304;</span></button>
+        <div class="answer-reveal">
+          <ol>
+            <li><span class="ans-part">a.</span> $200,000; $200,000.</li>
+            <li><span class="ans-part">b.</span> $200,000 decrease.</li>
+            <li><span class="ans-part">c.</span> 40,000 shares; $960,000.</li>
+            <li><span class="ans-part">d.</span> Common Stock $80,000; APIC $880,000.</li>
+            <li><span class="ans-part">e.</span> No change.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <div class="hw-q" data-gradable="true" data-unit="review" data-topic="conceptual">
       <h3><span class="hw-num">M12-Q1</span>Exam Prep Practice &mdash; Module 1 & 2 (Conceptual)</h3>
       <span class="tag" style="margin-bottom:1em; display:inline-block;">Exam Prep Practice</span>
       
