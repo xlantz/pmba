@@ -27,15 +27,26 @@ function initNavToggle(){
   const btn = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.topnav');
   if(!btn || !nav) return;
-  btn.addEventListener('click', () => {
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation(); // keep the document click handler from collapsing the course we open below
     const open = nav.classList.toggle('open');
     btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    // On open, expand the current page's course so its chapters are one tap away.
+    if(open){
+      const current = nav.querySelector('.nav-dropdown-label.active')?.closest('.nav-dropdown');
+      if(current){ current.classList.add('open'); current.querySelector('.nav-caret')?.setAttribute('aria-expanded','true'); }
+    }
   });
 }
 
 /* ---------------- nav dropdowns (unit sub-menus) ---------------- */
 function initNavDropdowns(){
   const dropdowns = document.querySelectorAll('.nav-dropdown');
+  // Mark the current page inside the sub-menus so it stands out.
+  const here = location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-dropdown-menu a').forEach(a => {
+    if(a.getAttribute('href') === here) a.setAttribute('aria-current', 'page');
+  });
   dropdowns.forEach(dd => {
     const caret = dd.querySelector('.nav-caret');
     if(!caret) return;

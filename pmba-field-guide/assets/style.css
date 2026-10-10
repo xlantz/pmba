@@ -107,18 +107,18 @@ p{ margin: 0 0 1em 0; color: var(--text); }
   border-bottom: 1px solid var(--paper-3);
 }
 .topbar .wrap{ display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; }
-.brand{ display:flex; align-items:baseline; gap:.6em; font-family: var(--font-display); font-weight:600; font-size:1.15rem; color: var(--ink); text-decoration:none; }
+.brand{ display:flex; align-items:baseline; gap:.6em; white-space:nowrap; font-family: var(--font-display); font-weight:600; font-size:1.15rem; color: var(--ink); text-decoration:none; }
 .brand:hover{ color: var(--ink); }
 .brand .brand-mark{
   font-family: var(--font-mono); font-size:.68rem; letter-spacing:.08em;
   background: var(--ink); color: var(--text-onink); padding: 3px 7px; border-radius: 4px;
 }
 .topnav{ display:flex; gap: 22px; font-family: var(--font-mono); font-size:.82rem; }
-.topnav a{ color: var(--text-soft); text-decoration:none; }
+.topnav a{ color: var(--text-soft); text-decoration:none; white-space:nowrap; }
 .topnav a:hover, .topnav a.active{ color: var(--rust-deep); }
 .nav-toggle{ display:none; background:none; border:1px solid var(--ink); border-radius:6px; padding:6px 10px; font-family:var(--font-mono); font-size:.8rem; cursor:pointer; }
 
-@media (max-width: 900px){
+@media (max-width: 1040px){
   .topnav{ position:absolute; top:100%; left:0; right:0; background: var(--paper); flex-direction:column; gap:0; border-bottom:1px solid var(--paper-3); display:none; }
   .topnav.open{ display:flex; }
   .topnav a{ padding: 14px 24px; border-top: 1px solid var(--paper-3); }
@@ -550,15 +550,24 @@ table.stmt-table tr.stmt-subtotal td{ font-weight:600; }
   color: var(--text-soft); text-decoration:none;
 }
 .nav-dropdown-menu a:hover{ background: var(--paper-2); color: var(--rust-deep); }
+.nav-dropdown-menu a[aria-current="page"]{ color: var(--rust-deep); font-weight:600; }
 .nav-dropdown-menu .nav-dropdown-hint{ padding: 6px 16px; font-size:.7rem; color: var(--text-soft); opacity:.7; font-style:italic; }
-.nav-dropdown.open .nav-dropdown-menu, body:not(.nav-just-loaded) .nav-dropdown:hover .nav-dropdown-menu{ display:block; }
+.nav-dropdown.open .nav-dropdown-menu{ display:block; }
+@media (min-width: 1041px){
+  body:not(.nav-just-loaded) .nav-dropdown:hover .nav-dropdown-menu{ display:block; }
+}
 
-@media (max-width: 900px){
-  .nav-dropdown{ flex-direction:column; align-items:flex-start; width:100%; }
-  .nav-dropdown-menu{ display:block; position:static; padding: 0 0 6px 14px; min-width:0; }
-  .nav-dropdown-menu-inner{ background:none; border:none; box-shadow:none; padding:0; }
-  .nav-dropdown-menu a{ padding: 8px 10px; }
-  .nav-caret{ display:none; }
+/* Phone/tablet menu: each course is a collapsible row (tap the caret to expand),
+   and the whole menu scrolls on its own so nothing gets stuck below the screen. */
+@media (max-width: 1040px){
+  .topnav{ max-height: calc(100vh - 62px); max-height: calc(100dvh - 62px); overflow-y:auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; box-shadow: var(--shadow-card); }
+  .nav-dropdown{ display:flex; flex-wrap:wrap; align-items:stretch; width:100%; gap:0; border-top:1px solid var(--paper-3); }
+  .topnav .nav-dropdown-label{ flex:1; border-top:none; }
+  .nav-caret{ display:block; padding: 0 24px; font-size:.95rem; border-left:1px solid var(--paper-3); transition: transform .15s ease; }
+  .nav-dropdown.open .nav-caret{ transform: rotate(180deg); border-left:none; border-right:1px solid var(--paper-3); }
+  .nav-dropdown-menu{ position:static; flex-basis:100%; min-width:0; padding: 0 0 8px 24px; }
+  .nav-dropdown-menu-inner{ background:none; border:none; box-shadow:none; padding:0; border-left:2px solid var(--paper-3); }
+  .topnav .nav-dropdown-menu a{ padding: 11px 14px; border-top:none; font-size:.8rem; white-space:normal; }
 }
 
 /* ---------------- coordination-links visual ---------------- */
