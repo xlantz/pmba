@@ -2224,7 +2224,713 @@ const MKTG20_QUIZ_QUESTIONS = [
   }
 ];
 
-const MKTG_MOCK_POOL = MKTG1_QUIZ_QUESTIONS.concat(MKTG2_QUIZ_QUESTIONS).concat(MKTG3_QUIZ_QUESTIONS).concat(MKTG7_QUIZ_QUESTIONS).concat(MKTG6_QUIZ_QUESTIONS).concat(MKTG17_QUIZ_QUESTIONS).concat(MKTG18_QUIZ_QUESTIONS).concat(MKTG5_QUIZ_QUESTIONS).concat(MKTG10_QUIZ_QUESTIONS).concat(MKTG20_QUIZ_QUESTIONS);
+const MKTG8_QUIZ_QUESTIONS = [
+  {
+    "source": "c8_diff",
+    "prompt": "A smartwatch maker designs its watch to survive 30-minute swims, but 1 in 8 units shipped leaks at 10 minutes. Which attribute is weak?",
+    "options": [
+      "Conformance quality",
+      "Style",
+      "Customization",
+      "Core functionality"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Conformance quality is the degree to which all produced units are identical and meet promised specifications. The design is fine; individual units fail to match it."
+  },
+  {
+    "source": "c8_diff",
+    "prompt": "A dishwasher brand advertises that its machines run for 15 years under heavy use. Which differentiating attribute is it stressing?",
+    "options": [
+      "Reliability",
+      "Performance quality",
+      "Durability",
+      "Form"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Durability is the product's expected operating life under natural or stressful conditions. Reliability would instead be the probability of no malfunction in a specified period."
+  },
+  {
+    "source": "c8_diff",
+    "prompt": "Two aspirin brands are chemically the same but differ in dosage, size, shape, color, coating and action time. They are differentiated mainly on:",
+    "options": [
+      "Style",
+      "Customization",
+      "Form",
+      "Conformance quality"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Form is the size, shape or physical structure of a product; the chapter uses aspirin as its example of form differentiation."
+  },
+  {
+    "source": "c8_diff",
+    "prompt": "A maker of tablets keeps adding features until buyers say the device is confusing. To avoid 'feature fatigue' the chapter says the company should:",
+    "options": [
+      "Add every feature rivals can easily copy",
+      "Prioritize features and show consumers how to use and benefit from them",
+      "Always design for the highest possible performance level",
+      "Drop customization entirely"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The chapter advises prioritizing features and telling consumers how to use and benefit from them (Apple's simplified, intuitive interface is the example), after weighing customer value against company cost."
+  },
+  {
+    "source": "c8_diff",
+    "prompt": "Nokia was once the world's leading cell phone brand. According to the chapter, its decline mainly illustrates:",
+    "options": [
+      "A packaging redesign that confused buyers",
+      "Excessive line filling that caused cannibalization",
+      "A warranty that was too hard to invoke",
+      "Failure to innovate and stay relevant to customer needs"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Nokia did not respond to the iPhone and the shift in demand, was associated with an earlier technology era, and was outsold even in Finland."
+  },
+  {
+    "source": "c8_design",
+    "prompt": "A kitchenware maker adds padded peeler handles, non-slip locking tongs and a push-button salad spinner so that everyone from grandparents to children can use its tools easily. This reflects:",
+    "options": [
+      "Universal design and incremental improvement",
+      "Product line stretching",
+      "Conformance quality",
+      "Cross-selling"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The chapter describes OXO's watchwords as 'universal design' and 'incremental improvement': small, frustration-relieving improvements."
+  },
+  {
+    "source": "c8_design",
+    "prompt": "A design team spends weeks observing families at home through ethnographic studies, runs brainstorming sessions, and then works as a collaborative group to build the concept. Which approach is this?",
+    "options": [
+      "Instinct-led design as at Bang & Olufsen",
+      "Design thinking",
+      "Product line stretching",
+      "A corporate design center only"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Design thinking is data-driven, with three core tasks: observation, ideation and implementation."
+  },
+  {
+    "source": "c8_design",
+    "prompt": "A luxury audio company relies on the instincts of a handful of designers who rarely consult consumers, launches few products and expects each to sell for years. Which company does the chapter use for this?",
+    "options": [
+      "Samsung",
+      "Whirlpool",
+      "Bang & Olufsen",
+      "OXO"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "B&O trusts its designers' instincts, introduces few products a year and expects each to sell a long time (the BeoLab 8000 sold for years until the BeoLab 18 in 2013)."
+  },
+  {
+    "source": "c8_portfolio",
+    "prompt": "A company sells 4 product lines containing 20 items in total. What are its portfolio width and average product line length?",
+    "options": [
+      "Width 20, average length 4",
+      "Width 4, average length 80",
+      "Width 24, average length 5",
+      "Width 4, average length 5"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Width is the number of lines (4). Length is the total number of items (20), so average line length is 20 / 4 = 5."
+  },
+  {
+    "source": "c8_portfolio",
+    "prompt": "A detergent comes in 3 scents, 2 formulations (liquid, powder) and 2 additive options. Its depth is:",
+    "options": [
+      "7",
+      "12",
+      "3",
+      "6"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Depth is the number of distinct variants: 3 x 2 x 2 = 12 (the chapter's Tide example multiplies 2 x 2 x 2 = 8)."
+  },
+  {
+    "source": "c8_portfolio",
+    "prompt": "A food company's lines are all grocery products sold through the same supermarket channels, although they do different jobs for buyers. This describes which portfolio dimension?",
+    "options": [
+      "Width",
+      "Depth",
+      "Length",
+      "Consistency"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Consistency reflects how closely the lines are related in end use, production requirements, distribution channels or another way, as with P&G's consumer-goods lines."
+  },
+  {
+    "source": "c8_portfolio",
+    "prompt": "Sales and profit data show one item in a line loses money every year and is unlikely to recover. Product line analysis suggests the manager decide whether to build, maintain, harvest or:",
+    "options": [
+      "Widen",
+      "Divest",
+      "Fill",
+      "Stretch"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Line managers use item-level sales and profits to decide which items to build, maintain, harvest or divest."
+  },
+  {
+    "source": "c8_stretch",
+    "prompt": "A mid-priced car maker introduces an entry-level model to attract young buyers who may later trade up to its pricier cars. Which line-length objective is this?",
+    "options": [
+      "Cross-selling",
+      "Hedging against the economy",
+      "Up-selling",
+      "Cutting deadwood"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The Mercedes C-Class is the chapter's example of a line that induces up-selling by being an entry point to the brand."
+  },
+  {
+    "source": "c8_stretch",
+    "prompt": "A premium brand adds a cheaper line under a completely new name so the flagship's image is protected, accepting the cost of building equity from scratch. This resembles:",
+    "options": [
+      "Sony using its name on all tiers",
+      "Charmin Essentials as a sub-brand",
+      "P&G's Luvs versus Pampers",
+      "A shadow endorsement by Gap"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Using a different name (Luvs vs. Pampers) is expensive and starts from zero equity, but protects the premium brand's equity."
+  },
+  {
+    "source": "c8_stretch",
+    "prompt": "Toyota, Nissan and Honda each launched upscale cars under new names (Lexus, Infiniti, Acura). Why, according to the chapter?",
+    "options": [
+      "Consumers might not have given the parent brand 'permission' to stretch upward",
+      "Dealer rules prohibited the parent names",
+      "They wanted to cannibalize their own mid-range sales",
+      "Line filling requires a new name"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The chapter says they invented entirely new names because consumers might not have given the brand permission to stretch upward."
+  },
+  {
+    "source": "c8_stretch",
+    "prompt": "A retailer's three clothing brands target high, middle and low price tiers, but research shows shoppers perceive them as 'sitting on top of each other' and the cheapest chain takes sales from the middle one. Which problem and company?",
+    "options": [
+      "Choice overload at Crocs",
+      "Down-market dilution at Tropicana",
+      "Cannibalization within Gap's portfolio",
+      "Poor conformance at Porsche"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Gap's Banana Republic, Gap and Old Navy had to stay distinct; Old Navy has at times cannibalized Gap sales."
+  },
+  {
+    "source": "c8_stretch",
+    "prompt": "A producer adds a seventh nearly identical mid-price model inside its existing range because dealers complained of gaps. Customers can't tell it from the others and many buy the cheapest. This is:",
+    "options": [
+      "Overdone line filling",
+      "A two-way stretch",
+      "A down-market stretch",
+      "Conformance failure"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Line filling adds items within the existing range; it is overdone if it causes cannibalization or confusion or meets no segment need (the Edsel)."
+  },
+  {
+    "source": "c8_stretch",
+    "prompt": "A shopper facing 40 jam flavors finds several acceptable and must trade off attributes, then buys none. Which problem from 'When Less Is More' is this?",
+    "options": [
+      "High consumer expectations",
+      "Information overload",
+      "Line stretching",
+      "Choice overload"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Choice overload occurs when more than one satisfactory option forces trade-offs, compounding the difficulty of deciding."
+  },
+  {
+    "source": "c8_pack",
+    "prompt": "A cologne is sold in a blue bottle, inside a matching blue box, shipped in a corrugated carton. The blue bottle is the:",
+    "options": [
+      "Primary package",
+      "Secondary package",
+      "Shipping package",
+      "Label"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The primary package is the container directly holding the product; the box is secondary and the corrugated carton is the shipping package."
+  },
+  {
+    "source": "c8_pack",
+    "prompt": "A redesigned juice carton downplays the brand name, drops a familiar graphic, and sales fall 20% in two months before the company reverts. Which case is this?",
+    "options": [
+      "Sun Chips",
+      "Tropicana",
+      "Kiwi",
+      "Ivory"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "PepsiCo's 2009 Tropicana redesign drew negative consumer response; it reverted after about two months. Icon packaging must be redesigned carefully."
+  },
+  {
+    "source": "c8_pack",
+    "prompt": "A snack company launches a fully compostable bag that is very loud; complaints grow and sales slide, so it is withdrawn after 18 months. The lesson is:",
+    "options": [
+      "Environmental packaging cannot succeed",
+      "Labels must always grade the product",
+      "Green packaging must still satisfy customer needs",
+      "Dealers should test shipping cartons"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Frito-Lay's Sun Chips bag shows that environmentally friendly packaging also has to meet customer expectations (here, quiet)."
+  },
+  {
+    "source": "c8_warranty",
+    "prompt": "A customer buys an appliance and later pays extra for coverage that repairs or replaces it after the free coverage ends, with no refund option. This is a(n):",
+    "options": [
+      "Extended warranty",
+      "General satisfaction guarantee",
+      "Specific attribute guarantee",
+      "Label claim"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Warranties usually cover repair or replacement, not refunds, and extended warranties require added payment."
+  },
+  {
+    "source": "c8_warranty",
+    "prompt": "A company promises 'return for a refund if you are not satisfied for any reason', free of charge. This is best classified as a:",
+    "options": [
+      "Extended warranty",
+      "Specific attribute guarantee",
+      "Overall (general) satisfaction guarantee",
+      "Packaging objective"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "An overall satisfaction guarantee applies to any facet of the product experience, as with P&G's promise of replacement, exchange or refund."
+  },
+  {
+    "source": "c8_warranty",
+    "prompt": "A guarantee covers a feature that rarely fails and has fourteen exclusions. Which two traits of effective guarantees does it fail?",
+    "options": [
+      "Durable and reliable",
+      "Relevant and easy to invoke",
+      "Easily understood and customizable",
+      "Primary and secondary"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Effective guarantees must be relevant (cover features customers value and that could fail), easily understood, and easy to invoke (few exclusions)."
+  },
+  {
+    "source": "c8_cases",
+    "prompt": "Apple wants steadier revenue because device demand softens late in a product's life while customers wait for the next model. Which move does the chapter describe?",
+    "options": [
+      "Cutting R&D",
+      "Reducing the number of retailers",
+      "Dropping the iPhone",
+      "Building subscription-based services such as Apple Music, iCloud and AppleCare"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Apple diversified into services, many sold by subscription, which more than doubled from $39 billion (2018) to $85 billion (2023)."
+  },
+  {
+    "source": "c8_cases",
+    "prompt": "Cisco had grown through consumer products such as Linksys and Flip cameras but later changed course. Why?",
+    "options": [
+      "It wanted to refocus on core B2B businesses with higher revenues and margins",
+      "The government banned consumer networking gear",
+      "Its cameras were losing out to cheaper tablets",
+      "It had no acquisition budget"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Cisco exited consumer markets to focus on higher-revenue, higher-margin B2B; Flip was losing to smartphone cameras, and Linksys was sold in 2013."
+  }
+];
+
+const MKTG19_QUIZ_QUESTIONS = [
+  {
+    "source": "c19_acq",
+    "prompt": "A streaming service finds that many shoppers know about its app and several rivals, narrow them to two, read reviews and ask friends, subscribe, and then rarely return. In which funnel phase does the first narrowing to two occur?",
+    "options": [
+      "Awareness",
+      "Ask",
+      "Appeal (forming a consideration set)",
+      "Advocate"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "In the appeal phase customers shortlist the most appealing offerings into a consideration set through selective elimination. Ask is the later information-gathering phase."
+  },
+  {
+    "source": "c19_acq",
+    "prompt": "A firm tracks 2,000 trial users but only 400 recent users, while every earlier funnel stage converts at much higher rates. What does the chapter suggest?",
+    "options": [
+      "Something may be wrong with the product or service that prevents repeat buying",
+      "The awareness campaign is too weak",
+      "The firm should raise prices to improve conversion",
+      "Advocacy is the strongest stage, so no action is needed"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Comparing conversion rates reveals bottlenecks. A low recent-user to trier percentage suggests a problem blocking repeat purchase."
+  },
+  {
+    "source": "c19_acq",
+    "prompt": "A mobile carrier acquired many subscribers with a steep price discount, and now loses many of them within a year. Which statement best matches the chapter?",
+    "options": [
+      "Discount-acquired customers are the most loyal because they save money",
+      "Discounts only attract advocates",
+      "Price-based acquisition has no effect on retention",
+      "Discount-acquired customers tend to have much lower long-term value because many are more interested in the offer than the product"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The chapter notes that customers acquired through price discounts tend to have much lower long-term value, and some 'spinners' switch carriers at least three times a year hunting for deals."
+  },
+  {
+    "source": "c19_sat",
+    "prompt": "A customer expected a hotel breakfast to be basic and found it matched that expectation exactly. According to the chapter's definition, the customer is:",
+    "options": [
+      "Delighted",
+      "Satisfied",
+      "Dissatisfied",
+      "Disloyal"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Performance that matches expectations yields satisfaction; falling short gives dissatisfaction; exceeding gives high satisfaction or delight."
+  },
+  {
+    "source": "c19_sat",
+    "prompt": "Two cars both deliver exactly the quality each promises, every time. One rides more smoothly and accelerates faster than the other. Per the chapter, they differ in:",
+    "options": [
+      "Consistency, but not performance",
+      "Performance, but may be equal in consistency",
+      "Neither performance nor consistency",
+      "Customer equity rather than quality"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Performance is overall functionality; consistency is whether performance stays at the same level. Lexus outperforms Hyundai, yet both are consistent if all units deliver promised quality."
+  },
+  {
+    "source": "c19_sat",
+    "prompt": "Out of 200 survey responses, 100 give a 9 or 10, 60 give a 7 or 8, and 40 give 6 or below. What is the Net Promoter Score?",
+    "options": [
+      "50 percent",
+      "20 percent",
+      "60 percent",
+      "30 percent"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Promoters are 100/200 = 50% and Detractors 40/200 = 20%. NPS = 50% - 20% = 30%, ignoring the passives."
+  },
+  {
+    "source": "c19_sat",
+    "prompt": "A manager says: 'Our NPS is 20 percent, so we know exactly what our customers think.' Which critique from the chapter applies?",
+    "options": [
+      "Very different response patterns can produce the same NPS, with different managerial implications",
+      "NPS counts passives twice",
+      "NPS only measures price satisfaction",
+      "NPS is calculated by adding detractors to promoters"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The chapter shows 20% promoters / 80% passives / 0% detractors and 60% / 0% / 40% both give 20, even though the implications differ."
+  },
+  {
+    "source": "c19_loyal",
+    "prompt": "A department store lets anyone who buys sign up for a free card, while a rival offers a paid membership for an affinity group. Which statement fits the chapter?",
+    "options": [
+      "Open clubs always build deeper loyalty than limited ones",
+      "Fees destroy loyalty in every case",
+      "The limited membership is often a more powerful long-term loyalty builder because fees and conditions screen out fleeting interest",
+      "Open clubs cannot be used to build a database"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Open clubs help build a database or snag competitors' customers, but limited membership is often the stronger long-term builder."
+  },
+  {
+    "source": "c19_loyal",
+    "prompt": "A retailer runs a loyalty program that makes it costly for members to move their accumulated rewards elsewhere. What outcome does the chapter say some programs create?",
+    "options": [
+      "Lower customer acquisition cost for competitors",
+      "Mandatory advocacy",
+      "Elimination of cross-selling",
+      "Significant switching costs"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The chapter says some programs generate rewards in a way that locks customers in and creates significant switching costs."
+  },
+  {
+    "source": "c19_loyal",
+    "prompt": "A motorcycle maker's owners wear club jackets, join annual rallies, share stories of long rides, and feel obliged to help new members. Which three characteristics of a brand community are shown?",
+    "options": [
+      "Price discounts, coupons and referral fees",
+      "Connection to the brand, shared rituals and stories, and moral responsibility",
+      "Competence, honesty and benevolence",
+      "Awareness, appeal and ask"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "A brand community shares a sense of connection, rituals, stories and traditions, and a moral responsibility to the community and its members."
+  },
+  {
+    "source": "c19_loyal",
+    "prompt": "Lowe's created MVPs Pro Rewards in 2022 and MyLowe's Rewards in 2024. What strategic reason does the chapter give for two programs?",
+    "options": [
+      "Federal law requires separate programs",
+      "To lower the cost of the first program",
+      "It has two distinct customer segments, professionals and DIY homeowners, with different needs",
+      "To avoid gamification"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Lowe's 'doubled down' on loyalty programs to reflect the needs of professionals, who shop more often, and DIY homeowners."
+  },
+  {
+    "source": "c19_crm",
+    "prompt": "A company only emails shoppers who ticked a box asking for product tips, and avoids blanket cold campaigns. This approach is:",
+    "options": [
+      "Permission marketing",
+      "Interruption marketing",
+      "Win-back marketing",
+      "Customer value management"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Permission marketing means marketing to consumers only after gaining their expressed permission, as opposed to interruption marketing."
+  },
+  {
+    "source": "c19_crm",
+    "prompt": "A firm builds an organized, current collection of information on individual customers so its sales staff can qualify leads and maintain relationships. What is this?",
+    "options": [
+      "A customer database, the foundation of CRM",
+      "A consideration set",
+      "A brand community",
+      "An activity-based cost pool"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "A customer database is organized, comprehensive information on individual customers or prospects that is current, accessible and actionable."
+  },
+  {
+    "source": "c19_crm",
+    "prompt": "Which pair describes how technology cuts both ways in customer empowerment?",
+    "options": [
+      "Customers become passive, and companies lose all control over channels",
+      "Customers always want more brand interaction, and filters do not exist",
+      "Customers can co-create with brands, but can also avoid marketing with ad blockers and spam filters",
+      "Technology only helps companies, not customers"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Contests such as Doritos naming a flavor show involvement; ad-blocking, pop-up blockers, spam filters and call blocking let customers avoid marketing."
+  },
+  {
+    "source": "c19_wom",
+    "prompt": "A manager reports 'we have almost no complaints, so our customers must be satisfied.' What does the chapter say about this reasoning?",
+    "options": [
+      "It is sound, because complaints are the best satisfaction measure",
+      "It is misleading, because very few dissatisfied customers complain; most simply stop buying",
+      "It is sound only for services, not products",
+      "It is misleading because satisfied customers complain most"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Studies show few dissatisfied customers complain; they feel it is not worth the effort or do not know how, and they just stop buying."
+  },
+  {
+    "source": "c19_wom",
+    "prompt": "A customer's complaint was resolved to their satisfaction, while another customer left angry without anyone helping. According to the chapter, approximately how many people will each tell?",
+    "options": [
+      "About 12 for the resolved complaint and about 5 for the dissatisfied customer",
+      "About 2 and about 5",
+      "About 50 and about 100",
+      "About 5 for the resolved complaint and about 12 for the dissatisfied customer"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Satisfactorily resolved customers tell an average of five people; the average dissatisfied customer tells about a dozen."
+  },
+  {
+    "source": "c19_wom",
+    "prompt": "A customer's complaint involves a $30 refund, but the customer has a high lifetime value. Which recovery practice does this illustrate?",
+    "options": [
+      "Shift the blame to the customer to protect margins",
+      "Wait for the customer to contact the company again",
+      "Resolve the complaint swiftly, weighing the cost of resolving it against the customer's lifetime value",
+      "Refuse compensation to avoid precedent"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The last recovery practice is to resolve the complaint swiftly and to the customer's satisfaction, taking into account the cost and the customer's lifetime value."
+  },
+  {
+    "source": "c19_clv",
+    "prompt": "After analysis, a bank finds the top 20 percent of customers earn more than 100 percent of its profit, the middle 60 to 70 percent break even, and the bottom 10 to 20 percent lose money. What does the chapter conclude?",
+    "options": [
+      "Profits fall when any customer is lost",
+      "All customers should receive identical service",
+      "The middle group should be fired first",
+      "Profits could improve by dropping, repricing or discouraging the worst customers"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "In the extreme 80/20 pattern, the least profitable customers reduce profits, so the firm could improve profit by 'firing' its worst customers."
+  },
+  {
+    "source": "c19_clv",
+    "prompt": "A customer costs $50 to acquire and generates $80 a year in net profit for two years. With a 10% discount rate, which is the closest customer lifetime value?",
+    "options": [
+      "About $89",
+      "About $110",
+      "About $160",
+      "About $30"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "PV = 80/1.10 + 80/1.21 = 72.73 + 66.12 = 138.85; minus the $50 acquisition cost = about $88.85, or about $89. (General illustration of the NPV method.)"
+  },
+  {
+    "source": "c19_clv",
+    "prompt": "Why would raising the discount rate from 10% to 20% in a CLV calculation matter?",
+    "options": [
+      "Future profits are counted twice, so CLV rises",
+      "Future profits are worth less today, so the computed CLV falls",
+      "It changes only the acquisition cost",
+      "It has no effect on net present value"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "CLV is the net present value of future profits; a higher discount rate shrinks the present value of each future dollar. The chapter cites 10 to 20 percent."
+  },
+  {
+    "source": "c19_clv",
+    "prompt": "A consulting firm wants to know the true profit from a client who makes frequent phone calls and requires travel visits. Which tool should it use?",
+    "options": [
+      "Allocating overhead as a flat percentage of direct costs",
+      "Activity-based costing, assigning overhead to the activities that serve the client",
+      "Net Promoter Score",
+      "The customer acquisition funnel"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Activity-based costing identifies the real cost of serving each customer, including calls and travel, and allocates indirect costs to activities that use them."
+  },
+  {
+    "source": "c19_trust",
+    "prompt": "An airline advertises 'no hidden fees' but customers find surprising charges on their tickets. Which trust building block is damaged, and how are customers likely to react?",
+    "options": [
+      "Honesty, and lapses here are not easily forgiven",
+      "Competence, and customers forgive easily",
+      "Benevolence, and positive news will quickly restore it",
+      "Consistency, which is unrelated to trust"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Customers judge honesty by comparing statements with actions. Honesty and benevolence are more affected by negative information and less readily forgiven."
+  },
+  {
+    "source": "c19_trust",
+    "prompt": "A five-star hotel delivers the wrong mustard with room service. Why is the competence damage greater than at a three-star hotel?",
+    "options": [
+      "Competence is judged only by price",
+      "Five-star customers care more about honesty",
+      "Mustard is a benevolence issue",
+      "Customers judge competence against relevant comparison cases, and expectations for five-star service are higher"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Competence is judged by comparing the experience with relevant cases; the same slip hurts a five-star hotel's trust more."
+  },
+  {
+    "source": "c19_spot",
+    "prompt": "Starbucks required customers to be Rewards members to use its app (until 2024). What benefit does the chapter cite for the company?",
+    "options": [
+      "Lower spending per visit",
+      "Fewer customer touch points",
+      "A direct way to reach customers, individual-level preference data, and a channel for acquiring more Rewards members",
+      "Elimination of loyalty tiers"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The app strategy gave Starbucks a direct line to customers, a trove of data down to the individual, and a way to acquire Rewards members."
+  }
+];
+
+const MKTG_MOCK_POOL = MKTG1_QUIZ_QUESTIONS.concat(MKTG2_QUIZ_QUESTIONS).concat(MKTG3_QUIZ_QUESTIONS).concat(MKTG7_QUIZ_QUESTIONS).concat(MKTG6_QUIZ_QUESTIONS).concat(MKTG17_QUIZ_QUESTIONS).concat(MKTG18_QUIZ_QUESTIONS).concat(MKTG5_QUIZ_QUESTIONS).concat(MKTG10_QUIZ_QUESTIONS).concat(MKTG20_QUIZ_QUESTIONS).concat(MKTG8_QUIZ_QUESTIONS).concat(MKTG19_QUIZ_QUESTIONS);
 const MKTG_MOCK_LABELS = {
   scope: "Ch 1 \u00b7 Scope & Realities",
   holistic: "Ch 1 \u00b7 Holistic Marketing",
@@ -2271,4 +2977,19 @@ const MKTG_MOCK_LABELS = {
   c20_brand: "Ch 20 · Global Brand Strategies",
   c20_pricing: "Ch 20 · Global Pricing",
   c20_placepromo: "Ch 20 · Global Communication & Distribution",
+  c8_diff: "Ch 8 · Differentiation",
+  c8_design: "Ch 8 · Product Design",
+  c8_portfolio: "Ch 8 · Portfolio & Lines",
+  c8_stretch: "Ch 8 · Stretch & Fill",
+  c8_pack: "Ch 8 · Packaging & Labels",
+  c8_warranty: "Ch 8 · Guarantees & Warranties",
+  c8_cases: "Ch 8 · Apple & Cisco",
+  c19_acq: "Ch 19 · Acquisition & Retention",
+  c19_sat: "Ch 19 · Satisfaction & Quality",
+  c19_loyal: "Ch 19 · Building Loyalty",
+  c19_crm: "Ch 19 · CRM",
+  c19_wom: "Ch 19 · Word of Mouth & Complaints",
+  c19_clv: "Ch 19 · Customer Lifetime Value",
+  c19_trust: "Ch 19 · Value Strategies & Trust",
+  c19_spot: "Ch 19 · Spotlights",
 };
