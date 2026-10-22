@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ACCTG 6000, Unit 11: Cash Flows — PMBA Field Guide</title>
+<meta name="description" content="ACCTG 6000 Unit 11, from zero: the statement of cash flows, operating, investing and financing activities, the indirect method, working backward, free cash flow and life-cycle stages, with diagrams and worked examples.">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="theme-acctg">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">PMBA</span> Field Guide</a>
+    <nav class="topnav">
+      <a href="index.html">Units</a>
+      <div class="nav-dropdown">
+        <a href="unit1.html" class="nav-dropdown-label">MGT 6050</a>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show MGT 6050 items">&#9662;</button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="unit1.html">Unit 1 &mdash; Foundations</a>
+            <a href="mgt2.html">Unit 2 &mdash; Building the Team</a>
+            <a href="mgt3.html">Unit 3 &mdash; Conflict, Voice &amp; Culture</a>
+            <a href="unit4.html">Unit 4 &mdash; Fairness, Diversity &amp; the Limits of Teamwork</a>
+            <a href="unit5.html">Unit 5 &mdash; Team Creativity &amp; Innovation</a>
+            <a href="team-contract-builder.html">Team Contract Builder</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="acctg1.html" class="nav-dropdown-label active">ACCTG 6000</a>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show ACCTG 6000 items">&#9662;</button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="acctg-start.html">Start here &mdash; Accounting from Zero</a>
+            <a href="acctg1.html">Unit 1 &mdash; Reporting Foundations</a>
+            <a href="acctg2.html">Unit 2 &mdash; Statements &amp; SEC Filings</a>
+            <a href="acctg3.html">Unit 3 &mdash; The Accounting Cycle</a>
+            <a href="acctg5.html">Unit 5 &mdash; Revenue &amp; Receivables</a>
+            <a href="acctg6.html">Unit 6 &mdash; Inventory &amp; Long-Lived Assets</a>
+            <a href="acctg7.html">Unit 7 &mdash; Current &amp; Long-Term Liabilities</a>
+            <a href="acctg8.html">Unit 8 &mdash; Equity, Dividends &amp; EPS</a>
+            <a href="acctg9.html">Unit 9 &mdash; Intercorporate Investments</a>
+            <a href="acctg11.html">Unit 11 &mdash; Cash Flows</a>
+            <a href="acctg-homework.html">Accounting HW Practice</a>
+            <a href="acctg-exam-prep.html">Exam Prep Practice</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="mktg1.html" class="nav-dropdown-label">MKTG 6090</a>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show MKTG 6090 items">&#9662;</button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="mktg1.html">Ch 1 &mdash; Defining Marketing</a>
+            <a href="mktg2.html">Ch 2 &mdash; Planning &amp; Management</a>
+            <a href="mktg3.html">Ch 3 &mdash; Analyzing Consumer Markets</a>
+            <a href="mktg7.html">Ch 7 &mdash; Value Proposition &amp; Positioning</a>
+            <a href="mktg6.html">Ch 6 &mdash; Segmentation &amp; Targeting</a>
+            <a href="mktg17.html">Ch 17 &mdash; Driving Growth</a>
+            <a href="mktg18.html">Ch 18 &mdash; New Market Offerings</a>
+            <a href="mktg5.html">Ch 5 &mdash; Conducting Marketing Research</a>
+            <a href="mktg10.html">Ch 10 &mdash; Building Strong Brands</a>
+            <a href="mktg20.html">Ch 20 &mdash; Tapping into Global Markets</a>
+            <a href="mktg8.html">Ch 8 &mdash; Designing &amp; Managing Products</a>
+            <a href="mktg19.html">Ch 19 &mdash; Building Customer Loyalty</a>
+            <a href="mktg-mock-test.html">MKTG 6090 Mock Test</a>
+          </div>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="mgt-mock-test.html" class="nav-dropdown-label">Mock Tests</a>
+        <button class="nav-caret" aria-expanded="false" aria-label="Show mock tests">&#9662;</button>
+        <div class="nav-dropdown-menu">
+          <div class="nav-dropdown-menu-inner">
+            <a href="mgt-mock-test.html">MGT 6050 Mock Test</a>
+            <a href="acctg-mock-test.html">ACCTG 6000 Mock Test</a>
+            <a href="mktg-mock-test.html">MKTG 6090 Mock Test</a>
+          </div>
+        </div>
+      </div>
+      <a href="#glossary">Glossary</a>
+      <a href="#quiz">Quiz</a>
+      <a href="file-converter.html">File Converter</a>
+    </nav>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+  </div>
+</header>
+<section class="hero" style="padding-bottom:48px;">
+  <div class="wrap" style="grid-template-columns:1fr;">
+    <div>
+      <span class="eyebrow">ACCTG 6000 &#x00b7; Unit 11</span>
+      <h1>Cash flows</h1>
+      <p class="lede" style="max-width:70ch;">Profit is an opinion; cash is a fact. This unit is about the statement that shows where a company's cash actually came from and where it went, sorted into three buckets: running the business (operating), buying and selling long-term assets (investing) and dealing with lenders and owners (financing). Read top to bottom and you go from &ldquo;how can a profitable company go broke?&rdquo; to every number on the exam. The professor's slides, his 30 practice problems and the 10-question homework are all folded in below: the first sections get you to the test, the homework-flavored parts (ratios, free cash flow, life-cycle puzzles) are the harder layer.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><b id="stat-flash">0</b><span>Flashcards</span></div>
+        <div class="hero-stat"><b id="stat-quiz">0</b><span>Quiz questions</span></div>
+        <div class="hero-stat"><b>30</b><span>Professor practice problems</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main id="main">
+
+  <div class="wrap section" style="padding-top:0;">
+    <div class="section-head"><span class="eyebrow">Your route through this unit</span><h2>Novice &rarr; understanding &rarr; test-ready</h2></div>
+    <ol class="path-bar">
+      <li><a href="#start"><span class="pnum">Step 1</span><b>Start here</b><em>The big idea, no jargon</em></a></li>
+      <li><a href="#learn"><span class="pnum">Step 2</span><b>Learn it</b><em>Eleven short sections</em></a></li>
+      <li><a href="#cheat"><span class="pnum">Step 3</span><b>Cheat sheet</b><em>Every formula on one page</em></a></li>
+      <li><a href="#practice"><span class="pnum">Step 4</span><b>Practice</b><em>Quiz, flashcards, problems, homework</em></a></li>
+      <li><a href="#deeper"><span class="pnum">Optional</span><b>Go deeper</b><em>Beyond the exam set</em></a></li>
+    </ol>
+    <div class="tier-key">
+      <span class="t"><span class="tier tier-test">&#9733; Test core</span> shows up on the exam</span>
+      <span class="t"><span class="tier tier-know">&#9680; Understand it</span> makes the core click (and the homework)</span>
+      <span class="t"><span class="tier tier-deep">&#9650; Go deeper</span> optional extra</span>
+    </div>
+  </div>
+
+  <!-- START -->
+  <div class="wrap section" id="start" style="padding-top:0;">
+    <div class="section-head"><span class="eyebrow">Step 1 &middot; Start here</span><h2>Follow the cash, and ask who is on the other side</h2></div>
+    <div class="onramp">
+      <div>
+        <p class="big-idea">The cash flow statement sorts every dollar that moved into three buckets by asking one question: who was on the other side of the payment?</p>
+        <div class="analogy"><b>Think of your own bank account</b><p>Your paycheck and your rent are the day-to-day running of your life (operating). Buying a car or selling a rental property is a long-term bet (investing). Taking out a student loan, paying it back, or getting a gift from family is about the people who fund you (financing). Your income statement could say you &ldquo;earned&rdquo; $5,000 this month, but the bank statement is the one that tells you if you can pay rent on Friday.</p></div>
+        <div class="words-first">
+          <h4>Five words to know first</h4>
+          <dl>
+            <dt>Operating (CFO)</dt><dd>Cash from the everyday business: customers, suppliers, employees.</dd>
+            <dt>Investing (CFI)</dt><dd>Cash from buying or selling long-term assets and investments.</dd>
+            <dt>Financing (CFF)</dt><dd>Cash to and from lenders and owners.</dd>
+            <dt>Indirect method</dt><dd>Start with net income, then correct it into cash.</dd>
+            <dt>CAPEX</dt><dd>Capital expenditures: cash spent buying long-lived assets.</dd>
+          </dl>
+        </div>
+      </div>
+      <div>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 222" role="img" aria-labelledby="i1t"><title id="i1t">Three sections of the cash flow statement by counterparty</title>
+            <defs><marker id="ar11" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" style="fill:var(--text-soft)"/></marker></defs>
+            <rect x="8" y="12" width="185" height="54" rx="8" class="sf-paper2 ss-soft"/>
+            <text x="100" y="36" class="t tc t-s">Customers, suppliers,</text><text x="100" y="52" class="t tc t-s">employees, interest</text>
+            <rect x="8" y="84" width="185" height="54" rx="8" class="sf-paper2 ss-soft"/>
+            <text x="100" y="108" class="t tc t-s">Long-term assets and</text><text x="100" y="124" class="t tc t-s">investments</text>
+            <rect x="8" y="156" width="185" height="54" rx="8" class="sf-paper2 ss-soft"/>
+            <text x="100" y="180" class="t tc t-s">Lenders and owners</text><text x="100" y="196" class="t tc t-s">(the financiers)</text>
+            <line x1="193" y1="39" x2="222" y2="39" class="ss-soft" stroke-width="1.6" marker-end="url(#ar11)"/>
+            <line x1="193" y1="111" x2="222" y2="111" class="ss-soft" stroke-width="1.6" marker-end="url(#ar11)"/>
+            <line x1="193" y1="183" x2="222" y2="183" class="ss-soft" stroke-width="1.6" marker-end="url(#ar11)"/>
+            <rect x="224" y="12" width="122" height="54" rx="8" class="sf-green-soft ss-green"/>
+            <text x="285" y="36" class="t tc t-b t-green">Operating</text><text x="285" y="53" class="t tc t-xs">the daily business</text>
+            <rect x="224" y="84" width="122" height="54" rx="8" class="sf-gold-soft ss-gold"/>
+            <text x="285" y="108" class="t tc t-b t-gold">Investing</text><text x="285" y="125" class="t tc t-xs">what we bet on</text>
+            <rect x="224" y="156" width="122" height="54" rx="8" class="sf-blue-soft ss-blue"/>
+            <text x="285" y="180" class="t tc t-b t-blue">Financing</text><text x="285" y="197" class="t tc t-xs">who funds us</text>
+            <path d="M346 39 H370 V111 H390" class="ss-soft" stroke-width="1.6" marker-end="url(#ar11)"/>
+            <path d="M346 111 H390" class="ss-soft" stroke-width="1.6" marker-end="url(#ar11)"/>
+            <path d="M346 183 H370 V111" class="ss-soft" stroke-width="1.6"/>
+            <rect x="392" y="84" width="120" height="54" rx="8" class="sf-blue ss-blue"/>
+            <text x="452" y="106" class="t tc t-w t-b">Change in cash</text><text x="452" y="124" class="t tc t-w t-xs" style="fill:#fff">CFO + CFI + CFF</text>
+          </svg>
+          <figcaption>Three buckets, one total. Whatever the three sections add up to is how much the cash balance moved.</figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="tiny-example">
+      <h4>Tiny example: a year in one line each</h4>
+      <p>Start the year with $120,000 of cash.</p>
+      <div class="calc">Operating:  +$185,000  (customers paid more than the bills we paid)<br>Investing:  &minus;$210,000  (bought equipment for growth)<br>Financing:  +$80,000   (borrowed to help pay for it)<br>Net change: +$55,000   &rarr; ending cash = $120,000 + $55,000 = $175,000</div>
+      <p>Operations did not fully fund the expansion, so borrowing filled the gap. That story is exactly what the statement is built to tell.</p>
+    </div>
+  </div>
+
+  <!-- LEARN -->
+  <div class="wrap section" id="learn" style="padding-top:0;">
+    <div class="section-head"><span class="eyebrow">Step 2 &middot; Learn it</span><h2>Unit 11, section by section</h2><p class="text-soft">Open them in order. Each one ends with an exam angle. Sections 01&ndash;08 and 10 are the professor's test; 09 and 11 are the homework and real-world layer.</p></div>
+    <div class="tier-filter" role="group" aria-label="Filter sections by tier">
+      <span class="lbl">Show:</span>
+      <button class="chip active" data-tier-filter="all">Everything</button>
+      <button class="chip" data-tier-filter="core">&#9733; Test core only</button>
+    </div>
+
+    <!-- 01 -->
+    <div class="source-block" id="src-why" data-tier="know">
+      <button class="source-toggle" aria-expanded="false"><span class="stitle"><span class="num">01</span><h3>Profit Is Not Cash</h3> <span class="tier tier-know">&#9680; Understand it</span></span><span class="chev">&#x2304;</span></button>
+      <div class="source-body">
+        <p>Profit is an <em>accounting</em> measure. Cash is what pays employees, suppliers, lenders and owners. A company can report growing sales and profits while running short of cash, because the income statement follows the accrual rule (count revenue when earned, expenses when incurred) and cash follows when money actually moves.</p>
+        <h4>Three statements, three jobs</h4>
+        <table class="hw-table">
+          <tr><th>Statement</th><th>Answers</th><th>Time frame</th></tr>
+          <tr><td class="hw-label">Income statement</td><td>How did we perform? (includes noncash items)</td><td>A period</td></tr>
+          <tr><td class="hw-label">Balance sheet</td><td>What do we own and owe?</td><td>One date</td></tr>
+          <tr><td class="hw-label">Statement of cash flows</td><td>Why did cash change between the two balance sheet dates?</td><td>A period</td></tr>
+        </table>
+        <p>Together they give profitability, financial position and liquidity. The cash flow statement is built <em>from</em> the other two: it takes the income statement's net income and the balance sheet's changes and translates them into cash.</p>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 195" role="img" aria-labelledby="w1t"><title id="w1t">A sale on credit lands in profit in Year 1 and in cash in Year 2</title>
+            <text x="220" y="22" class="t tc t-b">Year 1</text><text x="420" y="22" class="t tc t-b">Year 2</text>
+            <text x="8" y="62" class="t t-b">Net income</text><text x="8" y="78" class="t t-xs">(accrual)</text>
+            <rect x="125" y="34" width="190" height="52" rx="6" class="sf-green-soft ss-green"/><text x="220" y="56" class="t tc t-b">Revenue +$100,000</text><text x="220" y="73" class="t tc t-xs">the sale happened</text>
+            <rect x="325" y="34" width="190" height="52" rx="6" class="sf-paper2 ss-soft"/><text x="420" y="56" class="t tc t-b">No new revenue</text><text x="420" y="73" class="t tc t-xs">already counted in Year 1</text>
+            <text x="8" y="128" class="t t-b">Cash</text><text x="8" y="144" class="t t-xs">(operating)</text>
+            <rect x="125" y="100" width="190" height="52" rx="6" class="sf-rust-soft ss-rust"/><text x="220" y="122" class="t tc t-b">Cash received: $0</text><text x="220" y="139" class="t tc t-xs">A/R +$100,000 instead</text>
+            <rect x="325" y="100" width="190" height="52" rx="6" class="sf-green-soft ss-green"/><text x="420" y="122" class="t tc t-b">Cash +$100,000</text><text x="420" y="139" class="t tc t-xs">customer finally pays</text>
+            <text x="260" y="180" class="t tc t-s">Profit shows up in Year 1. Cash shows up in Year 2.</text>
+          </svg>
+          <figcaption>Dr A/R / Cr Revenue in Year 1; Dr Cash / Cr A/R in Year 2. Which period reports the revenue, and which reports the cash? Different ones.</figcaption>
+        </figure>
+        <div class="tiny-example">
+          <h4>Can a company with record net income still go bankrupt? Yes.</h4>
+          <p>A startup books $500,000 of sales on 90-day payment terms and reports a record profit. Payroll of $200,000 and a loan payment are due this month; the customers have not paid yet. Profit is real, but the bank balance cannot cover Friday's payroll. Lenders and employees accept cash, not net income.</p>
+          <p>That is also why <strong>revenue rising while receivables rise faster</strong> is a warning: more of each sale is sitting uncollected.</p>
+        </div>
+        <div class="exam-angle"><b>Exam angle</b>Conceptual: the three categories help users separate cash from core operations from cash used for investments from cash exchanged with creditors and owners (professor Q21). Net income does <em>not</em> guarantee positive cash flow. An A/R increase reduces operating cash flow (Q16).</div>
+      </div>
+    </div>
+
+    <!-- 02 -->
+    <div class="source-block" id="src-sections" data-tier="test">
+      <button class="source-toggle" aria-expanded="false"><span class="stitle"><span class="num">02</span><h3>The Three Sections &amp; Where Things Go</h3> <span class="tier tier-test">&#9733; Test core</span></span><span class="chev">&#x2304;</span></button>
+      <div class="source-body">
+        <table class="hw-table">
+          <tr><th>Section</th><th>What it covers</th><th>Typical inflows (+)</th><th>Typical outflows (&minus;)</th></tr>
+          <tr><td class="hw-label">Operating (CFO)</td><td>Main operations</td><td>Customer collections</td><td>Suppliers, employees, interest, taxes</td></tr>
+          <tr><td class="hw-label">Investing (CFI)</td><td>Long-term assets and investments</td><td>Sell PP&amp;E, sell a business, sell or collect investments</td><td>Buy PP&amp;E, buy a business (net of cash acquired), buy investments</td></tr>
+          <tr><td class="hw-label">Financing (CFF)</td><td>Lenders and owners</td><td>Borrow, issue stock</td><td>Repay principal, buy back stock, pay dividends</td></tr>
+        </table>
+        <div class="quote-block">CFO + CFI + CFF = change in cash and cash equivalents</div>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 150" role="img" aria-labelledby="s1t"><title id="s1t">Beginning cash 120,000 plus three sections equals ending cash 175,000</title>
+            <rect x="7" y="22" width="82" height="70" rx="6" class="sf-paper2 ss-soft"/><text x="48" y="48" class="t tc t-s">Beginning</text><text x="48" y="72" class="t tc t-b" style="font-size:12px">$120,000</text>
+            <text x="101" y="64" class="t tc t-b t-l">+</text>
+            <rect x="113" y="22" width="82" height="70" rx="6" class="sf-green-soft ss-green"/><text x="154" y="48" class="t tc t-s">Operating</text><text x="154" y="72" class="t tc t-b" style="font-size:12px">+$185,000</text>
+            <text x="207" y="64" class="t tc t-b t-l">+</text>
+            <rect x="219" y="22" width="82" height="70" rx="6" class="sf-gold-soft ss-gold"/><text x="260" y="48" class="t tc t-s">Investing</text><text x="260" y="72" class="t tc t-b" style="font-size:12px">&minus;$210,000</text>
+            <text x="313" y="64" class="t tc t-b t-l">+</text>
+            <rect x="325" y="22" width="82" height="70" rx="6" class="sf-blue-soft ss-blue"/><text x="366" y="48" class="t tc t-s">Financing</text><text x="366" y="72" class="t tc t-b" style="font-size:12px">+$80,000</text>
+            <text x="419" y="64" class="t tc t-b t-l">=</text>
+            <rect x="431" y="22" width="82" height="70" rx="6" class="sf-blue ss-blue"/><text x="472" y="48" class="t tc t-s" style="fill:#fff">Ending</text><text x="472" y="72" class="t tc t-b t-w" style="font-size:12px">$175,000</text>
+            <path d="M113 106 V112 H407 V106" class="ss-soft" stroke-width="1.4"/>
+            <text x="260" y="132" class="t tc t-s">Net change: 185 &minus; 210 + 80 = +$55,000</text>
+          </svg>
+          <figcaption>The slide's integrated example. Ending cash = beginning cash + the net change.</figcaption>
+        </figure>
+        <p>Because the three sections must add up, you can solve for any missing piece: <strong>CFF = change in cash &minus; CFO &minus; CFI</strong>. (Professor Q9: cash went $125,000 &rarr; $205,000, CFO +$275,000, CFI &minus;$310,000, so CFF = 80 &minus; 275 + 310 = <strong>+$115,000</strong>.)</p>
+
+        <h4>The &ldquo;where does it go?&rdquo; table</h4>
+        <table class="hw-table">
+          <tr><th>Event</th><th>Section</th><th>Direction</th></tr>
+          <tr><td class="hw-label">Customer pays what it owes</td><td>Operating</td><td>+</td></tr>
+          <tr><td class="hw-label">Pay suppliers, employees</td><td>Operating</td><td>&minus;</td></tr>
+          <tr><td class="hw-label">Interest paid on a loan</td><td>Operating (US GAAP)</td><td>&minus;</td></tr>
+          <tr><td class="hw-label">Stock-based compensation</td><td>Operating (noncash add-back)</td><td>+ adjustment</td></tr>
+          <tr><td class="hw-label">Depreciation</td><td>Operating (noncash add-back)</td><td>+ adjustment</td></tr>
+          <tr><td class="hw-label">Buy equipment, trucks, a warehouse</td><td>Investing</td><td>&minus;</td></tr>
+          <tr><td class="hw-label">Sell equipment (full proceeds)</td><td>Investing</td><td>+</td></tr>
+          <tr><td class="hw-label">Buy a patent or other intangible</td><td>Investing</td><td>&minus;</td></tr>
+          <tr><td class="hw-label">Buy or sell stock/bonds of another company</td><td>Investing</td><td>&minus; / +</td></tr>
+          <tr><td class="hw-label">Collect principal on a note receivable</td><td>Investing</td><td>+</td></tr>
+          <tr><td class="hw-label">Receive a new bank loan</td><td>Financing</td><td>+</td></tr>
+          <tr><td class="hw-label">Repay loan <em>principal</em></td><td>Financing</td><td>&minus;</td></tr>
+          <tr><td class="hw-label">Finance-lease principal payment</td><td>Financing</td><td>&minus;</td></tr>
+          <tr><td class="hw-label">Issue common stock</td><td>Financing</td><td>+</td></tr>
+          <tr><td class="hw-label">Repurchase common stock</td><td>Financing</td><td>&minus;</td></tr>
+          <tr><td class="hw-label">Pay cash dividends</td><td>Financing (US GAAP)</td><td>&minus;</td></tr>
+        </table>
+        <div class="tiny-example">
+          <h4>Two quick sorting rules</h4>
+          <p><strong>1.</strong> Did it come from a customer, supplier, employee or an expense on the income statement? Operating. <strong>2.</strong> Is it a long-term asset or an investment in another company? Investing. <strong>3.</strong> Is it a lender or an owner on the other side? Financing.</p>
+          <p>PP&amp;E and intangibles are <em>not</em> operating assets because they are long-term; their cash purchases and sales fall under investing (Q23). Cash paid for a new warehouse is not operating (Q20); cash paid to vendors for services is.</p>
+        </div>
+        <div class="key-flag"><b>Wording note on Q18</b>The question reads &ldquo;A repurchase of common stock is <em>not</em> a financing activity because&hellip;&rdquo; but the key (C) says it <em>is</em> financing because cash is returned to shareholders. Trust the key: a repurchase is a financing outflow.</div>
+        <p><strong>Noncash deals</strong> (for example, issuing shares to acquire an asset) move no cash, so they are left out of the three sections and disclosed separately.</p>
+        <div class="exam-angle"><b>Exam angle</b>Classify an item (Q17, Q20, Q25: sale of an equity investment is investing). Solve for a missing section from the total change in cash (Q9). Remember that a negative CFI is not automatically bad: it often means the company is growing.</div>
+      </div>
+    </div>
+
+    <!-- 03 -->
+    <div class="source-block" id="src-financing" data-tier="test">
+      <button class="source-toggle" aria-expanded="false"><span class="stitle"><span class="num">03</span><h3>Financing Activities</h3> <span class="tier tier-test">&#9733; Test core</span></span><span class="chev">&#x2304;</span></button>
+      <div class="source-body">
+        <p>Financing reports cash raised from and returned to <strong>lenders</strong> and <strong>owners</strong>. It is about <em>principal and capital</em>, not interest expense. Borrow = inflow; repay principal = outflow. Issue stock = inflow; repurchase stock = outflow; pay dividends = outflow.</p>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 225" role="img" aria-labelledby="f1t"><title id="f1t">Financing roll-forward for lenders and owners</title>
+            <rect x="8" y="8" width="246" height="150" rx="8" class="sf-blue-soft ss-blue"/>
+            <text x="131" y="30" class="t tc t-b t-blue">LENDERS (debt)</text>
+            <text x="22" y="56" class="t t-s">Debt, beginning</text><text x="240" y="56" class="t te t-s">$400,000</text>
+            <text x="22" y="76" class="t t-s">+ Borrowed</text><text x="240" y="76" class="t te t-s">$180,000</text>
+            <text x="22" y="96" class="t t-s">&minus; Repaid principal</text><text x="240" y="96" class="t te t-s">($60,000)</text>
+            <line x1="22" y1="104" x2="240" y2="104" class="ss-blue" stroke-width="1"/>
+            <text x="22" y="120" class="t t-b">Debt, ending</text><text x="240" y="120" class="t te t-b">$520,000</text>
+            <text x="131" y="146" class="t tc t-b t-blue">Net cash: +$120,000</text>
+            <rect x="266" y="8" width="246" height="150" rx="8" class="sf-green-soft ss-green"/>
+            <text x="389" y="30" class="t tc t-b t-green">OWNERS (equity)</text>
+            <text x="280" y="62" class="t t-s">+ Stock issued</text><text x="498" y="62" class="t te t-s">$75,000</text>
+            <text x="280" y="86" class="t t-s">&minus; Treasury stock bought</text><text x="498" y="86" class="t te t-s">($25,000)</text>
+            <text x="280" y="110" class="t t-s">&minus; Cash dividends</text><text x="498" y="110" class="t te t-s">($30,000)</text>
+            <text x="389" y="146" class="t tc t-b t-green">Net cash: +$20,000</text>
+            <rect x="8" y="172" width="504" height="42" rx="8" class="sf-blue ss-blue"/>
+            <text x="260" y="198" class="t tc t-b t-w">Total CFF = +$120,000 + $20,000 = +$140,000</text>
+          </svg>
+          <figcaption>The slide's roll-forward. Debt has a balance to roll; equity payouts are just flows.</figcaption>
+        </figure>
+        <h4>From transactions to the statement (December 2026 example)</h4>
+        <table class="hw-table">
+          <tr><th>What happened</th><th>Statement line</th><th>Amount</th></tr>
+          <tr><td class="hw-label">Issued common stock for cash</td><td>Proceeds from issuance of common stock</td><td>150,000</td></tr>
+          <tr><td class="hw-label">Borrowed from a bank</td><td>Proceeds from bank borrowing</td><td>200,000</td></tr>
+          <tr><td class="hw-label">Repaid loan principal</td><td>Repayment of loan principal</td><td>(85,000)</td></tr>
+          <tr><td class="hw-label">Paid cash dividends</td><td>Cash dividends paid</td><td>(40,000)</td></tr>
+          <tr><td class="hw-label">Net cash provided by financing</td><td></td><td><strong>$225,000</strong></td></tr>
+        </table>
+        <p><strong>Why is principal financing but interest operating?</strong> Interest is an expense: it is in net income, a cost of running the business, so its cash lives in operating. Principal is just handing back what you borrowed, a transaction with the lender.</p>
+        <p>Can financing inflows mask weak operations? Yes. A company can borrow to cover cash burned by operations. A positive CFF can signal a thriving company raising growth money <em>or</em> a distressed one staying alive: read it next to CFO and CFI.</p>
+
+        <h4>Retiring bonds at a gain or loss</h4>
+        <p>A bond's <strong>carrying value</strong> is what the books say is owed (face value minus unamortized discount, or plus premium). If the company pays less than carrying value to retire it, it books a <strong>gain</strong>; more, a <strong>loss</strong>. Either way the cash paid is financing, and the gain or loss, which sits in net income, is reversed in operating.</p>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 170" role="img" aria-labelledby="f2t"><title id="f2t">Bonds carried at 745,000 retired for 733,000 cash with a 12,000 gain</title>
+            <text x="260" y="20" class="t tc t-b">Bonds carried at $745,000 are retired for $733,000</text>
+            <text x="260" y="42" class="t tc t-xs">Carrying value $745,000 = face 800,000 &minus; discount 77,000 + 22,000 amortized</text>
+            <rect x="30" y="52" width="453" height="40" class="sf-green-soft ss-green"/>
+            <text x="256" y="77" class="t tc t-b">Cash paid $733,000 = FINANCING (&minus;)</text>
+            <rect x="483" y="52" width="7" height="40" class="sf-gold ss-gold"/>
+            <line x1="486.5" y1="92" x2="486.5" y2="114" class="ss-soft" stroke-width="1.2"/>
+            <text x="500" y="130" class="t te t-b t-gold">Gain $12,000</text>
+            <text x="500" y="147" class="t te t-xs">subtract in OPERATING (&minus;$12,000)</text>
+          </svg>
+          <figcaption>Professor Q10. The gain is only 12 of 745, so the sliver is tiny, but it is the piece that moves to operating.</figcaption>
+        </figure>
+        <div class="tiny-example">
+          <h4>Two worked cases</h4>
+          <div class="calc">Q10: carrying value = 800,000 &minus; 77,000 + 22,000 = 745,000<br>     gain = 745,000 &minus; 733,000 = 12,000<br>     Financing (733,000);  Operating (12,000)  &rarr; answer D<br><br>Paxon (homework): retire bonds with face and book value 630,000<br>     at a 40,500 gain &rarr; cash paid = 630,000 &minus; 40,500 = 589,500<br>     issue 450,000 of bonds at 463,500 &rarr; cash in = 463,500<br>     Financing = 463,500 &minus; 589,500 = (126,000)</div>
+          <p>Rule: <strong>cash paid = carrying value &minus; gain</strong> (or + loss). Paying <em>more</em> than carrying value is a loss and is <em>added back</em> in operating.</p>
+        </div>
+        <p>Missing-item puzzles (professor Q5) are simple subtraction: financing of $750,000 with loan proceeds of $690,000 and dividends of $225,000 leaves a $285,000 stock issuance (690 &minus; 225 + 285 = 750). The $500,000 sale of PP&amp;E is a distractor: it is investing.</p>
+        <div class="exam-angle"><b>Exam angle</b>Sum the financing items with the right signs (Q7: 150 &minus; 90 + 200 &minus; 45 &minus; 70 = +145,000; acquiring and selling subsidiary shares is investing, so ignore it). Pick the right section for each item in a list (Q14: only debt repayment and stock repurchase are financing, so &minus;662,799). Bond retirement: cash paid in financing, gain out of operating.</div>
+      </div>
+    </div>
+
+    <!-- 04 -->
+    <div class="source-block" id="src-investing" data-tier="test">
+      <button class="source-toggle" aria-expanded="false"><span class="stitle"><span class="num">04</span><h3>Investing Activities</h3> <span class="tier tier-test">&#9733; Test core</span></span><span class="chev">&#x2304;</span></button>
+      <div class="source-body">
+        <p>Investing is &ldquo;what is the company betting on?&rdquo; It covers cash transactions in long-term assets, business acquisitions and investments. <strong>Outflows (&minus;):</strong> buy PP&amp;E, acquire a business (net of cash acquired), buy debt or equity investments. <strong>Inflows (+):</strong> sell PP&amp;E, sell a business, sell or collect investments. Why does a $10 million equipment purchase show up here instead of its annual depreciation? Because the cash left when it was bought; depreciation is just the cost spread out over years.</p>
+
+        <h4>Solving for CAPEX with a PP&amp;E roll-forward</h4>
+        <p>The change in net PP&amp;E is <em>not</em> the cash spent. Purchases add to the account; depreciation and the book value of anything sold take away. Fill in what you know and solve for purchases.</p>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 165" role="img" aria-labelledby="v1t"><title id="v1t">Net PP&amp;E roll-forward solving for 180,000 of purchases</title>
+            <rect x="7" y="18" width="82" height="76" rx="6" class="sf-paper2 ss-soft"/><text x="48" y="44" class="t tc t-s">Beginning</text><text x="48" y="68" class="t tc t-b" style="font-size:12px">$420,000</text>
+            <text x="101" y="60" class="t tc t-b t-l">+</text>
+            <rect x="113" y="18" width="82" height="76" rx="6" class="sf-gold-soft ss-gold"/><text x="154" y="44" class="t tc t-s">Purchases</text><text x="154" y="68" class="t tc t-b" style="font-size:12px">$180,000</text><text x="154" y="84" class="t tc t-xs">solve for this</text>
+            <text x="207" y="60" class="t tc t-b t-l">&minus;</text>
+            <rect x="219" y="18" width="82" height="76" rx="6" class="sf-rust-soft ss-rust"/><text x="260" y="44" class="t tc t-s">Depreciation</text><text x="260" y="68" class="t tc t-b" style="font-size:12px">($65,000)</text>
+            <text x="313" y="60" class="t tc t-b t-l">&minus;</text>
+            <rect x="325" y="18" width="82" height="76" rx="6" class="sf-rust-soft ss-rust"/><text x="366" y="44" class="t tc t-s">BV sold</text><text x="366" y="68" class="t tc t-b" style="font-size:12px">($20,000)</text>
+            <text x="419" y="60" class="t tc t-b t-l">=</text>
+            <rect x="431" y="18" width="82" height="76" rx="6" class="sf-paper2 ss-soft"/><text x="472" y="44" class="t tc t-s">Ending</text><text x="472" y="68" class="t tc t-b" style="font-size:12px">$515,000</text>
+            <text x="260" y="120" class="t tc t-s t-m">515 &minus; 420 + 65 + 20 = 180</text>
+            <text x="260" y="142" class="t tc t-b t-gold">CFI reports (180,000)</text>
+          </svg>
+          <figcaption>Purchases = ending &minus; beginning + depreciation + book value sold. Depreciation matters for finding purchases but is not itself a cash flow.</figcaption>
+        </figure>
+
+        <h4>Selling equipment: gain in earnings, full price in investing</h4>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 180" role="img" aria-labelledby="v2t"><title id="v2t">Sale price of 55,000 splits into book value 40,000 and gain 15,000</title>
+            <text x="260" y="20" class="t tc t-b">Cash price $55,000</text>
+            <path d="M40 30 V36 H480 V30" class="ss-ink" stroke-width="1.2"/>
+            <rect x="40" y="46" width="320" height="44" class="sf-blue-soft ss-blue"/><text x="200" y="73" class="t tc t-b">Book value $40,000</text>
+            <rect x="360" y="46" width="120" height="44" class="sf-gold-soft ss-gold"/><text x="420" y="73" class="t tc t-b">Gain $15,000</text>
+            <text x="40" y="120" class="t t-b t-green">INVESTING: +$55,000</text><text x="40" y="137" class="t t-xs">report the full price, not just the gain</text>
+            <text x="480" y="120" class="t te t-b t-rust">OPERATING: &minus;$15,000</text><text x="480" y="137" class="t te t-xs">remove the gain from net income</text>
+            <text x="260" y="168" class="t tc t-s">Sold at a loss instead? Investing = price received; operating adds the loss back (+).</text>
+          </svg>
+          <figcaption>Cost $150,000 &minus; accumulated depreciation $110,000 = book value $40,000. Sold for $55,000.</figcaption>
+        </figure>
+        <p>The gain is subtracted in operating because it is a nonoperating item already in net income, and the full proceeds are reported in investing. Without the subtraction the cash would be counted twice. Slide check: sold equipment with a $30,000 book value for $42,000? The $12,000 gain appears on the income statement and is reversed (&minus;12,000) in operating; the $42,000 is investing.</p>
+
+        <h4>From transactions to the statement (2026 example)</h4>
+        <table class="hw-table">
+          <tr><th>What happened</th><th>Statement line</th><th>Amount</th></tr>
+          <tr><td class="hw-label">Bought new trucks</td><td>Purchase of property and equipment</td><td>(180,000)</td></tr>
+          <tr><td class="hw-label">Sold old equipment</td><td>Proceeds from sale of equipment</td><td>42,000</td></tr>
+          <tr><td class="hw-label">Bought long-term investments</td><td>Purchase of long-term investments</td><td>(65,000)</td></tr>
+          <tr><td class="hw-label">Collected note principal</td><td>Collection of note receivable principal</td><td>25,000</td></tr>
+          <tr><td class="hw-label">Net cash used in investing</td><td></td><td><strong>($178,000)</strong></td></tr>
+        </table>
+
+        <h4>The professor's Franklin Concrete problem (Q3), step by step</h4>
+        <p>Here the gross PP&amp;E and accumulated depreciation are both given. You need cost sold, accumulated depreciation, book value and purchases.</p>
+        <div class="tiny-example">
+          <div class="calc">Accum. depr. sold = beginning + expense &minus; ending = 1,235,000 + 285,000 &minus; 1,245,000 = 275,000<br>Book value sold = cost sold &minus; accum. depr. sold = 975,000 &minus; 275,000 = 700,000<br>Gain = proceeds &minus; book value = 800,000 &minus; 700,000 = 100,000 (comes out of operating)<br>Gross PP&amp;E: 2,700,000 + purchases &minus; 975,000 = 2,400,000  &rarr;  purchases = 675,000<br>Net PP&amp;E cash flow = +800,000 &minus; 675,000 = <strong>+125,000</strong> &rarr; answer A</div>
+          <p>Shortcut when you only need purchases from <em>gross</em> PP&amp;E: <strong>purchases = ending &minus; beginning + cost of assets sold</strong>. You don't even need depreciation (2,400 &minus; 2,700 + 975 = 675).</p>
+        </div>
+        <p><strong>Intangibles</strong> (patents, copyrights) behave like PP&amp;E: buying them is an investing outflow, selling them an investing inflow (full proceeds), with any gain or loss reversed in operating. Paxon: purchased $360,000 of intangibles and sold intangibles costing $292,500 at a $27,000 loss &rarr; proceeds = 292,500 &minus; 27,000 = <strong>$265,500</strong>. Investing = &minus;360,000 + 265,500 = <strong>(94,500)</strong>, and the $27,000 loss is added back in operating.</p>
+        <div class="exam-angle"><b>Exam angle</b>Q3 (net PP&amp;E cash flow), Q13 (investing = &minus;725,361 + 884,399 = +159,038; the gain does <em>not</em> change it because investing uses full proceeds), and Q8 (equipment sold: investing +81,000). Always use the full proceeds in investing and move only the gain or loss into operating.</div>
+      </div>
+    </div>
+
+    <!-- 05 -->
+    <div class="source-block" id="src-indirect" data-tier="test">
+      <button class="source-toggle" aria-expanded="false"><span class="stitle"><span class="num">05</span><h3>Operating Cash Flow: The Indirect-Method Bridge</h3> <span class="tier tier-test">&#9733; Test core</span></span><span class="chev">&#x2304;</span></button>
+      <div class="source-body">
+        <p>Operating cash flow answers: <strong>is the company generating cash from its central operations?</strong> The <em>indirect method</em> starts from the net income you already have and corrects it into cash. It is a bridge with four steps.</p>
+        <table class="hw-table">
+          <tr><th>Step</th><th>What you do</th></tr>
+          <tr><td class="hw-label">1</td><td>Start with accrual-basis <strong>net income</strong>.</td></tr>
+          <tr><td class="hw-label">2</td><td>Reverse noncash and nonoperating items: <strong>+ depreciation &amp; amortization, + stock-based compensation, + losses on disposals, &minus; gains on disposals</strong>.</td></tr>
+          <tr><td class="hw-label">3</td><td>Adjust for changes in <strong>operating assets and liabilities</strong> (next section has the sign rules).</td></tr>
+          <tr><td class="hw-label">4</td><td>The total is <strong>net cash provided by (used in) operating activities</strong>.</td></tr>
+        </table>
+        <p><strong>Why add back depreciation but subtract a gain?</strong> Depreciation reduced net income but no cash left (the cash went out when the asset was bought, in investing), so we undo the subtraction. A gain increased net income but the cash from the sale is reported in investing, so we remove it from operating. Same logic for stock-based compensation: an expense with no cash payment, so add it back.</p>
+        <h4>The slide's example: $245,000 of profit becomes $268,000 of cash</h4>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 250" role="img" aria-labelledby="o1t"><title id="o1t">Waterfall from net income 245,000 to operating cash flow 268,000</title>
+            <text x="52" y="30" class="t tc t-xs">Step 1</text>
+            <text x="140" y="30" class="t tc t-xs">Step 2: noncash</text><path d="M91 36 H189" class="ss-soft" stroke-width="1"/>
+            <text x="312" y="30" class="t tc t-xs">Step 3: operating assets and liabilities</text><path d="M195 36 H435" class="ss-soft" stroke-width="1"/>
+            <text x="468" y="30" class="t tc t-xs">Step 4</text>
+            <line x1="25" y1="200" x2="495" y2="200" class="ss-soft" stroke-width="1"/>
+<rect x="33" y="132.5" width="38" height="67.5" class="sf-blue ss-blue"/>
+<text x="52.0" y="126.5" class="t tc t-b">$245K</text>
+<text x="52.0" y="216" class="t tc t-xs">Net inc.</text>
+<line x1="71" y1="132.5" x2="85" y2="132.5" class="ss-soft sd" stroke-width="1"/>
+<rect x="85" y="69.5" width="38" height="63.0" class="sf-green ss-green"/>
+<text x="104.0" y="63.5" class="t tc t-b">+42</text>
+<text x="104.0" y="216" class="t tc t-xs">Deprec.</text>
+<line x1="123" y1="69.5" x2="137" y2="69.5" class="ss-soft sd" stroke-width="1"/>
+<rect x="137" y="69.5" width="38" height="16.5" class="sf-rust ss-rust"/>
+<text x="156.0" y="63.5" class="t tc t-b">&minus;11</text>
+<text x="156.0" y="216" class="t tc t-xs">Gain</text>
+<line x1="175" y1="86.0" x2="189" y2="86.0" class="ss-soft sd" stroke-width="1"/>
+<rect x="189" y="86.0" width="38" height="57.0" class="sf-rust ss-rust"/>
+<text x="208.0" y="80.0" class="t tc t-b">&minus;38</text>
+<text x="208.0" y="216" class="t tc t-xs">A/R</text>
+<line x1="227" y1="143.0" x2="241" y2="143.0" class="ss-soft sd" stroke-width="1"/>
+<rect x="241" y="116.0" width="38" height="27.0" class="sf-green ss-green"/>
+<text x="260.0" y="110.0" class="t tc t-b">+18</text>
+<text x="260.0" y="216" class="t tc t-xs">Invent.</text>
+<line x1="279" y1="116.0" x2="293" y2="116.0" class="ss-soft sd" stroke-width="1"/>
+<rect x="293" y="116.0" width="38" height="9.0" class="sf-rust ss-rust"/>
+<text x="312.0" y="110.0" class="t tc t-b">&minus;6</text>
+<text x="312.0" y="216" class="t tc t-xs">Prepaid</text>
+<line x1="331" y1="125.0" x2="345" y2="125.0" class="ss-soft sd" stroke-width="1"/>
+<rect x="345" y="89.0" width="38" height="36.0" class="sf-green ss-green"/>
+<text x="364.0" y="83.0" class="t tc t-b">+24</text>
+<text x="364.0" y="216" class="t tc t-xs">A/P</text>
+<line x1="383" y1="89.0" x2="397" y2="89.0" class="ss-soft sd" stroke-width="1"/>
+<rect x="397" y="89.0" width="38" height="9.0" class="sf-rust ss-rust"/>
+<text x="416.0" y="83.0" class="t tc t-b">&minus;6</text>
+<text x="416.0" y="216" class="t tc t-xs">Wages</text>
+<line x1="435" y1="98.0" x2="449" y2="98.0" class="ss-soft sd" stroke-width="1"/>
+<rect x="449" y="98.0" width="38" height="102.0" class="sf-blue ss-blue"/>
+<text x="468.0" y="92.0" class="t tc t-b">$268K</text>
+<text x="468.0" y="216" class="t tc t-xs">CFO</text>
+            <text x="260" y="240" class="t tc t-xs">$ thousands; the vertical axis starts at $200K so the small steps are visible</text>
+          </svg>
+          <figcaption>245 + 42 &minus; 11 &minus; 38 + 18 &minus; 6 + 24 &minus; 6 = 268. Green bars add cash, red bars subtract it.</figcaption>
+        </figure>
+        <h4>How it appears on the statement</h4>
+        <table class="hw-table">
+          <tr><th>Cash flows from operating activities</th><th>Amount</th></tr>
+          <tr><td class="hw-label">Net income</td><td>$245,000</td></tr>
+          <tr><td class="hw-label">Adjustments to reconcile net income to net cash:</td><td></td></tr>
+          <tr><td class="hw-label">&nbsp;&nbsp;Depreciation expense</td><td>42,000</td></tr>
+          <tr><td class="hw-label">&nbsp;&nbsp;Gain on sale of equipment</td><td>(11,000)</td></tr>
+          <tr><td class="hw-label">&nbsp;&nbsp;Increase in accounts receivable</td><td>(38,000)</td></tr>
+          <tr><td class="hw-label">&nbsp;&nbsp;Decrease in inventory</td><td>18,000</td></tr>
+          <tr><td class="hw-label">&nbsp;&nbsp;Increase in prepaid expenses</td><td>(6,000)</td></tr>
+          <tr><td class="hw-label">&nbsp;&nbsp;Increase in accounts payable</td><td>24,000</td></tr>
+          <tr><td class="hw-label">&nbsp;&nbsp;Decrease in wages payable</td><td>(6,000)</td></tr>
+          <tr><td class="hw-label">Net cash provided by operating activities</td><td><strong>$268,000</strong></td></tr>
+        </table>
+        <p>Can operating cash flow exceed net income without higher sales? Yes: noncash expenses added back (depreciation), receivables collected, inventory sold down, or <strong>payables stretched</strong> and customers paying in advance. None of those require more revenue.</p>
+        <h4>Traps the professor flags</h4>
+        <ul>
+          <li>Adding back depreciation, amortization or stock-based compensation does <strong>not</strong> mean they generate cash.</li>
+          <li>The gain on an asset sale is removed from operating; the <strong>full proceeds</strong> go to investing.</li>
+          <li>Changes in A/R, inventory and A/P are not automatically good or bad. Context matters (strong CFO caused mainly by rising payables is not the same as strong collections).</li>
+          <li>Prepaid expenses and depreciation are different cases: depreciation is added back directly; an expense you prepaid (insurance) is captured through the <em>change in the prepaid balance</em> (Q30, below).</li>
+        </ul>
+        <div class="tiny-example">
+          <h4>Practice the bridge (professor Q4 and Q8)</h4>
+          <div class="calc">Q4: NI (125,000); A/R balance change (45,000) &rarr; +45,000; prepaids +18,000 &rarr; (18,000);<br>    A/P (14,000) &rarr; (14,000); wages payable +85,000 &rarr; +85,000; stock comp +188,000<br>    CFO = &minus;125 + 45 &minus; 18 &minus; 14 + 188 + 85 = <strong>161,000</strong> &rarr; D<br>    (the 225,000 purchase of equity investments is investing, so it is left out)<br><br>Q8: $98,000 equipment, 8-year life, sold at end of year 2 for $81,000<br>    annual depreciation = 98,000 &divide; 8 = 12,250; accumulated after 2 years = 24,500<br>    book value = 73,500; gain = 81,000 &minus; 73,500 = 7,500<br>    Operating: +12,250 (this year's depreciation) and (7,500); Investing: +81,000 &rarr; A</div>
+        </div>
+        <div class="key-flag"><b>Convention and Q30 wording</b>In these problems &ldquo;Change in X balance&rdquo; means the <em>balance sheet</em> change: a positive number means the balance went up (so an asset change of +18,000 reduces CFO). Q30 is worded poorly, since depreciation <em>is</em> directly added back. The point of answer C: insurance expense that was prepaid is not added back directly; its effect comes through the change in the prepaid balance.</div>
+        <div class="exam-angle"><b>Exam angle</b>Compute CFO from a list of items, ignoring investing and financing items that are mixed in (Q4). Know that depreciation, amortization and stock comp are added back, gains subtracted, losses added. In an equipment-sale problem, split the effect across operating and investing (Q8).</div>
+      </div>
+    </div>
+
+    <!-- 06 -->
+    <div class="source-block" id="src-signs" data-tier="test">
+      <button class="source-toggle" aria-expanded="false"><span class="stitle"><span class="num">06</span><h3>Reading the Balance Sheet: The Sign Rules</h3> <span class="tier tier-test">&#9733; Test core</span></span><span class="chev">&#x2304;</span></button>
+      <div class="source-body">
+        <p>Step 3 of the bridge turns balance sheet changes into cash. <strong>Operating assets</strong> are things like receivables, inventory and prepaids. <strong>Operating liabilities</strong> are things like payables, wages payable, deferred revenue and taxes payable. The rule fits on one grid.</p>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 236" role="img" aria-labelledby="g1t"><title id="g1t">Sign rules for operating assets and liabilities</title>
+            <text x="225" y="22" class="t tc t-b">Balance goes UP</text><text x="422" y="22" class="t tc t-b">Balance goes DOWN</text>
+            <rect x="6" y="34" width="118" height="82" rx="6" class="sf-paper2 ss-soft"/><text x="65" y="58" class="t tc t-s">Operating</text><text x="65" y="76" class="t tc t-b">ASSETS</text><text x="65" y="94" class="t tc t-xs">A/R, inventory,</text><text x="65" y="107" class="t tc t-xs">prepaids</text>
+            <rect x="6" y="126" width="118" height="82" rx="6" class="sf-paper2 ss-soft"/><text x="65" y="150" class="t tc t-s">Operating</text><text x="65" y="168" class="t tc t-b">LIABILITIES</text><text x="65" y="186" class="t tc t-xs">A/P, wages payable,</text><text x="65" y="199" class="t tc t-xs">deferred revenue</text>
+            <rect x="130" y="34" width="190" height="82" rx="6" class="sf-rust-soft ss-rust"/><text x="225" y="68" class="t tc t-b t-rust" style="font-size:26px">&minus;</text><text x="225" y="88" class="t tc t-s">cash spent or tied up</text><text x="225" y="105" class="t tc t-xs">A/R +30,000 &rarr; &minus;30,000</text>
+            <rect x="330" y="34" width="185" height="82" rx="6" class="sf-green-soft ss-green"/><text x="422" y="68" class="t tc t-b t-green" style="font-size:26px">+</text><text x="422" y="88" class="t tc t-s">cash freed up</text><text x="422" y="105" class="t tc t-xs">Inventory &minus;12,000 &rarr; +12,000</text>
+            <rect x="130" y="126" width="190" height="82" rx="6" class="sf-green-soft ss-green"/><text x="225" y="160" class="t tc t-b t-green" style="font-size:26px">+</text><text x="225" y="180" class="t tc t-s">expense not yet paid</text><text x="225" y="197" class="t tc t-xs">A/P +18,000 &rarr; +18,000</text>
+            <rect x="330" y="126" width="185" height="82" rx="6" class="sf-rust-soft ss-rust"/><text x="422" y="160" class="t tc t-b t-rust" style="font-size:26px">&minus;</text><text x="422" y="180" class="t tc t-s">paid more than expensed</text><text x="422" y="197" class="t tc t-xs">Wages payable &minus;7,000 &rarr; &minus;7,000</text>
+            <text x="260" y="228" class="t tc t-s">Assets: do the opposite of the balance. Liabilities: do the same.</text>
+          </svg>
+          <figcaption>The same direction of balance change can mean opposite things for cash, depending on whether it is an asset or a liability.</figcaption>
+        </figure>
+        <h4>The slide's four accounts</h4>
+        <table class="hw-table">
+          <tr><th>Account</th><th>Begin</th><th>End</th><th>Change</th><th>CFO adjustment</th><th>Why</th></tr>
+          <tr><td class="hw-label">Accounts receivable</td><td>70,000</td><td>100,000</td><td>+30,000</td><td>(30,000)</td><td>Revenue recorded, cash not yet collected</td></tr>
+          <tr><td class="hw-label">Inventory</td><td>92,000</td><td>80,000</td><td>&minus;12,000</td><td>+12,000</td><td>COGS expensed exceeds what we bought, so less cash went out</td></tr>
+          <tr><td class="hw-label">Accounts payable</td><td>45,000</td><td>63,000</td><td>+18,000</td><td>+18,000</td><td>Purchases/expenses exceed payments to suppliers</td></tr>
+          <tr><td class="hw-label">Wages payable</td><td>21,000</td><td>14,000</td><td>&minus;7,000</td><td>(7,000)</td><td>We paid more than we expensed</td></tr>
+        </table>
+        <div class="key-flag"><b>Slide wording to ignore</b>The slide's inventory note reads &ldquo;purchases exceed inventory expensed through COGS, reducing cash flow,&rdquo; which describes an inventory <em>increase</em>. The number it shows (+$12,000 for an inventory <em>decrease</em>) is right: a decrease means less cash was spent buying inventory than was expensed through COGS.</div>
+        <h4>Follow one transaction: a sale on credit</h4>
+        <div class="tiny-example">
+          <div class="calc">Sale:     Dr A/R 100,000 / Cr Revenue 100,000  &rarr; NI +100,000, cash 0<br>Indirect: subtract the 100,000 increase in A/R, so CFO shows 0 for this sale<br>Payment:  Dr Cash 100,000 / Cr A/R 100,000  &rarr; A/R falls, so CFO rises by 100,000<br>          (operating cash flow increases without any revenue being recorded that period)</div>
+        </div>
+        <h4>More operating accounts</h4>
+        <ul>
+          <li><strong>Prepaid expenses.</strong> Prepaids up 6,000 means you paid 6,000 more than you expensed: subtract. Lincoln's prepaid insurance rose from 5,000 to 7,000, so the adjustment is (2,000).</li>
+          <li><strong>Deferred revenue</strong> (customer advances). It is an operating <em>liability</em>. Up: you collected cash ahead of revenue, so add. Down: you recognized revenue from cash collected earlier, so subtract. A relatively large <em>decrease</em> (Q22) means more previously deferred revenue was recognized than new advance payments were collected.</li>
+          <li><strong>Inventory.</strong> A balance rising from $500,000 to $900,000 is shown in the operating section as an increase in inventory of ($400,000), not as a $500,000 or $900,000 payment (Q1). Do <em>not</em> put it in investing (Q1 option C).</li>
+        </ul>
+        <p>Is an increase in accounts payable always good news? It boosts CFO now, but it means you are paying suppliers later. If it reverses next year, CFO falls. Strong CFO caused mainly by rising payables deserves a closer look.</p>
+        <div class="exam-angle"><b>Exam angle</b>Memorize the 2&times;2 grid. If the A/R balance rose, operating cash flow falls (Q16 answer D). Present a balance change as a signed adjustment (Q1). Work from the <em>balance</em> change, not the income statement. Remember depreciation is not a balance sheet change you need to look up: it is added back directly.</div>
+      </div>
+    </div>
+
+    <!-- 07 -->
+    <div class="source-block" id="src-backward" data-tier="test">
+      <button class="source-toggle" aria-expanded="false"><span class="stitle"><span class="num">07</span><h3>Working Backward: Cash From Revenue and Expenses</h3> <span class="tier tier-test">&#9733; Test core</span></span><span class="chev">&#x2304;</span></button>
+      <div class="source-body">
+        <p>Many exam problems give you an income statement figure and balance changes and ask what <em>cash</em> was collected or paid. Every one of them is the same <strong>roll-forward</strong>: <em>beginning + increases &minus; decreases = ending</em>. The cash number is the missing piece (the &ldquo;plug&rdquo;).</p>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 205" role="img" aria-labelledby="b1t"><title id="b1t">Receivable and payable roll-forwards solving for cash collected and cash paid</title>
+            <text x="15" y="20" class="t t-b">Receivables: cash collected is the plug</text>
+            <rect x="15" y="30" width="100" height="52" rx="6" class="sf-paper2 ss-soft"/><text x="65" y="50" class="t tc t-s">Beginning A/R</text><text x="65" y="69" class="t tc t-b">$40,000</text>
+            <text x="130" y="61" class="t tc t-b t-l">+</text>
+            <rect x="145" y="30" width="100" height="52" rx="6" class="sf-green-soft ss-green"/><text x="195" y="50" class="t tc t-s">Credit sales</text><text x="195" y="69" class="t tc t-b">$300,000</text>
+            <text x="260" y="61" class="t tc t-b t-l">&minus;</text>
+            <rect x="275" y="30" width="100" height="52" rx="6" class="sf-gold-soft ss-gold"/><text x="325" y="50" class="t tc t-s">Cash collected</text><text x="325" y="69" class="t tc t-b">$285,000</text>
+            <text x="390" y="61" class="t tc t-b t-l">=</text>
+            <rect x="405" y="30" width="100" height="52" rx="6" class="sf-paper2 ss-soft"/><text x="455" y="50" class="t tc t-s">Ending A/R</text><text x="455" y="69" class="t tc t-b">$55,000</text>
+            <text x="15" y="116" class="t t-b">Payables: cash paid is the plug</text>
+            <rect x="15" y="126" width="100" height="52" rx="6" class="sf-paper2 ss-soft"/><text x="65" y="146" class="t tc t-s">Beginning A/P</text><text x="65" y="165" class="t tc t-b">$30,000</text>
+            <text x="130" y="157" class="t tc t-b t-l">+</text>
+            <rect x="145" y="126" width="100" height="52" rx="6" class="sf-green-soft ss-green"/><text x="195" y="146" class="t tc t-s">Purchases</text><text x="195" y="165" class="t tc t-b">$200,000</text>
+            <text x="260" y="157" class="t tc t-b t-l">&minus;</text>
+            <rect x="275" y="126" width="100" height="52" rx="6" class="sf-gold-soft ss-gold"/><text x="325" y="146" class="t tc t-s">Cash paid</text><text x="325" y="165" class="t tc t-b">$212,000</text>
+            <text x="390" y="157" class="t tc t-b t-l">=</text>
+            <rect x="405" y="126" width="100" height="52" rx="6" class="sf-paper2 ss-soft"/><text x="455" y="146" class="t tc t-s">Ending A/P</text><text x="455" y="165" class="t tc t-b">$18,000</text>
+            <text x="260" y="198" class="t tc t-xs">Collected = 40 + 300 &minus; 55.  Paid = 30 + 200 &minus; 18.</text>
+          </svg>
+          <figcaption>One template for everything on this page. Increases on the left, decreases on the right, balances at the ends.</figcaption>
+        </figure>
+        <table class="hw-table">
+          <tr><th>Want</th><th>Formula</th></tr>
+          <tr><td class="hw-label">Cash collected from customers</td><td>Revenue &minus; increase in A/R (or + decrease)</td></tr>
+          <tr><td class="hw-label">Cash paid to suppliers</td><td>Purchases &minus; increase in A/P (or + decrease)</td></tr>
+          <tr><td class="hw-label">Purchases of inventory</td><td>COGS + increase in inventory (or &minus; decrease)</td></tr>
+          <tr><td class="hw-label">Cash paid to employees</td><td>Wages expense &minus; increase in wages payable (or + decrease)</td></tr>
+        </table>
+        <h4>Worked problems from the professor's set</h4>
+        <div class="tiny-example">
+          <div class="calc"><b>Q2 (cash paid to employees).</b> Cash from customers 750,000; A/R up 150,000; NI 762,000; wages payable down 345,000.<br>Revenue = 750,000 + 150,000 = 900,000. Wages expense = 900,000 &minus; 762,000 = 138,000.<br>Payable fell 345,000, so cash paid = 138,000 + 345,000 = <b>483,000</b> &rarr; D<br><br><b>Q12 (cash paid to suppliers).</b> Purchases 85,000; A/P 22,000 &rarr; 33,000.<br>Paid = 85,000 &minus; 11,000 = <b>74,000</b> &rarr; B<br><br><b>Q15 (CFO and NI from sales and wages).</b><br>Cash sales = 8,456,923 &minus; 5,123,651 credit = 3,333,272<br>Cash in = 3,333,272 + 2,221,982 (this year's credit sales) + 2,988,854 (last year's) = 8,544,108<br>Cash out = 4,105,567 + 789,566 (last year's wages) = 4,895,133<br>CFO = 8,544,108 &minus; 4,895,133 = <b>3,648,975</b>;  NI = 8,456,923 &minus; 4,987,321 = <b>3,469,602</b> &rarr; A</div>
+          <p>Notice the trap in Q15: the full credit sales figure is <em>not</em> cash, and cash collected on prior-year sales counts even though it is not this year's revenue.</p>
+        </div>
+        <div class="tiny-example">
+          <h4>Homework Q8, Penno: why net income and cash differ</h4>
+          <div class="calc">Revenue 380,000 (57,000 cash + 323,000 credit, of which 38,000 collected)<br>Wages expense = 47,500 paid + 28,500 unpaid = 76,000<br>Net income = 380,000 &minus; 76,000 = <b>304,000</b><br>Cash in = 57,000 + 38,000 = 95,000;  cash out = 47,500;  CFO = <b>47,500</b><br>Gap = 304,000 &minus; 47,500 = 256,500 = 285,000 (uncollected revenue) &minus; 28,500 (unpaid wages)</div>
+          <p>Profit is high but cash is thin because most of the revenue is still sitting in receivables. That is the whole unit in one example.</p>
+        </div>
+        <h4>Solving for net income or a missing change</h4>
+        <p>Reverse the bridge: every sign flips when you move a term to the other side.</p>
+        <div class="calc" style="font-family:var(--font-mono); font-size:.88rem; background:var(--paper-2); padding:10px 12px; border-radius:6px; margin:0 0 1em; overflow-x:auto;">Q6 (net income): CFO = &minus;180,000. Wages payable &minus;65,000; inventory +33,000 (up); prepaids +13,000 (up); depreciation 24,000; A/R +160,000 (up); A/P &minus;22,000.<br>CFO = NI + 24 &minus; 65 &minus; 33 &minus; 13 &minus; 160 &minus; 22 = NI &minus; 269<br>NI = &minus;180 + 269 = <strong>89,000</strong> &rarr; B<br><br>Q11 (missing A/R change): NI 33,000, CFO &minus;22,000, depreciation 75,000, wages payable &minus;88,000, inventory +15,000 (up).<br>33 + 75 &minus; 88 &minus; 15 &minus; (A/R change) = &minus;22  &rarr;  5 &minus; A/R = &minus;22  &rarr;  A/R change = <strong>+27,000</strong> (up) &rarr; A</div>
+        <h4>Reading the sign backward (homework Q4, Amgen)</h4>
+        <p>Sometimes you are given the <em>adjustment</em> from a real statement and must say whether the balance rose or fell. For an <strong>asset</strong>, a negative adjustment means the balance increased. For a <strong>liability</strong>, a positive adjustment means the balance increased.</p>
+        <table class="hw-table">
+          <tr><th>Account</th><th>Adjustment ($ millions)</th><th>Balance did what?</th></tr>
+          <tr><td class="hw-label">Trade receivables (asset)</td><td>(378)</td><td>Increased</td></tr>
+          <tr><td class="hw-label">Inventories (asset)</td><td>(3)</td><td>Increased</td></tr>
+          <tr><td class="hw-label">Other assets (asset)</td><td>35</td><td>Decreased</td></tr>
+          <tr><td class="hw-label">Accounts payable (liability)</td><td>(143)</td><td>Decreased</td></tr>
+          <tr><td class="hw-label">Accrued income taxes (liability)</td><td>(361)</td><td>Decreased</td></tr>
+          <tr><td class="hw-label">Long-term tax liabilities (liability)</td><td>258</td><td>Increased</td></tr>
+          <tr><td class="hw-label">Other liabilities (liability)</td><td>1,214</td><td>Increased</td></tr>
+        </table>
+        <div class="exam-angle"><b>Exam angle</b>These are the most &ldquo;calculation&rdquo; questions on the set: Q2, Q6, Q11, Q12 and Q15, plus homework Q8. Set up the roll-forward or the bridge, write the signs carefully, and solve for the unknown. Check by plugging your answer back in.</div>
+      </div>
+    </div>
+
+    <!-- 08 -->
+    <div class="source-block" id="src-quality" data-tier="test">
+      <button class="source-toggle" aria-expanded="false"><span class="stitle"><span class="num">08</span><h3>Quality of Earnings</h3> <span class="tier tier-test">&#9733; Test core</span></span><span class="chev">&#x2304;</span></button>
+      <div class="source-body">
+        <div class="quote-block">Quality of earnings ratio = Operating cash flow &divide; Net income</div>
+        <p>Two companies can report the same profit and have very different cash. The ratio shows how much of each dollar of profit turned into operating cash.</p>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 200" role="img" aria-labelledby="q1t"><title id="q1t">Company A converts profit into more cash; Company B converts less</title>
+            <line x1="40" y1="150" x2="190" y2="150" class="ss-soft" stroke-width="1"/>
+            <line x1="260" y1="150" x2="400" y2="150" class="ss-soft" stroke-width="1"/>
+            <rect x="55" y="70" width="50" height="80" class="sf-blue ss-blue"/><text x="80" y="64" class="t tc t-b">$200K</text><text x="80" y="164" class="t tc t-xs">Net income</text>
+            <rect x="115" y="30" width="50" height="120" class="sf-green ss-green"/><text x="140" y="24" class="t tc t-b">$300K</text><text x="140" y="164" class="t tc t-xs">Op. cash</text>
+            <rect x="275" y="70" width="50" height="80" class="sf-blue ss-blue"/><text x="300" y="64" class="t tc t-b">$200K</text><text x="300" y="164" class="t tc t-xs">Net income</text>
+            <rect x="335" y="114" width="50" height="36" class="sf-rust ss-rust"/><text x="360" y="108" class="t tc t-b">$90K</text><text x="360" y="164" class="t tc t-xs">Op. cash</text>
+            <text x="110" y="188" class="t tc t-b">A: 300 &divide; 200 = 1.50</text><text x="330" y="188" class="t tc t-b">B: 90 &divide; 200 = 0.45</text>
+            <text x="178" y="62" class="t t-xs">Cash exceeds</text><text x="178" y="75" class="t t-xs">profit: check</text><text x="178" y="88" class="t t-xs">depreciation,</text><text x="178" y="101" class="t t-xs">deferred revenue</text>
+            <text x="398" y="100" class="t t-xs">Profit not</text><text x="398" y="113" class="t t-xs">converting:</text><text x="398" y="126" class="t t-xs">check A/R,</text><text x="398" y="139" class="t t-xs">inventory</text>
+          </svg>
+          <figcaption>Same $200K profit. Company A turns it into $300K of cash; Company B only $90K.</figcaption>
+        </figure>
+        <ul>
+          <li><strong>Above 1</strong> (A = 1.50): cash exceeds earnings. Investigate <em>why</em>: depreciation and other noncash expenses, deferred revenue, working-capital timing.</li>
+          <li><strong>Below 1</strong> (B = 0.45): profit isn't converting to cash. Investigate receivables, inventory and timing.</li>
+          <li><strong>Is 1.50 always better?</strong> No. Timing can distort it: stretching payables or a one-time burst of customer prepayments lifts the ratio temporarily. Look across several years.</li>
+        </ul>
+        <p>Professor Q26: the ratio compares <strong>operating cash flow with reported net income</strong> (answer A). Q27: if Company A's ratio is 2 and B's is 1, A generates more operating cash per dollar of net income, <em>potentially</em> signaling stronger cash conversion (answer B). It does <em>not</em> say A has twice the net income, and it says nothing about B's investments.</p>
+        <div class="exam-angle"><b>Exam angle</b>Compute CFO &divide; NI and interpret it; know which direction means stronger cash conversion; know that a high ratio can come from benign or less sustainable sources. Don't confuse it with CFO &divide; CAPEX or CFO &divide; current liabilities (next section).</div>
+      </div>
+    </div>
+
+    <!-- 09 -->
+    <div class="source-block" id="src-fcf" data-tier="know">
+      <button class="source-toggle" aria-expanded="false"><span class="stitle"><span class="num">09</span><h3>Free Cash Flow &amp; the Two Cash-Flow Ratios</h3> <span class="tier tier-know">&#9680; Understand it</span></span><span class="chev">&#x2304;</span></button>
+      <div class="source-body">
+        <p>The homework asks you to use operating cash flow in three more ways.</p>
+        <table class="hw-table">
+          <tr><th>Measure</th><th>Formula</th><th>What it tells you</th></tr>
+          <tr><td class="hw-label">Free cash flow</td><td>CFO &minus; CAPEX</td><td>Cash left after reinvesting in long-lived assets, before other financing choices</td></tr>
+          <tr><td class="hw-label">Liquidity ratio</td><td>CFO &divide; average current liabilities</td><td>Can operations pay obligations as they come due? Higher = more liquid</td></tr>
+          <tr><td class="hw-label">Solvency ratio (course label)</td><td>CFO &divide; CAPEX</td><td>Do operations fund the capital spending? Above 1 means yes, with cash to spare</td></tr>
+        </table>
+        <p>Average current liabilities = (beginning + ending) &divide; 2, because CFO is earned over the whole year.</p>
+        <h4>Worked: homework Q7 (companies A&ndash;D, $ millions)</h4>
+        <table class="hw-table">
+          <tr><th>Co.</th><th>CFO</th><th>Avg current liabilities</th><th>CAPEX</th><th>CFO &divide; CL</th><th>CFO &divide; CAPEX</th><th>FCF</th></tr>
+          <tr><td class="hw-label">A</td><td>3,791</td><td>11,846</td><td>4,365</td><td>0.320 (low)</td><td>0.868 (low)</td><td>(574)</td></tr>
+          <tr><td class="hw-label">B</td><td>10,202</td><td>3,926</td><td>1,813</td><td>2.599 (high)</td><td>5.627 (high)</td><td>8,389</td></tr>
+          <tr><td class="hw-label">C</td><td>6,664</td><td>6,057</td><td>2,196</td><td>1.100 (medium high)</td><td>3.035 (high)</td><td>4,468</td></tr>
+          <tr><td class="hw-label">D</td><td>4,860</td><td>9,346</td><td>3,571</td><td>0.520 (medium)</td><td>1.361 (medium)</td><td>1,289</td></tr>
+        </table>
+        <p><strong>True or false: negative free cash flow is an advance warning of bankruptcy? False.</strong> Company A's FCF is negative, but negative FCF can come from a growth plan: heavy CAPEX or an operating cycle that temporarily consumes cash. In the long run, though, FCF must be positive to sustain a business.</p>
+        <h4>Worked: homework Q6 (rank-ordering, $ millions)</h4>
+        <table class="hw-table">
+          <tr><th>Company</th><th>CFO</th><th>Avg CL</th><th>CAPEX</th><th>CFO &divide; CL</th><th>Liquidity rank</th><th>CFO &divide; CAPEX</th><th>Solvency rank</th></tr>
+          <tr><td class="hw-label">Arconic</td><td>282</td><td>4,576</td><td>998</td><td>0.062</td><td>3</td><td>0.283</td><td>4</td></tr>
+          <tr><td class="hw-label">CarMax</td><td>212</td><td>1,706</td><td>397</td><td>0.124</td><td>2</td><td>0.534</td><td>3</td></tr>
+          <tr><td class="hw-label">Flowserve</td><td>248</td><td>1,405</td><td>109</td><td>0.177</td><td>1</td><td>2.275</td><td>1</td></tr>
+          <tr><td class="hw-label">Fluor</td><td>211</td><td>4,619</td><td>274</td><td>0.046</td><td>4</td><td>0.770</td><td>2</td></tr>
+        </table>
+        <p>Rank 1 = most liquid / most solvent = the <em>highest</em> ratio. Notice the two rankings don't have to match: Fluor is least liquid (0.046) but second most solvent (0.770).</p>
+        <h4>Apple FY2025: free cash flow versus what it paid out</h4>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 200" role="img" aria-labelledby="a1t"><title id="a1t">Apple operating cash flow, free cash flow and distributions to owners</title>
+            <text x="94" y="35" class="t te t-s">Operating cash</text>
+            <text x="94" y="77" class="t te t-s">After CAPEX</text>
+            <text x="94" y="135" class="t te t-s">Paid to owners</text>
+<rect x="100" y="16" width="340.0" height="28" class="sf-blue ss-blue"/><text x="270.0" y="35" class="t tc t-b t-w">Operating cash flow $111,482M</text>
+<rect x="100" y="58" width="301.2" height="28" class="sf-green ss-green"/><text x="250.6" y="77" class="t tc t-b t-w">Free cash flow $98,767M</text>
+<rect x="401.2" y="58" width="38.8" height="28" class="sf-rust ss-rust"/><text x="446.0" y="70" class="t t-xs">CAPEX</text><text x="446.0" y="83" class="t t-xs">$12,715M</text>
+<rect x="100" y="116" width="276.7" height="28" class="sf-gold-soft ss-gold"/><text x="238.3" y="135" class="t tc t-b">Buybacks $90,711M</text>
+<rect x="376.7" y="116" width="47.0" height="28" class="sf-rust-soft ss-rust"/><text x="423.7" y="162" class="t te t-xs">Dividends $15,421M</text>
+<line x1="401.2" y1="48" x2="401.2" y2="146" class="ss-ink sd" stroke-width="1.2"/>
+            <text x="260" y="186" class="t tc t-s">Distributions $106,132M &minus; FCF $98,767M = $7,365M more than FCF (dashed line)</text>
+          </svg>
+          <figcaption>FCF = $111,482M &minus; $12,715M = $98,767M. Repurchases $90,711M + dividends $15,421M = $106,132M. ($ millions, from the slide.)</figcaption>
+        </figure>
+        <div class="exam-angle"><b>Exam angle</b>Not on the professor's 30-question set, but this is homework territory: compute the ratios, subtract CAPEX for FCF, rank-order using the highest = best rule, and answer the &ldquo;negative FCF = bankruptcy?&rdquo; question (false).</div>
+      </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="source-block" id="src-lifecycle" data-tier="test">
+      <button class="source-toggle" aria-expanded="false"><span class="stitle"><span class="num">10</span><h3>The Life-Cycle Stage From the Signs</h3> <span class="tier tier-test">&#9733; Test core</span></span><span class="chev">&#x2304;</span></button>
+      <div class="source-body">
+        <p>The signs of CFO, CFI and CFF <em>together</em> reveal where a company is in its life. Read them in order, not in isolation.</p>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 254" role="img" aria-labelledby="l1t"><title id="l1t">Cash flow sign patterns for introduction, growth, mature and decline</title>
+            <defs><marker id="ar11b" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 z" style="fill:var(--text-soft)"/></marker></defs>
+            <text x="260" y="12" class="t tc t-xs">time and maturity</text>
+            <line x1="20" y1="20" x2="500" y2="20" class="ss-soft" stroke-width="1.4" marker-end="url(#ar11b)"/>
+            <rect x="6" y="32" width="118" height="196" rx="8" class="sf-gold-soft ss-gold"/>
+            <text x="65" y="56" class="t tc t-b t-gold">Introduction</text><text x="65" y="72" class="t tc t-xs">building</text>
+            <text x="20" y="108" class="t t-s">CFO</text><rect x="64" y="90" width="46" height="26" rx="5" class="sf-rust ss-rust"/><text x="87" y="108" class="t tc t-b t-w">&minus;</text>
+            <text x="20" y="152" class="t t-s">CFI</text><rect x="64" y="134" width="46" height="26" rx="5" class="sf-rust ss-rust"/><text x="87" y="152" class="t tc t-b t-w">&minus;</text>
+            <text x="20" y="196" class="t t-s">CFF</text><rect x="64" y="178" width="46" height="26" rx="5" class="sf-green ss-green"/><text x="87" y="196" class="t tc t-b t-w">+</text>
+            <rect x="136" y="32" width="118" height="196" rx="8" class="sf-green-soft ss-green"/>
+            <text x="195" y="56" class="t tc t-b t-green">Growth</text><text x="195" y="72" class="t tc t-xs">expanding</text>
+            <text x="150" y="108" class="t t-s">CFO</text><rect x="194" y="90" width="46" height="26" rx="5" class="sf-gold ss-gold"/><text x="217" y="108" class="t tc t-b t-w">+/&minus;</text>
+            <text x="150" y="152" class="t t-s">CFI</text><rect x="194" y="134" width="46" height="26" rx="5" class="sf-rust ss-rust"/><text x="217" y="152" class="t tc t-b t-w">&minus;</text>
+            <text x="150" y="196" class="t t-s">CFF</text><rect x="194" y="178" width="46" height="26" rx="5" class="sf-gold ss-gold"/><text x="217" y="196" class="t tc t-b t-w">+/&minus;</text>
+            <rect x="266" y="32" width="118" height="196" rx="8" class="sf-blue-soft ss-blue"/>
+            <text x="325" y="56" class="t tc t-b t-blue">Mature</text><text x="325" y="72" class="t tc t-xs">harvesting</text>
+            <text x="280" y="108" class="t t-s">CFO</text><rect x="324" y="90" width="46" height="26" rx="5" class="sf-green ss-green"/><text x="347" y="108" class="t tc t-b t-w">+</text>
+            <text x="280" y="152" class="t t-s">CFI</text><rect x="324" y="134" width="46" height="26" rx="5" class="sf-rust ss-rust"/><text x="347" y="152" class="t tc t-b t-w">&minus;</text>
+            <text x="280" y="196" class="t t-s">CFF</text><rect x="324" y="178" width="46" height="26" rx="5" class="sf-rust ss-rust"/><text x="347" y="196" class="t tc t-b t-w">&minus;</text>
+            <rect x="396" y="32" width="118" height="196" rx="8" class="sf-rust-soft ss-rust"/>
+            <text x="455" y="56" class="t tc t-b t-rust">Decline</text><text x="455" y="72" class="t tc t-xs">shrinking</text>
+            <text x="410" y="108" class="t t-s">CFO</text><rect x="454" y="90" width="46" height="26" rx="5" class="sf-rust ss-rust"/><text x="477" y="108" class="t tc t-b t-w">&minus;</text>
+            <text x="410" y="152" class="t t-s">CFI</text><rect x="454" y="134" width="46" height="26" rx="5" class="sf-green ss-green"/><text x="477" y="152" class="t tc t-b t-w">+</text>
+            <text x="410" y="196" class="t t-s">CFF</text><rect x="454" y="178" width="46" height="26" rx="5" class="sf-gold ss-gold"/><text x="477" y="196" class="t tc t-b t-w">+/&minus;</text>
+            <text x="260" y="246" class="t tc t-xs">Read all three signs together, then compare their sizes</text>
+          </svg>
+          <figcaption>The slide's pattern table. Introduction: building the business with outside money. Growth: operations improve, reinvestment continues. Mature: operations fund the business and payouts. Decline: asset sales and emergency financing.</figcaption>
+        </figure>
+        <p>Can a company have negative investing cash flow and still be financially strong? Yes: a growing or mature company that reinvests from strong operating cash is exactly that pattern.</p>
+        <h4>Messier cases: how to reason</h4>
+        <ol>
+          <li><strong>Look at CFO first.</strong> Negative means the business isn't yet (or no longer) paying its own way: introduction or decline. Positive means growth or mature.</li>
+          <li><strong>Then CFI.</strong> Negative means still reinvesting (introduction, growth, mature). Positive means selling assets (decline, or a late mature stage).</li>
+          <li><strong>Then CFF.</strong> Positive means taking in outside money. Negative means paying lenders and owners back, which fits a mature or declining firm.</li>
+          <li><strong>Break ties with size.</strong> Compare the magnitudes to each other and to net income.</li>
+        </ol>
+        <table class="hw-table">
+          <tr><th>Case</th><th>CFO / CFI / CFF</th><th>Stage</th><th>Reasoning</th></tr>
+          <tr><td class="hw-label">Prof. Q28</td><td>+ / &minus; / +</td><td>Growth</td><td>Solid operations and new investment, funded partly by financing. Not mature: financing is coming in, not going out</td></tr>
+          <tr><td class="hw-label">Prof. Q29</td><td>&minus; / + / +</td><td>Decline</td><td>Selling assets and raising financing to fund cash losses. Not mature, since operations aren't funding anything</td></tr>
+          <tr><td class="hw-label">HW C, G</td><td>&minus; / &minus; / +</td><td>Introduction</td><td>Cash burn in operations, heavy investing, funded by new financing</td></tr>
+          <tr><td class="hw-label">HW A, D</td><td>+ / &minus; / +</td><td>Growth (late)</td><td>Healthy CFO but still investing and borrowing</td></tr>
+          <tr><td class="hw-label">HW F</td><td>5 / (530) / 876</td><td>Growth (early)</td><td>CFO is tiny but positive, so not introduction. Early growth, mostly funded by financing</td></tr>
+          <tr><td class="hw-label">HW B</td><td>6,334 / 3,220 / (2,008)</td><td>Maturity</td><td>Strong CFO, paying down financing and selling some assets. A cash-generating harvest, not distress</td></tr>
+          <tr><td class="hw-label">HW E</td><td>70 / 2,005 / 815</td><td>Decline (early)</td><td>Barely positive CFO; large asset sales and still taking in financing</td></tr>
+          <tr><td class="hw-label">HW H</td><td>(409) / 5,581 / (2,406)</td><td>Decline (late)</td><td>Operations burn cash; assets sold to repay financiers</td></tr>
+        </table>
+        <div class="key-flag"><b>Easy-to-miss calls</b>Positive CFI does not automatically mean &ldquo;decline.&rdquo; Pair it with the other signs: strong positive CFO plus negative CFF (HW B) is maturity. Tiny positive CFO (HW F) is early growth, not introduction.</div>
+        <h4>Ranking by maturity (homework Q10)</h4>
+        <p>The hint says all four have CFO of about $200 million, so the sign pattern and the <em>relative size</em> of the other numbers decide the order ($ millions).</p>
+        <table class="hw-table">
+          <tr><th>Company</th><th>NI</th><th>CFO</th><th>CFI</th><th>CFF</th><th>Pattern</th><th>Stage</th><th>Maturity rank</th></tr>
+          <tr><td class="hw-label">CarMax</td><td>842</td><td>163</td><td>(309)</td><td>186</td><td>+ &minus; +</td><td>Growth</td><td>1 (least)</td></tr>
+          <tr><td class="hw-label">Flowserve</td><td>120</td><td>191</td><td>(81)</td><td>(173)</td><td>+ &minus; &minus;</td><td>Maturity</td><td>2</td></tr>
+          <tr><td class="hw-label">Fluor</td><td>225</td><td>162</td><td>1</td><td>(140)</td><td>+ + &minus;</td><td>Maturity</td><td>3</td></tr>
+          <tr><td class="hw-label">Arconic</td><td>642</td><td>217</td><td>565</td><td>(649)</td><td>+ + &minus;</td><td>Maturity</td><td>4 (most)</td></tr>
+        </table>
+        <p>CarMax invests and takes in financing: growth. Flowserve is still investing (CFI &minus;81) but already returning money (CFF &minus;173): early maturity. Fluor and Arconic both have positive CFI, so neither is expanding its asset base. Fluor's CFI is only +$1M, near break-even, while Arconic's +$565M is far bigger than its CFO of $217M: it is raising more cash from selling assets than from running the business, and the solution notes the size of the cash flows relative to net income puts Arconic farthest along.</p>
+        <div class="exam-angle"><b>Exam angle</b>Q28 (+ &minus; + = growth, answer A) and Q29 (&minus; + + = decline, answer B). Memorize the four-row table, then use the CFO &rarr; CFI &rarr; CFF reasoning ladder for anything that doesn't match exactly.</div>
+      </div>
+    </div>
+
+    <!-- 11 -->
+    <div class="source-block" id="src-lenses" data-tier="know">
+      <button class="source-toggle" aria-expanded="false"><span class="stitle"><span class="num">11</span><h3>Real-World Lenses</h3> <span class="tier tier-know">&#9680; Understand it</span></span><span class="chev">&#x2304;</span></button>
+      <div class="source-body">
+        <p>The professor closes with four pictures of how conversion of profit to cash looks in real businesses.</p>
+        <table class="hw-table">
+          <tr><th>Business</th><th>What happens to cash</th><th>Why</th></tr>
+          <tr><td class="hw-label">Costco</td><td>Strong operating cash flow</td><td>Membership fees are collected up front, inventory turns quickly, and supplier payment terms are favorable</td></tr>
+          <tr><td class="hw-label">Fast-growing subscription software</td><td>CFO can run well above net income</td><td>Customers pay in advance, so deferred revenue (an operating liability) rises. Can it be sustained?</td></tr>
+          <tr><td class="hw-label">Growing retailer</td><td>Cash drained even while profit rises</td><td>Expanding inventory and swelling receivables consume cash from operations</td></tr>
+          <tr><td class="hw-label">Suspicious pattern</td><td>Warning sign</td><td>Profits rising while receivables swell and collections lag. Inspect several years of statements</td></tr>
+        </table>
+        <div class="tiny-example">
+          <h4>Two discussion questions from the slides</h4>
+          <p><strong>Which industries have favorable cash collections?</strong> Businesses paid before they deliver (subscriptions, memberships) or at the register (retail). <strong>Which have favorable noncash expenses?</strong> Asset-heavy businesses with big depreciation (my examples, general knowledge: airlines, utilities, telecom), where net income is depressed by an expense that uses no cash this year.</p>
+        </div>
+        <div class="exam-angle"><b>Exam angle</b>Conceptual and short: the professor's questions on deferred revenue (Q22) and quality of earnings (Q26&ndash;Q27) come from this thinking. Know why deferred revenue and fast inventory turns help CFO, and why receivable and inventory growth hurt it.</div>
+      </div>
+    </div>
+
+    <div id="deeper" style="margin-top:2.2em;">
+      <div class="section-head"><span class="eyebrow">Optional &middot; Go deeper</span><h2>Beyond the exam set</h2></div>
+      <div class="deep-note"><b>You can skip this and still ace the test</b>These blocks stretch the same ideas one step further. The exam follows the slides' rules, so treat the extra detail here as background.</div>
+    </div>
+
+    <div class="source-block" id="deep-direct" data-tier="deep">
+      <button class="source-toggle" aria-expanded="false"><span class="stitle"><span class="num">&#9650;1</span><h3>The Direct Method &amp; Noncash Deals</h3> <span class="tier tier-deep">&#9650; Go deeper</span></span><span class="chev">&#x2304;</span></button>
+      <div class="source-body">
+        <p>The <strong>direct method</strong> reports operating cash flow as actual cash receipts and payments (cash collected, cash paid) instead of starting from net income. It reaches the <em>same</em> CFO. Section 07's working-backward formulas are exactly the direct method.</p>
+        <p>Using homework Q2 (Lincoln Company: sales 700,000; COGS 425,000; wages 110,000; rent 38,000; insurance 15,000; A/R 48,000 &rarr; 56,000; inventory 66,000 &rarr; 60,000; prepaid insurance 5,000 &rarr; 7,000; A/P 18,000 &rarr; 22,000; wages payable 15,000 &rarr; 11,000):</p>
+        <table class="hw-table">
+          <tr><th>Direct method</th><th>Working</th><th>Amount</th></tr>
+          <tr><td class="hw-label">Cash collected from customers</td><td>700,000 &minus; 8,000 (A/R up)</td><td>692,000</td></tr>
+          <tr><td class="hw-label">Cash paid to suppliers</td><td>purchases = 425,000 &minus; 6,000 = 419,000; less 4,000 (A/P up)</td><td>(415,000)</td></tr>
+          <tr><td class="hw-label">Cash paid to employees</td><td>110,000 + 4,000 (payable down)</td><td>(114,000)</td></tr>
+          <tr><td class="hw-label">Rent paid</td><td>38,000 (no balance given)</td><td>(38,000)</td></tr>
+          <tr><td class="hw-label">Insurance paid</td><td>15,000 + 2,000 (prepaid up)</td><td>(17,000)</td></tr>
+          <tr><td class="hw-label">Net cash from operating activities</td><td>692 &minus; 415 &minus; 114 &minus; 38 &minus; 17</td><td><strong>108,000</strong></td></tr>
+        </table>
+        <p>The indirect result for the same company is 112,000 &minus; 8,000 + 6,000 &minus; 2,000 + 4,000 &minus; 4,000 = <strong>108,000</strong>. Same answer, two routes.</p>
+        <h4>Noncash investing and financing</h4>
+        <p>Some significant deals involve no cash at all, such as issuing shares to acquire an asset. Because no cash moves, they are <strong>left out of the three sections</strong> and disclosed separately. Example: issuing $200,000 of stock to buy land changes the balance sheet (land and equity up) but does not change CFO, CFI, CFF or cash. A reader who looked only at the three sections would never see it, which is why the disclosure exists.</p>
+      </div>
+    </div>
+
+    <div class="source-block" id="deep-classify" data-tier="deep">
+      <button class="source-toggle" aria-expanded="false"><span class="stitle"><span class="num">&#9650;2</span><h3>Classification Rules: Interest, Dividends, Leases</h3> <span class="tier tier-deep">&#9650; Go deeper</span></span><span class="chev">&#x2304;</span></button>
+      <div class="source-body">
+        <p><strong>What the slides and homework say (US GAAP):</strong> interest paid is operating; dividends paid are financing; loan principal is financing; the principal portion of a finance-lease payment is financing (homework Q1); purchases of intangibles are investing.</p>
+        <p><strong>General background, not from the slides:</strong> under US GAAP, interest and dividends <em>received</em> and income taxes paid are also generally operating. International standards (IFRS, IAS 7) are more flexible: an entity may classify interest and dividends paid as operating or financing, and interest and dividends received as operating or investing, if it applies the choice consistently. Treat this as background to check against the current standard, and use the slides' US GAAP rules for the exam.</p>
+        <div class="tiny-example">
+          <h4>Why classification matters</h4>
+          <p>Moving a $10 million payment from financing to operating changes CFO without changing the total change in cash. That is why analysts compare CFO across companies carefully and why the classification rule is part of every statement's footnotes.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="source-block" id="deep-apple" data-tier="deep">
+      <button class="source-toggle" aria-expanded="false"><span class="stitle"><span class="num">&#9650;3</span><h3>Reading Apple: Distributions Above Free Cash Flow</h3> <span class="tier tier-deep">&#9650; Go deeper</span></span><span class="chev">&#x2304;</span></button>
+      <div class="source-body">
+        <p>Apple paid out $106,132M against FCF of $98,767M, $7,365M more than it generated after reinvestment. Does returning more than annual FCF automatically mean a company is unhealthy? No. The slide's own prompt is to examine <strong>cash balances and financing</strong>:</p>
+        <ul>
+          <li><strong>Where did the extra come from?</strong> A one-year gap funded from a large cash and investment balance is a choice. The same gap funded by new debt, year after year, is a warning.</li>
+          <li><strong>Is it repeated?</strong> One year proves little. A multi-year pattern of distributions above FCF steadily drains the cushion.</li>
+          <li><strong>What is FCF made of?</strong> CFO can be lifted by working-capital timing (section 08). FCF built on stretched payables is less durable than FCF built on collections.</li>
+          <li><strong>Note:</strong> FCF as defined here (CFO &minus; CAPEX) is an analyst measure, not a line item on the statement. Companies and analysts sometimes define it slightly differently, so check the definition before comparing.</li>
+        </ul>
+        <p>Connect it to the life-cycle table: a mature company (+, &minus;, &minus;) returning cash to owners is the <em>expected</em> pattern. The question is sustainability, not the sign.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHEAT -->
+  <div class="wrap section" id="cheat" style="padding-top:0;">
+    <div class="section-head"><span class="eyebrow">Step 3 &middot; Cheat sheet</span><h2>Every Unit 11 formula on one page</h2></div>
+    <div class="cheat-grid">
+      <div class="cheat-card"><h4>The sections</h4><div class="cheat-formula">CFO + CFI + CFF = &Delta; cash<br>Ending = beginning + &Delta;</div><p>CFO: customers, suppliers, employees, interest. CFI: long-term assets and investments. CFF: lenders and owners.</p></div>
+      <div class="cheat-card"><h4>Indirect bridge</h4><div class="cheat-formula">NI + dep/amort + stock comp<br>+ losses &minus; gains<br>&plusmn; operating assets/liabilities<br>= CFO</div><p>Depreciation add-back does not create cash.</p></div>
+      <div class="cheat-card"><h4>Sign rules</h4><div class="cheat-formula">Op. asset up: &minus;   down: +<br>Op. liability up: +   down: &minus;</div><p>Assets do the opposite of the balance; liabilities do the same.</p></div>
+      <div class="cheat-card"><h4>Financing</h4><div class="cheat-formula">+ borrow, + issue stock<br>&minus; repay principal, &minus; buyback, &minus; dividends<br>Bond retired: cash paid = carrying value &minus; gain</div><p>Gain: &minus; in operating. Loss: + in operating.</p></div>
+      <div class="cheat-card"><h4>Investing</h4><div class="cheat-formula">Net PP&amp;E: purchases = end &minus; beg + dep + BV sold<br>Gross PP&amp;E: purchases = end &minus; beg + cost sold<br>BV = cost &minus; accum. depr.</div><p>Sale: investing + full proceeds; operating &minus; gain / + loss.</p></div>
+      <div class="cheat-card"><h4>Working backward</h4><div class="cheat-formula">Collected = revenue &minus; &Delta;A/R<br>Paid suppliers = purchases &minus; &Delta;A/P<br>Paid wages = expense &minus; &Delta;wages payable<br>Purchases = COGS + &Delta;inventory</div><p>Roll-forward: beginning + in &minus; out = ending.</p></div>
+      <div class="cheat-card"><h4>Ratios</h4><div class="cheat-formula">Quality = CFO &divide; NI<br>FCF = CFO &minus; CAPEX<br>Liquidity = CFO &divide; avg current liab.<br>Solvency = CFO &divide; CAPEX</div><p>Higher is stronger. Negative FCF is not automatically bankruptcy.</p></div>
+      <div class="cheat-card"><h4>Life cycle (CFO, CFI, CFF)</h4><div class="cheat-formula">Introduction: &minus; &minus; +<br>Growth: &plusmn; &minus; &plusmn;<br>Mature: + &minus; &minus;<br>Decline: &minus; + &plusmn;</div><p>Read all three; break ties by size.</p></div>
+    </div>
+    <div class="cheat-traps"><h4>Traps the exam sets</h4><ul>
+      <li>Treating depreciation, amortization or stock comp as if it generates cash (it is just added back).</li>
+      <li>Reporting only the gain from an equipment sale in investing (report the full proceeds; remove the gain in operating).</li>
+      <li>Getting the sign backwards on an operating asset (A/R up = subtract) or liability (A/P up = add).</li>
+      <li>Treating the change in net PP&amp;E as cash spent (add back depreciation and book value sold).</li>
+      <li>Counting an investing or financing item in CFO (e.g. the equity-investment purchase in Q4).</li>
+      <li>Forgetting that bond retirements are reported at cash paid in financing, with the gain or loss reversed in operating.</li>
+      <li>Using full credit sales as cash (Q15) or ignoring prior-year receivables and payables collected or paid this year.</li>
+      <li>Calling interest paid financing (it is operating) or principal operating (it is financing).</li>
+      <li>Assuming a ratio of 1.50 is always better, or negative FCF always means trouble.</li>
+    </ul></div>
+  </div>
+
+  <!-- PRACTICE -->
+  <div class="wrap section" id="practice" style="padding-top:0;">
+    <div class="section-head"><span class="eyebrow">Step 4 &middot; Practice</span><h2>Now test it</h2></div>
+    <div class="practice-panel">
+      <p style="margin:0;">Work in this order: the <a href="#quiz">quick quiz</a> below, then the professor's own problems, then the homework (the harder layer), then the mock test.</p>
+      <div class="practice-row">
+        <a class="btn blue" href="acctg-exam-prep.html?unit=m11p">Professor's Module 11 problems (30)</a>
+        <a class="btn ghost" href="acctg-homework.html?unit=u11">Module 11 homework (10)</a>
+        <a class="btn ghost" href="acctg-mock-test.html">ACCTG mock test</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- GLOSSARY -->
+  <div class="wrap section" id="glossary">
+    <div class="section-head"><span class="eyebrow">Reference</span><h2>Vocabulary bank</h2><p class="text-soft">Search or filter by category.</p></div>
+    <div class="glossary-controls">
+      <input type="search" id="glossary-search" placeholder="Search terms or definitions&#x2026;" aria-label="Search glossary">
+      <div class="chip-filter" role="group" aria-label="Filter glossary by category">
+        <button class="chip active" data-source="all">All</button>
+        <button class="chip" data-source="why">Profit vs Cash</button>
+        <button class="chip" data-source="sections">Three Sections</button>
+        <button class="chip" data-source="financing">Financing</button>
+        <button class="chip" data-source="investing">Investing</button>
+        <button class="chip" data-source="operating">Operating (Indirect)</button>
+        <button class="chip" data-source="backward">Working Backward</button>
+        <button class="chip" data-source="quality">Quality &amp; Ratios</button>
+        <button class="chip" data-source="lifecycle">Life Cycle</button>
+        <button class="chip" data-source="lenses">Real World</button>
+      </div>
+    </div>
+    <div class="glossary-count" id="glossary-count"></div>
+    <dl class="glossary-grid" id="glossary-grid">
+      <div class="term-card" data-source="why" data-search="accrual cash basis"><dt>Accrual vs cash basis</dt><dd>Accrual accounting records revenue when earned and expenses when incurred; cash basis records them when money moves. Net income is accrual-based, the cash flow statement is cash-based.</dd><span class="tag">Profit vs Cash</span></div>
+      <div class="term-card" data-source="why" data-search="statement of cash flows"><dt>Statement of cash flows</dt><dd>The statement that explains why cash changed between two balance sheet dates, in three sections: operating, investing and financing.</dd><span class="tag">Profit vs Cash</span></div>
+      <div class="term-card" data-source="why" data-search="cash equivalents"><dt>Cash and cash equivalents</dt><dd>Cash plus very short-term, highly liquid investments. The three sections add up to the change in this total.</dd><span class="tag">Profit vs Cash</span></div>
+      <div class="term-card" data-source="sections" data-search="operating cfo"><dt>Operating activities (CFO)</dt><dd>Cash generated or consumed by the main operations: customers, suppliers, employees, interest and the like.</dd><span class="tag">Three Sections</span></div>
+      <div class="term-card" data-source="sections" data-search="investing cfi"><dt>Investing activities (CFI)</dt><dd>Purchases and sales of long-term assets and investments, acquisitions, and collecting principal on loans made.</dd><span class="tag">Three Sections</span></div>
+      <div class="term-card" data-source="sections" data-search="financing cff"><dt>Financing activities (CFF)</dt><dd>Transactions with lenders and owners: borrowing and repaying principal, issuing and repurchasing stock, paying dividends.</dd><span class="tag">Three Sections</span></div>
+      <div class="term-card" data-source="sections" data-search="net change in cash"><dt>Net change in cash</dt><dd>CFO + CFI + CFF. Ending cash = beginning cash + this amount.</dd><span class="tag">Three Sections</span></div>
+      <div class="term-card" data-source="sections" data-search="noncash investing financing disclosure"><dt>Noncash investing and financing</dt><dd>Deals with no cash movement, such as issuing shares to acquire an asset. Left out of the three sections and disclosed separately.</dd><span class="tag">Three Sections</span></div>
+      <div class="term-card" data-source="financing" data-search="debt roll-forward"><dt>Debt roll-forward</dt><dd>Beginning debt + borrowing &minus; principal repaid = ending debt. The net of borrowing and repayment is the debt cash flow.</dd><span class="tag">Financing</span></div>
+      <div class="term-card" data-source="financing" data-search="treasury stock repurchase buyback"><dt>Stock repurchase (treasury stock)</dt><dd>Buying back the company's own shares. A financing outflow because cash goes back to owners.</dd><span class="tag">Financing</span></div>
+      <div class="term-card" data-source="financing" data-search="dividends paid"><dt>Dividends paid</dt><dd>Cash distributions to shareholders. A financing outflow under US GAAP.</dd><span class="tag">Financing</span></div>
+      <div class="term-card" data-source="financing" data-search="carrying value bond book value"><dt>Carrying value of a bond</dt><dd>What the books say is owed: face value minus unamortized discount (or plus premium).</dd><span class="tag">Financing</span></div>
+      <div class="term-card" data-source="financing" data-search="gain loss bond retirement"><dt>Gain/loss on bond retirement</dt><dd>Carrying value minus cash paid. Cash paid is financing; the gain is subtracted (loss added back) in operating.</dd><span class="tag">Financing</span></div>
+      <div class="term-card" data-source="financing" data-search="finance lease principal"><dt>Finance-lease principal</dt><dd>The principal part of a finance-lease payment. Reported in financing, like loan principal.</dd><span class="tag">Financing</span></div>
+      <div class="term-card" data-source="investing" data-search="capex capital expenditures purchases ppe"><dt>CAPEX</dt><dd>Capital expenditures: cash spent buying long-lived assets such as PP&amp;E. An investing outflow.</dd><span class="tag">Investing</span></div>
+      <div class="term-card" data-source="investing" data-search="ppe roll-forward"><dt>PP&amp;E roll-forward</dt><dd>Beginning + purchases &minus; depreciation &minus; book value sold = ending (net basis). Solve for purchases.</dd><span class="tag">Investing</span></div>
+      <div class="term-card" data-source="investing" data-search="book value net book value accumulated depreciation"><dt>Book value (net book value)</dt><dd>Cost minus accumulated depreciation. The sale price minus book value is the gain or loss.</dd><span class="tag">Investing</span></div>
+      <div class="term-card" data-source="investing" data-search="gain loss sale equipment"><dt>Gain or loss on sale</dt><dd>Sale price minus book value. Reversed in operating (gain subtracted, loss added) because proceeds are reported in investing.</dd><span class="tag">Investing</span></div>
+      <div class="term-card" data-source="investing" data-search="proceeds full sale"><dt>Proceeds</dt><dd>The cash actually received from a sale. Investing reports the full proceeds, not just the gain.</dd><span class="tag">Investing</span></div>
+      <div class="term-card" data-source="investing" data-search="intangible assets patent"><dt>Intangible assets</dt><dd>Patents, copyrights and similar assets. Cash purchases and sales are investing, like PP&amp;E.</dd><span class="tag">Investing</span></div>
+      <div class="term-card" data-source="operating" data-search="indirect method"><dt>Indirect method</dt><dd>Start with net income, then adjust for noncash items and changes in operating assets and liabilities to reach CFO.</dd><span class="tag">Operating (Indirect)</span></div>
+      <div class="term-card" data-source="operating" data-search="direct method"><dt>Direct method</dt><dd>Reports CFO as cash receipts and payments (collected from customers, paid to suppliers). Same total as the indirect method.</dd><span class="tag">Operating (Indirect)</span></div>
+      <div class="term-card" data-source="operating" data-search="depreciation amortization add-back noncash"><dt>Depreciation / amortization add-back</dt><dd>Noncash expenses that reduced net income without using cash, so they are added back. The add-back does not create cash.</dd><span class="tag">Operating (Indirect)</span></div>
+      <div class="term-card" data-source="operating" data-search="stock-based compensation sbc"><dt>Stock-based compensation</dt><dd>An expense paid in shares or options rather than cash. Added back in operating.</dd><span class="tag">Operating (Indirect)</span></div>
+      <div class="term-card" data-source="operating" data-search="operating assets liabilities working capital"><dt>Operating assets and liabilities</dt><dd>Receivables, inventory, prepaids, payables, wages payable, deferred revenue and similar. Their changes adjust net income into CFO.</dd><span class="tag">Operating (Indirect)</span></div>
+      <div class="term-card" data-source="operating" data-search="deferred revenue unearned customer advance"><dt>Deferred revenue</dt><dd>Cash received before revenue is earned (an operating liability). Increase = add to CFO; decrease = subtract.</dd><span class="tag">Operating (Indirect)</span></div>
+      <div class="term-card" data-source="operating" data-search="prepaid expenses"><dt>Prepaid expenses</dt><dd>Cash paid ahead of the expense (an operating asset). An increase reduces CFO.</dd><span class="tag">Operating (Indirect)</span></div>
+      <div class="term-card" data-source="operating" data-search="change in balance convention sign"><dt>Change in a balance (convention)</dt><dd>In the professor's problems, a positive &ldquo;change in X balance&rdquo; means the balance sheet balance rose. For an asset, that reduces CFO.</dd><span class="tag">Operating (Indirect)</span></div>
+      <div class="term-card" data-source="backward" data-search="cash collected customers"><dt>Cash collected from customers</dt><dd>Revenue &minus; increase in A/R (or + decrease).</dd><span class="tag">Working Backward</span></div>
+      <div class="term-card" data-source="backward" data-search="cash paid suppliers"><dt>Cash paid to suppliers</dt><dd>Purchases &minus; increase in A/P (or + decrease). Purchases = COGS + increase in inventory.</dd><span class="tag">Working Backward</span></div>
+      <div class="term-card" data-source="backward" data-search="cash paid employees wages"><dt>Cash paid to employees</dt><dd>Wages expense &minus; increase in wages payable (or + decrease).</dd><span class="tag">Working Backward</span></div>
+      <div class="term-card" data-source="backward" data-search="roll-forward plug"><dt>Roll-forward (the &ldquo;plug&rdquo;)</dt><dd>Beginning + increases &minus; decreases = ending. The cash flow is the missing piece you solve for.</dd><span class="tag">Working Backward</span></div>
+      <div class="term-card" data-source="quality" data-search="quality of earnings ratio cfo net income"><dt>Quality of earnings ratio</dt><dd>Operating cash flow &divide; net income. Above 1 means cash exceeds profit; below 1 means profit isn't converting to cash.</dd><span class="tag">Quality &amp; Ratios</span></div>
+      <div class="term-card" data-source="quality" data-search="free cash flow fcf"><dt>Free cash flow (FCF)</dt><dd>Operating cash flow &minus; CAPEX: cash left after reinvesting in long-lived assets.</dd><span class="tag">Quality &amp; Ratios</span></div>
+      <div class="term-card" data-source="quality" data-search="liquidity ratio current liabilities"><dt>Liquidity ratio</dt><dd>CFO &divide; average current liabilities. Higher means operations can better pay obligations as they come due.</dd><span class="tag">Quality &amp; Ratios</span></div>
+      <div class="term-card" data-source="quality" data-search="solvency ratio capex"><dt>Solvency ratio (CFO &divide; CAPEX)</dt><dd>The course's measure of whether operations fund capital spending. Above 1 means they do, with cash to spare.</dd><span class="tag">Quality &amp; Ratios</span></div>
+      <div class="term-card" data-source="lifecycle" data-search="life cycle stages introduction growth mature decline"><dt>Life-cycle stages</dt><dd>Introduction, growth, mature, decline: read from the signs of CFO, CFI and CFF together.</dd><span class="tag">Life Cycle</span></div>
+      <div class="term-card" data-source="lifecycle" data-search="sign pattern cfo cfi cff"><dt>Sign pattern</dt><dd>The (CFO, CFI, CFF) signs. Introduction &minus;&minus;+; growth +/&minus; &minus; +/&minus;; mature + &minus; &minus;; decline &minus; + +/&minus;.</dd><span class="tag">Life Cycle</span></div>
+      <div class="term-card" data-source="lenses" data-search="cash conversion"><dt>Cash conversion</dt><dd>How readily profit turns into operating cash. Helped by advance payments and fast inventory turns; hurt by swelling receivables and inventory.</dd><span class="tag">Real World</span></div>
+      <div class="term-card" data-source="lenses" data-search="stretching payables supplier terms"><dt>Stretching payables</dt><dd>Paying suppliers later. Raises CFO temporarily but reverses if payables shrink again.</dd><span class="tag">Real World</span></div>
+    </dl>
+  </div>
+
+  <!-- FLASHCARDS -->
+  <div class="wrap section" id="flashcards-section">
+    <div class="section-head"><span class="eyebrow">Drill</span><h2>Flashcards</h2><p class="text-soft">Filter to one category, shuffle, and flip through &mdash; click the card or press Enter/Space to flip.</p></div>
+    <div class="flash-controls">
+      <label for="flash-source" class="text-soft" style="font-family:var(--font-mono); font-size:.78rem;">Category:</label>
+      <select id="flash-source">
+        <option value="all">All categories</option>
+        <option value="why">Profit vs Cash</option>
+        <option value="sections">Three Sections</option>
+        <option value="financing">Financing</option>
+        <option value="investing">Investing</option>
+        <option value="operating">Operating (Indirect)</option>
+        <option value="backward">Working Backward</option>
+        <option value="quality">Quality &amp; Ratios</option>
+        <option value="lifecycle">Life Cycle</option>
+        <option value="lenses">Real World</option>
+      </select>
+      <button class="btn ghost" id="flash-shuffle">Shuffle</button>
+    </div>
+    <div class="flash-stage" id="flash-stage">
+      <div class="flashcard" id="flashcard" tabindex="0" role="button" aria-label="Flashcard, click to flip">
+        <div class="flashcard-inner">
+          <div class="flashcard-face front"><span class="fc-label">Question</span><p></p></div>
+          <div class="flashcard-face back"><span class="fc-label">Answer</span><p></p></div>
+        </div>
+      </div>
+      <div class="flash-nav">
+        <button class="btn ghost" id="flash-prev">&#x2190; Prev</button>
+        <span class="flash-meta" id="flash-meta"></span>
+        <button class="btn ghost" id="flash-next">Next &#x2192;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUIZ -->
+  <div class="wrap section" id="quiz">
+    <div class="section-head"><span class="eyebrow">Test yourself</span><h2>Unit 11 quick quiz</h2><p class="text-soft">A short check across all sections, randomized each attempt, with an explanation after every answer.</p></div>
+    <div class="quiz-shell" id="quiz-shell">
+      <div class="quiz-progress"><div class="quiz-progress-bar" id="quiz-progress-bar"></div></div>
+      <div class="quiz-meta" id="quiz-meta">Ready when you are</div>
+      <div id="quiz-start-screen" style="text-align:center; padding: 30px 10px;">
+        <p class="text-soft">Covers profit versus cash, classifying items into operating, investing and financing, the indirect-method bridge and its sign rules, bond retirements and equipment sales, working backward from revenue and expenses, quality of earnings, free cash flow and ratios, and life-cycle sign patterns.</p>
+        <button class="btn blue" id="quiz-start">Start quiz</button>
+      </div>
+      <div id="quiz-body" style="display:none;"></div>
+    </div>
+  </div>
+
+  <div class="wrap section">
+    <div class="section-head"><span class="eyebrow">Before the exam</span><h2>Likely exam angles</h2></div>
+    <div class="callout"><ul style="margin:0;">
+      <li>Classify items as operating, investing or financing, and solve for a missing section using CFO + CFI + CFF = change in cash.</li>
+      <li>Indirect-method CFO from a list: add back depreciation, amortization and stock comp; subtract gains; apply the asset/liability sign rules; leave investing and financing items out.</li>
+      <li>Equipment sale: full proceeds in investing, gain or loss moved in operating. PP&amp;E purchases from a roll-forward (net or gross).</li>
+      <li>Bond retirement at a gain or loss: cash paid in financing, the gain or loss reversed in operating.</li>
+      <li>Working backward: cash collected, cash paid to suppliers and employees, net income from CFO, and a missing balance change.</li>
+      <li>Conceptual: why gains are reversed, why depreciation is added back, what a deferred revenue decrease means, quality of earnings, and why the three categories exist.</li>
+      <li>Life-cycle stage from the signs (+/&minus;/+ is growth; &minus;/+/+ is decline), and the homework layer: ratios, free cash flow and rank-ordering.</li>
+    </ul></div>
+  </div>
+
+</main>
+
+<footer class="footer"><div class="wrap"><p>ACCTG 6000 &mdash; Financial Accounting, University of Utah PMBA. Built from the professor's Module 11 slides, 30 practice problems and the 10-question homework.</p></div></footer>
+
+<script src="assets/acctg11-flashcards-data.js"></script>
+<script src="assets/acctg11-quiz-data.js"></script>
+<script src="assets/app.js"></script>
+<script src="assets/learnpath.js"></script>
+<script>
+  (function(){ var f=document.getElementById('stat-flash'), q=document.getElementById('stat-quiz');
+    if(f && typeof FLASHCARDS!=='undefined') f.textContent=FLASHCARDS.length;
+    if(q && typeof QUIZ_QUESTIONS!=='undefined') q.textContent=QUIZ_QUESTIONS.length; })();
+</script>
+</body>
+</html>
