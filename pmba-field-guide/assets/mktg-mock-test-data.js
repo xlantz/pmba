@@ -2930,7 +2930,786 @@ const MKTG19_QUIZ_QUESTIONS = [
   }
 ];
 
-const MKTG_MOCK_POOL = MKTG1_QUIZ_QUESTIONS.concat(MKTG2_QUIZ_QUESTIONS).concat(MKTG3_QUIZ_QUESTIONS).concat(MKTG7_QUIZ_QUESTIONS).concat(MKTG6_QUIZ_QUESTIONS).concat(MKTG17_QUIZ_QUESTIONS).concat(MKTG18_QUIZ_QUESTIONS).concat(MKTG5_QUIZ_QUESTIONS).concat(MKTG10_QUIZ_QUESTIONS).concat(MKTG20_QUIZ_QUESTIONS).concat(MKTG8_QUIZ_QUESTIONS).concat(MKTG19_QUIZ_QUESTIONS);
+const MKTG9_QUIZ_QUESTIONS = [
+  {
+    "source": "c9_nature",
+    "prompt": "Which category of offering best describes a restaurant meal?",
+    "options": [
+      "Pure tangible good",
+      "Hybrid offering",
+      "Major service with minor goods",
+      "Pure service"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The chapter calls restaurants good examples of hybrid offerings: equal parts goods and services."
+  },
+  {
+    "source": "c9_nature",
+    "prompt": "A benefit the buyer finds hard to evaluate even after consumption is a:",
+    "options": [
+      "Search benefit",
+      "Experience benefit",
+      "Credence benefit",
+      "Tangible benefit"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Credence benefits remain hard to judge even after consumption; search benefits are judged before purchase and experience benefits after."
+  },
+  {
+    "source": "c9_nature",
+    "prompt": "Because services are high in experience and credence qualities, buyers tend to:",
+    "options": [
+      "Rely on word of mouth rather than advertising",
+      "Rely mainly on advertising",
+      "Switch providers often because switching costs are low",
+      "Ignore price and physical cues"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Higher risk leads buyers to word of mouth, price, provider, and physical cues, and to loyalty to satisfying providers; switching costs are high."
+  },
+  {
+    "source": "c9_four",
+    "prompt": "A haircut cannot be produced without the barber. Which service characteristic is this?",
+    "options": [
+      "Intangibility",
+      "Variability",
+      "Perishability",
+      "Inseparability"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Services are produced and consumed simultaneously, and the provider is part of the service."
+  },
+  {
+    "source": "c9_four",
+    "prompt": "Which is NOT one of the three steps for controlling service variability?",
+    "options": [
+      "Invest in hiring and training",
+      "Raise prices during peak periods",
+      "Standardize the service-performance process",
+      "Monitor customer satisfaction"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Peak pricing addresses perishability (demand management), not variability."
+  },
+  {
+    "source": "c9_four",
+    "prompt": "In a service blueprint, behind-the-scenes 'invisible' employee actions that affect the customer are:",
+    "options": [
+      "Support processes",
+      "Front-stage employee actions",
+      "Backstage employee actions",
+      "Physical evidence"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Backstage actions are invisible to the customer; support processes provide inputs to both front- and backstage staff."
+  },
+  {
+    "source": "c9_four",
+    "prompt": "ARAMARK used service blueprints at Lake Powell Resorts and Marinas and found repeat business had declined mainly because:",
+    "options": [
+      "Customers had to expend too much effort themselves",
+      "Prices were too high",
+      "Employees were rude",
+      "Facilities looked outdated"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The blueprint revealed the inordinate effort customers expended; fixing processes cut complaints and raised repeat business."
+  },
+  {
+    "source": "c9_perish",
+    "prompt": "Yield management is best described as:",
+    "options": [
+      "Training employees to serve customers",
+      "Ranking service dimensions by importance",
+      "Letting customers help produce the service",
+      "Flexible pricing to increase profit from time-limited, fixed inventory"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Yield management sets prices to match predictable demand to available capacity (e.g., hotel low-season vs. high-season rates)."
+  },
+  {
+    "source": "c9_perish",
+    "prompt": "Which is a supply-side strategy for handling demand fluctuations?",
+    "options": [
+      "Using part-time employees to serve peak demand",
+      "Differential pricing",
+      "Reservation systems",
+      "Cultivating nonpeak demand"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The other three manage demand; part-timers, peak-time efficiency routines, and consumer participation adjust supply."
+  },
+  {
+    "source": "c9_realities",
+    "prompt": "One study estimated that about what share of all service problems are caused by the customer?",
+    "options": [
+      "About 10 percent",
+      "One-half",
+      "One-third",
+      "Two-thirds"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The chapter cites one-third and notes self-service technologies may raise it."
+  },
+  {
+    "source": "c9_excel",
+    "prompt": "Internal marketing consists of:",
+    "options": [
+      "Preparing, pricing, and promoting the service",
+      "Training and motivating employees to serve customers well",
+      "Surveying customers about satisfaction",
+      "Setting differential prices"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "External marketing is preparing, pricing, distributing, and promoting; internal marketing targets employees."
+  },
+  {
+    "source": "c9_excel",
+    "prompt": "Why does the chapter say a 98 percent accuracy standard is too low?",
+    "options": [
+      "It costs too much to reach",
+      "Customers expect 100 percent satisfaction surveys",
+      "It would only apply to hotels",
+      "It would still mean about 64,000 lost FedEx packages a day"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The 98% example also implies 400,000 wrong prescriptions daily and 3 million lost USPS pieces of mail a day."
+  },
+  {
+    "source": "c9_excel",
+    "prompt": "On average, what percent of customers who have a bad service experience stop doing business with the company?",
+    "options": [
+      "40 percent",
+      "10 percent",
+      "25 percent",
+      "60 percent"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Those who complain first, and are handled well, can be a gift; firms that empower on-the-spot fixes earn higher revenue and profit."
+  },
+  {
+    "source": "c9_differ",
+    "prompt": "Returns that result from customers needing to see, try, or experience a product in person are:",
+    "options": [
+      "Controllable returns",
+      "Uncontrollable returns",
+      "Seller-error returns",
+      "Logistics returns"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Controllable returns come from seller or customer errors and can be largely eliminated; uncontrollable returns cannot be in the short run."
+  },
+  {
+    "source": "c9_quality",
+    "prompt": "Gap 3 in the service-quality model is the gap between:",
+    "options": [
+      "Consumer expectation and management perception",
+      "Service delivery and external communications",
+      "Service-quality specifications and service delivery",
+      "Perceived and expected service"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Gap 3 arises from poorly trained, unable, unwilling, or conflicting-standard employees (e.g., nurses unsure whether to listen or be fast)."
+  },
+  {
+    "source": "c9_quality",
+    "prompt": "Which is NOT one of the five determinants of service quality?",
+    "options": [
+      "Reliability",
+      "Responsiveness",
+      "Empathy",
+      "Profitability"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The five are reliability, responsiveness, assurance, empathy, and tangibles, in descending order of importance."
+  },
+  {
+    "source": "c9_quality",
+    "prompt": "The 'zone of tolerance' is the range between:",
+    "options": [
+      "The minimum level customers will accept and the level they believe can and should be delivered",
+      "Peak and off-peak demand",
+      "Management perception and customer expectation",
+      "The firm's price and competitors' price"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "A service within the zone is deemed satisfactory."
+  },
+  {
+    "source": "c9_selfsvc",
+    "prompt": "As product service matures, manufacturers typically shift maintenance and repair to:",
+    "options": [
+      "Customers only",
+      "Authorized distributors and dealers, then later independent service firms",
+      "Independent firms first, then their own departments",
+      "Retailers exclusively"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Manufacturers usually start with their own parts-and-service departments, then authorized dealers, then independents emerge with lower prices or faster service."
+  }
+];
+
+const MKTG11_QUIZ_QUESTIONS = [
+  {
+    "source": "c11_role",
+    "prompt": "According to the chapter, what distinguishes price from the other marketing mix elements?",
+    "options": [
+      "It is the only element that cannot be changed quickly",
+      "It is the only element controlled by finance",
+      "It is the only element that produces revenue",
+      "It is the only element customers ignore"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The chapter states price is the one element that produces revenue; the others produce costs."
+  },
+  {
+    "source": "c11_role",
+    "prompt": "Wendy's announced a test of 'dynamic pricing' and consumers were angry mainly because they interpreted it as:",
+    "options": [
+      "Surge pricing, where prices only go up",
+      "A permanent price freeze",
+      "Loss-leader pricing",
+      "Odd-ending pricing"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Dynamic pricing moves both ways, but consumers heard surge pricing and felt treated unfairly."
+  },
+  {
+    "source": "c11_psych",
+    "prompt": "A seller advertises a $600 annual membership as '$50 a month.' This is mainly an example of:",
+    "options": [
+      "Price discrimination",
+      "Penetration pricing",
+      "Predatory pricing",
+      "Framing the price relative to a reference"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The chapter says breaking the price into smaller units frames it to look less expensive though totals are equal."
+  },
+  {
+    "source": "c11_psych",
+    "prompt": "Which firm should be most careful about using 9-ending prices?",
+    "options": [
+      "A discounter promoting bargains",
+      "One that wants a high-price, premium image",
+      "A firm selling to infrequent buyers new to the category",
+      "A firm whose prices vary seasonally"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "9-endings suggest a discount or bargain, so firms wanting a high price image should probably avoid them."
+  },
+  {
+    "source": "c11_psych",
+    "prompt": "Ferrari restricting sales to below 9,000 cars despite rising demand best illustrates:",
+    "options": [
+      "Penetration pricing",
+      "Loss-leader pricing",
+      "Exclusivity and scarcity supporting premium pricing",
+      "Two-part pricing"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Luxury brands use exclusivity and scarcity to signal uniqueness and justify premium prices."
+  },
+  {
+    "source": "c11_objdemand",
+    "prompt": "Texas Instruments built a large plant, set price as low as possible, won share, and cut price further as costs fell. Which objective is this?",
+    "options": [
+      "Market penetration",
+      "Market skimming",
+      "Quality leadership",
+      "Short-term profit maximization"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Penetration pricing assumes volume lowers unit costs and the market is price sensitive."
+  },
+  {
+    "source": "c11_objdemand",
+    "prompt": "Which condition favors market skimming?",
+    "options": [
+      "The market is highly price sensitive",
+      "Costs fall with accumulated experience",
+      "A low price discourages competition",
+      "The high initial price does not attract more competitors"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Skimming needs high current demand, no flood of new entrants, and a superior-image signal."
+  },
+  {
+    "source": "c11_objdemand",
+    "prompt": "Price rises from $10 to $15; quantity falls from 150 to 50 (Figure 11.1b). Demand is:",
+    "options": [
+      "Inelastic, and revenue rises",
+      "Elastic, and revenue falls from $1,500 to $750",
+      "Elastic, and revenue rises",
+      "Inelastic, and revenue falls"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Quantity fell far more (about 67%) than price rose (50%): elastic; revenue 10x150=1,500 becomes 15x50=750."
+  },
+  {
+    "source": "c11_objdemand",
+    "prompt": "Price elasticity is generally LOW when:",
+    "options": [
+      "The expense is a large part of the buyer's income",
+      "Buyers notice higher prices quickly",
+      "The product is distinctive with few substitutes",
+      "Buyers switch habits easily"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Distinctiveness and few substitutes lower elasticity; large, noticeable expenses raise it."
+  },
+  {
+    "source": "c11_objdemand",
+    "prompt": "In the experience-curve example, all three firms sell at $100. Samsung's cost is $80. Samsung's profit per unit is:",
+    "options": [
+      "$20",
+      "$10",
+      "$0",
+      "$80"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "$100 - $80 = $20; Firm A earns $10 at $90 cost and Firm B breaks even at $100."
+  },
+  {
+    "source": "c11_methods",
+    "prompt": "Toaster: variable cost $10, fixed cost $300,000, 50,000 units, 20% markup on sales. The markup price is:",
+    "options": [
+      "$19.20",
+      "$16",
+      "$24",
+      "$20"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Unit cost = 10 + 300,000/50,000 = $16; price = 16/(1-0.2) = $20."
+  },
+  {
+    "source": "c11_methods",
+    "prompt": "At a $20 price, $10 variable cost, and $300,000 fixed cost, break-even volume is:",
+    "options": [
+      "15,000 units",
+      "30,000 units",
+      "50,000 units",
+      "20,000 units"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "300,000 / (20 - 10) = 30,000 units."
+  },
+  {
+    "source": "c11_methods",
+    "prompt": "A seller bases its price largely on rivals' prices and keeps a small fixed premium or discount. This is:",
+    "options": [
+      "Target-return pricing",
+      "Markup pricing",
+      "Competitive (going-rate) pricing",
+      "Economic-value-to-customer pricing"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Competitive pricing follows the leader, common in commodity industries."
+  },
+  {
+    "source": "c11_final",
+    "prompt": "Evian sells a 1-liter bottle for $3 but 2 ounces of the same water in a moisturizer spray for $9. This is:",
+    "options": [
+      "Product-form (third-degree) price discrimination",
+      "First-degree price discrimination",
+      "Second-degree price discrimination",
+      "Predatory pricing"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Different versions priced not in proportion to cost is product-form pricing, a third-degree discrimination type."
+  },
+  {
+    "source": "c11_final",
+    "prompt": "A firm sells razors cheaply and razor blades at a high markup. This is:",
+    "options": [
+      "Loss-leader pricing",
+      "By-product pricing",
+      "Mixed bundling",
+      "Captive-product pricing"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Required ancillary items priced high is captive-product pricing."
+  },
+  {
+    "source": "c11_changes",
+    "prompt": "A company with a 3% profit margin raises price 1% with no volume change. Profit rises by about:",
+    "options": [
+      "1%",
+      "33%",
+      "3%",
+      "10%"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Price $10, 100 units, cost $970: profit $30; at $10.10 profit is $40, up 33%."
+  },
+  {
+    "source": "c11_incentives",
+    "prompt": "List price $3,000; average discount $300; promotional spending $450; co-op advertising $150. The net price is:",
+    "options": [
+      "$2,550",
+      "$2,700",
+      "$2,100",
+      "$3,000"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "3,000 - 300 - 450 - 150 = 2,100."
+  },
+  {
+    "source": "c11_incentives",
+    "prompt": "A push strategy is MOST appropriate when:",
+    "options": [
+      "Brand loyalty is low and the brand is chosen in the store",
+      "Brand loyalty is high and brand is chosen before the store",
+      "Consumers perceive large brand differences",
+      "The goal is to use only advertising"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Push suits low loyalty, in-store choice, impulse items, and well-understood benefits."
+  },
+  {
+    "source": "c11_incentives",
+    "prompt": "The terms '2/10, net 30' mean:",
+    "options": [
+      "10% discount if paid in 2 days",
+      "2% interest if paid after 10 days",
+      "Net price falls 30% after 10 days",
+      "2% discount if paid within 10 days; otherwise full payment is due within 30"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "It is a payment discount for prompt payment."
+  }
+];
+
+const MKTG14_QUIZ_QUESTIONS = [
+  {
+    "source": "c14_basics",
+    "prompt": "Which is NOT one of the three notable qualities of personal selling?",
+    "options": [
+      "Customized",
+      "Standardized",
+      "Relationship oriented",
+      "Response oriented"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Personal selling is customized, relationship oriented, and response oriented. A standardized message is the opposite of customized."
+  },
+  {
+    "source": "c14_basics",
+    "prompt": "A rep's AI tool alerts her that a key contact has moved to a new company. According to the chapter, this alert is valuable because it:",
+    "options": [
+      "Replaces the need for any relationship building",
+      "Automatically closes the sale at the new company",
+      "Lets managers set quotas without data",
+      "Signals a possible new account and that the original account may be at risk"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The chapter says such alerts give a reason to reach out and indicate both new-account opportunity and risk at the original account."
+  },
+  {
+    "source": "c14_process",
+    "prompt": "In IBM's BANT approach to qualifying leads, what does the 'A' stand for?",
+    "options": [
+      "Authority to buy",
+      "Advantage over competitors",
+      "Awareness of the brand",
+      "Annual sales volume"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "BANT = Budget, Authority, Need, Timeline."
+  },
+  {
+    "source": "c14_process",
+    "prompt": "Which sequence correctly orders the selling process?",
+    "options": [
+      "Pre-approach, prospecting, persuasion, presentation, servicing, closing",
+      "Prospecting, presentation, pre-approach, closing, persuasion, servicing",
+      "Prospecting, pre-approach, presentation, persuasion, closing, servicing",
+      "Presentation, prospecting, pre-approach, persuasion, servicing, closing"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Figure 14.1 lists the steps in this order."
+  },
+  {
+    "source": "c14_process",
+    "prompt": "In FABV, which element describes the offering's attributes relative to the competition?",
+    "options": [
+      "Features",
+      "Benefits",
+      "Advantages",
+      "Value"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Features are physical characteristics; advantages compare with competitors; benefits are gains; value is worth (benefits and costs)."
+  },
+  {
+    "source": "c14_process",
+    "prompt": "A buyer says, \"We have always used our current supplier and don't want to change.\" This is mainly:",
+    "options": [
+      "Psychological resistance",
+      "Logical resistance",
+      "A closing sign",
+      "A price objection"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Habit and resistance to change are psychological resistance; price, delivery, or product concerns are logical."
+  },
+  {
+    "source": "c14_process",
+    "prompt": "SPIN questions are Situation, Problem, Implication, and:",
+    "options": [
+      "Negotiation",
+      "Purchase",
+      "Price",
+      "Need-payoff"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "SPIN's final letter is Need-payoff questions."
+  },
+  {
+    "source": "c14_strategy",
+    "prompt": "In the furniture-maker example, the sales agency is the better channel when:",
+    "options": [
+      "Expected sales volume is above SR",
+      "Expected sales volume is below the break-even level SR",
+      "The company wants zero commissions",
+      "The agency has fewer reps than the company would hire"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Agency costs start lower but rise faster, so the agency wins below SR and the company force wins above it."
+  },
+  {
+    "source": "c14_strategy",
+    "prompt": "Which task involves deciding which customers receive scarce products during shortages?",
+    "options": [
+      "Allocating",
+      "Targeting",
+      "Servicing",
+      "Information gathering"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Allocating is deciding who gets scarce products; targeting is about allocating time among prospects."
+  },
+  {
+    "source": "c14_strategy",
+    "prompt": "A leveraged sales force is one in which:",
+    "options": [
+      "All customers are served by independent agents",
+      "Reps are paid only by straight commission",
+      "Reps focus on complex products for large accounts while inside sales handles low-end selling",
+      "Sales territories are drawn only by geography"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The leveraged force keeps reps on complex, customized, large-account selling."
+  },
+  {
+    "source": "c14_sizecomp",
+    "prompt": "A firm has 500 A accounts needing 24 calls a year and 1,000 B accounts needing 6 calls a year. A rep makes 1,000 calls a year. Using the workload approach, how many reps are needed?",
+    "options": [
+      "12",
+      "18",
+      "24",
+      "30"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "500 x 24 = 12,000 plus 1,000 x 6 = 6,000, total 18,000 calls; 18,000 / 1,000 = 18 reps."
+  },
+  {
+    "source": "c14_sizecomp",
+    "prompt": "Which compensation component satisfies a rep's need for income stability?",
+    "options": [
+      "Variable amount",
+      "Expense allowance",
+      "Commission accelerator",
+      "Fixed amount (salary)"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The fixed amount satisfies income stability; the variable amount stimulates and rewards effort."
+  },
+  {
+    "source": "c14_manage",
+    "prompt": "Which approach is a better predictor of sales performance than background and personality variables?",
+    "options": [
+      "Composite tests and assessment centers",
+      "Years of experience alone",
+      "Interviewer impressions alone",
+      "Personality inventories alone"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The chapter says composite tests and assessment centers that simulate the working environment predict better."
+  },
+  {
+    "source": "c14_manage",
+    "prompt": "Which incentive is recommended for 'star' performers?",
+    "options": [
+      "Consistent quarterly bonuses and social pressure",
+      "Multitier stepping-stone targets only",
+      "No cap on commissions and overachievement commissions",
+      "Fixed salary with tight quotas"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Stars benefit from no ceilings and overachievement commissions; laggards respond to quarterly bonuses and social pressure."
+  },
+  {
+    "source": "c14_manage",
+    "prompt": "Compared with a field sales contact (about $300 to $500), a contact by an inside salesperson costs about:",
+    "options": [
+      "$100 to $150",
+      "$300 to $500",
+      "$1,000",
+      "$25 to $30"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The chapter cites $25 to $30 for inside vs. $300 to $500 for field."
+  },
+  {
+    "source": "c14_direct",
+    "prompt": "In the RFM formula used for direct mail, the 'M' stands for:",
+    "options": [
+      "Media mix",
+      "Monetary amount spent",
+      "Market share",
+      "Mailing frequency"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "RFM = Recency, Frequency, Monetary amount."
+  },
+  {
+    "source": "c14_direct",
+    "prompt": "Under the chapter's description of US rules, robo-calls are legal when they:",
+    "options": [
+      "Deliver relevant information such as appointment reminders or fraud alerts",
+      "Sell products or services",
+      "Offer discounts to new prospects",
+      "Are placed by outbound call centers for any reason"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Prerecorded calls are legal for relevant information or election campaigns; selling by robo-call is not."
+  },
+  {
+    "source": "c14_direct",
+    "prompt": "Why does a 2% response rate to a direct-mail piece understate its impact?",
+    "options": [
+      "The remaining 98% were already customers",
+      "Direct mail has low readership",
+      "Many more recipients became aware, formed intentions, or told others",
+      "Response rates are always inflated"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Impact on awareness, intention to buy, and word of mouth is not captured by orders alone."
+  }
+];
+
+const MKTG_MOCK_POOL = MKTG1_QUIZ_QUESTIONS.concat(MKTG2_QUIZ_QUESTIONS).concat(MKTG3_QUIZ_QUESTIONS).concat(MKTG7_QUIZ_QUESTIONS).concat(MKTG6_QUIZ_QUESTIONS).concat(MKTG17_QUIZ_QUESTIONS).concat(MKTG18_QUIZ_QUESTIONS).concat(MKTG5_QUIZ_QUESTIONS).concat(MKTG10_QUIZ_QUESTIONS).concat(MKTG20_QUIZ_QUESTIONS).concat(MKTG8_QUIZ_QUESTIONS).concat(MKTG19_QUIZ_QUESTIONS).concat(MKTG9_QUIZ_QUESTIONS).concat(MKTG11_QUIZ_QUESTIONS).concat(MKTG14_QUIZ_QUESTIONS);
 const MKTG_MOCK_LABELS = {
   scope: "Ch 1 \u00b7 Scope & Realities",
   holistic: "Ch 1 \u00b7 Holistic Marketing",
@@ -2992,4 +3771,26 @@ const MKTG_MOCK_LABELS = {
   c19_clv: "Ch 19 · Customer Lifetime Value",
   c19_trust: "Ch 19 · Value Strategies & Trust",
   c19_spot: "Ch 19 · Spotlights",
+  c9_nature: "Ch 9 \u00b7 Nature of Services",
+  c9_four: "Ch 9 \u00b7 Four Characteristics & Blueprints",
+  c9_perish: "Ch 9 \u00b7 Perishability & Yield Management",
+  c9_realities: "Ch 9 \u00b7 New Service Realities",
+  c9_excel: "Ch 9 \u00b7 Service Excellence & Best Practices",
+  c9_differ: "Ch 9 \u00b7 Differentiating & Innovating Services",
+  c9_quality: "Ch 9 \u00b7 Service Quality & the Gap Model",
+  c9_selfsvc: "Ch 9 \u00b7 Self-Service, Bundles & Spotlights",
+  c11_role: "Ch 11 \u00b7 Understanding Pricing & Why It Matters",
+  c11_psych: "Ch 11 \u00b7 Consumer Psychology of Price",
+  c11_objdemand: "Ch 11 \u00b7 Pricing Objectives, Demand, Costs & Competitors",
+  c11_methods: "Ch 11 \u00b7 Selecting a Pricing Method",
+  c11_final: "Ch 11 \u00b7 Setting the Final Price & Product-Mix Pricing",
+  c11_changes: "Ch 11 \u00b7 Initiating & Responding to Price Changes",
+  c11_incentives: "Ch 11 \u00b7 Sales Promotions & Incentives",
+  c14_basics: "Ch 14 \u00b7 Personal Selling & AI in Sales",
+  c14_process: "Ch 14 \u00b7 The Selling Process",
+  c14_strategy: "Ch 14 \u00b7 Sales Force Objectives, Strategy & Structure",
+  c14_sizecomp: "Ch 14 \u00b7 Sales Force Size & Compensation",
+  c14_manage: "Ch 14 \u00b7 Managing the Sales Force",
+  c14_direct: "Ch 14 \u00b7 Direct Marketing & Its Channels",
+  c14_future: "Ch 14 \u00b7 Future of Direct Marketing & Integration"
 };

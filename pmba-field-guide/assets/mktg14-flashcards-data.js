@@ -1,0 +1,38 @@
+const FLASHCARDS = [
+  { "source": "basics", "front": "What is personal selling and when is it most effective?", "back": "Direct interaction with prospective buyers to present, answer questions, and procure orders; most effective at later stages of the buying process (preference, conviction, action)." },
+  { "source": "basics", "front": "What are the three notable qualities of personal selling?", "back": "Customized, relationship oriented, and response oriented." },
+  { "source": "basics", "front": "What is conversation intelligence?", "back": "AI software that observes (with permission) rep-customer calls, emails, and chats to find what top reps say and which value propositions resonate, then coaches the whole sales organization." },
+  { "source": "basics", "front": "Name two concerns sales organizations have about adopting AI.", "back": "Job security (e.g., Meta's 2023 layoffs) and impersonal customer experience; also unreliable data affecting forecasts, contracts, or pay." },
+  { "source": "process", "front": "List the six steps of the selling process in order.", "back": "Prospecting, pre-approach, presentation, persuasion, closing, servicing." },
+  { "source": "process", "front": "What does BANT stand for?", "back": "Budget, Authority, Need, Timeline: a lead-qualification test used by IBM." },
+  { "source": "process", "front": "What does FABV stand for, and what mistake does it address?", "back": "Features, Advantages, Benefits, Value. Reps spend too much time on features (product orientation) instead of benefits and value (customer orientation)." },
+  { "source": "process", "front": "Distinguish psychological from logical resistance.", "back": "Psychological: change aversion, habit, inertia, decision fatigue, anticipated regret. Logical: objections to price, delivery schedule, product or company characteristics." },
+  { "source": "process", "front": "What does SPIN stand for?", "back": "Situation, Problem, Implication, and Need-payoff questions." },
+  { "source": "strategy", "front": "Name the six tasks of salespeople.", "back": "Information gathering, targeting, communicating, selling, servicing, allocating." },
+  { "source": "strategy", "front": "Direct vs. contractual sales force?", "back": "Direct: paid employees working exclusively for the company (inside or field). Contractual: reps, agents, and brokers paid commission on sales." },
+  { "source": "strategy", "front": "In the furniture example, when is the sales agency the better channel?", "back": "For sales volumes below the break-even level SR; the company sales force is better above SR because agency costs rise faster." },
+  { "source": "strategy", "front": "What is a leveraged sales force?", "back": "Reps focus on complex, customized products for large accounts; inside salespeople and online ordering handle low-end selling." },
+  { "source": "strategy", "front": "What is a strategic account management team?", "back": "A cross-functional team that integrates product development, technical support, supply chain, and marketing for a major account (P&G has about 300 staffers on Walmart)." },
+  { "source": "sizecomp", "front": "List the workload approach steps for sales force size.", "back": "Group customers by size; set call frequency per class; accounts x frequency = total calls; find calls per rep; total calls / calls per rep = reps needed." },
+  { "source": "sizecomp", "front": "1,000 A accounts at 36 calls and 2,000 B accounts at 12 calls, 1,000 calls per rep: how many reps?", "back": "36,000 + 24,000 = 60,000 calls; 60,000 / 1,000 = 60 reps." },
+  { "source": "sizecomp", "front": "What are the four components of sales force compensation?", "back": "Fixed amount (salary), variable amount (commission, bonus, etc.), expense allowances, and benefits." },
+  { "source": "sizecomp", "front": "Compare straight salary and straight commission.", "back": "Salary: secure income, supports non-selling tasks, less overstocking, lower turnover. Commission: attracts high performers, motivates, needs less supervision, controls cost, but stresses the sale over the relationship." },
+  { "source": "manage", "front": "Which tools predict sales performance better than background variables?", "back": "Composite tests and assessment centers that simulate the working environment." },
+  { "source": "manage", "front": "Compare inside and field contact costs.", "back": "Inside: about $25 to $30 per contact. Field: about $300 to $500 including travel." },
+  { "source": "manage", "front": "How should incentives differ for stars, core performers, and laggards?", "back": "Stars: no caps and overachievement commissions. Core: multitier targets and varied contests. Laggards: consistent quarterly bonuses and social pressure." },
+  { "source": "manage", "front": "What problems can sales quotas create?", "back": "Underestimating overpays reps; overestimating frustrates them; quotas can push reps to ignore service, trading long-term satisfaction for short-term results." },
+  { "source": "direct", "front": "Define direct marketing.", "back": "Use of consumer-direct channels to reach and deliver goods and services to customers without marketing intermediaries." },
+  { "source": "direct", "front": "What do R, F, and M stand for in the RFM formula?", "back": "Recency of last purchase, Frequency of purchases, Monetary amount spent." },
+  { "source": "direct", "front": "Inbound vs. outbound telemarketing, and when are robo-calls legal in the US?", "back": "Inbound: receiving calls; outbound: initiating calls. Robo-calls are legal for relevant information (appointment reminders, fraud alerts) or election campaigns, not for selling." },
+  { "source": "future", "front": "Why do direct-mail response rates understate impact?", "back": "Many more recipients become aware, form buying intentions, or spread word of mouth; firms may measure awareness, intention, and word of mouth too." },
+];
+
+const SOURCE_LABELS = {
+  "basics": "Personal Selling & AI in Sales",
+  "process": "The Selling Process",
+  "strategy": "Sales Force Objectives, Strategy & Structure",
+  "sizecomp": "Sales Force Size & Compensation",
+  "manage": "Managing the Sales Force",
+  "direct": "Direct Marketing & Its Channels",
+  "future": "Future of Direct Marketing & Integration"
+};
