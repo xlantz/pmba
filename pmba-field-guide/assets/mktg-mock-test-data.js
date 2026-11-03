@@ -3981,6 +3981,202 @@ const MKTG_UNIT_QUESTIONS = [
     "explanation": "10M is two doublings from 2.5M: 4.75 x 0.85 x 0.85 = 3.43."
   },
   {
+    "source": "u2_math",
+    "prompt": "A manufacturer sells a book to the bookstore for $6, and the bookstore's margin is 40%. What is the retail price?",
+    "options": [
+      "$8.40",
+      "$10.00",
+      "$9.60",
+      "$14.00"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Margins are a percent of price: $6 / (1 - 0.40) = $10. Multiplying by 1.40 treats it as a markup on cost."
+  },
+  {
+    "source": "u2_math",
+    "prompt": "Fixed costs are $500,000, the selling price is $10 and variable cost is $6. What is the break-even volume?",
+    "options": [
+      "50,000 units",
+      "83,333 units",
+      "125,000 units",
+      "200,000 units"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "CM = $10 - $6 = $4; BEP = 500,000 / 4 = 125,000 units."
+  },
+  {
+    "source": "u2_math",
+    "prompt": "With FC of $500,000 and VC of $6, what price breaks even at 100,000 units?",
+    "options": [
+      "$11.00",
+      "$10.00",
+      "$5.00",
+      "$16.00"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "BESP = FC / volume + VC = 5 + 6 = $11."
+  },
+  {
+    "source": "u2_math",
+    "prompt": "CM is $4. A new $100,000 ad campaign must sell how many additional units to break even?",
+    "options": [
+      "4,000",
+      "40,000",
+      "400,000",
+      "25,000"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Additional FC / CM = 100,000 / 4 = 25,000 units."
+  },
+  {
+    "source": "u2_math",
+    "prompt": "FC = $500,000 and CM = $4. Upgraded materials add $0.50 per unit. How many more units are needed to break even?",
+    "options": [
+      "About 17,857",
+      "12,500",
+      "62,500",
+      "About 142,857"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "New BEP = 500,000 / 3.50 = 142,857; old BEP = 125,000; difference about 17,857 units."
+  },
+  {
+    "source": "u2_curve",
+    "prompt": "The first unit costs 110 and the millionth costs 60. What is the experience-curve exponent a?",
+    "options": [
+      "0.0438",
+      "0.85",
+      "0.545",
+      "0.15"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "a = ln(110/60) / ln(1,000,000) = 0.6061 / 13.8155 = 0.0438."
+  },
+  {
+    "source": "u2_curve",
+    "prompt": "With a = 0.0438, each doubling of cumulative production cuts unit cost by about:",
+    "options": [
+      "15%",
+      "4.4%",
+      "3%",
+      "30%"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "2^-0.0438 = 0.970, a drop of about 3% per doubling."
+  },
+  {
+    "source": "u2_curve",
+    "prompt": "Why can't break-even with an experience curve be computed as FC / CM?",
+    "options": [
+      "Because fixed costs also fall with experience",
+      "Because CM changes with every unit, so contributions must be summed",
+      "Because price rises over time",
+      "Because the curve only applies after break-even"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Unit cost falls as volume grows, so each unit contributes more; break-even is where the sum of contributions equals FC."
+  },
+  {
+    "source": "u2_margin",
+    "prompt": "On an S-shaped sales response curve, the optimal advertising level is where:",
+    "options": [
+      "Sales are maximized",
+      "MR = MC on the rising part of the curve",
+      "Advertising equals 10% of sales",
+      "MR = MC on the diminishing-returns part of the curve"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "There MR = MC and returns are falling; the MR = MC point on the rising part is not optimal."
+  },
+  {
+    "source": "u2_margin",
+    "prompt": "A brand has money left for one more $1k. Advertising's next $1k would bring $1.2k of sales and the sales force's would bring $1.5k. What should it do?",
+    "options": [
+      "Spend on advertising, the bigger budget line",
+      "Spend on the sales force, the higher marginal return",
+      "Split it evenly",
+      "Keep it, since both returns are falling"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Spend the next dollar where it returns the most."
+  },
+  {
+    "source": "u2_maps",
+    "prompt": "On the slides' pain-reliever map, why is Tylenol considered the best-positioned brand?",
+    "options": [
+      "It is the cheapest brand",
+      "It is the most effective brand",
+      "It is close to segment 1's ideal, differentiated, and owns gentleness",
+      "It sits in the middle of the map"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Closeness to an ideal point, differentiation and owning a dimension are the three reasons the slides give."
+  },
+  {
+    "source": "u2_maps",
+    "prompt": "Bufferin is decent on both gentleness and effectiveness but best at neither. The slides call this:",
+    "options": [
+      "Owning a dimension",
+      "Stuck in the middle",
+      "A home-run position",
+      "An empty quadrant"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Gentle-seekers choose Tylenol and effectiveness-seekers choose Advil or Nuprin."
+  },
+  {
+    "source": "u2_maps",
+    "prompt": "Which statement describes similarity-based (MDS) perceptual mapping?",
+    "options": [
+      "Customers rate brands on a list of attributes, then factor analysis groups them",
+      "The researcher chooses the dimensions before collecting data",
+      "It requires price data for every brand",
+      "Customers rate how similar products are; the researcher chooses and interprets the dimensions"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "MDS reproduces the pattern of similarities; less up-front work, but the dimensions can be hard to interpret."
+  },
+  {
+    "source": "u2_maps",
+    "prompt": "Why might no brand occupy the 'highly gentle and highly effective' corner of the map?",
+    "options": [
+      "It may be technically infeasible, or consumers may not believe a gentle product is effective",
+      "That segment is too small to serve",
+      "Regulators forbid the claim",
+      "It is always the most expensive position"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The slides give exactly these two reasons and cite BMW and Range Rover as brands that combined 'opposites.'"
+  },
+  {
     "source": "c4_markets",
     "prompt": "Which of these is NOT listed in Chapter 4 as a characteristic of business markets?",
     "options": [
@@ -4295,6 +4491,10 @@ Object.assign(MKTG_MOCK_LABELS, {
   "u1_target": "Unit 1 · Target Marketing",
   "u1_behavior": "Unit 1 · Decision Biases & Involvement",
   "u1_markstrat": "Unit 1 · Markstrat Basics",
+  "u2_math": "Unit 2 · Margins & Break-Even",
+  "u2_curve": "Unit 2 · Experience Curve",
+  "u2_margin": "Unit 2 · Sales Response & Marginal Analysis",
+  "u2_maps": "Unit 2 · Positioning & Perceptual Maps",
   "c4_markets": "Ch 4 · Business vs. Consumer Markets",
   "c4_center": "Ch 4 · Buying Situations & the Buying Center",
   "c4_process": "Ch 4 · The Eight-Stage Buying Process",
