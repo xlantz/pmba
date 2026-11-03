@@ -4177,6 +4177,174 @@ const MKTG_UNIT_QUESTIONS = [
     "explanation": "The slides give exactly these two reasons and cite BMW and Range Rover as brands that combined 'opposites.'"
   },
   {
+    "source": "u3_vars",
+    "prompt": "A retailer groups customers by how recently they bought, how often, and how much they spent. Which segmentation family is this?",
+    "options": [
+      "User status or value (RFM)",
+      "Psychographic",
+      "Geographic",
+      "Purchase stage"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "RFM sits under user status or value in the slides, with heavy/light usage and CLTV."
+  },
+  {
+    "source": "u3_vars",
+    "prompt": "'Tried / never tried' and 'current / former' customer are examples of:",
+    "options": [
+      "Needs/benefits segmentation",
+      "Purchase-stage segmentation",
+      "Firmographic segmentation",
+      "Psychographic segmentation"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The slides list aware/unaware, tried/never tried, loyal/non-loyal, current/former and upsell/cross-sell under purchase stage."
+  },
+  {
+    "source": "u3_vars",
+    "prompt": "In the 'Everyday Loyals' profile, the benefit sought ('good wine they can count on without paying too much') mainly guides:",
+    "options": [
+      "The media plan",
+      "The distribution channel",
+      "The ad creative",
+      "The sales force size"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Benefits drive what to say (creative); demographics drive where to say it (media)."
+  },
+  {
+    "source": "u3_vars",
+    "prompt": "Which is NOT one of the slides' points about B2B segmentation?",
+    "options": [
+      "Heavier use of geography in sales-based organizations",
+      "Segmenting on the customer's customer",
+      "Segmenting on the buying center",
+      "Relying mainly on psychographics because buyers are emotional"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The B2B points are geography, detailed needs, support level, derived demand and the buying center."
+  },
+  {
+    "source": "u3_harley",
+    "prompt": "In the Harley-Davidson study, what did cluster analysis do?",
+    "options": [
+      "Grouped the 72 questions into lifestyle factors",
+      "Grouped customers into segments by their factor scores",
+      "Predicted next year's sales",
+      "Chose which bikes to discontinue"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Factor analysis groups the questions; cluster analysis groups the people."
+  },
+  {
+    "source": "u3_harley",
+    "prompt": "Which Harley segment is largest yet rides the fewest miles per year?",
+    "options": [
+      "Tour Gliders",
+      "Live to Ride",
+      "Hard Core",
+      "Dream Riders"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Dream Riders are 30.8% of owners and ride 3,675 miles a year; their bikes are mostly parked."
+  },
+  {
+    "source": "u3_harley",
+    "prompt": "Which Harley segment rides the most miles and days per year?",
+    "options": [
+      "Live to Ride",
+      "Zen Riders",
+      "Dream Riders",
+      "Hog Heaven"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Live to Ride: 9,662 miles and 214 days a year."
+  },
+  {
+    "source": "u3_rnd",
+    "prompt": "Why does the Markstrat R&D walkthrough predict segment ideal values one period ahead?",
+    "options": [
+      "Because R&D projects take effect immediately",
+      "Because segment ideals drift over time, and a product should fit where the ideal will be",
+      "Because the semantic scale changes every period",
+      "Because prices are fixed for one period"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Products launch later, so you design for the predicted ideal, using regression charts with a high R-square."
+  },
+  {
+    "source": "u3_rnd",
+    "prompt": "An R&D online query returns a budget your team cannot afford. Which is NOT one of the slides' options?",
+    "options": [
+      "Give a smaller budget and complete over 2 periods",
+      "Choose weaker attributes",
+      "Choose a higher base cost and re-run the query",
+      "Order a Nutrite study to find cheaper attributes"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Nutrite is never used; the three options are a smaller budget over two periods, weaker attributes, or a higher base cost."
+  },
+  {
+    "source": "u3_voc",
+    "prompt": "A review says: 'Beautiful pictures, but the battery life is terrible.' Aspect-based sentiment analysis concludes:",
+    "options": [
+      "The review is negative overall, so both needs are unmet",
+      "The image-quality need is met and the battery-life need is unmet",
+      "The review is positive overall, so both needs are met",
+      "Battery life is unimportant because the review praises the pictures"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Each topic gets its own sentiment, regardless of the review's overall tone."
+  },
+  {
+    "source": "u3_voc",
+    "prompt": "'Easy to carry' is mentioned in many reviews but barely relates to star ratings. The slides suggest this is most likely:",
+    "options": [
+      "A benefit all products offer, so not a driver of satisfaction",
+      "The most important driver of satisfaction",
+      "An unmet need and the best opportunity",
+      "A segmentation variable"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Frequent mention is not importance; a topic that doesn't move ratings is likely table stakes."
+  },
+  {
+    "source": "u3_voc",
+    "prompt": "Which segmentation outcome do the slides warn against when there are too FEW segments?",
+    "options": [
+      "Two segments that should really be one",
+      "Segments that are too expensive to reach",
+      "Different kinds of customers lumped into the same segment",
+      "Segments with no unmet needs"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Too few segments are not homogeneous within; too many are not heterogeneous between."
+  },
+  {
     "source": "c4_markets",
     "prompt": "Which of these is NOT listed in Chapter 4 as a characteristic of business markets?",
     "options": [
@@ -4495,6 +4663,10 @@ Object.assign(MKTG_MOCK_LABELS, {
   "u2_curve": "Unit 2 · Experience Curve",
   "u2_margin": "Unit 2 · Sales Response & Marginal Analysis",
   "u2_maps": "Unit 2 · Positioning & Perceptual Maps",
+  "u3_vars": "Unit 3 · Segmentation Variables",
+  "u3_harley": "Unit 3 · Harley-Davidson Segments",
+  "u3_rnd": "Unit 3 · Markstrat R&D",
+  "u3_voc": "Unit 3 · VOC Project Part 1",
   "c4_markets": "Ch 4 · Business vs. Consumer Markets",
   "c4_center": "Ch 4 · Buying Situations & the Buying Center",
   "c4_process": "Ch 4 · The Eight-Stage Buying Process",
