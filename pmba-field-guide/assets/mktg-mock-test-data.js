@@ -4485,6 +4485,132 @@ const MKTG_UNIT_QUESTIONS = [
     "explanation": "It is external and harmful, so it is a threat."
   },
   {
+    "source": "u5_promo",
+    "prompt": "According to the slides, most of a promotion's immediate sales increase comes from:",
+    "options": [
+      "Customers switching brands within the category",
+      "New customers entering the category",
+      "Customers buying larger quantities",
+      "Retailers expanding shelf space"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Brand choice accounts for 60%, category incidence 22% and quantity 18%."
+  },
+  {
+    "source": "u5_promo",
+    "prompt": "On average, promotion effects last about ___ weeks, versus about ___ weeks for advertising.",
+    "options": [
+      "39; 2",
+      "2; 39",
+      "6; 12",
+      "1; 52"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Promotions about 2 weeks, advertising about 39."
+  },
+  {
+    "source": "u5_promo",
+    "prompt": "A retailer buys three months of stock during a trade deal and sells it later at full price. This is:",
+    "options": [
+      "Pass-through",
+      "Category incidence",
+      "Forward buying",
+      "Slotting"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Forward buying keeps the discount as retailer profit, so little passes through to shoppers."
+  },
+  {
+    "source": "u5_promo",
+    "prompt": "Which is NOT one of the slides' problems with sales promotions?",
+    "options": [
+      "Cheapens brand image",
+      "Reinforces deal-sensitivity",
+      "Discounts to people who would buy anyway",
+      "Builds long-term category loyalty in mature markets"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Long-term buying impact is limited, especially in mature markets."
+  },
+  {
+    "source": "u5_promo",
+    "prompt": "When do the slides say price promotions are most useful?",
+    "options": [
+      "To generate trial for superior products",
+      "To defend a weak brand against private labels",
+      "To clear inventory before every quarter-end",
+      "To raise the brand's premium image"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Trial of a genuinely better product can stick; other uses mostly borrow future sales."
+  },
+  {
+    "source": "u5_conjoint",
+    "prompt": "Why is a survey of consumers' 'ideal' golf ball not very useful?",
+    "options": [
+      "Consumers can't describe golf balls",
+      "The ideal combines the best of every attribute, which may not be feasible, and doesn't reveal trade-offs",
+      "Golf balls have only one attribute",
+      "Price can't be included in surveys"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Everyone wants 275 yards, 54 holes and $1.25; conjoint reveals what they would give up."
+  },
+  {
+    "source": "u5_conjoint",
+    "prompt": "Four attributes with three levels each make 81 possible credit cards. The slides use 9 because the design is:",
+    "options": [
+      "Random",
+      "Orthogonal",
+      "Sequential",
+      "Hierarchical"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "An orthogonal (balanced) design lets each attribute's effect be estimated from far fewer profiles."
+  },
+  {
+    "source": "u5_conjoint",
+    "prompt": "In the credit-card example, which attribute matters most to choice?",
+    "options": [
+      "Brand",
+      "Credit limit",
+      "Interest rate",
+      "Annual fee"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Interest 59%, annual fee 24%, brand 10%, credit limit 7%."
+  },
+  {
+    "source": "u5_conjoint",
+    "prompt": "Part-worth ranges are interest 5.9, fee 2.4, brand 1.0 and limit 0.7. What is the fee's importance?",
+    "options": [
+      "2.4%",
+      "10%",
+      "41%",
+      "24%"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Importance = 2.4 / (5.9 + 2.4 + 1.0 + 0.7) = 2.4 / 10 = 24%."
+  },
+  {
     "source": "c4_markets",
     "prompt": "Which of these is NOT listed in Chapter 4 as a characteristic of business markets?",
     "options": [
@@ -4811,6 +4937,8 @@ Object.assign(MKTG_MOCK_LABELS, {
   "u4_cltv": "Unit 4 · CLTV Formulas",
   "u4_contract": "Unit 4 · Contract-Then-Churn CLTV",
   "u4_plan": "Unit 4 · 4Cs, We/They & SWOT",
+  "u5_promo": "Unit 5 · Sales Promotions & Trade",
+  "u5_conjoint": "Unit 5 · Conjoint Analysis",
   "c4_markets": "Ch 4 · Business vs. Consumer Markets",
   "c4_center": "Ch 4 · Buying Situations & the Buying Center",
   "c4_process": "Ch 4 · The Eight-Stage Buying Process",
