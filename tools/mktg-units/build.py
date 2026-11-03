@@ -112,6 +112,20 @@ def prefix_ids(block, pre, chapter_page=None):
     return re.sub(r'((?:xlink:)?href)="#([^"]+)"', href, block)
 
 
+ORDER_WORDS = re.compile(r'\b(all|none|both|neither) of (the )?(above|these|them)\b|^(both|all of|none of|a and b|b and c)\b', re.I)
+
+
+def shuffled_options(q):
+    """Chapter quizzes put most answers in position B; reorder options deterministically (seeded by
+    the prompt) unless an option depends on its position ("all of the above", "both", ...)."""
+    if any(ORDER_WORDS.search(o) for o in q['options']):
+        return q
+    import hashlib, random
+    order = list(range(len(q['options'])))
+    random.Random(hashlib.sha1(q['prompt'].encode('utf-8')).hexdigest()).shuffle(order)
+    return dict(q, options=[q['options'][i] for i in order], correctIndex=order.index(q['correctIndex']))
+
+
 def retag(block, number, badge_html):
     block = re.sub(r'<span class="num">\d+</span>', f'<span class="num">{number:02d}</span>', block, count=1)
     block = re.sub(r'(<span class="stitle">.*?</h3>)(\s*<span class="tier[^"]*">.*?</span>)?',
@@ -169,7 +183,7 @@ def build(n):
                     if ck == k:
                         cards.append((pk, card))
                 flash += [dict(f, source=pk) for f in ch['flashcards'] if f['source'] == k]
-                quiz += [dict(q, source=pk) for q in ch['quiz'] if q['source'] == k]
+                quiz += [shuffled_options(dict(q, source=pk)) for q in ch['quiz'] if q['source'] == k]
         else:
             for pk in part['authored']:
                 labels[pk] = u['LABELS'][pk]
