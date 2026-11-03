@@ -277,6 +277,7 @@ table.lens tr:last-child td, table.lens tr:last-child th{ border-bottom:none; }
 
 /* ---------------- flashcards ---------------- */
 .flash-controls{ display:flex; gap:12px; align-items:center; flex-wrap:wrap; margin-bottom: 18px; }
+.flash-controls select{ max-width:100%; min-width:0; }
 select{
   font-family: var(--font-mono); font-size:.82rem; padding: 8px 12px; border-radius: 999px; border: 1px solid var(--paper-3);
   background: var(--paper); color: var(--text);

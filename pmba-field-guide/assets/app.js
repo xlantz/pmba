@@ -184,7 +184,7 @@ function initGlossary(){
     grid.querySelectorAll('.term-card').forEach(card => {
       const src = card.dataset.source;
       const text = (card.dataset.search || '').toLowerCase();
-      const matchSource = activeSource === 'all' || src === activeSource;
+      const matchSource = sourceMatches(src, activeSource);
       const matchQuery = !q || text.includes(q);
       const show = matchSource && matchQuery;
       card.classList.toggle('hidden', !show);
@@ -203,6 +203,13 @@ function initGlossary(){
     });
   });
   applyFilter();
+}
+
+/* A filter value of 'all', an exact source key, or a group prefix ending in '*'
+   (e.g. 'c6_*' = every Chapter 6 section on a unit page). */
+function sourceMatches(src, filter){
+  if(filter === 'all' || src === filter) return true;
+  return filter.endsWith('*') && (src || '').startsWith(filter.slice(0, -1));
 }
 
 /* ---------------- flashcards ---------------- */
@@ -227,7 +234,7 @@ function initFlashcards(){
     const src = sourceSelect.value;
     return deck
       .map((c,i)=>({c,i}))
-      .filter(o => src==='all' || o.c.source === src)
+      .filter(o => sourceMatches(o.c.source, src))
       .map(o => o.i);
   }
 
