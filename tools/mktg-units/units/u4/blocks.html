@@ -1,0 +1,168 @@
+    <div class="source-block" id="src-u4-dcf">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">00</span><h3>Time Value of Money &amp; NPV</h3></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <p>A dollar today is worth more than a dollar tomorrow, because today&rsquo;s dollar can earn interest. At a 5% rate, $1 today becomes $1.05 in a year ($1 &times; 1.05) and $1.1025 in two ($1 &times; 1.05 &times; 1.05). Reverse that to ask what a <em>future</em> dollar is worth <em>today</em>:</p>
+        <table class="hw-table">
+          <tr><th>Concept</th><th>Formula (n = 1, 2, 3, &hellip;)</th></tr>
+          <tr><td class="hw-label">Future value</td><td><strong>FV = PV &middot; (1 + i)<sup>n</sup></strong></td></tr>
+          <tr><td class="hw-label">Present value</td><td><strong>PV = FV / (1 + i)<sup>n</sup></strong></td></tr>
+          <tr><td class="hw-label">Net present value</td><td><strong>NPV = &Sigma;<sub>t=1..T</sub> F<sub>t</sub> / (1 + i)<sup>t</sup> &minus; C</strong>: the discounted stream of future returns minus the outlay today</td></tr>
+        </table>
+        <h4>The slides&rsquo; example: $100 now, $40 a year for three years, 5%</h4>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 200" role="img" aria-labelledby="u4-npv-t"><title id="u4-npv-t">Three 40 dollar returns discounted to present values that sum to 108.93 against a 100 dollar outlay</title>
+            <line x1="40" y1="150" x2="500" y2="150" class="ss-soft" stroke-width="1"/>
+            <rect x="70" y="150" width="60" height="40" class="sf-rust-soft ss-rust"/><text x="100" y="175" class="t tc t-s t-b t-rust">&#x2212;$100</text><text x="100" y="142" class="t tc t-xs">today</text>
+            <rect x="180" y="70" width="60" height="80" class="sf-paper3 ss-soft"/><rect x="180" y="74" width="60" height="76" class="sf-blue-soft ss-blue"/><text x="210" y="62" class="t tc t-xs">$40 &#x2192; PV</text><text x="210" y="116" class="t tc t-s t-b">$38.10</text><text x="210" y="168" class="t tc t-xs">year 1</text>
+            <rect x="280" y="70" width="60" height="80" class="sf-paper3 ss-soft"/><rect x="280" y="77" width="60" height="73" class="sf-blue-soft ss-blue"/><text x="310" y="62" class="t tc t-xs">$40 &#x2192; PV</text><text x="310" y="118" class="t tc t-s t-b">$36.28</text><text x="310" y="168" class="t tc t-xs">year 2</text>
+            <rect x="380" y="70" width="60" height="80" class="sf-paper3 ss-soft"/><rect x="380" y="81" width="60" height="69" class="sf-blue-soft ss-blue"/><text x="410" y="62" class="t tc t-xs">$40 &#x2192; PV</text><text x="410" y="120" class="t tc t-s t-b">$34.55</text><text x="410" y="168" class="t tc t-xs">year 3</text>
+            <text x="270" y="192" class="t tc t-s">38.10 + 36.28 + 34.55 &#x2212; 100 = <tspan class="t-b">NPV $8.93</tspan></text>
+          </svg>
+          <figcaption>Grey = the $40 received; blue = what it is worth today. Later dollars shrink more.</figcaption>
+        </figure>
+        <p>&ldquo;We make $20 ($120 &minus; $100), but in the future, so it&rsquo;s discounted.&rdquo; The discounted gain is about $8.93.</p>
+        <p class="text-soft" style="font-size:.85rem;"><em>Checked:</em> the exact NPV is $8.9299, which rounds to <strong>$8.93</strong>; the slide shows $8.92 (truncated). Either is fine on a quiz; the method is the point.</p>
+        <div class="exam-angle"><b>Exam angle</b>Discount each cash flow by (1 + i)<sup>t</sup> for its own year, sum, subtract the outlay. Know why an undiscounted $20 gain is only about $8.93 in today&rsquo;s money.</div>
+      </div>
+    </div>
+
+    <div class="source-block" id="src-u4-cltv">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">00</span><h3>Customer Lifetime Value (CLTV): The Formulas, Derived</h3></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <div class="callout"><strong>Source note.</strong> The formulas on the slides came through as scrambled symbols in our copy. Each one below was rebuilt from the definitions on the same slides, derived step by step, and checked numerically: closed form against a brute-force sum of 20,000 periods.</div>
+        <p><strong>Notation:</strong> M<sub>n</sub> or m = margin per period; i = interest (discount) rate per period; r = retention rate (the share of customers who stay each period; churn = 1 &minus; r); AC = acquisition cost, paid at period 0; N = known average lifetime.</p>
+
+        <h4>1. Known average lifetime (slide: &ldquo;CLTV for known average lifetime N&rdquo;)</h4>
+        <p style="font-family:var(--font-mono); text-align:center;"><strong>CLTV = &Sigma;<sub>n=1..N</sub> M<sub>n</sub> / (1 + i)<sup>n</sup> &minus; AC</strong></p>
+        <p>An NPV where the customer is the investment: AC is the outlay, the margins are the returns.</p>
+
+        <h4>2. Using a retention rate (slide: &ldquo;CLTV using retention rate&rdquo;)</h4>
+        <p style="font-family:var(--font-mono); text-align:center;"><strong>CLTV = &Sigma;<sub>n=1..&infin;</sub> M<sub>n</sub> &middot; r<sup>n</sup> / (1 + i)<sup>n</sup> &minus; AC</strong></p>
+        <p>Instead of a fixed end date, a fraction r of customers survives each period, so the margin expected in period n is weighted by r<sup>n</sup>.</p>
+
+        <h4>3. Constant margins: the two simple formulas</h4>
+        <table class="hw-table">
+          <tr><th></th><th>&ldquo;Most common&rdquo; formula</th><th>&ldquo;Formula from the case&rdquo;</th></tr>
+          <tr><td class="hw-label">Timing assumptions</td><td>First margin at the end of period 1 (discounted); customers <strong>can churn during period 1</strong></td><td>First margin at the end of period 1 (discounted); customers <strong>cannot churn before the first margin</strong></td></tr>
+          <tr><td class="hw-label">Series</td><td>m&middot;r/(1+i) + m&middot;r&sup2;/(1+i)&sup2; + &hellip;</td><td>m/(1+i) + m&middot;r/(1+i)&sup2; + m&middot;r&sup2;/(1+i)&sup3; + &hellip;</td></tr>
+          <tr><td class="hw-label">Closed form</td><td><strong>CLTV = m &middot; r / (1 + i &minus; r) &minus; AC</strong></td><td><strong>CLTV = m / (1 + i &minus; r) &minus; AC</strong></td></tr>
+        </table>
+        <div class="analogy"><b>The derivation (both use the same trick)</b>
+          <p>Let a = r/(1+i). The &ldquo;most common&rdquo; series is m&middot;(a + a&sup2; + a&sup3; + &hellip;). Call S = a + a&sup2; + a&sup3; + &hellip;. Then S = a + a&middot;S, so S(1 &minus; a) = a and S = a/(1 &minus; a). Substitute a and multiply top and bottom by (1+i): S = r/(1 + i &minus; r). So CLTV = m&middot;r/(1 + i &minus; r) &minus; AC.</p>
+          <p>The case&rsquo;s series is (m/(1+i))&middot;(1 + a + a&sup2; + &hellip;) = (m/(1+i))&middot;1/(1 &minus; a) = m/(1 + i &minus; r). Ignore AC until the last step, as the slides suggest.</p></div>
+        <h4>Worked comparison (the case&rsquo;s numbers on the slides: m = $22/month, i = 0.004166/month, r = 0.98)</h4>
+        <table class="hw-table">
+          <tr><th>Formula</th><th>Gross of AC</th><th>Check</th></tr>
+          <tr><td class="hw-label">Most common: 22 &times; 0.98 / (1.004166 &minus; 0.98)</td><td>$892.16</td><td>Brute-force sum matches</td></tr>
+          <tr><td class="hw-label">Case: 22 / (1.004166 &minus; 0.98)</td><td><strong>$910.37</strong></td><td>Matches the slides&rsquo; &ldquo;$910&rdquo;</td></tr>
+        </table>
+        <p>i = 0.004166 is 5% a year divided by 12. The case version is higher because nobody churns before the first margin is earned.</p>
+        <div class="exam-angle"><b>Exam angle</b>Know which formula matches which timing assumption, and be able to plug in: m/(1+i&minus;r) for the case version, m&middot;r/(1+i&minus;r) for the most common one. Subtract AC last.</div>
+      </div>
+    </div>
+
+    <div class="source-block" id="src-u4-contract">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">00</span><h3>CLTV with a Contract: No Churn, Then 6%</h3></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <p>&ldquo;What if the contract prevents churn completely, but then ends?&rdquo; All acquired customers are kept for <strong>24 months</strong> (so we only discount), then churn at <strong>6% a month</strong> (r = 0.94) without a contract.</p>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 200" role="img" aria-labelledby="u4-con-t"><title id="u4-con-t">Customers retained fully for 24 months, then decaying at 6 percent per month</title>
+            <line x1="40" y1="160" x2="505" y2="160" class="ss-soft" stroke-width="1"/><line x1="40" y1="30" x2="40" y2="160" class="ss-soft" stroke-width="1"/>
+            <rect x="40" y="40" width="240" height="120" class="sf-blue-soft ss-blue"/>
+            <text x="160" y="94" class="t tc t-b">Months 1&#x2013;24: 100% retained</text><text x="160" y="112" class="t tc t-s">PV of 24 &#x00D7; $22 = $501.47</text>
+            <polyline points="280,40 300,47 320,54 340,60 360,66 380,72 400,77 420,82 440,87 460,91 480,95 500,99" fill="none" class="ss-rust" stroke-width="2.5"/>
+            <text x="390" y="130" class="t tc t-s t-rust t-b">6% churn a month</text><text x="390" y="146" class="t tc t-xs">22/(1.004166 &#x2212; 0.94), discounted back</text>
+            <text x="20" y="44" class="t tc t-xs">100%</text>
+            <text x="40" y="178" class="t tc t-xs">0</text><text x="280" y="178" class="t tc t-xs">24</text><text x="500" y="178" class="t tc t-xs">35</text>
+            <text x="270" y="196" class="t tc t-xs">Months since acquisition (share of customers still active; curve drawn to scale)</text>
+          </svg>
+          <figcaption>Two pieces of value: a 24-month annuity with no churn, plus a churning tail valued at month 24/25 and discounted to today.</figcaption>
+        </figure>
+        <p style="font-family:var(--font-mono); text-align:center;"><strong>CLTV = &Sigma;<sub>n=1..24</sub> 22/(1.004166)<sup>n</sup> + [22/(1.004166 &minus; 0.94)] / (1.004166)<sup>25</sup> &minus; 370 = $440.49</strong></p>
+        <table class="hw-table">
+          <tr><th>Piece</th><th>Value</th></tr>
+          <tr><td class="hw-label">24 months of $22, discounted</td><td>$501.47</td></tr>
+          <tr><td class="hw-label">Post-contract tail, 22 / 0.064166 = $342.86, discounted 25 months</td><td>$309.02</td></tr>
+          <tr><td class="hw-label">Minus acquisition cost</td><td style="white-space:nowrap">&minus;$370.00</td></tr>
+          <tr><td class="hw-label">CLTV (slides)</td><td><strong>$440.49</strong></td></tr>
+        </table>
+        <p>Compare the case discussion&rsquo;s <strong>$910</strong> (gross of AC) at a steady 2% churn: 501.47 + 309.02 = $810.49 gross, so <strong>the 6% hurts</strong>, even though it only starts after two years.</p>
+        <p class="text-soft" style="font-size:.85rem;"><em>Checked:</em> every piece matches the slide. One nuance: the tail value 22/(1+i&minus;r) uses the case convention, so it is already worth that amount at the end of month 24 (its first margin arrives in month 25). Discounting it 24 months instead of 25 gives $310.30 and a CLTV of $441.77, which is also what a brute-force sum of the monthly cash flows gives. Use the professor&rsquo;s $440.49 for class; the $1.29 gap is a timing convention, not a different idea.</p>
+        <div class="exam-angle"><b>Exam angle</b>Split a contract CLTV into a no-churn annuity plus a discounted churning tail. Explain why a churn rate that starts late still cuts CLTV sharply.</div>
+      </div>
+    </div>
+
+    <div class="source-block" id="src-u4-plan">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">00</span><h3>Marketing Planning: The 4Cs, We/They &amp; SWOT</h3></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <p>The slides build the <strong>situation analysis</strong> on four Cs, then summarize it in a SWOT. (Chapter 2&rsquo;s version adds a fifth C, context.)</p>
+        <figure class="diagram">
+          <svg viewBox="0 0 520 250" role="img" aria-labelledby="u4-4c-t"><title id="u4-4c-t">The four Cs feeding a SWOT summary</title>
+            <rect x="10" y="10" width="150" height="46" rx="6" class="sf-blue-soft ss-blue"/><text x="85" y="38" class="t tc t-b">Customers</text>
+            <rect x="10" y="66" width="150" height="46" rx="6" class="sf-blue-soft ss-blue"/><text x="85" y="94" class="t tc t-b">Company</text>
+            <rect x="10" y="122" width="150" height="46" rx="6" class="sf-blue-soft ss-blue"/><text x="85" y="150" class="t tc t-b">Competitors</text>
+            <rect x="10" y="178" width="150" height="46" rx="6" class="sf-blue-soft ss-blue"/><text x="85" y="206" class="t tc t-b">Collaborators</text>
+            <text x="190" y="122" class="t tc t-l t-b">&#x2192;</text>
+            <rect x="220" y="20" width="140" height="95" class="sf-green-soft ss-green"/><text x="290" y="56" class="t tc t-b">Strengths</text><text x="290" y="74" class="t tc t-xs">internal, helpful</text>
+            <rect x="370" y="20" width="140" height="95" class="sf-rust-soft ss-rust"/><text x="440" y="56" class="t tc t-b">Weaknesses</text><text x="440" y="74" class="t tc t-xs">internal, harmful</text>
+            <rect x="220" y="125" width="140" height="95" class="sf-gold-soft ss-gold"/><text x="290" y="161" class="t tc t-b">Opportunities</text><text x="290" y="179" class="t tc t-xs">external, helpful</text>
+            <rect x="370" y="125" width="140" height="95" class="sf-paper3 ss-soft"/><text x="440" y="161" class="t tc t-b">Threats</text><text x="440" y="179" class="t tc t-xs">external, harmful</text>
+            <text x="365" y="240" class="t tc t-xs">Company and we/they analysis feed S/W; customers, competitors and collaborators feed O/T.</text>
+          </svg>
+          <figcaption>Situation analysis (4Cs) summarized as SWOT, as on the slides.</figcaption>
+        </figure>
+        <h4>Customers: compare segments on the same questions</h4>
+        <table class="hw-table">
+          <tr><th>Question</th><th>Segment 1</th><th>Segment 2</th></tr>
+          <tr><td class="hw-label">Needs / wants</td><td>?</td><td>?</td></tr>
+          <tr><td class="hw-label">Market size; buying power ($ size)</td><td>?</td><td>?</td></tr>
+          <tr><td class="hw-label">Heavy / light usage; growth rate</td><td>?</td><td>?</td></tr>
+          <tr><td class="hw-label">Price sensitivity</td><td>?</td><td>?</td></tr>
+          <tr><td class="hw-label">Current brands / competition; shopping habits</td><td>?</td><td>?</td></tr>
+          <tr><td class="hw-label">What will make them buy?</td><td>?</td><td>?</td></tr>
+        </table>
+        <h4>Company vs. competitors: the &ldquo;we/they&rdquo; analysis</h4>
+        <p>For marketing skills, manufacturing skills, financial resources, cost structure, brand image and other strengths and weaknesses, mark who is stronger: &ldquo;we&rdquo; or &ldquo;they.&rdquo; Where <em>we</em> win is a <strong>competitive advantage</strong>; where <em>they</em> win is a <strong>competitive disadvantage</strong>. Some gaps are &ldquo;can&rsquo;t get there from here&rdquo;: disadvantages too big to close, so the plan should avoid competing on them.</p>
+        <h4>A complete marketing plan</h4>
+        <p>The slides end with an outline of a complete marketing plan (shown as an image, not in our copy). Use Chapter 2&rsquo;s <strong>G-STIC</strong> structure (goal, strategy, tactics, implementation, control) on the Unit 1 page, with this situation analysis feeding the strategy.</p>
+        <div class="exam-angle"><b>Exam angle</b>Sort facts into the 4Cs, then into SWOT (internal S/W vs. external O/T). Explain &ldquo;can&rsquo;t get there from here.&rdquo;</div>
+      </div>
+    </div>
+
+    <div class="source-block" id="src-u4-case">
+      <button class="source-toggle" aria-expanded="false">
+        <span class="stitle"><span class="num">00</span><h3>Case Discussion Prompt: Virgin Mobile USA, &ldquo;Pricing for the Very First Time&rdquo;</h3></span>
+        <span class="chev">&#x2304;</span>
+      </button>
+      <div class="source-body">
+        <div class="callout"><strong>Framework prompt, not a case summary.</strong> The case text was not provided for this site. The only case figures here are the ones the slides use in the CLTV examples ($22 monthly margin, $370 acquisition cost, a $910 CLTV at steady 2% churn); nothing else is assumed.</div>
+        <h4>Frameworks that apply</h4>
+        <ul>
+          <li><strong>CLTV (this unit):</strong> how do contract length and churn change what a customer is worth, and so what you can afford to spend acquiring one?</li>
+          <li><strong>4Cs and SWOT (this unit):</strong> who are the target customers, what do competitors offer, and what are the company&rsquo;s advantages?</li>
+          <li><strong>Customer loyalty and CRM (Ch 19):</strong> what drives retention, and how do you keep customers once a contract no longer does?</li>
+          <li><strong>Product and service design (Ch 8):</strong> what exactly is being sold, and how is it differentiated?</li>
+        </ul>
+        <h4>Discussion questions</h4>
+        <ul>
+          <li>Compute CLTV under each pricing option you identify in the case. Which option creates the most value per customer after acquisition cost?</li>
+          <li>Using the contract example above, how much CLTV does a two-year contract protect, and what happens if churn after the contract is higher than before?</li>
+          <li>Which customer segment is the target, and is a contract a benefit or a barrier for them?</li>
+          <li>What would competitors do in response to each option?</li>
+          <li>What retention tools could replace a contract?</li>
+        </ul>
+        <p class="text-soft">Markstrat Decision 3 is due this week.</p>
+      </div>
+    </div>

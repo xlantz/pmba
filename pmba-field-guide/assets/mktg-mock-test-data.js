@@ -4345,6 +4345,146 @@ const MKTG_UNIT_QUESTIONS = [
     "explanation": "Too few segments are not homogeneous within; too many are not heterogeneous between."
   },
   {
+    "source": "u4_dcf",
+    "prompt": "A $100 investment returns $40 at the end of each of the next three years. At 5%, its NPV is closest to:",
+    "options": [
+      "$20.00",
+      "$8.93",
+      "$14.29",
+      "-$8.93"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "38.10 + 36.28 + 34.55 - 100 = 8.93. The undiscounted $20 gain shrinks because it arrives in the future."
+  },
+  {
+    "source": "u4_dcf",
+    "prompt": "At a 5% discount rate, what is $1.1025 received in two years worth today?",
+    "options": [
+      "$1.05",
+      "$1.1025",
+      "$1.00",
+      "$0.95"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "PV = 1.1025 / 1.05^2 = $1.00."
+  },
+  {
+    "source": "u4_cltv",
+    "prompt": "Which CLTV formula assumes customers cannot churn before the first margin?",
+    "options": [
+      "m x r / (1 + i - r) - AC",
+      "m x N - AC",
+      "m / (1 + i) - AC",
+      "m / (1 + i - r) - AC"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The case formula, m/(1+i-r), starts the series with a full m/(1+i)."
+  },
+  {
+    "source": "u4_cltv",
+    "prompt": "Margin is $22 a month, the monthly discount rate 0.004166 and retention 0.98. Using the 'most common' formula, CLTV gross of acquisition cost is about:",
+    "options": [
+      "$892",
+      "$910",
+      "$1,100",
+      "$22"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "22 x 0.98 / (1.004166 - 0.98) = $892.16."
+  },
+  {
+    "source": "u4_cltv",
+    "prompt": "Same inputs, but with the case formula m / (1 + i - r). Gross CLTV is about:",
+    "options": [
+      "$892",
+      "$1,078",
+      "$910",
+      "$540"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "22 / 0.024166 = $910.37, the $910 used in the case discussion."
+  },
+  {
+    "source": "u4_cltv",
+    "prompt": "Holding everything else equal, raising the retention rate r will:",
+    "options": [
+      "Lower CLTV, because the denominator grows",
+      "Raise CLTV, because (1 + i - r) gets smaller",
+      "Leave CLTV unchanged",
+      "Raise acquisition cost"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "A higher r shrinks the denominator 1 + i - r, so CLTV rises."
+  },
+  {
+    "source": "u4_contract",
+    "prompt": "In the slides' contract example, what is the CLTV after the $370 acquisition cost?",
+    "options": [
+      "$501.47",
+      "$910.00",
+      "$810.49",
+      "$440.49"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "$501.47 (24 months, no churn) + $309.02 (discounted 6%-churn tail) - $370 = $440.49."
+  },
+  {
+    "source": "u4_contract",
+    "prompt": "Why is the post-contract value 22/(1.004166 - 0.94) divided by (1.004166)^25 in the slides?",
+    "options": [
+      "To discount the tail, valued at the end of the contract, back to today",
+      "To add interest earned during the contract",
+      "To convert annual margins to monthly ones",
+      "To subtract the acquisition cost"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The tail is valued at the point the contract ends and must be discounted back to the present."
+  },
+  {
+    "source": "u4_plan",
+    "prompt": "A company finds its rival has far larger manufacturing scale and no realistic way to match it. The slides call this:",
+    "options": [
+      "A competitive advantage",
+      "\"Can't get there from here\"",
+      "An opportunity",
+      "A collaborator gap"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "A disadvantage too big to close; the plan should compete elsewhere."
+  },
+  {
+    "source": "u4_plan",
+    "prompt": "In a SWOT built from the 4Cs, a competitor's new low-price product is a:",
+    "options": [
+      "Strength",
+      "Weakness",
+      "Opportunity",
+      "Threat"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "It is external and harmful, so it is a threat."
+  },
+  {
     "source": "c4_markets",
     "prompt": "Which of these is NOT listed in Chapter 4 as a characteristic of business markets?",
     "options": [
@@ -4667,6 +4807,10 @@ Object.assign(MKTG_MOCK_LABELS, {
   "u3_harley": "Unit 3 · Harley-Davidson Segments",
   "u3_rnd": "Unit 3 · Markstrat R&D",
   "u3_voc": "Unit 3 · VOC Project Part 1",
+  "u4_dcf": "Unit 4 · Time Value & NPV",
+  "u4_cltv": "Unit 4 · CLTV Formulas",
+  "u4_contract": "Unit 4 · Contract-Then-Churn CLTV",
+  "u4_plan": "Unit 4 · 4Cs, We/They & SWOT",
   "c4_markets": "Ch 4 · Business vs. Consumer Markets",
   "c4_center": "Ch 4 · Buying Situations & the Buying Center",
   "c4_process": "Ch 4 · The Eight-Stage Buying Process",
