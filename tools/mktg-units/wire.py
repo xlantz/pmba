@@ -96,6 +96,9 @@ else:
     first = CARD.search(idx).start()
     rest = CARD.sub('', idx[first:])
     idx2 = idx[:first] + '      ' + block + '\n\n' + rest.lstrip('\n')
+idx2 = re.sub(r'(<a class="unit-card" href="mktg-mock-test.html">.*?<p>)A random draw of multiple-choice questions pulled from .*?\.( Submit once)',
+              lambda m: m.group(1) + 'A random draw of multiple-choice questions pulled from every MKTG chapter quiz plus the '
+              'weekly unit pages&rsquo; slide and case questions.' + m.group(2), idx2, count=1, flags=re.S)
 if write(os.path.join(SITE, 'index.html'), idx2) and 'index.html' not in changed:
     changed.append('index.html')
 
@@ -115,6 +118,38 @@ managed = (JBEGIN + '\n// Unit slide, case-prompt and Ch 4/12/13 questions from 
 mt2 = (mt[:mt.index(JBEGIN)] + managed + mt[mt.index(JEND) + len(JEND) + 1:]) if JBEGIN in mt else mt.rstrip('\n') + '\n\n' + managed
 if write(mp, mt2):
     changed.append('assets/mktg-mock-test-data.js')
+
+# ---------------------------------------------------------------- 4. mock-test page wording
+def series(xs):
+    xs = [str(x) for x in xs]
+    return xs[0] if len(xs) == 1 else ', '.join(xs[:-1]) + ' and ' + xs[-1]
+
+
+chapter_pages = sorted(int(c) for c in store['nav'])
+authored_ch = sorted({int(m.group(1)) for u in units.values() for k in u['LABELS'] for m in [re.match(r'c(\d+)_', k)] if m})
+unit_nums = list(units)
+unit_range = f'Units {unit_nums[0]}&ndash;{unit_nums[-1]}' if unit_nums == list(range(unit_nums[0], unit_nums[-1] + 1)) else 'Units ' + series(unit_nums)
+pp = os.path.join(SITE, 'mktg-mock-test.html')
+page = orig = read(pp)
+page = re.sub(r'(<meta name="description" content=")[^"]*(">)',
+              lambda m: m.group(1) + 'A randomized multiple-choice mock test built from every MKTG 6090 chapter quiz and the '
+              'weekly unit pages&#x2019; slide and case questions, auto-graded with explanations.' + m.group(2), page, count=1)
+page = re.sub(r'(<p class="lede"[^>]*>Pick how many questions you want, ).*?( Submit once)',
+              lambda m: m.group(1) + 'and the test draws that many at random from the full MKTG 6090 question bank: the quiz on '
+              f'every chapter page (Ch {series(chapter_pages)}), the Chapter {series(authored_ch)} sections on the unit pages, and '
+              f'the questions on the professor&rsquo;s slides and case prompts from {unit_range}.' + m.group(2), page, count=1, flags=re.S)
+chap_links = ', '.join(f'<a href="mktg{c}.html#quiz">Ch {c}</a>' for c in chapter_pages)
+unit_links = ', '.join(f'<a href="mktg-unit{n}.html#quiz">Unit {n}</a>' for n in unit_nums)
+page = re.sub(r'This draws from .*? &mdash; the difference is',
+              lambda m: f'This draws from the quiz bank on each chapter page ({chap_links}) plus the slide, case-prompt and '
+              f'Chapter {series(authored_ch)} questions from the weekly unit pages ({unit_links}) &mdash; the difference is',
+              page, count=1, flags=re.S)
+page = re.sub(r'(<footer class="footer">\s*<div class="wrap">\s*<p>).*?(</p>)',
+              lambda m: m.group(1) + 'MKTG 6090 &#x2014; Marketing Management, University of Utah PMBA. Question bank built from the '
+              'chapter pages and the weekly unit pages (Kotler/Keller/Chernev, <em>Marketing Management</em>, 17th ed., and the '
+              'professor&rsquo;s slides); it grows as new units and slides are added.' + m.group(2), page, count=1, flags=re.S)
+if page != orig and write(pp, page):
+    changed.append('mktg-mock-test.html')
 
 print(f'units: {list(units)}; chapters still listed on their own: {uncovered}; mock-test unit questions: {len(qs)}')
 print('changed: ' + (', '.join(changed) if changed else 'nothing'))
