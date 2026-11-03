@@ -153,6 +153,8 @@ def badge(key):
         return f'<span class="tier tier-know">Ch {re.match(r"c(\d+)_", key).group(1)}</span>'
     if key.endswith('_case'):
         return '<span class="tier tier-deep">Case prompt</span>'
+    if key.endswith('_prep'):
+        return '<span class="tier tier-deep">Prep prompt</span>'
     return f'<span class="tier tier-test">Unit {re.match(r"u(\d+)_", key).group(1)} slides</span>'
 
 
