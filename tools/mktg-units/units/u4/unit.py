@@ -8,11 +8,10 @@ META = {
   "description": "MKTG 6090 Unit 4 (Week 4): designing and managing products, building customer loyalty, plus the professor's slides on discounted cash flow, customer lifetime value formulas (rebuilt and verified), and marketing planning with the 4Cs and SWOT.",
   "lede": "What you sell (Ch 8) and how you keep the people who buy it (Ch 19). The slides put a number on keeping them: discounted cash flow, customer lifetime value under different churn and contract assumptions, and the 4Cs and SWOT that turn the numbers into a marketing plan.",
   "glance": """      <ul style="margin:0 0 12px;">
-        <li><strong>Week 4 topic:</strong> Customer Lifetime Value.</li>
-        <li><strong>Reading:</strong> Chapters 8 and 19.</li>
-        <li><strong>Quiz</strong> on the chapters, due Monday evening.</li>
-        <li><strong>Case:</strong> Virgin Mobile USA, &ldquo;Pricing for the Very First Time.&rdquo;</li>
-        <li><strong>Markstrat:</strong> Decision 3.</li>
+        <li><strong>In person (10/20):</strong> case discussion, Virgin Mobile USA: Pricing for the Very First Time (<strong>written case</strong>).</li>
+        <li><strong>Read:</strong> the Virgin Mobile case; Chapters 8 and 19.</li>
+        <li><strong>Due:</strong> quiz on Chapters 8 and 19 Monday evening; the <strong>written case at the start of class on Tuesday</strong>.</li>
+        <li><strong>Remote session (10/22):</strong> watch CLTV Formulas; Marketing Planning; MARKSTRAT Decision 3. Complete MARKSTRAT Decision 3.</li>
       </ul>
       <p style="margin:0;"><strong>How the pieces connect.</strong> Chapter 19 explains why loyalty and retention matter; the CLTV formulas say how much they are worth in dollars, which is exactly the question behind any pricing or contract decision in Virgin Mobile. The 4Cs and SWOT organize everything else you know into a plan.</p>""",
   "walk_heading": "Chapters 8 and 19 and the Unit 4 slides",

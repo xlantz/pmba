@@ -9,11 +9,10 @@ META = {
   "description": "MKTG 6090 Unit 9 (Week 9): all of Chapter 11 on pricing (consumer psychology of price, pricing objectives and methods, the final price, price changes, sales promotions and incentives) with an Atlantic Computer case framework prompt.",
   "lede": "Price is the only element of the marketing mix that produces revenue. Chapter 11 covers how buyers perceive prices, the six steps to set one, the methods that anchor it in cost, customer value or the market, how to adapt and change it, and how incentives affect it. The Atlantic Computer case asks you to put a number on it.",
   "glance": """      <ul style="margin:0 0 12px;">
-        <li><strong>Week 9 topic:</strong> Pricing &amp; DDOM wrap.</li>
-        <li><strong>Reading:</strong> all of Chapter 11 (Unit 5 used only its &ldquo;Managing Incentives&rdquo; section).</li>
-        <li><strong>Quiz</strong> on the chapter, due Monday evening.</li>
-        <li><strong>Case:</strong> Atlantic Computer.</li>
-        <li><strong>Adobe DDOM:</strong> simulation wrap-up.</li>
+        <li><strong>In person (11/24):</strong> case discussion, Atlantic Computer (<strong>written case</strong>); DDOM wrap discussion.</li>
+        <li><strong>Read:</strong> the Atlantic Computer case; all of Chapter 11 (Unit 5 used only its &ldquo;Managing Incentives&rdquo; section).</li>
+        <li><strong>Due:</strong> quiz on Chapter 11 Monday evening; the <strong>written case at the start of class on Tuesday</strong>.</li>
+        <li><strong>Remote session (11/26):</strong> none; Thanksgiving.</li>
       </ul>
       <p style="margin:0;" class="text-soft"><em>Slides:</em> the Unit 9 slides have not been released yet. This page covers the chapter now; a slides section will be added when they arrive.</p>""",
   "walk_heading": "Chapter 11, section by section",

@@ -129,7 +129,7 @@ def series(xs):
 
 chapter_pages = sorted(int(c) for c in store['nav'])
 authored_ch = sorted({int(m.group(1)) for u in units.values() for k in u['LABELS'] for m in [re.match(r'c(\d+)_', k)] if m})
-unit_nums = list(units)
+unit_nums = [n for n, u in units.items() if u['QUIZ']]   # units that add questions to the pool
 unit_range = f'Units {unit_nums[0]}&ndash;{unit_nums[-1]}' if unit_nums == list(range(unit_nums[0], unit_nums[-1] + 1)) else 'Units ' + series(unit_nums)
 pp = os.path.join(SITE, 'mktg-mock-test.html')
 page = orig = read(pp)

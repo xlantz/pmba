@@ -8,11 +8,10 @@ META = {
   "description": "MKTG 6090 Unit 1 (Week 1): what marketing is, planning and the G-STIC plan, consumer behavior, value propositions and positioning, plus the professor's slides on branding and differentiation, target marketing, decision biases and the Markstrat simulation.",
   "lede": "Week 1 sets the foundation: what marketing manages (Ch 1), how a plan is built (Ch 2), how consumers decide (Ch 3), and how an offering earns a distinct place in their minds (Ch 7). The slides add why differentiation beats &ldquo;me-too,&rdquo; why targeting pays, the biases behind real decisions, and how the Markstrat simulation works.",
   "glance": """      <ul style="margin:0 0 12px;">
-        <li><strong>Week 1 topic:</strong> Introduction to Marketing Management.</li>
-        <li><strong>Reading:</strong> Chapters 1, 2, 3 and 7.</li>
-        <li><strong>Quiz</strong> on the chapters, due Monday evening.</li>
-        <li><strong>Case preparation:</strong> &ldquo;Learning by the Case Method.&rdquo;</li>
-        <li><strong>Markstrat:</strong> get to know the interface; read the manual completely by Week 2.</li>
+        <li><strong>In person (9/29):</strong> welcome and group discussion.</li>
+        <li><strong>Read:</strong> Chapters 1, 2, 3 and 7; &ldquo;Learning by the Case Method.&rdquo;</li>
+        <li><strong>Due Monday evening:</strong> quiz on Chapters 1, 2, 3 and 7.</li>
+        <li><strong>Remote session (10/1):</strong> watch Branding, Differentiation and Target Marketing; Consumer Behavior; Introduction to MARKSTRAT; MARKSTRAT Interface.</li>
       </ul>
       <p style="margin:0;"><strong>How the pieces connect.</strong> The chapters give the vocabulary (needs, value, the 5 Cs, the buying process, points of difference). The slides apply it: differentiation is what lets a brand escape price competition, targeting is how you choose whom to differentiate for, and the decision biases explain why real buyers don&rsquo;t follow the textbook process exactly. Markstrat is where you will practice all of it.</p>""",
   "walk_heading": "Chapters 1, 2, 3 and 7 and the Unit 1 slides",

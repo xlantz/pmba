@@ -9,11 +9,10 @@ META = {
   "description": "MKTG 6090 Unit 7 (Week 7): Chapter 13 on designing an integrated marketing campaign in the digital age: IMC, advertising and AI, online and search, place advertising, social media and influencers, mobile, events, word of mouth, and publicity and PR, with a BBVA Compass framework prompt.",
   "lede": "One campaign, many channels. Chapter 13 shows how to make advertising, online and search, social media and influencers, mobile, events, word of mouth and PR reinforce each other instead of competing, and what each channel does best. BBVA Compass asks how to split a budget across them.",
   "glance": """      <ul style="margin:0 0 12px;">
-        <li><strong>Week 7 topic:</strong> Digital Marketing.</li>
-        <li><strong>Reading:</strong> Chapter 13, <em>Designing an Integrated Marketing Campaign in the Digital Age</em>.</li>
-        <li><strong>Quiz</strong> on the chapter, due Monday evening.</li>
-        <li><strong>Case:</strong> BBVA Compass, &ldquo;Marketing Resource Allocation.&rdquo;</li>
-        <li><strong>Markstrat:</strong> Decision 5.</li>
+        <li><strong>In person (11/10):</strong> case discussion, BBVA Compass: Marketing Resource Allocation.</li>
+        <li><strong>Read:</strong> the BBVA Compass case; Chapter 13, <em>Designing an Integrated Marketing Campaign in the Digital Age</em>.</li>
+        <li><strong>Due Monday evening:</strong> quiz on Chapter 13.</li>
+        <li><strong>Remote session (11/12):</strong> watch Digital Marketing; MARKSTRAT Decision 5. Complete MARKSTRAT Decision 5.</li>
       </ul>
       <p style="margin:0 0 8px;"><strong>How the pieces connect.</strong> IMC is the organizing idea: each channel below has a different job, and the six IMC criteria (coverage, contribution, commonality, complementarity, conformability, cost) are how you judge a mix. BBVA&rsquo;s resource-allocation question is the same marginal analysis you met in Unit 2, applied across these channels.</p>
       <p style="margin:0;" class="text-soft"><em>Slides:</em> the Unit 7 slides have not been released yet; a slides section will be added when they arrive. Chapter 13 has no separate chapter page, so its full content is here. The textbook text was OCR-scanned; figures that looked damaged are flagged.</p>""",

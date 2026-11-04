@@ -30,5 +30,6 @@ Chapters 4, 12 and 13 have no chapter page, so their sections are authored in un
 3. Update the "Slides" note in `META["glance"]` and the footer.
 4. Run `python tools/mktg-units/build.py N`, then `wire.py`, then `check.py`, and test the page in a browser at 1280px and 390px.
 
-Unit 10 (Pitch Day, no textbook chapter) has no folder yet; create `units/u10/` when its slides arrive and `wire.py` will add it
-to the menu and home page.
+Unit 10 (Pitch Day) has no reading or quiz, so its `unit.py` sets `"drill": False`: the page is built without hero stats,
+glossary, flashcards or quiz, and `check.py` only checks its HTML. Unit glance sections follow the Fall 2026 syllabus
+(dates, written cases, remote-session videos); update them there if the schedule changes.

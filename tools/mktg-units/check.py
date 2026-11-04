@@ -76,6 +76,9 @@ def check_page(p):
 def check_unit(n):
     p = os.path.join(SITE, f'mktg-unit{n}.html')
     s = check_page(p)
+    if 'id="quiz-shell"' not in s:   # a unit without drill sections (e.g. Unit 10)
+        print(f'unit {n}: no drill sections, {s.count("class=\"source-block\"")} sections')
+        return
     fc = node_consts(os.path.join(SITE, f'assets/mktg-unit{n}-flashcards-data.js'), ['FLASHCARDS', 'SOURCE_LABELS'])
     qz = node_consts(os.path.join(SITE, f'assets/mktg-unit{n}-quiz-data.js'), ['QUIZ_QUESTIONS'])
     L = fc['SOURCE_LABELS']

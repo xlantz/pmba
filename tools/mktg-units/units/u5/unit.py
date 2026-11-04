@@ -9,11 +9,10 @@ META = {
   "description": "MKTG 6090 Unit 5 (Week 5): designing and managing services, the managing-incentives section of Chapter 11 and the direct-marketing section of Chapter 14, plus the professor's slides on sales promotions, trade response and conjoint analysis.",
   "lede": "Services (Ch 9) are the product in most customer relationships; incentives (from Ch 11) and direct marketing (from Ch 14) are how companies use customer data to act on those relationships. The slides show what promotions actually do to sales, and how conjoint analysis measures the trade-offs customers make.",
   "glance": """      <ul style="margin:0 0 12px;">
-        <li><strong>Week 5 topic:</strong> CRM &amp; Database Marketing.</li>
-        <li><strong>Reading:</strong> all of Chapter 9; Chapter 11, <strong>&ldquo;Managing Incentives&rdquo; section only</strong>; Chapter 14, <strong>&ldquo;Direct Marketing&rdquo; section only</strong>.</li>
-        <li><strong>Quiz</strong> on those readings, due Monday evening.</li>
-        <li><strong>Case:</strong> Adobe&rsquo;s Customer Journey.</li>
-        <li><strong>Markstrat:</strong> Decision 4.</li>
+        <li><strong>In person (10/27):</strong> case discussion, Adobe&rsquo;s Customer Journey.</li>
+        <li><strong>Read:</strong> the Adobe case; all of Chapter 9; Chapter 11, <strong>&ldquo;Managing Incentives&rdquo; section only</strong>; Chapter 14, <strong>&ldquo;Direct Marketing&rdquo; section only</strong>.</li>
+        <li><strong>Due Monday evening:</strong> quiz on Chapters 9, 11 and 14 (the assigned sections).</li>
+        <li><strong>Remote session (10/29):</strong> watch Sales Promotions; Conjoint Analysis; MARKSTRAT Decision 4. Complete MARKSTRAT Decision 4.</li>
       </ul>
       <p style="margin:0;"><strong>How the pieces connect.</strong> Database marketing lets you aim offers at individual customers; the slides warn what blunt promotions do (mostly brand switching, two weeks of lift) and show conjoint as the way to find what customers would actually pay for. The rest of Chapters 11 and 14 is covered later (all of Chapter 11 in Unit 9).</p>""",
   "walk_heading": "Chapter 9, the assigned sections of Chapters 11 and 14, and the Unit 5 slides",

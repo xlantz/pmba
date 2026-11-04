@@ -8,12 +8,10 @@ META = {
   "description": "MKTG 6090 Unit 3 (Week 3): marketing research, building strong brands and global markets, plus the professor's slides on segmentation variables, the Harley-Davidson psychographic study, Markstrat R&D and the Voice of the Customer project.",
   "lede": "How to learn what customers want (Ch 5), build a brand they value (Ch 10), and take it abroad (Ch 20). The slides go deeper on segmentation: the variables to use, a real psychographic study from Harley-Davidson, how Markstrat turns segment ideals into a new product, and Part 1 of the Voice of the Customer project.",
   "glance": """      <ul style="margin:0 0 12px;">
-        <li><strong>Week 3 topic:</strong> Product Positioning &amp; Branding.</li>
-        <li><strong>Reading:</strong> Chapters 5, 10 and 20.</li>
-        <li><strong>Quiz</strong> on the chapters, due Monday evening.</li>
-        <li><strong>Case:</strong> L&rsquo;Or&eacute;al of Paris, &ldquo;Class to Mass&rdquo; with Plenitude (optional Case B).</li>
-        <li><strong>Markstrat:</strong> Decision 2 (new this week: portfolio, perceptual objectives, R&amp;D).</li>
-        <li><strong>VOC project:</strong> Part 1, the Voice of the Customer analysis, starts now.</li>
+        <li><strong>In person (10/13):</strong> case discussion, L&rsquo;Or&eacute;al of Paris: Bringing &ldquo;Class to Mass&rdquo; with Plenitude.</li>
+        <li><strong>Read:</strong> the L&rsquo;Or&eacute;al case; Chapters 5, 10 and 20. <em>Optional:</em> Case (B), L&rsquo;Or&eacute;al: Global Brand, Local Knowledge, read briefly after analyzing Case (A) in detail.</li>
+        <li><strong>Due Monday evening:</strong> quiz on Chapters 5, 10 and 20.</li>
+        <li><strong>Remote session (10/15):</strong> watch Market Segmentation and Target Marketing; Markstrat R&amp;D Overview; VOC Project Part 1: VOC Analysis using AI. Complete MARKSTRAT Decision 2.</li>
       </ul>
       <p style="margin:0;"><strong>How the pieces connect.</strong> Research methods (Ch 5) are what the VOC project and Markstrat studies put into practice; segmentation variables and the Harley study show how research becomes segments; branding (Ch 10) is what you build for the segment you choose; L&rsquo;Or&eacute;al asks whether a brand can move from class to mass.</p>""",
   "walk_heading": "Chapters 5, 10 and 20 and the Unit 3 slides",

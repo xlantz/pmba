@@ -8,11 +8,10 @@ META = {
   "description": "MKTG 6090 Unit 2 (Week 2): segmentation and targeting, growth strategy and the product life cycle, new offerings, plus the professor's slides on margins and break-even, the experience curve, marginal analysis and perceptual maps.",
   "lede": "Choose whom to serve (Ch 6), how to grow and defend a market position (Ch 17), and how new offerings are developed (Ch 18). The slides supply the numbers behind those choices: margins, break-even, the experience curve, how far to push a budget, and perceptual maps for seeing where each brand stands.",
   "glance": """      <ul style="margin:0 0 12px;">
-        <li><strong>Week 2 topic:</strong> Segmentation &amp; Target Marketing.</li>
-        <li><strong>Reading:</strong> Chapters 6, 17 and 18.</li>
-        <li><strong>Quiz</strong> on the chapters, due Monday evening.</li>
-        <li><strong>Case:</strong> Emotiv Systems, &ldquo;It&rsquo;s the Thoughts That Count.&rdquo;</li>
-        <li><strong>Markstrat:</strong> Decision 1 (Sunday 9:00 pm). Have the manual read.</li>
+        <li><strong>In person (10/6):</strong> case discussion, Emotiv Systems, Inc.: &ldquo;It&rsquo;s the Thoughts That Count.&rdquo;</li>
+        <li><strong>Read:</strong> the Emotiv case; Chapters 6, 17 and 18; Note on Low-Tech Marketing Math; the MARKSTRAT manual.</li>
+        <li><strong>Due Monday evening:</strong> quiz on Chapters 6, 17 and 18.</li>
+        <li><strong>Remote session (10/8):</strong> watch Low-Tech Marketing Math; Product Positioning and Perceptual Maps; MARKSTRAT First Decisions. Complete MARKSTRAT Decision 1.</li>
       </ul>
       <p style="margin:0;"><strong>How the pieces connect.</strong> Chapter 6 picks the target; the perceptual map shows where your brand sits relative to that target&rsquo;s ideal; the marketing math (margins, break-even, experience curve, marginal analysis) tells you whether a position is worth what it costs. Emotiv and Markstrat Decision 1 ask you to do all three at once.</p>""",
   "walk_heading": "Chapters 6, 17 and 18 and the Unit 2 slides",

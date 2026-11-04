@@ -9,12 +9,10 @@ META = {
   "description": "MKTG 6090 Unit 8 (Week 8): Chapter 12 on managing marketing communications: the communication process, objectives and budgets, audience and message, the media mix and media plan (reach, frequency, GRPs, scheduling), creative appeals and sources, the ADPLAN framework, and measuring effectiveness.",
   "lede": "How to plan a communication campaign from objective to measurement. Chapter 12 covers how communication works, how to set objectives and a budget, who to talk to and what to say, how to buy reach and frequency, which appeals and spokespeople persuade, how to judge creative work with ADPLAN, and how to tell whether it worked.",
   "glance": """      <ul style="margin:0 0 12px;">
-        <li><strong>Week 8 topic:</strong> Advertising.</li>
-        <li><strong>Reading:</strong> Chapter 12, <em>Managing Marketing Communications</em>.</li>
-        <li><strong>Quiz</strong> on the chapter, due Monday evening.</li>
-        <li><strong>Guest speaker:</strong> Bill Oakley, formerly of McCann-Erickson.</li>
-        <li><strong>Due:</strong> VOC laddering exercise and creative brief (see Unit 6).</li>
-        <li><strong>Markstrat:</strong> Decision 6.</li>
+        <li><strong>In person (11/17):</strong> visit from Bill Oakley, former Global Creative Director, McCann-Erickson.</li>
+        <li><strong>Read:</strong> Chapter 12, <em>Managing Marketing Communications</em>.</li>
+        <li><strong>Due:</strong> quiz on Chapter 12 Monday evening; the <strong>VOC Laddering Exercise and Creative Brief at the start of class on Tuesday</strong>.</li>
+        <li><strong>Remote session (11/19):</strong> watch Advertising Creative; MARKSTRAT Decision 6. Complete MARKSTRAT Decision 6.</li>
       </ul>
       <p style="margin:0 0 8px;"><strong>How the pieces connect.</strong> Chapter 12 is the planning side of advertising: objectives and budget, audience and message, media plan, creative and measurement. Chapter 13 (Unit 7) covered the individual channels. Your creative brief due this week should pass the chapter&rsquo;s tests: one or two selling propositions, a measurable objective, and an ADPLAN check.</p>
       <p style="margin:0;" class="text-soft"><em>Slides:</em> the Unit 8 slides have not been released yet. Chapter 12 has no separate chapter page, so its full content is here. The textbook text was OCR-scanned; figures that looked damaged are flagged or recomputed.</p>""",
