@@ -29,7 +29,9 @@ for d in sorted(glob.glob(os.path.join(UNITS, 'u*')), key=lambda p: int(re.searc
     n = int(re.search(r'u(\d+)$', d).group(1))
     if os.path.exists(os.path.join(SITE, f'mktg-unit{n}.html')):
         units[n] = load_unit(n)
-covered = {p['chapter'] for u in units.values() for p in u['META']['parts'] if 'chapter' in p and not p.get('blocks')}
+# A chapter used by any built unit (even in part, like Ch 14 in Unit 5) is reached through that unit's
+# chapter-reference box, so it no longer gets its own menu link or home card.
+covered = {p['chapter'] for u in units.values() for p in u['META']['parts'] if 'chapter' in p}
 
 # ---------------------------------------------------------------- capture originals once
 store = json.loads(read(STORE)) if os.path.exists(STORE) else {'nav': {}, 'cards': {}}
