@@ -39,7 +39,8 @@ META = {
         "c4_programs",
         "c4_relations",
         "u6_ladder",
-        "u6_brief"
+        "u6_brief",
+        "u6_prep"
       ]
     }
   ]
@@ -52,7 +53,8 @@ LABELS = {
   "c4_programs": "Ch 4 · Business Marketing Programs & Value",
   "c4_relations": "Ch 4 · Relationships, Institutional & Government Markets",
   "u6_ladder": "Unit 6 · Laddering Exercise",
-  "u6_brief": "Unit 6 · The Creative Brief"
+  "u6_brief": "Unit 6 · The Creative Brief",
+  "u6_prep": "Unit 6 · DDOM Simulation Prep"
 }
 
 # (source, front, back)

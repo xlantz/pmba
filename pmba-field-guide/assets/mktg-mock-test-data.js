@@ -3709,7 +3709,1677 @@ const MKTG14_QUIZ_QUESTIONS = [
   }
 ];
 
-const MKTG_MOCK_POOL = MKTG1_QUIZ_QUESTIONS.concat(MKTG2_QUIZ_QUESTIONS).concat(MKTG3_QUIZ_QUESTIONS).concat(MKTG7_QUIZ_QUESTIONS).concat(MKTG6_QUIZ_QUESTIONS).concat(MKTG17_QUIZ_QUESTIONS).concat(MKTG18_QUIZ_QUESTIONS).concat(MKTG5_QUIZ_QUESTIONS).concat(MKTG10_QUIZ_QUESTIONS).concat(MKTG20_QUIZ_QUESTIONS).concat(MKTG8_QUIZ_QUESTIONS).concat(MKTG19_QUIZ_QUESTIONS).concat(MKTG9_QUIZ_QUESTIONS).concat(MKTG11_QUIZ_QUESTIONS).concat(MKTG14_QUIZ_QUESTIONS);
+const MKTGMATH_QUIZ_QUESTIONS = [
+  {
+    "source": "mt_margin",
+    "prompt": "Sealed Air sells SD-120 at $65.35 per unit with variable cost of $36.31 per unit. What is the unit margin?",
+    "options": [
+      "$36.31",
+      "$29.04",
+      "$44.40",
+      "$101.66"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Unit margin = price minus variable cost = 65.35 - 36.31 = $29.04."
+  },
+  {
+    "source": "mt_margin",
+    "prompt": "In the same example, what is the percent margin?",
+    "options": [
+      "80.0%",
+      "55.6%",
+      "44.4%",
+      "29.0%"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Percent margin = 29.04 / 65.35 = .444, divided by revenue (price), not by cost. 29.04/36.31 = 80% would be a markup on cost."
+  },
+  {
+    "source": "mt_margin",
+    "prompt": "A retailer's cost is $100 and it wants a 50% margin. What is the selling price?",
+    "options": [
+      "$200",
+      "$150",
+      "$250",
+      "$175"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Price = 100 / (1 - .5) = $200. Margin is $100, which is 50% of $200 (and a 100% markup on cost)."
+  },
+  {
+    "source": "mt_margin",
+    "prompt": "Cost is $25 and the target margin is 40% of price. What price results (rounded to cents)?",
+    "options": [
+      "$35.00",
+      "$40.00",
+      "$45.00",
+      "$41.67"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "25 / (1 - .40) = 25/.6 = $41.67 (the note prints $41.66, a truncation). $35 would be a 40% markup on cost."
+  },
+  {
+    "source": "mt_margin",
+    "prompt": "A manufacturer sells a book to a bookstore for $6 and the bookstore takes a 40% margin. What is the retail price?",
+    "options": [
+      "$8.40",
+      "$10.00",
+      "$9.60",
+      "$8.00"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "6 / (1 - .40) = $10.00, giving the bookstore $4. $8.40 is $6 x 1.40, a markup on cost that yields only a 28.6% margin."
+  },
+  {
+    "source": "mt_margin",
+    "prompt": "Which statement correctly describes Figure 1b in the note?",
+    "options": [
+      "Total cost is a straight line because variable cost per unit is constant",
+      "Total cost falls as volume rises because fixed costs shrink",
+      "Total cost rises at a decreasing rate, because variable cost per unit falls as volume grows",
+      "Fixed cost rises with each unit sold"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Fig. 1a is the straight-line (constant per-unit variable cost) case that most cases assume. Fig. 1b shows decreasing variable cost per unit."
+  },
+  {
+    "source": "mt_channel",
+    "prompt": "In the golf tape channel the wholesaler buys at $7.50 and sells to retailers at $8.70. What is the wholesaler's percent margin?",
+    "options": [
+      "16.00%",
+      "12.00%",
+      "13.00%",
+      "13.79%"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Margin = 8.70 - 7.50 = $1.20; 1.20 / 8.70 = 13.79%. (13% is the retailer's: 1.30/10.00.)"
+  },
+  {
+    "source": "mt_channel",
+    "prompt": "What is the manufacturer's percent margin in the golf tape channel (variable cost $4.00, sells at $7.50)?",
+    "options": [
+      "46.67%",
+      "87.50%",
+      "35.00%",
+      "40.00%"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "3.50 / 7.50 = 46.67%. 87.5% would divide by cost ($4.00); 35% is its share of the $10 consumer price."
+  },
+  {
+    "source": "mt_breakeven",
+    "prompt": "The golf tape manufacturer has $700,000 in fixed costs and a $3.50 unit margin. What is the break-even volume?",
+    "options": [
+      "175,000 units",
+      "200,000 units",
+      "245,000 units",
+      "280,000 units"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "BEV = 700,000 / 3.50 = 200,000."
+  },
+  {
+    "source": "mt_breakeven",
+    "prompt": "A golf pro will endorse the tape for a one-time $175,000. How many added units justify this?",
+    "options": [
+      "50,000 units",
+      "62,500 units",
+      "175,000 units",
+      "40,000 units"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "175,000 / 3.50 = 50,000 additional units."
+  },
+  {
+    "source": "mt_breakeven",
+    "prompt": "Instead the pro wants a $1 royalty per tape. What is the new break-even volume and the change?",
+    "options": [
+      "250,000 units, up 25%",
+      "280,000 units, up 28%",
+      "280,000 units, up 40%",
+      "233,333 units, up 17%"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "New margin $2.50; 700,000/2.50 = 280,000, which is 40% above 200,000."
+  },
+  {
+    "source": "mt_breakeven",
+    "prompt": "Break-even is 200,000 units in a 5,000,000-unit market, of which 1,000,000 units are for beginners. What share of the beginner market is required?",
+    "options": [
+      "4%",
+      "25%",
+      "2%",
+      "20%"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "200,000/1,000,000 = 20%. Against the whole market it is 4%. The market definition changes how big the required share looks."
+  },
+  {
+    "source": "mt_breakeven",
+    "prompt": "Using the slide formula, what price must a firm charge to break even by selling 40,000 units, with fixed costs of $600,000 and variable cost of $12 per unit?",
+    "options": [
+      "$27",
+      "$15",
+      "$12",
+      "$39"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "BESP = FC/volume + VC = 600,000/40,000 + 12 = 15 + 12 = $27."
+  },
+  {
+    "source": "mt_breakeven",
+    "prompt": "Fixed costs are $700,000, margin $3.50. Upgraded packaging adds $0.50 per unit. By the slide method, how many additional units are needed to break even?",
+    "options": [
+      "20,000 units",
+      "100,000 units",
+      "33,333 units",
+      "50,000 units"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "New BEP = 700,000/3.00 = 233,333; minus old BEP of 200,000 = 33,333."
+  },
+  {
+    "source": "mt_price",
+    "prompt": "Price $100, variable cost $60, 1 million units. How many units are needed at a price of $80 to keep total margin at $40 million?",
+    "options": [
+      "1,250,000 units (+25%)",
+      "1,500,000 units (+50%)",
+      "1,333,333 units (+33%)",
+      "2,000,000 units (+100%)"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Margin falls to $20, so 40,000,000/20 = 2,000,000. A 20% price cut halves unit margin, so volume must double."
+  },
+  {
+    "source": "mt_price",
+    "prompt": "Price rises from $100 to $120 (variable cost $60, base 1 million units). Total margin is unchanged if volume falls by:",
+    "options": [
+      "33.3%",
+      "20%",
+      "50%",
+      "16.7%"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "New margin $60; 40M/60 = 666,667 units: a 33.3% decrease. A larger fall means total margin drops."
+  },
+  {
+    "source": "mt_price",
+    "prompt": "Price changes are described as 'highly leveraged'. When is the effect most pronounced?",
+    "options": [
+      "When fixed costs are high",
+      "When the firm has a large market share",
+      "When variable costs are high and unit margins small",
+      "When variable costs are low and unit margins large"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "A given % price change is a larger % change in unit margin when margins are thin, and volume must make up that margin change."
+  },
+  {
+    "source": "mt_experience",
+    "prompt": "In the slides, the experience curve says unit cost declines by a fixed percentage each time:",
+    "options": [
+      "Cumulative production doubles",
+      "Price is cut by 10%",
+      "A year of production passes",
+      "Fixed costs are recovered"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "c_n = c_1 n^(-a): costs fall by a constant percent per doubling of cumulative volume."
+  },
+  {
+    "source": "mt_experience",
+    "prompt": "How is the slide's learning rate a obtained from c_1 = $110 and a cost of $60 at 1,000,000 units?",
+    "options": [
+      "a = 60/110 = .545",
+      "a = ln(110/60) / ln(1,000,000), about .0438",
+      "a = ln(60) / ln(1,000,000), about .30",
+      "a = (110-60)/1,000,000"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Taking logs of 60 = 110 x 1,000,000^-a gives a = ln(110/60)/ln(1,000,000) = .04387 (the slide writes .0438)."
+  },
+  {
+    "source": "mt_experience",
+    "prompt": "With a = .0438 and c_1 = $110, the cost of the 2nd unit is closest to:",
+    "options": [
+      "$55.00",
+      "$109.89",
+      "$106.71",
+      "$100.00"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "110 x 2^-.0438 = 106.71, a decline of about 3.0% per doubling."
+  },
+  {
+    "source": "mt_experience",
+    "prompt": "In the slide's console break-even, CM_n = $121 - $26 - 110 n^-.0438. Which element is NOT affected by experience?",
+    "options": [
+      "The 110 n^-.0438 direct cost",
+      "The cumulative volume n",
+      "Contribution margin per unit",
+      "The $26 non-direct costs"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Direct costs follow the curve; the $26 of non-direct costs does not. Contribution margin changes as direct cost falls."
+  },
+  {
+    "source": "mt_marginal",
+    "prompt": "Under the slide's marginal analysis, advertising should be increased until:",
+    "options": [
+      "MR = MC (one more dollar returns one more dollar of sales)",
+      "Total sales are maximized",
+      "Fixed costs are recovered",
+      "Advertising equals 10% of sales"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The optimum is where marginal revenue equals marginal cost; beyond it, profit declines."
+  },
+  {
+    "source": "mt_marginal",
+    "prompt": "With an S-shaped sales response, MR = MC at two points. Why is the first not optimal?",
+    "options": [
+      "It lies where sales are zero",
+      "Marginal cost is negative there",
+      "It lies on the increasing-returns portion, so spending more still improves returns",
+      "It occurs only with multiple marketing mix elements"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Only the crossing on the diminishing-returns part is the maximum; at the first crossing the slope of the sales curve is still rising."
+  },
+  {
+    "source": "mt_marginal",
+    "prompt": "Contribution from ad spend A is 80 sqrt(A) with advertising costing $1 per $1 (profit = 80 sqrt(A) - A). What A maximizes profit?",
+    "options": [
+      "$400",
+      "$1,600",
+      "$6,400",
+      "$800"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Set marginal contribution 40/sqrt(A) = 1, so sqrt(A) = 40 and A = 1,600; profit = 80(40) - 1,600 = $1,600."
+  },
+  {
+    "source": "mt_marginal",
+    "prompt": "A firm cannot reach MR = MC in each marketing mix element before its budget runs out. The slide rule is to:",
+    "options": [
+      "Spend the whole budget on the element with the highest average return",
+      "Split the budget equally",
+      "Spend nothing until MR = MC everywhere",
+      "Allocate so marginal returns are equal across elements"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Keep moving the next dollar to the highest marginal return; at the end it is the same in every element."
+  },
+  {
+    "source": "mt_context",
+    "prompt": "According to the note's closing section, calculations become significant in an argument when:",
+    "options": [
+      "They are carried to two decimal places",
+      "They are computed by computer rather than by hand",
+      "They are compared with a benchmark such as market size, growth, or competition",
+      "They are expressed as percentages"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The note: numbers matter against benchmarks, and the goal is to help in making marketing policy decisions."
+  },
+  {
+    "source": "mt_context",
+    "prompt": "On the slides' pain-reliever perceptual map, why is Tylenol judged best positioned?",
+    "options": [
+      "Close to segment one's ideal, differentiated, and owns gentleness",
+      "It has the lowest price",
+      "It is the most effective product",
+      "It sits in the middle of the map"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The slides give three reasons: closeness to the ideal, differentiation, and owning a dimension. Being in the middle is the 'stuck' problem."
+  }
+];
+
+const MKTGEMOTIV_QUIZ_QUESTIONS = [
+  {
+    "source": "em_glance",
+    "prompt": "Where are Emotiv's R&D labs located?",
+    "options": [
+      "Sydney",
+      "San Francisco",
+      "Melbourne",
+      "Cambridge, MA"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "R&D was in Sydney; the commercial headquarters was in San Francisco (p. 1)."
+  },
+  {
+    "source": "em_tech",
+    "prompt": "How many mental states could the EPOC detect by October 2007?",
+    "options": [
+      "12",
+      "30",
+      "16",
+      "42"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The system detected 30 states across Expressiv, Affectiv and Cognitiv; the headset had 16 sensors (p. 4, Exhibit 4)."
+  },
+  {
+    "source": "em_tech",
+    "prompt": "What was the main reason Emotiv chose EEG over fMRI and PET?",
+    "options": [
+      "EEG has the best signal quality",
+      "It requires no software",
+      "Low cost and portability",
+      "It is the newest technology"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "EEG had a roughly $10,000-range cost and was portable, despite weaker signal quality (pp. 2 to 3)."
+  },
+  {
+    "source": "em_tech",
+    "prompt": "What is a key drawback of EEG described in the case?",
+    "options": [
+      "It only works in hospitals",
+      "It needs radioactive tracers",
+      "It only measures one mental state",
+      "Electrical signals must pass through the skull, degrading quality"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The signal crosses protective layers and the skull before reaching the electrode (p. 2)."
+  },
+  {
+    "source": "em_options",
+    "prompt": "What is the typical console-maker royalty on a peripheral?",
+    "options": [
+      "3% to 5% of retail price",
+      "1% to 2% of retail price",
+      "10% to 15% of retail price",
+      "20% of retail price"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "3% to 5%; 10% to 15% is the game-title royalty paid by third-party publishers (pp. 5, 8)."
+  },
+  {
+    "source": "em_options",
+    "prompt": "What royalty would a third-party game publisher expect on EPOC?",
+    "options": [
+      "About 15% of game retail price",
+      "About 2% of EPOC's selling price",
+      "Flat $5 per game",
+      "None"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "About 2% of EPOC's selling price (p. 9)."
+  },
+  {
+    "source": "em_options",
+    "prompt": "Why did the case say Nintendo might not be a viable partner?",
+    "options": [
+      "Wii sales were poor",
+      "Nintendo refused to meet",
+      "Wii lacked the computing power, and Nintendo focused on improving its existing motion detection",
+      "Nintendo had its own headset"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Two issues: limited computing power for the algorithms and management focus on existing motion detection (p. 8)."
+  },
+  {
+    "source": "em_options",
+    "prompt": "What did Sony Europe propose?",
+    "options": [
+      "A full-price EPOC for the PS3",
+      "An exclusive bundle with Guitar Hero",
+      "To acquire Emotiv",
+      "An EPOClite with fewer sensors for the PSP"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "A simpler EPOClite for the PSP, at lower price and lower game costs (p. 9)."
+  },
+  {
+    "source": "em_options",
+    "prompt": "What does EmoKey enable?",
+    "options": [
+      "Existing PC games to be controlled by EPOC mental states in place of keystrokes",
+      "Console compatibility",
+      "A direct sales website",
+      "Voice commands"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "EmoKey maps mental states onto keyboard functions for backward compatibility (p. 10)."
+  },
+  {
+    "source": "em_industry",
+    "prompt": "Which statement about PC gaming matches the case?",
+    "options": [
+      "PC publishers pay a per-game platform royalty",
+      "PC games are mostly designed for Windows and carry no per-game royalty to a platform owner",
+      "PC gaming was growing faster than consoles",
+      "PC gaming was larger than console gaming"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Windows dominance and no platform royalty are listed differences (p. 6)."
+  },
+  {
+    "source": "em_industry",
+    "prompt": "In Exhibit 7, which console led worldwide cumulative shipments at the end of September 2007?",
+    "options": [
+      "Xbox 360",
+      "PS3",
+      "Wii",
+      "Tie between Wii and PS3"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Wii 12.26M (42.1%) versus Xbox 360 11.98M (41.1%) and PS3 4.92M (16.9%)."
+  },
+  {
+    "source": "em_numbers",
+    "prompt": "What is the EPOC's unit production cost before and after the first million units?",
+    "options": [
+      "$399, then $299",
+      "$60, then $110",
+      "$199, then $99",
+      "$110, then $60"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "$110 per unit, dropping to $60 after one million units (p. 11)."
+  },
+  {
+    "source": "em_numbers",
+    "prompt": "Which margin does the case associate with Best Buy?",
+    "options": [
+      "35%",
+      "25%",
+      "7%",
+      "0%"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Best Buy 35%; e-tailers 25%; 0% direct; plus 7% MDF on non-direct sales (pp. 11 to 12)."
+  },
+  {
+    "source": "em_numbers",
+    "prompt": "What does the case say is the expected distribution of EPOC sales by channel?",
+    "options": [
+      "50% retail, 50% online",
+      "80% retail, 15% e-tailers, rest direct",
+      "30% retail, 60% e-tailers, 10% direct",
+      "100% retail"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "About 80% retail, 15% e-tailers, and the rest direct (p. 12)."
+  },
+  {
+    "source": "em_numbers",
+    "prompt": "In Exhibit 11, Guitar Hero accessory units in its second year (2006) were:",
+    "options": [
+      "82,800",
+      "1,734,000",
+      "1,138,000",
+      "3,000,000"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "82,800 in 2005, 1,138,000 in 2006, 1,734,000 in 2007E."
+  },
+  {
+    "source": "em_numbers",
+    "prompt": "Which price point do retailers say was the highest EPOC could probably charge?",
+    "options": [
+      "$99",
+      "$199",
+      "$299",
+      "$399"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "$399 was suggested as the highest given console prices (p. 11)."
+  },
+  {
+    "source": "em_fwmarket",
+    "prompt": "Moore's chasm sits between which two groups?",
+    "options": [
+      "Early adopters and early majority",
+      "Innovators and early adopters",
+      "Late majority and laggards",
+      "Early majority and late majority"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The chasm separates visionary early adopters from pragmatic early majority buyers."
+  },
+  {
+    "source": "em_fwmarket",
+    "prompt": "Which is NOT one of the standard tests of a useful market segment?",
+    "options": [
+      "Measurable",
+      "Identical in needs to all other segments",
+      "Accessible",
+      "Actionable"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Segments should be differentiable (respond differently), not identical."
+  },
+  {
+    "source": "em_fwmarket",
+    "prompt": "Which is typically true of B2B markets compared with B2C?",
+    "options": [
+      "Single decision maker and short cycle",
+      "Only mass-media marketing",
+      "Organizational buying centers and longer sales cycles",
+      "Always lower prices"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "B2B purchases usually involve several people and longer processes."
+  },
+  {
+    "source": "em_fwmix",
+    "prompt": "In forecasting by analogy, which step typically comes first?",
+    "options": [
+      "Compute cumulative installed base",
+      "Set the price",
+      "Run conservative and aggressive scenarios",
+      "Select comparable products and judge their fit"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Choosing and vetting the analog comes first; scaling and stress tests follow."
+  }
+];
+
+const MKTGLOREAL_QUIZ_QUESTIONS = [
+  {
+    "source": "lo_glance",
+    "prompt": "Who took responsibility for Plénitude in early 1996?",
+    "options": [
+      "Lindsay Owen-Jones",
+      "Guy Peyrelongue",
+      "Carol Hamilton",
+      "Joseph Campinell"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Carol Hamilton, SVP Marketing in the Retail Division, took the brand in early 1996. Campinell led the division."
+  },
+  {
+    "source": "lo_story",
+    "prompt": "What does “trickle down and fire up” describe?",
+    "options": [
+      "Price cuts at retail trigger higher trade promotion",
+      "Local innovations are rolled out globally",
+      "Prestige-brand technology reaches mass brands, whose volume funds new R&D",
+      "Mass-brand technology moves up to prestige brands"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Technology developed for prestige lines is leveraged in mass outlets where volumes are high, and the resulting profits fund the next generation of R&D."
+  },
+  {
+    "source": "lo_story",
+    "prompt": "How many SKUs did Plénitude introduce in the U.S. in 1988?",
+    "options": [
+      "10",
+      "14",
+      "19",
+      "8"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The U.S. strategy was to introduce the entire line at once: 14 SKUs. (The 1995 line had 19 items: 5 daily, 8 treatment, 6 cleansers.)"
+  },
+  {
+    "source": "lo_story",
+    "prompt": "Which statement about the 1982 French launch of Plénitude is correct?",
+    "options": [
+      "A single moisturizer launched at a 30% price premium",
+      "A full line launched at parity pricing",
+      "Three moisturizers launched on television",
+      "A cleanser launched first in department stores"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "France began with one general-purpose moisturizer, priced 30% above incumbents; cleansers were added in 1986."
+  },
+  {
+    "source": "lo_story",
+    "prompt": "In what year did L’Oréal buy out Nestlé’s stake in Cosmair, making it a wholly owned subsidiary?",
+    "options": [
+      "1991",
+      "1996",
+      "1988",
+      "1994"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "1994. Until then Cosmair had been the U.S. licensee of L’Oréal."
+  },
+  {
+    "source": "lo_market",
+    "prompt": "Which brand’s moisturizer dollar share rose most between 1991 and 1995 (Exhibit 7)?",
+    "options": [
+      "Neutrogena",
+      "Almay",
+      "Pond’s",
+      "Olay"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Pond’s rose from 5.0 to 15.1. Olay fell from 38.3 to 28.2."
+  },
+  {
+    "source": "lo_market",
+    "prompt": "What proportion of Plénitude moisturizer units were treatment products in 1995?",
+    "options": [
+      "12%",
+      "49%",
+      "35%",
+      "65%"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "65% treatment, 35% daily. Olay was 88% daily."
+  },
+  {
+    "source": "lo_market",
+    "prompt": "Which brand held 21.6% of 1995 mass cleanser dollars in the ACNielsen table?",
+    "options": [
+      "Olay",
+      "Neutrogena",
+      "Plénitude",
+      "Noxzema"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Noxzema held 21.6% of cleanser dollars; Plénitude held 3.4%."
+  },
+  {
+    "source": "lo_numbers",
+    "prompt": "How does the case tell you to estimate Plénitude’s item costs?",
+    "options": [
+      "25% of the retail price",
+      "25% of the trade price",
+      "40% of net sales",
+      "Equal to advertising spend"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Footnote 4: use 25% of the trade prices in Exhibit 8A as item costs."
+  },
+  {
+    "source": "lo_numbers",
+    "prompt": "What was Plénitude’s 1995 pre-tax result?",
+    "options": [
+      "Profit of $3.8MM",
+      "Loss of $12.5MM",
+      "Loss of $25.4MM",
+      "Break-even"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Loss of $12.5MM in 1995. The $25.4MM loss was 1990’s."
+  },
+  {
+    "source": "lo_numbers",
+    "prompt": "In 1990, how did Plénitude’s advertising and promotion compare with its net sales?",
+    "options": [
+      "About 80% of sales",
+      "Equal to sales",
+      "Less than half of sales",
+      "Higher than sales ($35.5MM versus $31.7MM)"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "A&P of $35.5MM exceeded net sales of $31.7MM."
+  },
+  {
+    "source": "lo_numbers",
+    "prompt": "Approximately what share of Q1 1996 Plénitude dollar sell-through was Revitalift Face (Exhibit 14)?",
+    "options": [
+      "22%",
+      "40%",
+      "5%",
+      "12%"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "$5,679,850 ÷ $25,807,235 is about 22%."
+  },
+  {
+    "source": "lo_research",
+    "prompt": "Which benefit segment was the largest in the 1995 Facial Skin Care Market Study?",
+    "options": [
+      "Age Focused",
+      "Unconcerned",
+      "Stressed Out",
+      "Price Conscious Socializers"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Unconcerned: 25% of respondents, who basically buy on price."
+  },
+  {
+    "source": "lo_research",
+    "prompt": "What is Plénitude’s awareness-to-trial conversion ratio in Exhibit 11?",
+    "options": [
+      "29%",
+      "30%",
+      "23%",
+      "78%"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "29%: 23% ever tried divided by 78% aware (about 29.5%). 23% is the trial rate and 30% is the retention ratio."
+  },
+  {
+    "source": "lo_research",
+    "prompt": "In the Plénitude acceptor/rejector groups, what did many say motivated trial?",
+    "options": [
+      "A friend’s recommendation",
+      "The L’Oréal brand name",
+      "Coupons and samples",
+      "A dermatologist"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The L’Oréal name was cited by many as the primary motivator; the Plénitude name meant little to them."
+  },
+  {
+    "source": "lo_frameworks",
+    "prompt": "On a perceptual map, arrows that point in the same general direction indicate attributes that are:",
+    "options": [
+      "Highly correlated",
+      "Unrelated to each other",
+      "Measured on different scales",
+      "Rated by different respondents"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Per Appendix A, arrows pointing the same way show highly correlated attributes."
+  },
+  {
+    "source": "lo_frameworks",
+    "prompt": "Retention ratio in an awareness-trial-usage study is:",
+    "options": [
+      "Currently using ÷ ever tried",
+      "Ever tried ÷ aware",
+      "Repeat purchases ÷ units sold",
+      "Aware ÷ total sample"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Retention = % currently using ÷ % ever tried; conversion = % ever tried ÷ % aware."
+  },
+  {
+    "source": "lo_caseb",
+    "prompt": "In 2009, L’Oréal’s global ad spending ($4.56 billion) ranked behind which two companies?",
+    "options": [
+      "Coca-Cola and Nestlé",
+      "Estee Lauder and Avon",
+      "P&G and Unilever",
+      "Revlon and Unilever"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Exhibit 5 and text: third-largest advertiser behind P&G and Unilever."
+  }
+];
+
+const MKTGVIRGIN_QUIZ_QUESTIONS = [
+  {
+    "source": "vm_glance",
+    "prompt": "What subscriber goal did Schulman set for the end of the first year?",
+    "options": [
+      "1 million",
+      "500,000",
+      "2 million",
+      "3 million"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The goal was 1 million by the end of year one and 3 million by year four."
+  },
+  {
+    "source": "vm_glance",
+    "prompt": "What kind of operator is Virgin Mobile USA?",
+    "options": [
+      "A facilities-based carrier with its own towers",
+      "An MVNO that buys minutes on Sprint's network as used",
+      "A reseller of Verizon handsets only",
+      "A prepaid-only calling-card company"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "It is a 50-50 JV with Sprint hosted on Sprint's PCS network; minutes are bought as used."
+  },
+  {
+    "source": "vm_market",
+    "prompt": "Which carrier had the most subscribers in Exhibit 1 (Q4 2001)?",
+    "options": [
+      "Cingular",
+      "Sprint",
+      "Verizon",
+      "AT&T (affiliates)"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Verizon had 29.5 million, ahead of Cingular at 21.7 million."
+  },
+  {
+    "source": "vm_market",
+    "prompt": "Which was NOT a reason the case gives for big carriers avoiding youth?",
+    "options": [
+      "Poor credit quality",
+      "Assumed low or irregular usage",
+      "High acquisition cost versus customer value",
+      "Youth penetration was already saturated"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Youth penetration was low in the U.S. with robust projected growth; the other three are reasons given."
+  },
+  {
+    "source": "vm_market",
+    "prompt": "In Exhibit 2, which U.S. age group has the highest penetration?",
+    "options": [
+      "Ages 15-19",
+      "Ages 30-59",
+      "Ages 20-29",
+      "All groups are equal"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The U.S. is the one country shown where the 30-59 group is highest, with youth much lower."
+  },
+  {
+    "source": "vm_carriers",
+    "prompt": "Using the case's industry averages, what is the implied monthly gross margin per subscriber?",
+    "options": [
+      "$52",
+      "$30",
+      "$22 ($52 bill minus $30 cost to serve)",
+      "$370"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "$52 average bill minus about $30 cost to serve gives $22 per month."
+  },
+  {
+    "source": "vm_carriers",
+    "prompt": "Which is NOT a component of acquisition cost in Exhibit 11?",
+    "options": [
+      "Network cost per minute",
+      "Advertising per gross add",
+      "Sales commission per subscriber",
+      "Handset subsidy"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Network cost is part of CCPU (cost to serve), not acquisition cost."
+  },
+  {
+    "source": "vm_carriers",
+    "prompt": "What share of U.S. subscribers had contracts, and what share of prospects failed credit checks?",
+    "options": [
+      "About 50% had contracts; 10% failed",
+      "Over 90% had contracts; 3% failed",
+      "About 92% prepaid; 30% failed",
+      "Over 90% had contracts; 30% failed checks"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The case says over 90% had contracts and that 30% of prospective customers failed credit checks."
+  },
+  {
+    "source": "vm_virgin",
+    "prompt": "What sales commission does Virgin pay Target and Best Buy per phone?",
+    "options": [
+      "$100",
+      "$30 (versus about $100 industry)",
+      "$60",
+      "$10"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Virgin's channel agreements charge $30 per phone; the industry average is $100."
+  },
+  {
+    "source": "vm_virgin",
+    "prompt": "What does Virgin pay Kyocera per handset?",
+    "options": [
+      "$150 to $300",
+      "$30 to $60",
+      "$60 to $100",
+      "$100 to $200"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Industry handset costs were $150 to $300; Virgin's contract with Kyocera was $60 to $100."
+  },
+  {
+    "source": "vm_virgin",
+    "prompt": "About how large is Virgin Mobile USA's advertising budget?",
+    "options": [
+      "About $60 million",
+      "About $650 million",
+      "About $1.8 billion",
+      "About $6 million"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Virgin's budget was about $60M, compared with over $650M for Verizon alone."
+  },
+  {
+    "source": "vm_pricing",
+    "prompt": "How did off-peak start times change over time?",
+    "options": [
+      "From 9 pm to 6 pm",
+      "From 8 pm to 10 pm",
+      "They stayed at 6 pm",
+      "From 6 pm to 7, 8, then 9 pm"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Off-peak originally began at 6 pm and shifted later in steps to 9 pm."
+  },
+  {
+    "source": "vm_pricing",
+    "prompt": "What does the note on Exhibit 10b say about each additional off-peak hour?",
+    "options": [
+      "It raises price by 1.5 cents",
+      "It lowers average price per minute by about 1.5 cents",
+      "It lowers price by 15 cents",
+      "It has no effect"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The note says prices assume off-peak starting at 9 pm and each additional off-peak hour cuts average price per minute by about 1.5 cents."
+  },
+  {
+    "source": "vm_pricing",
+    "prompt": "What are the case's churn figures for contract vs no contract/prepaid?",
+    "options": [
+      "6% vs 2% per month",
+      "1% vs 3% per month",
+      "2% vs 6% per month",
+      "2% vs 12% per month"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Industry churn averaged 2% with contracts; estimated to climb to 6% per month without them (and 6% for prepaid)."
+  },
+  {
+    "source": "vm_cltv",
+    "prompt": "What is the case's simple CLTV formula?",
+    "options": [
+      "M / (1 - r + i) - AC",
+      "M / (1 + r - i) - AC",
+      "M r / (1 - r + i) + AC",
+      "M (1 - r + i) - AC"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Exhibit 11 gives LTV = M/(1 - r + i) - AC, under constant margin and infinite life."
+  },
+  {
+    "source": "vm_cltv",
+    "prompt": "How does the slide \"most common\" variant, m r/(1 + i - r), relate to the case formula?",
+    "options": [
+      "It equals the case value divided by r",
+      "It is identical to the case formula",
+      "It equals the case value plus r",
+      "It equals r times the case value (before AC)"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "It assumes customers can churn before the first margin; the extra factor is r."
+  },
+  {
+    "source": "vm_cltv",
+    "prompt": "In the general CLTV formula, what is r^(a-1)?",
+    "options": [
+      "The interest rate for year a",
+      "The survival rate for year a",
+      "The margin for year a",
+      "The acquisition cost"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Exhibit 11 defines r^(a-1) as the survival rate for year a; the first period has survival 1."
+  },
+  {
+    "source": "vm_cltv",
+    "prompt": "What does the case say about Virgin's CCPU in year one?",
+    "options": [
+      "Constant at $30 per month",
+      "Equal to 2% of revenues",
+      "Constant at 45% of revenues",
+      "Falling from 45% to 30% of revenues"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Analysts estimated CCPU at 45% of revenues because most costs were variable."
+  }
+];
+
+const MKTGBBVA_QUIZ_QUESTIONS = [
+  {
+    "source": "bb_glance",
+    "prompt": "Who is the chief marketing officer leading the December 2010 budget meeting?",
+    "options": [
+      "Manolo Sanchez",
+      "Frank Sottosanti",
+      "Chris Armstrong",
+      "Robert Galietti"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Sottosanti is the CMO; Sanchez is CEO, Armstrong the advertising manager, Galietti an agency account director."
+  },
+  {
+    "source": "bb_market",
+    "prompt": "In 2010, how did BBVA Compass rank among U.S. banks by deposits?",
+    "options": [
+      "Fifth-largest",
+      "Tenth-largest",
+      "Fifteenth-largest",
+      "Twenty-fifth-largest"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The case calls it the fifteenth-largest bank in the U.S."
+  },
+  {
+    "source": "bb_market",
+    "prompt": "Which state accounts for the largest share of branches and deposits?",
+    "options": [
+      "California",
+      "Florida",
+      "Alabama",
+      "Texas"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Exhibit 1: Texas has 53% of branches and 65% of deposits."
+  },
+  {
+    "source": "bb_offline",
+    "prompt": "What happened to aided brand awareness in 2009 after the name change to BBVA Compass?",
+    "options": [
+      "It rose to 86%",
+      "It was not measured",
+      "It stayed above 80%",
+      "It fell to 48%"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Awareness fell from over 80% to 48% in 2009; the 2010 goal was 53%."
+  },
+  {
+    "source": "bb_offline",
+    "prompt": "Which statement about the sponsorship deals is accurate?",
+    "options": [
+      "The NBA deal was signed by BBVA Compass only and covers only the U.S.",
+      "The NBA deal was signed by BBVA Group and covers the U.S., Spain and Puerto Rico",
+      "The bowl deal was with the NFL",
+      "Both deals were signed in 2008"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The NBA deal (Sept 2010) is a BBVA Group deal covering the U.S., Spain and Puerto Rico; the bowl deal is with ESPN (Nov 2010)."
+  },
+  {
+    "source": "bb_offline",
+    "prompt": "Where was the 2010 BBVA Compass Bowl scheduled?",
+    "options": [
+      "Houston",
+      "Fort Worth",
+      "Birmingham",
+      "Albuquerque"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Legion Field in Birmingham, Alabama, Jan 8, 2011. The other three were associate sponsorships."
+  },
+  {
+    "source": "bb_online",
+    "prompt": "About what share of online ad clickers start an application?",
+    "options": [
+      "About 2%",
+      "About 80%",
+      "About 50%",
+      "About 10%"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Sottosanti: about 10% start an application."
+  },
+  {
+    "source": "bb_online",
+    "prompt": "About what share of approved online accounts fund in time?",
+    "options": [
+      "One-third",
+      "Half",
+      "Two-thirds",
+      "Almost all"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "About two-thirds fund within the required time frame."
+  },
+  {
+    "source": "bb_online",
+    "prompt": "What is the typical approval rate for online applications compared with branches?",
+    "options": [
+      "About 80% vs 95-100%",
+      "About 95% vs 80%",
+      "About 50% vs 65%",
+      "About 60% vs 100%"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Online approvals are about 80% against 95% to 100% for branch applications."
+  },
+  {
+    "source": "bb_numbers",
+    "prompt": "What was the 2010 planned online budget for checking account acquisition?",
+    "options": [
+      "$677,000",
+      "$545,000",
+      "$1,222,000",
+      "$5,820,000"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Table C: $677,000 display plus $545,000 search equals $1,222,000 (21% of the ad budget)."
+  },
+  {
+    "source": "bb_numbers",
+    "prompt": "Per Table C, which statement about cost per application (CPA) is true?",
+    "options": [
+      "Search $73 is lower than display $88",
+      "Display is lower than search",
+      "Both are $81",
+      "CPA is cost per funded account"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Search CPA is $73, display $88, total $81, each per completed application."
+  },
+  {
+    "source": "bb_numbers",
+    "prompt": "Which ad network in Exhibit 7 had the lowest cost per application?",
+    "options": [
+      "AOL ($60)",
+      "Casale ($102)",
+      "Datran Media ($238)",
+      "Revenue Science ($86)"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "AOL at $60 per completed application is lowest among the display networks."
+  },
+  {
+    "source": "bb_numbers",
+    "prompt": "In Exhibit 10, what was the paid search conversion rate for users not exposed to display ads?",
+    "options": [
+      "1.26%",
+      "1.48%",
+      "3.31%",
+      "0.93%"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "1,095 conversions on 87,152 clicks = 1.26%; total exposed was 1.48%."
+  },
+  {
+    "source": "bb_frameworks",
+    "prompt": "Under a last-click rule, how is credit for a conversion assigned?",
+    "options": [
+      "Split equally across all ads seen",
+      "To the most expensive channel",
+      "Entirely to the first ad seen",
+      "Entirely to the final click"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Last-click credits only the final click; earlier exposures get nothing."
+  },
+  {
+    "source": "bb_frameworks",
+    "prompt": "What does marginal analysis ask when allocating a fixed budget?",
+    "options": [
+      "Which channel has the lowest average cost",
+      "What return the next dollar earns in each channel",
+      "Which channel is largest today",
+      "What last year's split was"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Compare marginal returns per dollar and shift money toward higher ones until they equalize."
+  },
+  {
+    "source": "bb_prep",
+    "prompt": "What does the case give as the five-year lifetime value of a new checking account?",
+    "options": [
+      "About $200",
+      "About $400",
+      "About $800",
+      "About $1,500"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Sottosanti: about $800; the acquisition cost target is below $200."
+  },
+  {
+    "source": "bb_prep",
+    "prompt": "How do retention rates compare for online-acquired vs branch-acquired customers?",
+    "options": [
+      "55% vs 65%",
+      "65% vs 55%",
+      "80% vs 95%",
+      "Both about 60%"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Armstrong: about 55% annually for online customers vs about 65% for branch customers."
+  }
+];
+
+const MKTGATLANTIC_QUIZ_QUESTIONS = [
+  {
+    "source": "ac_numbers",
+    "prompt": "What is the Tronn's list price in Exhibit 3?",
+    "options": [
+      "$2,000",
+      "$1,538",
+      "$1,700",
+      "$11,000"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Exhibit 3 lists Tronn at $2,000 price and $1,538 cost."
+  },
+  {
+    "source": "ac_numbers",
+    "prompt": "What is Ontario Zink's cost per server?",
+    "options": [
+      "$1,700",
+      "$1,214",
+      "$1,538",
+      "$750"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Zink: $1,700 price, $1,214 cost."
+  },
+  {
+    "source": "ac_market",
+    "prompt": "What revenue share does Ontario hold in basic servers?",
+    "options": [
+      "20%",
+      "36%",
+      "50%",
+      "14%"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The case states 50%; 20% is Atlantic's share in High Performance."
+  },
+  {
+    "source": "ac_players",
+    "prompt": "How is Cadena's sales force compensated?",
+    "options": [
+      "About 30% salary and 70% commission",
+      "All commission",
+      "All salary",
+      "About 70% salary and 30% commission"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Page 5 gives roughly 70/30 salary/commission."
+  },
+  {
+    "source": "ac_glance",
+    "prompt": "By how much can PESA speed up a Tronn, per the case?",
+    "options": [
+      "Up to four times",
+      "Up to two times",
+      "Up to ten times",
+      "About 14%"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The case says up to four times faster than standard speed."
+  },
+  {
+    "source": "ac_numbers",
+    "prompt": "Which application has the largest with/without PESA ratio in Exhibit 2?",
+    "options": [
+      "File sharing",
+      "Web services",
+      "e-Mail",
+      "Graphics"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Web services 2222 vs 542, about 4.1; file sharing is about 2.0."
+  },
+  {
+    "source": "ac_numbers",
+    "prompt": "Which pair scored slightly lower with PESA than without?",
+    "options": [
+      "e-Mail and enterprise",
+      "File sharing and web services",
+      "High performance workloads and graphics",
+      "Web services and graphics"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "180 vs 187 and 280 vs 281."
+  },
+  {
+    "source": "ac_market",
+    "prompt": "What are projected basic-segment units in 2003 (Exhibit 1)?",
+    "options": [
+      "70,000",
+      "210,500",
+      "302,500",
+      "92,000"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Basic 50,000 / 70,000 / 92,000."
+  },
+  {
+    "source": "ac_numbers",
+    "prompt": "What PESA attach rate does footnote 5 assume?",
+    "options": [
+      "50%",
+      "25%",
+      "30%",
+      "14%"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Half of Atlantic basic servers are assumed to carry PESA; 30% is the mark-up."
+  },
+  {
+    "source": "ac_numbers",
+    "prompt": "Footnote 6 asks for what kind of sharing and time basis?",
+    "options": [
+      "30% to Atlantic, three years",
+      "50-50 sharing of one year of savings",
+      "Full savings to Atlantic, one year",
+      "50-50 sharing over three years"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The three-year server life is noted, but a per-annum estimate is requested."
+  },
+  {
+    "source": "ac_glance",
+    "prompt": "Which is NOT one of the four routes Jowers lists?",
+    "options": [
+      "Give PESA away",
+      "Price equal to four Zinks",
+      "Price below Ontario's Zink to win share",
+      "Value-in-use price"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The four routes are free, four-Zink price, cost-plus PESA, value-in-use."
+  },
+  {
+    "source": "ac_glance",
+    "prompt": "What is DayTraderJournal.com's top-ranked buying criterion?",
+    "options": [
+      "Top-notch post-sales support",
+      "Flexible payment terms",
+      "Maximum computing speed",
+      "Minimize acquisition costs"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Possession cost is second; processing many requests is third."
+  },
+  {
+    "source": "ac_numbers",
+    "prompt": "How many basic servers can one administrator manage per Exhibit 3?",
+    "options": [
+      "40",
+      "20",
+      "4",
+      "80"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "20 is for High Performance servers."
+  },
+  {
+    "source": "ac_players",
+    "prompt": "Who was not in the kickoff marketing meeting?",
+    "options": [
+      "Chris Matzer",
+      "Jairo Cadena",
+      "Harry Fowler",
+      "Emily Jones"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "The four attendees were Jowers, Matzer, Jones and Fowler."
+  },
+  {
+    "source": "ac_players",
+    "prompt": "What is Matzer's stated belief about software tools?",
+    "options": [
+      "They should be priced above hardware",
+      "They are the main profit source",
+      "They should generally be free",
+      "They should be sold only through partners"
+    ],
+    "correctIndex": 2,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Page 4."
+  },
+  {
+    "source": "ac_frameworks",
+    "prompt": "What is mixed bundling?",
+    "options": [
+      "Items sold only as a bundle",
+      "Two different prices for one item",
+      "A bundle sold to two segments only",
+      "Items sold separately and also as a bundle"
+    ],
+    "correctIndex": 3,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Pure bundling is the 'only as a bundle' case."
+  },
+  {
+    "source": "ac_frameworks",
+    "prompt": "Economic value to the customer equals...",
+    "options": [
+      "Reference alternative price plus value of differences",
+      "Seller's cost plus mark-up",
+      "The competitor's price minus the seller's cost",
+      "Total market size times price"
+    ],
+    "correctIndex": 0,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "EVC starts from the next-best alternative."
+  },
+  {
+    "source": "ac_frameworks",
+    "prompt": "Unit contribution margin is...",
+    "options": [
+      "Price divided by cost",
+      "Price minus unit variable cost",
+      "Fixed cost divided by units",
+      "Revenue minus total fixed cost"
+    ],
+    "correctIndex": 1,
+    "correctFeedback": "Correct.",
+    "incorrectFeedback": "Not quite.",
+    "explanation": "Break-even units = fixed cost / unit contribution."
+  }
+];
+
+const MKTG_MOCK_POOL = MKTG1_QUIZ_QUESTIONS.concat(MKTG2_QUIZ_QUESTIONS).concat(MKTG3_QUIZ_QUESTIONS).concat(MKTG7_QUIZ_QUESTIONS).concat(MKTG6_QUIZ_QUESTIONS).concat(MKTG17_QUIZ_QUESTIONS).concat(MKTG18_QUIZ_QUESTIONS).concat(MKTG5_QUIZ_QUESTIONS).concat(MKTG10_QUIZ_QUESTIONS).concat(MKTG20_QUIZ_QUESTIONS).concat(MKTG8_QUIZ_QUESTIONS).concat(MKTG19_QUIZ_QUESTIONS).concat(MKTG9_QUIZ_QUESTIONS).concat(MKTG11_QUIZ_QUESTIONS).concat(MKTG14_QUIZ_QUESTIONS).concat(MKTGMATH_QUIZ_QUESTIONS).concat(MKTGEMOTIV_QUIZ_QUESTIONS).concat(MKTGLOREAL_QUIZ_QUESTIONS).concat(MKTGVIRGIN_QUIZ_QUESTIONS).concat(MKTGBBVA_QUIZ_QUESTIONS).concat(MKTGATLANTIC_QUIZ_QUESTIONS);
 const MKTG_MOCK_LABELS = {
   scope: "Ch 1 \u00b7 Scope & Realities",
   holistic: "Ch 1 \u00b7 Holistic Marketing",
@@ -3792,7 +5462,56 @@ const MKTG_MOCK_LABELS = {
   c14_sizecomp: "Ch 14 \u00b7 Sales Force Size & Compensation",
   c14_manage: "Ch 14 \u00b7 Managing the Sales Force",
   c14_direct: "Ch 14 \u00b7 Direct Marketing & Its Channels",
-  c14_future: "Ch 14 \u00b7 Future of Direct Marketing & Integration"
+  c14_future: "Ch 14 \u00b7 Future of Direct Marketing & Integration",
+  mt_glance: "Math note \u00b7 Reading at a Glance & Formula Sheet",
+  mt_margin: "Math note \u00b7 Costs, Unit Margin & Percent Margin",
+  mt_channel: "Math note \u00b7 Channel Margins",
+  mt_breakeven: "Math note \u00b7 Break-Even Analysis",
+  mt_price: "Math note \u00b7 Price Changes & Total Margin",
+  mt_experience: "Math note \u00b7 Experience Curve",
+  mt_marginal: "Math note \u00b7 Marginal Analysis",
+  mt_context: "Math note \u00b7 Using the Numbers & Other Slide Topics",
+  mt_practice: "Math note \u00b7 Worked Practice Set",
+  em_glance: "Emotiv \u00b7 Case at a Glance",
+  em_industry: "Emotiv \u00b7 Gaming Industry",
+  em_tech: "Emotiv \u00b7 EPOC & Company",
+  em_options: "Emotiv \u00b7 Platform Options & Launch",
+  em_numbers: "Emotiv \u00b7 The Numbers",
+  em_fwmarket: "Emotiv \u00b7 Frameworks I",
+  em_fwmix: "Emotiv \u00b7 Frameworks II",
+  em_prep: "Emotiv \u00b7 Prep Questions",
+  lo_glance: "L'Oreal \u00b7 Case at a glance",
+  lo_story: "L'Oreal \u00b7 L\u2019Or\u00e9al & the Pl\u00e9nitude story",
+  lo_market: "L'Oreal \u00b7 Market, competitors & pricing",
+  lo_numbers: "L'Oreal \u00b7 The numbers",
+  lo_research: "L'Oreal \u00b7 The research studies",
+  lo_options: "L'Oreal \u00b7 Open choices in the case",
+  lo_frameworks: "L'Oreal \u00b7 Frameworks (generic)",
+  lo_prep: "L'Oreal \u00b7 Prep questions",
+  lo_caseb: "L'Oreal \u00b7 Case B (optional)",
+  vm_glance: "Virgin Mobile \u00b7 Case at a Glance",
+  vm_market: "Virgin Mobile \u00b7 Market & Target Segment",
+  vm_carriers: "Virgin Mobile \u00b7 How Carriers Make Money",
+  vm_virgin: "Virgin Mobile \u00b7 Virgin Mobile Model",
+  vm_pricing: "Virgin Mobile \u00b7 Pricing Variables & Options",
+  vm_cltv: "Virgin Mobile \u00b7 CLTV Formulas & Inputs",
+  vm_prep: "Virgin Mobile \u00b7 Prep Questions",
+  vm_vocab: "Virgin Mobile \u00b7 Vocabulary & Context",
+  bb_glance: "BBVA \u00b7 Case at a glance",
+  bb_market: "BBVA \u00b7 Industry, Bank & Customers",
+  bb_offline: "BBVA \u00b7 Goals, Offline & Sponsorships",
+  bb_online: "BBVA \u00b7 Online: Funnel, Search & Display",
+  bb_numbers: "BBVA \u00b7 The Numbers",
+  bb_frameworks: "BBVA \u00b7 Frameworks",
+  bb_prep: "BBVA \u00b7 Prep Questions",
+  bb_context: "BBVA \u00b7 People & Vocabulary",
+  ac_glance: "Atlantic \u00b7 Case at a glance",
+  ac_market: "Atlantic \u00b7 Market and industry facts",
+  ac_players: "Atlantic \u00b7 Company, rivals and stakeholders",
+  ac_numbers: "Atlantic \u00b7 The numbers (Exhibits 1 to 4)",
+  ac_frameworks: "Atlantic \u00b7 Frameworks the case calls for",
+  ac_prep: "Atlantic \u00b7 Prep questions and checklists",
+  ac_context: "Atlantic \u00b7 People, terms and loose ends"
 };
 
 /* MKTG-UNITS:BEGIN (generated by tools/mktg-units/wire.py) */

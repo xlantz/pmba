@@ -47,9 +47,16 @@ uncovered = sorted((int(c) for c in store['nav'] if int(c) not in covered))
 
 
 # ---------------------------------------------------------------- 1. nav
+# Case briefs and readings (from the cases drop-in), listed after the units when the page exists.
+EXTRAS = [('mktg-math-note', 'Reading &mdash; Low-Tech Marketing Math'), ('case-emotiv', 'Case &mdash; Emotiv Systems'),
+          ('case-loreal', 'Case &mdash; L&rsquo;Oreal Plenitude'), ('case-virgin-mobile', 'Case &mdash; Virgin Mobile USA'),
+          ('case-bbva', 'Case &mdash; BBVA Compass'), ('case-atlantic', 'Case &mdash; Atlantic Computer')]
+
+
 def mktg_menu(indent):
     items = [f'<a href="mktg-unit{n}.html">Unit {n} &mdash; {html.escape(u["META"]["nav"])}</a>' for n, u in units.items()]
     items += [f'<a href="mktg{c}.html">{store["nav"][str(c)]}</a>' for c in uncovered]
+    items += [f'<a href="{stem}.html">{label}</a>' for stem, label in EXTRAS if os.path.exists(os.path.join(SITE, stem + '.html'))]
     items.append('<a href="mktg-mock-test.html">MKTG 6090 Mock Test</a>')
     return ''.join(f'\n{indent}{i}' for i in items) + '\n' + indent[:-2]
 

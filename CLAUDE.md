@@ -35,5 +35,11 @@ changed file (`git merge-file`, ours = repo, base = that version, theirs = zip) 
   If a zip or drop-in changes those areas, re-run `wire.py` afterwards rather than merging them by hand.
 - The chapter pages (`mktgN.html`) remain as reference pages and are the source the unit pages copy from; after
   changing a chapter page, rebuild the units that include it.
+- Case briefs (`case-emotiv`, `case-loreal`, `case-virgin-mobile`, `case-bbva`, `case-atlantic`) and the
+  `mktg-math-note` reading are hand-built drop-in pages (not generated); `wire.py`'s EXTRAS list keeps them in the MKTG
+  menu, and each unit's `uN_case` section links to its brief with the professor's prep questions. Course AI policy:
+  no AI for quizzes, case analyses or MARKSTRAT, so case pages stay briefs only (facts, checked exhibits, frameworks,
+  where to look) with no recommendations or final calculations. The Adobe case (Unit 5) and DDOM instructions were
+  not provided.
 - When new professor slides arrive (Units 7-10), add `uN_*` slide sections per the README; verify every number in
   Python and flag unreadable OCR rather than guessing; never invent case facts (case texts are not available).
