@@ -1,0 +1,40 @@
+const FLASHCARDS = [
+  { source: "glance", front: "What kind of problem is MGT 6051 built to help you diagnose?", back: "Human behavior in organizations: how to generate energy and commitment and channel it toward goals ethically, by understanding root causes of attitudes and behavior." },
+  { source: "glance", front: "Name the three learning goals in one phrase each.", back: "(1) Conceptual/analytical knowledge of behavior at individual, interpersonal, group, intergroup levels and context effects; (2) awareness of your own and others' assumptions, motivations, values; (3) sharper problem definition, more diagnostic models, better action-selection process." },
+  { source: "glance", front: "How is the 3.0-unit course split?", back: "1.5 units in Fall (Part 1) and 1.5 in Spring (Part 2). After Part 1 you get a temporary \"incomplete.\"" },
+  { source: "glance", front: "Order of the five Part 1 weeks?", back: "Values, Leadership, Hiring, Onboarding / Culture, then midsemester wrap-up with the Midterm Quiz." },
+  { source: "how", front: "What does one reading reflection require?", back: "Before class, in a changing small group: one paragraph on each of two required readings/podcasts/videos, max one page total." },
+  { source: "how", front: "The two required parts of each reflection paragraph?", back: "(1) Describe and define, in your own words, the principle most meaningful to you and why; (2) how you have seen it operate at work or school, using a different example from any in the text." },
+  { source: "how", front: "Is the reading reflection a summary?", back: "No. The syllabus says it is explicitly not meant to be a summary; it should personalize the material." },
+  { source: "how", front: "What happens if you miss a reading reflection?", back: "There are no make-up reflections." },
+  { source: "how", front: "What does a peer discussion post require?", back: "A short paragraph of feedback on two (or more) students' reflections in your weekly group." },
+  { source: "how", front: "What should peer feedback look at?", back: "Whether they understood the principle and applied it to a different situation, plus an emotionally intelligent response: self-awareness, empathy, perceptiveness. Advice may be welcome." },
+  { source: "how", front: "Are peer discussions anonymous?", back: "No." },
+  { source: "how", front: "Where do you find assignment instructions and the AI policy?", back: "On Canvas." },
+  { source: "grading", front: "Give all five grade weights.", back: "Papers and assignments 35%, Reading reflections 10%, Peer discussions 10%, Midterm quiz 15%, Final exam 30%." },
+  { source: "grading", front: "Which single component carries the most weight?", back: "Papers and assignments at 35%." },
+  { source: "grading", front: "What share of the grade is exams?", back: "45%: Midterm 15% + Final 30%." },
+  { source: "grading", front: "How are reflections and peer discussions graded, and what share are they together?", back: "Pass/fail; 20% combined (10% each)." },
+  { source: "schedule", front: "Which two kinds of sessions alternate each week?", back: "Tuesday GARF in-person sessions and Thursday VIRT online modules (labels as used in the syllabus schedule)." },
+  { source: "schedule", front: "What is due Thu 11/19?", back: "The paper: Leadership Principles Inventory & Reflection (the slides call it the Leadership Practices Inventory & Reflection), due at midnight." },
+  { source: "schedule", front: "What is due Thu 11/26?", back: "The Leadership Vision Video." },
+  { source: "schedule", front: "What happens Tue 12/1?", back: "Midsemester wrap-up and prep for next semester, the Midterm Quiz, and votes for best Leadership Vision Video are due." },
+  { source: "schedule", front: "What is due at the end of the Thu 12/3 session?", back: "The \"Better Know a Leader\" Group Paper Plan." },
+  { source: "exam", front: "Midterm format and length?", back: "In person on Canvas, closed book, 1 hour, Week 5. It covers all material from Part 1." },
+  { source: "exam", front: "Final exam format and length?", back: "In person on Canvas, closed book, 2 hours, Week 10; covers that half of the course." },
+  { source: "exam", front: "What notes can you bring?", back: "One page front and back of handwritten notes, or one side (front only) of typed notes in 12-pt Times New Roman. You must turn them in." },
+  { source: "exam", front: "What if you score below 70%?", back: "You can take a makeup the following week, maximum score 70%; only the best score counts." },
+  { source: "notes", front: "Why build your own one-page notes instead of copying a classmate's?", back: "Deciding what to include forces retrieval and sorting, which is most of the studying; the page itself is only a backstop." },
+  { source: "notes", front: "Two layout habits that make a cheat sheet usable under time pressure?", back: "One zone per week/topic, and short anchors (names, numbers, keywords) instead of sentences; add a boxed corner for confusable pairs." },
+  { source: "map", front: "How do the five weeks connect in one line?", back: "Values guide how leaders act; leaders decide who is hired; hiring is followed by onboarding where newcomers absorb culture, which feeds back into the values." }
+];
+
+const SOURCE_LABELS = {
+  "glance": "At a Glance",
+  "how": "How the Course Works",
+  "grading": "Grading Weights",
+  "schedule": "Part 1 Schedule",
+  "exam": "Exam Logistics",
+  "notes": "One-Page Notes Strategy",
+  "map": "Big-Picture Map"
+};

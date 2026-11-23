@@ -392,3 +392,12 @@ function initQuiz(){
 
   startBtn.addEventListener('click', start);
 }
+
+/* ---- semester-nav groups (apply_semester_nav.py) ---- */
+document.addEventListener('DOMContentLoaded', () => {
+  const groups = document.querySelectorAll('.nav-group');
+  groups.forEach(g => {
+    // taps inside the menu must not trigger the document-level "close dropdowns" handler
+    g.addEventListener('click', e => e.stopPropagation());
+  });
+});

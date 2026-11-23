@@ -846,3 +846,26 @@ svg .te{ text-anchor:end; }
   .fc-panel{ padding: 18px 16px; }
   .fc-field{ min-width:0; width:100%; }
 }
+
+/* ---- semester-nav (apply_semester_nav.py) ---- */
+.nav-semester .nav-dropdown-menu{ min-width: 300px; }
+.nav-semester .nav-dropdown-menu-inner{ max-height: 78vh; overflow-y:auto; overscroll-behavior: contain; }
+.nav-sem-overview{ font-weight:600; border-bottom:1px solid var(--paper-3); margin-bottom:4px; }
+.nav-group{ border-bottom:1px solid var(--paper-3); }
+.nav-group:last-child{ border-bottom:none; }
+.nav-group > summary{
+  list-style:none; cursor:pointer; display:flex; align-items:center; justify-content:space-between;
+  padding: 10px 16px; font-family: var(--font-mono); font-size:.78rem; font-weight:600;
+  text-transform:uppercase; letter-spacing:.04em; color: var(--blue-deep, var(--text-soft));
+}
+.nav-group > summary::-webkit-details-marker{ display:none; }
+.nav-group > summary::after{ content:"\25BE"; font-size:.7rem; transition: transform .15s ease; color: var(--text-soft); }
+.nav-group[open] > summary::after{ transform: rotate(180deg); }
+.nav-group > summary:hover{ background: var(--paper-2); color: var(--rust-deep); }
+.nav-group-links{ padding: 0 0 6px 10px; border-left:2px solid var(--paper-3); margin: 0 0 6px 16px; }
+.nav-group-links a{ padding: 7px 12px; font-size:.74rem; }
+@media (max-width: 1040px){
+  .nav-semester .nav-dropdown-menu-inner{ max-height:none; overflow:visible; }
+  .nav-group > summary{ padding: 12px 14px; }
+}
+.sem-hub-note{ font-family: var(--font-mono); font-size:.78rem; color: var(--text-soft); }

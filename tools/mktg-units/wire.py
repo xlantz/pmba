@@ -77,6 +77,28 @@ for p in sorted(glob.glob(os.path.join(SITE, '*.html'))):
         end = nav.index('</div>', start)
         indent = re.search(r'\n([ \t]*)<a', nav[start:end]).group(1)
         nav = nav[:start] + mktg_menu(indent) + nav[end:]
+    # Semester layout (apply_semester_nav.py): the MKTG links live in a <details class="nav-group"> under Semester 1.
+    grp = re.search(r'<details class="nav-group" data-href="[^"]*"([^>]*)>\s*<summary>MKTG 6090</summary>\s*<div class="nav-group-links">', nav)
+    if grp:
+        nav = nav[:grp.start()] + re.sub(r'data-href="[^"]*"', f'data-href="{label_href}"', grp.group(0), count=1) + nav[grp.end():]
+        grp = re.search(r'<summary>MKTG 6090</summary>\s*<div class="nav-group-links">', nav)
+        start = grp.end()
+        end = nav.index('</div>', start)
+        nav = nav[:start] + mktg_menu('              ') + nav[end:]
+        # open the group holding this page (and only that one); mark Semester 1 active if one is open
+        here = os.path.basename(p)
+        def set_open(m):
+            body = m.group(0)
+            inside = re.search(r'<div class="nav-group-links">(.*?)</div>', body, re.S).group(1)
+            cur = here in re.findall(r'href="([^"#]*)', inside)
+            head = re.sub(r'\s+open(?=>)', '', body[:body.index('>') + 1])
+            if cur:
+                head = head[:-1] + ' open>'
+            return head + body[body.index('>') + 1:]
+        nav = re.sub(r'<details class="nav-group"[^>]*>.*?</details>', set_open, nav, flags=re.S)
+        sem1_cur = here == 'semester1.html' or '<details class="nav-group" data-href' in nav and re.search(r'<details class="nav-group"[^>]* open>', nav) is not None
+        nav = re.sub(r'(<a href="semester1\.html" class="nav-dropdown-label)( active)?(">Semester 1</a>)',
+                     lambda m: m.group(1) + (' active' if sem1_cur else '') + m.group(3), nav, count=1)
     nav = re.sub(r'\n[ \t]*<a href="#([^"]+)"[^>]*>[^<]*</a>',
                  lambda m: m.group(0) if f'id="{m.group(1)}"' in s else '', nav)
     s = s[:a] + nav + s[b:]
