@@ -15,19 +15,119 @@ const FLASHCARDS = [
     "back": "Tue 12/1; closed book, 1 hour, one page of your own notes; covers all of Part 1."
   },
   {
-    "source": "glance",
-    "front": "What happens on 12/1 besides the midterm?",
-    "back": "Votes for best Leadership Vision Video are due."
+    "source": "schein",
+    "front": "How does Schein define organizational socialization?",
+    "back": "The process of \"learning the ropes\": being trained and taught what is important in an organization or one of its subunits."
   },
   {
-    "source": "orellana",
-    "front": "Who did Tomaskovic-Devey and Orellana interview?",
-    "back": "Workforce development professionals who help employers find workers and young adults find employers."
+    "source": "schein",
+    "front": "What does Schein mean by \"the price of membership\"?",
+    "back": "The values, norms and behavior patterns that the organization considers necessary for any new member to learn. It does not cover all learning."
   },
   {
-    "source": "orellana",
-    "front": "Which workers is the article focused on?",
-    "back": "Young, entry-level workers in core production tasks (factories, health care, administrative services)."
+    "source": "schein",
+    "front": "List the five things a newcomer must learn.",
+    "back": "Basic goals; preferred means to reach them; responsibilities of the role; behavior patterns needed to perform; rules protecting the organization's identity and integrity."
+  },
+  {
+    "source": "schein",
+    "front": "What are unfreezing and \"upending experiences\"?",
+    "back": "Unfreezing detaches newcomers from old values. Upending experiences are planned or accidental events that disconfirm assumptions about self, company or job (trivial or impossible tasks, unread reports, long observation)."
+  },
+  {
+    "source": "schein",
+    "front": "What happens in the engineering supervisor's circuit example?",
+    "back": "New engineers declare a circuit that breaks textbook rules cannot work; it has sold for years. They cannot explain why, and become chastened and eager to learn."
+  },
+  {
+    "source": "schein",
+    "front": "Which two socialization factors are not fully under the organization's control?",
+    "back": "The entrant's initial motivation to join, and how far the organization can make newcomers stay (tuition paid, vows, pension or stock plans, \"you would start over\")."
+  },
+  {
+    "source": "schein",
+    "front": "Why do peer groups of novices matter, and what is the risk?",
+    "back": "They defend against the powerful organization and help set norms; they strengthen socialization if peer norms match the organization's, but can counter-socialize (sabotage, rebellion)."
+  },
+  {
+    "source": "schein",
+    "front": "Name the sources from which newcomers learn.",
+    "back": "Official literature, key models, direct instruction from trainer or boss, senior peers (\"big brothers\"), and rewards and punishments from their own experiments."
+  },
+  {
+    "source": "schein",
+    "front": "Name two ways organizations build commitment and loyalty.",
+    "back": "Invest time and effort in the newcomer so guilt produces loyalty; get small behavioral commitments that can only be justified by accepting company values. (Also: general ideals, \"learn from the ground up\".)"
+  },
+  {
+    "source": "schein",
+    "front": "What are Schein's three responses to socialization?",
+    "back": "Type 1 Rebellion (reject all norms), Type 2 Creative individualism (accept only pivotal norms), Type 3 Conformity (accept all)."
+  },
+  {
+    "source": "schein",
+    "front": "Distinguish pivotal, relevant and peripheral norms.",
+    "back": "Pivotal: must accept to survive (e.g., getting the job done). Relevant: desirable but not required (e.g., dress). Peripheral: of little importance. Organizations differ on which is which."
+  },
+  {
+    "source": "schein",
+    "front": "Which characteristic of a profession fits management least?",
+    "back": "Relating to a voluntary association of colleagues and accepting only their authority: managers are expected to accept hierarchical authority."
+  },
+  {
+    "source": "schein",
+    "front": "What were the turnover percentages for the Sloan classes of 1962, 1963 and 1964?",
+    "back": "73%, 67% and 50% had already left their first job."
+  },
+  {
+    "source": "schein",
+    "front": "What two things should companies do, per Schein?",
+    "back": "Understand their socialization practices and focus on pivotal values only; train the first boss."
+  },
+  {
+    "source": "thomas",
+    "front": "What is social information?",
+    "back": "Comments, observations and cues from people whose view of the job the employee considers relevant (co-workers, supervisors, customers, family, friends)."
+  },
+  {
+    "source": "thomas",
+    "front": "Where did social information processing come from?",
+    "back": "Salancik and Pfeffer's 1978 social information processing approach to job attitudes and task design."
+  },
+  {
+    "source": "thomas",
+    "front": "Name the four ways social information shapes perceptions.",
+    "back": "Importance (salience), evaluation, behavior, and justification."
+  },
+  {
+    "source": "thomas",
+    "front": "What were the Asch line experiment numbers?",
+    "back": "Under 1% misjudged alone; more than one-third gave the wrong answer when co-workers (confederates) did."
+  },
+  {
+    "source": "thomas",
+    "front": "What does the miner example show?",
+    "back": "Miners go back to work after a nearby disaster partly because they want to believe co-workers and the company that accidents are unlikely; outsiders see the danger as high."
+  },
+  {
+    "source": "thomas",
+    "front": "Name the four sources of social information and why each matters.",
+    "back": "Co-workers (credible, daily contact), supervisors (management's voice; most controllable), friends and family (outside view, support), customers (judge the product and shape culture)."
+  },
+  {
+    "source": "thomas",
+    "front": "How does experience change the use of social information?",
+    "back": "New employees are more receptive and use many sources; the number of sources falls with experience, though reliance on a few selected sources may grow."
+  },
+  {
+    "source": "thomas",
+    "front": "What did Griffin's field experiment show?",
+    "back": "Managers trained to give positive social cues changed employees' perceptions (variety, autonomy, feedback, friendship opportunities) without changing the job."
+  },
+  {
+    "source": "thomas",
+    "front": "Why be careful interpreting survey answers about a job?",
+    "back": "If answers come from social information rather than the objective job, changing the job will have little effect unless the social information changes."
   },
   {
     "source": "orellana",
@@ -36,22 +136,7 @@ const FLASHCARDS = [
   },
   {
     "source": "orellana",
-    "front": "What makes a \"career job\" per the article? Name three features.",
-    "back": "E.g. living wage, predictable hours, visible skill and wage progression, respectful relationships with supervisors and coworkers."
-  },
-  {
-    "source": "orellana",
-    "front": "Why should employers communicate career progression early?",
-    "back": "A training period can feel like past dead-end jobs; say it is the start of a long-term relationship."
-  },
-  {
-    "source": "orellana",
-    "front": "Practice 3: what is the caution about tours, websites and training videos?",
-    "back": "If everyone shown is white or male, they can signal to some candidates that they do not belong."
-  },
-  {
-    "source": "orellana",
-    "front": "Why is the first day crucial?",
+    "front": "Why is the first day crucial (practice 4)?",
     "back": "Assuming new hires will figure it out, or being surprised they showed up, signals the employer does not care; first impressions are crucial to retention."
   },
   {
@@ -61,101 +146,52 @@ const FLASHCARDS = [
   },
   {
     "source": "orellana",
-    "front": "What do many firms get wrong about mentoring?",
-    "back": "They build mentor systems for managers and professionals but leave lower-level (core production) onboarding to chance."
-  },
-  {
-    "source": "orellana",
     "front": "Practice 6: what must employers explain besides the rules?",
     "back": "Why the rules make sense; otherwise it sounds like a coercive parent saying \"just do it\"."
   },
   {
-    "source": "orellana",
-    "front": "Why do young workers hesitate to ask questions?",
-    "back": "They fear failure or disrespect, so they hide their need for help; make asking normal and respected."
-  },
-  {
-    "source": "orellana",
-    "front": "What does \"understand non-work lives\" help prevent?",
-    "back": "Mistaking complex lives (kids, transit, school, appointments) for bad work habits."
-  },
-  {
-    "source": "orellana",
-    "front": "What do the authors say about tolerating disrespect?",
-    "back": "It drags morale and productivity down and encourages turnover; never excuse equal-opportunity bullies."
-  },
-  {
-    "source": "orellana",
-    "front": "Why is a color-blind approach to race a problem, per the article?",
-    "back": "It insults people whose lived experience includes discrimination; check pay, shifts, hours and job assignments for gaps."
-  },
-  {
-    "source": "orellana",
-    "front": "What is the \"probationary period for both sides\"?",
-    "back": "In the first weeks the employer judges fit, while the new hire judges whether this is a respectful place to build a career."
-  },
-  {
-    "source": "kp10",
-    "front": "Which chapter of K&P covers recognition, and what is its title?",
-    "back": "Chapter 10, \"Recognize Contributions\"."
-  },
-  {
     "source": "kp10",
     "front": "Which commitment is Chapter 10, and what is its definition?",
-    "back": "Commitment 9: recognize contributions by showing appreciation for individual excellence."
-  },
-  {
-    "source": "kp10",
-    "front": "Which of the Five Practices contains Commitments 9 and 10?",
-    "back": "Encourage the Heart."
-  },
-  {
-    "source": "kp10",
-    "front": "What is Commitment 10?",
-    "back": "Celebrate the values and victories by creating a spirit of community."
-  },
-  {
-    "source": "kp10",
-    "front": "Name the two Ch 10 section titles from earlier editions.",
-    "back": "Expect the Best; Personalize Recognition (7th-edition titles not verified)."
-  },
-  {
-    "source": "kp10",
-    "front": "How did the K&P research begin?",
-    "back": "In 1983, asking people to describe a \"Personal-Best Leadership Experience\"; thousands of cases collected."
+    "back": "Commitment 9: recognize contributions by showing appreciation for individual excellence (Encourage the Heart)."
   },
   {
     "source": "missing",
-    "front": "Which Week 4 readings are not yet provided as text?",
-    "back": "Thomas & Griffin \"The Power of Social ...\", Schein \"... Socialization\", the optional Coaching onboarding article, and the Week 4 slides."
-  },
-  {
-    "source": "background",
-    "front": "General background: name Schein's three levels of culture.",
-    "back": "Artifacts, espoused values, basic assumptions (general background, not from the readings)."
-  },
-  {
-    "source": "background",
-    "front": "General background: which level is deepest and hardest to see?",
-    "back": "Basic assumptions."
+    "front": "What is still missing from this page?",
+    "back": "K&P Chapter 10 text, the Week 4 slides and online module, and the optional Coaching onboarding article."
   },
   {
     "source": "connect",
-    "front": "Which Week 3 bias does \"lazy or dumb\" labelling resemble?",
-    "back": "Correspondence bias (blaming the person's character rather than the situation)."
+    "front": "How do Schein and Thomas & Griffin agree about the first boss?",
+    "back": "Schein: train the first boss, who sets the climate. Thomas & Griffin: for many employees the immediate supervisor is the organization, the source managers control most."
   },
   {
     "source": "connect",
-    "front": "How does Ingram & Choi's 40% finding relate to retention?",
-    "back": "COOs with low values alignment needed about a 40% raise to be as likely to stay as high-alignment COOs; fit matters as much as pay."
+    "front": "How does Schein's \"pivotal values\" link to Ingram & Choi?",
+    "back": "Both say organizations should care about the values that matter to the work, not irrelevant similarity (Ingram & Choi: fit on relevant values, not leisure pursuits)."
+  },
+  {
+    "source": "connect",
+    "front": "How does Orellana's mentor practice relate to Schein and Thomas & Griffin?",
+    "back": "Newcomers learn informal culture from nearby people; an assigned mentor makes that source reliable instead of leaving it to chance."
+  },
+  {
+    "source": "kp10",
+    "front": "Ch 10 (Recognize Contributions): what are its two sections?",
+    "back": "Expect the Best and Personalize Recognition (per a published 7th-edition table of contents). Summary-level only; the chapter text was not available."
+  },
+  {
+    "source": "kp10",
+    "front": "Why does \"Expect the Best\" come before the recognition itself? (K&P summary)",
+    "back": "Secondary summaries describe a Pygmalion-style effect: people tend to live up to the expectations a leader holds and shows, so belief and clear standards set up the appreciation that follows. Verify against your copy."
   }
 ];
 
 const SOURCE_LABELS = {
   "glance": "This week at a glance",
+  "schein": "Schein: Organizational Socialization",
+  "thomas": "Thomas & Griffin: Social Information",
   "orellana": "Tomaskovic-Devey & Orellana: Better Onboarding",
-  "kp10": "Kouzes & Posner Ch 10: Recognize Contributions",
-  "missing": "Not provided yet: Canvas readings and slides",
-  "background": "General background: Schein and socialization",
+  "kp10": "Kouzes & Posner Ch 10: Recognize Contributions (summary)",
+  "missing": "Still missing: Ch 10 text, slides, optional article",
   "connect": "Connect the dots"
 };

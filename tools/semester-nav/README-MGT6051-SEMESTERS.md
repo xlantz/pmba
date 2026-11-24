@@ -4,7 +4,7 @@ Everything here goes in `/pmba-field-guide/` (same folder as index.html). Nothin
 
 ## Files
 - 6 new pages: `mgt6051-start.html` (course map, grading, schedule, exam logistics, notes strategy), `mgt6051-wk1..wk5.html` (Values; Leadership; Hiring + Historical Perspective; Onboarding & Culture; Midterm Review). Each has diagrams, glossary, flashcards, quiz. Their `assets/mgt6051-*-flashcards-data.js` / `-quiz-data.js` files are included.
-- `mgt6051-mock-test.html` + `assets/mgt6051-mock-test-data.js` (117-question pool). It reuses the existing `assets/mktg-mocktest.js` engine (it reads the globals `MKTG_MOCK_POOL` / `MKTG_MOCK_LABELS`, which the new data file defines).
+- `mgt6051-mock-test.html` + `assets/mgt6051-mock-test-data.js` (128-question pool). It reuses the existing `assets/mktg-mocktest.js` engine (it reads the globals `MKTG_MOCK_POOL` / `MKTG_MOCK_LABELS`, which the new data file defines).
 - `apply_semester_nav.py` and `build_mgt6051_mock.py`.
 
 ## Steps (run from /pmba-field-guide/)
@@ -24,6 +24,6 @@ Everything here goes in `/pmba-field-guide/` (same folder as index.html). Nothin
 
 ## Notes / flags for whoever edits next
 - Kouzes & Posner blocks (Wk1 kp2, Wk2 kp1/kp3, Wk4 kp10) are labeled summaries built from the book's published structure (7th ed. table of contents, Five Practices/Ten Commitments), not from chapter text. Replace/extend if chapter text becomes available.
-- Not provided as text, flagged in-page: Week 4 slides, Thomas & Griffin, Schein, Coaching onboarding article, Grant podcast, STAR article, Week 5 slides. Where general background was added it is labeled.
+- Still not provided as text, flagged in-page: Kouzes & Posner chapter text (Ch 1, 2, 3, 10), Week 4 and Week 5 slides, the optional Coaching onboarding article, Grant podcast, STAR article. Week 4 now uses the real Schein, Thomas & Griffin and Orellana readings (the Schein and Thomas & Griffin PDFs are scans, so the page notes where OCR was rough).
 - Slide chart values that were unreadable (Heath/Citibank bars, decile chart) are not charted; some figures are labeled conceptual.
 - MGT 6051's AI policy is on Canvas: these are study aids only; no reflections/papers/video scripts are drafted.

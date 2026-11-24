@@ -923,35 +923,259 @@ const MKTG_MOCK_POOL = [
   "correctIndex": 1,
   "correctFeedback": "Correct.",
   "incorrectFeedback": "Not quite.",
-  "explanation": "The syllabus: closed book, 1 hour, one page front and back handwritten (or one typed side). The final is the 2-hour exam."
+  "explanation": "The syllabus: closed book, 1 hour, one page of notes. It covers all of Part 1 (Tue 12/1)."
  },
  {
-  "source": "wk4_glance",
-  "prompt": "What is the topic of both Week 4 sessions?",
+  "source": "wk4_schein",
+  "prompt": "In Schein's reading, what is \"the price of membership\"?",
   "options": [
-   "Leadership styles",
-   "Hiring and biases",
-   "Onboarding / Culture",
-   "Values"
+   "The values, norms and behavior patterns the organization considers necessary for every new member to learn",
+   "The tuition or entry fee a newcomer pays",
+   "Everything a newcomer learns on the job",
+   "The salary an organization offers to attract recruits"
+  ],
+  "correctIndex": 0,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "Schein limits socialization to the learning that the organization considers necessary for any new member; he calls this the price of membership."
+ },
+ {
+  "source": "wk4_schein",
+  "prompt": "Which is NOT one of the five things Schein says a newcomer must learn?",
+  "options": [
+   "The organization's basic goals",
+   "The behavior patterns needed to perform the role",
+   "The member's preferred career path outside the firm",
+   "Rules that maintain the organization's identity and integrity"
   ],
   "correctIndex": 2,
   "correctFeedback": "Correct.",
   "incorrectFeedback": "Not quite.",
-  "explanation": "Week 4 (11/24 and 11/26) is Onboarding / Culture."
+  "explanation": "The five are goals, preferred means, role responsibilities, behavior patterns for effective performance, and rules protecting identity and integrity."
  },
  {
-  "source": "wk4_glance",
-  "prompt": "Which assignment is due on Tuesday 11/24?",
+  "source": "wk4_schein",
+  "prompt": "A supervisor asks each new engineer to diagnose a circuit that violates textbook principles but works. What is he doing?",
   "options": [
-   "Leadership Vision Video",
-   "Votes for best video",
-   "Paper: Leadership Principles Inventory",
-   "Reply to Topic"
+   "Training the new engineers in circuit design",
+   "Building commitment through public confession",
+   "Transitioning them to full-member status",
+   "Deliberate unfreezing: an upending experience that deflates arrogance and makes the newcomer receptive"
   ],
   "correctIndex": 3,
   "correctFeedback": "Correct.",
   "incorrectFeedback": "Not quite.",
-  "explanation": "Reply to Topic is due 11/24. The LPI paper was Week 3, the video is 11/26, votes are 12/1."
+  "explanation": "Schein's circuit example: engineers say it cannot work, then are shown it has sold for years; they leave chastened and keen to learn."
+ },
+ {
+  "source": "wk4_schein",
+  "prompt": "On day one a new analyst is given only trivial tasks and the reports she writes go unread. Which Schein concept fits best?",
+  "options": [
+   "Creative individualism",
+   "Upending experiences",
+   "Transition to full member",
+   "Pivotal norms"
+  ],
+  "correctIndex": 1,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "Assignments that are trivial, reports no one reads, and similar events are upending experiences that disconfirm assumptions about self and job."
+ },
+ {
+  "source": "wk4_schein",
+  "prompt": "A graduate follows the pivotal norm of getting the job done but ignores the dress and lunch customs. Which response is this?",
+  "options": [
+   "Type 2: creative individualism",
+   "Type 1: rebellion",
+   "Type 3: conformity",
+   "A failed socialization with no label"
+  ],
+  "correctIndex": 0,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "Creative individualism is acceptance of the pivotal norms only, with rejection of the rest. Schein says this is what most organizations should want."
+ },
+ {
+  "source": "wk4_schein",
+  "prompt": "In Schein's scheme, where do standards of dress and decorum usually fall (though it varies by organization)?",
+  "options": [
+   "Pivotal norms in every organization",
+   "Never a norm at all",
+   "Relevant norms",
+   "Something only the first boss decides"
+  ],
+  "correctIndex": 2,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "Schein lists dress, decorum, not being publicly disloyal and living in the right neighborhood as relevant norms, adding that in some organizations such norms can be pivotal or peripheral (the IBM example)."
+ },
+ {
+  "source": "wk4_schein",
+  "prompt": "Which pair gives Schein's share of Sloan graduates who had left their first job for the classes of 1963 and 1964?",
+  "options": [
+   "73% and 67%",
+   "50% and 25%",
+   "73% and 50%",
+   "67% and 50%"
+  ],
+  "correctIndex": 3,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "Class of 1962: 73%; class of 1963: 67%; class of 1964: 50%."
+ },
+ {
+  "source": "wk4_schein",
+  "prompt": "A public relations firm invites a graduate to lunches with senior people, and he feels guilty at the thought of leaving. Which mechanism is this?",
+  "options": [
+   "Investing in the newcomer so that guilt builds loyalty",
+   "Unfreezing through hazing",
+   "Small behavioral commitments",
+   "Learning the business from the ground up"
+  ],
+  "correctIndex": 0,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "Schein describes this as the first commitment mechanism: invest in the newcomer so that he repays with loyalty and hard work."
+ },
+ {
+  "source": "wk4_schein",
+  "prompt": "Which characteristic of a profession does Schein say a manager is least like?",
+  "options": [
+   "Making decisions from general principles",
+   "Relating to a voluntary association of colleagues rather than hierarchical authority",
+   "Having a code of ethics",
+   "Gaining status through accomplishment"
+  ],
+  "correctIndex": 1,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "Schein says managers are expected to accept hierarchical authority, whereas professionals accept only the authority of colleagues."
+ },
+ {
+  "source": "wk4_schein",
+  "prompt": "According to Schein, what should companies do about first bosses?",
+  "options": [
+   "Replace them with outside consultants",
+   "Keep them away from new graduates",
+   "Train them, because the boss creates the climate for rebellion, conformity or creative individualism",
+   "Teach them mostly peripheral values"
+  ],
+  "correctIndex": 2,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "Schein argues that companies train the graduate but not the boss, and that the boss has the power that matters."
+ },
+ {
+  "source": "wk4_thomas",
+  "prompt": "Thomas & Griffin define social information as:",
+  "options": [
+   "Comments, observations and cues from people whose view of the job the employee considers relevant",
+   "The objective description of a job in writing",
+   "Only official company announcements",
+   "Rumors passed among customers"
+  ],
+  "correctIndex": 0,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "It can come from people tied to the job (co-workers, supervisors, customers) or outsiders (family, friends)."
+ },
+ {
+  "source": "wk4_thomas",
+  "prompt": "In the Asch line experiment as reported by Thomas & Griffin, what share gave a wrong answer when co-workers gave wrong answers?",
+  "options": [
+   "More than one-third",
+   "Under 1%",
+   "About one-tenth",
+   "Nearly everyone"
+  ],
+  "correctIndex": 0,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "Under 1% misjudged when alone; more than one-third went along with the confederates."
+ },
+ {
+  "source": "wk4_thomas",
+  "prompt": "Miners return to work after a disaster at a neighboring mine with little fear. What does Thomas & Griffin say explains this?",
+  "options": [
+   "Miners are paid enough to ignore danger",
+   "They want to believe the company and co-workers that an accident is unlikely, so social information shapes perceived danger",
+   "Miners cannot find any other work",
+   "The mines become objectively safer"
+  ],
+  "correctIndex": 1,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "The authors use it to show that the same job characteristic is perceived differently depending on the information received."
+ },
+ {
+  "source": "wk4_thomas",
+  "prompt": "Co-workers keep talking about the time clock until a newcomer starts to notice it. Which of the four ways is this?",
+  "options": [
+   "Justification",
+   "Behavior",
+   "Importance (salience)",
+   "Objective job measurement"
+  ],
+  "correctIndex": 2,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "Frequent discussion of a feature raises its perceived importance, making it salient."
+ },
+ {
+  "source": "wk4_thomas",
+  "prompt": "Which source of social information does management control most?",
+  "options": [
+   "Friends and family",
+   "Customers",
+   "Former employees",
+   "Supervisors"
+  ],
+  "correctIndex": 3,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "The article says management has the greatest control over information provided by supervisors; there is little it can do about family, friends or customers."
+ },
+ {
+  "source": "wk4_thomas",
+  "prompt": "How does experience change an employee's use of social information?",
+  "options": [
+   "New employees are more receptive and use many sources; the number of sources shrinks with experience",
+   "Experienced employees use more sources than new ones",
+   "Experience makes employees ignore all social information",
+   "New employees rely on one source only"
+  ],
+  "correctIndex": 0,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "The variety of sources decreases as people gain experience, although reliance on a few selected sources may increase."
+ },
+ {
+  "source": "wk4_thomas",
+  "prompt": "Griffin's field experiment found that managers could:",
+  "options": [
+   "Change attitudes only by redesigning tasks",
+   "Change employees' perceptions of the job without changing the job, by giving positive social cues",
+   "Improve pay perceptions by raising pay",
+   "Eliminate the influence of co-workers"
+  ],
+  "correctIndex": 1,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "Managers trained to give positive social cues changed perceptions of task variety, autonomy, feedback and friendship opportunities, versus a control group."
+ },
+ {
+  "source": "wk4_thomas",
+  "prompt": "Survey results show low satisfaction, but a job redesign changes little. Which Thomas & Griffin idea explains it?",
+  "options": [
+   "Surveys never measure attitudes",
+   "Jobs have no objective features",
+   "Responses may reflect social information, which stays unchanged if only the job changes",
+   "Employees do not talk to co-workers"
+  ],
+  "correctIndex": 2,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "If answers come from social information rather than the objective job, changing the job has minimal impact until the social information changes."
  },
  {
   "source": "wk4_orellana",
@@ -965,21 +1189,7 @@ const MKTG_MOCK_POOL = [
   "correctIndex": 0,
   "correctFeedback": "Correct.",
   "incorrectFeedback": "Not quite.",
-  "explanation": "Wages, full-time benefits and bonuses are essential but the authors say the social aspects matter more."
- },
- {
-  "source": "wk4_orellana",
-  "prompt": "Whom did the authors interview?",
-  "options": [
-   "CEOs of large firms",
-   "Workforce development professionals",
-   "HR software vendors",
-   "Young workers who quit"
-  ],
-  "correctIndex": 1,
-  "correctFeedback": "Correct.",
-  "incorrectFeedback": "Not quite.",
-  "explanation": "They talked with professionals who help employers find workers and young adults find employers."
+  "explanation": "Wages, full-time benefits and bonuses are essential, but the authors say the social aspects matter more."
  },
  {
   "source": "wk4_orellana",
@@ -987,27 +1197,13 @@ const MKTG_MOCK_POOL = [
   "options": [
    "Build relationships before hiring",
    "Assign a mentor",
-   "Ensure a positive first-day reception",
-   "Create career jobs"
-  ],
-  "correctIndex": 2,
-  "correctFeedback": "Correct.",
-  "incorrectFeedback": "Not quite.",
-  "explanation": "Practice 4. The article uses this scenario: it reads as \"you do not care\", which can drive early exits."
- },
- {
-  "source": "wk4_orellana",
-  "prompt": "Which scenario best matches the article's advice on mentoring?",
-  "options": [
-   "Offer mentors only to managers",
-   "Let employees volunteer to be mentored if they want",
-   "Leave new hires to figure out the culture themselves",
-   "Pair each new core-production hire with an assigned mentor"
+   "Create career jobs",
+   "Ensure a positive first-day reception"
   ],
   "correctIndex": 3,
   "correctFeedback": "Correct.",
   "incorrectFeedback": "Not quite.",
-  "explanation": "The article criticizes leaving lower-level onboarding to chance; assign mentors for job skills and informal culture."
+  "explanation": "Practice 4. It reads as \"you do not care\", which can drive early exits."
  },
  {
   "source": "wk4_orellana",
@@ -1025,87 +1221,17 @@ const MKTG_MOCK_POOL = [
  },
  {
   "source": "wk4_orellana",
-  "prompt": "A new hire never asks for help even when stuck. Which practice addresses this?",
-  "options": [
-   "Communicate career progression",
-   "Create a culture where young workers can ask questions",
-   "Understand non-work lives",
-   "Racially equitable workplace"
-  ],
-  "correctIndex": 1,
-  "correctFeedback": "Correct.",
-  "incorrectFeedback": "Not quite.",
-  "explanation": "Practice 7: young workers fear failure and disrespect and hide the need for help; make asking normal."
- },
- {
-  "source": "wk4_orellana",
-  "prompt": "A new hire is repeatedly late because the bus schedule is unreliable. What does the article suggest?",
-  "options": [
-   "Require a car",
-   "Write them up as unreliable",
-   "Learn about their non-work life before judging",
-   "Move them to another team"
-  ],
-  "correctIndex": 2,
-  "correctFeedback": "Correct.",
-  "incorrectFeedback": "Not quite.",
-  "explanation": "Practice 8: understanding non-work lives prevents mistaking complex lives for bad work habits."
- },
- {
-  "source": "wk4_orellana",
-  "prompt": "Which statement best matches what the authors call the first weeks of employment?",
+  "prompt": "What do the authors call the first weeks of employment?",
   "options": [
    "An unpaid trial",
+   "A probationary period for both employer and employee",
    "A training-only phase",
-   "A honeymoon period",
-   "A probationary period for both employer and employee"
+   "A honeymoon period"
   ],
-  "correctIndex": 3,
+  "correctIndex": 1,
   "correctFeedback": "Correct.",
   "incorrectFeedback": "Not quite.",
   "explanation": "Both sides are gauging fit: the employer asks whether the hire adapts, the hire asks whether it is a respectful place for a career."
- },
- {
-  "source": "wk4_orellana",
-  "prompt": "What risk does the article raise about job tours, websites and videos?",
-  "options": [
-   "They can signal non-belonging if everyone shown is white or male",
-   "They reveal trade secrets",
-   "They delay hiring",
-   "They cost too much"
-  ],
-  "correctIndex": 0,
-  "correctFeedback": "Correct.",
-  "incorrectFeedback": "Not quite.",
-  "explanation": "Practice 3: if no one looks like me, I may assume I am not welcome."
- },
- {
-  "source": "wk4_orellana",
-  "prompt": "The authors call a color-blind approach to race:",
-  "options": [
-   "The safest legal approach",
-   "An insult to people of color and immigrants",
-   "Required by law",
-   "A good first step"
-  ],
-  "correctIndex": 1,
-  "correctFeedback": "Correct.",
-  "incorrectFeedback": "Not quite.",
-  "explanation": "Practice 10: a color-blind approach disregards lived experience of discrimination; check pay, shifts, hours and assignments."
- },
- {
-  "source": "wk4_kp10",
-  "prompt": "Chapter 10 of The Leadership Challenge is:",
-  "options": [
-   "Set the Example",
-   "Celebrate the Values and Victories",
-   "Recognize Contributions",
-   "Strengthen Others"
-  ],
-  "correctIndex": 2,
-  "correctFeedback": "Correct.",
-  "incorrectFeedback": "Not quite.",
-  "explanation": "Per the published table of contents: Ch 10 Recognize Contributions; Ch 11 is Celebrate the Values and Victories."
  },
  {
   "source": "wk4_kp10",
@@ -1113,111 +1239,97 @@ const MKTG_MOCK_POOL = [
   "options": [
    "Celebrate the values and victories by creating a spirit of community",
    "Envision the future by imagining possibilities",
-   "Foster collaboration by building trust",
-   "Recognize contributions by showing appreciation for individual excellence"
+   "Recognize contributions by showing appreciation for individual excellence",
+   "Foster collaboration by building trust"
   ],
-  "correctIndex": 3,
+  "correctIndex": 2,
   "correctFeedback": "Correct.",
   "incorrectFeedback": "Not quite.",
-  "explanation": "Commitment 9 belongs to Encourage the Heart. Celebrating values and victories is Commitment 10; fostering collaboration is Commitment 7; envisioning the future is Commitment 3."
+  "explanation": "Commitment 9 belongs to Encourage the Heart. Celebrating values and victories is Commitment 10 (summary from the book's published structure)."
  },
  {
   "source": "wk4_kp10",
   "prompt": "Which of the Five Practices contains Commitment 9?",
   "options": [
-   "Encourage the Heart",
    "Model the Way",
    "Enable Others to Act",
-   "Challenge the Process"
+   "Challenge the Process",
+   "Encourage the Heart"
+  ],
+  "correctIndex": 3,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "Encourage the Heart contains Commitments 9 and 10."
+ },
+ {
+  "source": "wk4_missing",
+  "prompt": "Which items are still missing from this page?",
+  "options": [
+   "K&P Chapter 10 text, the Week 4 slides, and the optional Coaching onboarding article",
+   "Schein and Thomas & Griffin",
+   "Orellana and Ingram & Choi",
+   "Only the syllabus"
   ],
   "correctIndex": 0,
   "correctFeedback": "Correct.",
   "incorrectFeedback": "Not quite.",
-  "explanation": "Encourage the Heart: Commitments 9 and 10."
+  "explanation": "Schein and Thomas & Griffin are now covered; Ch 10 is only summarized, and the slides and optional article were not provided."
  },
  {
-  "source": "wk4_kp10",
-  "prompt": "A manager writes a specific, private thank-you note to an employee who dislikes public praise. Which Chapter 10 idea is this?",
+  "source": "wk4_connect",
+  "prompt": "Schein urges training the first boss. Which Thomas & Griffin idea supports this?",
   "options": [
-   "Clarify values",
-   "Personalize recognition",
-   "Celebrate victories as a community",
-   "Challenge the process"
+   "Customers are the most important source",
+   "For many employees the immediate supervisor is the organization and the source management controls most",
+   "Experienced employees ignore supervisors",
+   "Family members control the new hire's attitudes"
   ],
   "correctIndex": 1,
   "correctFeedback": "Correct.",
   "incorrectFeedback": "Not quite.",
-  "explanation": "Personalize Recognition (an earlier-edition section title) is about fitting appreciation to the individual; the 7th-edition wording was not verified, so check your copy."
- },
- {
-  "source": "wk4_connect",
-  "prompt": "Calling a struggling new hire \"lazy\" without looking at whether they were mentored most resembles which Week 3 concept?",
-  "options": [
-   "Stage-gate screening",
-   "Espoused values",
-   "Correspondence bias (blaming character, not situation)",
-   "Values alignment"
-  ],
-  "correctIndex": 2,
-  "correctFeedback": "Correct.",
-  "incorrectFeedback": "Not quite.",
-  "explanation": "The article notes strugglers are often labelled lazy or dumb when they simply lack mentoring; the David article calls this blame-the-person pattern the correspondence bias."
+  "explanation": "Both readings point to the immediate supervisor as the highest-leverage influence on a newcomer."
  },
  {
   "source": "wk4_connect",
   "prompt": "Ingram & Choi report that COOs with low values alignment needed about what pay increase to be as likely to stay as high-alignment COOs?",
   "options": [
-   "60%",
    "10%",
    "25%",
-   "40%"
-  ],
-  "correctIndex": 3,
-  "correctFeedback": "Correct.",
-  "incorrectFeedback": "Not quite.",
-  "explanation": "The 40% figure is from the Week 1 Ingram & Choi reading; it supports the Week 4 theme that fit and respect matter as much as pay."
- },
- {
-  "source": "wk4_background",
-  "prompt": "General background (not from the readings): in Schein's model, which level is the deepest and least visible?",
-  "options": [
-   "Basic assumptions",
-   "Slogans",
-   "Artifacts",
-   "Espoused values"
-  ],
-  "correctIndex": 0,
-  "correctFeedback": "Correct.",
-  "incorrectFeedback": "Not quite.",
-  "explanation": "General background: artifacts are visible, espoused values are stated, basic assumptions are taken for granted. Confirm with the Schein reading when you have it."
- },
- {
-  "source": "wk4_background",
-  "prompt": "General background (not from the readings): a poster says \"Integrity first\" but employees routinely fudge numbers. Which two Schein levels are in conflict?",
-  "options": [
-   "Artifacts and espoused values",
-   "Espoused values and basic assumptions",
-   "Artifacts and basic assumptions",
-   "None"
-  ],
-  "correctIndex": 1,
-  "correctFeedback": "Correct.",
-  "incorrectFeedback": "Not quite.",
-  "explanation": "General background: the stated value (espoused) conflicts with what is taken for granted (basic assumption). Not built from the provided readings."
- },
- {
-  "source": "wk4_glance",
-  "prompt": "Which readings were NOT provided as text when this page was built?",
-  "options": [
-   "David and Jordan et al.",
-   "Tomaskovic-Devey & Orellana and K&P Ch 10",
-   "Thomas & Griffin, Schein, and the Week 4 slides",
-   "Christensen and Ingram & Choi"
+   "40%",
+   "60%"
   ],
   "correctIndex": 2,
   "correctFeedback": "Correct.",
   "incorrectFeedback": "Not quite.",
-  "explanation": "The Canvas readings (Thomas & Griffin; Schein) and the Week 4 slides still need to be brought in. K&P Ch 10 is summarized from public facts only."
+  "explanation": "The 40% figure is from the Week 1 Ingram & Choi reading."
+ },
+ {
+  "source": "wk4_connect",
+  "prompt": "Calling a struggling new hire \"lazy\" without checking whether she was mentored most resembles which Week 3 concept?",
+  "options": [
+   "Stage-gate screening",
+   "Espoused values",
+   "Values alignment",
+   "Correspondence bias (blaming character, not situation)"
+  ],
+  "correctIndex": 3,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "Orellana notes strugglers are often labelled lazy or dumb when they simply lack mentoring; David calls the blame-the-person pattern the correspondence bias."
+ },
+ {
+  "source": "wk4_kp10",
+  "prompt": "Which pair names the two sections of Chapter 10, Recognize Contributions?",
+  "options": [
+   "Expect the Best and Personalize Recognition",
+   "Create a Spirit of Community and Be Personally Involved",
+   "Seize the Initiative and Exercise Outsight",
+   "Enhance Self-Determination and Develop Competence"
+  ],
+  "correctIndex": 0,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "Expect the Best and Personalize Recognition are the two sections under Commitment 9 (from a published table of contents). The other pairs belong to Celebrate the Values and Victories, Search for Opportunities and Strengthen Others."
  },
  {
   "source": "wk5_glance",
@@ -1528,6 +1640,62 @@ const MKTG_MOCK_POOL = [
   "explanation": "Commitment 9 (recognize contributions) and 10 (celebrate the values and victories) sit under Encourage the Heart."
  },
  {
+  "source": "wk5_wk4",
+  "prompt": "In Schein's 1968 article, the 'price of membership' refers to...",
+  "options": [
+   "The tuition and fees a person pays to join a school or firm",
+   "The values, norms and behaviors that any new member must learn to be accepted",
+   "The salary a newcomer gives up by taking a training role",
+   "The cost to the company of replacing a worker who quits"
+  ],
+  "correctIndex": 1,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "Schein limits socialization to the learning the organization requires of every newcomer; that required learning is the price of membership."
+ },
+ {
+  "source": "wk5_wk4",
+  "prompt": "A new analyst follows the firm's audit-integrity rules but openly disagrees with its dress and email-style habits and keeps working independently on those. Which Schein response is this?",
+  "options": [
+   "Rebellion",
+   "Conformity",
+   "Professional socialization",
+   "Creative individualism"
+  ],
+  "correctIndex": 3,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "Creative individualism means accepting only the pivotal norms and rejecting the rest; rebellion rejects everything and conformity accepts everything."
+ },
+ {
+  "source": "wk5_wk4",
+  "prompt": "A manager gives a new hire only trivial tasks for months, then requests reports that nobody reads. In Schein's terms this is most like...",
+  "options": [
+   "A transition to full-fledged membership",
+   "An upending experience that disconfirms the newcomer's self-image",
+   "A relevant norm",
+   "A commitment built by promoting a rebel"
+  ],
+  "correctIndex": 1,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "Upending experiences include trivial or practice-only work and reports that are unread. Real responsibility and status symbols would signal the opposite, full membership."
+ },
+ {
+  "source": "wk5_wk4",
+  "prompt": "After a company redesigns tasks, survey attitudes barely move because co-workers still call the job a dead end. Which Thomas & Griffin idea fits best?",
+  "options": [
+   "Salience cannot be changed",
+   "Asch's finding applies only to line lengths",
+   "Employees react only to the objective job",
+   "Social information can matter more than the objective job"
+  ],
+  "correctIndex": 3,
+  "correctFeedback": "Correct.",
+  "incorrectFeedback": "Not quite.",
+  "explanation": "If responses come from social cues, changing the job may have minimal effect until the cues change. Griffin's field experiment shifted perceptions with trained positive cues and no job change."
+ },
+ {
   "source": "wk5_confusions",
   "prompt": "Two employees both value creativity, but one thinks it comes from quiet contemplation and the other from interacting with others. They differ in their...",
   "options": [
@@ -1663,10 +1831,11 @@ const MKTG_MOCK_LABELS = {
  "wk3_slides": "Wk 3 · Hiring Slides: Control, Exercise & AI",
  "wk3_connect": "Wk 3 · Connect the Dots",
  "wk4_glance": "Wk 4 · This week at a glance",
+ "wk4_schein": "Wk 4 · Schein: Organizational Socialization",
+ "wk4_thomas": "Wk 4 · Thomas & Griffin: Social Information",
  "wk4_orellana": "Wk 4 · Tomaskovic-Devey & Orellana: Better Onboarding",
- "wk4_kp10": "Wk 4 · Kouzes & Posner Ch 10: Recognize Contributions",
- "wk4_missing": "Wk 4 · Not provided yet: Canvas readings and slides",
- "wk4_background": "Wk 4 · General background: Schein and socialization",
+ "wk4_kp10": "Wk 4 · Kouzes & Posner Ch 10: Recognize Contributions (summary)",
+ "wk4_missing": "Wk 4 · Still missing: Ch 10 text, slides, optional article",
  "wk4_connect": "Wk 4 · Connect the dots",
  "wk5_glance": "Wk 5 review · Midterm logistics",
  "wk5_wk1": "Wk 5 review · Week 1: Values & motivation",
